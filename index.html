@@ -1,39 +1,59 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Food Label Tree</title><style>
-body{font-family:system-ui,sans-serif;margin:0;background:#f6f7f9;color:#1d2433}
-header{position:sticky;top:0;background:#fff;padding:12px 16px;box-shadow:0 1px 4px #0001;z-index:1}
-h1{font-size:1.2rem;margin:0 0 8px}#q{width:100%;box-sizing:border-box;padding:10px;border:1px solid #ccd;border-radius:8px;font-size:1rem}
-.bar{margin-top:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}button{padding:6px 12px;border:0;border-radius:6px;background:#2f6fed;color:#fff;cursor:pointer}
-main{padding:12px 16px;max-width:900px;margin:auto}ul{list-style:none;padding-left:18px;margin:0}main>ul{padding-left:0}
-.row{padding:6px 8px;border-radius:6px;cursor:pointer;display:flex;gap:6px;align-items:baseline}.row:hover{background:#e8eefc}
-.tw{width:14px;color:#2f6fed;flex:none}.cnt{font-size:.75rem;background:#e3e7ef;border-radius:10px;padding:1px 7px;color:#556}
-.leaf .row{cursor:default}.desc{font-size:.85rem;color:#556;padding:0 8px 6px 28px}.desc b{color:#334}
-.hidden{display:none}a.ref{color:#2f6fed}.flash{animation:fl 2s}@keyframes fl{0%,60%{background:#ffe066}}mark{background:#ffe066}.l0>.row{font-weight:700;font-size:1.05rem}
-</style></head><body><header><h1>🍎 Everything on a Food Label</h1><input id="q" placeholder="Search a compound or food, e.g. salmon, B12, E211, omega-3…">
-<div class="bar"><button id="ex">Expand all</button><button id="co">Collapse all</button><span id="info"></span></div></header>
+:root{--bg:#f5f6fa;--card:#fff;--text:#1b2030;--muted:#667085;--line:#dfe3ec;--chip:#eef1f6;--shadow:0 1px 2px #0000000d,0 4px 14px #0000000a}
+[data-theme=dark]{--bg:#0f1218;--card:#181c25;--text:#e7eaf0;--muted:#9aa3b5;--line:#2a303d;--chip:#232938;--shadow:0 1px 2px #0006}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+.hero{background:linear-gradient(135deg,#4f46e5,#0ea5e9 55%,#10b981);color:#fff;padding:36px 20px 64px}
+.hero .in{max-width:900px;margin:auto;position:relative}.hero h1{margin:0;font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:-.02em}.hero p{margin:6px 0 0;opacity:.9}
+#theme{position:absolute;right:0;top:0;background:#ffffff26;border:1px solid #ffffff40;color:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit}
+.sbar{position:sticky;top:0;z-index:5;max-width:900px;margin:-40px auto 0;padding:0 16px}
+.sbox{background:var(--card);border-radius:16px;box-shadow:0 8px 30px #0000001f;padding:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#q{flex:1 1 240px;border:0;background:var(--chip);color:var(--text);border-radius:12px;padding:12px 14px;font:inherit;font-size:1rem;outline:none}#q:focus{box-shadow:0 0 0 2px #6366f1}
+.btn{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:9px 12px;font:inherit;font-size:.85rem;cursor:pointer}.btn:hover{background:var(--chip)}
+#info{font-size:.8rem;color:var(--muted);padding:0 4px}
+main{max-width:900px;margin:18px auto 60px;padding:0 16px}ul{list-style:none;margin:0;padding:0}
+.top{background:var(--card);border-radius:16px;box-shadow:var(--shadow);margin-bottom:12px;border-left:5px solid var(--a);overflow:hidden}
+.kids{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s ease}.kids>ul{overflow:hidden;min-height:0}.open>.kids{grid-template-rows:1fr}
+.kids>ul>li{margin-left:14px;padding-left:12px;border-left:2px solid color-mix(in srgb,var(--a) 30%,transparent)}
+.top>.kids>ul{padding:0 10px 10px 6px}
+.row{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;cursor:pointer;user-select:none}.row:hover{background:var(--chip)}
+.top>.row{padding:14px 16px;font-weight:700;font-size:1.08rem}.ico{font-size:1.3rem}
+.tw{width:14px;color:var(--a);transition:transform .2s;flex:none;font-size:.8rem}.open>.row .tw{transform:rotate(90deg)}
+.nm{flex:1}.cnt{font-size:.72rem;font-weight:600;color:var(--a);background:color-mix(in srgb,var(--a) 14%,transparent);border-radius:999px;padding:2px 9px}
+.leaf>.row{cursor:pointer;font-weight:500}.leaf>.row .tw{transform:none}.dot{width:8px;height:8px;border-radius:50%;background:var(--a);flex:none;margin:0 3px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:2px 0 8px 10px;font-size:.88rem;line-height:1.45}
+.card .k{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;margin-top:6px}.card .k:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}.chip{border:0;background:var(--chip);color:var(--text);border-radius:999px;padding:4px 10px;font:inherit;font-size:.8rem;cursor:pointer}.chip:hover{background:color-mix(in srgb,var(--a) 20%,var(--chip))}
+.hidden{display:none!important}mark{background:#fde047;color:#111;border-radius:3px;padding:0 2px}
+@media(max-width:600px){.hero{padding:24px 16px 56px}#theme{position:static;margin-bottom:10px}.kids>ul>li{margin-left:6px;padding-left:8px}.card{margin-left:4px}}
+</style></head><body>
+<div class="hero"><div class="in"><button id="theme">🌙 Dark</button><h1>🍎 Food Label Tree</h1><p>Everything on the back of a food label — from macronutrients to E-numbers — and where it comes from.</p></div></div>
+<div class="sbar"><div class="sbox"><input id="q" placeholder="Search a compound or food — salmon, B12, E211, omega-3…"><button class="btn" id="ex">Expand all</button><button class="btn" id="co">Collapse all</button><span id="info"></span></div></div>
 <main><ul id="tree"></ul></main><script src="data.js"></script><script>
-const T=window.TREE,cnt=n=>n.children?n.children.reduce((a,c)=>a+cnt(c),0):1,esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-function build(n,d){const li=document.createElement('li');li.n=n;li.className='l'+d+(n.children?'':' leaf');
- const r=document.createElement('div');r.className='row';li.appendChild(r);
- if(n.children){r.innerHTML=`<span class="tw">▸</span><span class="nm"></span><span class="cnt">${cnt(n)}</span>`;
-  const ul=document.createElement('ul');ul.className='hidden';n.children.forEach(c=>ul.appendChild(build(c,d+1)));li.appendChild(ul);
-  r.onclick=()=>tog(li)}else{r.innerHTML='<span class="tw">•</span><span class="nm"></span>';const ds=document.createElement('div');ds.className='desc';
-  ds.innerHTML=`<b>What:</b> ${esc(n.what)}`+(n.does?(n.does.startsWith('see: ')?'<br><b>Key compounds:</b> '+n.does.slice(5).split('; ').map(x=>`<a href="#" class="ref" data-t="${esc(x)}">${esc(x)}</a>`).join(', '):`<br><b>In the body:</b> ${esc(n.does)}`):'')+(n.found?`<br><b>Found in:</b> ${esc(n.found)}`:'');li.appendChild(ds)}
- r.querySelector('.nm').textContent=n.name;return li}
-function tog(li,o){const ul=li.querySelector(':scope>ul');if(!ul)return;o=o??ul.classList.contains('hidden');ul.classList.toggle('hidden',!o);li.querySelector(':scope>.row .tw').textContent=o?'▾':'▸'}
+const T=window.TREE,cnt=n=>n.children?n.children.reduce((a,c)=>a+cnt(c),0):1,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const STY={Macronutrients:['#f97316','🍗'],Micronutrients:['#8b5cf6','💊'],Bioactives:['#10b981','🌿'],Additives:['#ef4444','🧪'],Water:['#0ea5e9','💧'],Energy:['#eab308','⚡'],'Label lines':['#64748b','🏷️'],Allergens:['#ec4899','⚠️'],Flavorings:['#d946ef','🌶️']};
+function build(n,d){const li=document.createElement('li');li.n=n;const r=document.createElement('div');r.className='row';li.appendChild(r);
+ if(d==0){const s=STY[n.name]||['#6366f1','📦'];li.className='top';li.style.setProperty('--a',s[0]);r.innerHTML=`<span class="ico">${s[1]}</span>`}
+ if(n.children){li.classList.add('br');r.innerHTML+=`<span class="tw">▶</span><span class="nm"></span><span class="cnt">${cnt(n)}</span>`;
+  const k=document.createElement('div');k.className='kids';const ul=document.createElement('ul');n.children.forEach(c=>ul.appendChild(build(c,d+1)));k.appendChild(ul);li.appendChild(k)}
+ else{li.classList.add('leaf');r.innerHTML='<span class="dot"></span><span class="nm"></span>';const c=document.createElement('div');c.className='card';
+  c.innerHTML=`<div class="k">What</div>${esc(n.what)}`+(n.does?`<div class="k">In the body</div>${esc(n.does)}`:'')+(n.found?`<div class="k">Found in</div><div class="chips">${n.found.split(/[,;] /).map(f=>`<button class="chip">${esc(f)}</button>`).join('')}</div>`:'');li.appendChild(c)}
+ r.querySelector('.nm').textContent=n.name;if(n.children)r.onclick=()=>tog(li);return li}
+const tog=(li,o)=>{if(li.classList.contains('br'))li.classList.toggle('open',o??!li.classList.contains('open'))};
 const tree=document.getElementById('tree');T.children.forEach(c=>tree.appendChild(build(c,0)));
-const all=()=>[...tree.querySelectorAll('li')];ex.onclick=()=>all().forEach(l=>tog(l,true));co.onclick=()=>all().forEach(l=>tog(l,false));
+const all=()=>[...tree.querySelectorAll('li')],total=()=>info.textContent=cnt(T)+' items';
+ex.onclick=()=>all().forEach(l=>tog(l,true));co.onclick=()=>all().forEach(l=>tog(l,false));
 q.oninput=()=>{const s=q.value.trim().toLowerCase();let m=0;
- all().forEach(li=>{const nm=li.querySelector(':scope>.row .nm');nm.textContent=li.n.name;li.classList.remove('hidden')});
- if(!s){info.textContent='';co.onclick();return}
- const hit=li=>{const n=li.n,t=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.found||'')).toLowerCase();const self=t.includes(s);
-  const kids=[...li.querySelectorAll(':scope>ul>li')].map(hit).some(Boolean);
+ all().forEach(li=>{li.querySelector(':scope>.row .nm').textContent=li.n.name;li.classList.remove('hidden')});
+ if(!s){total();co.onclick();return}
+ const hit=li=>{const n=li.n,self=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.found||'')).toLowerCase().includes(s);
+  const kids=[...li.querySelectorAll(':scope>.kids>ul>li')].map(hit).some(Boolean);
   if(self){m++;const nm=li.querySelector(':scope>.row .nm'),i=n.name.toLowerCase().indexOf(s);if(i>=0)nm.innerHTML=esc(n.name.slice(0,i))+'<mark>'+esc(n.name.slice(i,i+s.length))+'</mark>'+esc(n.name.slice(i+s.length))}
   li.classList.toggle('hidden',!(self||kids));tog(li,kids);return self||kids};
  [...tree.children].forEach(hit);info.textContent=m+' match'+(m==1?'':'es')};
-info.textContent=cnt(T)+' items';
-tree.addEventListener('click',e=>{const a=e.target.closest('a.ref');if(!a)return;e.preventDefault();if(q.value){q.value='';q.oninput()}
- const li=all().find(l=>l.n.name===a.dataset.t&&!l.closest('.l0')?.n.name.startsWith('Ingredients'));if(!li)return;
- let p=li.parentElement.closest('li');while(p){tog(p,true);p=p.parentElement.closest('li')}tog(li,true);
- const r=li.querySelector(':scope>.row');r.scrollIntoView({behavior:'smooth',block:'center'});r.classList.remove('flash');void r.offsetWidth;r.classList.add('flash')});
+tree.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;q.value=c.textContent;q.oninput();window.scrollTo({top:0,behavior:'smooth'})});
+const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'☀️ Light':'🌙 Dark'};
+let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};
+total();
 </script></body></html>
