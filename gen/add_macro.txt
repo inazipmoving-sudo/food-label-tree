@@ -1,0 +1,81 @@
+Macronutrients
+ Protein
+  Conditionally essential amino acids
+   Selenocysteine|21st proteinogenic amino acid containing selenium|Active site of selenoproteins (antioxidant enzymes)|Brazil nuts, seafood, organ meats (within proteins)
+  Non-proteinogenic amino acids in foods
+   Ornithine|Urea-cycle amino acid not built into proteins|Ammonia removal; arginine metabolism|Cheese, fish, meat (small free amounts)
+   Citrulline|Urea-cycle amino acid|Converted to arginine; nitric oxide production|Watermelon (esp. rind), cucumber, melons
+   GABA (gamma-aminobutyric acid)|Amino acid neurotransmitter|Inhibitory neurotransmitter; dietary effects on brain unclear|Fermented foods, tomatoes, germinated brown rice, tea (GABA tea)
+   Hydroxyproline|Modified proline in collagen|Collagen stability|Gelatin, bone broth, skin
+   Hydroxylysine|Modified lysine in collagen|Collagen cross-linking|Gelatin, bone broth
+   Betaine (trimethylglycine)|Glycine derivative|Methyl donor; lowers homocysteine|Beets, spinach, wheat bran, quinoa
+   Sarcosine (N-methylglycine)|Glycine derivative|Intermediate of choline/glycine metabolism|Egg yolks, turkey, ham, legumes
+   Ergothioneine|Sulfur-containing histidine derivative|Antioxidant with its own transporter in cells|Mushrooms (esp. king oyster, porcini), oats
+ Carbohydrates
+  Monosaccharides
+   Mannose|6-carbon sugar|Glycoprotein synthesis; studied for urinary tract health|Cranberries, apples, peaches (small amounts)
+   Xylose|5-carbon "wood sugar"|Poorly absorbed; used to make xylitol|Corn cobs, birch, fruits (bound in hemicellulose)
+   Arabinose|5-carbon sugar|May reduce sucrose digestion|Bound in pectin and hemicellulose (beets, grains)
+   Tagatose|Rare 6-carbon sugar (fructose isomer)|Low-calorie sweetener|Heated dairy products (traces)
+   Allulose (psicose)|Rare sugar, fructose epimer|Sweet but nearly calorie-free|Figs, raisins, jackfruit (traces)
+  Disaccharides
+   Isomaltulose (palatinose)|Glucose + fructose (slow-digesting)|Slow, steady glucose release|Honey, sugarcane extract (traces)
+   Lactulose|Galactose + fructose formed by heating milk|Not digested; laxative and prebiotic|Heat-treated milk (traces)
+   Cellobiose|Two glucose units (beta-linked)|Not digested by humans|Breakdown product of cellulose; honey
+   Melibiose|Galactose + glucose|Fermented by gut bacteria|Breakdown of raffinose in legumes
+  Oligosaccharides
+   Verbascose|Pentasaccharide in legumes|Fermented in colon (gas)|Fava beans, peas, mung beans
+   Human milk oligosaccharides (2'-fucosyllactose)|Complex sugars in breast milk|Feed infant bifidobacteria|Human milk; added to infant formula
+   Xylooligosaccharides (XOS)|Short xylose chains|Prebiotic|Bamboo shoots, fruits, vegetables, honey (small)
+   Isomaltooligosaccharides (IMO)|Short glucose chains (alpha-1,6)|Partly digested; mild prebiotic|Miso, soy sauce, honey
+  Starches
+   Dextrin|Partially hydrolysed starch|Digested to glucose|Toasted bread crust; added as thickener
+   Resistant dextrin|Heat/acid-treated starch fiber|Soluble fiber, prebiotic|Not naturally in foods; fiber-enriched products
+   Phytoglycogen|Water-soluble glycogen-like plant starch|Energy|Sweet corn
+  Fiber
+   Soluble fiber
+    Arabinoxylan|Hemicellulose fiber of cereal grains|Prebiotic; slows glucose rise|Wheat bran, rye, psyllium
+    Galactomannans|Mannose-galactose polymers|Viscous fiber; lowers cholesterol|Guar, locust bean, fenugreek
+    Arabinogalactan|Branched galactose-arabinose fiber|Prebiotic; immune effects studied|Larch, carrots, radish, tomatoes
+    Fucoidan|Sulfated seaweed polysaccharide|Studied for immune and anticoagulant effects|Brown seaweeds (kombu, wakame)
+    Mucilage|Gel-forming plant polysaccharides|Soothes gut; bulks stool|Flaxseed, chia, okra
+    Polydextrose|Synthetic glucose polymer (E1200)|Soluble fiber, ~1 kcal/g|Not naturally in foods; low-sugar products
+   Insoluble fiber
+    Xyloglucan|Hemicellulose in plant cell walls|Adds bulk|Tamarind seed, fruits, vegetables
+    Cutin / suberin|Waxy plant-surface polymers counted as fiber|Adds bulk|Fruit and vegetable skins
+ Fats
+  Saturated fatty acids
+   Pentadecanoic acid (C15:0)|Odd-chain saturated fat|Biomarker of dairy intake|Butter, milk, cheese
+   Margaric acid (C17:0)|Odd-chain saturated fat|Biomarker of dairy intake|Dairy fat, beef
+   Behenic acid (C22:0)|Very-long-chain saturated fat|Poorly absorbed|Peanut oil, canola oil, moringa oil
+   Lignoceric acid (C24:0)|Very-long-chain saturated fat|Part of sphingolipids|Peanut oil, nuts
+  Monounsaturated fatty acids
+   Myristoleic acid (C14:1)|Rare omega-5 MUFA|Minor fatty acid|Butter, beef fat, saw palmetto
+   Petroselinic acid (C18:1 n-12)|Positional isomer of oleic acid|Minor fatty acid|Coriander, parsley and carrot seeds
+   Gondoic acid (C20:1 n-9)|Long-chain omega-9|Minor fatty acid|Jojoba, rapeseed, camelina, fish oil
+   Nervonic acid (C24:1 n-9)|Very-long-chain omega-9|Part of nerve myelin sphingolipids|Salmon, mustard seed oil, flaxseed (traces)
+  Polyunsaturated omega-3
+   ETA (eicosatetraenoic acid)|Omega-3 between SDA and EPA|Intermediate toward EPA|Green-lipped mussel, fish oils
+  Polyunsaturated omega-6
+   DGLA (dihomo-gamma-linolenic acid)|Omega-6 C20:3|Precursor of anti-inflammatory prostaglandin E1|Organ meats; made from GLA in body
+   Adrenic acid (C22:4 n-6)|Very-long-chain omega-6|Brain and adrenal lipids|Animal fats, organ meats
+   Eicosadienoic acid (C20:2 n-6)|Omega-6 elongation product|Minor eicosanoid precursor|Pine nuts, animal tissues
+   Punicic acid|Conjugated omega-5 C18:3|Studied for anti-inflammatory effects|Pomegranate seed oil
+  Other fatty acids
+   Mead acid (C20:3 n-9)|Omega-9 PUFA made when essential fats are lacking|Marker of essential fatty acid deficiency|Made in the body; traces in animal tissues
+   Ricinoleic acid|Hydroxy omega-9 fatty acid|Laxative (castor oil)|Castor oil; PGPR emulsifier
+   Pinolenic acid|Omega-6 C18:3 (delta-5)|Studied for appetite effects|Pine nuts
+  Trans fats
+   Rumenic acid (CLA c9,t11)|Main natural CLA isomer|Studied for anti-cancer, body-composition effects|Milk fat, beef, lamb
+   CLA t10,c12|CLA isomer (mainly synthetic)|Reduces fat in animal studies|CLA supplements
+   Trans-palmitoleic acid (C16:1 t9)|Ruminant trans fat|Biomarker of dairy intake|Milk, butter, cheese
+  Sterols and other lipids
+   Phosphatidylcholine|Main phospholipid (lecithin)|Cell membranes; choline source|Egg yolk, soybeans, liver
+   Phosphatidylethanolamine|Membrane phospholipid|Membrane curvature, autophagy|Egg yolk, soybeans, meat
+   Phosphatidylserine|Membrane phospholipid|Brain cell signaling|Mackerel, chicken heart, white beans, soy
+   Phosphatidylinositol|Membrane phospholipid|Cell signaling (inositol phosphates)|Soy lecithin, organ meats
+   Sphingomyelin|Sphingolipid of cell membranes|Nerve myelin; milk-fat globule membrane|Milk, eggs, cheese
+   Plasmalogens|Ether-linked phospholipids|Brain and heart membranes; antioxidant|Shellfish, chicken breast, pork
+   Diglycerides|Glycerol + two fatty acids|Digested like fat|Traces in all oils; E471
+   Monoglycerides|Glycerol + one fatty acid|Digestion product of fat|Traces in oils; E471
+   Squalene|Triterpene hydrocarbon (cholesterol precursor)|Antioxidant in skin|Olive oil, shark liver oil, amaranth

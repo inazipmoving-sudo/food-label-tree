@@ -1,0 +1,174 @@
+Bioactives
+ Polyphenols
+  Flavonoids
+   Flavonols
+    Isorhamnetin|Methylated quercetin flavonol|Antioxidant|Onions, pears, almonds, sea buckthorn
+    Fisetin|Flavonol|Senolytic effects studied in animals|Strawberries, apples, persimmons, onions
+    Quercetin-3-glucoside (isoquercitrin)|Well-absorbed quercetin glycoside|Antioxidant|Onions, apples, buckwheat
+   Flavones
+    Tangeretin|Polymethoxylated citrus flavone|Studied for anti-inflammatory effects|Tangerine and orange peel
+    Nobiletin|Polymethoxylated citrus flavone|Studied for circadian/metabolic effects|Citrus peel (esp. shiikuwasa)
+    Chrysin|Flavone|Studied antioxidant; poorly absorbed|Honey, propolis
+    Diosmin|Flavone glycoside|Vascular tone (vein health)|Citrus fruits (small amounts)
+   Flavanones
+    Naringin|Bitter flavanone glycoside|Grapefruit drug interactions (with furanocoumarins)|Grapefruit, pomelo
+    Eriodictyol|Flavanone|Antioxidant; masks bitterness|Lemons, yerba santa
+    Neohesperidin|Bitter flavanone glycoside|Antioxidant; precursor of E959 sweetener|Bitter orange (Seville)
+   Flavan-3-ols
+    Epigallocatechin (EGC)|Tea catechin|Antioxidant|Green tea
+    Epicatechin gallate (ECG)|Tea catechin|Antioxidant|Green tea
+    Theaflavins|Catechin dimers formed when tea is oxidized|Antioxidant; give black tea color|Black tea
+    Thearubigins|Large catechin polymers|Antioxidant; red-brown tea color|Black tea
+   Anthocyanins
+    Peonidin|Methylated anthocyanidin|Antioxidant|Cranberries, purple sweet potato, cherries
+    Petunidin|Anthocyanidin|Antioxidant|Black grapes, blueberries, black beans
+   Isoflavones
+    Glycitein|Soy isoflavone|Weak estrogen-like activity|Soy germ, soybeans
+    Formononetin|Methoxylated isoflavone|Weak estrogen-like activity|Red clover, chickpeas
+    Biochanin A|Methoxylated isoflavone|Weak estrogen-like activity|Chickpeas, red clover, peanuts
+    Equol|Isoflavone made by gut bacteria from daidzein|Stronger estrogen-like activity (only some people produce it)|Made in the gut from soy daidzein
+   Dihydrochalcones
+    Phloridzin|Apple dihydrochalcone glycoside|Blocks glucose transporter SGLT|Apples (peel, seeds), apple juice
+    Phloretin|Aglycone of phloridzin|Antioxidant|Apples
+   Chalcones
+    Xanthohumol|Prenylated chalcone|Studied anti-inflammatory|Hops, beer
+  Phenolic acids
+   p-Coumaric acid|Hydroxycinnamic acid|Antioxidant|Peanuts, tomatoes, carrots, whole grains
+   Sinapic acid|Hydroxycinnamic acid|Antioxidant|Mustard, rapeseed, berries
+   Protocatechuic acid|Hydroxybenzoic acid|Antioxidant; anthocyanin metabolite|Olives, onions, hibiscus
+   Vanillic acid|Hydroxybenzoic acid|Antioxidant|Vanilla, acai, olive oil
+   Syringic acid|Hydroxybenzoic acid|Antioxidant|Olives, dates, red wine
+   Salicylic acid|Hydroxybenzoic acid (aspirin relative)|Anti-inflammatory|Herbs, spices, berries, tomatoes
+   Dicaffeoylquinic acids (cynarin)|Caffeic acid esters|Bile flow; antioxidant|Artichoke, coffee
+  Hydrolysable tannins
+   Punicalagin|Large ellagitannin|Converted to ellagic acid and urolithins|Pomegranate (husk and juice)
+   Urolithin A|Gut-bacteria metabolite of ellagitannins|Studied for mitochondrial (mitophagy) effects|Made in gut from pomegranate, walnuts, berries
+   Gallotannins|Gallic acid-based tannins|Astringent; antioxidant|Mango, tea, oak-aged wine
+  Stilbenes
+   Piceatannol|Hydroxylated resveratrol|Antioxidant|Passion fruit seeds, grapes, white tea
+   Piceid (polydatin)|Resveratrol glucoside|Converted to resveratrol|Grape juice, peanuts, cocoa
+  Lignans
+   Matairesinol|Plant lignan|Converted to enterolactone|Flaxseed, sesame, rye
+   Pinoresinol|Plant lignan|Converted to enterolignans|Olive oil, sesame, whole grains
+   Lariciresinol|Plant lignan|Converted to enterolignans|Sesame, broccoli, kale, rye
+   Enterolactone|Mammalian lignan made by gut bacteria|Weak estrogen-like activity|Made in gut from plant lignans
+  Coumestans
+   Coumestrol|Coumestan phytoestrogen|Estrogen-like activity|Alfalfa sprouts, clover sprouts, split peas
+  Coumarins
+   Coumarin|Sweet-smelling lactone|Liver toxicity at high intake|Cassia cinnamon, tonka beans, sweet clover
+   Furanocoumarins (bergamottin)|Coumarin derivatives|Block CYP3A4 (grapefruit drug interactions)|Grapefruit, limes, parsnips, celery
+  Other polyphenols
+   Demethoxycurcumin|Curcuminoid|Anti-inflammatory|Turmeric
+   Oleuropein|Bitter olive secoiridoid|Converted to hydroxytyrosol|Olive leaves, green olives, olive oil
+   Tyrosol|Olive phenol|Antioxidant|Olive oil, white wine
+   Shogaols|Dehydrated gingerols (more pungent)|Anti-nausea, anti-inflammatory|Dried or cooked ginger
+   Alkylresorcinols|Phenolic lipids|Biomarker of whole-grain intake|Whole wheat, rye bran
+   Avenanthramides|Oat-specific polyphenols|Anti-itch, anti-inflammatory|Oats
+   Carnosic acid|Phenolic diterpene|Antioxidant (main in E392)|Rosemary, sage
+   Carnosol|Phenolic diterpene|Antioxidant|Rosemary, sage
+ Carotenoids
+  Canthaxanthin|Red keto-carotenoid (E161g)|Antioxidant; high doses deposit in retina|Mushrooms (chanterelle), crustaceans, farmed trout feed
+  Fucoxanthin|Brown-seaweed carotenoid|Studied for fat metabolism|Wakame, hijiki, kombu
+  Capsanthin|Red pepper carotenoid|Antioxidant|Red bell peppers, paprika
+  Capsorubin|Red pepper carotenoid|Antioxidant|Red peppers, paprika
+  Crocin|Water-soluble saffron carotenoid|Studied for mood effects|Saffron, gardenia fruit
+  Crocetin|Carotenoid aglycone of crocin|Antioxidant|Saffron
+  Bixin|Apocarotenoid (E160b)|Antioxidant|Annatto seeds
+  Phytoene|Colorless carotenoid precursor|Absorbs UV; skin|Tomatoes, carrots, apricots
+  Phytofluene|Colorless carotenoid|Absorbs UV; skin|Tomatoes, carrots, oranges
+  Violaxanthin|Xanthophyll|Antioxidant|Spinach, mango, green leaves
+  Neoxanthin|Xanthophyll|Antioxidant|Spinach, green leaves
+  Gamma-carotene|Provitamin A carotene|Some vitamin A activity|Rose hips, apricots, carrots
+ Glucosinolates and derivatives
+  Glucobrassicin|Indole glucosinolate|Precursor of indole-3-carbinol|Broccoli, Brussels sprouts, cabbage
+  Gluconasturtiin|Glucosinolate|Precursor of phenethyl isothiocyanate|Watercress, horseradish
+  Sinalbin|Glucosinolate of white mustard|Mild mustard pungency|White/yellow mustard seed
+  Glucotropaeolin|Glucosinolate|Precursor of benzyl isothiocyanate|Garden cress, papaya seeds, nasturtium
+  Allyl isothiocyanate|Pungent isothiocyanate from sinigrin|Antimicrobial; sinus "heat"|Mustard, horseradish, wasabi
+  Phenethyl isothiocyanate (PEITC)|Isothiocyanate|Detox enzyme induction studied|Watercress
+  Benzyl isothiocyanate|Isothiocyanate|Antimicrobial|Garden cress, papaya seeds
+  Erucin|Isothiocyanate|Nrf2 activation|Arugula (rocket)
+  3,3'-Diindolylmethane (DIM)|Condensation product of indole-3-carbinol|Estrogen metabolism|Formed in stomach from cruciferous vegetables
+ Organosulfur compounds
+  Alliin|Odorless garlic sulfoxide|Converted to allicin when crushed|Whole garlic
+  Diallyl disulfide|Allicin breakdown product|Antimicrobial; garlic odor|Cooked garlic, garlic oil
+  Ajoene|Allicin-derived compound|Antiplatelet, antimicrobial|Crushed garlic macerated in oil
+  S-methylcysteine sulfoxide|Sulfur amino acid derivative|Studied for metabolic effects|Broccoli, cabbage, onions
+  Syn-propanethial-S-oxide|Onion lachrymatory factor|Makes eyes tear|Freshly cut onions
+ Alkaloids and methylxanthines
+  Solanine|Glycoalkaloid|Toxic at high levels (green potatoes)|Potato skins and sprouts, green potatoes
+  Tomatine|Tomato glycoalkaloid|Binds cholesterol; low toxicity|Green tomatoes
+  Synephrine|Protoalkaloid (amine)|Mild stimulant|Bitter orange, mandarins
+  Quinine|Bitter alkaloid|Antimalarial; bitterness|Tonic water (cinchona bark)
+  Dihydrocapsaicin|Capsaicinoid|Pungency (heat)|Chili peppers
+  Paraxanthine|Main caffeine metabolite|Stimulant|Made in the liver from caffeine
+  Theacrine|Purine alkaloid|Mild stimulant|Kucha tea (Camellia assamica var. kucha)
+  Huperzine A|Sesquiterpene alkaloid|Acetylcholinesterase inhibitor|Chinese club moss (supplements)
+ Terpenes and terpenoids
+  D-Limonene|Citrus monoterpene|Studied anti-cancer; flavor|Orange and lemon peel
+  Linalool|Floral monoterpene alcohol|Calming effects studied|Coriander, basil, lavender
+  Myrcene|Monoterpene|Sedative effects studied|Hops, mango, lemongrass, thyme
+  Alpha-pinene|Monoterpene|Bronchodilator effects studied|Pine nuts, rosemary, basil
+  Thymol|Phenolic monoterpene|Antimicrobial|Thyme, oregano
+  Carvacrol|Phenolic monoterpene|Antimicrobial|Oregano, thyme
+  Beta-caryophyllene|Sesquiterpene; binds CB2 receptors|Anti-inflammatory|Black pepper, cloves, hops
+  Ursolic acid|Pentacyclic triterpenoid|Muscle effects studied|Apple peel, cranberries, holy basil
+  Oleanolic acid|Pentacyclic triterpenoid|Liver-protective effects studied|Olives, olive oil, clove
+  Glycyrrhizin|Triterpenoid saponin (very sweet)|Raises blood pressure in excess|Licorice root
+  Nootkatone|Sesquiterpene ketone|Grapefruit aroma; insect repellent|Grapefruit
+  Cucurbitacins|Bitter triterpenoids|Toxic in high amounts (bitter squash)|Bitter cucumbers, zucchini, gourds
+  Ginkgolides|Diterpene lactones|Platelet-activating factor antagonist|Ginkgo (supplements)
+ Saponins
+  Soyasaponins|Triterpenoid saponins|Bind cholesterol|Soybeans, chickpeas, lentils
+  Ginsenosides|Triterpene saponins|Adaptogenic effects studied|Ginseng
+  Avenacosides|Steroidal saponins|Antifungal in plant|Oats
+  Diosgenin|Steroidal sapogenin|Precursor for steroid synthesis|Wild yam, fenugreek
+  Quinoa saponins|Bitter triterpenoid saponins|Bitter coating; removed by rinsing|Quinoa seed coat
+ Phytoestrogens
+  8-Prenylnaringenin|Potent prenylflavonoid phytoestrogen|Strong estrogen-like activity|Hops, beer
+  Isoflavones (see Isoflavones)|Group: genistein, daidzein, glycitein|Weak estrogen-like activity|Soy foods
+  Lignans (see Lignans)|Group: secoisolariciresinol, matairesinol|Converted to enterolignans|Flaxseed, sesame
+ Biogenic amines
+  Histamine|Amine from histidine|Allergy-like reactions; scombroid fish poisoning|Aged cheese, wine, cured meats, spoiled fish
+  Tyramine|Amine from tyrosine|Raises blood pressure with MAOI drugs|Aged cheese, cured meats, soy sauce
+  Putrescine|Polyamine|Cell growth|Oranges, cheese, fermented foods
+  Cadaverine|Amine from lysine|Spoilage indicator|Fermented and spoiled fish/meat
+  Spermidine|Polyamine|Autophagy; longevity studied|Wheat germ, natto, aged cheese, mushrooms
+  Spermine|Polyamine|Cell growth, DNA stability|Meat, fish, soy
+  Phenylethylamine|Trace amine|Mild mood effects|Chocolate, cheese, wine
+  Serotonin (dietary)|Monoamine|Does not cross blood-brain barrier when eaten|Bananas, walnuts, pineapple, tomatoes
+  Dopamine (dietary)|Catecholamine|Does not cross blood-brain barrier when eaten|Bananas, avocados, potatoes
+  Melatonin (dietary)|Indoleamine hormone|Sleep-wake regulation|Tart cherries, pistachios, tomatoes, eggs
+ Other bioactives
+  Lactoferrin|Iron-binding milk glycoprotein|Antimicrobial; iron transport|Colostrum, milk, whey
+  Immunoglobulins|Antibody proteins|Gut immune support|Colostrum, milk
+  Glutathione (dietary)|Tripeptide antioxidant|Antioxidant (poorly absorbed intact)|Asparagus, avocado, spinach, okra
+  Gamma-oryzanol|Ferulic acid esters of sterols|Lowers cholesterol|Rice bran oil
+  Policosanols|Long-chain fatty alcohols|Cholesterol effects inconsistent|Sugarcane wax, wheat germ, rice bran
+  Hydroxycitric acid|Organic acid|Studied for appetite; evidence weak|Garcinia cambogia, hibiscus
+  Anserine|Histidine dipeptide|Muscle buffering, antioxidant|Chicken, salmon, tuna
+  Carnosine|Beta-alanyl-histidine dipeptide|Muscle buffering, antiglycation|Beef, pork, chicken
+  Lectins (phytohaemagglutinin)|Carbohydrate-binding proteins|Toxic raw; destroyed by boiling|Raw red kidney beans
+  Trypsin inhibitors|Protease-inhibiting proteins|Reduce protein digestion if raw|Raw soybeans, legumes
+  Cyanogenic glycosides (amygdalin, linamarin)|Release cyanide when crushed|Toxic in excess|Bitter almonds, apricot kernels, raw cassava
+ Probiotics and live cultures
+  Lactiplantibacillus plantarum|Lactic acid bacterium|Gut barrier support|Sauerkraut, kimchi, sourdough, pickles
+  Lacticaseibacillus casei / paracasei|Lactic acid bacteria|Gut and immune support|Fermented milks, cheese
+  Limosilactobacillus reuteri|Lactic acid bacterium|Infant colic, gut health studied|Some yogurts, supplements
+  Lactobacillus helveticus|Lactic acid bacterium|Cheese ripening; peptides studied for blood pressure|Swiss-type cheeses, fermented milk
+  Lactobacillus gasseri|Lactic acid bacterium|Studied for weight effects|Supplements, some fermented milks
+  Lactococcus lactis|Lactic acid starter|Cheese and buttermilk fermentation|Cheddar, buttermilk, sour cream
+  Leuconostoc mesenteroides|Heterofermentative lactic acid bacterium|Early fermentation of vegetables|Sauerkraut, kimchi
+  Bifidobacterium bifidum|Probiotic bifidobacterium|Gut health|Some yogurts, supplements
+  Bifidobacterium breve|Probiotic bifidobacterium|Infant gut health|Supplements, infant formula
+  Bacillus coagulans (Weizmannia coagulans)|Spore-forming probiotic|Survives baking; gut health|Fortified foods, supplements
+  Bacillus subtilis var. natto|Spore-forming bacterium|Makes vitamin K2 and nattokinase|Natto
+  Propionibacterium freudenreichii|Propionic acid bacterium|Makes B12 and Swiss-cheese holes|Emmental, Swiss cheese
+  Kombucha SCOBY yeasts/bacteria|Symbiotic culture (Acetobacter, yeasts)|Fermentation; probiotic effects unclear|Kombucha
+  Penicillium roqueforti|Mold culture|Blue-cheese ripening|Roquefort, Gorgonzola, Stilton
+  Penicillium camemberti|Mold culture|White rind ripening|Brie, Camembert
+  Aspergillus oryzae (koji)|Mold culture|Ferments soy and rice|Miso, soy sauce, sake
+ Prebiotics (see Carbohydrates)
+  Prebiotic fibers overview|Fibers selectively used by beneficial microbes: inulin, FOS, GOS, XOS, resistant starch, beta-glucan|Feed bifidobacteria/lactobacilli; make short-chain fatty acids|Chicory, onions, garlic, leeks, bananas, oats, legumes
+ Postbiotics
+  Short-chain fatty acids (butyrate, propionate, acetate)|Fatty acids made by gut bacteria from fiber|Fuel colon cells, regulate inflammation and appetite|Made in gut from fiber; butyrate also in butter

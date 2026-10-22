@@ -1,475 +1,1148 @@
 Macronutrients
  Protein
   Essential amino acids
-   Histidine|Essential amino acid with an imidazole side chain|Precursor of histamine; needed for growth and tissue repair
-   Isoleucine|Branched-chain essential amino acid (BCAA)|Muscle protein synthesis and energy
-   Leucine|Branched-chain essential amino acid (BCAA)|Key trigger of muscle protein synthesis (mTOR)
-   Lysine|Essential amino acid often limiting in grains|Collagen cross-linking, carnitine synthesis, calcium absorption
-   Methionine|Sulfur-containing essential amino acid|Methyl donor (via SAMe); starts protein synthesis
-   Phenylalanine|Aromatic essential amino acid|Precursor of tyrosine, dopamine, adrenaline
-   Threonine|Essential amino acid with a hydroxyl group|Mucin, collagen and elastin production
-   Tryptophan|Aromatic essential amino acid|Precursor of serotonin, melatonin and niacin
-   Valine|Branched-chain essential amino acid (BCAA)|Muscle metabolism and energy
+   Histidine|Essential amino acid with an imidazole side chain|Precursor of histamine; needed for growth and tissue repair|Meat, fish, poultry, soy, cheese
+   Isoleucine|Branched-chain essential amino acid (BCAA)|Muscle protein synthesis and energy|Meat, fish, eggs, cheese, lentils
+   Leucine|Branched-chain essential amino acid (BCAA)|Key trigger of muscle protein synthesis (mTOR)|Beef, chicken, whey/dairy, eggs, soybeans
+   Lysine|Essential amino acid often limiting in grains|Collagen cross-linking, carnitine synthesis, calcium absorption|Meat, fish, eggs, dairy, lentils, beans
+   Methionine|Sulfur-containing essential amino acid|Methyl donor (via SAMe); starts protein synthesis|Eggs, fish, meat, Brazil nuts, sesame
+   Phenylalanine|Aromatic essential amino acid|Precursor of tyrosine, dopamine, adrenaline|Meat, fish, eggs, dairy, soy
+   Threonine|Essential amino acid with a hydroxyl group|Mucin, collagen and elastin production|Meat, fish, cottage cheese, lentils
+   Tryptophan|Aromatic essential amino acid|Precursor of serotonin, melatonin and niacin|Turkey, chicken, eggs, milk, oats, pumpkin seeds
+   Valine|Branched-chain essential amino acid (BCAA)|Muscle metabolism and energy|Meat, dairy, soy, peanuts
   Conditionally essential amino acids
-   Arginine|Amino acid essential in stress/growth|Nitric oxide production, urea cycle
-   Cysteine|Sulfur amino acid made from methionine|Glutathione and keratin synthesis
-   Glutamine|Most abundant free amino acid in blood|Fuel for gut and immune cells
-   Glycine|Smallest amino acid|Collagen, glutathione, inhibitory neurotransmitter
-   Proline|Cyclic amino acid abundant in collagen|Collagen structure and wound healing
-   Tyrosine|Aromatic amino acid made from phenylalanine|Precursor of dopamine, adrenaline, thyroid hormone
+   Arginine|Amino acid essential in stress/growth|Nitric oxide production, urea cycle|Peanuts, pumpkin seeds, turkey, chickpeas
+   Cysteine|Sulfur amino acid made from methionine|Glutathione and keratin synthesis|Eggs, poultry, garlic, onions, oats
+   Glutamine|Most abundant free amino acid in blood|Fuel for gut and immune cells|Beef, chicken, fish, eggs, dairy, tofu
+   Glycine|Smallest amino acid|Collagen, glutathione, inhibitory neurotransmitter|Gelatin, bone broth, pork skin, chicken skin
+   Proline|Cyclic amino acid abundant in collagen|Collagen structure and wound healing|Gelatin, bone broth, dairy (casein)
+   Tyrosine|Aromatic amino acid made from phenylalanine|Precursor of dopamine, adrenaline, thyroid hormone|Cheese, chicken, fish, soy, almonds
+   Selenocysteine|21st proteinogenic amino acid containing selenium|Active site of selenoproteins (antioxidant enzymes)|Brazil nuts, seafood, organ meats (within proteins)
   Non-essential amino acids
-   Alanine|Simple amino acid made from pyruvate|Glucose-alanine cycle between muscle and liver
-   Asparagine|Amide of aspartic acid|Protein glycosylation, nervous system function
-   Aspartic acid|Acidic amino acid|Urea cycle and neurotransmission
-   Glutamic acid|Acidic amino acid (source of umami taste)|Main excitatory neurotransmitter; nitrogen metabolism
-   Serine|Hydroxyl amino acid|Phospholipid and nucleotide synthesis
+   Alanine|Simple amino acid made from pyruvate|Glucose-alanine cycle between muscle and liver|Meat, fish, eggs, dairy
+   Asparagine|Amide of aspartic acid|Protein glycosylation, nervous system function|Asparagus, potatoes, dairy, meat
+   Aspartic acid|Acidic amino acid|Urea cycle and neurotransmission|Soy, peanuts, meat, asparagus
+   Glutamic acid|Acidic amino acid (source of umami taste)|Main excitatory neurotransmitter; nitrogen metabolism|Parmesan, tomatoes, mushrooms, soy sauce, meat
+   Serine|Hydroxyl amino acid|Phospholipid and nucleotide synthesis|Eggs, soy, dairy, meat
   Protein types seen on labels
-   Whey protein|Soluble milk protein fraction|Fast-digesting complete protein
-   Casein|Main milk protein (~80%)|Slow-digesting complete protein
-   Soy protein|Protein from soybeans|Complete plant protein
-   Pea protein|Protein isolated from yellow peas|Plant protein rich in lysine
-   Gluten|Wheat/barley/rye protein (gliadin + glutenin)|Gives dough elasticity; triggers celiac disease
-   Collagen / gelatin|Structural animal protein rich in glycine and proline|Connective tissue support; incomplete protein
-   Collagen peptides|Hydrolyzed collagen|Provides glycine/proline; studied for skin and joints
-   Bioactive peptides (e.g. carnosine, anserine)|Small peptides in meat and fish|Muscle acid buffering, antioxidant
-   Egg albumin|Main egg white protein|High-quality complete protein
+   Whey protein|Soluble milk protein fraction|Fast-digesting complete protein|Milk, ricotta, yogurt
+   Casein|Main milk protein (~80%)|Slow-digesting complete protein|Milk, cheese, yogurt
+   Soy protein|Protein from soybeans|Complete plant protein|Soybeans, tofu, tempeh, edamame
+   Pea protein|Protein isolated from yellow peas|Plant protein rich in lysine|Yellow split peas, green peas
+   Gluten|Wheat/barley/rye protein (gliadin + glutenin)|Gives dough elasticity; triggers celiac disease|Wheat, barley, rye, spelt
+   Collagen / gelatin|Structural animal protein rich in glycine and proline|Connective tissue support; incomplete protein|Bone broth, pork skin, chicken skin, fish skin
+   Collagen peptides|Hydrolyzed collagen|Provides glycine/proline; studied for skin and joints|Bone broth; supplements from hides/fish skin
+   Bioactive peptides (e.g. carnosine, anserine)|Small peptides in meat and fish|Muscle acid buffering, antioxidant|Beef, chicken, pork, tuna
+   Egg albumin|Main egg white protein|High-quality complete protein|Egg whites
+  Non-proteinogenic amino acids in foods
+   Ornithine|Urea-cycle amino acid not built into proteins|Ammonia removal; arginine metabolism|Cheese, fish, meat (small free amounts)
+   Citrulline|Urea-cycle amino acid|Converted to arginine; nitric oxide production|Watermelon (esp. rind), cucumber, melons
+   GABA (gamma-aminobutyric acid)|Amino acid neurotransmitter|Inhibitory neurotransmitter; dietary effects on brain unclear|Fermented foods, tomatoes, germinated brown rice, tea (GABA tea)
+   Hydroxyproline|Modified proline in collagen|Collagen stability|Gelatin, bone broth, skin
+   Hydroxylysine|Modified lysine in collagen|Collagen cross-linking|Gelatin, bone broth
+   Betaine (trimethylglycine)|Glycine derivative|Methyl donor; lowers homocysteine|Beets, spinach, wheat bran, quinoa
+   Sarcosine (N-methylglycine)|Glycine derivative|Intermediate of choline/glycine metabolism|Egg yolks, turkey, ham, legumes
+   Ergothioneine|Sulfur-containing histidine derivative|Antioxidant with its own transporter in cells|Mushrooms (esp. king oyster, porcini), oats
  Carbohydrates
   Monosaccharides
-   Glucose|Simple 6-carbon sugar (dextrose)|Primary fuel for cells and brain
-   Fructose|Fruit sugar, 6-carbon ketose|Metabolized mainly in the liver
-   Galactose|6-carbon sugar, half of lactose|Converted to glucose in the liver
-   Ribose|5-carbon sugar|Backbone of RNA and ATP
+   Glucose|Simple 6-carbon sugar (dextrose)|Primary fuel for cells and brain|Grapes, honey, dates, bananas
+   Fructose|Fruit sugar, 6-carbon ketose|Metabolized mainly in the liver|Apples, pears, honey, mangoes, dates
+   Galactose|6-carbon sugar, half of lactose|Converted to glucose in the liver|Milk and dairy (from lactose)
+   Ribose|5-carbon sugar|Backbone of RNA and ATP|All living cells (small amounts); meat, mushrooms
+   Mannose|6-carbon sugar|Glycoprotein synthesis; studied for urinary tract health|Cranberries, apples, peaches (small amounts)
+   Xylose|5-carbon "wood sugar"|Poorly absorbed; used to make xylitol|Corn cobs, birch, fruits (bound in hemicellulose)
+   Arabinose|5-carbon sugar|May reduce sucrose digestion|Bound in pectin and hemicellulose (beets, grains)
+   Tagatose|Rare 6-carbon sugar (fructose isomer)|Low-calorie sweetener|Heated dairy products (traces)
+   Allulose (psicose)|Rare sugar, fructose epimer|Sweet but nearly calorie-free|Figs, raisins, jackfruit (traces)
   Disaccharides
-   Sucrose|Table sugar = glucose + fructose|Quick energy
-   Lactose|Milk sugar = glucose + galactose|Energy; needs lactase enzyme to digest
-   Maltose|Malt sugar = two glucose|Energy from starch breakdown
-   Trehalose|Two glucose units (mushrooms, yeast)|Slowly digested energy
+   Sucrose|Table sugar = glucose + fructose|Quick energy|Sugar cane, sugar beets, maple syrup, pineapple, carrots
+   Lactose|Milk sugar = glucose + galactose|Energy; needs lactase enzyme to digest|Milk, yogurt, soft cheese
+   Maltose|Malt sugar = two glucose|Energy from starch breakdown|Sprouted grains, malt, sweet potatoes
+   Trehalose|Two glucose units (mushrooms, yeast)|Slowly digested energy|Mushrooms, baker's yeast, honey
+   Isomaltulose (palatinose)|Glucose + fructose (slow-digesting)|Slow, steady glucose release|Honey, sugarcane extract (traces)
+   Lactulose|Galactose + fructose formed by heating milk|Not digested; laxative and prebiotic|Heat-treated milk (traces)
+   Cellobiose|Two glucose units (beta-linked)|Not digested by humans|Breakdown product of cellulose; honey
+   Melibiose|Galactose + glucose|Fermented by gut bacteria|Breakdown of raffinose in legumes
   Oligosaccharides
-   Raffinose|Trisaccharide in beans|Fermented by gut bacteria (gas)
-   Stachyose|Tetrasaccharide in legumes|Prebiotic; fermented in the colon
-   Fructooligosaccharides (FOS)|Short fructose chains|Prebiotic fiber
-   Galactooligosaccharides (GOS)|Short galactose chains|Prebiotic; feeds bifidobacteria
+   Raffinose|Trisaccharide in beans|Fermented by gut bacteria (gas)|Beans, cabbage, broccoli, asparagus
+   Stachyose|Tetrasaccharide in legumes|Prebiotic; fermented in the colon|Soybeans, chickpeas, lentils, beans
+   Fructooligosaccharides (FOS)|Short fructose chains|Prebiotic fiber|Onions, garlic, leeks, bananas, asparagus
+   Galactooligosaccharides (GOS)|Short galactose chains|Prebiotic; feeds bifidobacteria|Legumes, human milk
+   Verbascose|Pentasaccharide in legumes|Fermented in colon (gas)|Fava beans, peas, mung beans
+   Human milk oligosaccharides (2'-fucosyllactose)|Complex sugars in breast milk|Feed infant bifidobacteria|Human milk; added to infant formula
+   Xylooligosaccharides (XOS)|Short xylose chains|Prebiotic|Bamboo shoots, fruits, vegetables, honey (small)
+   Isomaltooligosaccharides (IMO)|Short glucose chains (alpha-1,6)|Partly digested; mild prebiotic|Miso, soy sauce, honey
   Starches
-   Amylose|Linear glucose polymer in starch|Slower-digesting starch
-   Amylopectin|Branched glucose polymer in starch|Rapidly digested energy
-   Resistant starch|Starch that escapes small-intestine digestion|Acts like fiber; feeds gut bacteria
-   Maltodextrin|Partially broken-down starch|Very fast-absorbing carbohydrate
-   Modified starch|Chemically/physically altered starch (E1404-E1452)|Thickener; digested like starch
-   Glycogen|Animal storage form of glucose|Energy reserve in liver and muscle
+   Amylose|Linear glucose polymer in starch|Slower-digesting starch|Legumes, long-grain rice, potatoes
+   Amylopectin|Branched glucose polymer in starch|Rapidly digested energy|Potatoes, sticky rice, wheat, corn
+   Resistant starch|Starch that escapes small-intestine digestion|Acts like fiber; feeds gut bacteria|Green bananas, cooled potatoes/rice, beans, oats
+   Maltodextrin|Partially broken-down starch|Very fast-absorbing carbohydrate|Not naturally in foods; snacks, sports drinks
+   Modified starch|Chemically/physically altered starch (E1404-E1452)|Thickener; digested like starch|Not naturally in foods; sauces, soups, desserts
+   Glycogen|Animal storage form of glucose|Energy reserve in liver and muscle|Liver, muscle meat, shellfish (small amounts)
+   Dextrin|Partially hydrolysed starch|Digested to glucose|Toasted bread crust; added as thickener
+   Resistant dextrin|Heat/acid-treated starch fiber|Soluble fiber, prebiotic|Not naturally in foods; fiber-enriched products
+   Phytoglycogen|Water-soluble glycogen-like plant starch|Energy|Sweet corn
   Fiber
    Soluble fiber
-    Beta-glucan|Soluble fiber in oats and barley|Lowers LDL cholesterol
-    Pectin|Soluble fiber in fruit (E440)|Gel-forming; slows digestion
-    Inulin|Fructose polymer from chicory, onions|Prebiotic; feeds gut bacteria
-    Psyllium|Mucilage fiber from Plantago seeds|Bulks stool; lowers cholesterol
-    Guar gum (as fiber)|Galactomannan from guar beans|Slows glucose absorption
-    Glucomannan|Fiber from konjac root|Absorbs water; promotes fullness
-    Alginate|Fiber from brown seaweed|Forms gels in the gut
+    Beta-glucan|Soluble fiber in oats and barley|Lowers LDL cholesterol|Oats, barley, mushrooms
+    Pectin|Soluble fiber in fruit (E440)|Gel-forming; slows digestion|Apples, citrus peel, quince, plums
+    Inulin|Fructose polymer from chicory, onions|Prebiotic; feeds gut bacteria|Chicory root, Jerusalem artichoke, onions, garlic
+    Psyllium|Mucilage fiber from Plantago seeds|Bulks stool; lowers cholesterol|Psyllium husk (Plantago ovata seed)
+    Guar gum (as fiber)|Galactomannan from guar beans|Slows glucose absorption|Guar beans
+    Glucomannan|Fiber from konjac root|Absorbs water; promotes fullness|Konjac root (shirataki noodles)
+    Alginate|Fiber from brown seaweed|Forms gels in the gut|Brown seaweeds (kelp, wakame)
+    Arabinoxylan|Hemicellulose fiber of cereal grains|Prebiotic; slows glucose rise|Wheat bran, rye, psyllium
+    Galactomannans|Mannose-galactose polymers|Viscous fiber; lowers cholesterol|Guar, locust bean, fenugreek
+    Arabinogalactan|Branched galactose-arabinose fiber|Prebiotic; immune effects studied|Larch, carrots, radish, tomatoes
+    Fucoidan|Sulfated seaweed polysaccharide|Studied for immune and anticoagulant effects|Brown seaweeds (kombu, wakame)
+    Mucilage|Gel-forming plant polysaccharides|Soothes gut; bulks stool|Flaxseed, chia, okra
+    Polydextrose|Synthetic glucose polymer (E1200)|Soluble fiber, ~1 kcal/g|Not naturally in foods; low-sugar products
    Insoluble fiber
-    Cellulose|Glucose polymer of plant cell walls|Adds stool bulk
-    Hemicellulose|Mixed plant cell-wall polysaccharides|Adds bulk; partly fermented
-    Lignin|Non-carbohydrate woody polymer counted as fiber|Adds bulk; binds bile acids
-    Chitin|Fiber in mushrooms and crustacean shells|Indigestible bulk
+    Cellulose|Glucose polymer of plant cell walls|Adds stool bulk|Vegetables, fruit skins, bran, whole grains
+    Hemicellulose|Mixed plant cell-wall polysaccharides|Adds bulk; partly fermented|Bran, whole grains, legumes, nuts
+    Lignin|Non-carbohydrate woody polymer counted as fiber|Adds bulk; binds bile acids|Flaxseed, wheat bran, berry seeds, root vegetables
+    Chitin|Fiber in mushrooms and crustacean shells|Indigestible bulk|Mushrooms, crab and shrimp shells
+    Xyloglucan|Hemicellulose in plant cell walls|Adds bulk|Tamarind seed, fruits, vegetables
+    Cutin / suberin|Waxy plant-surface polymers counted as fiber|Adds bulk|Fruit and vegetable skins
   Sugar alcohols (polyols)
-   Sorbitol|Polyol from glucose (E420)|Low-calorie sweetener; laxative in excess
-   Mannitol|Polyol (E421)|Sweetener; laxative in excess
-   Xylitol|5-carbon polyol (E967)|Sweetener that does not feed tooth-decay bacteria
-   Erythritol|4-carbon polyol (E968)|Nearly zero-calorie sweetener
-   Maltitol|Polyol from maltose (E965)|Sugar-like sweetener with fewer calories
-   Isomalt|Polyol from sucrose (E953)|Sugar-free candy sweetener
-   Lactitol|Polyol from lactose (E966)|Low-calorie sweetener
+   Sorbitol|Polyol from glucose (E420)|Low-calorie sweetener; laxative in excess|Prunes, pears, apples, peaches
+   Mannitol|Polyol (E421)|Sweetener; laxative in excess|Mushrooms, cauliflower, celery
+   Xylitol|5-carbon polyol (E967)|Sweetener that does not feed tooth-decay bacteria|Plums, strawberries, cauliflower (traces); birch/corn-derived
+   Erythritol|4-carbon polyol (E968)|Nearly zero-calorie sweetener|Grapes, pears, melon, fermented foods (traces)
+   Maltitol|Polyol from maltose (E965)|Sugar-like sweetener with fewer calories|Not naturally in significant amounts; sugar-free candy
+   Isomalt|Polyol from sucrose (E953)|Sugar-free candy sweetener|Not naturally in foods; sugar-free hard candy
+   Lactitol|Polyol from lactose (E966)|Low-calorie sweetener|Not naturally in foods; sugar-free desserts
  Fats
   Saturated fatty acids
-   Butyric acid (C4:0)|Short-chain saturated fat in butter|Fuel for colon cells
-   Caproic acid (C6:0)|Short/medium-chain fat in goat milk|Quick energy
-   Caprylic acid (C8:0)|Medium-chain fat (MCT) in coconut|Rapidly converted to ketones
-   Capric acid (C10:0)|Medium-chain fat (MCT)|Quick energy
-   Lauric acid (C12:0)|Main fat in coconut and palm kernel oil|Raises HDL and LDL
-   Myristic acid (C14:0)|Saturated fat in dairy and nutmeg|Raises LDL cholesterol
-   Palmitic acid (C16:0)|Most common saturated fat (palm, meat)|Energy; raises LDL in excess
-   Stearic acid (C18:0)|Saturated fat in cocoa butter, beef|Largely neutral on LDL
-   Arachidic acid (C20:0)|Long-chain saturated fat in peanut oil|Minor energy source
+   Butyric acid (C4:0)|Short-chain saturated fat in butter|Fuel for colon cells|Butter, ghee, Parmesan
+   Caproic acid (C6:0)|Short/medium-chain fat in goat milk|Quick energy|Goat milk, butter, coconut oil
+   Caprylic acid (C8:0)|Medium-chain fat (MCT) in coconut|Rapidly converted to ketones|Coconut oil, palm kernel oil, goat milk
+   Capric acid (C10:0)|Medium-chain fat (MCT)|Quick energy|Coconut oil, palm kernel oil, goat milk
+   Lauric acid (C12:0)|Main fat in coconut and palm kernel oil|Raises HDL and LDL|Coconut oil, palm kernel oil
+   Myristic acid (C14:0)|Saturated fat in dairy and nutmeg|Raises LDL cholesterol|Nutmeg, coconut oil, butter
+   Palmitic acid (C16:0)|Most common saturated fat (palm, meat)|Energy; raises LDL in excess|Palm oil, beef, butter, cocoa butter
+   Stearic acid (C18:0)|Saturated fat in cocoa butter, beef|Largely neutral on LDL|Cocoa butter, beef tallow, lard
+   Arachidic acid (C20:0)|Long-chain saturated fat in peanut oil|Minor energy source|Peanut oil, macadamia
+   Pentadecanoic acid (C15:0)|Odd-chain saturated fat|Biomarker of dairy intake|Butter, milk, cheese
+   Margaric acid (C17:0)|Odd-chain saturated fat|Biomarker of dairy intake|Dairy fat, beef
+   Behenic acid (C22:0)|Very-long-chain saturated fat|Poorly absorbed|Peanut oil, canola oil, moringa oil
+   Lignoceric acid (C24:0)|Very-long-chain saturated fat|Part of sphingolipids|Peanut oil, nuts
   Monounsaturated fatty acids
-   Oleic acid (omega-9)|Main fat in olive oil|Supports healthy cholesterol levels
-   Palmitoleic acid (omega-7)|MUFA in macadamia, sea buckthorn|Signaling lipid
-   Erucic acid (omega-9)|MUFA in rapeseed/mustard|Limited in food due to heart effects
+   Oleic acid (omega-9)|Main fat in olive oil|Supports healthy cholesterol levels|Olive oil, avocado, almonds, macadamia, lard
+   Palmitoleic acid (omega-7)|MUFA in macadamia, sea buckthorn|Signaling lipid|Macadamia nuts, sea buckthorn, fish
+   Erucic acid (omega-9)|MUFA in rapeseed/mustard|Limited in food due to heart effects|Mustard seed, traditional rapeseed
+   Myristoleic acid (C14:1)|Rare omega-5 MUFA|Minor fatty acid|Butter, beef fat, saw palmetto
+   Petroselinic acid (C18:1 n-12)|Positional isomer of oleic acid|Minor fatty acid|Coriander, parsley and carrot seeds
+   Gondoic acid (C20:1 n-9)|Long-chain omega-9|Minor fatty acid|Jojoba, rapeseed, camelina, fish oil
+   Nervonic acid (C24:1 n-9)|Very-long-chain omega-9|Part of nerve myelin sphingolipids|Salmon, mustard seed oil, flaxseed (traces)
   Polyunsaturated omega-3
-   ALA (alpha-linolenic acid)|Plant omega-3 in flax, chia, walnuts|Essential fat; partly converted to EPA/DHA
-   SDA (stearidonic acid)|Omega-3 in hemp and echium oil|Intermediate toward EPA
-   EPA (eicosapentaenoic acid)|Marine omega-3|Anti-inflammatory signaling
-   DPA (docosapentaenoic acid)|Marine omega-3|Intermediate between EPA and DHA
-   DHA (docosahexaenoic acid)|Marine omega-3|Brain and retina structure
+   ALA (alpha-linolenic acid)|Plant omega-3 in flax, chia, walnuts|Essential fat; partly converted to EPA/DHA|Flaxseed, chia, walnuts, hemp, canola oil
+   SDA (stearidonic acid)|Omega-3 in hemp and echium oil|Intermediate toward EPA|Hemp seed oil, echium oil, blackcurrant seed oil
+   EPA (eicosapentaenoic acid)|Marine omega-3|Anti-inflammatory signaling|Salmon, sardines, mackerel, herring
+   DPA (docosapentaenoic acid)|Marine omega-3|Intermediate between EPA and DHA|Salmon, mackerel, seal/fish oil
+   DHA (docosahexaenoic acid)|Marine omega-3|Brain and retina structure|Salmon, sardines, mackerel, algae
+   ETA (eicosatetraenoic acid)|Omega-3 between SDA and EPA|Intermediate toward EPA|Green-lipped mussel, fish oils
   Polyunsaturated omega-6
-   Linoleic acid (LA)|Main omega-6 in seed oils|Essential fat; skin barrier
-   Gamma-linolenic acid (GLA)|Omega-6 in borage, evening primrose|Precursor of anti-inflammatory eicosanoids
-   Arachidonic acid (AA)|Omega-6 in meat and eggs|Precursor of eicosanoids; cell membranes
+   Linoleic acid (LA)|Main omega-6 in seed oils|Essential fat; skin barrier|Sunflower, safflower, corn and soybean oils, walnuts
+   Gamma-linolenic acid (GLA)|Omega-6 in borage, evening primrose|Precursor of anti-inflammatory eicosanoids|Borage oil, evening primrose oil, blackcurrant seed oil
+   Arachidonic acid (AA)|Omega-6 in meat and eggs|Precursor of eicosanoids; cell membranes|Eggs, chicken, beef, organ meats
+   DGLA (dihomo-gamma-linolenic acid)|Omega-6 C20:3|Precursor of anti-inflammatory prostaglandin E1|Organ meats; made from GLA in body
+   Adrenic acid (C22:4 n-6)|Very-long-chain omega-6|Brain and adrenal lipids|Animal fats, organ meats
+   Eicosadienoic acid (C20:2 n-6)|Omega-6 elongation product|Minor eicosanoid precursor|Pine nuts, animal tissues
+   Punicic acid|Conjugated omega-5 C18:3|Studied for anti-inflammatory effects|Pomegranate seed oil
   Trans fats
-   Elaidic acid|Industrial trans fat from partial hydrogenation|Raises LDL, lowers HDL
-   Vaccenic acid|Natural ruminant trans fat in dairy|Partly converted to CLA
-   Conjugated linoleic acid (CLA)|Natural trans/conjugated fat in dairy and beef|Studied for body-composition effects
+   Elaidic acid|Industrial trans fat from partial hydrogenation|Raises LDL, lowers HDL|Partially hydrogenated oils (mostly phased out)
+   Vaccenic acid|Natural ruminant trans fat in dairy|Partly converted to CLA|Butter, milk, beef, lamb
+   Conjugated linoleic acid (CLA)|Natural trans/conjugated fat in dairy and beef|Studied for body-composition effects|Grass-fed beef, lamb, dairy fat
+   Rumenic acid (CLA c9,t11)|Main natural CLA isomer|Studied for anti-cancer, body-composition effects|Milk fat, beef, lamb
+   CLA t10,c12|CLA isomer (mainly synthetic)|Reduces fat in animal studies|CLA supplements
+   Trans-palmitoleic acid (C16:1 t9)|Ruminant trans fat|Biomarker of dairy intake|Milk, butter, cheese
   Sterols and other lipids
-   Cholesterol|Animal sterol|Cell membranes; makes hormones, vitamin D, bile
-   Phospholipids (lecithin)|Fat with phosphate head group|Cell membranes; emulsifier
-   Medium-chain triglycerides (MCT)|Triglycerides of C6-C12 fatty acids|Absorbed directly to the liver; quick energy
-   Triglycerides|Glycerol + three fatty acids|Main storage form of fat
+   Cholesterol|Animal sterol|Cell membranes; makes hormones, vitamin D, bile|Egg yolks, liver, shrimp, butter, meat
+   Phospholipids (lecithin)|Fat with phosphate head group|Cell membranes; emulsifier|Egg yolk, soybeans, sunflower seeds, liver
+   Medium-chain triglycerides (MCT)|Triglycerides of C6-C12 fatty acids|Absorbed directly to the liver; quick energy|Coconut oil, palm kernel oil, dairy fat
+   Triglycerides|Glycerol + three fatty acids|Main storage form of fat|All fats and oils
+   Phosphatidylcholine|Main phospholipid (lecithin)|Cell membranes; choline source|Egg yolk, soybeans, liver
+   Phosphatidylethanolamine|Membrane phospholipid|Membrane curvature, autophagy|Egg yolk, soybeans, meat
+   Phosphatidylserine|Membrane phospholipid|Brain cell signaling|Mackerel, chicken heart, white beans, soy
+   Phosphatidylinositol|Membrane phospholipid|Cell signaling (inositol phosphates)|Soy lecithin, organ meats
+   Sphingomyelin|Sphingolipid of cell membranes|Nerve myelin; milk-fat globule membrane|Milk, eggs, cheese
+   Plasmalogens|Ether-linked phospholipids|Brain and heart membranes; antioxidant|Shellfish, chicken breast, pork
+   Diglycerides|Glycerol + two fatty acids|Digested like fat|Traces in all oils; E471
+   Monoglycerides|Glycerol + one fatty acid|Digestion product of fat|Traces in oils; E471
+   Squalene|Triterpene hydrocarbon (cholesterol precursor)|Antioxidant in skin|Olive oil, shark liver oil, amaranth
+  Other fatty acids
+   Mead acid (C20:3 n-9)|Omega-9 PUFA made when essential fats are lacking|Marker of essential fatty acid deficiency|Made in the body; traces in animal tissues
+   Ricinoleic acid|Hydroxy omega-9 fatty acid|Laxative (castor oil)|Castor oil; PGPR emulsifier
+   Pinolenic acid|Omega-6 C18:3 (delta-5)|Studied for appetite effects|Pine nuts
  Organic acids
-  Citric acid|Acid in citrus fruits|Energy-cycle (Krebs) intermediate
-  Malic acid|Acid in apples|Krebs cycle intermediate
-  Lactic acid|Acid from fermentation (yogurt, sauerkraut)|Recycled to glucose by the liver
-  Acetic acid|Acid in vinegar|Short-chain fatty acid; may blunt glucose spikes
-  Tartaric acid|Acid in grapes|Mostly fermented by gut bacteria
-  Succinic acid|Acid in fermented foods|Krebs cycle intermediate
- Alcohol (ethanol)|Fermentation product, 7 kcal/g|Energy; toxic in excess
+  Citric acid|Acid in citrus fruits|Energy-cycle (Krebs) intermediate|Lemons, limes, oranges, berries
+  Malic acid|Acid in apples|Krebs cycle intermediate|Apples, cherries, grapes, rhubarb
+  Lactic acid|Acid from fermentation (yogurt, sauerkraut)|Recycled to glucose by the liver|Yogurt, sauerkraut, kimchi, sourdough
+  Acetic acid|Acid in vinegar|Short-chain fatty acid; may blunt glucose spikes|Vinegar, kombucha
+  Tartaric acid|Acid in grapes|Mostly fermented by gut bacteria|Grapes, tamarind, wine
+  Succinic acid|Acid in fermented foods|Krebs cycle intermediate|Wine, beer, aged cheese, broccoli
+ Alcohol (ethanol)|Fermentation product, 7 kcal/g|Energy; toxic in excess|Wine, beer, spirits; traces in ripe fruit and kombucha
 Micronutrients
  Vitamins
   Fat-soluble vitamins
    Vitamin A
-    Retinol|Preformed vitamin A in animal foods|Vision, immunity, skin
-    Retinyl palmitate|Ester form used in fortification|Converted to retinol
-    Retinyl acetate|Ester form used in supplements|Converted to retinol
-    Beta-carotene (provitamin A)|Plant pigment converted to vitamin A|Source of vitamin A; antioxidant
+    Retinol|Preformed vitamin A alcohol|Vision, immune function, skin and cell growth|Liver, cod liver oil, egg yolks, butter
+    Retinyl acetate|Synthetic acetate ester of retinol|Vision, immune function, skin and cell growth|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Liver, eggs, dairy fat; provitamin in orange/green vegetables
+    Retinyl palmitate|Palmitate ester of retinol (main storage form)|Vision, immune function, skin and cell growth|Liver, dairy fat; added to fortified milk
+    Beta-carotene (provitamin A)|Orange carotenoid split into two retinal molecules|Vision, immune function, skin and cell growth|Carrots, sweet potatoes, spinach, pumpkin
    Vitamin D
-    Cholecalciferol (D3)|Animal/skin-made vitamin D|Calcium absorption, bone health
-    Ergocalciferol (D2)|Plant/mushroom vitamin D|Calcium absorption (less potent than D3)
+    Cholecalciferol (D3)|Animal form of vitamin D|Calcium absorption, bone health, immune function|Salmon, sardines, cod liver oil, egg yolks
+    Ergocalciferol (D2)|Plant/fungal form of vitamin D|Calcium absorption, bone health, immune function|UV-exposed mushrooms
+    Calcifediol (25-hydroxyvitamin D3)|Liver metabolite of D3 (authorized in EU supplements)|Calcium absorption, bone health, immune function|Meat, eggs (small amounts)
    Vitamin E
-    Alpha-tocopherol|Most active vitamin E form|Antioxidant protecting cell membranes
-    dl-alpha-tocopheryl acetate|Synthetic ester form|Converted to tocopherol
-    Gamma-tocopherol|Main E form in US diet (nuts, oils)|Antioxidant
-    Tocotrienols|Vitamin E forms in palm and rice bran|Antioxidant
+    D-alpha-tocopherol|Natural, most active vitamin E form|Antioxidant protecting cell membranes|Sunflower seeds, almonds, wheat germ oil
+    DL-alpha-tocopherol|Synthetic mix of eight stereoisomers|Antioxidant protecting cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Nuts, seeds, vegetable oils, leafy greens
+    D-alpha-tocopheryl acetate|Natural-source vitamin E ester|Antioxidant protecting cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Nuts, seeds, vegetable oils, leafy greens
+    DL-alpha-tocopheryl acetate|Synthetic vitamin E ester|Antioxidant protecting cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Nuts, seeds, vegetable oils, leafy greens
+    D-alpha-tocopheryl acid succinate|Vitamin E succinate ester|Antioxidant protecting cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Nuts, seeds, vegetable oils, leafy greens
+    Gamma-tocopherol|Main tocopherol in the US diet|Antioxidant protecting cell membranes|Soybean and corn oils, walnuts, pecans
+    Delta-tocopherol|Tocopherol with lower vitamin activity|Antioxidant protecting cell membranes|Soybean oil, wheat germ
+    Tocotrienols|Unsaturated vitamin E family|Antioxidant protecting cell membranes|Palm oil, rice bran, annatto, barley
    Vitamin K
-    Phylloquinone (K1)|Plant vitamin K in leafy greens|Blood clotting
-    Menaquinone-4 (K2 MK-4)|Animal-food vitamin K2|Bone and vascular calcium regulation
-    Menaquinone-7 (K2 MK-7)|Fermented-food K2 (natto)|Long-lasting K activity
+    Phylloquinone (K1, phytomenadione)|Plant form of vitamin K|Blood clotting; bone and vascular calcium regulation|Kale, spinach, broccoli, collards
+    Menaquinone-4 (K2 MK-4)|Animal-tissue form of K2|Blood clotting; bone and vascular calcium regulation|Egg yolks, chicken, butter, liver
+    Menaquinone-7 (K2 MK-7)|Bacterial long-chain K2|Blood clotting; bone and vascular calcium regulation|Natto, some aged cheeses
   Water-soluble vitamins
    Vitamin B1 (thiamin)
-    Thiamin hydrochloride|Fortification form of B1|Carbohydrate metabolism, nerves
-    Thiamin mononitrate|Stable fortification form of B1|Carbohydrate metabolism
+    Thiamin (natural)|Thiamin and thiamin pyrophosphate in foods|Carbohydrate metabolism, nerve function|Pork, whole grains, beans
+    Thiamin hydrochloride|Salt form of B1|Carbohydrate metabolism, nerve function|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Pork, whole grains, legumes, sunflower seeds
+    Thiamin mononitrate|Stable salt form of B1|Carbohydrate metabolism, nerve function|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Pork, whole grains, legumes, sunflower seeds
    Vitamin B2 (riboflavin)
-    Riboflavin|Yellow vitamin (also E101)|Energy metabolism (FAD/FMN)
-    Riboflavin-5'-phosphate|Active phosphate form|Energy metabolism
+    Riboflavin|Yellow B2 vitamin|Energy metabolism (FAD/FMN coenzymes)|Milk, eggs, liver, almonds
+    Riboflavin 5'-phosphate sodium|Soluble phosphate form (FMN)|Energy metabolism (FAD/FMN coenzymes)|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Milk, eggs, liver, almonds, mushrooms
    Vitamin B3 (niacin)
-    Nicotinic acid|Niacin form|Energy metabolism (NAD); lowers lipids at high dose
-    Nicotinamide (niacinamide)|Amide form of niacin|Energy metabolism without flushing
+    Nicotinic acid|Niacin acid form; causes flushing at high doses|Energy metabolism (NAD/NADP)|Grains (bound form), coffee
+    Nicotinamide (niacinamide)|Amide form of niacin|Energy metabolism (NAD/NADP)|Meat, fish, poultry
+    Inositol hexanicotinate|"No-flush" niacin ester (EU supplements)|Energy metabolism (NAD/NADP)|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Tuna, chicken, peanuts, mushrooms; made from tryptophan
    Vitamin B5 (pantothenic acid)
-    Calcium D-pantothenate|Common supplement form|Part of coenzyme A
+    Pantothenic acid (natural)|Free and bound pantothenate in foods|Part of coenzyme A (fat and energy metabolism)|Liver, mushrooms, eggs
+    Calcium D-pantothenate|Calcium salt of B5|Part of coenzyme A (fat and energy metabolism)|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Liver, mushrooms, eggs, avocado, sunflower seeds
+    Sodium D-pantothenate|Sodium salt of B5|Part of coenzyme A (fat and energy metabolism)|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Liver, mushrooms, eggs, avocado, sunflower seeds
+    Dexpanthenol (D-panthenol)|Alcohol form converted to B5|Part of coenzyme A (fat and energy metabolism)|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Liver, mushrooms, eggs, avocado, sunflower seeds
    Vitamin B6
-    Pyridoxine hydrochloride|Supplement form of B6|Amino acid metabolism, neurotransmitters
-    Pyridoxal 5'-phosphate (P5P)|Active coenzyme form|Amino acid metabolism
+    Pyridoxine hydrochloride|Common salt form of B6|Amino acid metabolism, neurotransmitters, hemoglobin|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Chickpeas, tuna, salmon, poultry, potatoes, bananas
+    Pyridoxine 5'-phosphate|Phosphorylated pyridoxine|Amino acid metabolism, neurotransmitters, hemoglobin|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Chickpeas, tuna, salmon, poultry, potatoes, bananas
+    Pyridoxal 5'-phosphate (P5P)|Active coenzyme form|Amino acid metabolism, neurotransmitters, hemoglobin|Meat, fish, poultry
+    Pyridoxamine|Natural B6 vitamer|Amino acid metabolism, neurotransmitters, hemoglobin|Meat, fish
    Vitamin B7 (biotin)
-    D-biotin|Biotin|Fat and carbohydrate metabolism; hair, nails
+    D-biotin|Biotin|Fat, carbohydrate and amino acid metabolism|Egg yolks, liver, nuts, seeds, sweet potato
    Vitamin B9 (folate)
-    Folate (food form)|Natural polyglutamate folates|DNA synthesis, cell division
-    Folic acid|Synthetic fortification form|Prevents neural tube defects
-    L-methylfolate (5-MTHF)|Active folate form|Methylation, DNA synthesis
+    Food folates (polyglutamates)|Natural folate forms|DNA synthesis, cell division; prevents neural tube defects|Leafy greens, lentils, chickpeas, asparagus, liver
+    Folic acid (pteroylmonoglutamic acid)|Synthetic, very stable folate|DNA synthesis, cell division; prevents neural tube defects|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Leafy greens, legumes, asparagus, liver
+    Calcium L-methylfolate (5-MTHF)|Salt of the main active folate|DNA synthesis, cell division; prevents neural tube defects|Leafy greens, legumes, liver (as 5-MTHF)
+    (6S)-5-methyltetrahydrofolic acid glucosamine salt|Active folate salt (EU-authorized)|DNA synthesis, cell division; prevents neural tube defects|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Leafy greens, legumes, asparagus, liver
    Vitamin B12 (cobalamin)
-    Cyanocobalamin|Stable synthetic B12|Nerve function, red blood cells
-    Methylcobalamin|Active coenzyme form|Methylation, nerve function
-    Adenosylcobalamin|Mitochondrial coenzyme form|Energy metabolism
-    Hydroxocobalamin|Natural/injection form|Converted to active B12
+    Cyanocobalamin|Stable synthetic B12|Nerve function, red blood cells, DNA synthesis|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Meat, fish, shellfish, eggs, dairy (not in plants)
+    Hydroxocobalamin|Natural and injection form|Nerve function, red blood cells, DNA synthesis|Meat, fish, dairy
+    5'-deoxyadenosylcobalamin|Mitochondrial coenzyme form|Nerve function, red blood cells, DNA synthesis|Liver, meat, fish
+    Methylcobalamin|Cytosolic coenzyme form|Nerve function, red blood cells, DNA synthesis|Meat, fish, eggs, dairy
    Vitamin C
-    Ascorbic acid|Vitamin C (also E300)|Antioxidant, collagen synthesis, iron absorption
-    Sodium ascorbate|Sodium salt of vitamin C (E301)|Same as vitamin C
-    Calcium ascorbate|Calcium salt of vitamin C (E302)|Same as vitamin C
+    L-ascorbic acid|Vitamin C|Antioxidant, collagen synthesis, iron absorption, immunity|Citrus, bell peppers, kiwi, strawberries
+    Sodium L-ascorbate|Sodium salt of vitamin C|Antioxidant, collagen synthesis, iron absorption, immunity|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Citrus, bell peppers, kiwi, strawberries, broccoli
+    Calcium L-ascorbate|Calcium salt of vitamin C|Antioxidant, collagen synthesis, iron absorption, immunity|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Citrus, bell peppers, kiwi, strawberries, broccoli
+    Potassium L-ascorbate|Potassium salt of vitamin C|Antioxidant, collagen synthesis, iron absorption, immunity|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Citrus, bell peppers, kiwi, strawberries, broccoli
+    Magnesium L-ascorbate|Magnesium salt of vitamin C|Antioxidant, collagen synthesis, iron absorption, immunity|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Citrus, bell peppers, kiwi, strawberries, broccoli
+    Zinc L-ascorbate|Zinc salt of vitamin C|Antioxidant, collagen synthesis, iron absorption, immunity|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Citrus, bell peppers, kiwi, strawberries, broccoli
+    L-ascorbyl 6-palmitate|Fat-soluble vitamin C ester|Antioxidant, collagen synthesis, iron absorption, immunity|Not naturally in foods as this form; fortified foods, supplements. Natural sources: Citrus, bell peppers, kiwi, strawberries, broccoli
   Vitamin-like nutrients
-   Choline|Essential nutrient in eggs and liver|Acetylcholine, cell membranes, liver health
-   Inositol|Sugar-alcohol-like compound|Cell signaling
-   Carnitine|Compound made from lysine and methionine|Shuttles fat into mitochondria
-   Coenzyme Q10|Fat-soluble quinone|Mitochondrial energy, antioxidant
+   Choline|Essential nutrient (vitamin-like)|Acetylcholine, cell membranes, liver fat export|Eggs, liver, beef, fish, soybeans
+   Choline bitartrate|Salt form of choline|Choline source|Not naturally in foods as this form; fortified foods, supplements. Choline is natural in eggs, liver
+   Citicoline (CDP-choline)|Choline-cytidine compound|Choline and phospholipid source|Not naturally in foods as this form; fortified foods, supplements. Small amounts in organ meats
+   Inositol|Sugar-alcohol-like compound|Cell signaling (phosphoinositides)|Citrus, beans, whole grains, nuts
+   L-carnitine|Compound made from lysine and methionine|Shuttles fatty acids into mitochondria|Beef, lamb, pork, dairy
+   Coenzyme Q10 (ubiquinone)|Fat-soluble quinone|Mitochondrial energy, antioxidant|Organ meats, beef, sardines, peanuts
+   Alpha-lipoic acid|Sulfur-containing fatty acid|Mitochondrial enzyme cofactor, antioxidant|Organ meats, spinach, broccoli (small amounts)
+   Pyrroloquinoline quinone (PQQ)|Redox cofactor|Studied for mitochondrial function; essentiality unproven|Natto, parsley, green tea, kiwi (traces)
  Minerals
-  Macrominerals
+  Elements and their permitted forms
    Calcium
-    Calcium carbonate|Common calcium salt (E170)|Bones, teeth, muscle contraction
-    Calcium citrate|Well-absorbed calcium salt|Bones; absorbed without food
-    Calcium phosphate|Calcium salt (E341)|Bones; also anti-caking agent
-    Calcium lactate|Calcium salt (E327)|Calcium source; firming agent
-   Phosphorus
-    Phosphate (natural)|Phosphorus in protein foods|Bones, ATP, DNA
-    Sodium phosphates|Added phosphates (E339)|Phosphorus source; additive
+    Calcium carbonate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Eggshells, limestone; tofu, fortified juices. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium chloride|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium citrate malate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium citrate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium gluconate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium glycerophosphate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium lactate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Aged cheese crystals. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium phosphates (mono-, di-, tricalcium)|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Milk, bones (hydroxyapatite). Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium hydroxide|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Pickling lime; corn tortillas. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium malate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Apples (as malate). Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium oxide|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium sulphate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Mineral gypsum; tofu. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium bisglycinate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium L-lysinate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium pyruvate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
+    Calcium succinate|Compound used to add calcium to foods or supplements|Bones, teeth, muscle contraction, nerve signaling, clotting|Not naturally in foods as this form; fortified foods, supplements. Natural sources of calcium: Dairy, sardines with bones, tofu set with calcium, kale, almonds
    Magnesium
-    Magnesium oxide|Dense magnesium salt|Muscle, nerve, 300+ enzymes
-    Magnesium citrate|Well-absorbed magnesium salt|Magnesium source; laxative at high dose
-    Magnesium glycinate|Magnesium bound to glycine|Gentle magnesium source
-   Sodium
-    Sodium chloride|Table salt|Fluid balance, nerve signals
-    Sodium bicarbonate|Baking soda (E500)|Sodium source; leavening
-   Potassium
-    Potassium chloride|Salt substitute (E508)|Fluid balance, heart rhythm, blood pressure
-    Potassium citrate|Potassium salt (E332)|Potassium source; acidity regulator
-   Chloride|Anion paired with sodium/potassium|Stomach acid, fluid balance
-   Sulfur|Element in methionine, cysteine|Protein structure, glutathione
-  Trace minerals
+    Magnesium acetate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium L-ascorbate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium bisglycinate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium carbonate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium chloride|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Sea salt, nigari (tofu coagulant). Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium citrate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium citrate malate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium gluconate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium glycerophosphate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium phosphates|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium lactate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium L-lysinate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium hydroxide|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium malate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium oxide|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium L-pidolate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Potassium magnesium citrate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium pyruvate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium succinate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium sulphate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Epsom salt; mineral waters. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium taurate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
+    Magnesium acetyl taurate|Compound used to add magnesium to foods or supplements|300+ enzymes, muscle and nerve function, energy, bones|Not naturally in foods as this form; fortified foods, supplements. Natural sources of magnesium: Pumpkin seeds, almonds, spinach, black beans, whole grains, dark chocolate
    Iron
-    Heme iron|Iron in meat and fish|Hemoglobin, oxygen transport
-    Ferrous sulfate|Common iron salt|Iron source
-    Ferrous fumarate|Iron salt|Iron source
-    Ferric pyrophosphate|Iron used in fortification|Iron source
-    Electrolytic iron|Reduced elemental iron powder|Iron fortification of cereals
-   Zinc
-    Zinc oxide|Zinc salt used in fortification|Immunity, wound healing, taste
-    Zinc gluconate|Zinc salt|Zinc source
-    Zinc sulfate|Zinc salt|Zinc source
+    Ferrous bisglycinate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous carbonate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous citrate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferric ammonium citrate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous gluconate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous fumarate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferric sodium diphosphate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous lactate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous sulphate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous ammonium phosphate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferric sodium EDTA|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferric diphosphate (ferric pyrophosphate)|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferric saccharate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Elemental iron (carbonyl, electrolytic, hydrogen-reduced)|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous L-pidolate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Ferrous phosphate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
+    Iron(II) taurate|Compound used to add iron to foods or supplements|Hemoglobin, oxygen transport, energy metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iron: Red meat, liver, clams, lentils, spinach, fortified cereals
    Copper
-    Copper gluconate|Copper salt|Iron metabolism, connective tissue
-    Cupric sulfate|Copper salt|Copper source
+    Cupric carbonate|Compound used to add copper to foods or supplements|Iron metabolism, connective tissue, antioxidant enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of copper: Liver, oysters, cashews, sesame, dark chocolate
+    Cupric citrate|Compound used to add copper to foods or supplements|Iron metabolism, connective tissue, antioxidant enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of copper: Liver, oysters, cashews, sesame, dark chocolate
+    Cupric gluconate|Compound used to add copper to foods or supplements|Iron metabolism, connective tissue, antioxidant enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of copper: Liver, oysters, cashews, sesame, dark chocolate
+    Cupric sulphate|Compound used to add copper to foods or supplements|Iron metabolism, connective tissue, antioxidant enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of copper: Liver, oysters, cashews, sesame, dark chocolate
+    Copper L-aspartate|Compound used to add copper to foods or supplements|Iron metabolism, connective tissue, antioxidant enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of copper: Liver, oysters, cashews, sesame, dark chocolate
+    Copper bisglycinate|Compound used to add copper to foods or supplements|Iron metabolism, connective tissue, antioxidant enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of copper: Liver, oysters, cashews, sesame, dark chocolate
+    Copper lysine complex|Compound used to add copper to foods or supplements|Iron metabolism, connective tissue, antioxidant enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of copper: Liver, oysters, cashews, sesame, dark chocolate
    Iodine
-    Potassium iodide|Iodizing salt form|Thyroid hormones
-    Potassium iodate|Stable iodizing form|Thyroid hormones
-   Selenium
-    Selenomethionine|Selenium bound to methionine|Antioxidant enzymes, thyroid
-    Sodium selenite|Inorganic selenium salt|Selenium source
+    Sodium iodide|Compound used to add iodine to foods or supplements|Thyroid hormones (metabolism, brain development)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iodine: Seaweed, cod, dairy, eggs, iodized salt
+    Sodium iodate|Compound used to add iodine to foods or supplements|Thyroid hormones (metabolism, brain development)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iodine: Seaweed, cod, dairy, eggs, iodized salt
+    Potassium iodide|Compound used to add iodine to foods or supplements|Thyroid hormones (metabolism, brain development)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iodine: Seaweed, cod, dairy, eggs, iodized salt
+    Potassium iodate|Compound used to add iodine to foods or supplements|Thyroid hormones (metabolism, brain development)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of iodine: Seaweed, cod, dairy, eggs, iodized salt
+   Zinc
+    Zinc acetate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc L-ascorbate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc L-aspartate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc bisglycinate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc chloride|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc citrate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc gluconate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc lactate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc L-lysinate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc malate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc mono-L-methionine sulphate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc oxide|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc carbonate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc L-pidolate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc picolinate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
+    Zinc sulphate|Compound used to add zinc to foods or supplements|Immunity, wound healing, taste, DNA synthesis, 300+ enzymes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of zinc: Oysters, beef, crab, pumpkin seeds, chickpeas
    Manganese
-    Manganese sulfate|Manganese salt|Bone formation, antioxidant enzymes
+    Manganese ascorbate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese L-aspartate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese bisglycinate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese carbonate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese chloride|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese citrate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese gluconate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese glycerophosphate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese pidolate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+    Manganese sulphate|Compound used to add manganese to foods or supplements|Bone formation, antioxidant enzymes (MnSOD), metabolism|Not naturally in foods as this form; fortified foods, supplements. Natural sources of manganese: Oats, brown rice, nuts, tea, mussels
+   Sodium
+    Sodium bicarbonate|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Baking soda; some mineral waters. Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+    Sodium carbonate|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Not naturally in foods as this form; fortified foods, supplements. Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+    Sodium chloride|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Table salt, sea salt; cheese, olives. Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+    Sodium citrate|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Not naturally in foods as this form; fortified foods, supplements. Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+    Sodium gluconate|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Not naturally in foods as this form; fortified foods, supplements. Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+    Sodium lactate|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Meat (formed from lactic acid). Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+    Sodium hydroxide|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Not naturally in foods as this form; fortified foods, supplements. Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+    Sodium phosphates|Compound used to add sodium to foods or supplements|Fluid balance, nerve signals, muscle contraction|Not naturally in foods as this form; fortified foods, supplements. Natural sources of sodium: Salt, cheese, olives, cured meats, bread
+   Potassium
+    Potassium bicarbonate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium carbonate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium chloride|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Seaweed, potatoes; salt substitutes. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium citrate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Citrus fruit. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium gluconate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium glycerophosphate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium lactate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium hydroxide|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium L-pidolate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium malate|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+    Potassium phosphates|Compound used to add potassium to foods or supplements|Fluid balance, heart rhythm, blood pressure, nerve signals|Not naturally in foods as this form; fortified foods, supplements. Natural sources of potassium: Potatoes, beans, bananas, spinach, avocado, yogurt
+   Selenium
+    L-selenomethionine|Compound used to add selenium to foods or supplements|Antioxidant enzymes (glutathione peroxidase), thyroid hormone activation|Brazil nuts, grains, eggs. Natural sources of selenium: Brazil nuts, tuna, sardines, eggs, whole wheat
+    Selenium-enriched yeast|Compound used to add selenium to foods or supplements|Antioxidant enzymes (glutathione peroxidase), thyroid hormone activation|Not naturally in foods as this form; fortified foods, supplements. Natural sources of selenium: Brazil nuts, tuna, sardines, eggs, whole wheat
+    Selenious acid|Compound used to add selenium to foods or supplements|Antioxidant enzymes (glutathione peroxidase), thyroid hormone activation|Not naturally in foods as this form; fortified foods, supplements. Natural sources of selenium: Brazil nuts, tuna, sardines, eggs, whole wheat
+    Sodium selenate|Compound used to add selenium to foods or supplements|Antioxidant enzymes (glutathione peroxidase), thyroid hormone activation|Not naturally in foods as this form; fortified foods, supplements. Natural sources of selenium: Brazil nuts, tuna, sardines, eggs, whole wheat
+    Sodium hydrogen selenite|Compound used to add selenium to foods or supplements|Antioxidant enzymes (glutathione peroxidase), thyroid hormone activation|Not naturally in foods as this form; fortified foods, supplements. Natural sources of selenium: Brazil nuts, tuna, sardines, eggs, whole wheat
+    Sodium selenite|Compound used to add selenium to foods or supplements|Antioxidant enzymes (glutathione peroxidase), thyroid hormone activation|Not naturally in foods as this form; fortified foods, supplements. Natural sources of selenium: Brazil nuts, tuna, sardines, eggs, whole wheat
    Chromium
-    Chromium picolinate|Chromium salt|Insulin action (modest)
+    Chromium(III) chloride|Compound used to add chromium to foods or supplements|Enhances insulin action (modest evidence)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of chromium: Broccoli, grape juice, whole grains, meat
+    Chromium(III) lactate tri-hydrate|Compound used to add chromium to foods or supplements|Enhances insulin action (modest evidence)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of chromium: Broccoli, grape juice, whole grains, meat
+    Chromium picolinate|Compound used to add chromium to foods or supplements|Enhances insulin action (modest evidence)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of chromium: Broccoli, grape juice, whole grains, meat
+    Chromium(III) sulphate|Compound used to add chromium to foods or supplements|Enhances insulin action (modest evidence)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of chromium: Broccoli, grape juice, whole grains, meat
    Molybdenum
-    Sodium molybdate|Molybdenum salt|Enzymes that break down sulfites and purines
-   Fluoride|Mineral in water and tea|Strengthens tooth enamel
+    Ammonium molybdate|Compound used to add molybdenum to foods or supplements|Cofactor for enzymes that break down sulfites and purines|Not naturally in foods as this form; fortified foods, supplements. Natural sources of molybdenum: Legumes, grains, nuts, liver
+    Potassium molybdate|Compound used to add molybdenum to foods or supplements|Cofactor for enzymes that break down sulfites and purines|Not naturally in foods as this form; fortified foods, supplements. Natural sources of molybdenum: Legumes, grains, nuts, liver
+    Sodium molybdate|Compound used to add molybdenum to foods or supplements|Cofactor for enzymes that break down sulfites and purines|Not naturally in foods as this form; fortified foods, supplements. Natural sources of molybdenum: Legumes, grains, nuts, liver
+   Fluoride
+    Calcium fluoride|Compound used to add fluoride to foods or supplements|Strengthens tooth enamel|Not naturally in foods as this form; fortified foods, supplements. Natural sources of fluoride: Fluoridated water, tea, sardines with bones
+    Potassium fluoride|Compound used to add fluoride to foods or supplements|Strengthens tooth enamel|Not naturally in foods as this form; fortified foods, supplements. Natural sources of fluoride: Fluoridated water, tea, sardines with bones
+    Sodium fluoride|Compound used to add fluoride to foods or supplements|Strengthens tooth enamel|Not naturally in foods as this form; fortified foods, supplements. Natural sources of fluoride: Fluoridated water, tea, sardines with bones
+    Sodium monofluorophosphate|Compound used to add fluoride to foods or supplements|Strengthens tooth enamel|Not naturally in foods as this form; fortified foods, supplements. Natural sources of fluoride: Fluoridated water, tea, sardines with bones
+   Phosphorus
+    Phosphoric acid|Compound used to add phosphorus to foods or supplements|Bones, ATP energy, DNA, cell membranes|Colas. Natural sources of phosphorus: Dairy, meat, fish, legumes, nuts
+    Calcium phosphates (as P source)|Compound used to add phosphorus to foods or supplements|Bones, ATP energy, DNA, cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of phosphorus: Dairy, meat, fish, legumes, nuts
+    Magnesium phosphates (as P source)|Compound used to add phosphorus to foods or supplements|Bones, ATP energy, DNA, cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of phosphorus: Dairy, meat, fish, legumes, nuts
+    Potassium phosphates (as P source)|Compound used to add phosphorus to foods or supplements|Bones, ATP energy, DNA, cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of phosphorus: Dairy, meat, fish, legumes, nuts
+    Sodium phosphates (as P source)|Compound used to add phosphorus to foods or supplements|Bones, ATP energy, DNA, cell membranes|Not naturally in foods as this form; fortified foods, supplements. Natural sources of phosphorus: Dairy, meat, fish, legumes, nuts
+   Chloride
+    Sodium chloride (as Cl source)|Compound used to add chloride to foods or supplements|Stomach acid (HCl), fluid balance|Table salt, sea salt; cheese, olives. Natural sources of chloride: Table salt, seaweed, tomatoes, celery, olives
+    Potassium chloride (as Cl source)|Compound used to add chloride to foods or supplements|Stomach acid (HCl), fluid balance|Seaweed, potatoes; salt substitutes. Natural sources of chloride: Table salt, seaweed, tomatoes, celery, olives
+    Calcium chloride (as Cl source)|Compound used to add chloride to foods or supplements|Stomach acid (HCl), fluid balance|Not naturally in foods as this form; fortified foods, supplements. Natural sources of chloride: Table salt, seaweed, tomatoes, celery, olives
+    Magnesium chloride (as Cl source)|Compound used to add chloride to foods or supplements|Stomach acid (HCl), fluid balance|Sea salt, nigari (tofu coagulant). Natural sources of chloride: Table salt, seaweed, tomatoes, celery, olives
+   Boron
+    Boric acid|Compound used to add boron to foods or supplements|Bone and mineral metabolism (not established as essential)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of boron: Avocados, prunes, raisins, peanuts, wine
+    Sodium borate|Compound used to add boron to foods or supplements|Bone and mineral metabolism (not established as essential)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of boron: Avocados, prunes, raisins, peanuts, wine
+   Silicon
+    Choline-stabilised orthosilicic acid|Compound used to add silicon to foods or supplements|Connective tissue and bone (not established as essential)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of silicon: Whole grains (oats, barley), beer, green beans, bananas
+    Silicon dioxide|Compound used to add silicon to foods or supplements|Connective tissue and bone (not established as essential)|Sand/quartz; spices (anti-caking). Natural sources of silicon: Whole grains (oats, barley), beer, green beans, bananas
+    Silicic acid|Compound used to add silicon to foods or supplements|Connective tissue and bone (not established as essential)|Not naturally in foods as this form; fortified foods, supplements. Natural sources of silicon: Whole grains (oats, barley), beer, green beans, bananas
+  Other trace and ultratrace elements
+   Vanadium|Ultratrace element|Insulin-like effects in studies; essentiality unproven|Mushrooms, shellfish, black pepper, parsley
+   Nickel|Ultratrace element|Possible role in some enzymes; essentiality unproven in humans|Cocoa, nuts, legumes, oats
+   Cobalt|Trace element (center of vitamin B12)|Needed only as part of B12|Meat, fish, dairy (as B12)
+   Lithium|Ultratrace element|Possible mood effects at trace levels; essentiality unproven|Grains, vegetables, mineral waters
+   Strontium|Ultratrace element chemically similar to calcium|Incorporated into bone; no known essential role|Seafood, whole grains, root vegetables
+   Germanium|Ultratrace element|No proven role; organic supplements linked to kidney harm|Garlic, ginseng, mushrooms (traces)
+   Sulfur|Element in methionine, cysteine, taurine|Protein structure, glutathione|Eggs, meat, garlic, onions, broccoli
 Bioactives
  Polyphenols
   Flavonoids
    Flavonols
-    Quercetin|Flavonol in onions, apples, capers|Antioxidant, anti-inflammatory
-    Kaempferol|Flavonol in kale, tea|Antioxidant
-    Myricetin|Flavonol in berries, walnuts|Antioxidant
-    Rutin|Quercetin glycoside in buckwheat|Supports blood vessels
+    Quercetin|Flavonol in onions, apples, capers|Antioxidant, anti-inflammatory|Capers, onions, apples, kale, berries
+    Kaempferol|Flavonol in kale, tea|Antioxidant|Kale, spinach, tea, broccoli, capers
+    Myricetin|Flavonol in berries, walnuts|Antioxidant|Berries, walnuts, red onions, tea
+    Rutin|Quercetin glycoside in buckwheat|Supports blood vessels|Buckwheat, asparagus, citrus peel, apples
+    Isorhamnetin|Methylated quercetin flavonol|Antioxidant|Onions, pears, almonds, sea buckthorn
+    Fisetin|Flavonol|Senolytic effects studied in animals|Strawberries, apples, persimmons, onions
+    Quercetin-3-glucoside (isoquercitrin)|Well-absorbed quercetin glycoside|Antioxidant|Onions, apples, buckwheat
    Flavones
-    Apigenin|Flavone in parsley, chamomile|Calming, anti-inflammatory
-    Luteolin|Flavone in celery, peppers|Anti-inflammatory
+    Apigenin|Flavone in parsley, chamomile|Calming, anti-inflammatory|Parsley, celery, chamomile
+    Luteolin|Flavone in celery, peppers|Anti-inflammatory|Celery, peppers, thyme, artichoke
+    Tangeretin|Polymethoxylated citrus flavone|Studied for anti-inflammatory effects|Tangerine and orange peel
+    Nobiletin|Polymethoxylated citrus flavone|Studied for circadian/metabolic effects|Citrus peel (esp. shiikuwasa)
+    Chrysin|Flavone|Studied antioxidant; poorly absorbed|Honey, propolis
+    Diosmin|Flavone glycoside|Vascular tone (vein health)|Citrus fruits (small amounts)
    Flavanones
-    Hesperidin|Flavanone in oranges|Vascular health
-    Naringenin|Flavanone in grapefruit|Antioxidant; affects drug metabolism
+    Hesperidin|Flavanone in oranges|Vascular health|Oranges, lemons, tangerines
+    Naringenin|Flavanone in grapefruit|Antioxidant; affects drug metabolism|Grapefruit, oranges, tomatoes
+    Naringin|Bitter flavanone glycoside|Grapefruit drug interactions (with furanocoumarins)|Grapefruit, pomelo
+    Eriodictyol|Flavanone|Antioxidant; masks bitterness|Lemons, yerba santa
+    Neohesperidin|Bitter flavanone glycoside|Antioxidant; precursor of E959 sweetener|Bitter orange (Seville)
    Flavan-3-ols
-    Catechin|Flavanol in tea, cocoa|Antioxidant
-    Epicatechin|Flavanol in cocoa|Supports blood flow
-    EGCG (epigallocatechin gallate)|Main green tea catechin|Antioxidant
-    Proanthocyanidins|Catechin polymers in grapes, cranberries|Antioxidant; urinary tract health
+    Catechin|Flavanol in tea, cocoa|Antioxidant|Tea, cocoa, apples, grapes
+    Epicatechin|Flavanol in cocoa|Supports blood flow|Cocoa, dark chocolate, apples, tea
+    EGCG (epigallocatechin gallate)|Main green tea catechin|Antioxidant|Green tea
+    Proanthocyanidins|Catechin polymers in grapes, cranberries|Antioxidant; urinary tract health|Cranberries, grapes, cocoa, apples, cinnamon
+    Epigallocatechin (EGC)|Tea catechin|Antioxidant|Green tea
+    Epicatechin gallate (ECG)|Tea catechin|Antioxidant|Green tea
+    Theaflavins|Catechin dimers formed when tea is oxidized|Antioxidant; give black tea color|Black tea
+    Thearubigins|Large catechin polymers|Antioxidant; red-brown tea color|Black tea
    Anthocyanins
-    Cyanidin|Red-purple pigment in berries|Antioxidant
-    Delphinidin|Blue pigment in blueberries|Antioxidant
-    Malvidin|Pigment in red grapes|Antioxidant
-    Pelargonidin|Orange-red pigment in strawberries|Antioxidant
+    Cyanidin|Red-purple pigment in berries|Antioxidant|Blackberries, cherries, red cabbage, elderberries
+    Delphinidin|Blue pigment in blueberries|Antioxidant|Blueberries, eggplant skin, blackcurrants
+    Malvidin|Pigment in red grapes|Antioxidant|Red grapes, red wine, blueberries
+    Pelargonidin|Orange-red pigment in strawberries|Antioxidant|Strawberries, radishes, raspberries
+    Peonidin|Methylated anthocyanidin|Antioxidant|Cranberries, purple sweet potato, cherries
+    Petunidin|Anthocyanidin|Antioxidant|Black grapes, blueberries, black beans
    Isoflavones
-    Genistein|Soy isoflavone|Weak estrogen-like activity
-    Daidzein|Soy isoflavone|Weak estrogen-like activity
+    Genistein|Soy isoflavone|Weak estrogen-like activity|Soybeans, tofu, tempeh, soy milk
+    Daidzein|Soy isoflavone|Weak estrogen-like activity|Soybeans, tofu, tempeh
+    Glycitein|Soy isoflavone|Weak estrogen-like activity|Soy germ, soybeans
+    Formononetin|Methoxylated isoflavone|Weak estrogen-like activity|Red clover, chickpeas
+    Biochanin A|Methoxylated isoflavone|Weak estrogen-like activity|Chickpeas, red clover, peanuts
+    Equol|Isoflavone made by gut bacteria from daidzein|Stronger estrogen-like activity (only some people produce it)|Made in the gut from soy daidzein
+   Dihydrochalcones
+    Phloridzin|Apple dihydrochalcone glycoside|Blocks glucose transporter SGLT|Apples (peel, seeds), apple juice
+    Phloretin|Aglycone of phloridzin|Antioxidant|Apples
+   Chalcones
+    Xanthohumol|Prenylated chalcone|Studied anti-inflammatory|Hops, beer
   Phenolic acids
-   Chlorogenic acid|Phenolic acid in coffee|Glucose metabolism, antioxidant
-   Caffeic acid|Hydroxycinnamic acid in coffee, fruit|Antioxidant
-   Ferulic acid|Phenolic acid in whole grains|Antioxidant
-   Gallic acid|Hydroxybenzoic acid in tea, grapes|Antioxidant
-   Ellagic acid|Phenolic in pomegranate, raspberries|Converted to urolithins by gut bacteria
-   Rosmarinic acid|Phenolic in rosemary, mint|Antioxidant
+   Chlorogenic acid|Phenolic acid in coffee|Glucose metabolism, antioxidant|Coffee, apples, pears, artichoke
+   Caffeic acid|Hydroxycinnamic acid in coffee, fruit|Antioxidant|Coffee, apples, thyme, sage
+   Ferulic acid|Phenolic acid in whole grains|Antioxidant|Whole grains (bran), rice, oats, coffee
+   Gallic acid|Hydroxybenzoic acid in tea, grapes|Antioxidant|Tea, grapes, berries, oak-aged wine
+   Ellagic acid|Phenolic in pomegranate, raspberries|Converted to urolithins by gut bacteria|Pomegranate, raspberries, strawberries, walnuts
+   Rosmarinic acid|Phenolic in rosemary, mint|Antioxidant|Rosemary, sage, oregano, mint, lemon balm
+   p-Coumaric acid|Hydroxycinnamic acid|Antioxidant|Peanuts, tomatoes, carrots, whole grains
+   Sinapic acid|Hydroxycinnamic acid|Antioxidant|Mustard, rapeseed, berries
+   Protocatechuic acid|Hydroxybenzoic acid|Antioxidant; anthocyanin metabolite|Olives, onions, hibiscus
+   Vanillic acid|Hydroxybenzoic acid|Antioxidant|Vanilla, acai, olive oil
+   Syringic acid|Hydroxybenzoic acid|Antioxidant|Olives, dates, red wine
+   Salicylic acid|Hydroxybenzoic acid (aspirin relative)|Anti-inflammatory|Herbs, spices, berries, tomatoes
+   Dicaffeoylquinic acids (cynarin)|Caffeic acid esters|Bile flow; antioxidant|Artichoke, coffee
   Stilbenes
-   Resveratrol|Stilbene in grape skins|Antioxidant; studied for longevity
-   Pterostilbene|Stilbene in blueberries|Antioxidant
+   Resveratrol|Stilbene in grape skins|Antioxidant; studied for longevity|Red grape skins, red wine, peanuts, blueberries
+   Pterostilbene|Stilbene in blueberries|Antioxidant|Blueberries, grapes
+   Piceatannol|Hydroxylated resveratrol|Antioxidant|Passion fruit seeds, grapes, white tea
+   Piceid (polydatin)|Resveratrol glucoside|Converted to resveratrol|Grape juice, peanuts, cocoa
   Lignans
-   Secoisolariciresinol|Lignan in flaxseed|Converted to enterolignans
-   Sesamin|Lignan in sesame|Antioxidant
+   Secoisolariciresinol|Lignan in flaxseed|Converted to enterolignans|Flaxseed, sesame, whole grains
+   Sesamin|Lignan in sesame|Antioxidant|Sesame seeds and oil
+   Matairesinol|Plant lignan|Converted to enterolactone|Flaxseed, sesame, rye
+   Pinoresinol|Plant lignan|Converted to enterolignans|Olive oil, sesame, whole grains
+   Lariciresinol|Plant lignan|Converted to enterolignans|Sesame, broccoli, kale, rye
+   Enterolactone|Mammalian lignan made by gut bacteria|Weak estrogen-like activity|Made in gut from plant lignans
   Other polyphenols
-   Curcumin|Yellow polyphenol in turmeric|Anti-inflammatory
-   Oleocanthal|Phenolic in extra-virgin olive oil|Anti-inflammatory (ibuprofen-like)
-   Hydroxytyrosol|Olive polyphenol|Protects blood lipids from oxidation
-   Gingerols|Pungent phenolics in fresh ginger|Anti-nausea, anti-inflammatory
-   Tannins|Astringent polyphenols in tea, wine|Antioxidant; bind proteins and iron
+   Curcumin|Yellow polyphenol in turmeric|Anti-inflammatory|Turmeric
+   Oleocanthal|Phenolic in extra-virgin olive oil|Anti-inflammatory (ibuprofen-like)|Extra-virgin olive oil
+   Hydroxytyrosol|Olive polyphenol|Protects blood lipids from oxidation|Olives, extra-virgin olive oil
+   Gingerols|Pungent phenolics in fresh ginger|Anti-nausea, anti-inflammatory|Fresh ginger
+   Tannins|Astringent polyphenols in tea, wine|Antioxidant; bind proteins and iron|Tea, red wine, pomegranate, persimmon, walnuts
+   Demethoxycurcumin|Curcuminoid|Anti-inflammatory|Turmeric
+   Oleuropein|Bitter olive secoiridoid|Converted to hydroxytyrosol|Olive leaves, green olives, olive oil
+   Tyrosol|Olive phenol|Antioxidant|Olive oil, white wine
+   Shogaols|Dehydrated gingerols (more pungent)|Anti-nausea, anti-inflammatory|Dried or cooked ginger
+   Alkylresorcinols|Phenolic lipids|Biomarker of whole-grain intake|Whole wheat, rye bran
+   Avenanthramides|Oat-specific polyphenols|Anti-itch, anti-inflammatory|Oats
+   Carnosic acid|Phenolic diterpene|Antioxidant (main in E392)|Rosemary, sage
+   Carnosol|Phenolic diterpene|Antioxidant|Rosemary, sage
+  Hydrolysable tannins
+   Punicalagin|Large ellagitannin|Converted to ellagic acid and urolithins|Pomegranate (husk and juice)
+   Urolithin A|Gut-bacteria metabolite of ellagitannins|Studied for mitochondrial (mitophagy) effects|Made in gut from pomegranate, walnuts, berries
+   Gallotannins|Gallic acid-based tannins|Astringent; antioxidant|Mango, tea, oak-aged wine
+  Coumestans
+   Coumestrol|Coumestan phytoestrogen|Estrogen-like activity|Alfalfa sprouts, clover sprouts, split peas
+  Coumarins
+   Coumarin|Sweet-smelling lactone|Liver toxicity at high intake|Cassia cinnamon, tonka beans, sweet clover
+   Furanocoumarins (bergamottin)|Coumarin derivatives|Block CYP3A4 (grapefruit drug interactions)|Grapefruit, limes, parsnips, celery
  Carotenoids
-  Beta-carotene|Orange pigment in carrots|Provitamin A, antioxidant
-  Alpha-carotene|Pigment in carrots, pumpkin|Provitamin A
-  Beta-cryptoxanthin|Pigment in papaya, tangerines|Provitamin A
-  Lycopene|Red pigment in tomatoes|Antioxidant
-  Lutein|Yellow pigment in leafy greens|Eye (macula) health
-  Zeaxanthin|Pigment in corn, peppers|Eye (macula) health
-  Astaxanthin|Red pigment in salmon, shrimp|Antioxidant
+  Beta-carotene|Orange pigment in carrots|Provitamin A, antioxidant|Carrots, sweet potatoes, pumpkin, spinach, cantaloupe
+  Alpha-carotene|Pigment in carrots, pumpkin|Provitamin A|Carrots, pumpkin, winter squash
+  Beta-cryptoxanthin|Pigment in papaya, tangerines|Provitamin A|Papaya, tangerines, red peppers, persimmon
+  Lycopene|Red pigment in tomatoes|Antioxidant|Tomatoes (esp. cooked), watermelon, pink grapefruit, guava
+  Lutein|Yellow pigment in leafy greens|Eye (macula) health|Kale, spinach, egg yolks, corn
+  Zeaxanthin|Pigment in corn, peppers|Eye (macula) health|Corn, orange peppers, goji berries, egg yolks
+  Astaxanthin|Red pigment in salmon, shrimp|Antioxidant|Wild salmon, shrimp, krill, trout
+  Canthaxanthin|Red keto-carotenoid (E161g)|Antioxidant; high doses deposit in retina|Mushrooms (chanterelle), crustaceans, farmed trout feed
+  Fucoxanthin|Brown-seaweed carotenoid|Studied for fat metabolism|Wakame, hijiki, kombu
+  Capsanthin|Red pepper carotenoid|Antioxidant|Red bell peppers, paprika
+  Capsorubin|Red pepper carotenoid|Antioxidant|Red peppers, paprika
+  Crocin|Water-soluble saffron carotenoid|Studied for mood effects|Saffron, gardenia fruit
+  Crocetin|Carotenoid aglycone of crocin|Antioxidant|Saffron
+  Bixin|Apocarotenoid (E160b)|Antioxidant|Annatto seeds
+  Phytoene|Colorless carotenoid precursor|Absorbs UV; skin|Tomatoes, carrots, apricots
+  Phytofluene|Colorless carotenoid|Absorbs UV; skin|Tomatoes, carrots, oranges
+  Violaxanthin|Xanthophyll|Antioxidant|Spinach, mango, green leaves
+  Neoxanthin|Xanthophyll|Antioxidant|Spinach, green leaves
+  Gamma-carotene|Provitamin A carotene|Some vitamin A activity|Rose hips, apricots, carrots
  Glucosinolates and derivatives
-  Glucoraphanin|Glucosinolate in broccoli|Precursor of sulforaphane
-  Sulforaphane|Isothiocyanate from broccoli sprouts|Activates detox enzymes (Nrf2)
-  Sinigrin|Glucosinolate in mustard|Source of mustard pungency
-  Indole-3-carbinol|Breakdown product in cabbage family|Estrogen metabolism
+  Glucoraphanin|Glucosinolate in broccoli|Precursor of sulforaphane|Broccoli, broccoli sprouts
+  Sulforaphane|Isothiocyanate from broccoli sprouts|Activates detox enzymes (Nrf2)|Broccoli sprouts, broccoli (when chopped/chewed)
+  Sinigrin|Glucosinolate in mustard|Source of mustard pungency|Mustard seeds, horseradish, Brussels sprouts
+  Indole-3-carbinol|Breakdown product in cabbage family|Estrogen metabolism|Cabbage, broccoli, Brussels sprouts, kale
+  Glucobrassicin|Indole glucosinolate|Precursor of indole-3-carbinol|Broccoli, Brussels sprouts, cabbage
+  Gluconasturtiin|Glucosinolate|Precursor of phenethyl isothiocyanate|Watercress, horseradish
+  Sinalbin|Glucosinolate of white mustard|Mild mustard pungency|White/yellow mustard seed
+  Glucotropaeolin|Glucosinolate|Precursor of benzyl isothiocyanate|Garden cress, papaya seeds, nasturtium
+  Allyl isothiocyanate|Pungent isothiocyanate from sinigrin|Antimicrobial; sinus "heat"|Mustard, horseradish, wasabi
+  Phenethyl isothiocyanate (PEITC)|Isothiocyanate|Detox enzyme induction studied|Watercress
+  Benzyl isothiocyanate|Isothiocyanate|Antimicrobial|Garden cress, papaya seeds
+  Erucin|Isothiocyanate|Nrf2 activation|Arugula (rocket)
+  3,3'-Diindolylmethane (DIM)|Condensation product of indole-3-carbinol|Estrogen metabolism|Formed in stomach from cruciferous vegetables
  Organosulfur compounds
-  Allicin|Compound formed when garlic is crushed|Antimicrobial
-  S-allyl cysteine|Compound in aged garlic|Antioxidant
+  Allicin|Compound formed when garlic is crushed|Antimicrobial|Crushed raw garlic
+  S-allyl cysteine|Compound in aged garlic|Antioxidant|Aged garlic, garlic
+  Alliin|Odorless garlic sulfoxide|Converted to allicin when crushed|Whole garlic
+  Diallyl disulfide|Allicin breakdown product|Antimicrobial; garlic odor|Cooked garlic, garlic oil
+  Ajoene|Allicin-derived compound|Antiplatelet, antimicrobial|Crushed garlic macerated in oil
+  S-methylcysteine sulfoxide|Sulfur amino acid derivative|Studied for metabolic effects|Broccoli, cabbage, onions
+  Syn-propanethial-S-oxide|Onion lachrymatory factor|Makes eyes tear|Freshly cut onions
  Phytosterols
-  Beta-sitosterol|Main plant sterol|Lowers LDL cholesterol absorption
-  Campesterol|Plant sterol|Lowers cholesterol absorption
-  Stigmasterol|Plant sterol|Lowers cholesterol absorption
-  Plant stanols|Saturated plant sterols in fortified spreads|Lowers LDL cholesterol
+  Beta-sitosterol|Main plant sterol|Lowers LDL cholesterol absorption|Nuts, seeds, avocado, vegetable oils
+  Campesterol|Plant sterol|Lowers cholesterol absorption|Vegetable oils, nuts, legumes
+  Stigmasterol|Plant sterol|Lowers cholesterol absorption|Soybeans, legumes, vegetable oils
+  Plant stanols|Saturated plant sterols in fortified spreads|Lowers LDL cholesterol|Whole grains (small amounts); fortified spreads
  Alkaloids and methylxanthines
-  Caffeine|Methylxanthine in coffee, tea|Stimulant; blocks adenosine
-  Theobromine|Methylxanthine in cocoa|Mild stimulant, vasodilator
-  Theophylline|Methylxanthine in tea|Bronchodilator
-  Capsaicin|Pungent compound in chili|Heat sensation; may raise metabolism
-  Piperine|Pungent alkaloid in black pepper|Increases absorption of some nutrients
-  Trigonelline|Alkaloid in coffee, fenugreek|Niacin-related
+  Caffeine|Methylxanthine in coffee, tea|Stimulant; blocks adenosine|Coffee, tea, cocoa, yerba mate, guarana
+  Theobromine|Methylxanthine in cocoa|Mild stimulant, vasodilator|Cocoa, dark chocolate
+  Theophylline|Methylxanthine in tea|Bronchodilator|Tea (small amounts), cocoa
+  Capsaicin|Pungent compound in chili|Heat sensation; may raise metabolism|Chili peppers
+  Piperine|Pungent alkaloid in black pepper|Increases absorption of some nutrients|Black pepper
+  Trigonelline|Alkaloid in coffee, fenugreek|Niacin-related|Coffee, fenugreek
+  Solanine|Glycoalkaloid|Toxic at high levels (green potatoes)|Potato skins and sprouts, green potatoes
+  Tomatine|Tomato glycoalkaloid|Binds cholesterol; low toxicity|Green tomatoes
+  Synephrine|Protoalkaloid (amine)|Mild stimulant|Bitter orange, mandarins
+  Quinine|Bitter alkaloid|Antimalarial; bitterness|Tonic water (cinchona bark)
+  Dihydrocapsaicin|Capsaicinoid|Pungency (heat)|Chili peppers
+  Paraxanthine|Main caffeine metabolite|Stimulant|Made in the liver from caffeine
+  Theacrine|Purine alkaloid|Mild stimulant|Kucha tea (Camellia assamica var. kucha)
+  Huperzine A|Sesquiterpene alkaloid|Acetylcholinesterase inhibitor|Chinese club moss (supplements)
  Other bioactives
-  L-theanine|Amino acid in tea|Calm alertness
-  Taurine|Amino sulfonic acid in meat, fish|Bile salts, heart and nerve function
-  Creatine|Compound in meat and fish|Rapid energy (phosphocreatine) in muscle
-  Beta-alanine|Amino acid|Forms carnosine; buffers muscle acid
-  Chlorophyll|Green pigment in plants|Antioxidant
-  Betalains (betanin)|Red pigment in beets (E162)|Antioxidant
-  Saponins|Soapy glycosides in legumes, quinoa|Bind cholesterol
-  Phytic acid|Phosphorus store in seeds and grains|Reduces mineral absorption; antioxidant
-  Oxalic acid|Organic acid in spinach, rhubarb|Binds calcium; kidney stones in excess
-  Nitrates (dietary)|Nitrate in beets, leafy greens|Converted to nitric oxide; lowers blood pressure
+  L-theanine|Amino acid in tea|Calm alertness|Green and black tea
+  Taurine|Amino sulfonic acid in meat, fish|Bile salts, heart and nerve function|Shellfish, fish, dark poultry meat
+  Creatine|Compound in meat and fish|Rapid energy (phosphocreatine) in muscle|Beef, pork, herring, salmon
+  Beta-alanine|Amino acid|Forms carnosine; buffers muscle acid|Chicken, beef, pork, fish (as carnosine/anserine)
+  Chlorophyll|Green pigment in plants|Antioxidant|Spinach, parsley, kale, all green vegetables
+  Betalains (betanin)|Red pigment in beets (E162)|Antioxidant|Beets, Swiss chard, prickly pear
+  Saponins|Soapy glycosides in legumes, quinoa|Bind cholesterol|Quinoa, chickpeas, soybeans, oats
+  Phytic acid|Phosphorus store in seeds and grains|Reduces mineral absorption; antioxidant|Whole grains, legumes, nuts, seeds
+  Oxalic acid|Organic acid in spinach, rhubarb|Binds calcium; kidney stones in excess|Spinach, rhubarb, beet greens, almonds
+  Nitrates (dietary)|Nitrate in beets, leafy greens|Converted to nitric oxide; lowers blood pressure|Beets, arugula, spinach, celery
+  Lactoferrin|Iron-binding milk glycoprotein|Antimicrobial; iron transport|Colostrum, milk, whey
+  Immunoglobulins|Antibody proteins|Gut immune support|Colostrum, milk
+  Glutathione (dietary)|Tripeptide antioxidant|Antioxidant (poorly absorbed intact)|Asparagus, avocado, spinach, okra
+  Gamma-oryzanol|Ferulic acid esters of sterols|Lowers cholesterol|Rice bran oil
+  Policosanols|Long-chain fatty alcohols|Cholesterol effects inconsistent|Sugarcane wax, wheat germ, rice bran
+  Hydroxycitric acid|Organic acid|Studied for appetite; evidence weak|Garcinia cambogia, hibiscus
+  Anserine|Histidine dipeptide|Muscle buffering, antioxidant|Chicken, salmon, tuna
+  Carnosine|Beta-alanyl-histidine dipeptide|Muscle buffering, antiglycation|Beef, pork, chicken
+  Lectins (phytohaemagglutinin)|Carbohydrate-binding proteins|Toxic raw; destroyed by boiling|Raw red kidney beans
+  Trypsin inhibitors|Protease-inhibiting proteins|Reduce protein digestion if raw|Raw soybeans, legumes
+  Cyanogenic glycosides (amygdalin, linamarin)|Release cyanide when crushed|Toxic in excess|Bitter almonds, apricot kernels, raw cassava
  Nucleotides
-  AMP, GMP, IMP, CMP, UMP|Nucleotides in milk, meat, yeast|Building blocks of DNA/RNA; added to infant formula
-  Purines|Bases in organ meats, anchovies|Broken down to uric acid
+  AMP, GMP, IMP, CMP, UMP|Nucleotides in milk, meat, yeast|Building blocks of DNA/RNA; added to infant formula|Meat, fish, mushrooms (GMP), milk, yeast
+  Purines|Bases in organ meats, anchovies|Broken down to uric acid|Organ meats, anchovies, sardines, shellfish, beer
  Probiotics and live cultures
-  Lactobacillus acidophilus|Lactic acid bacterium in yogurt|Gut health
-  Lacticaseibacillus rhamnosus|Probiotic bacterium (e.g. GG)|Gut and immune support
-  Lactobacillus delbrueckii subsp. bulgaricus|Yogurt starter culture|Ferments lactose
-  Streptococcus thermophilus|Yogurt starter culture|Ferments lactose
-  Bifidobacterium lactis|Probiotic bifidobacterium|Gut regularity
-  Bifidobacterium longum|Probiotic bifidobacterium|Gut and immune support
-  Saccharomyces boulardii|Probiotic yeast|Protects against diarrhea
+  Lactobacillus acidophilus|Lactic acid bacterium in yogurt|Gut health|Yogurt, kefir, acidophilus milk
+  Lacticaseibacillus rhamnosus|Probiotic bacterium (e.g. GG)|Gut and immune support|Some yogurts, kefir, supplements
+  Lactobacillus delbrueckii subsp. bulgaricus|Yogurt starter culture|Ferments lactose|Yogurt
+  Streptococcus thermophilus|Yogurt starter culture|Ferments lactose|Yogurt, many cheeses
+  Bifidobacterium lactis|Probiotic bifidobacterium|Gut regularity|Some yogurts, kefir
+  Bifidobacterium longum|Probiotic bifidobacterium|Gut and immune support|Some yogurts; human gut
+  Saccharomyces boulardii|Probiotic yeast|Protects against diarrhea|Supplements (originally lychee and mangosteen skin)
+  Lactiplantibacillus plantarum|Lactic acid bacterium|Gut barrier support|Sauerkraut, kimchi, sourdough, pickles
+  Lacticaseibacillus casei / paracasei|Lactic acid bacteria|Gut and immune support|Fermented milks, cheese
+  Limosilactobacillus reuteri|Lactic acid bacterium|Infant colic, gut health studied|Some yogurts, supplements
+  Lactobacillus helveticus|Lactic acid bacterium|Cheese ripening; peptides studied for blood pressure|Swiss-type cheeses, fermented milk
+  Lactobacillus gasseri|Lactic acid bacterium|Studied for weight effects|Supplements, some fermented milks
+  Lactococcus lactis|Lactic acid starter|Cheese and buttermilk fermentation|Cheddar, buttermilk, sour cream
+  Leuconostoc mesenteroides|Heterofermentative lactic acid bacterium|Early fermentation of vegetables|Sauerkraut, kimchi
+  Bifidobacterium bifidum|Probiotic bifidobacterium|Gut health|Some yogurts, supplements
+  Bifidobacterium breve|Probiotic bifidobacterium|Infant gut health|Supplements, infant formula
+  Bacillus coagulans (Weizmannia coagulans)|Spore-forming probiotic|Survives baking; gut health|Fortified foods, supplements
+  Bacillus subtilis var. natto|Spore-forming bacterium|Makes vitamin K2 and nattokinase|Natto
+  Propionibacterium freudenreichii|Propionic acid bacterium|Makes B12 and Swiss-cheese holes|Emmental, Swiss cheese
+  Kombucha SCOBY yeasts/bacteria|Symbiotic culture (Acetobacter, yeasts)|Fermentation; probiotic effects unclear|Kombucha
+  Penicillium roqueforti|Mold culture|Blue-cheese ripening|Roquefort, Gorgonzola, Stilton
+  Penicillium camemberti|Mold culture|White rind ripening|Brie, Camembert
+  Aspergillus oryzae (koji)|Mold culture|Ferments soy and rice|Miso, soy sauce, sake
+ Terpenes and terpenoids
+  D-Limonene|Citrus monoterpene|Studied anti-cancer; flavor|Orange and lemon peel
+  Linalool|Floral monoterpene alcohol|Calming effects studied|Coriander, basil, lavender
+  Myrcene|Monoterpene|Sedative effects studied|Hops, mango, lemongrass, thyme
+  Alpha-pinene|Monoterpene|Bronchodilator effects studied|Pine nuts, rosemary, basil
+  Thymol|Phenolic monoterpene|Antimicrobial|Thyme, oregano
+  Carvacrol|Phenolic monoterpene|Antimicrobial|Oregano, thyme
+  Beta-caryophyllene|Sesquiterpene; binds CB2 receptors|Anti-inflammatory|Black pepper, cloves, hops
+  Ursolic acid|Pentacyclic triterpenoid|Muscle effects studied|Apple peel, cranberries, holy basil
+  Oleanolic acid|Pentacyclic triterpenoid|Liver-protective effects studied|Olives, olive oil, clove
+  Glycyrrhizin|Triterpenoid saponin (very sweet)|Raises blood pressure in excess|Licorice root
+  Nootkatone|Sesquiterpene ketone|Grapefruit aroma; insect repellent|Grapefruit
+  Cucurbitacins|Bitter triterpenoids|Toxic in high amounts (bitter squash)|Bitter cucumbers, zucchini, gourds
+  Ginkgolides|Diterpene lactones|Platelet-activating factor antagonist|Ginkgo (supplements)
+ Saponins
+  Soyasaponins|Triterpenoid saponins|Bind cholesterol|Soybeans, chickpeas, lentils
+  Ginsenosides|Triterpene saponins|Adaptogenic effects studied|Ginseng
+  Avenacosides|Steroidal saponins|Antifungal in plant|Oats
+  Diosgenin|Steroidal sapogenin|Precursor for steroid synthesis|Wild yam, fenugreek
+  Quinoa saponins|Bitter triterpenoid saponins|Bitter coating; removed by rinsing|Quinoa seed coat
+ Phytoestrogens
+  8-Prenylnaringenin|Potent prenylflavonoid phytoestrogen|Strong estrogen-like activity|Hops, beer
+  Isoflavones (see Isoflavones)|Group: genistein, daidzein, glycitein|Weak estrogen-like activity|Soy foods
+  Lignans (see Lignans)|Group: secoisolariciresinol, matairesinol|Converted to enterolignans|Flaxseed, sesame
+ Biogenic amines
+  Histamine|Amine from histidine|Allergy-like reactions; scombroid fish poisoning|Aged cheese, wine, cured meats, spoiled fish
+  Tyramine|Amine from tyrosine|Raises blood pressure with MAOI drugs|Aged cheese, cured meats, soy sauce
+  Putrescine|Polyamine|Cell growth|Oranges, cheese, fermented foods
+  Cadaverine|Amine from lysine|Spoilage indicator|Fermented and spoiled fish/meat
+  Spermidine|Polyamine|Autophagy; longevity studied|Wheat germ, natto, aged cheese, mushrooms
+  Spermine|Polyamine|Cell growth, DNA stability|Meat, fish, soy
+  Phenylethylamine|Trace amine|Mild mood effects|Chocolate, cheese, wine
+  Serotonin (dietary)|Monoamine|Does not cross blood-brain barrier when eaten|Bananas, walnuts, pineapple, tomatoes
+  Dopamine (dietary)|Catecholamine|Does not cross blood-brain barrier when eaten|Bananas, avocados, potatoes
+  Melatonin (dietary)|Indoleamine hormone|Sleep-wake regulation|Tart cherries, pistachios, tomatoes, eggs
+ Prebiotics (see Carbohydrates)
+  Prebiotic fibers overview|Fibers selectively used by beneficial microbes: inulin, FOS, GOS, XOS, resistant starch, beta-glucan|Feed bifidobacteria/lactobacilli; make short-chain fatty acids|Chicory, onions, garlic, leeks, bananas, oats, legumes
+ Postbiotics
+  Short-chain fatty acids (butyrate, propionate, acetate)|Fatty acids made by gut bacteria from fiber|Fuel colon cells, regulate inflammation and appetite|Made in gut from fiber; butyrate also in butter
 Additives
- Preservatives
-  Sorbic acid (E200)|Organic acid preservative|Inhibits mold and yeast
-  Potassium sorbate (E202)|Salt of sorbic acid|Inhibits mold and yeast
-  Benzoic acid (E210)|Organic acid preservative|Inhibits microbes in acidic foods
-  Sodium benzoate (E211)|Salt of benzoic acid|Preserves drinks, sauces
-  Sulfur dioxide (E220)|Sulfite gas preservative|Preserves wine, dried fruit; can trigger asthma
-  Sodium metabisulfite (E223)|Sulfite preservative|Prevents browning and spoilage
-  Nisin (E234)|Antimicrobial peptide from bacteria|Inhibits bacteria in cheese
-  Natamycin (E235)|Antifungal from bacteria|Prevents mold on cheese surface
-  Sodium nitrite (E250)|Curing salt|Prevents botulism; pink color in cured meat
-  Sodium nitrate (E251)|Curing salt|Converted to nitrite in curing
-  Potassium nitrate (E252)|Saltpeter curing agent|Converted to nitrite in curing
-  Propionic acid (E280)|Organic acid preservative|Inhibits mold in bread
-  Calcium propionate (E282)|Salt of propionic acid|Inhibits mold in bread
- Antioxidants (additive)
-  Ascorbic acid (E300)|Vitamin C used as antioxidant|Prevents browning and rancidity
-  Tocopherols (E306)|Vitamin E extract|Prevents fat rancidity
-  Rosemary extract (E392)|Natural antioxidant from rosemary|Prevents fat oxidation
-  Propyl gallate (E310)|Synthetic antioxidant|Prevents fat rancidity
-  TBHQ (E319)|Synthetic antioxidant|Prevents fat rancidity in oils
-  BHA (E320)|Butylated hydroxyanisole|Prevents fat rancidity
-  BHT (E321)|Butylated hydroxytoluene|Prevents fat rancidity
-  Ascorbyl palmitate (E304)|Fat-soluble vitamin C ester|Prevents fat oxidation
- Emulsifiers
-  Lecithins (E322)|Phospholipids from soy, sunflower, egg|Blends fat and water
-  Mono- and diglycerides of fatty acids (E471)|Partial fats|Smooth texture, emulsify
-  Polysorbate 80 (E433)|Synthetic emulsifier|Keeps oils dispersed
-  Sodium stearoyl lactylate (E481)|Emulsifier/dough conditioner|Strengthens dough
-  DATEM (E472e)|Diacetyl tartaric esters of glycerides|Dough strengthener
-  Sucrose esters of fatty acids (E473)|Sugar + fatty acid emulsifier|Emulsify, stabilize
-  Polyglycerol polyricinoleate (PGPR, E476)|Emulsifier in chocolate|Reduces chocolate viscosity
- Thickeners, gums and stabilizers
-  Agar (E406)|Seaweed gel|Gelling agent
-  Carrageenan (E407)|Red seaweed polysaccharide|Thickens dairy and plant milks
-  Locust bean gum (E410)|Carob seed galactomannan|Thickener
-  Guar gum (E412)|Guar bean galactomannan|Thickener
-  Gum arabic / acacia (E414)|Acacia tree sap|Stabilizer; soluble fiber
-  Xanthan gum (E415)|Bacterial fermentation polysaccharide|Thickener, stabilizer
-  Gellan gum (E418)|Bacterial polysaccharide|Gelling and suspending agent
-  Pectin (E440)|Fruit polysaccharide|Gels jams
-  Cellulose (E460)|Plant fiber|Bulking, anti-caking
-  Methylcellulose (E461)|Modified cellulose|Binder in plant-based meat
-  Carboxymethylcellulose (E466)|Modified cellulose|Thickener
-  Sodium alginate (E401)|Salt of seaweed alginic acid|Gelling with calcium
-  Gelatin|Animal collagen protein|Gelling agent
- Colors
-  Natural-origin colors
-   Curcumin (E100)|Turmeric yellow|Color
-   Riboflavin (E101)|Vitamin B2 yellow|Color
-   Chlorophylls (E140)|Plant green|Color
-   Copper chlorophyllin (E141)|Stabilized chlorophyll|Green color
-   Caramel color (E150a-d)|Heated sugar brown|Color in colas, sauces
-   Carbon black / vegetable carbon (E153)|Charred plant material|Black color
-   Carotenes (E160a)|Orange carotenoids|Color; provitamin A
-   Annatto (E160b)|Achiote seed orange|Color in cheese
-   Paprika extract (E160c)|Red pepper oleoresin|Color
-   Lycopene (E160d)|Tomato red|Color
-   Beetroot red / betanin (E162)|Beet pigment|Color
-   Anthocyanins (E163)|Berry/grape-skin pigments|Red-purple color
-   Spirulina extract (phycocyanin)|Blue algae pigment|Blue color
-   Carmine / cochineal (E120)|Red dye from insects|Color
-  Synthetic colors
-   Tartrazine (Yellow 5, E102)|Azo dye|Yellow color
-   Sunset Yellow FCF (Yellow 6, E110)|Azo dye|Orange color
-   Allura Red AC (Red 40, E129)|Azo dye|Red color
-   Erythrosine (Red 3, E127)|Iodine-containing dye|Pink-red color
-   Brilliant Blue FCF (Blue 1, E133)|Triarylmethane dye|Blue color
-   Indigo carmine (Blue 2, E132)|Indigoid dye|Blue color
-   Fast Green FCF (Green 3, E143)|Triarylmethane dye|Green color
-   Titanium dioxide (E171)|White mineral pigment (banned in EU foods)|White color
- Sweeteners
-  High-intensity sweeteners
-   Acesulfame potassium (E950)|Synthetic sweetener ~200x sugar|Sweetness without calories
-   Aspartame (E951)|Dipeptide sweetener ~200x sugar|Contains phenylalanine
-   Cyclamate (E952)|Synthetic sweetener (not US-approved)|Sweetness
-   Saccharin (E954)|Oldest synthetic sweetener|Sweetness
-   Sucralose (E955)|Chlorinated sucrose ~600x sugar|Sweetness
-   Neotame (E961)|Aspartame derivative|Sweetness
-   Advantame (E969)|Aspartame derivative|Sweetness
-   Steviol glycosides (E960)|Sweet compounds from stevia leaf|Sweetness
-   Monk fruit (mogrosides)|Sweet compounds from luo han guo|Sweetness
-   Thaumatin (E957)|Sweet protein from katemfe fruit|Sweetness, flavor
-  Nutritive sweeteners
-   High-fructose corn syrup|Glucose syrup with fructose|Sugar source
-   Glucose syrup|Liquid starch hydrolysate|Sugar source
-   Honey|Bee-made sugars (fructose, glucose)|Sugar source
-   Maple syrup|Concentrated maple sap (mostly sucrose)|Sugar source
-   Agave syrup|Fructose-rich plant syrup|Sugar source
-   Molasses|Sugar-refining by-product|Sugar plus minerals
-   Allulose|Rare low-calorie sugar|Sweetness, few calories
- Flavor enhancers
-  Monosodium glutamate (E621)|Sodium salt of glutamic acid|Umami taste
-  Disodium inosinate (E631)|Nucleotide salt|Boosts umami
-  Disodium guanylate (E627)|Nucleotide salt|Boosts umami
-  Yeast extract|Autolyzed yeast rich in glutamate|Savory flavor
-  Natural flavors|Flavor extracts from natural sources|Flavor
-  Artificial flavors|Synthetic flavor compounds|Flavor
-  Vanillin|Main vanilla flavor molecule|Flavor
- Acids and acidity regulators
-  Acetic acid (E260)|Vinegar acid|Sourness, preservation
-  Lactic acid (E270)|Fermentation acid|Sourness, pH control
-  Citric acid (E330)|Citrus acid|Sourness, pH control
-  Sodium citrate (E331)|Salt of citric acid|Buffers pH; melts cheese
-  Tartaric acid (E334)|Grape acid|Sourness
-  Malic acid (E296)|Apple acid|Sourness
-  Fumaric acid (E297)|Organic acid|Sourness
-  Phosphoric acid (E338)|Mineral acid in colas|Tangy taste
-  Glucono-delta-lactone (E575)|Slow-acting acidulant|Coagulates tofu
- Leavening agents
-  Sodium bicarbonate (E500)|Baking soda|Releases CO2 with acid
-  Sodium acid pyrophosphate (E450)|Leavening acid|Reacts with baking soda
-  Monocalcium phosphate (E341)|Leavening acid|Reacts with baking soda
-  Sodium aluminum phosphate (E541)|Leavening acid|Slow-release leavening
-  Ammonium bicarbonate (E503)|Baker's ammonia|Leavening for crisp cookies
-  Cream of tartar (potassium bitartrate, E336)|Tartaric acid salt|Leavening acid; stabilizes egg whites
-  Yeast|Saccharomyces cerevisiae|Ferments sugars to CO2
- Anti-caking agents
-  Silicon dioxide (E551)|Silica|Keeps powders flowing
-  Calcium silicate (E552)|Mineral|Absorbs moisture
-  Magnesium stearate (E470b)|Magnesium salt of stearic acid|Flow agent
-  Tricalcium phosphate (E341iii)|Calcium phosphate|Prevents clumping
-  Sodium ferrocyanide (E535)|Anti-caking agent in salt|Prevents salt clumping
- Firming, humectants and glazing agents
-  Calcium chloride (E509)|Calcium salt|Firms canned vegetables, tofu coagulant
-  Glycerol (E422)|Sugar alcohol humectant|Keeps foods moist
-  Propylene glycol (E1520)|Synthetic humectant/solvent|Carrier for flavors
-  Carnauba wax (E903)|Palm leaf wax|Glazing candy
-  Beeswax (E901)|Bee wax|Glazing
-  Shellac (E904)|Lac insect resin|Glazing candy and fruit
- Enzymes and processing aids
-  Rennet / chymosin|Milk-clotting enzyme|Makes cheese
-  Amylase|Starch-digesting enzyme|Dough conditioning
-  Lactase|Lactose-splitting enzyme|Makes lactose-free milk
-  Transglutaminase|Protein-linking enzyme|Binds proteins (meat glue)
+ EU/UK authorized additives by function
+  Colours
+   Curcumin (E100)|Food colour, E100 (EU/UK authorized)|No nutritional role; adds or restores color|Turmeric root; typical products: Mustard, curry, cheese, drinks
+   Riboflavin (E101)|Food colour, E101 (EU/UK authorized)|Vitamin B2 activity|Milk, eggs, liver (vitamin B2); typical products: Cereals, sauces, candy
+   Riboflavin-5'-phosphate (E101ii)|Food colour, E101ii (EU/UK authorized)|Vitamin B2 activity|Milk, eggs, liver (vitamin B2); typical products: Cereals, sauces, candy
+   Tartrazine (E102)|Food colour, E102 (EU/UK authorized)|May affect activity/attention in children (EU warning label)|Not naturally in foods; typical products: Candy, soft drinks, snacks
+   Quinoline yellow (E104)|Food colour, E104 (EU/UK authorized)|May affect activity/attention in children (EU warning label)|Not naturally in foods; typical products: Candy, drinks, smoked fish (EU)
+   Sunset Yellow FCF; Orange Yellow S (E110)|Food colour, E110 (EU/UK authorized)|May affect activity/attention in children (EU warning label)|Not naturally in foods; typical products: Candy, orange drinks, snacks
+   Cochineal; Carminic acid; Carmines (E120)|Food colour, E120 (EU/UK authorized)|Can cause allergic reactions in rare cases|Cochineal insects (Dactylopius coccus); typical products: Yogurt, candy, drinks
+   Azorubine; Carmoisine (E122)|Food colour, E122 (EU/UK authorized)|May affect activity/attention in children (EU warning label)|Not naturally in foods; typical products: Candy, desserts, drinks
+   Amaranth (E123)|Food colour, E123 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Aperitif wines, fish roe (restricted)
+   Ponceau 4R; Cochineal Red A (E124)|Food colour, E124 (EU/UK authorized)|May affect activity/attention in children (EU warning label)|Not naturally in foods; typical products: Candy, desserts, chorizo
+   Erythrosine (E127)|Food colour, E127 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Cocktail and candied cherries
+   Allura Red AC (E129)|Food colour, E129 (EU/UK authorized)|May affect activity/attention in children (EU warning label)|Not naturally in foods; typical products: Candy, drinks, cereals
+   Patent Blue V (E131)|Food colour, E131 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Candy, desserts, drinks
+   Indigotine; Indigo Carmine (E132)|Food colour, E132 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Candy, desserts, drinks
+   Brilliant Blue FCF (E133)|Food colour, E133 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Candy, drinks, icings
+   Chlorophylls and chlorophyllins (E140)|Food colour, E140 (EU/UK authorized)|No nutritional role; adds or restores color|All green plants; typical products: Pasta, candy, soups
+   Copper complexes of chlorophyll and chlorophyllins (E141)|Food colour, E141 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Candy, pickles, ice cream
+   Green S (E142)|Food colour, E142 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Mint sauce, candy, desserts
+   Plain caramel (E150a)|Food colour, E150a (EU/UK authorized)|No nutritional role; adds or restores color|Formed when sugar is heated; typical products: Sauces, spirits, baked goods
+   Caustic sulphite caramel (E150b)|Food colour, E150b (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Spirits, vinegar, sauces
+   Ammonia caramel (E150c)|Food colour, E150c (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Beer, soy sauce, gravy
+   Sulphite ammonia caramel (E150d)|Food colour, E150d (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Colas, soft drinks, sauces
+   Brilliant Black BN; Black PN (E151)|Food colour, E151 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Licorice, fish roe, desserts
+   Vegetable carbon (E153)|Food colour, E153 (EU/UK authorized)|No nutritional role; adds or restores color|Charred plant material; typical products: Licorice, candy, cheese coatings
+   Brown HT (E155)|Food colour, E155 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Chocolate cake, desserts
+   Carotenes (E160a)|Food colour, E160a (EU/UK authorized)|Provitamin A (beta-carotene)|Carrots, palm oil, algae; typical products: Margarine, drinks, cheese
+   Annatto, bixin (E160b(i))|Food colour, E160b(i) (EU/UK authorized)|No nutritional role; adds or restores color|Achiote (annatto) seeds; typical products: Cheddar, butter, snacks
+   Annatto, norbixin (E160b(ii))|Food colour, E160b(ii) (EU/UK authorized)|No nutritional role; adds or restores color|Achiote (annatto) seeds; typical products: Cheese, desserts, snacks
+   Paprika extract; Capsanthian; Capsorubin (E160c)|Food colour, E160c (EU/UK authorized)|No nutritional role; adds or restores color|Red peppers / paprika; typical products: Sausages, snacks, sauces
+   Lycopene (E160d)|Food colour, E160d (EU/UK authorized)|Antioxidant carotenoid|Tomatoes; typical products: Drinks, candy, soups
+   Beta-apo-8'-carotenal (C30) (E160e)|Food colour, E160e (EU/UK authorized)|Some provitamin A activity|Citrus fruit, spinach (traces); typical products: Cheese, drinks, sauces
+   Lutein (E161b)|Food colour, E161b (EU/UK authorized)|Eye (macula) carotenoid|Marigold flowers, leafy greens, egg yolk; typical products: Drinks, candy, desserts
+   Canthaxanthin (E161g)|Food colour, E161g (EU/UK authorized)|No nutritional role; adds or restores color|Mushrooms, crustaceans, algae; typical products: Strasbourg sausages (EU restricted)
+   Beetroot Red; Betanin (E162)|Food colour, E162 (EU/UK authorized)|No nutritional role; adds or restores color|Beets; typical products: Yogurt, ice cream, desserts
+   Anthocyanins (E163)|Food colour, E163 (EU/UK authorized)|No nutritional role; adds or restores color|Grape skins, berries, red cabbage; typical products: Drinks, candy, jams
+   Calcium carbonate (E170)|Food colour, E170 (EU/UK authorized)|Source of calcium|Limestone, chalk, eggshells; typical products: Candy, bread (fortification), tofu
+   Titanium dioxide (E171)|Food colour, E171 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Candy coatings, chewing gum (banned in EU foods since 2022; still UK-authorized)
+   Iron oxides and hydroxides (E172)|Food colour, E172 (EU/UK authorized)|No nutritional role; adds or restores color|Mineral pigments (rust); typical products: Candy coatings, salmon/shrimp pastes
+   Aluminium (E173)|Food colour, E173 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: External decoration of sugar confectionery
+   Silver (E174)|Food colour, E174 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Decoration of chocolates and dragées
+   Gold (E175)|Food colour, E175 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Decoration of chocolates, liqueurs
+   Litholrubine BK (E180)|Food colour, E180 (EU/UK authorized)|No nutritional role; adds or restores color|Not naturally in foods; typical products: Edible cheese rind only
+  Preservatives
+   Sorbic acid (E200)|Preservative, E200 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Rowan berries; typical products: Cheese, baked goods, wine
+   Potassium sorbate (E202)|Preservative, E202 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Cheese, wine, baked goods
+   Benzoic acid (E210)|Preservative, E210 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Cranberries, cinnamon, cloves; typical products: Sauces, pickles, soft drinks
+   Sodium benzoate (E211)|Preservative, E211 (EU/UK authorized)|Can form benzene with vitamin C in drinks under heat/light|Not naturally in foods; typical products: Soft drinks, pickles, dressings
+   Potassium benzoate (E212)|Preservative, E212 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Soft drinks, sauces
+   Calcium benzoate (E213)|Preservative, E213 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Soft drinks, sauces
+   Ethyl p-hydroxybenzoate (E214)|Preservative, E214 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Jelly coatings for meat, snacks
+   Sodium ethyl p-hydroxybenzoate (E215)|Preservative, E215 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Jelly coatings for meat, snacks
+   Methyl p-hydroxybenzoate (E218)|Preservative, E218 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Jelly coatings for meat, snacks
+   Sodium methyl p-hydroxybenzoate (E219)|Preservative, E219 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Jelly coatings for meat, snacks
+   Sulphur dioxide (E220)|Preservative, E220 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Small amounts formed during wine fermentation; typical products: Wine, dried fruit
+   Sodium sulphite (E221)|Preservative, E221 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Not naturally in foods; typical products: Dried fruit, wine, potato products
+   Sodium hydrogen sulphite (E222)|Preservative, E222 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Not naturally in foods; typical products: Wine, dried fruit
+   Sodium metabisulphite (E223)|Preservative, E223 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Not naturally in foods; typical products: Wine, dried fruit, shrimp
+   Potassium metabisulphite (E224)|Preservative, E224 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Not naturally in foods; typical products: Wine, beer, dried fruit
+   Calcium sulphite (E226)|Preservative, E226 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Not naturally in foods; typical products: Wine, cider
+   Calcium hydrogen sulphite (E227)|Preservative, E227 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Not naturally in foods; typical products: Beer, wine
+   Potassium hydrogen sulphite (E228)|Preservative, E228 (EU/UK authorized)|Can trigger asthma in sulfite-sensitive people|Not naturally in foods; typical products: Wine
+   Nisin (E234)|Preservative, E234 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Produced by Lactococcus lactis in milk; typical products: Cheese, puddings, canned foods
+   Natamycin (E235)|Preservative, E235 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Produced by Streptomyces bacteria; typical products: Cheese rinds, dry sausage casings
+   Hexamethylene tetramine (E239)|Preservative, E239 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Provolone cheese only
+   Dimethyl dicarbonate (E242)|Preservative, E242 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Soft drinks, wine (breaks down after addition)
+   Ethyl lauroyl arginate (E243)|Preservative, E243 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Heat-treated meat products
+   Potassium nitrite (E249)|Preservative, E249 (EU/UK authorized)|Forms nitrosamines when overheated|Not naturally in foods; typical products: Cured meats
+   Sodium nitrite (E250)|Preservative, E250 (EU/UK authorized)|Prevents botulism; forms nitrosamines when overheated|Not naturally in foods; typical products: Bacon, ham, hot dogs
+   Sodium nitrate (E251)|Preservative, E251 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Naturally in leafy and root vegetables (as nitrate); typical products: Cured meats, cheese
+   Potassium nitrate (E252)|Preservative, E252 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Naturally in vegetables (as nitrate); typical products: Cured meats, cheese
+   Propionic acid (E280)|Preservative, E280 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Swiss cheese (fermentation); typical products: Bread, baked goods
+   Sodium propionate (E281)|Preservative, E281 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Bread, baked goods
+   Calcium propionate (E282)|Preservative, E282 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Bread, baked goods
+   Potassium propionate (E283)|Preservative, E283 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Bread, baked goods
+   Boric acid (E284)|Preservative, E284 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Sturgeon caviar only
+   Sodium tetraborate; borax (E285)|Preservative, E285 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Not naturally in foods; typical products: Sturgeon caviar only
+   Lysozyme (E1105)|Preservative, E1105 (EU/UK authorized)|No nutritional role; slows growth of spoilage microbes|Egg white; typical products: Ripened cheese
+  Antioxidants
+   Ascorbic acid (E300)|Antioxidant additive, E300 (EU/UK authorized)|Vitamin C activity|Citrus, peppers, kiwi; typical products: Juices, cured meats, flour
+   Sodium ascorbate (E301)|Antioxidant additive, E301 (EU/UK authorized)|Vitamin C activity|Not naturally in foods; typical products: Cured meats, bread
+   Calcium ascorbate (E302)|Antioxidant additive, E302 (EU/UK authorized)|Vitamin C activity|Not naturally in foods; typical products: Cured meats, fruit products
+   Fatty acid esters of ascorbic acid (E304)|Antioxidant additive, E304 (EU/UK authorized)|Partly vitamin C activity|Not naturally in foods; typical products: Oils, infant formula, sauces
+   Tocopherols (E306)|Antioxidant additive, E306 (EU/UK authorized)|Vitamin E activity|Vegetable oils, nuts, seeds; typical products: Oils, cereals, margarine
+   Alpha-tocopherol (E307)|Antioxidant additive, E307 (EU/UK authorized)|Vitamin E activity|Sunflower, almond, olive oils; typical products: Oils, infant formula
+   Gamma-tocopherol (E308)|Antioxidant additive, E308 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Soybean and corn oils; typical products: Oils, margarine
+   Delta-tocopherol (E309)|Antioxidant additive, E309 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Soybean oil, wheat germ; typical products: Oils, margarine
+   Propyl gallate (E310)|Antioxidant additive, E310 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Oils, chewing gum
+   Erythorbic acid (E315)|Antioxidant additive, E315 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Cured meats, frozen fish
+   Sodium erythorbate (E316)|Antioxidant additive, E316 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Cured meats, frozen fish
+   Tertiary-butyl hydroquinone (TBHQ) (E319)|Antioxidant additive, E319 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Frying oils, snacks
+   Butylated hydroxyanisole (BHA) (E320)|Antioxidant additive, E320 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Cereals, snacks, chewing gum
+   Butylated hydroxytoluene (BHT) (E321)|Antioxidant additive, E321 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Cereals, chewing gum, oils
+   Extracts of rosemary (E392)|Antioxidant additive, E392 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Rosemary leaves; typical products: Oils, meat products, snacks
+   4-Hexylresorcinol (E586)|Antioxidant additive, E586 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Fresh and frozen crustaceans (prevents black spot)
+   Stannous chloride (E512)|Antioxidant additive, E512 (EU/UK authorized)|Slows oxidation (rancidity, browning) of the food|Not naturally in foods; typical products: Canned white asparagus
+  Sweeteners
+   Sorbitol (E420)|Sweetener, E420 (EU/UK authorized)|Laxative in excess|Prunes, pears, apples; typical products: Sugar-free candy, gum
+   Sorbitol syrup (E420ii)|Sweetener, E420ii (EU/UK authorized)|Laxative in excess|Prunes, pears, apples; typical products: Sugar-free candy, gum
+   Mannitol (E421)|Sweetener, E421 (EU/UK authorized)|Laxative in excess|Mushrooms, celery, seaweed; typical products: Sugar-free gum, candy
+   Acesulfame K (E950)|Sweetener, E950 (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Diet drinks, sugar-free gum
+   Aspartame (E951)|Sweetener, E951 (EU/UK authorized)|Contains phenylalanine (warning for PKU)|Not naturally in foods; typical products: Diet drinks, sugar-free products
+   Cyclamic acid and its Na and Ca salts (E952)|Sweetener, E952 (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Tabletop sweeteners, drinks (not US-approved)
+   Isomalt (E953)|Sweetener, E953 (EU/UK authorized)|Laxative in excess|Not naturally in foods; typical products: Sugar-free hard candy
+   Saccharin and its Na, K and Ca salts (E954)|Sweetener, E954 (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Tabletop sweeteners, diet drinks
+   Sucralose (E955)|Sweetener, E955 (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Diet drinks, baked goods
+   Thaumatin (E957)|Sweetener, E957 (EU/UK authorized)|Provides sweetness with few or no calories|Katemfe fruit (Thaumatococcus daniellii); typical products: Chewing gum, flavor enhancer
+   Neohesperidine DC (E959)|Sweetener, E959 (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Drinks, gum (made from bitter-orange flavonoids)
+   Steviol glycosides from stevia (E960a)|Sweetener, E960a (EU/UK authorized)|Provides sweetness with few or no calories|Stevia leaves; typical products: Drinks, tabletop sweeteners
+   Steviol glycosides from fermentation (E960b)|Sweetener, E960b (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Drinks, tabletop sweeteners
+   Enzymatically produced steviol glycosides (E960c)|Sweetener, E960c (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Drinks, tabletop sweeteners
+   Neotame (E961)|Sweetener, E961 (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Sweetener blends
+   Salt of aspartame-acesulfame (E962)|Sweetener, E962 (EU/UK authorized)|Contains phenylalanine|Not naturally in foods; typical products: Gum, drinks
+   Polyglycitol syrup (E964)|Sweetener, E964 (EU/UK authorized)|Laxative in excess|Not naturally in foods; typical products: Sugar-free candy
+   Maltitol (E965)|Sweetener, E965 (EU/UK authorized)|Laxative in excess|Not naturally in foods; typical products: Sugar-free chocolate, candy
+   Maltitol syrup (E965ii)|Sweetener, E965ii (EU/UK authorized)|Laxative in excess|Not naturally in foods; typical products: Sugar-free chocolate, candy
+   Lactitol (E966)|Sweetener, E966 (EU/UK authorized)|Laxative in excess|Not naturally in foods; typical products: Sugar-free desserts, candy
+   Xylitol (E967)|Sweetener, E967 (EU/UK authorized)|Does not feed tooth-decay bacteria; toxic to dogs|Plums, strawberries, cauliflower (traces); typical products: Sugar-free gum, mints
+   Erythritol (E968)|Sweetener, E968 (EU/UK authorized)|Mostly excreted unchanged in urine|Grapes, pears, fermented foods (traces); typical products: Sugar-free drinks, sweeteners
+   Advantame (E969)|Sweetener, E969 (EU/UK authorized)|Provides sweetness with few or no calories|Not naturally in foods; typical products: Sweetener blends
+  Emulsifiers
+   Lecithins (E322)|Emulsifier, E322 (EU/UK authorized)|Source of choline|Egg yolk, soybeans, sunflower seeds; typical products: Chocolate, margarine, baked goods
+   Polyoxyethylene sorbitan monolaurate; Polysorbate 20 (E432)|Emulsifier, E432 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Sauces, desserts, flavorings
+   Polyoxyethylene sorbitan mono-oleate; Polysorbate 80 (E433)|Emulsifier, E433 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Ice cream, sauces
+   Polyoxyethylene sorbitan monopalmitate; Polysorbate 40 (E434)|Emulsifier, E434 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Sauces, desserts
+   Polyoxyethylene sorbitan monostearate; Polysorbate 60 (E435)|Emulsifier, E435 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Cake mixes, toppings
+   Polyoxyethylene sorbitan tristearate; Polysorbate 65 (E436)|Emulsifier, E436 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Cake mixes, toppings
+   Ammonium phosphatides (E442)|Emulsifier, E442 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Chocolate
+   Sucrose acetate isobutyrate (E444)|Emulsifier, E444 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Cloudy soft drinks
+   Glycerol esters of wood rosins (E445)|Emulsifier, E445 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Cloudy soft drinks
+   Sodium, potassium and calcium salts of fatty acids (E470a)|Emulsifier, E470a (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Made from food fats; typical products: Baked goods, candy
+   Magnesium salts of fatty acids (E470b)|Emulsifier, E470b (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Supplements, candy, baked goods
+   Mono- and diglycerides of fatty acids (E471)|Emulsifier, E471 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Traces in fats; typical products: Bread, ice cream, margarine
+   Acetic acid esters of mono- and diglycerides of fatty acids (E472a)|Emulsifier, E472a (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Toppings, cake mixes
+   Lactic acid esters of mono- and diglycerides of fatty acids (E472b)|Emulsifier, E472b (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Toppings, desserts
+   Citric acid esters of mono- and diglycerides of fatty acids (E472c)|Emulsifier, E472c (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Margarine, infant formula
+   Tartaric acid esters of mono- and diglycerides of fatty acids (E472d)|Emulsifier, E472d (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Baked goods
+   Mono- and diacetyltartaric acid esters of mono- and diglycerides of fatty acids (E472e)|Emulsifier, E472e (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Bread
+   Mixed acetic and tartaric acid esters of mono- and diglycerides of fatty acids (E472f)|Emulsifier, E472f (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Baked goods
+   Sucrose esters of fatty acids (E473)|Emulsifier, E473 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Coatings, drinks
+   Sucroglycerides (E474)|Emulsifier, E474 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Desserts, baked goods
+   Polyglycerol esters of fatty acids (E475)|Emulsifier, E475 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Cakes, margarine
+   Polyglycerol polyricinoleate (E476)|Emulsifier, E476 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Chocolate
+   Propane-1,2-diol esters of fatty acids (E477)|Emulsifier, E477 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Cake mixes, toppings
+   Thermally oxidised soya bean oil interacted with mono and diglycerides of fatty acids (E479b)|Emulsifier, E479b (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Frying fats
+   Sodium stearoyl-2-lactylate (E481)|Emulsifier, E481 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Bread, baked goods
+   Calcium stearoyl-2-lactylate (E482)|Emulsifier, E482 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Bread
+   Stearyl tartrate (E483)|Emulsifier, E483 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Bakery goods
+   Sorbitan monostearate (E491)|Emulsifier, E491 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Yeast, cake mixes
+   Sorbitan tristearate (E492)|Emulsifier, E492 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Chocolate, candy
+   Sorbitan monolaurate (E493)|Emulsifier, E493 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Desserts
+   Sorbitan monooleate (E494)|Emulsifier, E494 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Desserts
+   Sorbitan monopalmitate (E495)|Emulsifier, E495 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Desserts
+   Octenyl succinic acid modified gum Arabic (E423)|Emulsifier, E423 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Not naturally in foods; typical products: Beverage emulsions
+   Quillaia extract (E999)|Emulsifier, E999 (EU/UK authorized)|Keeps fat and water mixed; digested or excreted|Quillaja tree bark; typical products: Soft drinks (foaming)
+  Thickeners
+   Alginic acid (E400)|Thickener / gelling agent, E400 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Brown seaweed; typical products: Desserts, sauces
+   Sodium alginate (E401)|Thickener / gelling agent, E401 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Brown seaweed; typical products: Ice cream, restructured foods
+   Potassium alginate (E402)|Thickener / gelling agent, E402 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Brown seaweed; typical products: Desserts
+   Ammonium alginate (E403)|Thickener / gelling agent, E403 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Brown seaweed; typical products: Desserts
+   Calcium alginate (E404)|Thickener / gelling agent, E404 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Brown seaweed; typical products: Desserts, pie fillings
+   Propane-1,2-diol alginate (E405)|Thickener / gelling agent, E405 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Beer foam, dressings
+   Agar (E406)|Thickener / gelling agent, E406 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Red seaweed; typical products: Jellies, desserts
+   Carrageenan (E407)|Thickener / gelling agent, E407 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Red seaweed (Irish moss); typical products: Dairy desserts, plant milks
+   Processed eucheuma seaweed (E407a)|Thickener / gelling agent, E407a (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Eucheuma red seaweed; typical products: Desserts, dairy
+   Locust bean gum; carob gum (E410)|Thickener / gelling agent, E410 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Carob tree seeds; typical products: Ice cream, cream cheese
+   Guar gum (E412)|Thickener / gelling agent, E412 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Guar beans; typical products: Sauces, ice cream
+   Tragacanth (E413)|Thickener / gelling agent, E413 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Astragalus shrub sap; typical products: Icings, dressings
+   Acacia gum; gum arabic (E414)|Thickener / gelling agent, E414 (EU/UK authorized)|Soluble fiber|Acacia tree sap; typical products: Soft drinks, candy
+   Xanthan gum (E415)|Thickener / gelling agent, E415 (EU/UK authorized)|Soluble fiber|Not naturally in foods; typical products: Dressings, gluten-free baking
+   Karaya gum (E416)|Thickener / gelling agent, E416 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Sterculia tree sap; typical products: Fillings, toppings
+   Tara gum (E417)|Thickener / gelling agent, E417 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Tara shrub seeds; typical products: Desserts, ice cream
+   Gellan gum (E418)|Thickener / gelling agent, E418 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Plant milks, jellies
+   Konjac (E425)|Thickener / gelling agent, E425 (EU/UK authorized)|Soluble fiber; choking hazard in mini-cup jellies|Konjac tuber; typical products: Jellies, shirataki noodles
+   Soybean hemicellulose (E426)|Thickener / gelling agent, E426 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Soybeans; typical products: Noodles, acidified milk drinks
+   Cassia gum (E427)|Thickener / gelling agent, E427 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Cassia tora seeds; typical products: Desserts, cheese
+   Pectins (E440)|Thickener / gelling agent, E440 (EU/UK authorized)|Soluble fiber|Citrus peel, apples; typical products: Jams, jellies
+   Cellulose (E460)|Thickener / gelling agent, E460 (EU/UK authorized)|Insoluble fiber|All plant cell walls; typical products: Shredded cheese, fiber-added foods
+   Methyl cellulose (E461)|Thickener / gelling agent, E461 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Plant-based meats
+   Ethyl cellulose (E462)|Thickener / gelling agent, E462 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Coatings, supplements
+   Hydroxypropyl cellulose (E463)|Thickener / gelling agent, E463 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Supplements, whipped toppings
+   Hydroxypropyl methyl cellulose (E464)|Thickener / gelling agent, E464 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Gluten-free bread, capsules
+   Ethyl methyl cellulose (E465)|Thickener / gelling agent, E465 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Toppings
+   Carboxy methyl cellulose (E466)|Thickener / gelling agent, E466 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Ice cream, sauces
+   Crosslinked sodium carboxy methyl cellulose (E468)|Thickener / gelling agent, E468 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Supplement tablets
+   Enzymatically hydrolysed carboxy methyl cellulose (E469)|Thickener / gelling agent, E469 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Not naturally in foods; typical products: Desserts
+   Stigmasterol-rich plant sterols (E499)|Thickener / gelling agent, E499 (EU/UK authorized)|Thickens or gels food; mostly passes undigested|Soybean oil; typical products: Frozen cocktail drinks
+  Acids & acidity regulators
+   Acetic acid (E260)|Acid / pH regulator, E260 (EU/UK authorized)|Sourness and pH control|Vinegar; typical products: Pickles, ketchup
+   Lactic acid (E270)|Acid / pH regulator, E270 (EU/UK authorized)|Sourness and pH control|Yogurt, sauerkraut, sourdough; typical products: Olives, dressings, candy
+   Malic acid (E296)|Acid / pH regulator, E296 (EU/UK authorized)|Sourness and pH control|Apples, cherries; typical products: Sour candy, drinks
+   Fumaric acid (E297)|Acid / pH regulator, E297 (EU/UK authorized)|Sourness and pH control|Fungi, lichens (traces); typical products: Drink powders, tortillas
+   Citric acid (E330)|Acid / pH regulator, E330 (EU/UK authorized)|Sourness and pH control|Lemons, limes, oranges; typical products: Soft drinks, canned foods, candy
+   Tartaric acid (L-(+)) (E334)|Acid / pH regulator, E334 (EU/UK authorized)|Sourness and pH control|Grapes, tamarind; typical products: Candy, jams, baking powder
+   Phosphoric acid (E338)|Acid / pH regulator, E338 (EU/UK authorized)|Sourness and pH control|Not naturally in foods; typical products: Colas
+   Adipic acid (E355)|Acid / pH regulator, E355 (EU/UK authorized)|Sourness and pH control|Beets (traces); typical products: Jelly powders, fillings
+   Succinic acid (E363)|Acid / pH regulator, E363 (EU/UK authorized)|Sourness and pH control|Wine, aged cheese, broccoli; typical products: Desserts, soups
+   Hydrochloric acid (E507)|Acid / pH regulator, E507 (EU/UK authorized)|Sourness and pH control|Stomach acid; typical products: Processing aid (starch, gelatin)
+   Sulphuric acid (E513)|Acid / pH regulator, E513 (EU/UK authorized)|Sourness and pH control|Not naturally in foods; typical products: Processing aid
+   Sodium hydroxide (E524)|Acid / pH regulator, E524 (EU/UK authorized)|Sourness and pH control|Not naturally in foods; typical products: Pretzels (lye), olives, cocoa
+   Potassium hydroxide (E525)|Acid / pH regulator, E525 (EU/UK authorized)|Sourness and pH control|Not naturally in foods; typical products: Cocoa processing
+   Ammonium hydroxide (E527)|Acid / pH regulator, E527 (EU/UK authorized)|Sourness and pH control|Not naturally in foods; typical products: Cocoa processing
+   Magnesium hydroxide (E528)|Acid / pH regulator, E528 (EU/UK authorized)|Sourness and pH control|Not naturally in foods; typical products: Cocoa processing
+   Calcium oxide (E529)|Acid / pH regulator, E529 (EU/UK authorized)|Sourness and pH control|Not naturally in foods; typical products: Processing aid
+   Gluconic acid (E574)|Acid / pH regulator, E574 (EU/UK authorized)|Sourness and pH control|Honey, wine, fruit; typical products: Processing
+   Glucono delta-lactone (E575)|Acid / pH regulator, E575 (EU/UK authorized)|Sourness and pH control|Honey, wine (traces); typical products: Tofu, cured sausage
+  Acidity regulators & mineral salts
+   Potassium acetate (E261)|Acidity regulator (salt), E261 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Sauces, preserved foods
+   Sodium acetate (E262)|Acidity regulator (salt), E262 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Salt & vinegar crisps
+   Calcium acetate (E263)|Acidity regulator (salt), E263 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Baked goods
+   Sodium lactate (E325)|Acidity regulator (salt), E325 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Cured meats, bread
+   Potassium lactate (E326)|Acidity regulator (salt), E326 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Meat products
+   Calcium lactate (E327)|Acidity regulator (salt), E327 (EU/UK authorized)|pH buffering; contributes minerals|Aged cheese crystals; typical products: Canned fruit, baked goods
+   Sodium citrates (E331)|Acidity regulator (salt), E331 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Processed cheese, drinks
+   Potassium citrates (E332)|Acidity regulator (salt), E332 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Drinks, jams
+   Calcium citrates (E333)|Acidity regulator (salt), E333 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Canned vegetables, juices
+   Sodium tartrates (E335)|Acidity regulator (salt), E335 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Jams, sausages
+   Potassium tartrates (E336)|Acidity regulator (salt), E336 (EU/UK authorized)|pH buffering; contributes minerals|Wine casks (tartar crystals); typical products: Baking powder, meringues
+   Sodium potassium tartrate (E337)|Acidity regulator (salt), E337 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Cheese, sausages
+   Sodium malates (E350)|Acidity regulator (salt), E350 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Jams, drinks
+   Potassium malate (E351)|Acidity regulator (salt), E351 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Jams, drinks
+   Calcium malates (E352)|Acidity regulator (salt), E352 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Jams, drinks
+   Metatartaric acid (E353)|Acidity regulator (salt), E353 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Wine (prevents tartrate crystals)
+   Calcium tartrate (E354)|Acidity regulator (salt), E354 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Baked goods
+   Sodium adipate (E356)|Acidity regulator (salt), E356 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Fillings, desserts
+   Potassium adipate (E357)|Acidity regulator (salt), E357 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Fillings
+   Triammonium citrate (E380)|Acidity regulator (salt), E380 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Cheese
+   Potassium chloride (E508)|Acidity regulator (salt), E508 (EU/UK authorized)|pH buffering; contributes minerals|Seaweed, potatoes; typical products: Salt substitutes
+   Sodium sulphates (E514)|Acidity regulator (salt), E514 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Processing aid
+   Potassium sulphates (E515)|Acidity regulator (salt), E515 (EU/UK authorized)|pH buffering; contributes minerals|Not naturally in foods; typical products: Salt substitutes
+  Phosphates
+   Sodium phosphates (E339)|Phosphate salt, E339 (EU/UK authorized)|pH, moisture and texture control; adds phosphorus|Not naturally in foods; typical products: Processed cheese, deli meats
+   Potassium phosphates (E340)|Phosphate salt, E340 (EU/UK authorized)|pH, moisture and texture control; adds phosphorus|Not naturally in foods; typical products: Meat products, creamers
+   Calcium phosphates (E341)|Phosphate salt, E341 (EU/UK authorized)|Calcium and phosphorus source|Milk, bones (as calcium phosphate); typical products: Baking powder, powders
+   Magnesium phosphates (E343)|Phosphate salt, E343 (EU/UK authorized)|pH, moisture and texture control; adds phosphorus|Not naturally in foods; typical products: Powdered foods
+   Diphosphates (E450)|Phosphate salt, E450 (EU/UK authorized)|pH, moisture and texture control; adds phosphorus|Not naturally in foods; typical products: Baking powder, processed meats
+   Triphosphates (E451)|Phosphate salt, E451 (EU/UK authorized)|pH, moisture and texture control; adds phosphorus|Not naturally in foods; typical products: Meat, fish products
+   Polyphosphates (E452)|Phosphate salt, E452 (EU/UK authorized)|pH, moisture and texture control; adds phosphorus|Not naturally in foods; typical products: Meat, fish products
+  Sequestrants
+   Calcium disodium ethylene diamine tetra-acetate; calcium disodium EDTA (E385)|Sequestrant, E385 (EU/UK authorized)|Binds metal ions to prevent spoilage and discoloration|Not naturally in foods; typical products: Canned beans, mayonnaise, spreads
+   Sodium gluconate (E576)|Sequestrant, E576 (EU/UK authorized)|Binds metal ions to prevent spoilage and discoloration|Not naturally in foods; typical products: Processing
+   Potassium gluconate (E577)|Sequestrant, E577 (EU/UK authorized)|Binds metal ions to prevent spoilage and discoloration|Not naturally in foods; typical products: Processing
+  Carriers & humectants
+   Glycerol (E422)|Carrier / humectant / solvent, E422 (EU/UK authorized)|Keeps food moist or carries flavors|Part of all fats; typical products: Soft candy, dried fruit
+   Beta-cyclodextrin (E459)|Carrier / humectant / solvent, E459 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Flavor and vitamin encapsulation
+   Polyvinylpyrrolidone (E1201)|Carrier / humectant / solvent, E1201 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Supplement tablets
+   Polyvinylpolypyrrolidone (E1202)|Carrier / humectant / solvent, E1202 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Wine, beer (clarifying)
+   Triethyl citrate (E1505)|Carrier / humectant / solvent, E1505 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Egg white powder, flavorings
+   Glyceryl diacetate (diacetin) (E1517)|Carrier / humectant / solvent, E1517 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Flavorings
+   Glyceryl triacetate; triacetin (E1518)|Carrier / humectant / solvent, E1518 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Chewing gum, flavorings
+   Benzyl alcohol (E1519)|Carrier / humectant / solvent, E1519 (EU/UK authorized)|Keeps food moist or carries flavors|Fruits, tea (traces); typical products: Flavorings
+   Propan-1,2-diol; propylene glycol (E1520)|Carrier / humectant / solvent, E1520 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Flavorings, cake mixes
+   Polyethylene glycol (E1521)|Carrier / humectant / solvent, E1521 (EU/UK authorized)|Keeps food moist or carries flavors|Not naturally in foods; typical products: Supplements, sweeteners
+  Raising agents
+   Sodium carbonates (E500)|Raising agent, E500 (EU/UK authorized)|Releases gas so doughs rise|Some mineral waters (bicarbonate); typical products: Baked goods
+   Potassium carbonates (E501)|Raising agent, E501 (EU/UK authorized)|Releases gas so doughs rise|Not naturally in foods; typical products: Cocoa (Dutch process), noodles
+   Ammonium carbonates (E503)|Raising agent, E503 (EU/UK authorized)|Releases gas so doughs rise|Not naturally in foods; typical products: Crisp cookies, crackers
+   Ammonium sulphate (E517)|Raising agent, E517 (EU/UK authorized)|Releases gas so doughs rise|Not naturally in foods; typical products: Bread (yeast food)
+   Sodium aluminium phosphate (E541)|Raising agent, E541 (EU/UK authorized)|Releases gas so doughs rise|Not naturally in foods; typical products: Scones, sponge cakes
+  Anti-caking agents
+   Magnesium carbonates (E504)|Anti-caking agent, E504 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Table salt, flour
+   Magnesium oxide (E530)|Anti-caking agent, E530 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Powders, supplements
+   Sodium ferrocyanide (E535)|Anti-caking agent, E535 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Table salt
+   Potassium ferrocyanide (E536)|Anti-caking agent, E536 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Table salt
+   Calcium ferrocyanide (E538)|Anti-caking agent, E538 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Table salt
+   Silicon dioxide (E551)|Anti-caking agent, E551 (EU/UK authorized)|Keeps powders free-flowing|Sand, quartz, diatoms; typical products: Spices, powdered foods
+   Calcium silicate (E552)|Anti-caking agent, E552 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Table salt, baking powder
+   Magnesium silicate (E553a)|Anti-caking agent, E553a (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Rice, powders
+   Magnesium trisilicate (E553aii)|Anti-caking agent, E553aii (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Rice, powders
+   Talc (E553b)|Anti-caking agent, E553b (EU/UK authorized)|Keeps powders free-flowing|Mineral talc; typical products: Rice, chewing gum
+   Sodium aluminium silicate (E554)|Anti-caking agent, E554 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Salt, powders
+   Potassium aluminium silicate (E555)|Anti-caking agent, E555 (EU/UK authorized)|Keeps powders free-flowing|Not naturally in foods; typical products: Pearlescent coatings carrier
+  Firming & gelling salts
+   Calcium chloride (E509)|Firming agent, E509 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Sea salt (traces); typical products: Canned tomatoes, tofu, pickles
+   Magnesium chloride (E511)|Firming agent, E511 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Sea salt, nigari; typical products: Tofu
+   Calcium sulphate (E516)|Firming agent, E516 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Mineral gypsum; typical products: Tofu, bread
+   Aluminium sulphate (E520)|Firming agent, E520 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Not naturally in foods; typical products: Candied fruit
+   Aluminium sodium sulphate (E521)|Firming agent, E521 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Not naturally in foods; typical products: Candied fruit
+   Aluminium potassium sulphate (E522)|Firming agent, E522 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Not naturally in foods; typical products: Candied fruit
+   Aluminium ammonium sulphate (E523)|Firming agent, E523 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Not naturally in foods; typical products: Candied fruit
+   Calcium hydroxide (E526)|Firming agent, E526 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Pickling lime; typical products: Corn tortillas (nixtamalization)
+   Calcium gluconate (E578)|Firming agent, E578 (EU/UK authorized)|Keeps fruit/vegetables firm or coagulates proteins|Not naturally in foods; typical products: Fortified foods
+  Glazing & coating agents
+   Fatty acids (E570)|Glazing agent, E570 (EU/UK authorized)|Gives shine or a protective coating|Part of all fats; typical products: Candy, supplements
+   Beeswax, white and yellow (E901)|Glazing agent, E901 (EU/UK authorized)|Gives shine or a protective coating|Honeybees; typical products: Candy, cheese coatings, fruit
+   Candelilla wax (E902)|Glazing agent, E902 (EU/UK authorized)|Gives shine or a protective coating|Candelilla plant; typical products: Candy, gum
+   Carnauba wax (E903)|Glazing agent, E903 (EU/UK authorized)|Gives shine or a protective coating|Carnauba palm leaves; typical products: Candy, coated fruit
+   Shellac (E904)|Glazing agent, E904 (EU/UK authorized)|Gives shine or a protective coating|Lac insect resin; typical products: Candy glaze, coated fruit
+   Microcrystalline wax (E905)|Glazing agent, E905 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Cheese rinds, gum
+   Hydrogenated Poly-1-Decene (E907)|Glazing agent, E907 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Candy glazing
+   Oxidised Polyethylene wax (E914)|Glazing agent, E914 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Citrus fruit coating
+   Polyvinyl alcohol (E1203)|Glazing agent, E1203 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Supplement coatings
+   Pullulan (E1204)|Glazing agent, E1204 (EU/UK authorized)|Gives shine or a protective coating|Produced by fungus Aureobasidium pullulans; typical products: Capsules, breath strips
+   Basic methacrylate copolymer (E1205)|Glazing agent, E1205 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Supplement coatings
+   Neutral methacrylate copolymer (E1206)|Glazing agent, E1206 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Supplement coatings
+   Anionic methacrylate copolymer (E1207)|Glazing agent, E1207 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Supplement coatings
+   Polyvinylpyrrolidone-vinyl acetate copolymer (E1208)|Glazing agent, E1208 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Supplement coatings
+   Polyvinyl alcohol-polyethylene glycol-graft- co-polymer (E1209)|Glazing agent, E1209 (EU/UK authorized)|Gives shine or a protective coating|Not naturally in foods; typical products: Supplement coatings
+  Colour stabilisers
+   Ferrous gluconate (E579)|Colour stabiliser (iron salt), E579 (EU/UK authorized)|Fixes black color of olives; adds iron|Not naturally in foods; typical products: Black olives
+   Ferrous lactate (E585)|Colour stabiliser (iron salt), E585 (EU/UK authorized)|Fixes black color of olives; adds iron|Not naturally in foods; typical products: Black olives
+  Flavour enhancers
+   Glutamic acid (E620)|Flavour enhancer, E620 (EU/UK authorized)|Boosts savory (umami) taste|Parmesan, tomatoes, mushrooms; typical products: Snacks, soups
+   Monosodium glutamate (E621)|Flavour enhancer, E621 (EU/UK authorized)|Boosts savory (umami) taste|Free glutamate in tomatoes, cheese, kombu; typical products: Snacks, soups, instant noodles
+   Monopotassium glutamate (E622)|Flavour enhancer, E622 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Low-sodium seasonings
+   Calcium diglutamate (E623)|Flavour enhancer, E623 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Monoammonium glutamate (E624)|Flavour enhancer, E624 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Magnesium diglutamate (E625)|Flavour enhancer, E625 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Guanylic acid (E626)|Flavour enhancer, E626 (EU/UK authorized)|Boosts savory (umami) taste|Dried shiitake; typical products: Snacks, soups
+   Disodium guanylate (E627)|Flavour enhancer, E627 (EU/UK authorized)|Boosts savory (umami) taste|Dried shiitake; typical products: Snacks, instant noodles
+   Dipotassium guanylate (E628)|Flavour enhancer, E628 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Calcium guanylate (E629)|Flavour enhancer, E629 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Inosinic acid (E630)|Flavour enhancer, E630 (EU/UK authorized)|Boosts savory (umami) taste|Meat, fish (bonito); typical products: Seasonings
+   Disodium inosinate (E631)|Flavour enhancer, E631 (EU/UK authorized)|Boosts savory (umami) taste|Meat, fish; typical products: Snacks, instant noodles
+   Dipotassium inosinate (E632)|Flavour enhancer, E632 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Calcium inosinate (E633)|Flavour enhancer, E633 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Calcium 5'-ribonucleotides (E634)|Flavour enhancer, E634 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Seasonings
+   Disodium 5'-ribonucleotides (E635)|Flavour enhancer, E635 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Crisps, instant noodles
+   Glycine and its sodium salt (E640)|Flavour enhancer, E640 (EU/UK authorized)|Boosts savory (umami) taste|Gelatin, meat; typical products: Seasonings
+   L-leucine (E641)|Flavour enhancer, E641 (EU/UK authorized)|Boosts savory (umami) taste|Meat, dairy, legumes; typical products: Sweetener tablets (lubricant)
+   Zinc acetate (E650)|Flavour enhancer, E650 (EU/UK authorized)|Boosts savory (umami) taste|Not naturally in foods; typical products: Chewing gum
+  Anti-foaming agents
+   Dimethylpolysiloxane (E900)|Anti-foaming agent, E900 (EU/UK authorized)|Prevents foaming during processing|Not naturally in foods; typical products: Frying oils, jams, soft drinks
+  Flour treatment agents
+   L-Cysteine (E920)|Flour treatment agent, E920 (EU/UK authorized)|Improves dough handling|Eggs, poultry (as amino acid); typical products: Bread dough
+   Carbamide (E927b)|Flour treatment agent, E927b (EU/UK authorized)|Improves dough handling|Not naturally in foods; typical products: Chewing gum (sugar-free)
+  Packaging gases & propellants
+   Carbon dioxide (E290)|Packaging gas / propellant, E290 (EU/UK authorized)|Displaces oxygen or propels food from a can|Fermentation (beer, bread); typical products: Soft drinks, sparkling water, packaged salads
+   Argon (E938)|Packaging gas / propellant, E938 (EU/UK authorized)|Displaces oxygen or propels food from a can|Air; typical products: Packaged foods
+   Helium (E939)|Packaging gas / propellant, E939 (EU/UK authorized)|Displaces oxygen or propels food from a can|Air (traces); typical products: Packaged foods
+   Nitrogen (E941)|Packaging gas / propellant, E941 (EU/UK authorized)|Displaces oxygen or propels food from a can|Air (78%); typical products: Snack bags, nitro coffee, packaged salads
+   Nitrous oxide (E942)|Packaging gas / propellant, E942 (EU/UK authorized)|Displaces oxygen or propels food from a can|Not naturally in foods; typical products: Whipped cream cans
+   Butane (E943a)|Packaging gas / propellant, E943a (EU/UK authorized)|Displaces oxygen or propels food from a can|Not naturally in foods; typical products: Cooking oil sprays
+   Iso-butane (E943b)|Packaging gas / propellant, E943b (EU/UK authorized)|Displaces oxygen or propels food from a can|Not naturally in foods; typical products: Cooking oil sprays
+   Propane (E944)|Packaging gas / propellant, E944 (EU/UK authorized)|Displaces oxygen or propels food from a can|Not naturally in foods; typical products: Cooking oil sprays
+   Oxygen (E948)|Packaging gas / propellant, E948 (EU/UK authorized)|Displaces oxygen or propels food from a can|Air; typical products: Packaged meat
+   Hydrogen (E949)|Packaging gas / propellant, E949 (EU/UK authorized)|Displaces oxygen or propels food from a can|Not naturally in foods; typical products: Packaging
+  Bulking agents
+   Polydextrose (E1200)|Bulking agent, E1200 (EU/UK authorized)|Soluble fiber|Not naturally in foods; typical products: Low-sugar foods
+  Modified starches
+   Oxidised starch (E1404)|Modified starch, E1404 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Monostarch phosphate (E1410)|Modified starch, E1410 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Distarch phosphate (E1412)|Modified starch, E1412 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Phosphated distarch phosphate (E1413)|Modified starch, E1413 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Acetylated distarch phosphate (E1414)|Modified starch, E1414 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Acetylated starch (E1420)|Modified starch, E1420 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Acetylated distarch adipate (E1422)|Modified starch, E1422 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Hydroxyl propyl starch (E1440)|Modified starch, E1440 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Hydroxy propyl distarch phosphate (E1442)|Modified starch, E1442 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Starch sodium octenyl succinate (E1450)|Modified starch, E1450 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Acetylated oxidised starch (E1451)|Modified starch, E1451 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+   Starch aluminium Octenyl succinate (E1452)|Modified starch, E1452 (EU/UK authorized)|Digested like starch|Not naturally in foods; typical products: Sauces, soups, desserts, frozen foods
+  Enzymes
+   Invertase (E1103)|Enzyme additive, E1103 (EU/UK authorized)|Breaks down sugars or proteins in the food|Yeast, honey; typical products: Soft-centred chocolates
+ US-permitted additives not on the EU list
+  Citrus Red No. 2|Synthetic azo dye (US only)|No nutritional role|Not naturally in foods; skins of some Florida oranges
+  Orange B|Synthetic azo dye (US only)|No nutritional role|Not naturally in foods; hot dog and sausage casings
+  Potassium bromate|Flour improver (US; banned in EU, UK, California from 2027)|Possible carcinogen|Not naturally in foods; some breads and rolls
+  Azodicarbonamide (ADA)|Flour whitener and dough conditioner (US)|Breaks down to semicarbazide|Not naturally in foods; bread, buns
+  Benzoyl peroxide (flour bleaching)|Flour bleaching agent (US)|Leaves benzoic acid|Not naturally in foods; bleached flour, whey
+  Calcium peroxide|Dough conditioner (US)|No nutritional role|Not naturally in foods; bread
+  Chlorine dioxide|Flour bleaching agent (US)|No nutritional role|Not naturally in foods; bleached flour
+  Propylparaben|Paraben preservative (US; removed from EU list 2006)|Possible endocrine effects studied|Not naturally in foods; tortillas, baked goods
+  Allulose|Rare sugar sweetener (US; not authorized in EU)|Few calories|Figs, raisins (traces); low-sugar products
+  Monk fruit extract (mogrosides)|Luo han guo sweetener (US GRAS; not EU-authorized)|Sweetness without calories|Monk fruit (luo han guo)
+  Mineral oil (food-grade)|Petroleum-derived oil used as release agent|Not absorbed; laxative|Not naturally in foods; candy, dried fruit
+  Brominated vegetable oil (BVO)|Citrus-drink emulsifier (US authorization revoked 2024)|Bromine accumulates in tissue|Not naturally in foods; formerly in citrus sodas
+ Other sweetening ingredients
+  High-fructose corn syrup|Glucose syrup with fructose|Sugar source|Not naturally in foods; soft drinks, sauces
+  Glucose syrup|Liquid starch hydrolysate|Sugar source|Not naturally in foods; candy, baked goods
+  Honey|Bee-made sugar syrup (fructose, glucose)|Sugar source|Honeybees
+  Maple syrup|Concentrated maple sap (mostly sucrose)|Sugar source|Sugar maple sap
+  Agave syrup|Fructose-rich syrup|Sugar source|Agave plant
+  Molasses|Sugar refining by-product|Sugar plus minerals|Sugar cane or beet
+  Invert sugar|Sucrose split into glucose and fructose|Sugar source|Honey (naturally similar); candy, syrups
+  Dextrose|Pure glucose from starch|Fast sugar source|Grapes, honey; added to many foods
+ Other ingredients and processing aids
+  Gelatin|Animal collagen protein|Gelling agent; protein|Bones and skin of animals; gummies, marshmallows
+  Yeast|Saccharomyces cerevisiae|Leavening; B vitamins|Bread, beer, wine
+  Rennet / chymosin|Milk-clotting enzyme|Makes cheese|Calf stomach or fermentation-produced; cheese
+  Amylase|Starch-digesting enzyme|Dough conditioning|Saliva, malt; bread, brewing
+  Lactase|Lactose-splitting enzyme|Makes lactose-free milk|Not naturally in foods; lactose-free milk
+  Transglutaminase|Protein cross-linking enzyme|Binds proteins|Not naturally added; restructured meat, fish
+  Protease (papain, bromelain)|Protein-digesting enzymes|Meat tenderizing|Papaya, pineapple
+  Glucose oxidase|Enzyme that removes oxygen|Prevents oxidation in packaging|Honey (naturally); processing
 Flavorings
- Natural flavors|Flavor extracted from plant/animal sources (US 21 CFR 101.22)|
- Artificial flavors|Synthesized flavor chemicals|
- Natural identical / nature-identical|Older EU term for synthetic copies of natural molecules|
- Smoke flavoring|Condensed wood smoke (EU-authorized primary products)|
+ Natural flavors|Flavor extracted from plant/animal sources (US 21 CFR 101.22)||Processed foods and drinks of all kinds
+ Artificial flavors|Synthesized flavor chemicals||Candy, soft drinks, snacks
+ Natural identical / nature-identical|Older EU term for synthetic copies of natural molecules||Candy, drinks, baked goods
+ Smoke flavoring|Condensed wood smoke (EU-authorized primary products)||Barbecue sauce, bacon, snacks
  Extracts
-  Vanilla extract|Vanilla beans in ethanol; main compound vanillin|
-  Almond extract|Bitter almond oil; main compound benzaldehyde|
-  Peppermint extract|Peppermint oil in ethanol; main compound menthol|
+  Vanilla extract|Vanilla beans in ethanol; main compound vanillin||Vanilla beans; baked goods
+  Almond extract|Bitter almond oil; main compound benzaldehyde||Bitter almond or apricot kernels; baked goods
+  Peppermint extract|Peppermint oil in ethanol; main compound menthol||Peppermint leaves; candy, baked goods
  Essential oils
-  Lemon oil|Cold-pressed peel oil; main compound limonene|
-  Orange oil|Peel oil; main compound limonene|
-  Peppermint oil|Main compounds menthol, menthone|
-  Cinnamon oil|Main compound cinnamaldehyde|
-  Clove oil|Main compound eugenol|
- Yeast extract (flavoring)|Autolyzed yeast; source of glutamate and nucleotides|
- Hydrolyzed vegetable protein|Acid- or enzyme-broken plant protein; savory|
- Spices / spice extracts|Ground spices or oleoresins|
+  Lemon oil|Cold-pressed peel oil; main compound limonene||Lemon peel
+  Orange oil|Peel oil; main compound limonene||Orange peel
+  Peppermint oil|Main compounds menthol, menthone||Peppermint leaves
+  Cinnamon oil|Main compound cinnamaldehyde||Cinnamon bark
+  Clove oil|Main compound eugenol||Clove buds
+ Yeast extract (flavoring)|Autolyzed yeast; source of glutamate and nucleotides||Marmite, Vegemite; soups, snacks
+ Hydrolyzed vegetable protein|Acid- or enzyme-broken plant protein; savory||Soups, gravy mixes, snacks
+ Spices / spice extracts|Ground spices or oleoresins||Spice blends, sauces, snacks
+ Named flavor compounds
+  Vanilla, sweet and caramel
+   Vanillin|Main vanilla aroma molecule|No nutritional role|Vanilla beans; synthesized from guaiacol or lignin
+   Ethyl vanillin|Synthetic vanillin analogue (~3x stronger)|No nutritional role|Not naturally in foods; chocolate, baked goods
+   Maltol|Caramel-like pyranone|No nutritional role|Larch bark, roasted malt, bread crust
+   Ethyl maltol|Synthetic maltol analogue|No nutritional role|Not naturally in foods; candy, baked goods
+   Furaneol (strawberry furanone)|Caramel-strawberry furanone|No nutritional role|Strawberries, pineapple, tomatoes
+   Sotolon|Lactone with maple/curry aroma|No nutritional role|Fenugreek, lovage, aged sake, flor sherry
+   Cyclotene|Maple-caramel aroma compound|No nutritional role|Roasted coffee, maple syrup
+  Citrus and fresh
+   Limonene|Citrus monoterpene|No nutritional role; studied bioactive|Orange and lemon peel
+   Citral (geranial + neral)|Lemon aldehyde|No nutritional role|Lemongrass, lemon myrtle, lemon peel
+   Linalool (flavor)|Floral-citrus monoterpene alcohol|No nutritional role|Coriander, basil, orange
+   Geraniol|Rose-like monoterpene alcohol|No nutritional role|Rose, lemongrass, palmarosa
+   Nootkatone (flavor)|Grapefruit sesquiterpene|No nutritional role|Grapefruit
+   Octanal|Citrus-peel aldehyde|No nutritional role|Orange peel
+  Mint, spice and herb
+   Menthol|Cooling monoterpene alcohol|Activates cold receptor TRPM8|Peppermint, cornmint
+   L-Carvone (R-carvone)|Spearmint ketone|No nutritional role|Spearmint
+   D-Carvone (S-carvone)|Caraway ketone (mirror image of L-carvone)|No nutritional role|Caraway, dill seed
+   Cinnamaldehyde|Cinnamon aldehyde|Antimicrobial; warming|Cinnamon bark
+   Eugenol|Clove phenol|Mild anesthetic, antimicrobial|Cloves, allspice, basil
+   Anethole|Anise ether (sweet)|No nutritional role|Anise, fennel, star anise
+   Estragole|Anise-like ether|Limited in flavorings (genotoxic at high dose)|Tarragon, basil, fennel
+   Thymol (flavor)|Thyme phenol|Antimicrobial|Thyme
+   Carvacrol (flavor)|Oregano phenol|Antimicrobial|Oregano
+   1,8-Cineole (eucalyptol)|Eucalyptus ether|No nutritional role|Bay leaf, rosemary, cardamom
+   Benzaldehyde|Bitter almond aldehyde|No nutritional role|Bitter almonds, cherry pits, apricot kernels
+  Fruity esters and lactones
+   Isoamyl acetate|Banana ester|No nutritional role|Bananas, beer, sake
+   Ethyl butyrate|Pineapple/juicy fruit ester|No nutritional role|Pineapple, orange juice
+   Ethyl hexanoate|Apple-pineapple ester|No nutritional role|Apples, pineapple, beer
+   Allyl hexanoate|Pineapple ester|No nutritional role|Not naturally in foods (traces in pineapple reported); candy
+   Methyl anthranilate|Concord grape aroma|No nutritional role|Concord grapes, orange blossom
+   Benzyl acetate|Jasmine/pear ester|No nutritional role|Jasmine, pears, apples
+   Gamma-decalactone|Peach lactone|No nutritional role|Peaches, apricots, strawberries
+   Delta-decalactone|Creamy coconut lactone|No nutritional role|Butter, coconut, cheese
+   Gamma-nonalactone|Coconut lactone|No nutritional role|Bourbon, peaches, cooked rice
+   Raspberry ketone|Raspberry phenolic ketone|Weight-loss claims unsupported|Raspberries (traces)
+   Beta-ionone|Violet/raspberry carotenoid breakdown product|No nutritional role|Raspberries, violets, carrots
+   Beta-damascenone|Rose-apple norisoprenoid|No nutritional role|Grapes, wine, apples, tea
+  Dairy and buttery
+   Diacetyl|Butter-flavor diketone|Inhalation hazard for factory workers|Butter, beer, wine, fermented dairy
+   Acetoin|Buttery hydroxyketone|No nutritional role|Butter, yogurt, fermented foods
+   2,3-Pentanedione|Buttery diketone|No nutritional role|Coffee, beer, butter
+   Butyric acid (flavor)|Cheesy/buttery fatty acid|Colon cell fuel|Butter, Parmesan
+  Savory, roasted and smoky
+   2-Acetyl-1-pyrroline|Popcorn/basmati aroma|No nutritional role|Basmati and jasmine rice, bread crust, pandan
+   Methional|Cooked potato aroma|No nutritional role|Potatoes, tomatoes, cheese
+   Furfurylthiol (2-furanmethanethiol)|Roasted coffee aroma|No nutritional role|Roasted coffee
+   Pyrazines (e.g. 2-ethyl-3,5-dimethylpyrazine)|Roasted/nutty Maillard compounds|No nutritional role|Roasted coffee, cocoa, nuts, bread crust
+   Guaiacol|Smoky phenol|No nutritional role|Smoked foods, coffee, whisky
+   4-Ethylguaiacol|Smoky-spicy phenol|No nutritional role|Smoked foods, soy sauce, wine
+   Dimethyl sulfide|Cooked corn/seaside aroma|No nutritional role|Sweet corn, seafood, cooked cabbage, beer
+   Filbertone|Hazelnut ketone|No nutritional role|Hazelnuts
+   Sotolone-type lactones|Spicy-sweet lactones|No nutritional role|Fenugreek, maple
+  Green and earthy
+   cis-3-Hexenol (leaf alcohol)|Cut-grass aroma|No nutritional role|Green leaves, tomatoes, tea
+   Hexanal|Green/grassy aldehyde|No nutritional role|Apples, tomatoes, olive oil
+   1-Octen-3-ol (mushroom alcohol)|Mushroom aroma|No nutritional role|Mushrooms
+   Geosmin|Earthy aroma|No nutritional role|Beets, freshwater fish, soil
+   2-Isobutyl-3-methoxypyrazine|Bell pepper aroma|No nutritional role|Green bell peppers, Sauvignon blanc

@@ -1,0 +1,32 @@
+Additives
+ US-permitted additives not on the EU list
+  Citrus Red No. 2|Synthetic azo dye (US only)|No nutritional role|Not naturally in foods; skins of some Florida oranges
+  Orange B|Synthetic azo dye (US only)|No nutritional role|Not naturally in foods; hot dog and sausage casings
+  Potassium bromate|Flour improver (US; banned in EU, UK, California from 2027)|Possible carcinogen|Not naturally in foods; some breads and rolls
+  Azodicarbonamide (ADA)|Flour whitener and dough conditioner (US)|Breaks down to semicarbazide|Not naturally in foods; bread, buns
+  Benzoyl peroxide (flour bleaching)|Flour bleaching agent (US)|Leaves benzoic acid|Not naturally in foods; bleached flour, whey
+  Calcium peroxide|Dough conditioner (US)|No nutritional role|Not naturally in foods; bread
+  Chlorine dioxide|Flour bleaching agent (US)|No nutritional role|Not naturally in foods; bleached flour
+  Propylparaben|Paraben preservative (US; removed from EU list 2006)|Possible endocrine effects studied|Not naturally in foods; tortillas, baked goods
+  Allulose|Rare sugar sweetener (US; not authorized in EU)|Few calories|Figs, raisins (traces); low-sugar products
+  Monk fruit extract (mogrosides)|Luo han guo sweetener (US GRAS; not EU-authorized)|Sweetness without calories|Monk fruit (luo han guo)
+  Mineral oil (food-grade)|Petroleum-derived oil used as release agent|Not absorbed; laxative|Not naturally in foods; candy, dried fruit
+  Brominated vegetable oil (BVO)|Citrus-drink emulsifier (US authorization revoked 2024)|Bromine accumulates in tissue|Not naturally in foods; formerly in citrus sodas
+ Other sweetening ingredients
+  High-fructose corn syrup|Glucose syrup with fructose|Sugar source|Not naturally in foods; soft drinks, sauces
+  Glucose syrup|Liquid starch hydrolysate|Sugar source|Not naturally in foods; candy, baked goods
+  Honey|Bee-made sugar syrup (fructose, glucose)|Sugar source|Honeybees
+  Maple syrup|Concentrated maple sap (mostly sucrose)|Sugar source|Sugar maple sap
+  Agave syrup|Fructose-rich syrup|Sugar source|Agave plant
+  Molasses|Sugar refining by-product|Sugar plus minerals|Sugar cane or beet
+  Invert sugar|Sucrose split into glucose and fructose|Sugar source|Honey (naturally similar); candy, syrups
+  Dextrose|Pure glucose from starch|Fast sugar source|Grapes, honey; added to many foods
+ Other ingredients and processing aids
+  Gelatin|Animal collagen protein|Gelling agent; protein|Bones and skin of animals; gummies, marshmallows
+  Yeast|Saccharomyces cerevisiae|Leavening; B vitamins|Bread, beer, wine
+  Rennet / chymosin|Milk-clotting enzyme|Makes cheese|Calf stomach or fermentation-produced; cheese
+  Amylase|Starch-digesting enzyme|Dough conditioning|Saliva, malt; bread, brewing
+  Lactase|Lactose-splitting enzyme|Makes lactose-free milk|Not naturally in foods; lactose-free milk
+  Transglutaminase|Protein cross-linking enzyme|Binds proteins|Not naturally added; restructured meat, fish
+  Protease (papain, bromelain)|Protein-digesting enzymes|Meat tenderizing|Papaya, pineapple
+  Glucose oxidase|Enzyme that removes oxygen|Prevents oxidation in packaging|Honey (naturally); processing

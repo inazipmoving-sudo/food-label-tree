@@ -1,0 +1,475 @@
+Macronutrients
+ Protein
+  Essential amino acids
+   Histidine|Essential amino acid with an imidazole side chain|Precursor of histamine; needed for growth and tissue repair
+   Isoleucine|Branched-chain essential amino acid (BCAA)|Muscle protein synthesis and energy
+   Leucine|Branched-chain essential amino acid (BCAA)|Key trigger of muscle protein synthesis (mTOR)
+   Lysine|Essential amino acid often limiting in grains|Collagen cross-linking, carnitine synthesis, calcium absorption
+   Methionine|Sulfur-containing essential amino acid|Methyl donor (via SAMe); starts protein synthesis
+   Phenylalanine|Aromatic essential amino acid|Precursor of tyrosine, dopamine, adrenaline
+   Threonine|Essential amino acid with a hydroxyl group|Mucin, collagen and elastin production
+   Tryptophan|Aromatic essential amino acid|Precursor of serotonin, melatonin and niacin
+   Valine|Branched-chain essential amino acid (BCAA)|Muscle metabolism and energy
+  Conditionally essential amino acids
+   Arginine|Amino acid essential in stress/growth|Nitric oxide production, urea cycle
+   Cysteine|Sulfur amino acid made from methionine|Glutathione and keratin synthesis
+   Glutamine|Most abundant free amino acid in blood|Fuel for gut and immune cells
+   Glycine|Smallest amino acid|Collagen, glutathione, inhibitory neurotransmitter
+   Proline|Cyclic amino acid abundant in collagen|Collagen structure and wound healing
+   Tyrosine|Aromatic amino acid made from phenylalanine|Precursor of dopamine, adrenaline, thyroid hormone
+  Non-essential amino acids
+   Alanine|Simple amino acid made from pyruvate|Glucose-alanine cycle between muscle and liver
+   Asparagine|Amide of aspartic acid|Protein glycosylation, nervous system function
+   Aspartic acid|Acidic amino acid|Urea cycle and neurotransmission
+   Glutamic acid|Acidic amino acid (source of umami taste)|Main excitatory neurotransmitter; nitrogen metabolism
+   Serine|Hydroxyl amino acid|Phospholipid and nucleotide synthesis
+  Protein types seen on labels
+   Whey protein|Soluble milk protein fraction|Fast-digesting complete protein
+   Casein|Main milk protein (~80%)|Slow-digesting complete protein
+   Soy protein|Protein from soybeans|Complete plant protein
+   Pea protein|Protein isolated from yellow peas|Plant protein rich in lysine
+   Gluten|Wheat/barley/rye protein (gliadin + glutenin)|Gives dough elasticity; triggers celiac disease
+   Collagen / gelatin|Structural animal protein rich in glycine and proline|Connective tissue support; incomplete protein
+   Collagen peptides|Hydrolyzed collagen|Provides glycine/proline; studied for skin and joints
+   Bioactive peptides (e.g. carnosine, anserine)|Small peptides in meat and fish|Muscle acid buffering, antioxidant
+   Egg albumin|Main egg white protein|High-quality complete protein
+ Carbohydrates
+  Monosaccharides
+   Glucose|Simple 6-carbon sugar (dextrose)|Primary fuel for cells and brain
+   Fructose|Fruit sugar, 6-carbon ketose|Metabolized mainly in the liver
+   Galactose|6-carbon sugar, half of lactose|Converted to glucose in the liver
+   Ribose|5-carbon sugar|Backbone of RNA and ATP
+  Disaccharides
+   Sucrose|Table sugar = glucose + fructose|Quick energy
+   Lactose|Milk sugar = glucose + galactose|Energy; needs lactase enzyme to digest
+   Maltose|Malt sugar = two glucose|Energy from starch breakdown
+   Trehalose|Two glucose units (mushrooms, yeast)|Slowly digested energy
+  Oligosaccharides
+   Raffinose|Trisaccharide in beans|Fermented by gut bacteria (gas)
+   Stachyose|Tetrasaccharide in legumes|Prebiotic; fermented in the colon
+   Fructooligosaccharides (FOS)|Short fructose chains|Prebiotic fiber
+   Galactooligosaccharides (GOS)|Short galactose chains|Prebiotic; feeds bifidobacteria
+  Starches
+   Amylose|Linear glucose polymer in starch|Slower-digesting starch
+   Amylopectin|Branched glucose polymer in starch|Rapidly digested energy
+   Resistant starch|Starch that escapes small-intestine digestion|Acts like fiber; feeds gut bacteria
+   Maltodextrin|Partially broken-down starch|Very fast-absorbing carbohydrate
+   Modified starch|Chemically/physically altered starch (E1404-E1452)|Thickener; digested like starch
+   Glycogen|Animal storage form of glucose|Energy reserve in liver and muscle
+  Fiber
+   Soluble fiber
+    Beta-glucan|Soluble fiber in oats and barley|Lowers LDL cholesterol
+    Pectin|Soluble fiber in fruit (E440)|Gel-forming; slows digestion
+    Inulin|Fructose polymer from chicory, onions|Prebiotic; feeds gut bacteria
+    Psyllium|Mucilage fiber from Plantago seeds|Bulks stool; lowers cholesterol
+    Guar gum (as fiber)|Galactomannan from guar beans|Slows glucose absorption
+    Glucomannan|Fiber from konjac root|Absorbs water; promotes fullness
+    Alginate|Fiber from brown seaweed|Forms gels in the gut
+   Insoluble fiber
+    Cellulose|Glucose polymer of plant cell walls|Adds stool bulk
+    Hemicellulose|Mixed plant cell-wall polysaccharides|Adds bulk; partly fermented
+    Lignin|Non-carbohydrate woody polymer counted as fiber|Adds bulk; binds bile acids
+    Chitin|Fiber in mushrooms and crustacean shells|Indigestible bulk
+  Sugar alcohols (polyols)
+   Sorbitol|Polyol from glucose (E420)|Low-calorie sweetener; laxative in excess
+   Mannitol|Polyol (E421)|Sweetener; laxative in excess
+   Xylitol|5-carbon polyol (E967)|Sweetener that does not feed tooth-decay bacteria
+   Erythritol|4-carbon polyol (E968)|Nearly zero-calorie sweetener
+   Maltitol|Polyol from maltose (E965)|Sugar-like sweetener with fewer calories
+   Isomalt|Polyol from sucrose (E953)|Sugar-free candy sweetener
+   Lactitol|Polyol from lactose (E966)|Low-calorie sweetener
+ Fats
+  Saturated fatty acids
+   Butyric acid (C4:0)|Short-chain saturated fat in butter|Fuel for colon cells
+   Caproic acid (C6:0)|Short/medium-chain fat in goat milk|Quick energy
+   Caprylic acid (C8:0)|Medium-chain fat (MCT) in coconut|Rapidly converted to ketones
+   Capric acid (C10:0)|Medium-chain fat (MCT)|Quick energy
+   Lauric acid (C12:0)|Main fat in coconut and palm kernel oil|Raises HDL and LDL
+   Myristic acid (C14:0)|Saturated fat in dairy and nutmeg|Raises LDL cholesterol
+   Palmitic acid (C16:0)|Most common saturated fat (palm, meat)|Energy; raises LDL in excess
+   Stearic acid (C18:0)|Saturated fat in cocoa butter, beef|Largely neutral on LDL
+   Arachidic acid (C20:0)|Long-chain saturated fat in peanut oil|Minor energy source
+  Monounsaturated fatty acids
+   Oleic acid (omega-9)|Main fat in olive oil|Supports healthy cholesterol levels
+   Palmitoleic acid (omega-7)|MUFA in macadamia, sea buckthorn|Signaling lipid
+   Erucic acid (omega-9)|MUFA in rapeseed/mustard|Limited in food due to heart effects
+  Polyunsaturated omega-3
+   ALA (alpha-linolenic acid)|Plant omega-3 in flax, chia, walnuts|Essential fat; partly converted to EPA/DHA
+   SDA (stearidonic acid)|Omega-3 in hemp and echium oil|Intermediate toward EPA
+   EPA (eicosapentaenoic acid)|Marine omega-3|Anti-inflammatory signaling
+   DPA (docosapentaenoic acid)|Marine omega-3|Intermediate between EPA and DHA
+   DHA (docosahexaenoic acid)|Marine omega-3|Brain and retina structure
+  Polyunsaturated omega-6
+   Linoleic acid (LA)|Main omega-6 in seed oils|Essential fat; skin barrier
+   Gamma-linolenic acid (GLA)|Omega-6 in borage, evening primrose|Precursor of anti-inflammatory eicosanoids
+   Arachidonic acid (AA)|Omega-6 in meat and eggs|Precursor of eicosanoids; cell membranes
+  Trans fats
+   Elaidic acid|Industrial trans fat from partial hydrogenation|Raises LDL, lowers HDL
+   Vaccenic acid|Natural ruminant trans fat in dairy|Partly converted to CLA
+   Conjugated linoleic acid (CLA)|Natural trans/conjugated fat in dairy and beef|Studied for body-composition effects
+  Sterols and other lipids
+   Cholesterol|Animal sterol|Cell membranes; makes hormones, vitamin D, bile
+   Phospholipids (lecithin)|Fat with phosphate head group|Cell membranes; emulsifier
+   Medium-chain triglycerides (MCT)|Triglycerides of C6-C12 fatty acids|Absorbed directly to the liver; quick energy
+   Triglycerides|Glycerol + three fatty acids|Main storage form of fat
+ Organic acids
+  Citric acid|Acid in citrus fruits|Energy-cycle (Krebs) intermediate
+  Malic acid|Acid in apples|Krebs cycle intermediate
+  Lactic acid|Acid from fermentation (yogurt, sauerkraut)|Recycled to glucose by the liver
+  Acetic acid|Acid in vinegar|Short-chain fatty acid; may blunt glucose spikes
+  Tartaric acid|Acid in grapes|Mostly fermented by gut bacteria
+  Succinic acid|Acid in fermented foods|Krebs cycle intermediate
+ Alcohol (ethanol)|Fermentation product, 7 kcal/g|Energy; toxic in excess
+Micronutrients
+ Vitamins
+  Fat-soluble vitamins
+   Vitamin A
+    Retinol|Preformed vitamin A in animal foods|Vision, immunity, skin
+    Retinyl palmitate|Ester form used in fortification|Converted to retinol
+    Retinyl acetate|Ester form used in supplements|Converted to retinol
+    Beta-carotene (provitamin A)|Plant pigment converted to vitamin A|Source of vitamin A; antioxidant
+   Vitamin D
+    Cholecalciferol (D3)|Animal/skin-made vitamin D|Calcium absorption, bone health
+    Ergocalciferol (D2)|Plant/mushroom vitamin D|Calcium absorption (less potent than D3)
+   Vitamin E
+    Alpha-tocopherol|Most active vitamin E form|Antioxidant protecting cell membranes
+    dl-alpha-tocopheryl acetate|Synthetic ester form|Converted to tocopherol
+    Gamma-tocopherol|Main E form in US diet (nuts, oils)|Antioxidant
+    Tocotrienols|Vitamin E forms in palm and rice bran|Antioxidant
+   Vitamin K
+    Phylloquinone (K1)|Plant vitamin K in leafy greens|Blood clotting
+    Menaquinone-4 (K2 MK-4)|Animal-food vitamin K2|Bone and vascular calcium regulation
+    Menaquinone-7 (K2 MK-7)|Fermented-food K2 (natto)|Long-lasting K activity
+  Water-soluble vitamins
+   Vitamin B1 (thiamin)
+    Thiamin hydrochloride|Fortification form of B1|Carbohydrate metabolism, nerves
+    Thiamin mononitrate|Stable fortification form of B1|Carbohydrate metabolism
+   Vitamin B2 (riboflavin)
+    Riboflavin|Yellow vitamin (also E101)|Energy metabolism (FAD/FMN)
+    Riboflavin-5'-phosphate|Active phosphate form|Energy metabolism
+   Vitamin B3 (niacin)
+    Nicotinic acid|Niacin form|Energy metabolism (NAD); lowers lipids at high dose
+    Nicotinamide (niacinamide)|Amide form of niacin|Energy metabolism without flushing
+   Vitamin B5 (pantothenic acid)
+    Calcium D-pantothenate|Common supplement form|Part of coenzyme A
+   Vitamin B6
+    Pyridoxine hydrochloride|Supplement form of B6|Amino acid metabolism, neurotransmitters
+    Pyridoxal 5'-phosphate (P5P)|Active coenzyme form|Amino acid metabolism
+   Vitamin B7 (biotin)
+    D-biotin|Biotin|Fat and carbohydrate metabolism; hair, nails
+   Vitamin B9 (folate)
+    Folate (food form)|Natural polyglutamate folates|DNA synthesis, cell division
+    Folic acid|Synthetic fortification form|Prevents neural tube defects
+    L-methylfolate (5-MTHF)|Active folate form|Methylation, DNA synthesis
+   Vitamin B12 (cobalamin)
+    Cyanocobalamin|Stable synthetic B12|Nerve function, red blood cells
+    Methylcobalamin|Active coenzyme form|Methylation, nerve function
+    Adenosylcobalamin|Mitochondrial coenzyme form|Energy metabolism
+    Hydroxocobalamin|Natural/injection form|Converted to active B12
+   Vitamin C
+    Ascorbic acid|Vitamin C (also E300)|Antioxidant, collagen synthesis, iron absorption
+    Sodium ascorbate|Sodium salt of vitamin C (E301)|Same as vitamin C
+    Calcium ascorbate|Calcium salt of vitamin C (E302)|Same as vitamin C
+  Vitamin-like nutrients
+   Choline|Essential nutrient in eggs and liver|Acetylcholine, cell membranes, liver health
+   Inositol|Sugar-alcohol-like compound|Cell signaling
+   Carnitine|Compound made from lysine and methionine|Shuttles fat into mitochondria
+   Coenzyme Q10|Fat-soluble quinone|Mitochondrial energy, antioxidant
+ Minerals
+  Macrominerals
+   Calcium
+    Calcium carbonate|Common calcium salt (E170)|Bones, teeth, muscle contraction
+    Calcium citrate|Well-absorbed calcium salt|Bones; absorbed without food
+    Calcium phosphate|Calcium salt (E341)|Bones; also anti-caking agent
+    Calcium lactate|Calcium salt (E327)|Calcium source; firming agent
+   Phosphorus
+    Phosphate (natural)|Phosphorus in protein foods|Bones, ATP, DNA
+    Sodium phosphates|Added phosphates (E339)|Phosphorus source; additive
+   Magnesium
+    Magnesium oxide|Dense magnesium salt|Muscle, nerve, 300+ enzymes
+    Magnesium citrate|Well-absorbed magnesium salt|Magnesium source; laxative at high dose
+    Magnesium glycinate|Magnesium bound to glycine|Gentle magnesium source
+   Sodium
+    Sodium chloride|Table salt|Fluid balance, nerve signals
+    Sodium bicarbonate|Baking soda (E500)|Sodium source; leavening
+   Potassium
+    Potassium chloride|Salt substitute (E508)|Fluid balance, heart rhythm, blood pressure
+    Potassium citrate|Potassium salt (E332)|Potassium source; acidity regulator
+   Chloride|Anion paired with sodium/potassium|Stomach acid, fluid balance
+   Sulfur|Element in methionine, cysteine|Protein structure, glutathione
+  Trace minerals
+   Iron
+    Heme iron|Iron in meat and fish|Hemoglobin, oxygen transport
+    Ferrous sulfate|Common iron salt|Iron source
+    Ferrous fumarate|Iron salt|Iron source
+    Ferric pyrophosphate|Iron used in fortification|Iron source
+    Electrolytic iron|Reduced elemental iron powder|Iron fortification of cereals
+   Zinc
+    Zinc oxide|Zinc salt used in fortification|Immunity, wound healing, taste
+    Zinc gluconate|Zinc salt|Zinc source
+    Zinc sulfate|Zinc salt|Zinc source
+   Copper
+    Copper gluconate|Copper salt|Iron metabolism, connective tissue
+    Cupric sulfate|Copper salt|Copper source
+   Iodine
+    Potassium iodide|Iodizing salt form|Thyroid hormones
+    Potassium iodate|Stable iodizing form|Thyroid hormones
+   Selenium
+    Selenomethionine|Selenium bound to methionine|Antioxidant enzymes, thyroid
+    Sodium selenite|Inorganic selenium salt|Selenium source
+   Manganese
+    Manganese sulfate|Manganese salt|Bone formation, antioxidant enzymes
+   Chromium
+    Chromium picolinate|Chromium salt|Insulin action (modest)
+   Molybdenum
+    Sodium molybdate|Molybdenum salt|Enzymes that break down sulfites and purines
+   Fluoride|Mineral in water and tea|Strengthens tooth enamel
+Bioactives
+ Polyphenols
+  Flavonoids
+   Flavonols
+    Quercetin|Flavonol in onions, apples, capers|Antioxidant, anti-inflammatory
+    Kaempferol|Flavonol in kale, tea|Antioxidant
+    Myricetin|Flavonol in berries, walnuts|Antioxidant
+    Rutin|Quercetin glycoside in buckwheat|Supports blood vessels
+   Flavones
+    Apigenin|Flavone in parsley, chamomile|Calming, anti-inflammatory
+    Luteolin|Flavone in celery, peppers|Anti-inflammatory
+   Flavanones
+    Hesperidin|Flavanone in oranges|Vascular health
+    Naringenin|Flavanone in grapefruit|Antioxidant; affects drug metabolism
+   Flavan-3-ols
+    Catechin|Flavanol in tea, cocoa|Antioxidant
+    Epicatechin|Flavanol in cocoa|Supports blood flow
+    EGCG (epigallocatechin gallate)|Main green tea catechin|Antioxidant
+    Proanthocyanidins|Catechin polymers in grapes, cranberries|Antioxidant; urinary tract health
+   Anthocyanins
+    Cyanidin|Red-purple pigment in berries|Antioxidant
+    Delphinidin|Blue pigment in blueberries|Antioxidant
+    Malvidin|Pigment in red grapes|Antioxidant
+    Pelargonidin|Orange-red pigment in strawberries|Antioxidant
+   Isoflavones
+    Genistein|Soy isoflavone|Weak estrogen-like activity
+    Daidzein|Soy isoflavone|Weak estrogen-like activity
+  Phenolic acids
+   Chlorogenic acid|Phenolic acid in coffee|Glucose metabolism, antioxidant
+   Caffeic acid|Hydroxycinnamic acid in coffee, fruit|Antioxidant
+   Ferulic acid|Phenolic acid in whole grains|Antioxidant
+   Gallic acid|Hydroxybenzoic acid in tea, grapes|Antioxidant
+   Ellagic acid|Phenolic in pomegranate, raspberries|Converted to urolithins by gut bacteria
+   Rosmarinic acid|Phenolic in rosemary, mint|Antioxidant
+  Stilbenes
+   Resveratrol|Stilbene in grape skins|Antioxidant; studied for longevity
+   Pterostilbene|Stilbene in blueberries|Antioxidant
+  Lignans
+   Secoisolariciresinol|Lignan in flaxseed|Converted to enterolignans
+   Sesamin|Lignan in sesame|Antioxidant
+  Other polyphenols
+   Curcumin|Yellow polyphenol in turmeric|Anti-inflammatory
+   Oleocanthal|Phenolic in extra-virgin olive oil|Anti-inflammatory (ibuprofen-like)
+   Hydroxytyrosol|Olive polyphenol|Protects blood lipids from oxidation
+   Gingerols|Pungent phenolics in fresh ginger|Anti-nausea, anti-inflammatory
+   Tannins|Astringent polyphenols in tea, wine|Antioxidant; bind proteins and iron
+ Carotenoids
+  Beta-carotene|Orange pigment in carrots|Provitamin A, antioxidant
+  Alpha-carotene|Pigment in carrots, pumpkin|Provitamin A
+  Beta-cryptoxanthin|Pigment in papaya, tangerines|Provitamin A
+  Lycopene|Red pigment in tomatoes|Antioxidant
+  Lutein|Yellow pigment in leafy greens|Eye (macula) health
+  Zeaxanthin|Pigment in corn, peppers|Eye (macula) health
+  Astaxanthin|Red pigment in salmon, shrimp|Antioxidant
+ Glucosinolates and derivatives
+  Glucoraphanin|Glucosinolate in broccoli|Precursor of sulforaphane
+  Sulforaphane|Isothiocyanate from broccoli sprouts|Activates detox enzymes (Nrf2)
+  Sinigrin|Glucosinolate in mustard|Source of mustard pungency
+  Indole-3-carbinol|Breakdown product in cabbage family|Estrogen metabolism
+ Organosulfur compounds
+  Allicin|Compound formed when garlic is crushed|Antimicrobial
+  S-allyl cysteine|Compound in aged garlic|Antioxidant
+ Phytosterols
+  Beta-sitosterol|Main plant sterol|Lowers LDL cholesterol absorption
+  Campesterol|Plant sterol|Lowers cholesterol absorption
+  Stigmasterol|Plant sterol|Lowers cholesterol absorption
+  Plant stanols|Saturated plant sterols in fortified spreads|Lowers LDL cholesterol
+ Alkaloids and methylxanthines
+  Caffeine|Methylxanthine in coffee, tea|Stimulant; blocks adenosine
+  Theobromine|Methylxanthine in cocoa|Mild stimulant, vasodilator
+  Theophylline|Methylxanthine in tea|Bronchodilator
+  Capsaicin|Pungent compound in chili|Heat sensation; may raise metabolism
+  Piperine|Pungent alkaloid in black pepper|Increases absorption of some nutrients
+  Trigonelline|Alkaloid in coffee, fenugreek|Niacin-related
+ Other bioactives
+  L-theanine|Amino acid in tea|Calm alertness
+  Taurine|Amino sulfonic acid in meat, fish|Bile salts, heart and nerve function
+  Creatine|Compound in meat and fish|Rapid energy (phosphocreatine) in muscle
+  Beta-alanine|Amino acid|Forms carnosine; buffers muscle acid
+  Chlorophyll|Green pigment in plants|Antioxidant
+  Betalains (betanin)|Red pigment in beets (E162)|Antioxidant
+  Saponins|Soapy glycosides in legumes, quinoa|Bind cholesterol
+  Phytic acid|Phosphorus store in seeds and grains|Reduces mineral absorption; antioxidant
+  Oxalic acid|Organic acid in spinach, rhubarb|Binds calcium; kidney stones in excess
+  Nitrates (dietary)|Nitrate in beets, leafy greens|Converted to nitric oxide; lowers blood pressure
+ Nucleotides
+  AMP, GMP, IMP, CMP, UMP|Nucleotides in milk, meat, yeast|Building blocks of DNA/RNA; added to infant formula
+  Purines|Bases in organ meats, anchovies|Broken down to uric acid
+ Probiotics and live cultures
+  Lactobacillus acidophilus|Lactic acid bacterium in yogurt|Gut health
+  Lacticaseibacillus rhamnosus|Probiotic bacterium (e.g. GG)|Gut and immune support
+  Lactobacillus delbrueckii subsp. bulgaricus|Yogurt starter culture|Ferments lactose
+  Streptococcus thermophilus|Yogurt starter culture|Ferments lactose
+  Bifidobacterium lactis|Probiotic bifidobacterium|Gut regularity
+  Bifidobacterium longum|Probiotic bifidobacterium|Gut and immune support
+  Saccharomyces boulardii|Probiotic yeast|Protects against diarrhea
+Additives
+ Preservatives
+  Sorbic acid (E200)|Organic acid preservative|Inhibits mold and yeast
+  Potassium sorbate (E202)|Salt of sorbic acid|Inhibits mold and yeast
+  Benzoic acid (E210)|Organic acid preservative|Inhibits microbes in acidic foods
+  Sodium benzoate (E211)|Salt of benzoic acid|Preserves drinks, sauces
+  Sulfur dioxide (E220)|Sulfite gas preservative|Preserves wine, dried fruit; can trigger asthma
+  Sodium metabisulfite (E223)|Sulfite preservative|Prevents browning and spoilage
+  Nisin (E234)|Antimicrobial peptide from bacteria|Inhibits bacteria in cheese
+  Natamycin (E235)|Antifungal from bacteria|Prevents mold on cheese surface
+  Sodium nitrite (E250)|Curing salt|Prevents botulism; pink color in cured meat
+  Sodium nitrate (E251)|Curing salt|Converted to nitrite in curing
+  Potassium nitrate (E252)|Saltpeter curing agent|Converted to nitrite in curing
+  Propionic acid (E280)|Organic acid preservative|Inhibits mold in bread
+  Calcium propionate (E282)|Salt of propionic acid|Inhibits mold in bread
+ Antioxidants (additive)
+  Ascorbic acid (E300)|Vitamin C used as antioxidant|Prevents browning and rancidity
+  Tocopherols (E306)|Vitamin E extract|Prevents fat rancidity
+  Rosemary extract (E392)|Natural antioxidant from rosemary|Prevents fat oxidation
+  Propyl gallate (E310)|Synthetic antioxidant|Prevents fat rancidity
+  TBHQ (E319)|Synthetic antioxidant|Prevents fat rancidity in oils
+  BHA (E320)|Butylated hydroxyanisole|Prevents fat rancidity
+  BHT (E321)|Butylated hydroxytoluene|Prevents fat rancidity
+  Ascorbyl palmitate (E304)|Fat-soluble vitamin C ester|Prevents fat oxidation
+ Emulsifiers
+  Lecithins (E322)|Phospholipids from soy, sunflower, egg|Blends fat and water
+  Mono- and diglycerides of fatty acids (E471)|Partial fats|Smooth texture, emulsify
+  Polysorbate 80 (E433)|Synthetic emulsifier|Keeps oils dispersed
+  Sodium stearoyl lactylate (E481)|Emulsifier/dough conditioner|Strengthens dough
+  DATEM (E472e)|Diacetyl tartaric esters of glycerides|Dough strengthener
+  Sucrose esters of fatty acids (E473)|Sugar + fatty acid emulsifier|Emulsify, stabilize
+  Polyglycerol polyricinoleate (PGPR, E476)|Emulsifier in chocolate|Reduces chocolate viscosity
+ Thickeners, gums and stabilizers
+  Agar (E406)|Seaweed gel|Gelling agent
+  Carrageenan (E407)|Red seaweed polysaccharide|Thickens dairy and plant milks
+  Locust bean gum (E410)|Carob seed galactomannan|Thickener
+  Guar gum (E412)|Guar bean galactomannan|Thickener
+  Gum arabic / acacia (E414)|Acacia tree sap|Stabilizer; soluble fiber
+  Xanthan gum (E415)|Bacterial fermentation polysaccharide|Thickener, stabilizer
+  Gellan gum (E418)|Bacterial polysaccharide|Gelling and suspending agent
+  Pectin (E440)|Fruit polysaccharide|Gels jams
+  Cellulose (E460)|Plant fiber|Bulking, anti-caking
+  Methylcellulose (E461)|Modified cellulose|Binder in plant-based meat
+  Carboxymethylcellulose (E466)|Modified cellulose|Thickener
+  Sodium alginate (E401)|Salt of seaweed alginic acid|Gelling with calcium
+  Gelatin|Animal collagen protein|Gelling agent
+ Colors
+  Natural-origin colors
+   Curcumin (E100)|Turmeric yellow|Color
+   Riboflavin (E101)|Vitamin B2 yellow|Color
+   Chlorophylls (E140)|Plant green|Color
+   Copper chlorophyllin (E141)|Stabilized chlorophyll|Green color
+   Caramel color (E150a-d)|Heated sugar brown|Color in colas, sauces
+   Carbon black / vegetable carbon (E153)|Charred plant material|Black color
+   Carotenes (E160a)|Orange carotenoids|Color; provitamin A
+   Annatto (E160b)|Achiote seed orange|Color in cheese
+   Paprika extract (E160c)|Red pepper oleoresin|Color
+   Lycopene (E160d)|Tomato red|Color
+   Beetroot red / betanin (E162)|Beet pigment|Color
+   Anthocyanins (E163)|Berry/grape-skin pigments|Red-purple color
+   Spirulina extract (phycocyanin)|Blue algae pigment|Blue color
+   Carmine / cochineal (E120)|Red dye from insects|Color
+  Synthetic colors
+   Tartrazine (Yellow 5, E102)|Azo dye|Yellow color
+   Sunset Yellow FCF (Yellow 6, E110)|Azo dye|Orange color
+   Allura Red AC (Red 40, E129)|Azo dye|Red color
+   Erythrosine (Red 3, E127)|Iodine-containing dye|Pink-red color
+   Brilliant Blue FCF (Blue 1, E133)|Triarylmethane dye|Blue color
+   Indigo carmine (Blue 2, E132)|Indigoid dye|Blue color
+   Fast Green FCF (Green 3, E143)|Triarylmethane dye|Green color
+   Titanium dioxide (E171)|White mineral pigment (banned in EU foods)|White color
+ Sweeteners
+  High-intensity sweeteners
+   Acesulfame potassium (E950)|Synthetic sweetener ~200x sugar|Sweetness without calories
+   Aspartame (E951)|Dipeptide sweetener ~200x sugar|Contains phenylalanine
+   Cyclamate (E952)|Synthetic sweetener (not US-approved)|Sweetness
+   Saccharin (E954)|Oldest synthetic sweetener|Sweetness
+   Sucralose (E955)|Chlorinated sucrose ~600x sugar|Sweetness
+   Neotame (E961)|Aspartame derivative|Sweetness
+   Advantame (E969)|Aspartame derivative|Sweetness
+   Steviol glycosides (E960)|Sweet compounds from stevia leaf|Sweetness
+   Monk fruit (mogrosides)|Sweet compounds from luo han guo|Sweetness
+   Thaumatin (E957)|Sweet protein from katemfe fruit|Sweetness, flavor
+  Nutritive sweeteners
+   High-fructose corn syrup|Glucose syrup with fructose|Sugar source
+   Glucose syrup|Liquid starch hydrolysate|Sugar source
+   Honey|Bee-made sugars (fructose, glucose)|Sugar source
+   Maple syrup|Concentrated maple sap (mostly sucrose)|Sugar source
+   Agave syrup|Fructose-rich plant syrup|Sugar source
+   Molasses|Sugar-refining by-product|Sugar plus minerals
+   Allulose|Rare low-calorie sugar|Sweetness, few calories
+ Flavor enhancers
+  Monosodium glutamate (E621)|Sodium salt of glutamic acid|Umami taste
+  Disodium inosinate (E631)|Nucleotide salt|Boosts umami
+  Disodium guanylate (E627)|Nucleotide salt|Boosts umami
+  Yeast extract|Autolyzed yeast rich in glutamate|Savory flavor
+  Natural flavors|Flavor extracts from natural sources|Flavor
+  Artificial flavors|Synthetic flavor compounds|Flavor
+  Vanillin|Main vanilla flavor molecule|Flavor
+ Acids and acidity regulators
+  Acetic acid (E260)|Vinegar acid|Sourness, preservation
+  Lactic acid (E270)|Fermentation acid|Sourness, pH control
+  Citric acid (E330)|Citrus acid|Sourness, pH control
+  Sodium citrate (E331)|Salt of citric acid|Buffers pH; melts cheese
+  Tartaric acid (E334)|Grape acid|Sourness
+  Malic acid (E296)|Apple acid|Sourness
+  Fumaric acid (E297)|Organic acid|Sourness
+  Phosphoric acid (E338)|Mineral acid in colas|Tangy taste
+  Glucono-delta-lactone (E575)|Slow-acting acidulant|Coagulates tofu
+ Leavening agents
+  Sodium bicarbonate (E500)|Baking soda|Releases CO2 with acid
+  Sodium acid pyrophosphate (E450)|Leavening acid|Reacts with baking soda
+  Monocalcium phosphate (E341)|Leavening acid|Reacts with baking soda
+  Sodium aluminum phosphate (E541)|Leavening acid|Slow-release leavening
+  Ammonium bicarbonate (E503)|Baker's ammonia|Leavening for crisp cookies
+  Cream of tartar (potassium bitartrate, E336)|Tartaric acid salt|Leavening acid; stabilizes egg whites
+  Yeast|Saccharomyces cerevisiae|Ferments sugars to CO2
+ Anti-caking agents
+  Silicon dioxide (E551)|Silica|Keeps powders flowing
+  Calcium silicate (E552)|Mineral|Absorbs moisture
+  Magnesium stearate (E470b)|Magnesium salt of stearic acid|Flow agent
+  Tricalcium phosphate (E341iii)|Calcium phosphate|Prevents clumping
+  Sodium ferrocyanide (E535)|Anti-caking agent in salt|Prevents salt clumping
+ Firming, humectants and glazing agents
+  Calcium chloride (E509)|Calcium salt|Firms canned vegetables, tofu coagulant
+  Glycerol (E422)|Sugar alcohol humectant|Keeps foods moist
+  Propylene glycol (E1520)|Synthetic humectant/solvent|Carrier for flavors
+  Carnauba wax (E903)|Palm leaf wax|Glazing candy
+  Beeswax (E901)|Bee wax|Glazing
+  Shellac (E904)|Lac insect resin|Glazing candy and fruit
+ Enzymes and processing aids
+  Rennet / chymosin|Milk-clotting enzyme|Makes cheese
+  Amylase|Starch-digesting enzyme|Dough conditioning
+  Lactase|Lactose-splitting enzyme|Makes lactose-free milk
+  Transglutaminase|Protein-linking enzyme|Binds proteins (meat glue)
+Flavorings
+ Natural flavors|Flavor extracted from plant/animal sources (US 21 CFR 101.22)|
+ Artificial flavors|Synthesized flavor chemicals|
+ Natural identical / nature-identical|Older EU term for synthetic copies of natural molecules|
+ Smoke flavoring|Condensed wood smoke (EU-authorized primary products)|
+ Extracts
+  Vanilla extract|Vanilla beans in ethanol; main compound vanillin|
+  Almond extract|Bitter almond oil; main compound benzaldehyde|
+  Peppermint extract|Peppermint oil in ethanol; main compound menthol|
+ Essential oils
+  Lemon oil|Cold-pressed peel oil; main compound limonene|
+  Orange oil|Peel oil; main compound limonene|
+  Peppermint oil|Main compounds menthol, menthone|
+  Cinnamon oil|Main compound cinnamaldehyde|
+  Clove oil|Main compound eugenol|
+ Yeast extract (flavoring)|Autolyzed yeast; source of glutamate and nucleotides|
+ Hydrolyzed vegetable protein|Acid- or enzyme-broken plant protein; savory|
+ Spices / spice extracts|Ground spices or oleoresins|

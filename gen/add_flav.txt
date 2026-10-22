@@ -1,0 +1,63 @@
+Flavorings
+ Named flavor compounds
+  Vanilla, sweet and caramel
+   Vanillin|Main vanilla aroma molecule|No nutritional role|Vanilla beans; synthesized from guaiacol or lignin
+   Ethyl vanillin|Synthetic vanillin analogue (~3x stronger)|No nutritional role|Not naturally in foods; chocolate, baked goods
+   Maltol|Caramel-like pyranone|No nutritional role|Larch bark, roasted malt, bread crust
+   Ethyl maltol|Synthetic maltol analogue|No nutritional role|Not naturally in foods; candy, baked goods
+   Furaneol (strawberry furanone)|Caramel-strawberry furanone|No nutritional role|Strawberries, pineapple, tomatoes
+   Sotolon|Lactone with maple/curry aroma|No nutritional role|Fenugreek, lovage, aged sake, flor sherry
+   Cyclotene|Maple-caramel aroma compound|No nutritional role|Roasted coffee, maple syrup
+  Citrus and fresh
+   Limonene|Citrus monoterpene|No nutritional role; studied bioactive|Orange and lemon peel
+   Citral (geranial + neral)|Lemon aldehyde|No nutritional role|Lemongrass, lemon myrtle, lemon peel
+   Linalool (flavor)|Floral-citrus monoterpene alcohol|No nutritional role|Coriander, basil, orange
+   Geraniol|Rose-like monoterpene alcohol|No nutritional role|Rose, lemongrass, palmarosa
+   Nootkatone (flavor)|Grapefruit sesquiterpene|No nutritional role|Grapefruit
+   Octanal|Citrus-peel aldehyde|No nutritional role|Orange peel
+  Mint, spice and herb
+   Menthol|Cooling monoterpene alcohol|Activates cold receptor TRPM8|Peppermint, cornmint
+   L-Carvone (R-carvone)|Spearmint ketone|No nutritional role|Spearmint
+   D-Carvone (S-carvone)|Caraway ketone (mirror image of L-carvone)|No nutritional role|Caraway, dill seed
+   Cinnamaldehyde|Cinnamon aldehyde|Antimicrobial; warming|Cinnamon bark
+   Eugenol|Clove phenol|Mild anesthetic, antimicrobial|Cloves, allspice, basil
+   Anethole|Anise ether (sweet)|No nutritional role|Anise, fennel, star anise
+   Estragole|Anise-like ether|Limited in flavorings (genotoxic at high dose)|Tarragon, basil, fennel
+   Thymol (flavor)|Thyme phenol|Antimicrobial|Thyme
+   Carvacrol (flavor)|Oregano phenol|Antimicrobial|Oregano
+   1,8-Cineole (eucalyptol)|Eucalyptus ether|No nutritional role|Bay leaf, rosemary, cardamom
+   Benzaldehyde|Bitter almond aldehyde|No nutritional role|Bitter almonds, cherry pits, apricot kernels
+  Fruity esters and lactones
+   Isoamyl acetate|Banana ester|No nutritional role|Bananas, beer, sake
+   Ethyl butyrate|Pineapple/juicy fruit ester|No nutritional role|Pineapple, orange juice
+   Ethyl hexanoate|Apple-pineapple ester|No nutritional role|Apples, pineapple, beer
+   Allyl hexanoate|Pineapple ester|No nutritional role|Not naturally in foods (traces in pineapple reported); candy
+   Methyl anthranilate|Concord grape aroma|No nutritional role|Concord grapes, orange blossom
+   Benzyl acetate|Jasmine/pear ester|No nutritional role|Jasmine, pears, apples
+   Gamma-decalactone|Peach lactone|No nutritional role|Peaches, apricots, strawberries
+   Delta-decalactone|Creamy coconut lactone|No nutritional role|Butter, coconut, cheese
+   Gamma-nonalactone|Coconut lactone|No nutritional role|Bourbon, peaches, cooked rice
+   Raspberry ketone|Raspberry phenolic ketone|Weight-loss claims unsupported|Raspberries (traces)
+   Beta-ionone|Violet/raspberry carotenoid breakdown product|No nutritional role|Raspberries, violets, carrots
+   Beta-damascenone|Rose-apple norisoprenoid|No nutritional role|Grapes, wine, apples, tea
+  Dairy and buttery
+   Diacetyl|Butter-flavor diketone|Inhalation hazard for factory workers|Butter, beer, wine, fermented dairy
+   Acetoin|Buttery hydroxyketone|No nutritional role|Butter, yogurt, fermented foods
+   2,3-Pentanedione|Buttery diketone|No nutritional role|Coffee, beer, butter
+   Butyric acid (flavor)|Cheesy/buttery fatty acid|Colon cell fuel|Butter, Parmesan
+  Savory, roasted and smoky
+   2-Acetyl-1-pyrroline|Popcorn/basmati aroma|No nutritional role|Basmati and jasmine rice, bread crust, pandan
+   Methional|Cooked potato aroma|No nutritional role|Potatoes, tomatoes, cheese
+   Furfurylthiol (2-furanmethanethiol)|Roasted coffee aroma|No nutritional role|Roasted coffee
+   Pyrazines (e.g. 2-ethyl-3,5-dimethylpyrazine)|Roasted/nutty Maillard compounds|No nutritional role|Roasted coffee, cocoa, nuts, bread crust
+   Guaiacol|Smoky phenol|No nutritional role|Smoked foods, coffee, whisky
+   4-Ethylguaiacol|Smoky-spicy phenol|No nutritional role|Smoked foods, soy sauce, wine
+   Dimethyl sulfide|Cooked corn/seaside aroma|No nutritional role|Sweet corn, seafood, cooked cabbage, beer
+   Filbertone|Hazelnut ketone|No nutritional role|Hazelnuts
+   Sotolone-type lactones|Spicy-sweet lactones|No nutritional role|Fenugreek, maple
+  Green and earthy
+   cis-3-Hexenol (leaf alcohol)|Cut-grass aroma|No nutritional role|Green leaves, tomatoes, tea
+   Hexanal|Green/grassy aldehyde|No nutritional role|Apples, tomatoes, olive oil
+   1-Octen-3-ol (mushroom alcohol)|Mushroom aroma|No nutritional role|Mushrooms
+   Geosmin|Earthy aroma|No nutritional role|Beets, freshwater fish, soil
+   2-Isobutyl-3-methoxypyrazine|Bell pepper aroma|No nutritional role|Green bell peppers, Sauvignon blanc

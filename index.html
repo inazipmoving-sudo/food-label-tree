@@ -27,33 +27,35 @@ main{max-width:900px;margin:18px auto 60px;padding:0 16px}ul{list-style:none;mar
 .hidden{display:none!important}mark{background:#fde047;color:#111;border-radius:3px;padding:0 2px}
 @media(max-width:600px){.hero{padding:24px 16px 56px}#theme{position:static;margin-bottom:10px}.kids>ul>li{margin-left:6px;padding-left:8px}.card{margin-left:4px}}
 </style></head><body>
-<div class="hero"><div class="in"><button id="theme">🌙 Dark</button><h1>🍎 Food Label Tree</h1><p>Everything on the back of a food label — from macronutrients to E-numbers — and where it comes from.</p></div></div>
+<div class="hero"><div class="in"><button id="theme">🌙 Dark</button><h1>🍎 Food Label Tree</h1><p>Over 1,000 nutrients, bioactives, additives and flavor compounds from the back of food labels — what they are, what they do, and where they come from.</p></div></div>
 <div class="sbar"><div class="sbox"><input id="q" placeholder="Search a compound or food — salmon, B12, E211, omega-3…"><button class="btn" id="ex">Expand all</button><button class="btn" id="co">Collapse all</button><span id="info"></span></div></div>
 <main><ul id="tree"></ul></main><script src="data.js"></script><script>
-const T=window.TREE,cnt=n=>n.children?n.children.reduce((a,c)=>a+cnt(c),0):1,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const T=window.TREE,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const STY={Macronutrients:['#f97316','🍗'],Micronutrients:['#8b5cf6','💊'],Bioactives:['#10b981','🌿'],Additives:['#ef4444','🧪'],Flavorings:['#d946ef','🌶️']};
-function build(n,d){const li=document.createElement('li');li.n=n;const r=document.createElement('div');r.className='row';li.appendChild(r);
- if(d==0){const s=STY[n.name]||['#6366f1','📦'];li.className='top';li.style.setProperty('--a',s[0]);r.innerHTML=`<span class="ico">${s[1]}</span>`}
- if(n.children){li.classList.add('br');r.innerHTML+=`<span class="tw">▶</span><span class="nm"></span><span class="cnt">${cnt(n)}</span>`;
-  const k=document.createElement('div');k.className='kids';const ul=document.createElement('ul');n.children.forEach(c=>ul.appendChild(build(c,d+1)));k.appendChild(ul);li.appendChild(k)}
- else{li.classList.add('leaf');r.innerHTML='<span class="dot"></span><span class="nm"></span>';const c=document.createElement('div');c.className='card';
+(function pre(n){n.c=n.children?n.children.reduce((a,x)=>a+pre(x),0):1;n.t=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.found||'')).toLowerCase();return n.c})(T);
+let Q='';const hl=n=>{const i=Q?n.toLowerCase().indexOf(Q):-1;return i<0?esc(n):esc(n.slice(0,i))+'<mark>'+esc(n.slice(i,i+Q.length))+'</mark>'+esc(n.slice(i+Q.length))};
+function node(n,d,kids,open){const li=document.createElement('li');li.n=n;li.kids=kids;const r=document.createElement('div');r.className='row';li.appendChild(r);let h='';
+ if(d==0){const s=STY[n.name]||['#6366f1','📦'];li.className='top';li.style.setProperty('--a',s[0]);h=`<span class="ico">${s[1]}</span>`}
+ if(n.children){li.classList.add('br');r.innerHTML=h+`<span class="tw">▶</span><span class="nm">${hl(n.name)}</span><span class="cnt">${kids?kids.c:n.c}</span>`;r.onclick=()=>tog(li);if(open)tog(li,true,true)}
+ else{li.classList.add('leaf');r.innerHTML='<span class="dot"></span><span class="nm">'+hl(n.name)+'</span>';const c=document.createElement('div');c.className='card';
   c.innerHTML=`<div class="k">What</div>${esc(n.what)}`+(n.does?`<div class="k">In the body</div>${esc(n.does)}`:'')+(n.found?`<div class="k">Found in</div><div class="chips">${n.found.split(/[,;] /).map(f=>`<button class="chip">${esc(f)}</button>`).join('')}</div>`:'');li.appendChild(c)}
- r.querySelector('.nm').textContent=n.name;if(n.children)r.onclick=()=>tog(li);return li}
-const tog=(li,o)=>{if(li.classList.contains('br'))li.classList.toggle('open',o??!li.classList.contains('open'))};
-const tree=document.getElementById('tree');T.children.forEach(c=>tree.appendChild(build(c,0)));
-const all=()=>[...tree.querySelectorAll('li')],total=()=>info.textContent=cnt(T)+' items';
-ex.onclick=()=>all().forEach(l=>tog(l,true));co.onclick=()=>all().forEach(l=>tog(l,false));
-q.oninput=()=>{const s=q.value.trim().toLowerCase();let m=0;
- all().forEach(li=>{li.querySelector(':scope>.row .nm').textContent=li.n.name;li.classList.remove('hidden')});
- if(!s){total();co.onclick();return}
- const hit=li=>{const n=li.n,self=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.found||'')).toLowerCase().includes(s);
-  const kids=[...li.querySelectorAll(':scope>.kids>ul>li')].map(hit).some(Boolean);
-  if(self){m++;const nm=li.querySelector(':scope>.row .nm'),i=n.name.toLowerCase().indexOf(s);if(i>=0)nm.innerHTML=esc(n.name.slice(0,i))+'<mark>'+esc(n.name.slice(i,i+s.length))+'</mark>'+esc(n.name.slice(i+s.length))}
-  li.classList.toggle('hidden',!(self||kids));tog(li,kids);return self||kids};
- [...tree.children].forEach(hit);info.textContent=m+' match'+(m==1?'':'es')};
-tree.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;q.value=c.textContent;q.oninput();window.scrollTo({top:0,behavior:'smooth'})});
+ return li}
+function fill(li,deep){if(li.filled)return;li.filled=1;const k=document.createElement('div');k.className='kids';const ul=document.createElement('ul');
+ (li.kids?li.kids.list:li.n.children.map(x=>({n:x}))).forEach(x=>ul.appendChild(node(x.n,1,x.k,deep||!!x.k)));k.appendChild(ul);li.appendChild(k)}
+function tog(li,o,deep){if(!li.classList.contains('br'))return;o=o??!li.classList.contains('open');if(o)fill(li,deep);
+ if(o&&!deep)requestAnimationFrame(()=>li.classList.add('open'));else li.classList.toggle('open',o)}
+const tree=document.getElementById('tree');
+function render(){tree.textContent='';if(!Q){T.children.forEach(c=>tree.appendChild(node(c,0)));info.textContent=T.c+' items';return}
+ let m=0;const f=n=>{const self=n.t.includes(Q);if(!n.children){if(self)m++;return self?{n,c:1}:null}
+  const list=n.children.map(f).filter(Boolean);if(!list.length&&!self)return null;
+  if(!list.length&&self){m++;return {n,k:{list:n.children.map(x=>({n:x})),c:n.c}}}return {n,k:{list,c:list.reduce((a,x)=>a+(x.c||x.k.c),0)},c:0}};
+ T.children.map(f).filter(Boolean).forEach(x=>tree.appendChild(node(x.n,0,x.k,true)));info.textContent=m+' match'+(m==1?'':'es')}
+let tm;q.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{Q=q.value.trim().toLowerCase();render()},180)};
+ex.onclick=()=>{const go=li=>{tog(li,true,true);li.querySelectorAll(':scope>.kids>ul>li').forEach(go)};[...tree.children].forEach(go)};
+co.onclick=()=>tree.querySelectorAll('li.open').forEach(l=>l.classList.remove('open'));
+tree.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;q.value=c.textContent;Q=c.textContent.toLowerCase();render();window.scrollTo({top:0,behavior:'smooth'})});
 const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'☀️ Light':'🌙 Dark'};
 let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
 theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};
-total();
+render();
 </script></body></html>

@@ -6,17 +6,19 @@ for l in lines:
     while stack[-1][0]>=d: stack.pop()
     p=stack[-1][1]
     if '|' in t:
-        n,w,f=(t.split('|')+[''])[:3];p['children'].append({"name":n,"what":w,"does":f})
+        n,w,f,fd=(t.split('|')+['',''])[:4];p['children'].append({"name":n,"what":w,"does":f,**({'found':fd} if fd else {})})
     else:
         node={"name":t,"children":[]};p['children'].append(node);stack.append((d,node))
 ing=[c for c in root['children'] if c['name'].startswith('Ingredients')]
 for c in ing: root['children'].remove(c)
-F=dict(l.rstrip('\n').split('=',1) for l in open('found.txt') if '=' in l)
+import os
+F=dict(l.rstrip('\n').split('=',1) for l in open('found.txt') if '=' in l) if os.path.exists('found.txt') else {}
 miss=[]
 def walk(n,top):
     for c in n.get('children',[]):
         t=top or c['name']
         if 'children' in c: walk(c,t)
+        elif c.get('found'): pass
         elif c['name'] in F: c['found']=F[c['name']]
         else: miss.append(c['name'])
 walk(root,None);assert not miss,miss
