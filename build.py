@@ -9,7 +9,9 @@ for l in lines:
         n,w,f=(t.split('|')+[''])[:3];p.setdefault('children',[]).append({"name":n,"what":w,"does":f})
     else:
         node={"name":t,"children":[]};p.setdefault('children',[]).append(node);stack.append((d,node))
-json.dump(root,open('data.json','w'),indent=1)
-open('data.js','w').write('window.TREE='+json.dumps(root)+';')
+foods=[c for c in root['children'] if c['name'].startswith('Ingredients')][0]
+root['children'].remove(foods);foods['name']='Foods'
+json.dump({'compounds':root,'foods':foods},open('data.json','w'),indent=1)
+open('data.js','w').write('window.TREE='+json.dumps(root)+';window.FOODS='+json.dumps(foods)+';')
 c=lambda n:sum(map(c,n['children'])) if 'children' in n else 1
-print(c(root))
+print(c(root),c(foods))
