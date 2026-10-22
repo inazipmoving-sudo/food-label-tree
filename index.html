@@ -9,33 +9,36 @@ main{padding:12px 16px;max-width:900px;margin:auto}ul{list-style:none;padding-le
 .tw{width:14px;color:#2f6fed;flex:none}.cnt{font-size:.75rem;background:#e3e7ef;border-radius:10px;padding:1px 7px;color:#556}
 .leaf .row{cursor:default}.desc{font-size:.85rem;color:#556;padding:0 8px 6px 28px}.desc b{color:#334}
 .hidden{display:none}a.ref{color:#2f6fed}.flash{animation:fl 2s}@keyframes fl{0%,60%{background:#ffe066}}.tabs{display:flex;gap:6px;margin-bottom:8px}.tab{background:#e3e7ef;color:#334}.tab.on{background:#2f6fed;color:#fff}mark{background:#ffe066}.l0>.row{font-weight:700;font-size:1.05rem}
-</style></head><body><header><h1>🍎 Everything on a Food Label</h1><div class="tabs"><button class="tab on" data-v="tree">Compounds</button><button class="tab" data-v="ftree">Foods</button></div><input id="q" placeholder="Search e.g. salmon, B12, E211, omega-3…">
+.foodnote{font-size:.8rem;color:#778;margin-left:4px}</style></head><body><header><h1>🍎 Everything on a Food Label</h1><div class="tabs"><button class="tab on" data-v="ftree">Foods</button><button class="tab" data-v="ctree">All compounds</button></div>
+<input id="q" placeholder="Search e.g. salmon, B12, E211, omega-3…">
 <div class="bar"><button id="ex">Expand all</button><button id="co">Collapse all</button><span id="info"></span></div></header>
-<main><ul id="tree"></ul><ul id="ftree" class="hidden"></ul></main><script src="data.js"></script><script>
-const T=window.TREE,cnt=n=>n.children?n.children.reduce((a,c)=>a+cnt(c),0):1,esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+<main><ul id="ftree"></ul><ul id="ctree" class="hidden"></ul></main><script src="data.js"></script><script>
+const cnt=n=>n.children?n.children.reduce((a,c)=>a+cnt(c),0):1,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const link=(t,v)=>`<a href="#" class="ref" data-t="${esc(t)}" data-v="${v}">${esc(t)}</a>`;
 function build(n,d){const li=document.createElement('li');li.n=n;li.className='l'+d+(n.children?'':' leaf');
  const r=document.createElement('div');r.className='row';li.appendChild(r);
- if(n.children){r.innerHTML=`<span class="tw">▸</span><span class="nm"></span><span class="cnt">${cnt(n)}</span>`;
-  const ul=document.createElement('ul');ul.className='hidden';n.children.forEach(c=>ul.appendChild(build(c,d+1)));li.appendChild(ul);
-  r.onclick=()=>tog(li)}else{r.innerHTML='<span class="tw">•</span><span class="nm"></span>';const ds=document.createElement('div');ds.className='desc';
-  ds.innerHTML=`<b>What:</b> ${esc(n.what)}`+(n.does?(n.does.startsWith('see: ')?'<br><b>Key compounds:</b> '+n.does.slice(5).split('; ').map(x=>`<a href="#" class="ref" data-t="${esc(x)}">${esc(x)}</a>`).join(', '):`<br><b>In the body:</b> ${esc(n.does)}`):'');li.appendChild(ds)}
+ if(n.children){r.innerHTML=`<span class="tw">▸</span><span class="nm"></span>${n.food?`<span class="foodnote">${esc(n.food)}</span>`:''}<span class="cnt">${cnt(n)}</span>`;
+  const ul=document.createElement('ul');ul.className='hidden';n.children.forEach(c=>ul.appendChild(build(c,d+1)));li.appendChild(ul);r.onclick=()=>tog(li)}
+ else{r.innerHTML='<span class="tw">•</span><span class="nm"></span>';const ds=document.createElement('div');ds.className='desc';
+  ds.innerHTML=`<b>What:</b> ${esc(n.what)}`+(n.does?`<br><b>In the body:</b> ${esc(n.does)}`:'')+(n.ref?`<br>${link(n.ref,'ctree').replace('>'+esc(n.ref)+'<','>Full detail →<')}`:'')+(n.found?`<br><b>Found in:</b> `+n.found.map(f=>link(f,'ftree')).join(', '):'');li.appendChild(ds)}
  r.querySelector('.nm').textContent=n.name;return li}
 function tog(li,o){const ul=li.querySelector(':scope>ul');if(!ul)return;o=o??ul.classList.contains('hidden');ul.classList.toggle('hidden',!o);li.querySelector(':scope>.row .tw').textContent=o?'▾':'▸'}
-const ctree=document.getElementById('tree');T.children.forEach(c=>ctree.appendChild(build(c,0)));window.FOODS.children.forEach(c=>ftree.appendChild(build(c,0)));let tree=ctree;
-function show(id){if(q.value){q.value='';q.oninput()}tree=document.getElementById(id);ctree.classList.toggle('hidden',id!='tree');ftree.classList.toggle('hidden',id=='tree');document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.v==id));info.textContent=cnt(id=='tree'?T:window.FOODS)+' items'}
+const D={ftree:window.FOODS,ctree:window.TREE};for(const id in D)D[id].children.forEach(c=>document.getElementById(id).appendChild(build(c,0)));
+let tree=ftree;const all=()=>[...tree.querySelectorAll('li')];
+function show(id){if(q.value){q.value='';q.oninput()}tree=document.getElementById(id);for(const k in D)document.getElementById(k).classList.toggle('hidden',k!=id);
+ document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.v==id));info.textContent=cnt(D[id])+' items'}
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>show(t.dataset.v));
-const all=()=>[...tree.querySelectorAll('li')];ex.onclick=()=>all().forEach(l=>tog(l,true));co.onclick=()=>all().forEach(l=>tog(l,false));
+ex.onclick=()=>all().forEach(l=>tog(l,true));co.onclick=()=>all().forEach(l=>tog(l,false));
 q.oninput=()=>{const s=q.value.trim().toLowerCase();let m=0;
- all().forEach(li=>{const nm=li.querySelector(':scope>.row .nm');nm.textContent=li.n.name;li.classList.remove('hidden')});
- if(!s){info.textContent='';co.onclick();return}
- const hit=li=>{const n=li.n,t=(n.name+' '+(n.what||'')+' '+(n.does||'')).toLowerCase();const self=t.includes(s);
+ all().forEach(li=>{li.querySelector(':scope>.row .nm').textContent=li.n.name;li.classList.remove('hidden')});
+ if(!s){info.textContent=cnt(D[tree.id])+' items';co.onclick();return}
+ const hit=li=>{const n=li.n,t=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.food||'')).toLowerCase();const self=t.includes(s);
   const kids=[...li.querySelectorAll(':scope>ul>li')].map(hit).some(Boolean);
   if(self){m++;const nm=li.querySelector(':scope>.row .nm'),i=n.name.toLowerCase().indexOf(s);if(i>=0)nm.innerHTML=esc(n.name.slice(0,i))+'<mark>'+esc(n.name.slice(i,i+s.length))+'</mark>'+esc(n.name.slice(i+s.length))}
   li.classList.toggle('hidden',!(self||kids));tog(li,kids);return self||kids};
  [...tree.children].forEach(hit);info.textContent=m+' match'+(m==1?'':'es')};
-info.textContent=cnt(T)+' items';
-ftree.addEventListener('click',e=>{const a=e.target.closest('a.ref');if(!a)return;e.preventDefault();show('tree');
- const li=all().find(l=>l.n.name===a.dataset.t);if(!li)return;
- let p=li.parentElement.closest('li');while(p){tog(p,true);p=p.parentElement.closest('li')}tog(li,true);
+document.addEventListener('click',e=>{const a=e.target.closest('a.ref');if(!a)return;e.preventDefault();show(a.dataset.v);
+ const li=all().find(l=>l.n.name===a.dataset.t);if(!li)return;co.onclick();let p=li.parentElement.closest('li');while(p){tog(p,true);p=p.parentElement.closest('li')}tog(li,true);
  const r=li.querySelector(':scope>.row');r.scrollIntoView({behavior:'smooth',block:'center'});r.classList.remove('flash');void r.offsetWidth;r.classList.add('flash')});
+show('ftree');
 </script></body></html>

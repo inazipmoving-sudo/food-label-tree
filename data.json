@@ -1,6 +1,4607 @@
 {
+ "foods": {
+  "name": "Foods",
+  "children": [
+   {
+    "name": "Grains & flours",
+    "children": [
+     {
+      "name": "Whole wheat flour",
+      "food": "Milled whole wheat kernel",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Gluten",
+              "ref": "Gluten",
+              "what": "Wheat/barley/rye protein (gliadin + glutenin)",
+              "does": "Gives dough elasticity; triggers celiac disease"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Insoluble fiber",
+              "children": [
+               {
+                "name": "Cellulose",
+                "ref": "Cellulose",
+                "what": "Glucose polymer of plant cell walls",
+                "does": "Adds stool bulk"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B1 (thiamin)",
+              "children": [
+               {
+                "name": "Thiamin mononitrate",
+                "ref": "Thiamin mononitrate",
+                "what": "Stable fortification form of B1",
+                "does": "Carbohydrate metabolism"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Phenolic acids",
+            "children": [
+             {
+              "name": "Ferulic acid",
+              "ref": "Ferulic acid",
+              "what": "Phenolic acid in whole grains",
+              "does": "Antioxidant"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Oats",
+      "food": "Whole oat groats",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Soluble fiber",
+              "children": [
+               {
+                "name": "Beta-glucan",
+                "ref": "Beta-glucan",
+                "what": "Soluble fiber in oats and barley",
+                "does": "Lowers LDL cholesterol"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Essential amino acids",
+            "children": [
+             {
+              "name": "Leucine",
+              "ref": "Leucine",
+              "what": "Branched-chain essential amino acid (BCAA)",
+              "does": "Key trigger of muscle protein synthesis (mTOR)"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Manganese",
+              "children": [
+               {
+                "name": "Manganese sulfate",
+                "ref": "Manganese sulfate",
+                "what": "Manganese salt",
+                "does": "Bone formation, antioxidant enzymes"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Brown rice",
+      "food": "Rice with bran intact",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Starches",
+            "children": [
+             {
+              "name": "Amylose",
+              "ref": "Amylose",
+              "what": "Linear glucose polymer in starch",
+              "does": "Slower-digesting starch"
+             },
+             {
+              "name": "Amylopectin",
+              "ref": "Amylopectin",
+              "what": "Branched glucose polymer in starch",
+              "does": "Rapidly digested energy"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "Phytic acid",
+            "ref": "Phytic acid",
+            "what": "Phosphorus store in seeds and grains",
+            "does": "Reduces mineral absorption; antioxidant"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "White rice",
+      "food": "Polished rice",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Starches",
+            "children": [
+             {
+              "name": "Amylopectin",
+              "ref": "Amylopectin",
+              "what": "Branched glucose polymer in starch",
+              "does": "Rapidly digested energy"
+             },
+             {
+              "name": "Amylose",
+              "ref": "Amylose",
+              "what": "Linear glucose polymer in starch",
+              "does": "Slower-digesting starch"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Barley",
+      "food": "Cereal grain",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Soluble fiber",
+              "children": [
+               {
+                "name": "Beta-glucan",
+                "ref": "Beta-glucan",
+                "what": "Soluble fiber in oats and barley",
+                "does": "Lowers LDL cholesterol"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Starches",
+            "children": [
+             {
+              "name": "Resistant starch",
+              "ref": "Resistant starch",
+              "what": "Starch that escapes small-intestine digestion",
+              "does": "Acts like fiber; feeds gut bacteria"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Corn / maize",
+      "food": "Cereal grain",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Starches",
+            "children": [
+             {
+              "name": "Amylopectin",
+              "ref": "Amylopectin",
+              "what": "Branched glucose polymer in starch",
+              "does": "Rapidly digested energy"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Zeaxanthin",
+            "ref": "Zeaxanthin",
+            "what": "Pigment in corn, peppers",
+            "does": "Eye (macula) health"
+           },
+           {
+            "name": "Lutein",
+            "ref": "Lutein",
+            "what": "Yellow pigment in leafy greens",
+            "does": "Eye (macula) health"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Rye",
+      "food": "Cereal grain",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Insoluble fiber",
+              "children": [
+               {
+                "name": "Hemicellulose",
+                "ref": "Hemicellulose",
+                "what": "Mixed plant cell-wall polysaccharides",
+                "does": "Adds bulk; partly fermented"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Gluten",
+              "ref": "Gluten",
+              "what": "Wheat/barley/rye protein (gliadin + glutenin)",
+              "does": "Gives dough elasticity; triggers celiac disease"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Quinoa",
+      "food": "Pseudo-grain seed",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Essential amino acids",
+            "children": [
+             {
+              "name": "Lysine",
+              "ref": "Lysine",
+              "what": "Essential amino acid often limiting in grains",
+              "does": "Collagen cross-linking, carnitine synthesis, calcium absorption"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "Saponins",
+            "ref": "Saponins",
+            "what": "Soapy glycosides in legumes, quinoa",
+            "does": "Bind cholesterol"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Buckwheat",
+      "food": "Pseudo-grain seed",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Magnesium",
+              "children": [
+               {
+                "name": "Magnesium oxide",
+                "ref": "Magnesium oxide",
+                "what": "Dense magnesium salt",
+                "does": "Muscle, nerve, 300+ enzymes"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavonols",
+              "children": [
+               {
+                "name": "Rutin",
+                "ref": "Rutin",
+                "what": "Quercetin glycoside in buckwheat",
+                "does": "Supports blood vessels"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Oils & fats",
+    "children": [
+     {
+      "name": "Extra-virgin olive oil",
+      "food": "Cold-pressed olive oil",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin E",
+              "children": [
+               {
+                "name": "Alpha-tocopherol",
+                "ref": "Alpha-tocopherol",
+                "what": "Most active vitamin E form",
+                "does": "Antioxidant protecting cell membranes"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Other polyphenols",
+            "children": [
+             {
+              "name": "Hydroxytyrosol",
+              "ref": "Hydroxytyrosol",
+              "what": "Olive polyphenol",
+              "does": "Protects blood lipids from oxidation"
+             },
+             {
+              "name": "Oleocanthal",
+              "ref": "Oleocanthal",
+              "what": "Phenolic in extra-virgin olive oil",
+              "does": "Anti-inflammatory (ibuprofen-like)"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Coconut oil",
+      "food": "Fat from coconut meat",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Saturated fatty acids",
+            "children": [
+             {
+              "name": "Lauric acid (C12:0)",
+              "ref": "Lauric acid (C12:0)",
+              "what": "Main fat in coconut and palm kernel oil",
+              "does": "Raises HDL and LDL"
+             },
+             {
+              "name": "Caprylic acid (C8:0)",
+              "ref": "Caprylic acid (C8:0)",
+              "what": "Medium-chain fat (MCT) in coconut",
+              "does": "Rapidly converted to ketones"
+             },
+             {
+              "name": "Myristic acid (C14:0)",
+              "ref": "Myristic acid (C14:0)",
+              "what": "Saturated fat in dairy and nutmeg",
+              "does": "Raises LDL cholesterol"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Butter",
+      "food": "Churned milk fat",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Saturated fatty acids",
+            "children": [
+             {
+              "name": "Butyric acid (C4:0)",
+              "ref": "Butyric acid (C4:0)",
+              "what": "Short-chain saturated fat in butter",
+              "does": "Fuel for colon cells"
+             },
+             {
+              "name": "Palmitic acid (C16:0)",
+              "ref": "Palmitic acid (C16:0)",
+              "what": "Most common saturated fat (palm, meat)",
+              "does": "Energy; raises LDL in excess"
+             }
+            ]
+           },
+           {
+            "name": "Sterols and other lipids",
+            "children": [
+             {
+              "name": "Cholesterol",
+              "ref": "Cholesterol",
+              "what": "Animal sterol",
+              "does": "Cell membranes; makes hormones, vitamin D, bile"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin A",
+              "children": [
+               {
+                "name": "Retinol",
+                "ref": "Retinol",
+                "what": "Preformed vitamin A in animal foods",
+                "does": "Vision, immunity, skin"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Ghee",
+      "food": "Clarified butter",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Saturated fatty acids",
+            "children": [
+             {
+              "name": "Butyric acid (C4:0)",
+              "ref": "Butyric acid (C4:0)",
+              "what": "Short-chain saturated fat in butter",
+              "does": "Fuel for colon cells"
+             }
+            ]
+           },
+           {
+            "name": "Sterols and other lipids",
+            "children": [
+             {
+              "name": "Cholesterol",
+              "ref": "Cholesterol",
+              "what": "Animal sterol",
+              "does": "Cell membranes; makes hormones, vitamin D, bile"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Canola / rapeseed oil",
+      "food": "Low-erucic rapeseed oil",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           },
+           {
+            "name": "Polyunsaturated omega-3",
+            "children": [
+             {
+              "name": "ALA (alpha-linolenic acid)",
+              "ref": "ALA (alpha-linolenic acid)",
+              "what": "Plant omega-3 in flax, chia, walnuts",
+              "does": "Essential fat; partly converted to EPA/DHA"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Sunflower oil",
+      "food": "Seed oil",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Polyunsaturated omega-6",
+            "children": [
+             {
+              "name": "Linoleic acid (LA)",
+              "ref": "Linoleic acid (LA)",
+              "what": "Main omega-6 in seed oils",
+              "does": "Essential fat; skin barrier"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin E",
+              "children": [
+               {
+                "name": "Alpha-tocopherol",
+                "ref": "Alpha-tocopherol",
+                "what": "Most active vitamin E form",
+                "does": "Antioxidant protecting cell membranes"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Flaxseed oil",
+      "food": "Linseed oil",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Polyunsaturated omega-3",
+            "children": [
+             {
+              "name": "ALA (alpha-linolenic acid)",
+              "ref": "ALA (alpha-linolenic acid)",
+              "what": "Plant omega-3 in flax, chia, walnuts",
+              "does": "Essential fat; partly converted to EPA/DHA"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Palm oil",
+      "food": "Oil from palm fruit",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Saturated fatty acids",
+            "children": [
+             {
+              "name": "Palmitic acid (C16:0)",
+              "ref": "Palmitic acid (C16:0)",
+              "what": "Most common saturated fat (palm, meat)",
+              "does": "Energy; raises LDL in excess"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin E",
+              "children": [
+               {
+                "name": "Tocotrienols",
+                "ref": "Tocotrienols",
+                "what": "Vitamin E forms in palm and rice bran",
+                "does": "Antioxidant"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Beta-carotene",
+            "ref": "Beta-carotene",
+            "what": "Orange pigment in carrots",
+            "does": "Provitamin A, antioxidant"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Lard / tallow",
+      "food": "Rendered pork / beef fat",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           },
+           {
+            "name": "Saturated fatty acids",
+            "children": [
+             {
+              "name": "Stearic acid (C18:0)",
+              "ref": "Stearic acid (C18:0)",
+              "what": "Saturated fat in cocoa butter, beef",
+              "does": "Largely neutral on LDL"
+             },
+             {
+              "name": "Palmitic acid (C16:0)",
+              "ref": "Palmitic acid (C16:0)",
+              "what": "Most common saturated fat (palm, meat)",
+              "does": "Energy; raises LDL in excess"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Cocoa butter",
+      "food": "Fat from cocoa beans",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Saturated fatty acids",
+            "children": [
+             {
+              "name": "Stearic acid (C18:0)",
+              "ref": "Stearic acid (C18:0)",
+              "what": "Saturated fat in cocoa butter, beef",
+              "does": "Largely neutral on LDL"
+             }
+            ]
+           },
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Dairy",
+    "children": [
+     {
+      "name": "Milk",
+      "food": "Cow's milk",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Disaccharides",
+            "children": [
+             {
+              "name": "Lactose",
+              "ref": "Lactose",
+              "what": "Milk sugar = glucose + galactose",
+              "does": "Energy; needs lactase enzyme to digest"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Casein",
+              "ref": "Casein",
+              "what": "Main milk protein (~80%)",
+              "does": "Slow-digesting complete protein"
+             },
+             {
+              "name": "Whey protein",
+              "ref": "Whey protein",
+              "what": "Soluble milk protein fraction",
+              "does": "Fast-digesting complete protein"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Calcium",
+              "children": [
+               {
+                "name": "Calcium phosphate",
+                "ref": "Calcium phosphate",
+                "what": "Calcium salt (E341)",
+                "does": "Bones; also anti-caking agent"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B2 (riboflavin)",
+              "children": [
+               {
+                "name": "Riboflavin",
+                "ref": "Riboflavin",
+                "what": "Yellow vitamin (also E101)",
+                "does": "Energy metabolism (FAD/FMN)"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Yogurt",
+      "food": "Fermented milk",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Organic acids",
+          "children": [
+           {
+            "name": "Lactic acid",
+            "ref": "Lactic acid",
+            "what": "Acid from fermentation (yogurt, sauerkraut)",
+            "does": "Recycled to glucose by the liver"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Probiotics and live cultures",
+          "children": [
+           {
+            "name": "Streptococcus thermophilus",
+            "ref": "Streptococcus thermophilus",
+            "what": "Yogurt starter culture",
+            "does": "Ferments lactose"
+           },
+           {
+            "name": "Lactobacillus delbrueckii subsp. bulgaricus",
+            "ref": "Lactobacillus delbrueckii subsp. bulgaricus",
+            "what": "Yogurt starter culture",
+            "does": "Ferments lactose"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Cheese",
+      "food": "Coagulated, aged milk curd",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Casein",
+              "ref": "Casein",
+              "what": "Main milk protein (~80%)",
+              "does": "Slow-digesting complete protein"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Sodium",
+              "children": [
+               {
+                "name": "Sodium chloride",
+                "ref": "Sodium chloride",
+                "what": "Table salt",
+                "does": "Fluid balance, nerve signals"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin A",
+              "ref": "Vitamin A",
+              "what": "Vitamin A (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Additives",
+        "children": [
+         {
+          "name": "Enzymes and processing aids",
+          "children": [
+           {
+            "name": "Rennet / chymosin",
+            "ref": "Rennet / chymosin",
+            "what": "Milk-clotting enzyme",
+            "does": "Makes cheese"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Kefir",
+      "food": "Fermented milk drink",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Organic acids",
+          "children": [
+           {
+            "name": "Lactic acid",
+            "ref": "Lactic acid",
+            "what": "Acid from fermentation (yogurt, sauerkraut)",
+            "does": "Recycled to glucose by the liver"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Probiotics and live cultures",
+          "children": [
+           {
+            "name": "Lacticaseibacillus rhamnosus",
+            "ref": "Lacticaseibacillus rhamnosus",
+            "what": "Probiotic bacterium (e.g. GG)",
+            "does": "Gut and immune support"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Eggs",
+    "children": [
+     {
+      "name": "Whole egg",
+      "food": "Chicken egg",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Egg albumin",
+              "ref": "Egg albumin",
+              "what": "Main egg white protein",
+              "does": "High-quality complete protein"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Sterols and other lipids",
+            "children": [
+             {
+              "name": "Cholesterol",
+              "ref": "Cholesterol",
+              "what": "Animal sterol",
+              "does": "Cell membranes; makes hormones, vitamin D, bile"
+             },
+             {
+              "name": "Phospholipids (lecithin)",
+              "ref": "Phospholipids (lecithin)",
+              "what": "Fat with phosphate head group",
+              "does": "Cell membranes; emulsifier"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Vitamin-like nutrients",
+            "children": [
+             {
+              "name": "Choline",
+              "ref": "Choline",
+              "what": "Essential nutrient in eggs and liver",
+              "does": "Acetylcholine, cell membranes, liver health"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Lutein",
+            "ref": "Lutein",
+            "what": "Yellow pigment in leafy greens",
+            "does": "Eye (macula) health"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Meats",
+    "children": [
+     {
+      "name": "Beef",
+      "food": "Cattle muscle meat",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Bioactive peptides (e.g. carnosine, anserine)",
+              "ref": "Bioactive peptides (e.g. carnosine, anserine)",
+              "what": "Small peptides in meat and fish",
+              "does": "Muscle acid buffering, antioxidant"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Trans fats",
+            "children": [
+             {
+              "name": "Vaccenic acid",
+              "ref": "Vaccenic acid",
+              "what": "Natural ruminant trans fat in dairy",
+              "does": "Partly converted to CLA"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Iron",
+              "children": [
+               {
+                "name": "Heme iron",
+                "ref": "Heme iron",
+                "what": "Iron in meat and fish",
+                "does": "Hemoglobin, oxygen transport"
+               }
+              ]
+             },
+             {
+              "name": "Zinc",
+              "ref": "Zinc",
+              "what": "Zinc (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "Creatine",
+            "ref": "Creatine",
+            "what": "Compound in meat and fish",
+            "does": "Rapid energy (phosphocreatine) in muscle"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Pork",
+      "food": "Pig meat",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Essential amino acids",
+            "children": [
+             {
+              "name": "Leucine",
+              "ref": "Leucine",
+              "what": "Branched-chain essential amino acid (BCAA)",
+              "does": "Key trigger of muscle protein synthesis (mTOR)"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B1 (thiamin)",
+              "children": [
+               {
+                "name": "Thiamin hydrochloride",
+                "ref": "Thiamin hydrochloride",
+                "what": "Fortification form of B1",
+                "does": "Carbohydrate metabolism, nerves"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Chicken",
+      "food": "Poultry meat",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Essential amino acids",
+            "children": [
+             {
+              "name": "Leucine",
+              "ref": "Leucine",
+              "what": "Branched-chain essential amino acid (BCAA)",
+              "does": "Key trigger of muscle protein synthesis (mTOR)"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B3 (niacin)",
+              "children": [
+               {
+                "name": "Nicotinamide (niacinamide)",
+                "ref": "Nicotinamide (niacinamide)",
+                "what": "Amide form of niacin",
+                "does": "Energy metabolism without flushing"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Selenium",
+              "children": [
+               {
+                "name": "Selenomethionine",
+                "ref": "Selenomethionine",
+                "what": "Selenium bound to methionine",
+                "does": "Antioxidant enzymes, thyroid"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Liver",
+      "food": "Organ meat",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin A",
+              "children": [
+               {
+                "name": "Retinol",
+                "ref": "Retinol",
+                "what": "Preformed vitamin A in animal foods",
+                "does": "Vision, immunity, skin"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B12 (cobalamin)",
+              "children": [
+               {
+                "name": "Cyanocobalamin",
+                "ref": "Cyanocobalamin",
+                "what": "Stable synthetic B12",
+                "does": "Nerve function, red blood cells"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Vitamin-like nutrients",
+            "children": [
+             {
+              "name": "Choline",
+              "ref": "Choline",
+              "what": "Essential nutrient in eggs and liver",
+              "does": "Acetylcholine, cell membranes, liver health"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Iron",
+              "children": [
+               {
+                "name": "Heme iron",
+                "ref": "Heme iron",
+                "what": "Iron in meat and fish",
+                "does": "Hemoglobin, oxygen transport"
+               }
+              ]
+             },
+             {
+              "name": "Copper",
+              "ref": "Copper",
+              "what": "Copper (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Nucleotides",
+          "children": [
+           {
+            "name": "Purines",
+            "ref": "Purines",
+            "what": "Bases in organ meats, anchovies",
+            "does": "Broken down to uric acid"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Fish & seafood",
+    "children": [
+     {
+      "name": "Salmon",
+      "food": "Oily fish",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Polyunsaturated omega-3",
+            "children": [
+             {
+              "name": "EPA (eicosapentaenoic acid)",
+              "ref": "EPA (eicosapentaenoic acid)",
+              "what": "Marine omega-3",
+              "does": "Anti-inflammatory signaling"
+             },
+             {
+              "name": "DHA (docosahexaenoic acid)",
+              "ref": "DHA (docosahexaenoic acid)",
+              "what": "Marine omega-3",
+              "does": "Brain and retina structure"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin D",
+              "children": [
+               {
+                "name": "Cholecalciferol (D3)",
+                "ref": "Cholecalciferol (D3)",
+                "what": "Animal/skin-made vitamin D",
+                "does": "Calcium absorption, bone health"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Astaxanthin",
+            "ref": "Astaxanthin",
+            "what": "Red pigment in salmon, shrimp",
+            "does": "Antioxidant"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Sardines",
+      "food": "Small oily fish",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Polyunsaturated omega-3",
+            "children": [
+             {
+              "name": "EPA (eicosapentaenoic acid)",
+              "ref": "EPA (eicosapentaenoic acid)",
+              "what": "Marine omega-3",
+              "does": "Anti-inflammatory signaling"
+             },
+             {
+              "name": "DHA (docosahexaenoic acid)",
+              "ref": "DHA (docosahexaenoic acid)",
+              "what": "Marine omega-3",
+              "does": "Brain and retina structure"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Calcium",
+              "children": [
+               {
+                "name": "Calcium phosphate",
+                "ref": "Calcium phosphate",
+                "what": "Calcium salt (E341)",
+                "does": "Bones; also anti-caking agent"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Shrimp",
+      "food": "Crustacean",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Selenium",
+              "children": [
+               {
+                "name": "Selenomethionine",
+                "ref": "Selenomethionine",
+                "what": "Selenium bound to methionine",
+                "does": "Antioxidant enzymes, thyroid"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Astaxanthin",
+            "ref": "Astaxanthin",
+            "what": "Red pigment in salmon, shrimp",
+            "does": "Antioxidant"
+           }
+          ]
+         },
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "Taurine",
+            "ref": "Taurine",
+            "what": "Amino sulfonic acid in meat, fish",
+            "does": "Bile salts, heart and nerve function"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Oysters",
+      "food": "Mollusc",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Zinc",
+              "ref": "Zinc",
+              "what": "Zinc (category)",
+              "does": ""
+             },
+             {
+              "name": "Copper",
+              "ref": "Copper",
+              "what": "Copper (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B12 (cobalamin)",
+              "children": [
+               {
+                "name": "Methylcobalamin",
+                "ref": "Methylcobalamin",
+                "what": "Active coenzyme form",
+                "does": "Methylation, nerve function"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Legumes",
+    "children": [
+     {
+      "name": "Lentils",
+      "food": "Pulse",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Oligosaccharides",
+            "children": [
+             {
+              "name": "Raffinose",
+              "ref": "Raffinose",
+              "what": "Trisaccharide in beans",
+              "does": "Fermented by gut bacteria (gas)"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Essential amino acids",
+            "children": [
+             {
+              "name": "Lysine",
+              "ref": "Lysine",
+              "what": "Essential amino acid often limiting in grains",
+              "does": "Collagen cross-linking, carnitine synthesis, calcium absorption"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B9 (folate)",
+              "children": [
+               {
+                "name": "Folate (food form)",
+                "ref": "Folate (food form)",
+                "what": "Natural polyglutamate folates",
+                "does": "DNA synthesis, cell division"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Chickpeas",
+      "food": "Pulse",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Oligosaccharides",
+            "children": [
+             {
+              "name": "Stachyose",
+              "ref": "Stachyose",
+              "what": "Tetrasaccharide in legumes",
+              "does": "Prebiotic; fermented in the colon"
+             }
+            ]
+           },
+           {
+            "name": "Starches",
+            "children": [
+             {
+              "name": "Resistant starch",
+              "ref": "Resistant starch",
+              "what": "Starch that escapes small-intestine digestion",
+              "does": "Acts like fiber; feeds gut bacteria"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B9 (folate)",
+              "children": [
+               {
+                "name": "Folate (food form)",
+                "ref": "Folate (food form)",
+                "what": "Natural polyglutamate folates",
+                "does": "DNA synthesis, cell division"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Black beans",
+      "food": "Pulse",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Oligosaccharides",
+            "children": [
+             {
+              "name": "Raffinose",
+              "ref": "Raffinose",
+              "what": "Trisaccharide in beans",
+              "does": "Fermented by gut bacteria (gas)"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Anthocyanins",
+              "ref": "Anthocyanins",
+              "what": "Anthocyanins (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Soybeans",
+      "food": "Legume",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Soy protein",
+              "ref": "Soy protein",
+              "what": "Protein from soybeans",
+              "does": "Complete plant protein"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Isoflavones",
+              "children": [
+               {
+                "name": "Genistein",
+                "ref": "Genistein",
+                "what": "Soy isoflavone",
+                "does": "Weak estrogen-like activity"
+               },
+               {
+                "name": "Daidzein",
+                "ref": "Daidzein",
+                "what": "Soy isoflavone",
+                "does": "Weak estrogen-like activity"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "Phytic acid",
+            "ref": "Phytic acid",
+            "what": "Phosphorus store in seeds and grains",
+            "does": "Reduces mineral absorption; antioxidant"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Peanuts",
+      "food": "Legume",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Conditionally essential amino acids",
+            "children": [
+             {
+              "name": "Arginine",
+              "ref": "Arginine",
+              "what": "Amino acid essential in stress/growth",
+              "does": "Nitric oxide production, urea cycle"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Stilbenes",
+            "children": [
+             {
+              "name": "Resveratrol",
+              "ref": "Resveratrol",
+              "what": "Stilbene in grape skins",
+              "does": "Antioxidant; studied for longevity"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Nuts & seeds",
+    "children": [
+     {
+      "name": "Almonds",
+      "food": "Tree nut",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin E",
+              "children": [
+               {
+                "name": "Alpha-tocopherol",
+                "ref": "Alpha-tocopherol",
+                "what": "Most active vitamin E form",
+                "does": "Antioxidant protecting cell membranes"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Magnesium",
+              "ref": "Magnesium",
+              "what": "Magnesium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Walnuts",
+      "food": "Tree nut",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Polyunsaturated omega-3",
+            "children": [
+             {
+              "name": "ALA (alpha-linolenic acid)",
+              "ref": "ALA (alpha-linolenic acid)",
+              "what": "Plant omega-3 in flax, chia, walnuts",
+              "does": "Essential fat; partly converted to EPA/DHA"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Phenolic acids",
+            "children": [
+             {
+              "name": "Ellagic acid",
+              "ref": "Ellagic acid",
+              "what": "Phenolic in pomegranate, raspberries",
+              "does": "Converted to urolithins by gut bacteria"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Brazil nuts",
+      "food": "Tree nut",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Selenium",
+              "children": [
+               {
+                "name": "Selenomethionine",
+                "ref": "Selenomethionine",
+                "what": "Selenium bound to methionine",
+                "does": "Antioxidant enzymes, thyroid"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Flaxseed",
+      "food": "Linseed",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Polyunsaturated omega-3",
+            "children": [
+             {
+              "name": "ALA (alpha-linolenic acid)",
+              "ref": "ALA (alpha-linolenic acid)",
+              "what": "Plant omega-3 in flax, chia, walnuts",
+              "does": "Essential fat; partly converted to EPA/DHA"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Lignans",
+            "children": [
+             {
+              "name": "Secoisolariciresinol",
+              "ref": "Secoisolariciresinol",
+              "what": "Lignan in flaxseed",
+              "does": "Converted to enterolignans"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Chia seeds",
+      "food": "Salvia hispanica seed",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Polyunsaturated omega-3",
+            "children": [
+             {
+              "name": "ALA (alpha-linolenic acid)",
+              "ref": "ALA (alpha-linolenic acid)",
+              "what": "Plant omega-3 in flax, chia, walnuts",
+              "does": "Essential fat; partly converted to EPA/DHA"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Soluble fiber",
+              "ref": "Soluble fiber",
+              "what": "Soluble fiber (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Sesame seeds",
+      "food": "Seed",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Calcium",
+              "children": [
+               {
+                "name": "Calcium carbonate",
+                "ref": "Calcium carbonate",
+                "what": "Common calcium salt (E170)",
+                "does": "Bones, teeth, muscle contraction"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Lignans",
+            "children": [
+             {
+              "name": "Sesamin",
+              "ref": "Sesamin",
+              "what": "Lignan in sesame",
+              "does": "Antioxidant"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Pumpkin seeds",
+      "food": "Seed",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Zinc",
+              "ref": "Zinc",
+              "what": "Zinc (category)",
+              "does": ""
+             }
+            ]
+           },
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Magnesium",
+              "ref": "Magnesium",
+              "what": "Magnesium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Phytosterols",
+          "ref": "Phytosterols",
+          "what": "Phytosterols (category)",
+          "does": ""
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Vegetables",
+    "children": [
+     {
+      "name": "Broccoli",
+      "food": "Cruciferous vegetable",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin K",
+              "children": [
+               {
+                "name": "Phylloquinone (K1)",
+                "ref": "Phylloquinone (K1)",
+                "what": "Plant vitamin K in leafy greens",
+                "does": "Blood clotting"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin C",
+              "children": [
+               {
+                "name": "Ascorbic acid",
+                "ref": "Ascorbic acid",
+                "what": "Vitamin C (also E300)",
+                "does": "Antioxidant, collagen synthesis, iron absorption"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Glucosinolates and derivatives",
+          "children": [
+           {
+            "name": "Glucoraphanin",
+            "ref": "Glucoraphanin",
+            "what": "Glucosinolate in broccoli",
+            "does": "Precursor of sulforaphane"
+           },
+           {
+            "name": "Sulforaphane",
+            "ref": "Sulforaphane",
+            "what": "Isothiocyanate from broccoli sprouts",
+            "does": "Activates detox enzymes (Nrf2)"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Spinach",
+      "food": "Leafy green",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin B9 (folate)",
+              "children": [
+               {
+                "name": "Folate (food form)",
+                "ref": "Folate (food form)",
+                "what": "Natural polyglutamate folates",
+                "does": "DNA synthesis, cell division"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "Oxalic acid",
+            "ref": "Oxalic acid",
+            "what": "Organic acid in spinach, rhubarb",
+            "does": "Binds calcium; kidney stones in excess"
+           },
+           {
+            "name": "Nitrates (dietary)",
+            "ref": "Nitrates (dietary)",
+            "what": "Nitrate in beets, leafy greens",
+            "does": "Converted to nitric oxide; lowers blood pressure"
+           }
+          ]
+         },
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Lutein",
+            "ref": "Lutein",
+            "what": "Yellow pigment in leafy greens",
+            "does": "Eye (macula) health"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Kale",
+      "food": "Leafy cruciferous",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin K",
+              "children": [
+               {
+                "name": "Phylloquinone (K1)",
+                "ref": "Phylloquinone (K1)",
+                "what": "Plant vitamin K in leafy greens",
+                "does": "Blood clotting"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavonols",
+              "children": [
+               {
+                "name": "Kaempferol",
+                "ref": "Kaempferol",
+                "what": "Flavonol in kale, tea",
+                "does": "Antioxidant"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Lutein",
+            "ref": "Lutein",
+            "what": "Yellow pigment in leafy greens",
+            "does": "Eye (macula) health"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Carrots",
+      "food": "Root vegetable",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Beta-carotene",
+            "ref": "Beta-carotene",
+            "what": "Orange pigment in carrots",
+            "does": "Provitamin A, antioxidant"
+           },
+           {
+            "name": "Alpha-carotene",
+            "ref": "Alpha-carotene",
+            "what": "Pigment in carrots, pumpkin",
+            "does": "Provitamin A"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Tomatoes",
+      "food": "Fruit-vegetable",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin C",
+              "children": [
+               {
+                "name": "Ascorbic acid",
+                "ref": "Ascorbic acid",
+                "what": "Vitamin C (also E300)",
+                "does": "Antioxidant, collagen synthesis, iron absorption"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Potassium",
+              "ref": "Potassium",
+              "what": "Potassium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Carotenoids",
+          "children": [
+           {
+            "name": "Lycopene",
+            "ref": "Lycopene",
+            "what": "Red pigment in tomatoes",
+            "does": "Antioxidant"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Beets",
+      "food": "Root vegetable",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "Betalains (betanin)",
+            "ref": "Betalains (betanin)",
+            "what": "Red pigment in beets (E162)",
+            "does": "Antioxidant"
+           },
+           {
+            "name": "Nitrates (dietary)",
+            "ref": "Nitrates (dietary)",
+            "what": "Nitrate in beets, leafy greens",
+            "does": "Converted to nitric oxide; lowers blood pressure"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Onions",
+      "food": "Allium",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Oligosaccharides",
+            "children": [
+             {
+              "name": "Fructooligosaccharides (FOS)",
+              "ref": "Fructooligosaccharides (FOS)",
+              "what": "Short fructose chains",
+              "does": "Prebiotic fiber"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavonols",
+              "children": [
+               {
+                "name": "Quercetin",
+                "ref": "Quercetin",
+                "what": "Flavonol in onions, apples, capers",
+                "does": "Antioxidant, anti-inflammatory"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Garlic",
+      "food": "Allium",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Soluble fiber",
+              "children": [
+               {
+                "name": "Inulin",
+                "ref": "Inulin",
+                "what": "Fructose polymer from chicory, onions",
+                "does": "Prebiotic; feeds gut bacteria"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Organosulfur compounds",
+          "children": [
+           {
+            "name": "Allicin",
+            "ref": "Allicin",
+            "what": "Compound formed when garlic is crushed",
+            "does": "Antimicrobial"
+           },
+           {
+            "name": "S-allyl cysteine",
+            "ref": "S-allyl cysteine",
+            "what": "Compound in aged garlic",
+            "does": "Antioxidant"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Mushrooms",
+      "food": "Fungi",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Insoluble fiber",
+              "children": [
+               {
+                "name": "Chitin",
+                "ref": "Chitin",
+                "what": "Fiber in mushrooms and crustacean shells",
+                "does": "Indigestible bulk"
+               }
+              ]
+             },
+             {
+              "name": "Soluble fiber",
+              "children": [
+               {
+                "name": "Beta-glucan",
+                "ref": "Beta-glucan",
+                "what": "Soluble fiber in oats and barley",
+                "does": "Lowers LDL cholesterol"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Disaccharides",
+            "children": [
+             {
+              "name": "Trehalose",
+              "ref": "Trehalose",
+              "what": "Two glucose units (mushrooms, yeast)",
+              "does": "Slowly digested energy"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin D",
+              "children": [
+               {
+                "name": "Ergocalciferol (D2)",
+                "ref": "Ergocalciferol (D2)",
+                "what": "Plant/mushroom vitamin D",
+                "does": "Calcium absorption (less potent than D3)"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Potatoes",
+      "food": "Tuber",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Starches",
+            "children": [
+             {
+              "name": "Amylopectin",
+              "ref": "Amylopectin",
+              "what": "Branched glucose polymer in starch",
+              "does": "Rapidly digested energy"
+             },
+             {
+              "name": "Resistant starch",
+              "ref": "Resistant starch",
+              "what": "Starch that escapes small-intestine digestion",
+              "does": "Acts like fiber; feeds gut bacteria"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Potassium",
+              "ref": "Potassium",
+              "what": "Potassium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Fruits",
+    "children": [
+     {
+      "name": "Apples",
+      "food": "Pome fruit",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Organic acids",
+          "children": [
+           {
+            "name": "Malic acid",
+            "ref": "Malic acid",
+            "what": "Acid in apples",
+            "does": "Krebs cycle intermediate"
+           }
+          ]
+         },
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Fiber",
+            "children": [
+             {
+              "name": "Soluble fiber",
+              "children": [
+               {
+                "name": "Pectin",
+                "ref": "Pectin",
+                "what": "Soluble fiber in fruit (E440)",
+                "does": "Gel-forming; slows digestion"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Monosaccharides",
+            "children": [
+             {
+              "name": "Fructose",
+              "ref": "Fructose",
+              "what": "Fruit sugar, 6-carbon ketose",
+              "does": "Metabolized mainly in the liver"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavonols",
+              "children": [
+               {
+                "name": "Quercetin",
+                "ref": "Quercetin",
+                "what": "Flavonol in onions, apples, capers",
+                "does": "Antioxidant, anti-inflammatory"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Oranges",
+      "food": "Citrus",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Organic acids",
+          "children": [
+           {
+            "name": "Citric acid",
+            "ref": "Citric acid",
+            "what": "Acid in citrus fruits",
+            "does": "Energy-cycle (Krebs) intermediate"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin C",
+              "children": [
+               {
+                "name": "Ascorbic acid",
+                "ref": "Ascorbic acid",
+                "what": "Vitamin C (also E300)",
+                "does": "Antioxidant, collagen synthesis, iron absorption"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavanones",
+              "children": [
+               {
+                "name": "Hesperidin",
+                "ref": "Hesperidin",
+                "what": "Flavanone in oranges",
+                "does": "Vascular health"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Blueberries",
+      "food": "Berry",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Anthocyanins",
+              "children": [
+               {
+                "name": "Delphinidin",
+                "ref": "Delphinidin",
+                "what": "Blue pigment in blueberries",
+                "does": "Antioxidant"
+               },
+               {
+                "name": "Malvidin",
+                "ref": "Malvidin",
+                "what": "Pigment in red grapes",
+                "does": "Antioxidant"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Stilbenes",
+            "children": [
+             {
+              "name": "Pterostilbene",
+              "ref": "Pterostilbene",
+              "what": "Stilbene in blueberries",
+              "does": "Antioxidant"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Strawberries",
+      "food": "Berry",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin C",
+              "children": [
+               {
+                "name": "Ascorbic acid",
+                "ref": "Ascorbic acid",
+                "what": "Vitamin C (also E300)",
+                "does": "Antioxidant, collagen synthesis, iron absorption"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Anthocyanins",
+              "children": [
+               {
+                "name": "Pelargonidin",
+                "ref": "Pelargonidin",
+                "what": "Orange-red pigment in strawberries",
+                "does": "Antioxidant"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Phenolic acids",
+            "children": [
+             {
+              "name": "Ellagic acid",
+              "ref": "Ellagic acid",
+              "what": "Phenolic in pomegranate, raspberries",
+              "does": "Converted to urolithins by gut bacteria"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Grapes",
+      "food": "Berry",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Organic acids",
+          "children": [
+           {
+            "name": "Tartaric acid",
+            "ref": "Tartaric acid",
+            "what": "Acid in grapes",
+            "does": "Mostly fermented by gut bacteria"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Stilbenes",
+            "children": [
+             {
+              "name": "Resveratrol",
+              "ref": "Resveratrol",
+              "what": "Stilbene in grape skins",
+              "does": "Antioxidant; studied for longevity"
+             }
+            ]
+           },
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavan-3-ols",
+              "children": [
+               {
+                "name": "Proanthocyanidins",
+                "ref": "Proanthocyanidins",
+                "what": "Catechin polymers in grapes, cranberries",
+                "does": "Antioxidant; urinary tract health"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Bananas",
+      "food": "Tropical fruit",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Starches",
+            "children": [
+             {
+              "name": "Resistant starch",
+              "ref": "Resistant starch",
+              "what": "Starch that escapes small-intestine digestion",
+              "does": "Acts like fiber; feeds gut bacteria"
+             }
+            ]
+           },
+           {
+            "name": "Monosaccharides",
+            "children": [
+             {
+              "name": "Fructose",
+              "ref": "Fructose",
+              "what": "Fruit sugar, 6-carbon ketose",
+              "does": "Metabolized mainly in the liver"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Potassium",
+              "ref": "Potassium",
+              "what": "Potassium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Avocado",
+      "food": "Fatty fruit",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Potassium",
+              "ref": "Potassium",
+              "what": "Potassium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Phytosterols",
+          "children": [
+           {
+            "name": "Beta-sitosterol",
+            "ref": "Beta-sitosterol",
+            "what": "Main plant sterol",
+            "does": "Lowers LDL cholesterol absorption"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Pomegranate",
+      "food": "Fruit",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Phenolic acids",
+            "children": [
+             {
+              "name": "Ellagic acid",
+              "ref": "Ellagic acid",
+              "what": "Phenolic in pomegranate, raspberries",
+              "does": "Converted to urolithins by gut bacteria"
+             }
+            ]
+           },
+           {
+            "name": "Other polyphenols",
+            "children": [
+             {
+              "name": "Tannins",
+              "ref": "Tannins",
+              "what": "Astringent polyphenols in tea, wine",
+              "does": "Antioxidant; bind proteins and iron"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Herbs & spices",
+    "children": [
+     {
+      "name": "Turmeric",
+      "food": "Root spice",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Other polyphenols",
+            "children": [
+             {
+              "name": "Curcumin",
+              "ref": "Curcumin",
+              "what": "Yellow polyphenol in turmeric",
+              "does": "Anti-inflammatory"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Black pepper",
+      "food": "Peppercorn",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Alkaloids and methylxanthines",
+          "children": [
+           {
+            "name": "Piperine",
+            "ref": "Piperine",
+            "what": "Pungent alkaloid in black pepper",
+            "does": "Increases absorption of some nutrients"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Chili pepper",
+      "food": "Capsicum",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Water-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin C",
+              "children": [
+               {
+                "name": "Ascorbic acid",
+                "ref": "Ascorbic acid",
+                "what": "Vitamin C (also E300)",
+                "does": "Antioxidant, collagen synthesis, iron absorption"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Alkaloids and methylxanthines",
+          "children": [
+           {
+            "name": "Capsaicin",
+            "ref": "Capsaicin",
+            "what": "Pungent compound in chili",
+            "does": "Heat sensation; may raise metabolism"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Cinnamon",
+      "food": "Tree bark",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavan-3-ols",
+              "children": [
+               {
+                "name": "Proanthocyanidins",
+                "ref": "Proanthocyanidins",
+                "what": "Catechin polymers in grapes, cranberries",
+                "does": "Antioxidant; urinary tract health"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Flavorings",
+        "children": [
+         {
+          "name": "Essential oils",
+          "children": [
+           {
+            "name": "Cinnamon oil",
+            "ref": "Cinnamon oil",
+            "what": "Main compound cinnamaldehyde",
+            "does": ""
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Rosemary",
+      "food": "Herb",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Phenolic acids",
+            "children": [
+             {
+              "name": "Rosmarinic acid",
+              "ref": "Rosmarinic acid",
+              "what": "Phenolic in rosemary, mint",
+              "does": "Antioxidant"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Additives",
+        "children": [
+         {
+          "name": "Antioxidants (additive)",
+          "children": [
+           {
+            "name": "Rosemary extract (E392)",
+            "ref": "Rosemary extract (E392)",
+            "what": "Natural antioxidant from rosemary",
+            "does": "Prevents fat oxidation"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Parsley",
+      "food": "Herb",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Vitamins",
+          "children": [
+           {
+            "name": "Fat-soluble vitamins",
+            "children": [
+             {
+              "name": "Vitamin K",
+              "children": [
+               {
+                "name": "Phylloquinone (K1)",
+                "ref": "Phylloquinone (K1)",
+                "what": "Plant vitamin K in leafy greens",
+                "does": "Blood clotting"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavones",
+              "children": [
+               {
+                "name": "Apigenin",
+                "ref": "Apigenin",
+                "what": "Flavone in parsley, chamomile",
+                "does": "Calming, anti-inflammatory"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Ginger",
+      "food": "Rhizome",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Other polyphenols",
+            "children": [
+             {
+              "name": "Gingerols",
+              "ref": "Gingerols",
+              "what": "Pungent phenolics in fresh ginger",
+              "does": "Anti-nausea, anti-inflammatory"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Mustard seed",
+      "food": "Brassica seed",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Glucosinolates and derivatives",
+          "children": [
+           {
+            "name": "Sinigrin",
+            "ref": "Sinigrin",
+            "what": "Glucosinolate in mustard",
+            "does": "Source of mustard pungency"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Beverages",
+    "children": [
+     {
+      "name": "Coffee",
+      "food": "Roasted bean infusion",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Alkaloids and methylxanthines",
+          "children": [
+           {
+            "name": "Caffeine",
+            "ref": "Caffeine",
+            "what": "Methylxanthine in coffee, tea",
+            "does": "Stimulant; blocks adenosine"
+           },
+           {
+            "name": "Trigonelline",
+            "ref": "Trigonelline",
+            "what": "Alkaloid in coffee, fenugreek",
+            "does": "Niacin-related"
+           }
+          ]
+         },
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Phenolic acids",
+            "children": [
+             {
+              "name": "Chlorogenic acid",
+              "ref": "Chlorogenic acid",
+              "what": "Phenolic acid in coffee",
+              "does": "Glucose metabolism, antioxidant"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Tea (green/black)",
+      "food": "Camellia sinensis infusion",
+      "children": [
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Alkaloids and methylxanthines",
+          "children": [
+           {
+            "name": "Caffeine",
+            "ref": "Caffeine",
+            "what": "Methylxanthine in coffee, tea",
+            "does": "Stimulant; blocks adenosine"
+           }
+          ]
+         },
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavan-3-ols",
+              "children": [
+               {
+                "name": "EGCG (epigallocatechin gallate)",
+                "ref": "EGCG (epigallocatechin gallate)",
+                "what": "Main green tea catechin",
+                "does": "Antioxidant"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Other polyphenols",
+            "children": [
+             {
+              "name": "Tannins",
+              "ref": "Tannins",
+              "what": "Astringent polyphenols in tea, wine",
+              "does": "Antioxidant; bind proteins and iron"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "name": "Other bioactives",
+          "children": [
+           {
+            "name": "L-theanine",
+            "ref": "L-theanine",
+            "what": "Amino acid in tea",
+            "does": "Calm alertness"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Cocoa / dark chocolate",
+      "food": "Cacao product",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Fats",
+          "children": [
+           {
+            "name": "Saturated fatty acids",
+            "children": [
+             {
+              "name": "Stearic acid (C18:0)",
+              "ref": "Stearic acid (C18:0)",
+              "what": "Saturated fat in cocoa butter, beef",
+              "does": "Largely neutral on LDL"
+             }
+            ]
+           },
+           {
+            "name": "Monounsaturated fatty acids",
+            "children": [
+             {
+              "name": "Oleic acid (omega-9)",
+              "ref": "Oleic acid (omega-9)",
+              "what": "Main fat in olive oil",
+              "does": "Supports healthy cholesterol levels"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Bioactives",
+        "children": [
+         {
+          "name": "Alkaloids and methylxanthines",
+          "children": [
+           {
+            "name": "Theobromine",
+            "ref": "Theobromine",
+            "what": "Methylxanthine in cocoa",
+            "does": "Mild stimulant, vasodilator"
+           }
+          ]
+         },
+         {
+          "name": "Polyphenols",
+          "children": [
+           {
+            "name": "Flavonoids",
+            "children": [
+             {
+              "name": "Flavan-3-ols",
+              "children": [
+               {
+                "name": "Epicatechin",
+                "ref": "Epicatechin",
+                "what": "Flavanol in cocoa",
+                "does": "Supports blood flow"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Natural sweeteners",
+    "children": [
+     {
+      "name": "Honey (food)",
+      "food": "Bee-made syrup",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Monosaccharides",
+            "children": [
+             {
+              "name": "Fructose",
+              "ref": "Fructose",
+              "what": "Fruit sugar, 6-carbon ketose",
+              "does": "Metabolized mainly in the liver"
+             },
+             {
+              "name": "Glucose",
+              "ref": "Glucose",
+              "what": "Simple 6-carbon sugar (dextrose)",
+              "does": "Primary fuel for cells and brain"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Additives",
+        "children": [
+         {
+          "name": "Sweeteners",
+          "children": [
+           {
+            "name": "Nutritive sweeteners",
+            "children": [
+             {
+              "name": "Honey",
+              "ref": "Honey",
+              "what": "Bee-made sugars (fructose, glucose)",
+              "does": "Sugar source"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Maple syrup (food)",
+      "food": "Boiled maple sap",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Disaccharides",
+            "children": [
+             {
+              "name": "Sucrose",
+              "ref": "Sucrose",
+              "what": "Table sugar = glucose + fructose",
+              "does": "Quick energy"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Additives",
+        "children": [
+         {
+          "name": "Sweeteners",
+          "children": [
+           {
+            "name": "Nutritive sweeteners",
+            "children": [
+             {
+              "name": "Maple syrup",
+              "ref": "Maple syrup",
+              "what": "Concentrated maple sap (mostly sucrose)",
+              "does": "Sugar source"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Dates",
+      "food": "Dried fruit",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Monosaccharides",
+            "children": [
+             {
+              "name": "Glucose",
+              "ref": "Glucose",
+              "what": "Simple 6-carbon sugar (dextrose)",
+              "does": "Primary fuel for cells and brain"
+             },
+             {
+              "name": "Fructose",
+              "ref": "Fructose",
+              "what": "Fruit sugar, 6-carbon ketose",
+              "does": "Metabolized mainly in the liver"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Potassium",
+              "ref": "Potassium",
+              "what": "Potassium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Molasses (food)",
+      "food": "Cane by-product",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Carbohydrates",
+          "children": [
+           {
+            "name": "Disaccharides",
+            "children": [
+             {
+              "name": "Sucrose",
+              "ref": "Sucrose",
+              "what": "Table sugar = glucose + fructose",
+              "does": "Quick energy"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Iron",
+              "ref": "Iron",
+              "what": "Iron (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Additives",
+        "children": [
+         {
+          "name": "Sweeteners",
+          "children": [
+           {
+            "name": "Nutritive sweeteners",
+            "children": [
+             {
+              "name": "Molasses",
+              "ref": "Molasses",
+              "what": "Sugar-refining by-product",
+              "does": "Sugar plus minerals"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Salt & seasonings",
+    "children": [
+     {
+      "name": "Table salt",
+      "food": "Refined salt",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Sodium",
+              "children": [
+               {
+                "name": "Sodium chloride",
+                "ref": "Sodium chloride",
+                "what": "Table salt",
+                "does": "Fluid balance, nerve signals"
+               }
+              ]
+             }
+            ]
+           },
+           {
+            "name": "Trace minerals",
+            "children": [
+             {
+              "name": "Iodine",
+              "children": [
+               {
+                "name": "Potassium iodide",
+                "ref": "Potassium iodide",
+                "what": "Iodizing salt form",
+                "does": "Thyroid hormones"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Additives",
+        "children": [
+         {
+          "name": "Anti-caking agents",
+          "children": [
+           {
+            "name": "Sodium ferrocyanide (E535)",
+            "ref": "Sodium ferrocyanide (E535)",
+            "what": "Anti-caking agent in salt",
+            "does": "Prevents salt clumping"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Sea salt",
+      "food": "Evaporated seawater",
+      "children": [
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Sodium",
+              "children": [
+               {
+                "name": "Sodium chloride",
+                "ref": "Sodium chloride",
+                "what": "Table salt",
+                "does": "Fluid balance, nerve signals"
+               }
+              ]
+             },
+             {
+              "name": "Magnesium",
+              "ref": "Magnesium",
+              "what": "Magnesium (category)",
+              "does": ""
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Vinegar",
+      "food": "Fermented acetic solution",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Organic acids",
+          "children": [
+           {
+            "name": "Acetic acid",
+            "ref": "Acetic acid",
+            "what": "Acid in vinegar",
+            "does": "Short-chain fatty acid; may blunt glucose spikes"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Soy sauce",
+      "food": "Fermented soy and wheat",
+      "children": [
+       {
+        "name": "Macronutrients",
+        "children": [
+         {
+          "name": "Protein",
+          "children": [
+           {
+            "name": "Non-essential amino acids",
+            "children": [
+             {
+              "name": "Glutamic acid",
+              "ref": "Glutamic acid",
+              "what": "Acidic amino acid (source of umami taste)",
+              "does": "Main excitatory neurotransmitter; nitrogen metabolism"
+             }
+            ]
+           },
+           {
+            "name": "Protein types seen on labels",
+            "children": [
+             {
+              "name": "Gluten",
+              "ref": "Gluten",
+              "what": "Wheat/barley/rye protein (gliadin + glutenin)",
+              "does": "Gives dough elasticity; triggers celiac disease"
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "name": "Micronutrients",
+        "children": [
+         {
+          "name": "Minerals",
+          "children": [
+           {
+            "name": "Macrominerals",
+            "children": [
+             {
+              "name": "Sodium",
+              "children": [
+               {
+                "name": "Sodium chloride",
+                "ref": "Sodium chloride",
+                "what": "Table salt",
+                "does": "Fluid balance, nerve signals"
+               }
+              ]
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
  "compounds": {
-  "name": "Everything on a food label",
+  "name": "All compounds",
   "children": [
    {
     "name": "Macronutrients",
@@ -24,12 +4625,21 @@
          {
           "name": "Leucine",
           "what": "Branched-chain essential amino acid (BCAA)",
-          "does": "Key trigger of muscle protein synthesis (mTOR)"
+          "does": "Key trigger of muscle protein synthesis (mTOR)",
+          "found": [
+           "Oats",
+           "Pork",
+           "Chicken"
+          ]
          },
          {
           "name": "Lysine",
           "what": "Essential amino acid often limiting in grains",
-          "does": "Collagen cross-linking, carnitine synthesis, calcium absorption"
+          "does": "Collagen cross-linking, carnitine synthesis, calcium absorption",
+          "found": [
+           "Quinoa",
+           "Lentils"
+          ]
          },
          {
           "name": "Methionine",
@@ -64,7 +4674,10 @@
          {
           "name": "Arginine",
           "what": "Amino acid essential in stress/growth",
-          "does": "Nitric oxide production, urea cycle"
+          "does": "Nitric oxide production, urea cycle",
+          "found": [
+           "Peanuts"
+          ]
          },
          {
           "name": "Cysteine",
@@ -114,7 +4727,10 @@
          {
           "name": "Glutamic acid",
           "what": "Acidic amino acid (source of umami taste)",
-          "does": "Main excitatory neurotransmitter; nitrogen metabolism"
+          "does": "Main excitatory neurotransmitter; nitrogen metabolism",
+          "found": [
+           "Soy sauce"
+          ]
          },
          {
           "name": "Serine",
@@ -129,17 +4745,27 @@
          {
           "name": "Whey protein",
           "what": "Soluble milk protein fraction",
-          "does": "Fast-digesting complete protein"
+          "does": "Fast-digesting complete protein",
+          "found": [
+           "Milk"
+          ]
          },
          {
           "name": "Casein",
           "what": "Main milk protein (~80%)",
-          "does": "Slow-digesting complete protein"
+          "does": "Slow-digesting complete protein",
+          "found": [
+           "Milk",
+           "Cheese"
+          ]
          },
          {
           "name": "Soy protein",
           "what": "Protein from soybeans",
-          "does": "Complete plant protein"
+          "does": "Complete plant protein",
+          "found": [
+           "Soybeans"
+          ]
          },
          {
           "name": "Pea protein",
@@ -149,7 +4775,12 @@
          {
           "name": "Gluten",
           "what": "Wheat/barley/rye protein (gliadin + glutenin)",
-          "does": "Gives dough elasticity; triggers celiac disease"
+          "does": "Gives dough elasticity; triggers celiac disease",
+          "found": [
+           "Whole wheat flour",
+           "Rye",
+           "Soy sauce"
+          ]
          },
          {
           "name": "Collagen / gelatin",
@@ -164,12 +4795,18 @@
          {
           "name": "Bioactive peptides (e.g. carnosine, anserine)",
           "what": "Small peptides in meat and fish",
-          "does": "Muscle acid buffering, antioxidant"
+          "does": "Muscle acid buffering, antioxidant",
+          "found": [
+           "Beef"
+          ]
          },
          {
           "name": "Egg albumin",
           "what": "Main egg white protein",
-          "does": "High-quality complete protein"
+          "does": "High-quality complete protein",
+          "found": [
+           "Whole egg"
+          ]
          }
         ]
        }
@@ -184,12 +4821,22 @@
          {
           "name": "Glucose",
           "what": "Simple 6-carbon sugar (dextrose)",
-          "does": "Primary fuel for cells and brain"
+          "does": "Primary fuel for cells and brain",
+          "found": [
+           "Honey (food)",
+           "Dates"
+          ]
          },
          {
           "name": "Fructose",
           "what": "Fruit sugar, 6-carbon ketose",
-          "does": "Metabolized mainly in the liver"
+          "does": "Metabolized mainly in the liver",
+          "found": [
+           "Apples",
+           "Bananas",
+           "Honey (food)",
+           "Dates"
+          ]
          },
          {
           "name": "Galactose",
@@ -209,12 +4856,19 @@
          {
           "name": "Sucrose",
           "what": "Table sugar = glucose + fructose",
-          "does": "Quick energy"
+          "does": "Quick energy",
+          "found": [
+           "Maple syrup (food)",
+           "Molasses (food)"
+          ]
          },
          {
           "name": "Lactose",
           "what": "Milk sugar = glucose + galactose",
-          "does": "Energy; needs lactase enzyme to digest"
+          "does": "Energy; needs lactase enzyme to digest",
+          "found": [
+           "Milk"
+          ]
          },
          {
           "name": "Maltose",
@@ -224,7 +4878,10 @@
          {
           "name": "Trehalose",
           "what": "Two glucose units (mushrooms, yeast)",
-          "does": "Slowly digested energy"
+          "does": "Slowly digested energy",
+          "found": [
+           "Mushrooms"
+          ]
          }
         ]
        },
@@ -234,17 +4891,27 @@
          {
           "name": "Raffinose",
           "what": "Trisaccharide in beans",
-          "does": "Fermented by gut bacteria (gas)"
+          "does": "Fermented by gut bacteria (gas)",
+          "found": [
+           "Lentils",
+           "Black beans"
+          ]
          },
          {
           "name": "Stachyose",
           "what": "Tetrasaccharide in legumes",
-          "does": "Prebiotic; fermented in the colon"
+          "does": "Prebiotic; fermented in the colon",
+          "found": [
+           "Chickpeas"
+          ]
          },
          {
           "name": "Fructooligosaccharides (FOS)",
           "what": "Short fructose chains",
-          "does": "Prebiotic fiber"
+          "does": "Prebiotic fiber",
+          "found": [
+           "Onions"
+          ]
          },
          {
           "name": "Galactooligosaccharides (GOS)",
@@ -259,17 +4926,33 @@
          {
           "name": "Amylose",
           "what": "Linear glucose polymer in starch",
-          "does": "Slower-digesting starch"
+          "does": "Slower-digesting starch",
+          "found": [
+           "Brown rice",
+           "White rice"
+          ]
          },
          {
           "name": "Amylopectin",
           "what": "Branched glucose polymer in starch",
-          "does": "Rapidly digested energy"
+          "does": "Rapidly digested energy",
+          "found": [
+           "Brown rice",
+           "White rice",
+           "Corn / maize",
+           "Potatoes"
+          ]
          },
          {
           "name": "Resistant starch",
           "what": "Starch that escapes small-intestine digestion",
-          "does": "Acts like fiber; feeds gut bacteria"
+          "does": "Acts like fiber; feeds gut bacteria",
+          "found": [
+           "Barley",
+           "Chickpeas",
+           "Potatoes",
+           "Bananas"
+          ]
          },
          {
           "name": "Maltodextrin",
@@ -297,17 +4980,28 @@
            {
             "name": "Beta-glucan",
             "what": "Soluble fiber in oats and barley",
-            "does": "Lowers LDL cholesterol"
+            "does": "Lowers LDL cholesterol",
+            "found": [
+             "Oats",
+             "Barley",
+             "Mushrooms"
+            ]
            },
            {
             "name": "Pectin",
             "what": "Soluble fiber in fruit (E440)",
-            "does": "Gel-forming; slows digestion"
+            "does": "Gel-forming; slows digestion",
+            "found": [
+             "Apples"
+            ]
            },
            {
             "name": "Inulin",
             "what": "Fructose polymer from chicory, onions",
-            "does": "Prebiotic; feeds gut bacteria"
+            "does": "Prebiotic; feeds gut bacteria",
+            "found": [
+             "Garlic"
+            ]
            },
            {
             "name": "Psyllium",
@@ -329,6 +5023,9 @@
             "what": "Fiber from brown seaweed",
             "does": "Forms gels in the gut"
            }
+          ],
+          "found": [
+           "Chia seeds"
           ]
          },
          {
@@ -337,12 +5034,18 @@
            {
             "name": "Cellulose",
             "what": "Glucose polymer of plant cell walls",
-            "does": "Adds stool bulk"
+            "does": "Adds stool bulk",
+            "found": [
+             "Whole wheat flour"
+            ]
            },
            {
             "name": "Hemicellulose",
             "what": "Mixed plant cell-wall polysaccharides",
-            "does": "Adds bulk; partly fermented"
+            "does": "Adds bulk; partly fermented",
+            "found": [
+             "Rye"
+            ]
            },
            {
             "name": "Lignin",
@@ -352,7 +5055,10 @@
            {
             "name": "Chitin",
             "what": "Fiber in mushrooms and crustacean shells",
-            "does": "Indigestible bulk"
+            "does": "Indigestible bulk",
+            "found": [
+             "Mushrooms"
+            ]
            }
           ]
          }
@@ -409,7 +5115,11 @@
          {
           "name": "Butyric acid (C4:0)",
           "what": "Short-chain saturated fat in butter",
-          "does": "Fuel for colon cells"
+          "does": "Fuel for colon cells",
+          "found": [
+           "Butter",
+           "Ghee"
+          ]
          },
          {
           "name": "Caproic acid (C6:0)",
@@ -419,7 +5129,10 @@
          {
           "name": "Caprylic acid (C8:0)",
           "what": "Medium-chain fat (MCT) in coconut",
-          "does": "Rapidly converted to ketones"
+          "does": "Rapidly converted to ketones",
+          "found": [
+           "Coconut oil"
+          ]
          },
          {
           "name": "Capric acid (C10:0)",
@@ -429,22 +5142,38 @@
          {
           "name": "Lauric acid (C12:0)",
           "what": "Main fat in coconut and palm kernel oil",
-          "does": "Raises HDL and LDL"
+          "does": "Raises HDL and LDL",
+          "found": [
+           "Coconut oil"
+          ]
          },
          {
           "name": "Myristic acid (C14:0)",
           "what": "Saturated fat in dairy and nutmeg",
-          "does": "Raises LDL cholesterol"
+          "does": "Raises LDL cholesterol",
+          "found": [
+           "Coconut oil"
+          ]
          },
          {
           "name": "Palmitic acid (C16:0)",
           "what": "Most common saturated fat (palm, meat)",
-          "does": "Energy; raises LDL in excess"
+          "does": "Energy; raises LDL in excess",
+          "found": [
+           "Butter",
+           "Palm oil",
+           "Lard / tallow"
+          ]
          },
          {
           "name": "Stearic acid (C18:0)",
           "what": "Saturated fat in cocoa butter, beef",
-          "does": "Largely neutral on LDL"
+          "does": "Largely neutral on LDL",
+          "found": [
+           "Lard / tallow",
+           "Cocoa butter",
+           "Cocoa / dark chocolate"
+          ]
          },
          {
           "name": "Arachidic acid (C20:0)",
@@ -459,7 +5188,18 @@
          {
           "name": "Oleic acid (omega-9)",
           "what": "Main fat in olive oil",
-          "does": "Supports healthy cholesterol levels"
+          "does": "Supports healthy cholesterol levels",
+          "found": [
+           "Extra-virgin olive oil",
+           "Canola / rapeseed oil",
+           "Lard / tallow",
+           "Cocoa butter",
+           "Pork",
+           "Peanuts",
+           "Almonds",
+           "Avocado",
+           "Cocoa / dark chocolate"
+          ]
          },
          {
           "name": "Palmitoleic acid (omega-7)",
@@ -479,7 +5219,14 @@
          {
           "name": "ALA (alpha-linolenic acid)",
           "what": "Plant omega-3 in flax, chia, walnuts",
-          "does": "Essential fat; partly converted to EPA/DHA"
+          "does": "Essential fat; partly converted to EPA/DHA",
+          "found": [
+           "Canola / rapeseed oil",
+           "Flaxseed oil",
+           "Walnuts",
+           "Flaxseed",
+           "Chia seeds"
+          ]
          },
          {
           "name": "SDA (stearidonic acid)",
@@ -489,7 +5236,11 @@
          {
           "name": "EPA (eicosapentaenoic acid)",
           "what": "Marine omega-3",
-          "does": "Anti-inflammatory signaling"
+          "does": "Anti-inflammatory signaling",
+          "found": [
+           "Salmon",
+           "Sardines"
+          ]
          },
          {
           "name": "DPA (docosapentaenoic acid)",
@@ -499,7 +5250,11 @@
          {
           "name": "DHA (docosahexaenoic acid)",
           "what": "Marine omega-3",
-          "does": "Brain and retina structure"
+          "does": "Brain and retina structure",
+          "found": [
+           "Salmon",
+           "Sardines"
+          ]
          }
         ]
        },
@@ -509,7 +5264,10 @@
          {
           "name": "Linoleic acid (LA)",
           "what": "Main omega-6 in seed oils",
-          "does": "Essential fat; skin barrier"
+          "does": "Essential fat; skin barrier",
+          "found": [
+           "Sunflower oil"
+          ]
          },
          {
           "name": "Gamma-linolenic acid (GLA)",
@@ -534,7 +5292,10 @@
          {
           "name": "Vaccenic acid",
           "what": "Natural ruminant trans fat in dairy",
-          "does": "Partly converted to CLA"
+          "does": "Partly converted to CLA",
+          "found": [
+           "Beef"
+          ]
          },
          {
           "name": "Conjugated linoleic acid (CLA)",
@@ -549,12 +5310,20 @@
          {
           "name": "Cholesterol",
           "what": "Animal sterol",
-          "does": "Cell membranes; makes hormones, vitamin D, bile"
+          "does": "Cell membranes; makes hormones, vitamin D, bile",
+          "found": [
+           "Butter",
+           "Ghee",
+           "Whole egg"
+          ]
          },
          {
           "name": "Phospholipids (lecithin)",
           "what": "Fat with phosphate head group",
-          "does": "Cell membranes; emulsifier"
+          "does": "Cell membranes; emulsifier",
+          "found": [
+           "Whole egg"
+          ]
          },
          {
           "name": "Medium-chain triglycerides (MCT)",
@@ -576,27 +5345,43 @@
        {
         "name": "Citric acid",
         "what": "Acid in citrus fruits",
-        "does": "Energy-cycle (Krebs) intermediate"
+        "does": "Energy-cycle (Krebs) intermediate",
+        "found": [
+         "Oranges"
+        ]
        },
        {
         "name": "Malic acid",
         "what": "Acid in apples",
-        "does": "Krebs cycle intermediate"
+        "does": "Krebs cycle intermediate",
+        "found": [
+         "Apples"
+        ]
        },
        {
         "name": "Lactic acid",
         "what": "Acid from fermentation (yogurt, sauerkraut)",
-        "does": "Recycled to glucose by the liver"
+        "does": "Recycled to glucose by the liver",
+        "found": [
+         "Yogurt",
+         "Kefir"
+        ]
        },
        {
         "name": "Acetic acid",
         "what": "Acid in vinegar",
-        "does": "Short-chain fatty acid; may blunt glucose spikes"
+        "does": "Short-chain fatty acid; may blunt glucose spikes",
+        "found": [
+         "Vinegar"
+        ]
        },
        {
         "name": "Tartaric acid",
         "what": "Acid in grapes",
-        "does": "Mostly fermented by gut bacteria"
+        "does": "Mostly fermented by gut bacteria",
+        "found": [
+         "Grapes"
+        ]
        },
        {
         "name": "Succinic acid",
@@ -627,7 +5412,11 @@
            {
             "name": "Retinol",
             "what": "Preformed vitamin A in animal foods",
-            "does": "Vision, immunity, skin"
+            "does": "Vision, immunity, skin",
+            "found": [
+             "Butter",
+             "Liver"
+            ]
            },
            {
             "name": "Retinyl palmitate",
@@ -644,6 +5433,9 @@
             "what": "Plant pigment converted to vitamin A",
             "does": "Source of vitamin A; antioxidant"
            }
+          ],
+          "found": [
+           "Cheese"
           ]
          },
          {
@@ -652,12 +5444,18 @@
            {
             "name": "Cholecalciferol (D3)",
             "what": "Animal/skin-made vitamin D",
-            "does": "Calcium absorption, bone health"
+            "does": "Calcium absorption, bone health",
+            "found": [
+             "Salmon"
+            ]
            },
            {
             "name": "Ergocalciferol (D2)",
             "what": "Plant/mushroom vitamin D",
-            "does": "Calcium absorption (less potent than D3)"
+            "does": "Calcium absorption (less potent than D3)",
+            "found": [
+             "Mushrooms"
+            ]
            }
           ]
          },
@@ -667,7 +5465,12 @@
            {
             "name": "Alpha-tocopherol",
             "what": "Most active vitamin E form",
-            "does": "Antioxidant protecting cell membranes"
+            "does": "Antioxidant protecting cell membranes",
+            "found": [
+             "Extra-virgin olive oil",
+             "Sunflower oil",
+             "Almonds"
+            ]
            },
            {
             "name": "dl-alpha-tocopheryl acetate",
@@ -682,7 +5485,10 @@
            {
             "name": "Tocotrienols",
             "what": "Vitamin E forms in palm and rice bran",
-            "does": "Antioxidant"
+            "does": "Antioxidant",
+            "found": [
+             "Palm oil"
+            ]
            }
           ]
          },
@@ -692,7 +5498,12 @@
            {
             "name": "Phylloquinone (K1)",
             "what": "Plant vitamin K in leafy greens",
-            "does": "Blood clotting"
+            "does": "Blood clotting",
+            "found": [
+             "Broccoli",
+             "Kale",
+             "Parsley"
+            ]
            },
            {
             "name": "Menaquinone-4 (K2 MK-4)",
@@ -717,12 +5528,18 @@
            {
             "name": "Thiamin hydrochloride",
             "what": "Fortification form of B1",
-            "does": "Carbohydrate metabolism, nerves"
+            "does": "Carbohydrate metabolism, nerves",
+            "found": [
+             "Pork"
+            ]
            },
            {
             "name": "Thiamin mononitrate",
             "what": "Stable fortification form of B1",
-            "does": "Carbohydrate metabolism"
+            "does": "Carbohydrate metabolism",
+            "found": [
+             "Whole wheat flour"
+            ]
            }
           ]
          },
@@ -732,7 +5549,10 @@
            {
             "name": "Riboflavin",
             "what": "Yellow vitamin (also E101)",
-            "does": "Energy metabolism (FAD/FMN)"
+            "does": "Energy metabolism (FAD/FMN)",
+            "found": [
+             "Milk"
+            ]
            },
            {
             "name": "Riboflavin-5'-phosphate",
@@ -752,7 +5572,10 @@
            {
             "name": "Nicotinamide (niacinamide)",
             "what": "Amide form of niacin",
-            "does": "Energy metabolism without flushing"
+            "does": "Energy metabolism without flushing",
+            "found": [
+             "Chicken"
+            ]
            }
           ]
          },
@@ -797,7 +5620,12 @@
            {
             "name": "Folate (food form)",
             "what": "Natural polyglutamate folates",
-            "does": "DNA synthesis, cell division"
+            "does": "DNA synthesis, cell division",
+            "found": [
+             "Lentils",
+             "Chickpeas",
+             "Spinach"
+            ]
            },
            {
             "name": "Folic acid",
@@ -817,12 +5645,18 @@
            {
             "name": "Cyanocobalamin",
             "what": "Stable synthetic B12",
-            "does": "Nerve function, red blood cells"
+            "does": "Nerve function, red blood cells",
+            "found": [
+             "Liver"
+            ]
            },
            {
             "name": "Methylcobalamin",
             "what": "Active coenzyme form",
-            "does": "Methylation, nerve function"
+            "does": "Methylation, nerve function",
+            "found": [
+             "Oysters"
+            ]
            },
            {
             "name": "Adenosylcobalamin",
@@ -842,7 +5676,14 @@
            {
             "name": "Ascorbic acid",
             "what": "Vitamin C (also E300)",
-            "does": "Antioxidant, collagen synthesis, iron absorption"
+            "does": "Antioxidant, collagen synthesis, iron absorption",
+            "found": [
+             "Broccoli",
+             "Tomatoes",
+             "Oranges",
+             "Strawberries",
+             "Chili pepper"
+            ]
            },
            {
             "name": "Sodium ascorbate",
@@ -864,7 +5705,11 @@
          {
           "name": "Choline",
           "what": "Essential nutrient in eggs and liver",
-          "does": "Acetylcholine, cell membranes, liver health"
+          "does": "Acetylcholine, cell membranes, liver health",
+          "found": [
+           "Whole egg",
+           "Liver"
+          ]
          },
          {
           "name": "Inositol",
@@ -897,7 +5742,10 @@
            {
             "name": "Calcium carbonate",
             "what": "Common calcium salt (E170)",
-            "does": "Bones, teeth, muscle contraction"
+            "does": "Bones, teeth, muscle contraction",
+            "found": [
+             "Sesame seeds"
+            ]
            },
            {
             "name": "Calcium citrate",
@@ -907,7 +5755,11 @@
            {
             "name": "Calcium phosphate",
             "what": "Calcium salt (E341)",
-            "does": "Bones; also anti-caking agent"
+            "does": "Bones; also anti-caking agent",
+            "found": [
+             "Milk",
+             "Sardines"
+            ]
            },
            {
             "name": "Calcium lactate",
@@ -937,7 +5789,10 @@
            {
             "name": "Magnesium oxide",
             "what": "Dense magnesium salt",
-            "does": "Muscle, nerve, 300+ enzymes"
+            "does": "Muscle, nerve, 300+ enzymes",
+            "found": [
+             "Buckwheat"
+            ]
            },
            {
             "name": "Magnesium citrate",
@@ -949,6 +5804,11 @@
             "what": "Magnesium bound to glycine",
             "does": "Gentle magnesium source"
            }
+          ],
+          "found": [
+           "Almonds",
+           "Pumpkin seeds",
+           "Sea salt"
           ]
          },
          {
@@ -957,7 +5817,13 @@
            {
             "name": "Sodium chloride",
             "what": "Table salt",
-            "does": "Fluid balance, nerve signals"
+            "does": "Fluid balance, nerve signals",
+            "found": [
+             "Cheese",
+             "Table salt",
+             "Sea salt",
+             "Soy sauce"
+            ]
            },
            {
             "name": "Sodium bicarbonate",
@@ -979,6 +5845,13 @@
             "what": "Potassium salt (E332)",
             "does": "Potassium source; acidity regulator"
            }
+          ],
+          "found": [
+           "Tomatoes",
+           "Potatoes",
+           "Bananas",
+           "Avocado",
+           "Dates"
           ]
          },
          {
@@ -1002,7 +5875,11 @@
            {
             "name": "Heme iron",
             "what": "Iron in meat and fish",
-            "does": "Hemoglobin, oxygen transport"
+            "does": "Hemoglobin, oxygen transport",
+            "found": [
+             "Beef",
+             "Liver"
+            ]
            },
            {
             "name": "Ferrous sulfate",
@@ -1024,6 +5901,9 @@
             "what": "Reduced elemental iron powder",
             "does": "Iron fortification of cereals"
            }
+          ],
+          "found": [
+           "Molasses (food)"
           ]
          },
          {
@@ -1044,6 +5924,11 @@
             "what": "Zinc salt",
             "does": "Zinc source"
            }
+          ],
+          "found": [
+           "Beef",
+           "Oysters",
+           "Pumpkin seeds"
           ]
          },
          {
@@ -1059,6 +5944,10 @@
             "what": "Copper salt",
             "does": "Copper source"
            }
+          ],
+          "found": [
+           "Liver",
+           "Oysters"
           ]
          },
          {
@@ -1067,7 +5956,10 @@
            {
             "name": "Potassium iodide",
             "what": "Iodizing salt form",
-            "does": "Thyroid hormones"
+            "does": "Thyroid hormones",
+            "found": [
+             "Table salt"
+            ]
            },
            {
             "name": "Potassium iodate",
@@ -1082,7 +5974,12 @@
            {
             "name": "Selenomethionine",
             "what": "Selenium bound to methionine",
-            "does": "Antioxidant enzymes, thyroid"
+            "does": "Antioxidant enzymes, thyroid",
+            "found": [
+             "Chicken",
+             "Shrimp",
+             "Brazil nuts"
+            ]
            },
            {
             "name": "Sodium selenite",
@@ -1097,7 +5994,10 @@
            {
             "name": "Manganese sulfate",
             "what": "Manganese salt",
-            "does": "Bone formation, antioxidant enzymes"
+            "does": "Bone formation, antioxidant enzymes",
+            "found": [
+             "Oats"
+            ]
            }
           ]
          },
@@ -1147,12 +6047,19 @@
            {
             "name": "Quercetin",
             "what": "Flavonol in onions, apples, capers",
-            "does": "Antioxidant, anti-inflammatory"
+            "does": "Antioxidant, anti-inflammatory",
+            "found": [
+             "Onions",
+             "Apples"
+            ]
            },
            {
             "name": "Kaempferol",
             "what": "Flavonol in kale, tea",
-            "does": "Antioxidant"
+            "does": "Antioxidant",
+            "found": [
+             "Kale"
+            ]
            },
            {
             "name": "Myricetin",
@@ -1162,7 +6069,10 @@
            {
             "name": "Rutin",
             "what": "Quercetin glycoside in buckwheat",
-            "does": "Supports blood vessels"
+            "does": "Supports blood vessels",
+            "found": [
+             "Buckwheat"
+            ]
            }
           ]
          },
@@ -1172,7 +6082,10 @@
            {
             "name": "Apigenin",
             "what": "Flavone in parsley, chamomile",
-            "does": "Calming, anti-inflammatory"
+            "does": "Calming, anti-inflammatory",
+            "found": [
+             "Parsley"
+            ]
            },
            {
             "name": "Luteolin",
@@ -1187,7 +6100,10 @@
            {
             "name": "Hesperidin",
             "what": "Flavanone in oranges",
-            "does": "Vascular health"
+            "does": "Vascular health",
+            "found": [
+             "Oranges"
+            ]
            },
            {
             "name": "Naringenin",
@@ -1207,17 +6123,27 @@
            {
             "name": "Epicatechin",
             "what": "Flavanol in cocoa",
-            "does": "Supports blood flow"
+            "does": "Supports blood flow",
+            "found": [
+             "Cocoa / dark chocolate"
+            ]
            },
            {
             "name": "EGCG (epigallocatechin gallate)",
             "what": "Main green tea catechin",
-            "does": "Antioxidant"
+            "does": "Antioxidant",
+            "found": [
+             "Tea (green/black)"
+            ]
            },
            {
             "name": "Proanthocyanidins",
             "what": "Catechin polymers in grapes, cranberries",
-            "does": "Antioxidant; urinary tract health"
+            "does": "Antioxidant; urinary tract health",
+            "found": [
+             "Grapes",
+             "Cinnamon"
+            ]
            }
           ]
          },
@@ -1232,18 +6158,30 @@
            {
             "name": "Delphinidin",
             "what": "Blue pigment in blueberries",
-            "does": "Antioxidant"
+            "does": "Antioxidant",
+            "found": [
+             "Blueberries"
+            ]
            },
            {
             "name": "Malvidin",
             "what": "Pigment in red grapes",
-            "does": "Antioxidant"
+            "does": "Antioxidant",
+            "found": [
+             "Blueberries"
+            ]
            },
            {
             "name": "Pelargonidin",
             "what": "Orange-red pigment in strawberries",
-            "does": "Antioxidant"
+            "does": "Antioxidant",
+            "found": [
+             "Strawberries"
+            ]
            }
+          ],
+          "found": [
+           "Black beans"
           ]
          },
          {
@@ -1252,12 +6190,18 @@
            {
             "name": "Genistein",
             "what": "Soy isoflavone",
-            "does": "Weak estrogen-like activity"
+            "does": "Weak estrogen-like activity",
+            "found": [
+             "Soybeans"
+            ]
            },
            {
             "name": "Daidzein",
             "what": "Soy isoflavone",
-            "does": "Weak estrogen-like activity"
+            "does": "Weak estrogen-like activity",
+            "found": [
+             "Soybeans"
+            ]
            }
           ]
          }
@@ -1269,7 +6213,10 @@
          {
           "name": "Chlorogenic acid",
           "what": "Phenolic acid in coffee",
-          "does": "Glucose metabolism, antioxidant"
+          "does": "Glucose metabolism, antioxidant",
+          "found": [
+           "Coffee"
+          ]
          },
          {
           "name": "Caffeic acid",
@@ -1279,7 +6226,10 @@
          {
           "name": "Ferulic acid",
           "what": "Phenolic acid in whole grains",
-          "does": "Antioxidant"
+          "does": "Antioxidant",
+          "found": [
+           "Whole wheat flour"
+          ]
          },
          {
           "name": "Gallic acid",
@@ -1289,12 +6239,20 @@
          {
           "name": "Ellagic acid",
           "what": "Phenolic in pomegranate, raspberries",
-          "does": "Converted to urolithins by gut bacteria"
+          "does": "Converted to urolithins by gut bacteria",
+          "found": [
+           "Walnuts",
+           "Strawberries",
+           "Pomegranate"
+          ]
          },
          {
           "name": "Rosmarinic acid",
           "what": "Phenolic in rosemary, mint",
-          "does": "Antioxidant"
+          "does": "Antioxidant",
+          "found": [
+           "Rosemary"
+          ]
          }
         ]
        },
@@ -1304,12 +6262,19 @@
          {
           "name": "Resveratrol",
           "what": "Stilbene in grape skins",
-          "does": "Antioxidant; studied for longevity"
+          "does": "Antioxidant; studied for longevity",
+          "found": [
+           "Peanuts",
+           "Grapes"
+          ]
          },
          {
           "name": "Pterostilbene",
           "what": "Stilbene in blueberries",
-          "does": "Antioxidant"
+          "does": "Antioxidant",
+          "found": [
+           "Blueberries"
+          ]
          }
         ]
        },
@@ -1319,12 +6284,18 @@
          {
           "name": "Secoisolariciresinol",
           "what": "Lignan in flaxseed",
-          "does": "Converted to enterolignans"
+          "does": "Converted to enterolignans",
+          "found": [
+           "Flaxseed"
+          ]
          },
          {
           "name": "Sesamin",
           "what": "Lignan in sesame",
-          "does": "Antioxidant"
+          "does": "Antioxidant",
+          "found": [
+           "Sesame seeds"
+          ]
          }
         ]
        },
@@ -1334,27 +6305,43 @@
          {
           "name": "Curcumin",
           "what": "Yellow polyphenol in turmeric",
-          "does": "Anti-inflammatory"
+          "does": "Anti-inflammatory",
+          "found": [
+           "Turmeric"
+          ]
          },
          {
           "name": "Oleocanthal",
           "what": "Phenolic in extra-virgin olive oil",
-          "does": "Anti-inflammatory (ibuprofen-like)"
+          "does": "Anti-inflammatory (ibuprofen-like)",
+          "found": [
+           "Extra-virgin olive oil"
+          ]
          },
          {
           "name": "Hydroxytyrosol",
           "what": "Olive polyphenol",
-          "does": "Protects blood lipids from oxidation"
+          "does": "Protects blood lipids from oxidation",
+          "found": [
+           "Extra-virgin olive oil"
+          ]
          },
          {
           "name": "Gingerols",
           "what": "Pungent phenolics in fresh ginger",
-          "does": "Anti-nausea, anti-inflammatory"
+          "does": "Anti-nausea, anti-inflammatory",
+          "found": [
+           "Ginger"
+          ]
          },
          {
           "name": "Tannins",
           "what": "Astringent polyphenols in tea, wine",
-          "does": "Antioxidant; bind proteins and iron"
+          "does": "Antioxidant; bind proteins and iron",
+          "found": [
+           "Pomegranate",
+           "Tea (green/black)"
+          ]
          }
         ]
        }
@@ -1366,12 +6353,19 @@
        {
         "name": "Beta-carotene",
         "what": "Orange pigment in carrots",
-        "does": "Provitamin A, antioxidant"
+        "does": "Provitamin A, antioxidant",
+        "found": [
+         "Palm oil",
+         "Carrots"
+        ]
        },
        {
         "name": "Alpha-carotene",
         "what": "Pigment in carrots, pumpkin",
-        "does": "Provitamin A"
+        "does": "Provitamin A",
+        "found": [
+         "Carrots"
+        ]
        },
        {
         "name": "Beta-cryptoxanthin",
@@ -1381,22 +6375,38 @@
        {
         "name": "Lycopene",
         "what": "Red pigment in tomatoes",
-        "does": "Antioxidant"
+        "does": "Antioxidant",
+        "found": [
+         "Tomatoes"
+        ]
        },
        {
         "name": "Lutein",
         "what": "Yellow pigment in leafy greens",
-        "does": "Eye (macula) health"
+        "does": "Eye (macula) health",
+        "found": [
+         "Corn / maize",
+         "Whole egg",
+         "Spinach",
+         "Kale"
+        ]
        },
        {
         "name": "Zeaxanthin",
         "what": "Pigment in corn, peppers",
-        "does": "Eye (macula) health"
+        "does": "Eye (macula) health",
+        "found": [
+         "Corn / maize"
+        ]
        },
        {
         "name": "Astaxanthin",
         "what": "Red pigment in salmon, shrimp",
-        "does": "Antioxidant"
+        "does": "Antioxidant",
+        "found": [
+         "Salmon",
+         "Shrimp"
+        ]
        }
       ]
      },
@@ -1406,17 +6416,26 @@
        {
         "name": "Glucoraphanin",
         "what": "Glucosinolate in broccoli",
-        "does": "Precursor of sulforaphane"
+        "does": "Precursor of sulforaphane",
+        "found": [
+         "Broccoli"
+        ]
        },
        {
         "name": "Sulforaphane",
         "what": "Isothiocyanate from broccoli sprouts",
-        "does": "Activates detox enzymes (Nrf2)"
+        "does": "Activates detox enzymes (Nrf2)",
+        "found": [
+         "Broccoli"
+        ]
        },
        {
         "name": "Sinigrin",
         "what": "Glucosinolate in mustard",
-        "does": "Source of mustard pungency"
+        "does": "Source of mustard pungency",
+        "found": [
+         "Mustard seed"
+        ]
        },
        {
         "name": "Indole-3-carbinol",
@@ -1431,12 +6450,18 @@
        {
         "name": "Allicin",
         "what": "Compound formed when garlic is crushed",
-        "does": "Antimicrobial"
+        "does": "Antimicrobial",
+        "found": [
+         "Garlic"
+        ]
        },
        {
         "name": "S-allyl cysteine",
         "what": "Compound in aged garlic",
-        "does": "Antioxidant"
+        "does": "Antioxidant",
+        "found": [
+         "Garlic"
+        ]
        }
       ]
      },
@@ -1446,7 +6471,10 @@
        {
         "name": "Beta-sitosterol",
         "what": "Main plant sterol",
-        "does": "Lowers LDL cholesterol absorption"
+        "does": "Lowers LDL cholesterol absorption",
+        "found": [
+         "Avocado"
+        ]
        },
        {
         "name": "Campesterol",
@@ -1463,6 +6491,9 @@
         "what": "Saturated plant sterols in fortified spreads",
         "does": "Lowers LDL cholesterol"
        }
+      ],
+      "found": [
+       "Pumpkin seeds"
       ]
      },
      {
@@ -1471,12 +6502,19 @@
        {
         "name": "Caffeine",
         "what": "Methylxanthine in coffee, tea",
-        "does": "Stimulant; blocks adenosine"
+        "does": "Stimulant; blocks adenosine",
+        "found": [
+         "Coffee",
+         "Tea (green/black)"
+        ]
        },
        {
         "name": "Theobromine",
         "what": "Methylxanthine in cocoa",
-        "does": "Mild stimulant, vasodilator"
+        "does": "Mild stimulant, vasodilator",
+        "found": [
+         "Cocoa / dark chocolate"
+        ]
        },
        {
         "name": "Theophylline",
@@ -1486,17 +6524,26 @@
        {
         "name": "Capsaicin",
         "what": "Pungent compound in chili",
-        "does": "Heat sensation; may raise metabolism"
+        "does": "Heat sensation; may raise metabolism",
+        "found": [
+         "Chili pepper"
+        ]
        },
        {
         "name": "Piperine",
         "what": "Pungent alkaloid in black pepper",
-        "does": "Increases absorption of some nutrients"
+        "does": "Increases absorption of some nutrients",
+        "found": [
+         "Black pepper"
+        ]
        },
        {
         "name": "Trigonelline",
         "what": "Alkaloid in coffee, fenugreek",
-        "does": "Niacin-related"
+        "does": "Niacin-related",
+        "found": [
+         "Coffee"
+        ]
        }
       ]
      },
@@ -1506,17 +6553,26 @@
        {
         "name": "L-theanine",
         "what": "Amino acid in tea",
-        "does": "Calm alertness"
+        "does": "Calm alertness",
+        "found": [
+         "Tea (green/black)"
+        ]
        },
        {
         "name": "Taurine",
         "what": "Amino sulfonic acid in meat, fish",
-        "does": "Bile salts, heart and nerve function"
+        "does": "Bile salts, heart and nerve function",
+        "found": [
+         "Shrimp"
+        ]
        },
        {
         "name": "Creatine",
         "what": "Compound in meat and fish",
-        "does": "Rapid energy (phosphocreatine) in muscle"
+        "does": "Rapid energy (phosphocreatine) in muscle",
+        "found": [
+         "Beef"
+        ]
        },
        {
         "name": "Beta-alanine",
@@ -1531,27 +6587,44 @@
        {
         "name": "Betalains (betanin)",
         "what": "Red pigment in beets (E162)",
-        "does": "Antioxidant"
+        "does": "Antioxidant",
+        "found": [
+         "Beets"
+        ]
        },
        {
         "name": "Saponins",
         "what": "Soapy glycosides in legumes, quinoa",
-        "does": "Bind cholesterol"
+        "does": "Bind cholesterol",
+        "found": [
+         "Quinoa"
+        ]
        },
        {
         "name": "Phytic acid",
         "what": "Phosphorus store in seeds and grains",
-        "does": "Reduces mineral absorption; antioxidant"
+        "does": "Reduces mineral absorption; antioxidant",
+        "found": [
+         "Brown rice",
+         "Soybeans"
+        ]
        },
        {
         "name": "Oxalic acid",
         "what": "Organic acid in spinach, rhubarb",
-        "does": "Binds calcium; kidney stones in excess"
+        "does": "Binds calcium; kidney stones in excess",
+        "found": [
+         "Spinach"
+        ]
        },
        {
         "name": "Nitrates (dietary)",
         "what": "Nitrate in beets, leafy greens",
-        "does": "Converted to nitric oxide; lowers blood pressure"
+        "does": "Converted to nitric oxide; lowers blood pressure",
+        "found": [
+         "Spinach",
+         "Beets"
+        ]
        }
       ]
      },
@@ -1566,7 +6639,10 @@
        {
         "name": "Purines",
         "what": "Bases in organ meats, anchovies",
-        "does": "Broken down to uric acid"
+        "does": "Broken down to uric acid",
+        "found": [
+         "Liver"
+        ]
        }
       ]
      },
@@ -1581,17 +6657,26 @@
        {
         "name": "Lacticaseibacillus rhamnosus",
         "what": "Probiotic bacterium (e.g. GG)",
-        "does": "Gut and immune support"
+        "does": "Gut and immune support",
+        "found": [
+         "Kefir"
+        ]
        },
        {
         "name": "Lactobacillus delbrueckii subsp. bulgaricus",
         "what": "Yogurt starter culture",
-        "does": "Ferments lactose"
+        "does": "Ferments lactose",
+        "found": [
+         "Yogurt"
+        ]
        },
        {
         "name": "Streptococcus thermophilus",
         "what": "Yogurt starter culture",
-        "does": "Ferments lactose"
+        "does": "Ferments lactose",
+        "found": [
+         "Yogurt"
+        ]
        },
        {
         "name": "Bifidobacterium lactis",
@@ -1701,7 +6786,10 @@
        {
         "name": "Rosemary extract (E392)",
         "what": "Natural antioxidant from rosemary",
-        "does": "Prevents fat oxidation"
+        "does": "Prevents fat oxidation",
+        "found": [
+         "Rosemary"
+        ]
        },
        {
         "name": "Propyl gallate (E310)",
@@ -2039,12 +7127,18 @@
          {
           "name": "Honey",
           "what": "Bee-made sugars (fructose, glucose)",
-          "does": "Sugar source"
+          "does": "Sugar source",
+          "found": [
+           "Honey (food)"
+          ]
          },
          {
           "name": "Maple syrup",
           "what": "Concentrated maple sap (mostly sucrose)",
-          "does": "Sugar source"
+          "does": "Sugar source",
+          "found": [
+           "Maple syrup (food)"
+          ]
          },
          {
           "name": "Agave syrup",
@@ -2054,7 +7148,10 @@
          {
           "name": "Molasses",
           "what": "Sugar-refining by-product",
-          "does": "Sugar plus minerals"
+          "does": "Sugar plus minerals",
+          "found": [
+           "Molasses (food)"
+          ]
          },
          {
           "name": "Allulose",
@@ -2221,7 +7318,10 @@
        {
         "name": "Sodium ferrocyanide (E535)",
         "what": "Anti-caking agent in salt",
-        "does": "Prevents salt clumping"
+        "does": "Prevents salt clumping",
+        "found": [
+         "Table salt"
+        ]
        }
       ]
      },
@@ -2266,7 +7366,10 @@
        {
         "name": "Rennet / chymosin",
         "what": "Milk-clotting enzyme",
-        "does": "Makes cheese"
+        "does": "Makes cheese",
+        "found": [
+         "Cheese"
+        ]
        },
        {
         "name": "Amylase",
@@ -2676,7 +7779,10 @@
        {
         "name": "Cinnamon oil",
         "what": "Main compound cinnamaldehyde",
-        "does": ""
+        "does": "",
+        "found": [
+         "Cinnamon"
+        ]
        },
        {
         "name": "Clove oil",
@@ -2699,486 +7805,6 @@
       "name": "Spices / spice extracts",
       "what": "Ground spices or oleoresins",
       "does": ""
-     }
-    ]
-   }
-  ]
- },
- "foods": {
-  "name": "Foods",
-  "children": [
-   {
-    "name": "Grains & flours",
-    "children": [
-     {
-      "name": "Whole wheat flour",
-      "what": "Milled whole wheat kernel",
-      "does": "see: Gluten; Ferulic acid; Thiamin mononitrate; Cellulose"
-     },
-     {
-      "name": "Oats",
-      "what": "Whole oat groats",
-      "does": "see: Beta-glucan; Leucine; Manganese sulfate"
-     },
-     {
-      "name": "Brown rice",
-      "what": "Rice with bran intact",
-      "does": "see: Amylose; Amylopectin; Phytic acid"
-     },
-     {
-      "name": "White rice",
-      "what": "Polished rice",
-      "does": "see: Amylopectin; Amylose"
-     },
-     {
-      "name": "Barley",
-      "what": "Cereal grain",
-      "does": "see: Beta-glucan; Resistant starch"
-     },
-     {
-      "name": "Corn / maize",
-      "what": "Cereal grain",
-      "does": "see: Amylopectin; Zeaxanthin; Lutein"
-     },
-     {
-      "name": "Rye",
-      "what": "Cereal grain",
-      "does": "see: Hemicellulose; Gluten"
-     },
-     {
-      "name": "Quinoa",
-      "what": "Pseudo-grain seed",
-      "does": "see: Saponins; Lysine"
-     },
-     {
-      "name": "Buckwheat",
-      "what": "Pseudo-grain seed",
-      "does": "see: Rutin; Magnesium oxide"
-     }
-    ]
-   },
-   {
-    "name": "Oils & fats",
-    "children": [
-     {
-      "name": "Extra-virgin olive oil",
-      "what": "Cold-pressed olive oil",
-      "does": "see: Oleic acid (omega-9); Hydroxytyrosol; Oleocanthal; Alpha-tocopherol"
-     },
-     {
-      "name": "Coconut oil",
-      "what": "Fat from coconut meat",
-      "does": "see: Lauric acid (C12:0); Caprylic acid (C8:0); Myristic acid (C14:0)"
-     },
-     {
-      "name": "Butter",
-      "what": "Churned milk fat",
-      "does": "see: Butyric acid (C4:0); Palmitic acid (C16:0); Cholesterol; Retinol"
-     },
-     {
-      "name": "Ghee",
-      "what": "Clarified butter",
-      "does": "see: Butyric acid (C4:0); Cholesterol"
-     },
-     {
-      "name": "Canola / rapeseed oil",
-      "what": "Low-erucic rapeseed oil",
-      "does": "see: Oleic acid (omega-9); ALA (alpha-linolenic acid)"
-     },
-     {
-      "name": "Sunflower oil",
-      "what": "Seed oil",
-      "does": "see: Linoleic acid (LA); Alpha-tocopherol"
-     },
-     {
-      "name": "Flaxseed oil",
-      "what": "Linseed oil",
-      "does": "see: ALA (alpha-linolenic acid)"
-     },
-     {
-      "name": "Palm oil",
-      "what": "Oil from palm fruit",
-      "does": "see: Palmitic acid (C16:0); Tocotrienols; Beta-carotene"
-     },
-     {
-      "name": "Lard / tallow",
-      "what": "Rendered pork / beef fat",
-      "does": "see: Oleic acid (omega-9); Stearic acid (C18:0); Palmitic acid (C16:0)"
-     },
-     {
-      "name": "Cocoa butter",
-      "what": "Fat from cocoa beans",
-      "does": "see: Stearic acid (C18:0); Oleic acid (omega-9)"
-     }
-    ]
-   },
-   {
-    "name": "Dairy",
-    "children": [
-     {
-      "name": "Milk",
-      "what": "Cow's milk",
-      "does": "see: Lactose; Casein; Whey protein; Calcium phosphate; Riboflavin"
-     },
-     {
-      "name": "Yogurt",
-      "what": "Fermented milk",
-      "does": "see: Streptococcus thermophilus; Lactobacillus delbrueckii subsp. bulgaricus; Lactic acid"
-     },
-     {
-      "name": "Cheese",
-      "what": "Coagulated, aged milk curd",
-      "does": "see: Casein; Rennet / chymosin; Sodium chloride; Vitamin A"
-     },
-     {
-      "name": "Kefir",
-      "what": "Fermented milk drink",
-      "does": "see: Lacticaseibacillus rhamnosus; Lactic acid"
-     }
-    ]
-   },
-   {
-    "name": "Eggs",
-    "children": [
-     {
-      "name": "Whole egg",
-      "what": "Chicken egg",
-      "does": "see: Egg albumin; Choline; Cholesterol; Lutein; Phospholipids (lecithin)"
-     }
-    ]
-   },
-   {
-    "name": "Meats",
-    "children": [
-     {
-      "name": "Beef",
-      "what": "Cattle muscle meat",
-      "does": "see: Heme iron; Zinc; Creatine; Bioactive peptides (e.g. carnosine, anserine); Vaccenic acid"
-     },
-     {
-      "name": "Pork",
-      "what": "Pig meat",
-      "does": "see: Thiamin hydrochloride; Leucine; Oleic acid (omega-9)"
-     },
-     {
-      "name": "Chicken",
-      "what": "Poultry meat",
-      "does": "see: Leucine; Nicotinamide (niacinamide); Selenomethionine"
-     },
-     {
-      "name": "Liver",
-      "what": "Organ meat",
-      "does": "see: Retinol; Cyanocobalamin; Heme iron; Copper; Choline; Purines"
-     }
-    ]
-   },
-   {
-    "name": "Fish & seafood",
-    "children": [
-     {
-      "name": "Salmon",
-      "what": "Oily fish",
-      "does": "see: EPA (eicosapentaenoic acid); DHA (docosahexaenoic acid); Astaxanthin; Cholecalciferol (D3)"
-     },
-     {
-      "name": "Sardines",
-      "what": "Small oily fish",
-      "does": "see: EPA (eicosapentaenoic acid); DHA (docosahexaenoic acid); Calcium phosphate"
-     },
-     {
-      "name": "Shrimp",
-      "what": "Crustacean",
-      "does": "see: Astaxanthin; Taurine; Selenomethionine"
-     },
-     {
-      "name": "Oysters",
-      "what": "Mollusc",
-      "does": "see: Zinc; Copper; Methylcobalamin"
-     }
-    ]
-   },
-   {
-    "name": "Legumes",
-    "children": [
-     {
-      "name": "Lentils",
-      "what": "Pulse",
-      "does": "see: Folate (food form); Raffinose; Lysine"
-     },
-     {
-      "name": "Chickpeas",
-      "what": "Pulse",
-      "does": "see: Stachyose; Resistant starch; Folate (food form)"
-     },
-     {
-      "name": "Black beans",
-      "what": "Pulse",
-      "does": "see: Anthocyanins; Raffinose"
-     },
-     {
-      "name": "Soybeans",
-      "what": "Legume",
-      "does": "see: Genistein; Daidzein; Soy protein; Phytic acid"
-     },
-     {
-      "name": "Peanuts",
-      "what": "Legume",
-      "does": "see: Oleic acid (omega-9); Resveratrol; Arginine"
-     }
-    ]
-   },
-   {
-    "name": "Nuts & seeds",
-    "children": [
-     {
-      "name": "Almonds",
-      "what": "Tree nut",
-      "does": "see: Alpha-tocopherol; Oleic acid (omega-9); Magnesium"
-     },
-     {
-      "name": "Walnuts",
-      "what": "Tree nut",
-      "does": "see: ALA (alpha-linolenic acid); Ellagic acid"
-     },
-     {
-      "name": "Brazil nuts",
-      "what": "Tree nut",
-      "does": "see: Selenomethionine"
-     },
-     {
-      "name": "Flaxseed",
-      "what": "Linseed",
-      "does": "see: ALA (alpha-linolenic acid); Secoisolariciresinol"
-     },
-     {
-      "name": "Chia seeds",
-      "what": "Salvia hispanica seed",
-      "does": "see: ALA (alpha-linolenic acid); Soluble fiber"
-     },
-     {
-      "name": "Sesame seeds",
-      "what": "Seed",
-      "does": "see: Sesamin; Calcium carbonate"
-     },
-     {
-      "name": "Pumpkin seeds",
-      "what": "Seed",
-      "does": "see: Zinc; Magnesium; Phytosterols"
-     }
-    ]
-   },
-   {
-    "name": "Vegetables",
-    "children": [
-     {
-      "name": "Broccoli",
-      "what": "Cruciferous vegetable",
-      "does": "see: Glucoraphanin; Sulforaphane; Phylloquinone (K1); Ascorbic acid"
-     },
-     {
-      "name": "Spinach",
-      "what": "Leafy green",
-      "does": "see: Oxalic acid; Lutein; Nitrates (dietary); Folate (food form)"
-     },
-     {
-      "name": "Kale",
-      "what": "Leafy cruciferous",
-      "does": "see: Kaempferol; Phylloquinone (K1); Lutein"
-     },
-     {
-      "name": "Carrots",
-      "what": "Root vegetable",
-      "does": "see: Beta-carotene; Alpha-carotene"
-     },
-     {
-      "name": "Tomatoes",
-      "what": "Fruit-vegetable",
-      "does": "see: Lycopene; Ascorbic acid; Potassium"
-     },
-     {
-      "name": "Beets",
-      "what": "Root vegetable",
-      "does": "see: Betalains (betanin); Nitrates (dietary)"
-     },
-     {
-      "name": "Onions",
-      "what": "Allium",
-      "does": "see: Quercetin; Fructooligosaccharides (FOS)"
-     },
-     {
-      "name": "Garlic",
-      "what": "Allium",
-      "does": "see: Allicin; S-allyl cysteine; Inulin"
-     },
-     {
-      "name": "Mushrooms",
-      "what": "Fungi",
-      "does": "see: Ergocalciferol (D2); Chitin; Beta-glucan; Trehalose"
-     },
-     {
-      "name": "Potatoes",
-      "what": "Tuber",
-      "does": "see: Amylopectin; Resistant starch; Potassium"
-     }
-    ]
-   },
-   {
-    "name": "Fruits",
-    "children": [
-     {
-      "name": "Apples",
-      "what": "Pome fruit",
-      "does": "see: Malic acid; Pectin; Quercetin; Fructose"
-     },
-     {
-      "name": "Oranges",
-      "what": "Citrus",
-      "does": "see: Ascorbic acid; Hesperidin; Citric acid"
-     },
-     {
-      "name": "Blueberries",
-      "what": "Berry",
-      "does": "see: Delphinidin; Malvidin; Pterostilbene"
-     },
-     {
-      "name": "Strawberries",
-      "what": "Berry",
-      "does": "see: Pelargonidin; Ellagic acid; Ascorbic acid"
-     },
-     {
-      "name": "Grapes",
-      "what": "Berry",
-      "does": "see: Resveratrol; Tartaric acid; Proanthocyanidins"
-     },
-     {
-      "name": "Bananas",
-      "what": "Tropical fruit",
-      "does": "see: Potassium; Resistant starch; Fructose"
-     },
-     {
-      "name": "Avocado",
-      "what": "Fatty fruit",
-      "does": "see: Oleic acid (omega-9); Beta-sitosterol; Potassium"
-     },
-     {
-      "name": "Pomegranate",
-      "what": "Fruit",
-      "does": "see: Ellagic acid; Tannins"
-     }
-    ]
-   },
-   {
-    "name": "Herbs & spices",
-    "children": [
-     {
-      "name": "Turmeric",
-      "what": "Root spice",
-      "does": "see: Curcumin"
-     },
-     {
-      "name": "Black pepper",
-      "what": "Peppercorn",
-      "does": "see: Piperine"
-     },
-     {
-      "name": "Chili pepper",
-      "what": "Capsicum",
-      "does": "see: Capsaicin; Ascorbic acid"
-     },
-     {
-      "name": "Cinnamon",
-      "what": "Tree bark",
-      "does": "see: Cinnamon oil; Proanthocyanidins"
-     },
-     {
-      "name": "Rosemary",
-      "what": "Herb",
-      "does": "see: Rosmarinic acid; Rosemary extract (E392)"
-     },
-     {
-      "name": "Parsley",
-      "what": "Herb",
-      "does": "see: Apigenin; Phylloquinone (K1)"
-     },
-     {
-      "name": "Ginger",
-      "what": "Rhizome",
-      "does": "see: Gingerols"
-     },
-     {
-      "name": "Mustard seed",
-      "what": "Brassica seed",
-      "does": "see: Sinigrin"
-     }
-    ]
-   },
-   {
-    "name": "Beverages",
-    "children": [
-     {
-      "name": "Coffee",
-      "what": "Roasted bean infusion",
-      "does": "see: Caffeine; Chlorogenic acid; Trigonelline"
-     },
-     {
-      "name": "Tea (green/black)",
-      "what": "Camellia sinensis infusion",
-      "does": "see: Caffeine; EGCG (epigallocatechin gallate); L-theanine; Tannins"
-     },
-     {
-      "name": "Cocoa / dark chocolate",
-      "what": "Cacao product",
-      "does": "see: Theobromine; Epicatechin; Cocoa butter"
-     }
-    ]
-   },
-   {
-    "name": "Natural sweeteners",
-    "children": [
-     {
-      "name": "Honey (food)",
-      "what": "Bee-made syrup",
-      "does": "see: Fructose; Glucose; Honey"
-     },
-     {
-      "name": "Maple syrup (food)",
-      "what": "Boiled maple sap",
-      "does": "see: Sucrose; Maple syrup"
-     },
-     {
-      "name": "Dates",
-      "what": "Dried fruit",
-      "does": "see: Glucose; Fructose; Potassium"
-     },
-     {
-      "name": "Molasses (food)",
-      "what": "Cane by-product",
-      "does": "see: Sucrose; Molasses; Iron"
-     }
-    ]
-   },
-   {
-    "name": "Salt & seasonings",
-    "children": [
-     {
-      "name": "Table salt",
-      "what": "Refined salt",
-      "does": "see: Sodium chloride; Potassium iodide; Sodium ferrocyanide (E535)"
-     },
-     {
-      "name": "Sea salt",
-      "what": "Evaporated seawater",
-      "does": "see: Sodium chloride; Magnesium"
-     },
-     {
-      "name": "Vinegar",
-      "what": "Fermented acetic solution",
-      "does": "see: Acetic acid"
-     },
-     {
-      "name": "Soy sauce",
-      "what": "Fermented soy and wheat",
-      "does": "see: Glutamic acid; Sodium chloride; Gluten"
      }
     ]
    }
