@@ -18,7 +18,7 @@ def walk(n,top):
         t=top or c['name']
         if 'children' in c: walk(c,t)
         elif c['name'] in F: c['found']=F[c['name']]
-        elif t not in ('Energy','Label lines','Allergens'): miss.append(c['name'])
+        else: miss.append(c['name'])
 walk(root,None);assert not miss,miss
 json.dump(root,open('data.json','w'),indent=1)
 open('data.js','w').write('window.TREE='+json.dumps(root)+';')
