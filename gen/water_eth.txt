@@ -1,0 +1,12 @@
+ Water
+  Drinking (tap) water|Treated municipal or well water|Hydration; carries nutrients, regulates temperature|Tap water; may contain fluoride, calcium, magnesium
+  Natural mineral water|Groundwater bottled at source with stable natural minerals|Hydration; adds calcium, magnesium, bicarbonate|Bottled mineral waters
+  Spring water|Groundwater bottled at source|Hydration|Bottled spring waters
+  Carbonated (sparkling) water|Water with dissolved carbon dioxide|Hydration; may ease feelings of fullness or indigestion|Sparkling and soda water, seltzer, soft drinks
+  Purified / distilled water|Water with minerals removed (distillation, reverse osmosis)|Hydration; no mineral contribution|Bottled purified water, ingredient water in drinks
+  Water in foods|Moisture naturally present in foods|Supplies roughly 20% of daily water intake|Cucumber, lettuce, watermelon (over 90% water), soups, fruit
+  Added water (ingredient)|Water listed as a label ingredient|Hydration; dilutes energy density|Drinks, soups, sauces, bread, cured and injected meats
+ Ethanol (alcohol)
+  Ethanol|Alcohol from yeast fermentation of sugars, 7 kcal/g|Energy; metabolized by the liver; toxic and carcinogenic in excess|Wine, beer, spirits, cider
+  Alcohol in fermented foods|Small amounts formed by fermentation|Negligible in normal amounts|Kombucha, kefir, ripe fruit, fruit juice, sourdough before baking
+  Ethanol as carrier solvent|Solvent for flavor extracts|Mostly evaporates or is negligible in final foods|Vanilla extract, flavorings

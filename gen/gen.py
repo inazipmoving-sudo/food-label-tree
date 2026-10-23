@@ -60,3 +60,9 @@ open('../tree.txt','w').write('\n'.join(o)+'\n')
 cnt=lambda n:sum(map(cnt,n['children'])) if 'children' in n else 1
 for c in base['children']:print(c['name'],cnt(c))
 print('total',cnt(base))
+# post-step: Water/Ethanol under Macronutrients + Processing category
+L=open('../tree.txt').read().splitlines()
+i=[k for k,l in enumerate(L) if l.startswith(' Alcohol (ethanol)|')][0]
+L[i:i+1]=open('water_eth.txt').read().splitlines()
+L+=open('proc.txt').read().splitlines()
+open('../tree.txt','w').write('\n'.join(L)+'\n')  # add_proc

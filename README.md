@@ -1,8 +1,8 @@
 # Food Label Tree
-A searchable, collapsible tree of more than 1,000 compounds and items found on food labels. Each item lists What it is, what it does In the body, and where it is Found in.
+A searchable, collapsible tree of 1,103 compounds and items found on food labels. Each item lists What it is, what it does In the body, and where it is Found in.
 Live site: https://inazipmoving-sudo.github.io/food-label-tree/
 
-Categories: Macronutrients, Micronutrients, Bioactives, Additives, Flavorings.
+Categories: Macronutrients (incl. Water, Ethanol), Micronutrients, Bioactives, Additives, Flavorings, Processing.
 
 ## Build
 `python3 gen/gen.py && python3 build.py` builds `tree.txt`, then `data.json` and `data.js`. In `tree.txt`, each leaf has the format `Name|what|in the body|found in`.
@@ -17,3 +17,4 @@ Categories: Macronutrients, Micronutrients, Bioactives, Additives, Flavorings.
 - The UK list follows the retained EU list, but the two have diverged. For example, E171 (titanium dioxide) has been banned in the EU since 2022 but is still authorized in the UK.
 - The permitted vitamin and mineral forms were compiled from the regulations' content, not machine-fetched. Uncertain forms were left out.
 - Descriptions are short summaries and are not medical advice. Some names appear in more than one branch on purpose.
+- **Processing:** processing aids, cooking by-products and processing methods are summarized from general food-science references, e.g. IARC classifications and EFSA opinions on acrylamide, 3-MCPD/glycidyl esters and furan.

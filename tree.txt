@@ -182,7 +182,18 @@ Macronutrients
   Acetic acid|Acid in vinegar|Short-chain fatty acid; may blunt glucose spikes|Vinegar, kombucha
   Tartaric acid|Acid in grapes|Mostly fermented by gut bacteria|Grapes, tamarind, wine
   Succinic acid|Acid in fermented foods|Krebs cycle intermediate|Wine, beer, aged cheese, broccoli
- Alcohol (ethanol)|Fermentation product, 7 kcal/g|Energy; toxic in excess|Wine, beer, spirits; traces in ripe fruit and kombucha
+ Water
+  Drinking (tap) water|Treated municipal or well water|Hydration; carries nutrients, regulates temperature|Tap water; may contain fluoride, calcium, magnesium
+  Natural mineral water|Groundwater bottled at source with stable natural minerals|Hydration; adds calcium, magnesium, bicarbonate|Bottled mineral waters
+  Spring water|Groundwater bottled at source|Hydration|Bottled spring waters
+  Carbonated (sparkling) water|Water with dissolved carbon dioxide|Hydration; may ease feelings of fullness or indigestion|Sparkling and soda water, seltzer, soft drinks
+  Purified / distilled water|Water with minerals removed (distillation, reverse osmosis)|Hydration; no mineral contribution|Bottled purified water, ingredient water in drinks
+  Water in foods|Moisture naturally present in foods|Supplies roughly 20% of daily water intake|Cucumber, lettuce, watermelon (over 90% water), soups, fruit
+  Added water (ingredient)|Water listed as a label ingredient|Hydration; dilutes energy density|Drinks, soups, sauces, bread, cured and injected meats
+ Ethanol (alcohol)
+  Ethanol|Alcohol from yeast fermentation of sugars, 7 kcal/g|Energy; metabolized by the liver; toxic and carcinogenic in excess|Wine, beer, spirits, cider
+  Alcohol in fermented foods|Small amounts formed by fermentation|Negligible in normal amounts|Kombucha, kefir, ripe fruit, fruit juice, sourdough before baking
+  Ethanol as carrier solvent|Solvent for flavor extracts|Mostly evaporates or is negligible in final foods|Vanilla extract, flavorings
 Micronutrients
  Vitamins
   Fat-soluble vitamins
@@ -1146,3 +1157,96 @@ Flavorings
    1-Octen-3-ol (mushroom alcohol)|Mushroom aroma|No nutritional role|Mushrooms
    Geosmin|Earthy aroma|No nutritional role|Beets, freshwater fish, soil
    2-Isobutyl-3-methoxypyrazine|Bell pepper aroma|No nutritional role|Green bell peppers, Sauvignon blanc
+Processing
+ Processing aids
+  Clarifying and fining agents
+   Bentonite|Absorbent clay used to fine wine and juice|Removed before sale; not absorbed|Wine, juice, beer (removed)
+   Isinglass|Fish swim-bladder collagen used to clear beer and wine|Removed; trace fish protein possible|Cask ale, some wines
+   Gelatin (fining)|Animal collagen used to clarify|Removed; trace protein possible|Wine, juice
+   Egg white (albumin) fining|Egg protein removes harsh tannins|Removed; trace allergen possible|Red wine
+   Casein (fining)|Milk protein used to fine white wine|Removed; trace allergen possible|White wine
+   PVPP (polyvinylpolypyrrolidone, E1202)|Synthetic polymer that removes polyphenols causing haze|Not absorbed|Not naturally in foods; beer, wine
+   Silica sol / silica gel|Silicon dioxide that binds haze proteins|Not absorbed|Not naturally in foods; beer, wine
+   Activated carbon|Charcoal that absorbs color and off-flavors|Removed; not absorbed|Not naturally in foods; sugar refining, juice, wine
+   Chitosan (fining)|Fungal or shellfish-derived polymer used for fining|Removed; mostly not digested|Wine, juice
+  Filter aids
+   Diatomaceous earth (kieselguhr)|Fossil algae silica used as a filter bed|Removed; not absorbed|Beer, wine, juice, sugar syrup, oil filtration
+   Perlite|Expanded volcanic glass used as a filter aid|Removed; not absorbed|Not naturally in foods; juice, beer, syrup filtration
+   Cellulose filter aid|Plant fiber filter medium|Removed; indigestible fiber|Juice, oil and syrup filtration
+  Release agents and lubricants
+   Mineral oil (food-grade, release)|Petroleum oil that stops sticking (see Additives)|Not absorbed; laxative in large amounts|Not naturally in foods; baking pans, dried fruit, candy
+   Vegetable oil release agents|Oils sprayed on pans and molds|Fat energy|Bread pans, baked goods, candy molds
+   Carnauba and beeswax (glazing)|Waxes that stop sticking and add shine (see Additives E903/E901)|Not digested|Candy, coated fruit, chewing gum
+   Lecithin release sprays|Phospholipid anti-stick (see Additives E322)|Source of choline|Cooking sprays, baking release
+   Talc (E553b)|Mineral powder used as anti-stick (see Additives)|Not absorbed|Not naturally in foods; chewing gum, rice polishing
+  Extraction solvents
+   Hexane|Petroleum solvent that extracts oil from seeds|Removed by evaporation; only traces remain|Not naturally in foods; refined soybean, canola and corn oil, soy protein
+   Ethanol (extraction)|Alcohol used to extract flavors and compounds|Mostly evaporated|Vanilla and herb extracts, decaf processes
+   Ethyl acetate|Solvent used to decaffeinate coffee and tea|Removed; also occurs naturally in fruit|Fruit (naturally); decaf coffee and tea
+   Dichloromethane (methylene chloride)|Solvent used to decaffeinate coffee|Removed to trace levels; US banned for most uses in 2024|Not naturally in foods; some decaf coffee
+   Supercritical carbon dioxide|Pressurized CO2 used as a clean solvent|Leaves no residue|Decaf coffee, hop extracts, essential oils
+   Acetone|Solvent used in spice oleoresin extraction|Removed to trace levels|Not naturally in foods; spice oleoresins
+  Carrier solvents
+   Propylene glycol (carrier, E1520)|Solvent that carries flavors and colors (see Additives)|Metabolized to lactic acid|Not naturally in foods; flavorings, icing, drinks
+   Glycerol (carrier, E422)|Sweet solvent that carries flavors (see Additives)|Energy; metabolized like fat backbone|Fats (as triglycerides); flavor preparations
+   Triacetin (E1518)|Glyceryl triacetate carrier (see Additives)|Broken into glycerol and acetic acid|Not naturally in foods; flavorings, chewing gum
+   Ethyl alcohol (carrier)|Ethanol carrying flavors (see Macronutrients > Ethanol)|See Ethanol|Flavor extracts
+  Antifoaming agents
+   Dimethylpolysiloxane (E900)|Silicone antifoam (see Additives)|Not absorbed|Not naturally in foods; frying oil, juice, fermentation
+   Food-grade antifoam emulsifiers|Fatty-acid esters that break foam (see Additives E471 etc.)|Digested like fats|Fermentation, potato and sugar processing
+  Washing and peeling agents
+   Chlorine (sodium hypochlorite) washes|Sanitizing wash for produce and poultry|Rinsed off; trace chlorate possible|Not naturally in foods; bagged salads, fresh-cut produce, US poultry
+   Peracetic acid|Sanitizer that breaks down to acetic acid and water|Breaks down; no residue of concern|Not naturally in foods; produce and poultry washes
+   Ozone|Oxidizing gas used to disinfect water and produce|Breaks down to oxygen|Not naturally in foods; produce washing, bottled water
+   Sodium hydroxide (lye) peeling|Caustic used to peel fruit and treat olives and pretzels (see Additives E524)|Neutralized and rinsed|Not naturally in foods; peeled peaches and tomatoes, olives, pretzels
+  Enzymes used as processing aids
+   Enzymes (see Additives > Other ingredients and processing aids)|Amylase, protease, lactase, rennet, transglutaminase and others|Usually inactivated in final food|Bread, cheese, beer, juice, lactose-free milk
+   Pectinase|Enzyme that breaks down pectin to clarify juice|Inactivated; no nutritional role|Fruit juice, wine
+   Glucoamylase|Enzyme that converts starch to glucose|Inactivated|Glucose syrups, brewing
+   Glucose isomerase|Enzyme that converts glucose to fructose|Inactivated|High-fructose corn syrup
+   Lipase|Fat-splitting enzyme|Inactivated; makes flavor fatty acids|Cheese flavor, Italian cheeses
+ Compounds formed in processing and cooking
+  Acrylamide|Formed from asparagine and sugars above 120 °C|Probable human carcinogen (IARC 2A); neurotoxic at high doses|French fries, potato chips, toast, coffee, biscuits
+  Maillard reaction products|Flavor and color compounds from sugars and amino acids reacting under heat|Flavor; some reduce protein quality (lysine loss)|Bread crust, roasted coffee, seared meat, chocolate
+  Melanoidins|Brown polymers from late Maillard reactions|Act like fiber; antioxidant activity|Coffee, bread crust, dark beer, roasted malt
+  Advanced glycation end products (AGEs)|Sugar-protein adducts such as carboxymethyllysine|Linked to oxidative stress and inflammation|Grilled, fried and roasted meat, cheese, browned foods
+  Heterocyclic amines (HCAs)|Mutagens such as PhIP and MeIQx from creatine, amino acids and sugars|Possible carcinogens|Well-done, grilled or pan-fried meat and fish
+  Polycyclic aromatic hydrocarbons (PAHs)|Benzo[a]pyrene and related compounds from smoke and charring|Benzo[a]pyrene is a known carcinogen (IARC 1)|Smoked foods, charcoal-grilled meat, roasted coffee
+  Furan|Small volatile from heating sugars, ascorbic acid and fats|Possible carcinogen (IARC 2B); liver toxicity in animals|Coffee, canned and jarred foods, baby food jars
+  3-MCPD esters|Chloropropanol esters formed in oil refining|Released as 3-MCPD; kidney effects in animals|Refined palm and vegetable oils, infant formula, margarine
+  Glycidyl esters|Formed during high-temperature oil deodorization|Released as glycidol, a probable carcinogen (IARC 2A)|Refined palm oil, fats, infant formula
+  Industrial trans fats|Trans fatty acids from partial hydrogenation (see Macronutrients > Trans fats)|Raise LDL and lower HDL; heart disease risk|Older margarines, shortenings, fried and baked goods; banned in US and limited in EU
+  N-nitrosamines|Such as NDMA, formed from nitrite and amines with heat|Probable carcinogens|Fried bacon, cured meats, smoked fish, beer (historically)
+  Hydroxymethylfurfural (HMF)|Sugar breakdown product from heat or storage|Mostly excreted; high doses toxic in animals|Honey, dried fruit, coffee, caramel, jam
+  Lipid oxidation products
+   Hydroperoxides|First products of fat oxidation|Oxidative stress; break into aldehydes|Rancid oils, reused frying oil
+   Malondialdehyde|Aldehyde from oxidized polyunsaturated fats|Reactive; marker of oxidative stress|Rancid fish oil, fried and stored foods
+   4-Hydroxynonenal (4-HNE)|Toxic aldehyde from omega-6 oxidation|Damages proteins and DNA|Reused frying oils, deep-fried foods
+   Hexanal|Volatile aldehyde that gives rancid "cardboard" flavor|Off-flavor; low toxicity|Stale nuts, oils, oats, soy milk
+   Oxysterols|Oxidized cholesterol|May promote arterial damage|Powdered egg and milk, aged cheese, fried foods
+  Ethyl carbamate (urethane)|Formed from urea and ethanol in fermentation|Probable carcinogen (IARC 2A)|Stone-fruit brandies, soy sauce, fortified wine, bread
+  Biogenic amines from fermentation|Histamine and tyramine from microbial decarboxylation (see Bioactives)|Headaches, scombroid poisoning, MAOI interaction|Aged cheese, fish sauce, wine, fermented sausage
+  Benzene (from benzoate + vitamin C)|Formed when benzoates and ascorbic acid react|Known carcinogen; trace amounts|Not naturally in foods; some soft drinks (now reformulated)
+  4-Methylimidazole (4-MEI)|By-product of making ammonia caramel colors (E150c/d)|Possible carcinogen (IARC 2B)|Colas, dark beers, soy sauce
+ Processing methods
+  Fermentation|Microbes convert sugars to acids, gases or alcohol|Can raise B vitamins and probiotics and lower phytate|Yogurt, cheese, bread, kimchi, beer, wine
+  Pasteurization|Mild heat (about 72 °C for 15 s) kills pathogens|Small losses of vitamin C and B vitamins|Milk, juice, eggs, beer
+  UHT / sterilization|High heat (about 135-140 °C) for shelf stability|Larger losses of vitamins C, B1, B12, folate; some Maillard browning|Shelf-stable milk, canned foods
+  Hydrogenation|Adds hydrogen to unsaturated fats to harden them|Full hydrogenation makes saturated fat; partial makes trans fats|Margarine, shortening, (historically) baked goods
+  Interesterification|Rearranges fatty acids on glycerol to change melting|Trans-free alternative; health effects under study|Margarines, shortenings, palm-based fats
+  Refining (oils)|Degumming, bleaching and deodorizing crude oil|Removes free fatty acids and some vitamin E, sterols, polyphenols; can form 3-MCPD|Refined vegetable oils
+  Refining (grains and sugar)|Milling away bran and germ, or purifying sugar|Removes fiber, B vitamins, minerals (some added back)|White flour, white rice, white sugar
+  Smoking|Exposure to wood smoke|Adds flavor and antimicrobial phenols; may add PAHs|Smoked fish, meats, cheese, paprika
+  Curing|Salt plus nitrite or nitrate preservation|Prevents botulism; nitrite can form nitrosamines|Bacon, ham, salami, hot dogs
+  Extrusion|High heat and pressure pushes dough through a die|Gelatinizes starch; some vitamin and lysine loss|Breakfast cereals, puffed snacks, pasta, pet food
+  Frying|Cooking in hot oil|Adds fat; can form acrylamide and oxidation products|Fries, chips, doughnuts, fried chicken
+  Grilling and roasting|Dry high-heat cooking|Maillard flavor; can form HCAs, PAHs, AGEs|Grilled meat, roasted coffee, nuts
+  Canning|Sealing and heat-sterilizing in containers|Losses of vitamin C and thiamine; minerals retained|Canned vegetables, fish, beans, soup
+  Freezing|Storage below -18 °C|Nutrients well preserved; blanching first loses some vitamin C|Frozen vegetables, fruit, fish
+  Drying / dehydration|Removes water by air, sun, spray or freeze-drying|Concentrates nutrients; losses of vitamin C, possible HMF|Dried fruit, milk powder, pasta, instant coffee
+  Irradiation|Ionizing radiation to kill microbes|Small losses of thiamine and vitamin E|Spices, some meat and produce (labeled)
+  High-pressure processing (HPP)|Cold pressure (about 600 MPa) kills microbes|Preserves vitamins and flavor better than heat|Cold-pressed juice, guacamole, deli meats
+  Homogenization|Breaks milk fat into small droplets|Prevents cream separation; no major nutrient change|Milk, cream
+  Nixtamalization|Cooking corn in alkaline lime water|Frees niacin, adds calcium, lowers mycotoxins|Tortillas, masa, hominy
+  Sprouting / malting|Germinating grains or seeds|Lowers phytate; raises some vitamins and enzymes|Malt, sprouted bread, bean sprouts
+  Blanching|Brief heating before freezing or canning|Inactivates enzymes; some loss of water-soluble vitamins|Frozen vegetables, nuts

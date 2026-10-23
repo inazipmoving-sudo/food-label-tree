@@ -1079,10 +1079,74 @@
      ]
     },
     {
-     "name": "Alcohol (ethanol)",
-     "what": "Fermentation product, 7 kcal/g",
-     "does": "Energy; toxic in excess",
-     "found": "Wine, beer, spirits; traces in ripe fruit and kombucha"
+     "name": "Water",
+     "children": [
+      {
+       "name": "Drinking (tap) water",
+       "what": "Treated municipal or well water",
+       "does": "Hydration; carries nutrients, regulates temperature",
+       "found": "Tap water; may contain fluoride, calcium, magnesium"
+      },
+      {
+       "name": "Natural mineral water",
+       "what": "Groundwater bottled at source with stable natural minerals",
+       "does": "Hydration; adds calcium, magnesium, bicarbonate",
+       "found": "Bottled mineral waters"
+      },
+      {
+       "name": "Spring water",
+       "what": "Groundwater bottled at source",
+       "does": "Hydration",
+       "found": "Bottled spring waters"
+      },
+      {
+       "name": "Carbonated (sparkling) water",
+       "what": "Water with dissolved carbon dioxide",
+       "does": "Hydration; may ease feelings of fullness or indigestion",
+       "found": "Sparkling and soda water, seltzer, soft drinks"
+      },
+      {
+       "name": "Purified / distilled water",
+       "what": "Water with minerals removed (distillation, reverse osmosis)",
+       "does": "Hydration; no mineral contribution",
+       "found": "Bottled purified water, ingredient water in drinks"
+      },
+      {
+       "name": "Water in foods",
+       "what": "Moisture naturally present in foods",
+       "does": "Supplies roughly 20% of daily water intake",
+       "found": "Cucumber, lettuce, watermelon (over 90% water), soups, fruit"
+      },
+      {
+       "name": "Added water (ingredient)",
+       "what": "Water listed as a label ingredient",
+       "does": "Hydration; dilutes energy density",
+       "found": "Drinks, soups, sauces, bread, cured and injected meats"
+      }
+     ]
+    },
+    {
+     "name": "Ethanol (alcohol)",
+     "children": [
+      {
+       "name": "Ethanol",
+       "what": "Alcohol from yeast fermentation of sugars, 7 kcal/g",
+       "does": "Energy; metabolized by the liver; toxic and carcinogenic in excess",
+       "found": "Wine, beer, spirits, cider"
+      },
+      {
+       "name": "Alcohol in fermented foods",
+       "what": "Small amounts formed by fermentation",
+       "does": "Negligible in normal amounts",
+       "found": "Kombucha, kefir, ripe fruit, fruit juice, sourdough before baking"
+      },
+      {
+       "name": "Ethanol as carrier solvent",
+       "what": "Solvent for flavor extracts",
+       "does": "Mostly evaporates or is negligible in final foods",
+       "found": "Vanilla extract, flavorings"
+      }
+     ]
     }
    ]
   },
@@ -6750,6 +6814,551 @@
          "found": "Green bell peppers, Sauvignon blanc"
         }
        ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Processing",
+   "children": [
+    {
+     "name": "Processing aids",
+     "children": [
+      {
+       "name": "Clarifying and fining agents",
+       "children": [
+        {
+         "name": "Bentonite",
+         "what": "Absorbent clay used to fine wine and juice",
+         "does": "Removed before sale; not absorbed",
+         "found": "Wine, juice, beer (removed)"
+        },
+        {
+         "name": "Isinglass",
+         "what": "Fish swim-bladder collagen used to clear beer and wine",
+         "does": "Removed; trace fish protein possible",
+         "found": "Cask ale, some wines"
+        },
+        {
+         "name": "Gelatin (fining)",
+         "what": "Animal collagen used to clarify",
+         "does": "Removed; trace protein possible",
+         "found": "Wine, juice"
+        },
+        {
+         "name": "Egg white (albumin) fining",
+         "what": "Egg protein removes harsh tannins",
+         "does": "Removed; trace allergen possible",
+         "found": "Red wine"
+        },
+        {
+         "name": "Casein (fining)",
+         "what": "Milk protein used to fine white wine",
+         "does": "Removed; trace allergen possible",
+         "found": "White wine"
+        },
+        {
+         "name": "PVPP (polyvinylpolypyrrolidone, E1202)",
+         "what": "Synthetic polymer that removes polyphenols causing haze",
+         "does": "Not absorbed",
+         "found": "Not naturally in foods; beer, wine"
+        },
+        {
+         "name": "Silica sol / silica gel",
+         "what": "Silicon dioxide that binds haze proteins",
+         "does": "Not absorbed",
+         "found": "Not naturally in foods; beer, wine"
+        },
+        {
+         "name": "Activated carbon",
+         "what": "Charcoal that absorbs color and off-flavors",
+         "does": "Removed; not absorbed",
+         "found": "Not naturally in foods; sugar refining, juice, wine"
+        },
+        {
+         "name": "Chitosan (fining)",
+         "what": "Fungal or shellfish-derived polymer used for fining",
+         "does": "Removed; mostly not digested",
+         "found": "Wine, juice"
+        }
+       ]
+      },
+      {
+       "name": "Filter aids",
+       "children": [
+        {
+         "name": "Diatomaceous earth (kieselguhr)",
+         "what": "Fossil algae silica used as a filter bed",
+         "does": "Removed; not absorbed",
+         "found": "Beer, wine, juice, sugar syrup, oil filtration"
+        },
+        {
+         "name": "Perlite",
+         "what": "Expanded volcanic glass used as a filter aid",
+         "does": "Removed; not absorbed",
+         "found": "Not naturally in foods; juice, beer, syrup filtration"
+        },
+        {
+         "name": "Cellulose filter aid",
+         "what": "Plant fiber filter medium",
+         "does": "Removed; indigestible fiber",
+         "found": "Juice, oil and syrup filtration"
+        }
+       ]
+      },
+      {
+       "name": "Release agents and lubricants",
+       "children": [
+        {
+         "name": "Mineral oil (food-grade, release)",
+         "what": "Petroleum oil that stops sticking (see Additives)",
+         "does": "Not absorbed; laxative in large amounts",
+         "found": "Not naturally in foods; baking pans, dried fruit, candy"
+        },
+        {
+         "name": "Vegetable oil release agents",
+         "what": "Oils sprayed on pans and molds",
+         "does": "Fat energy",
+         "found": "Bread pans, baked goods, candy molds"
+        },
+        {
+         "name": "Carnauba and beeswax (glazing)",
+         "what": "Waxes that stop sticking and add shine (see Additives E903/E901)",
+         "does": "Not digested",
+         "found": "Candy, coated fruit, chewing gum"
+        },
+        {
+         "name": "Lecithin release sprays",
+         "what": "Phospholipid anti-stick (see Additives E322)",
+         "does": "Source of choline",
+         "found": "Cooking sprays, baking release"
+        },
+        {
+         "name": "Talc (E553b)",
+         "what": "Mineral powder used as anti-stick (see Additives)",
+         "does": "Not absorbed",
+         "found": "Not naturally in foods; chewing gum, rice polishing"
+        }
+       ]
+      },
+      {
+       "name": "Extraction solvents",
+       "children": [
+        {
+         "name": "Hexane",
+         "what": "Petroleum solvent that extracts oil from seeds",
+         "does": "Removed by evaporation; only traces remain",
+         "found": "Not naturally in foods; refined soybean, canola and corn oil, soy protein"
+        },
+        {
+         "name": "Ethanol (extraction)",
+         "what": "Alcohol used to extract flavors and compounds",
+         "does": "Mostly evaporated",
+         "found": "Vanilla and herb extracts, decaf processes"
+        },
+        {
+         "name": "Ethyl acetate",
+         "what": "Solvent used to decaffeinate coffee and tea",
+         "does": "Removed; also occurs naturally in fruit",
+         "found": "Fruit (naturally); decaf coffee and tea"
+        },
+        {
+         "name": "Dichloromethane (methylene chloride)",
+         "what": "Solvent used to decaffeinate coffee",
+         "does": "Removed to trace levels; US banned for most uses in 2024",
+         "found": "Not naturally in foods; some decaf coffee"
+        },
+        {
+         "name": "Supercritical carbon dioxide",
+         "what": "Pressurized CO2 used as a clean solvent",
+         "does": "Leaves no residue",
+         "found": "Decaf coffee, hop extracts, essential oils"
+        },
+        {
+         "name": "Acetone",
+         "what": "Solvent used in spice oleoresin extraction",
+         "does": "Removed to trace levels",
+         "found": "Not naturally in foods; spice oleoresins"
+        }
+       ]
+      },
+      {
+       "name": "Carrier solvents",
+       "children": [
+        {
+         "name": "Propylene glycol (carrier, E1520)",
+         "what": "Solvent that carries flavors and colors (see Additives)",
+         "does": "Metabolized to lactic acid",
+         "found": "Not naturally in foods; flavorings, icing, drinks"
+        },
+        {
+         "name": "Glycerol (carrier, E422)",
+         "what": "Sweet solvent that carries flavors (see Additives)",
+         "does": "Energy; metabolized like fat backbone",
+         "found": "Fats (as triglycerides); flavor preparations"
+        },
+        {
+         "name": "Triacetin (E1518)",
+         "what": "Glyceryl triacetate carrier (see Additives)",
+         "does": "Broken into glycerol and acetic acid",
+         "found": "Not naturally in foods; flavorings, chewing gum"
+        },
+        {
+         "name": "Ethyl alcohol (carrier)",
+         "what": "Ethanol carrying flavors (see Macronutrients > Ethanol)",
+         "does": "See Ethanol",
+         "found": "Flavor extracts"
+        }
+       ]
+      },
+      {
+       "name": "Antifoaming agents",
+       "children": [
+        {
+         "name": "Dimethylpolysiloxane (E900)",
+         "what": "Silicone antifoam (see Additives)",
+         "does": "Not absorbed",
+         "found": "Not naturally in foods; frying oil, juice, fermentation"
+        },
+        {
+         "name": "Food-grade antifoam emulsifiers",
+         "what": "Fatty-acid esters that break foam (see Additives E471 etc.)",
+         "does": "Digested like fats",
+         "found": "Fermentation, potato and sugar processing"
+        }
+       ]
+      },
+      {
+       "name": "Washing and peeling agents",
+       "children": [
+        {
+         "name": "Chlorine (sodium hypochlorite) washes",
+         "what": "Sanitizing wash for produce and poultry",
+         "does": "Rinsed off; trace chlorate possible",
+         "found": "Not naturally in foods; bagged salads, fresh-cut produce, US poultry"
+        },
+        {
+         "name": "Peracetic acid",
+         "what": "Sanitizer that breaks down to acetic acid and water",
+         "does": "Breaks down; no residue of concern",
+         "found": "Not naturally in foods; produce and poultry washes"
+        },
+        {
+         "name": "Ozone",
+         "what": "Oxidizing gas used to disinfect water and produce",
+         "does": "Breaks down to oxygen",
+         "found": "Not naturally in foods; produce washing, bottled water"
+        },
+        {
+         "name": "Sodium hydroxide (lye) peeling",
+         "what": "Caustic used to peel fruit and treat olives and pretzels (see Additives E524)",
+         "does": "Neutralized and rinsed",
+         "found": "Not naturally in foods; peeled peaches and tomatoes, olives, pretzels"
+        }
+       ]
+      },
+      {
+       "name": "Enzymes used as processing aids",
+       "children": [
+        {
+         "name": "Enzymes (see Additives > Other ingredients and processing aids)",
+         "what": "Amylase, protease, lactase, rennet, transglutaminase and others",
+         "does": "Usually inactivated in final food",
+         "found": "Bread, cheese, beer, juice, lactose-free milk"
+        },
+        {
+         "name": "Pectinase",
+         "what": "Enzyme that breaks down pectin to clarify juice",
+         "does": "Inactivated; no nutritional role",
+         "found": "Fruit juice, wine"
+        },
+        {
+         "name": "Glucoamylase",
+         "what": "Enzyme that converts starch to glucose",
+         "does": "Inactivated",
+         "found": "Glucose syrups, brewing"
+        },
+        {
+         "name": "Glucose isomerase",
+         "what": "Enzyme that converts glucose to fructose",
+         "does": "Inactivated",
+         "found": "High-fructose corn syrup"
+        },
+        {
+         "name": "Lipase",
+         "what": "Fat-splitting enzyme",
+         "does": "Inactivated; makes flavor fatty acids",
+         "found": "Cheese flavor, Italian cheeses"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Compounds formed in processing and cooking",
+     "children": [
+      {
+       "name": "Acrylamide",
+       "what": "Formed from asparagine and sugars above 120 \u00b0C",
+       "does": "Probable human carcinogen (IARC 2A); neurotoxic at high doses",
+       "found": "French fries, potato chips, toast, coffee, biscuits"
+      },
+      {
+       "name": "Maillard reaction products",
+       "what": "Flavor and color compounds from sugars and amino acids reacting under heat",
+       "does": "Flavor; some reduce protein quality (lysine loss)",
+       "found": "Bread crust, roasted coffee, seared meat, chocolate"
+      },
+      {
+       "name": "Melanoidins",
+       "what": "Brown polymers from late Maillard reactions",
+       "does": "Act like fiber; antioxidant activity",
+       "found": "Coffee, bread crust, dark beer, roasted malt"
+      },
+      {
+       "name": "Advanced glycation end products (AGEs)",
+       "what": "Sugar-protein adducts such as carboxymethyllysine",
+       "does": "Linked to oxidative stress and inflammation",
+       "found": "Grilled, fried and roasted meat, cheese, browned foods"
+      },
+      {
+       "name": "Heterocyclic amines (HCAs)",
+       "what": "Mutagens such as PhIP and MeIQx from creatine, amino acids and sugars",
+       "does": "Possible carcinogens",
+       "found": "Well-done, grilled or pan-fried meat and fish"
+      },
+      {
+       "name": "Polycyclic aromatic hydrocarbons (PAHs)",
+       "what": "Benzo[a]pyrene and related compounds from smoke and charring",
+       "does": "Benzo[a]pyrene is a known carcinogen (IARC 1)",
+       "found": "Smoked foods, charcoal-grilled meat, roasted coffee"
+      },
+      {
+       "name": "Furan",
+       "what": "Small volatile from heating sugars, ascorbic acid and fats",
+       "does": "Possible carcinogen (IARC 2B); liver toxicity in animals",
+       "found": "Coffee, canned and jarred foods, baby food jars"
+      },
+      {
+       "name": "3-MCPD esters",
+       "what": "Chloropropanol esters formed in oil refining",
+       "does": "Released as 3-MCPD; kidney effects in animals",
+       "found": "Refined palm and vegetable oils, infant formula, margarine"
+      },
+      {
+       "name": "Glycidyl esters",
+       "what": "Formed during high-temperature oil deodorization",
+       "does": "Released as glycidol, a probable carcinogen (IARC 2A)",
+       "found": "Refined palm oil, fats, infant formula"
+      },
+      {
+       "name": "Industrial trans fats",
+       "what": "Trans fatty acids from partial hydrogenation (see Macronutrients > Trans fats)",
+       "does": "Raise LDL and lower HDL; heart disease risk",
+       "found": "Older margarines, shortenings, fried and baked goods; banned in US and limited in EU"
+      },
+      {
+       "name": "N-nitrosamines",
+       "what": "Such as NDMA, formed from nitrite and amines with heat",
+       "does": "Probable carcinogens",
+       "found": "Fried bacon, cured meats, smoked fish, beer (historically)"
+      },
+      {
+       "name": "Hydroxymethylfurfural (HMF)",
+       "what": "Sugar breakdown product from heat or storage",
+       "does": "Mostly excreted; high doses toxic in animals",
+       "found": "Honey, dried fruit, coffee, caramel, jam"
+      },
+      {
+       "name": "Lipid oxidation products",
+       "children": [
+        {
+         "name": "Hydroperoxides",
+         "what": "First products of fat oxidation",
+         "does": "Oxidative stress; break into aldehydes",
+         "found": "Rancid oils, reused frying oil"
+        },
+        {
+         "name": "Malondialdehyde",
+         "what": "Aldehyde from oxidized polyunsaturated fats",
+         "does": "Reactive; marker of oxidative stress",
+         "found": "Rancid fish oil, fried and stored foods"
+        },
+        {
+         "name": "4-Hydroxynonenal (4-HNE)",
+         "what": "Toxic aldehyde from omega-6 oxidation",
+         "does": "Damages proteins and DNA",
+         "found": "Reused frying oils, deep-fried foods"
+        },
+        {
+         "name": "Hexanal",
+         "what": "Volatile aldehyde that gives rancid \"cardboard\" flavor",
+         "does": "Off-flavor; low toxicity",
+         "found": "Stale nuts, oils, oats, soy milk"
+        },
+        {
+         "name": "Oxysterols",
+         "what": "Oxidized cholesterol",
+         "does": "May promote arterial damage",
+         "found": "Powdered egg and milk, aged cheese, fried foods"
+        }
+       ]
+      },
+      {
+       "name": "Ethyl carbamate (urethane)",
+       "what": "Formed from urea and ethanol in fermentation",
+       "does": "Probable carcinogen (IARC 2A)",
+       "found": "Stone-fruit brandies, soy sauce, fortified wine, bread"
+      },
+      {
+       "name": "Biogenic amines from fermentation",
+       "what": "Histamine and tyramine from microbial decarboxylation (see Bioactives)",
+       "does": "Headaches, scombroid poisoning, MAOI interaction",
+       "found": "Aged cheese, fish sauce, wine, fermented sausage"
+      },
+      {
+       "name": "Benzene (from benzoate + vitamin C)",
+       "what": "Formed when benzoates and ascorbic acid react",
+       "does": "Known carcinogen; trace amounts",
+       "found": "Not naturally in foods; some soft drinks (now reformulated)"
+      },
+      {
+       "name": "4-Methylimidazole (4-MEI)",
+       "what": "By-product of making ammonia caramel colors (E150c/d)",
+       "does": "Possible carcinogen (IARC 2B)",
+       "found": "Colas, dark beers, soy sauce"
+      }
+     ]
+    },
+    {
+     "name": "Processing methods",
+     "children": [
+      {
+       "name": "Fermentation",
+       "what": "Microbes convert sugars to acids, gases or alcohol",
+       "does": "Can raise B vitamins and probiotics and lower phytate",
+       "found": "Yogurt, cheese, bread, kimchi, beer, wine"
+      },
+      {
+       "name": "Pasteurization",
+       "what": "Mild heat (about 72 \u00b0C for 15 s) kills pathogens",
+       "does": "Small losses of vitamin C and B vitamins",
+       "found": "Milk, juice, eggs, beer"
+      },
+      {
+       "name": "UHT / sterilization",
+       "what": "High heat (about 135-140 \u00b0C) for shelf stability",
+       "does": "Larger losses of vitamins C, B1, B12, folate; some Maillard browning",
+       "found": "Shelf-stable milk, canned foods"
+      },
+      {
+       "name": "Hydrogenation",
+       "what": "Adds hydrogen to unsaturated fats to harden them",
+       "does": "Full hydrogenation makes saturated fat; partial makes trans fats",
+       "found": "Margarine, shortening, (historically) baked goods"
+      },
+      {
+       "name": "Interesterification",
+       "what": "Rearranges fatty acids on glycerol to change melting",
+       "does": "Trans-free alternative; health effects under study",
+       "found": "Margarines, shortenings, palm-based fats"
+      },
+      {
+       "name": "Refining (oils)",
+       "what": "Degumming, bleaching and deodorizing crude oil",
+       "does": "Removes free fatty acids and some vitamin E, sterols, polyphenols; can form 3-MCPD",
+       "found": "Refined vegetable oils"
+      },
+      {
+       "name": "Refining (grains and sugar)",
+       "what": "Milling away bran and germ, or purifying sugar",
+       "does": "Removes fiber, B vitamins, minerals (some added back)",
+       "found": "White flour, white rice, white sugar"
+      },
+      {
+       "name": "Smoking",
+       "what": "Exposure to wood smoke",
+       "does": "Adds flavor and antimicrobial phenols; may add PAHs",
+       "found": "Smoked fish, meats, cheese, paprika"
+      },
+      {
+       "name": "Curing",
+       "what": "Salt plus nitrite or nitrate preservation",
+       "does": "Prevents botulism; nitrite can form nitrosamines",
+       "found": "Bacon, ham, salami, hot dogs"
+      },
+      {
+       "name": "Extrusion",
+       "what": "High heat and pressure pushes dough through a die",
+       "does": "Gelatinizes starch; some vitamin and lysine loss",
+       "found": "Breakfast cereals, puffed snacks, pasta, pet food"
+      },
+      {
+       "name": "Frying",
+       "what": "Cooking in hot oil",
+       "does": "Adds fat; can form acrylamide and oxidation products",
+       "found": "Fries, chips, doughnuts, fried chicken"
+      },
+      {
+       "name": "Grilling and roasting",
+       "what": "Dry high-heat cooking",
+       "does": "Maillard flavor; can form HCAs, PAHs, AGEs",
+       "found": "Grilled meat, roasted coffee, nuts"
+      },
+      {
+       "name": "Canning",
+       "what": "Sealing and heat-sterilizing in containers",
+       "does": "Losses of vitamin C and thiamine; minerals retained",
+       "found": "Canned vegetables, fish, beans, soup"
+      },
+      {
+       "name": "Freezing",
+       "what": "Storage below -18 \u00b0C",
+       "does": "Nutrients well preserved; blanching first loses some vitamin C",
+       "found": "Frozen vegetables, fruit, fish"
+      },
+      {
+       "name": "Drying / dehydration",
+       "what": "Removes water by air, sun, spray or freeze-drying",
+       "does": "Concentrates nutrients; losses of vitamin C, possible HMF",
+       "found": "Dried fruit, milk powder, pasta, instant coffee"
+      },
+      {
+       "name": "Irradiation",
+       "what": "Ionizing radiation to kill microbes",
+       "does": "Small losses of thiamine and vitamin E",
+       "found": "Spices, some meat and produce (labeled)"
+      },
+      {
+       "name": "High-pressure processing (HPP)",
+       "what": "Cold pressure (about 600 MPa) kills microbes",
+       "does": "Preserves vitamins and flavor better than heat",
+       "found": "Cold-pressed juice, guacamole, deli meats"
+      },
+      {
+       "name": "Homogenization",
+       "what": "Breaks milk fat into small droplets",
+       "does": "Prevents cream separation; no major nutrient change",
+       "found": "Milk, cream"
+      },
+      {
+       "name": "Nixtamalization",
+       "what": "Cooking corn in alkaline lime water",
+       "does": "Frees niacin, adds calcium, lowers mycotoxins",
+       "found": "Tortillas, masa, hominy"
+      },
+      {
+       "name": "Sprouting / malting",
+       "what": "Germinating grains or seeds",
+       "does": "Lowers phytate; raises some vitamins and enzymes",
+       "found": "Malt, sprouted bread, bean sprouts"
+      },
+      {
+       "name": "Blanching",
+       "what": "Brief heating before freezing or canning",
+       "does": "Inactivates enzymes; some loss of water-soluble vitamins",
+       "found": "Frozen vegetables, nuts"
       }
      ]
     }

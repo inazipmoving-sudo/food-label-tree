@@ -27,11 +27,11 @@ main{max-width:900px;margin:18px auto 60px;padding:0 16px}ul{list-style:none;mar
 .hidden{display:none!important}mark{background:#fde047;color:#111;border-radius:3px;padding:0 2px}
 @media(max-width:600px){.hero{padding:24px 16px 56px}#theme{position:static;margin-bottom:10px}.kids>ul>li{margin-left:6px;padding-left:8px}.card{margin-left:4px}}
 </style></head><body>
-<div class="hero"><div class="in"><button id="theme">🌙 Dark</button><h1>🍎 Food Label Tree</h1><p>Over 1,000 nutrients, bioactives, additives and flavor compounds from the back of food labels — what they are, what they do, and where they come from.</p></div></div>
+<div class="hero"><div class="in"><button id="theme">🌙 Dark</button><h1>🍎 Food Label Tree</h1><p>Over 1,000 nutrients, bioactives, additives, flavor compounds and processing by-products from the back of food labels — what they are, what they do, and where they come from.</p></div></div>
 <div class="sbar"><div class="sbox"><input id="q" placeholder="Search a compound or food — salmon, B12, E211, omega-3…"><button class="btn" id="ex">Expand all</button><button class="btn" id="co">Collapse all</button><span id="info"></span></div></div>
 <main><ul id="tree"></ul></main><script src="data.js"></script><script>
 const T=window.TREE,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const STY={Macronutrients:['#f97316','🍗'],Micronutrients:['#8b5cf6','💊'],Bioactives:['#10b981','🌿'],Additives:['#ef4444','🧪'],Flavorings:['#d946ef','🌶️']};
+const STY={Macronutrients:['#f97316','🍗'],Micronutrients:['#8b5cf6','💊'],Bioactives:['#10b981','🌿'],Additives:['#ef4444','🧪'],Flavorings:['#d946ef','🌶️'],Processing:['#0ea5e9','🏭']};
 (function pre(n){n.c=n.children?n.children.reduce((a,x)=>a+pre(x),0):1;n.t=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.found||'')).toLowerCase();return n.c})(T);
 let Q='';const hl=n=>{const i=Q?n.toLowerCase().indexOf(Q):-1;return i<0?esc(n):esc(n.slice(0,i))+'<mark>'+esc(n.slice(i,i+Q.length))+'</mark>'+esc(n.slice(i+Q.length))};
 function node(n,d,kids,open){const li=document.createElement('li');li.n=n;li.kids=kids;const r=document.createElement('div');r.className='row';li.appendChild(r);let h='';
