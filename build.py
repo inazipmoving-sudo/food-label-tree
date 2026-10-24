@@ -8,7 +8,7 @@ for l in lines:
     if '|' in t:
         n,w,f,fd=(t.split('|')+['',''])[:4];p['children'].append({"name":n,"what":w,"does":f,**({'found':fd} if fd else {})})
     else:
-        node={"name":t,"children":[]};p['children'].append(node);stack.append((d,node))
+        nm,_,note=t.partition(' :: ');node={"name":nm,**({'note':note} if note else {}),"children":[]};p['children'].append(node);stack.append((d,node))
 ing=[c for c in root['children'] if c['name'].startswith('Ingredients')]
 for c in ing: root['children'].remove(c)
 import os

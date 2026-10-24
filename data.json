@@ -669,9 +669,185 @@
     },
     {
      "name": "Fats",
+     "note": "All fats provide 9 kcal/g. Stored body fat is mostly unsaturated triglycerides (oleic acid dominant): firmer near the cooler skin, softer deeper in.",
      "children": [
       {
-       "name": "Saturated fatty acids",
+       "name": "Unsaturated",
+       "note": "Double bonds put kinks in the chains, so they cannot pack tightly; liquid at room temperature.",
+       "children": [
+        {
+         "name": "Monounsaturated",
+         "note": "One double bond (oleic acid is the main one).",
+         "children": [
+          {
+           "name": "Oleic acid (omega-9)",
+           "what": "Main fat in olive oil",
+           "does": "Supports healthy cholesterol levels",
+           "found": "Olive oil, avocado, almonds, macadamia, lard"
+          },
+          {
+           "name": "Palmitoleic acid (omega-7)",
+           "what": "MUFA in macadamia, sea buckthorn",
+           "does": "Signaling lipid",
+           "found": "Macadamia nuts, sea buckthorn, fish"
+          },
+          {
+           "name": "Erucic acid (omega-9)",
+           "what": "MUFA in rapeseed/mustard",
+           "does": "Limited in food due to heart effects",
+           "found": "Mustard seed, traditional rapeseed"
+          },
+          {
+           "name": "Myristoleic acid (C14:1)",
+           "what": "Rare omega-5 MUFA",
+           "does": "Minor fatty acid",
+           "found": "Butter, beef fat, saw palmetto"
+          },
+          {
+           "name": "Petroselinic acid (C18:1 n-12)",
+           "what": "Positional isomer of oleic acid",
+           "does": "Minor fatty acid",
+           "found": "Coriander, parsley and carrot seeds"
+          },
+          {
+           "name": "Gondoic acid (C20:1 n-9)",
+           "what": "Long-chain omega-9",
+           "does": "Minor fatty acid",
+           "found": "Jojoba, rapeseed, camelina, fish oil"
+          },
+          {
+           "name": "Nervonic acid (C24:1 n-9)",
+           "what": "Very-long-chain omega-9",
+           "does": "Part of nerve myelin sphingolipids",
+           "found": "Salmon, mustard seed oil, flaxseed (traces)"
+          },
+          {
+           "name": "Ricinoleic acid",
+           "what": "Hydroxy omega-9 fatty acid",
+           "does": "Laxative (castor oil)",
+           "found": "Castor oil; PGPR emulsifier"
+          }
+         ]
+        },
+        {
+         "name": "Polyunsaturated",
+         "note": "Two or more double bonds.",
+         "children": [
+          {
+           "name": "Omega-3",
+           "note": "First double bond 3 carbons from the methyl (omega) end: ALA, SDA, ETA, EPA, DPA, DHA.",
+           "children": [
+            {
+             "name": "ALA (alpha-linolenic acid)",
+             "what": "Plant omega-3 in flax, chia, walnuts",
+             "does": "Essential fat; partly converted to EPA/DHA",
+             "found": "Flaxseed, chia, walnuts, hemp, canola oil"
+            },
+            {
+             "name": "SDA (stearidonic acid)",
+             "what": "Omega-3 in hemp and echium oil",
+             "does": "Intermediate toward EPA",
+             "found": "Hemp seed oil, echium oil, blackcurrant seed oil"
+            },
+            {
+             "name": "ETA (eicosatetraenoic acid)",
+             "what": "Omega-3 between SDA and EPA",
+             "does": "Intermediate toward EPA",
+             "found": "Green-lipped mussel, fish oils"
+            },
+            {
+             "name": "EPA (eicosapentaenoic acid)",
+             "what": "Marine omega-3",
+             "does": "Anti-inflammatory signaling",
+             "found": "Salmon, sardines, mackerel, herring"
+            },
+            {
+             "name": "DPA (docosapentaenoic acid)",
+             "what": "Marine omega-3",
+             "does": "Intermediate between EPA and DHA",
+             "found": "Salmon, mackerel, seal/fish oil"
+            },
+            {
+             "name": "DHA (docosahexaenoic acid)",
+             "what": "Marine omega-3",
+             "does": "Brain and retina structure",
+             "found": "Salmon, sardines, mackerel, algae"
+            }
+           ]
+          },
+          {
+           "name": "Omega-6",
+           "note": "First double bond 6 carbons from the omega end: LA, GLA, DGLA, AA and others.",
+           "children": [
+            {
+             "name": "Linoleic acid (LA)",
+             "what": "Main omega-6 in seed oils",
+             "does": "Essential fat; skin barrier",
+             "found": "Sunflower, safflower, corn and soybean oils, walnuts"
+            },
+            {
+             "name": "Gamma-linolenic acid (GLA)",
+             "what": "Omega-6 in borage, evening primrose",
+             "does": "Precursor of anti-inflammatory eicosanoids",
+             "found": "Borage oil, evening primrose oil, blackcurrant seed oil"
+            },
+            {
+             "name": "Eicosadienoic acid (C20:2 n-6)",
+             "what": "Omega-6 elongation product",
+             "does": "Minor eicosanoid precursor",
+             "found": "Pine nuts, animal tissues"
+            },
+            {
+             "name": "DGLA (dihomo-gamma-linolenic acid)",
+             "what": "Omega-6 C20:3",
+             "does": "Precursor of anti-inflammatory prostaglandin E1",
+             "found": "Organ meats; made from GLA in body"
+            },
+            {
+             "name": "Arachidonic acid (AA)",
+             "what": "Omega-6 in meat and eggs",
+             "does": "Precursor of eicosanoids; cell membranes",
+             "found": "Eggs, chicken, beef, organ meats"
+            },
+            {
+             "name": "Adrenic acid (C22:4 n-6)",
+             "what": "Very-long-chain omega-6",
+             "does": "Brain and adrenal lipids",
+             "found": "Animal fats, organ meats"
+            },
+            {
+             "name": "Pinolenic acid",
+             "what": "Omega-6 C18:3 (delta-5)",
+             "does": "Studied for appetite effects",
+             "found": "Pine nuts"
+            }
+           ]
+          },
+          {
+           "name": "Other polyunsaturated",
+           "note": "Conjugated or omega-9 polyunsaturated fatty acids.",
+           "children": [
+            {
+             "name": "Punicic acid",
+             "what": "Conjugated omega-5 C18:3",
+             "does": "Studied for anti-inflammatory effects",
+             "found": "Pomegranate seed oil"
+            },
+            {
+             "name": "Mead acid (C20:3 n-9)",
+             "what": "Omega-9 PUFA made when essential fats are lacking",
+             "does": "Marker of essential fatty acid deficiency",
+             "found": "Made in the body; traces in animal tissues"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "name": "Saturated",
+       "note": "No double bonds: straight chains pack tightly, so solid at room temperature. Fully hydrogenating an unsaturated fat makes it saturated.",
        "children": [
         {
          "name": "Butyric acid (C4:0)",
@@ -710,10 +886,22 @@
          "found": "Nutmeg, coconut oil, butter"
         },
         {
+         "name": "Pentadecanoic acid (C15:0)",
+         "what": "Odd-chain saturated fat",
+         "does": "Biomarker of dairy intake",
+         "found": "Butter, milk, cheese"
+        },
+        {
          "name": "Palmitic acid (C16:0)",
          "what": "Most common saturated fat (palm, meat)",
          "does": "Energy; raises LDL in excess",
          "found": "Palm oil, beef, butter, cocoa butter"
+        },
+        {
+         "name": "Margaric acid (C17:0)",
+         "what": "Odd-chain saturated fat",
+         "does": "Biomarker of dairy intake",
+         "found": "Dairy fat, beef"
         },
         {
          "name": "Stearic acid (C18:0)",
@@ -726,18 +914,6 @@
          "what": "Long-chain saturated fat in peanut oil",
          "does": "Minor energy source",
          "found": "Peanut oil, macadamia"
-        },
-        {
-         "name": "Pentadecanoic acid (C15:0)",
-         "what": "Odd-chain saturated fat",
-         "does": "Biomarker of dairy intake",
-         "found": "Butter, milk, cheese"
-        },
-        {
-         "name": "Margaric acid (C17:0)",
-         "what": "Odd-chain saturated fat",
-         "does": "Biomarker of dairy intake",
-         "found": "Dairy fat, beef"
         },
         {
          "name": "Behenic acid (C22:0)",
@@ -754,183 +930,62 @@
        ]
       },
       {
-       "name": "Monounsaturated fatty acids",
+       "name": "Trans fat",
+       "note": "Mostly man-made. Partial hydrogenation flips some cis double bonds to trans (hydrogens on opposite sides), straightening the chain so it packs and solidifies like saturated fat. Small amounts occur naturally in ruminant meat and dairy.",
        "children": [
         {
-         "name": "Oleic acid (omega-9)",
-         "what": "Main fat in olive oil",
-         "does": "Supports healthy cholesterol levels",
-         "found": "Olive oil, avocado, almonds, macadamia, lard"
+         "name": "Industrial (partial hydrogenation)",
+         "note": "Made when oils are partially hydrogenated; raises LDL and lowers HDL.",
+         "children": [
+          {
+           "name": "Elaidic acid",
+           "what": "Industrial trans fat from partial hydrogenation",
+           "does": "Raises LDL, lowers HDL",
+           "found": "Partially hydrogenated oils (mostly phased out)"
+          }
+         ]
         },
         {
-         "name": "Palmitoleic acid (omega-7)",
-         "what": "MUFA in macadamia, sea buckthorn",
-         "does": "Signaling lipid",
-         "found": "Macadamia nuts, sea buckthorn, fish"
-        },
-        {
-         "name": "Erucic acid (omega-9)",
-         "what": "MUFA in rapeseed/mustard",
-         "does": "Limited in food due to heart effects",
-         "found": "Mustard seed, traditional rapeseed"
-        },
-        {
-         "name": "Myristoleic acid (C14:1)",
-         "what": "Rare omega-5 MUFA",
-         "does": "Minor fatty acid",
-         "found": "Butter, beef fat, saw palmetto"
-        },
-        {
-         "name": "Petroselinic acid (C18:1 n-12)",
-         "what": "Positional isomer of oleic acid",
-         "does": "Minor fatty acid",
-         "found": "Coriander, parsley and carrot seeds"
-        },
-        {
-         "name": "Gondoic acid (C20:1 n-9)",
-         "what": "Long-chain omega-9",
-         "does": "Minor fatty acid",
-         "found": "Jojoba, rapeseed, camelina, fish oil"
-        },
-        {
-         "name": "Nervonic acid (C24:1 n-9)",
-         "what": "Very-long-chain omega-9",
-         "does": "Part of nerve myelin sphingolipids",
-         "found": "Salmon, mustard seed oil, flaxseed (traces)"
+         "name": "Natural ruminant trans",
+         "note": "Formed by bacteria in the stomachs of cows, sheep and goats; found in small amounts in dairy and meat.",
+         "children": [
+          {
+           "name": "Vaccenic acid",
+           "what": "Natural ruminant trans fat in dairy",
+           "does": "Partly converted to CLA",
+           "found": "Butter, milk, beef, lamb"
+          },
+          {
+           "name": "Trans-palmitoleic acid (C16:1 t9)",
+           "what": "Ruminant trans fat",
+           "does": "Biomarker of dairy intake",
+           "found": "Milk, butter, cheese"
+          },
+          {
+           "name": "Conjugated linoleic acid (CLA)",
+           "what": "Natural trans/conjugated fat in dairy and beef",
+           "does": "Studied for body-composition effects",
+           "found": "Grass-fed beef, lamb, dairy fat"
+          },
+          {
+           "name": "Rumenic acid (CLA c9,t11)",
+           "what": "Main natural CLA isomer",
+           "does": "Studied for anti-cancer, body-composition effects",
+           "found": "Milk fat, beef, lamb"
+          },
+          {
+           "name": "CLA t10,c12",
+           "what": "CLA isomer (mainly synthetic)",
+           "does": "Reduces fat in animal studies",
+           "found": "CLA supplements"
+          }
+         ]
         }
        ]
       },
       {
-       "name": "Polyunsaturated omega-3",
-       "children": [
-        {
-         "name": "ALA (alpha-linolenic acid)",
-         "what": "Plant omega-3 in flax, chia, walnuts",
-         "does": "Essential fat; partly converted to EPA/DHA",
-         "found": "Flaxseed, chia, walnuts, hemp, canola oil"
-        },
-        {
-         "name": "SDA (stearidonic acid)",
-         "what": "Omega-3 in hemp and echium oil",
-         "does": "Intermediate toward EPA",
-         "found": "Hemp seed oil, echium oil, blackcurrant seed oil"
-        },
-        {
-         "name": "EPA (eicosapentaenoic acid)",
-         "what": "Marine omega-3",
-         "does": "Anti-inflammatory signaling",
-         "found": "Salmon, sardines, mackerel, herring"
-        },
-        {
-         "name": "DPA (docosapentaenoic acid)",
-         "what": "Marine omega-3",
-         "does": "Intermediate between EPA and DHA",
-         "found": "Salmon, mackerel, seal/fish oil"
-        },
-        {
-         "name": "DHA (docosahexaenoic acid)",
-         "what": "Marine omega-3",
-         "does": "Brain and retina structure",
-         "found": "Salmon, sardines, mackerel, algae"
-        },
-        {
-         "name": "ETA (eicosatetraenoic acid)",
-         "what": "Omega-3 between SDA and EPA",
-         "does": "Intermediate toward EPA",
-         "found": "Green-lipped mussel, fish oils"
-        }
-       ]
-      },
-      {
-       "name": "Polyunsaturated omega-6",
-       "children": [
-        {
-         "name": "Linoleic acid (LA)",
-         "what": "Main omega-6 in seed oils",
-         "does": "Essential fat; skin barrier",
-         "found": "Sunflower, safflower, corn and soybean oils, walnuts"
-        },
-        {
-         "name": "Gamma-linolenic acid (GLA)",
-         "what": "Omega-6 in borage, evening primrose",
-         "does": "Precursor of anti-inflammatory eicosanoids",
-         "found": "Borage oil, evening primrose oil, blackcurrant seed oil"
-        },
-        {
-         "name": "Arachidonic acid (AA)",
-         "what": "Omega-6 in meat and eggs",
-         "does": "Precursor of eicosanoids; cell membranes",
-         "found": "Eggs, chicken, beef, organ meats"
-        },
-        {
-         "name": "DGLA (dihomo-gamma-linolenic acid)",
-         "what": "Omega-6 C20:3",
-         "does": "Precursor of anti-inflammatory prostaglandin E1",
-         "found": "Organ meats; made from GLA in body"
-        },
-        {
-         "name": "Adrenic acid (C22:4 n-6)",
-         "what": "Very-long-chain omega-6",
-         "does": "Brain and adrenal lipids",
-         "found": "Animal fats, organ meats"
-        },
-        {
-         "name": "Eicosadienoic acid (C20:2 n-6)",
-         "what": "Omega-6 elongation product",
-         "does": "Minor eicosanoid precursor",
-         "found": "Pine nuts, animal tissues"
-        },
-        {
-         "name": "Punicic acid",
-         "what": "Conjugated omega-5 C18:3",
-         "does": "Studied for anti-inflammatory effects",
-         "found": "Pomegranate seed oil"
-        }
-       ]
-      },
-      {
-       "name": "Trans fats",
-       "children": [
-        {
-         "name": "Elaidic acid",
-         "what": "Industrial trans fat from partial hydrogenation",
-         "does": "Raises LDL, lowers HDL",
-         "found": "Partially hydrogenated oils (mostly phased out)"
-        },
-        {
-         "name": "Vaccenic acid",
-         "what": "Natural ruminant trans fat in dairy",
-         "does": "Partly converted to CLA",
-         "found": "Butter, milk, beef, lamb"
-        },
-        {
-         "name": "Conjugated linoleic acid (CLA)",
-         "what": "Natural trans/conjugated fat in dairy and beef",
-         "does": "Studied for body-composition effects",
-         "found": "Grass-fed beef, lamb, dairy fat"
-        },
-        {
-         "name": "Rumenic acid (CLA c9,t11)",
-         "what": "Main natural CLA isomer",
-         "does": "Studied for anti-cancer, body-composition effects",
-         "found": "Milk fat, beef, lamb"
-        },
-        {
-         "name": "CLA t10,c12",
-         "what": "CLA isomer (mainly synthetic)",
-         "does": "Reduces fat in animal studies",
-         "found": "CLA supplements"
-        },
-        {
-         "name": "Trans-palmitoleic acid (C16:1 t9)",
-         "what": "Ruminant trans fat",
-         "does": "Biomarker of dairy intake",
-         "found": "Milk, butter, cheese"
-        }
-       ]
-      },
-      {
-       "name": "Sterols and other lipids",
+       "name": "Other lipids",
+       "note": "Glycerides, phospholipids, sterols and related fat-like compounds.",
        "children": [
         {
          "name": "Cholesterol",
@@ -1009,29 +1064,6 @@
          "what": "Triterpene hydrocarbon (cholesterol precursor)",
          "does": "Antioxidant in skin",
          "found": "Olive oil, shark liver oil, amaranth"
-        }
-       ]
-      },
-      {
-       "name": "Other fatty acids",
-       "children": [
-        {
-         "name": "Mead acid (C20:3 n-9)",
-         "what": "Omega-9 PUFA made when essential fats are lacking",
-         "does": "Marker of essential fatty acid deficiency",
-         "found": "Made in the body; traces in animal tissues"
-        },
-        {
-         "name": "Ricinoleic acid",
-         "what": "Hydroxy omega-9 fatty acid",
-         "does": "Laxative (castor oil)",
-         "found": "Castor oil; PGPR emulsifier"
-        },
-        {
-         "name": "Pinolenic acid",
-         "what": "Omega-6 C18:3 (delta-5)",
-         "does": "Studied for appetite effects",
-         "found": "Pine nuts"
         }
        ]
       }
@@ -7154,7 +7186,7 @@
       },
       {
        "name": "Industrial trans fats",
-       "what": "Trans fatty acids from partial hydrogenation (see Macronutrients > Trans fats)",
+       "what": "Trans fatty acids from partial hydrogenation (see Macronutrients > Fats > Trans fat)",
        "does": "Raise LDL and lower HDL; heart disease risk",
        "found": "Older margarines, shortenings, fried and baked goods; banned in US and limited in EU"
       },

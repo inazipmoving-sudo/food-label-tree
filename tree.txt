@@ -112,52 +112,60 @@ Macronutrients
    Maltitol|Polyol from maltose (E965)|Sugar-like sweetener with fewer calories|Not naturally in significant amounts; sugar-free candy
    Isomalt|Polyol from sucrose (E953)|Sugar-free candy sweetener|Not naturally in foods; sugar-free hard candy
    Lactitol|Polyol from lactose (E966)|Low-calorie sweetener|Not naturally in foods; sugar-free desserts
- Fats
-  Saturated fatty acids
+ Fats :: All fats provide 9 kcal/g. Stored body fat is mostly unsaturated triglycerides (oleic acid dominant): firmer near the cooler skin, softer deeper in.
+  Unsaturated :: Double bonds put kinks in the chains, so they cannot pack tightly; liquid at room temperature.
+   Monounsaturated :: One double bond (oleic acid is the main one).
+    Oleic acid (omega-9)|Main fat in olive oil|Supports healthy cholesterol levels|Olive oil, avocado, almonds, macadamia, lard
+    Palmitoleic acid (omega-7)|MUFA in macadamia, sea buckthorn|Signaling lipid|Macadamia nuts, sea buckthorn, fish
+    Erucic acid (omega-9)|MUFA in rapeseed/mustard|Limited in food due to heart effects|Mustard seed, traditional rapeseed
+    Myristoleic acid (C14:1)|Rare omega-5 MUFA|Minor fatty acid|Butter, beef fat, saw palmetto
+    Petroselinic acid (C18:1 n-12)|Positional isomer of oleic acid|Minor fatty acid|Coriander, parsley and carrot seeds
+    Gondoic acid (C20:1 n-9)|Long-chain omega-9|Minor fatty acid|Jojoba, rapeseed, camelina, fish oil
+    Nervonic acid (C24:1 n-9)|Very-long-chain omega-9|Part of nerve myelin sphingolipids|Salmon, mustard seed oil, flaxseed (traces)
+    Ricinoleic acid|Hydroxy omega-9 fatty acid|Laxative (castor oil)|Castor oil; PGPR emulsifier
+   Polyunsaturated :: Two or more double bonds.
+    Omega-3 :: First double bond 3 carbons from the methyl (omega) end: ALA, SDA, ETA, EPA, DPA, DHA.
+     ALA (alpha-linolenic acid)|Plant omega-3 in flax, chia, walnuts|Essential fat; partly converted to EPA/DHA|Flaxseed, chia, walnuts, hemp, canola oil
+     SDA (stearidonic acid)|Omega-3 in hemp and echium oil|Intermediate toward EPA|Hemp seed oil, echium oil, blackcurrant seed oil
+     ETA (eicosatetraenoic acid)|Omega-3 between SDA and EPA|Intermediate toward EPA|Green-lipped mussel, fish oils
+     EPA (eicosapentaenoic acid)|Marine omega-3|Anti-inflammatory signaling|Salmon, sardines, mackerel, herring
+     DPA (docosapentaenoic acid)|Marine omega-3|Intermediate between EPA and DHA|Salmon, mackerel, seal/fish oil
+     DHA (docosahexaenoic acid)|Marine omega-3|Brain and retina structure|Salmon, sardines, mackerel, algae
+    Omega-6 :: First double bond 6 carbons from the omega end: LA, GLA, DGLA, AA and others.
+     Linoleic acid (LA)|Main omega-6 in seed oils|Essential fat; skin barrier|Sunflower, safflower, corn and soybean oils, walnuts
+     Gamma-linolenic acid (GLA)|Omega-6 in borage, evening primrose|Precursor of anti-inflammatory eicosanoids|Borage oil, evening primrose oil, blackcurrant seed oil
+     Eicosadienoic acid (C20:2 n-6)|Omega-6 elongation product|Minor eicosanoid precursor|Pine nuts, animal tissues
+     DGLA (dihomo-gamma-linolenic acid)|Omega-6 C20:3|Precursor of anti-inflammatory prostaglandin E1|Organ meats; made from GLA in body
+     Arachidonic acid (AA)|Omega-6 in meat and eggs|Precursor of eicosanoids; cell membranes|Eggs, chicken, beef, organ meats
+     Adrenic acid (C22:4 n-6)|Very-long-chain omega-6|Brain and adrenal lipids|Animal fats, organ meats
+     Pinolenic acid|Omega-6 C18:3 (delta-5)|Studied for appetite effects|Pine nuts
+    Other polyunsaturated :: Conjugated or omega-9 polyunsaturated fatty acids.
+     Punicic acid|Conjugated omega-5 C18:3|Studied for anti-inflammatory effects|Pomegranate seed oil
+     Mead acid (C20:3 n-9)|Omega-9 PUFA made when essential fats are lacking|Marker of essential fatty acid deficiency|Made in the body; traces in animal tissues
+  Saturated :: No double bonds: straight chains pack tightly, so solid at room temperature. Fully hydrogenating an unsaturated fat makes it saturated.
    Butyric acid (C4:0)|Short-chain saturated fat in butter|Fuel for colon cells|Butter, ghee, Parmesan
    Caproic acid (C6:0)|Short/medium-chain fat in goat milk|Quick energy|Goat milk, butter, coconut oil
    Caprylic acid (C8:0)|Medium-chain fat (MCT) in coconut|Rapidly converted to ketones|Coconut oil, palm kernel oil, goat milk
    Capric acid (C10:0)|Medium-chain fat (MCT)|Quick energy|Coconut oil, palm kernel oil, goat milk
    Lauric acid (C12:0)|Main fat in coconut and palm kernel oil|Raises HDL and LDL|Coconut oil, palm kernel oil
    Myristic acid (C14:0)|Saturated fat in dairy and nutmeg|Raises LDL cholesterol|Nutmeg, coconut oil, butter
+   Pentadecanoic acid (C15:0)|Odd-chain saturated fat|Biomarker of dairy intake|Butter, milk, cheese
    Palmitic acid (C16:0)|Most common saturated fat (palm, meat)|Energy; raises LDL in excess|Palm oil, beef, butter, cocoa butter
+   Margaric acid (C17:0)|Odd-chain saturated fat|Biomarker of dairy intake|Dairy fat, beef
    Stearic acid (C18:0)|Saturated fat in cocoa butter, beef|Largely neutral on LDL|Cocoa butter, beef tallow, lard
    Arachidic acid (C20:0)|Long-chain saturated fat in peanut oil|Minor energy source|Peanut oil, macadamia
-   Pentadecanoic acid (C15:0)|Odd-chain saturated fat|Biomarker of dairy intake|Butter, milk, cheese
-   Margaric acid (C17:0)|Odd-chain saturated fat|Biomarker of dairy intake|Dairy fat, beef
    Behenic acid (C22:0)|Very-long-chain saturated fat|Poorly absorbed|Peanut oil, canola oil, moringa oil
    Lignoceric acid (C24:0)|Very-long-chain saturated fat|Part of sphingolipids|Peanut oil, nuts
-  Monounsaturated fatty acids
-   Oleic acid (omega-9)|Main fat in olive oil|Supports healthy cholesterol levels|Olive oil, avocado, almonds, macadamia, lard
-   Palmitoleic acid (omega-7)|MUFA in macadamia, sea buckthorn|Signaling lipid|Macadamia nuts, sea buckthorn, fish
-   Erucic acid (omega-9)|MUFA in rapeseed/mustard|Limited in food due to heart effects|Mustard seed, traditional rapeseed
-   Myristoleic acid (C14:1)|Rare omega-5 MUFA|Minor fatty acid|Butter, beef fat, saw palmetto
-   Petroselinic acid (C18:1 n-12)|Positional isomer of oleic acid|Minor fatty acid|Coriander, parsley and carrot seeds
-   Gondoic acid (C20:1 n-9)|Long-chain omega-9|Minor fatty acid|Jojoba, rapeseed, camelina, fish oil
-   Nervonic acid (C24:1 n-9)|Very-long-chain omega-9|Part of nerve myelin sphingolipids|Salmon, mustard seed oil, flaxseed (traces)
-  Polyunsaturated omega-3
-   ALA (alpha-linolenic acid)|Plant omega-3 in flax, chia, walnuts|Essential fat; partly converted to EPA/DHA|Flaxseed, chia, walnuts, hemp, canola oil
-   SDA (stearidonic acid)|Omega-3 in hemp and echium oil|Intermediate toward EPA|Hemp seed oil, echium oil, blackcurrant seed oil
-   EPA (eicosapentaenoic acid)|Marine omega-3|Anti-inflammatory signaling|Salmon, sardines, mackerel, herring
-   DPA (docosapentaenoic acid)|Marine omega-3|Intermediate between EPA and DHA|Salmon, mackerel, seal/fish oil
-   DHA (docosahexaenoic acid)|Marine omega-3|Brain and retina structure|Salmon, sardines, mackerel, algae
-   ETA (eicosatetraenoic acid)|Omega-3 between SDA and EPA|Intermediate toward EPA|Green-lipped mussel, fish oils
-  Polyunsaturated omega-6
-   Linoleic acid (LA)|Main omega-6 in seed oils|Essential fat; skin barrier|Sunflower, safflower, corn and soybean oils, walnuts
-   Gamma-linolenic acid (GLA)|Omega-6 in borage, evening primrose|Precursor of anti-inflammatory eicosanoids|Borage oil, evening primrose oil, blackcurrant seed oil
-   Arachidonic acid (AA)|Omega-6 in meat and eggs|Precursor of eicosanoids; cell membranes|Eggs, chicken, beef, organ meats
-   DGLA (dihomo-gamma-linolenic acid)|Omega-6 C20:3|Precursor of anti-inflammatory prostaglandin E1|Organ meats; made from GLA in body
-   Adrenic acid (C22:4 n-6)|Very-long-chain omega-6|Brain and adrenal lipids|Animal fats, organ meats
-   Eicosadienoic acid (C20:2 n-6)|Omega-6 elongation product|Minor eicosanoid precursor|Pine nuts, animal tissues
-   Punicic acid|Conjugated omega-5 C18:3|Studied for anti-inflammatory effects|Pomegranate seed oil
-  Trans fats
-   Elaidic acid|Industrial trans fat from partial hydrogenation|Raises LDL, lowers HDL|Partially hydrogenated oils (mostly phased out)
-   Vaccenic acid|Natural ruminant trans fat in dairy|Partly converted to CLA|Butter, milk, beef, lamb
-   Conjugated linoleic acid (CLA)|Natural trans/conjugated fat in dairy and beef|Studied for body-composition effects|Grass-fed beef, lamb, dairy fat
-   Rumenic acid (CLA c9,t11)|Main natural CLA isomer|Studied for anti-cancer, body-composition effects|Milk fat, beef, lamb
-   CLA t10,c12|CLA isomer (mainly synthetic)|Reduces fat in animal studies|CLA supplements
-   Trans-palmitoleic acid (C16:1 t9)|Ruminant trans fat|Biomarker of dairy intake|Milk, butter, cheese
-  Sterols and other lipids
+  Trans fat :: Mostly man-made. Partial hydrogenation flips some cis double bonds to trans (hydrogens on opposite sides), straightening the chain so it packs and solidifies like saturated fat. Small amounts occur naturally in ruminant meat and dairy.
+   Industrial (partial hydrogenation) :: Made when oils are partially hydrogenated; raises LDL and lowers HDL.
+    Elaidic acid|Industrial trans fat from partial hydrogenation|Raises LDL, lowers HDL|Partially hydrogenated oils (mostly phased out)
+   Natural ruminant trans :: Formed by bacteria in the stomachs of cows, sheep and goats; found in small amounts in dairy and meat.
+    Vaccenic acid|Natural ruminant trans fat in dairy|Partly converted to CLA|Butter, milk, beef, lamb
+    Trans-palmitoleic acid (C16:1 t9)|Ruminant trans fat|Biomarker of dairy intake|Milk, butter, cheese
+    Conjugated linoleic acid (CLA)|Natural trans/conjugated fat in dairy and beef|Studied for body-composition effects|Grass-fed beef, lamb, dairy fat
+    Rumenic acid (CLA c9,t11)|Main natural CLA isomer|Studied for anti-cancer, body-composition effects|Milk fat, beef, lamb
+    CLA t10,c12|CLA isomer (mainly synthetic)|Reduces fat in animal studies|CLA supplements
+  Other lipids :: Glycerides, phospholipids, sterols and related fat-like compounds.
    Cholesterol|Animal sterol|Cell membranes; makes hormones, vitamin D, bile|Egg yolks, liver, shrimp, butter, meat
    Phospholipids (lecithin)|Fat with phosphate head group|Cell membranes; emulsifier|Egg yolk, soybeans, sunflower seeds, liver
    Medium-chain triglycerides (MCT)|Triglycerides of C6-C12 fatty acids|Absorbed directly to the liver; quick energy|Coconut oil, palm kernel oil, dairy fat
@@ -171,10 +179,6 @@ Macronutrients
    Diglycerides|Glycerol + two fatty acids|Digested like fat|Traces in all oils; E471
    Monoglycerides|Glycerol + one fatty acid|Digestion product of fat|Traces in oils; E471
    Squalene|Triterpene hydrocarbon (cholesterol precursor)|Antioxidant in skin|Olive oil, shark liver oil, amaranth
-  Other fatty acids
-   Mead acid (C20:3 n-9)|Omega-9 PUFA made when essential fats are lacking|Marker of essential fatty acid deficiency|Made in the body; traces in animal tissues
-   Ricinoleic acid|Hydroxy omega-9 fatty acid|Laxative (castor oil)|Castor oil; PGPR emulsifier
-   Pinolenic acid|Omega-6 C18:3 (delta-5)|Studied for appetite effects|Pine nuts
  Organic acids
   Citric acid|Acid in citrus fruits|Energy-cycle (Krebs) intermediate|Lemons, limes, oranges, berries
   Malic acid|Acid in apples|Krebs cycle intermediate|Apples, cherries, grapes, rhubarb
@@ -1215,7 +1219,7 @@ Processing
   Furan|Small volatile from heating sugars, ascorbic acid and fats|Possible carcinogen (IARC 2B); liver toxicity in animals|Coffee, canned and jarred foods, baby food jars
   3-MCPD esters|Chloropropanol esters formed in oil refining|Released as 3-MCPD; kidney effects in animals|Refined palm and vegetable oils, infant formula, margarine
   Glycidyl esters|Formed during high-temperature oil deodorization|Released as glycidol, a probable carcinogen (IARC 2A)|Refined palm oil, fats, infant formula
-  Industrial trans fats|Trans fatty acids from partial hydrogenation (see Macronutrients > Trans fats)|Raise LDL and lower HDL; heart disease risk|Older margarines, shortenings, fried and baked goods; banned in US and limited in EU
+  Industrial trans fats|Trans fatty acids from partial hydrogenation (see Macronutrients > Fats > Trans fat)|Raise LDL and lower HDL; heart disease risk|Older margarines, shortenings, fried and baked goods; banned in US and limited in EU
   N-nitrosamines|Such as NDMA, formed from nitrite and amines with heat|Probable carcinogens|Fried bacon, cured meats, smoked fish, beer (historically)
   Hydroxymethylfurfural (HMF)|Sugar breakdown product from heat or storage|Mostly excreted; high doses toxic in animals|Honey, dried fruit, coffee, caramel, jam
   Lipid oxidation products

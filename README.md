@@ -3,6 +3,7 @@ A searchable, collapsible tree of 1,103 compounds and items found on food labels
 Live site: https://inazipmoving-sudo.github.io/food-label-tree/
 
 Categories: Macronutrients (incl. Water, Ethanol), Micronutrients, Bioactives, Additives, Flavorings, Processing.
+Category nodes can carry a short note: write `Name :: note` on the branch line in tree.txt. The Fats restructure is in gen/fats.py.
 
 ## Build
 `python3 gen/gen.py && python3 build.py` builds `tree.txt`, then `data.json` and `data.js`. In `tree.txt`, each leaf has the format `Name|what|in the body|found in`.

@@ -56,7 +56,7 @@ Processing
   Furan|Small volatile from heating sugars, ascorbic acid and fats|Possible carcinogen (IARC 2B); liver toxicity in animals|Coffee, canned and jarred foods, baby food jars
   3-MCPD esters|Chloropropanol esters formed in oil refining|Released as 3-MCPD; kidney effects in animals|Refined palm and vegetable oils, infant formula, margarine
   Glycidyl esters|Formed during high-temperature oil deodorization|Released as glycidol, a probable carcinogen (IARC 2A)|Refined palm oil, fats, infant formula
-  Industrial trans fats|Trans fatty acids from partial hydrogenation (see Macronutrients > Trans fats)|Raise LDL and lower HDL; heart disease risk|Older margarines, shortenings, fried and baked goods; banned in US and limited in EU
+  Industrial trans fats|Trans fatty acids from partial hydrogenation (see Macronutrients > Fats > Trans fat)|Raise LDL and lower HDL; heart disease risk|Older margarines, shortenings, fried and baked goods; banned in US and limited in EU
   N-nitrosamines|Such as NDMA, formed from nitrite and amines with heat|Probable carcinogens|Fried bacon, cured meats, smoked fish, beer (historically)
   Hydroxymethylfurfural (HMF)|Sugar breakdown product from heat or storage|Mostly excreted; high doses toxic in animals|Honey, dried fruit, coffee, caramel, jam
   Lipid oxidation products

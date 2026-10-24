@@ -66,3 +66,4 @@ i=[k for k,l in enumerate(L) if l.startswith(' Alcohol (ethanol)|')][0]
 L[i:i+1]=open('water_eth.txt').read().splitlines()
 L+=open('proc.txt').read().splitlines()
 open('../tree.txt','w').write('\n'.join(L)+'\n')  # add_proc
+exec(open('fats.py').read())
