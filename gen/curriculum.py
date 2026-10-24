@@ -1,4 +1,6 @@
-# Generates curriculum/index.html and curriculum/macronutrients-fats.html (inline SVG drawn from real geometry)
+# Generates curriculum/index.html, the merged Module 1 · Fats lesson (macronutrients-fats.html) and the old step-by-step redirect.
+# Ball-and-stick images live in curriculum/img/fats/fig-NN.png (made by /workspace/nutrition/fats_basics.py + fats_merged.py).
+# The FIG list below builds the legacy SVG figures; only the tree, melting-point chart and body-fat diagram are reused.
 import math, os
 OUT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','curriculum')
 L=24  # bond length px
@@ -152,67 +154,86 @@ bf=['<rect class="skin" x="40" y="30" width="620" height="34" rx="8"/><text clas
  '<rect class="core" x="40" y="222" width="620" height="34" rx="8"/><text class="nt" x="350" y="245" text-anchor="middle">Muscle / organs (warm core)</text>']
 fig('Body fat: mostly unsaturated triglycerides','Stored human fat is mostly triglycerides rich in oleic acid, so it stays soft at body temperature. It is firmer near the cooler skin and softer deeper in.',svg(bf,(0,0,700,270),'Body fat layers'))
 
-STEPS=[
-('Meet the atoms in fat','Fat is built from just three kinds of atom: carbon (dark grey, makes 4 bonds), hydrogen (white, makes 1 bond) and oxygen (red, makes 2 bonds).'),
-('Single bond vs double bond','Two carbons can share one pair of electrons (single bond) or two pairs (double bond). Carbon always makes 4 bonds in total, so a double-bonded carbon has room for fewer hydrogens.'),
-('Carbons link into a zigzag chain','Carbons join end to end. The bond angle is about 109.5°, so a chain zigzags instead of running in a straight line. Each carbon fills its remaining bonds with hydrogen.'),
-('Three ways to draw the same chain','The same molecule as a 3D ball-and-stick model, a full structural formula, and the skeletal line drawing used on the Fats page. In a line drawing every corner is a carbon and the hydrogens on carbons are left out.'),
-('The acid head: the carboxyl group','Every fatty acid ends in a carboxyl group, –COOH: one carbon double-bonded to an oxygen and single-bonded to an O–H. This "acid" end is what later attaches to glycerol.'),
-('A fatty acid = acid head + carbon tail','Butyric acid (C4:0), the short fat in butter: an acid head plus a tail of carbons. Carbons are numbered from the head, so C1 is the acid carbon.'),
-('A long fatty acid: stearic acid','Real food fats are longer. Stearic acid has 18 carbons, C1 to C18, with no double bonds, so the zigzag runs straight.'),
-('Saturated = full of hydrogen','In a saturated chain every tail carbon holds two hydrogens (the end carbon holds three). There is no room for more, so the chain is "saturated" with hydrogen.'),
-('A double bond removes two hydrogens','Compare C9–C10 in stearic acid (single bond, four H) with oleic acid (double bond, two H). "Unsaturated" means hydrogens are missing because a double bond took their place.'),
-('Cis vs trans','At a double bond the hydrogens can sit on the same side (cis), which bends the chain, or on opposite sides (trans), which keeps it straight. Natural unsaturated fats are almost all cis.'),
-('One cis double bond = one kink: oleic acid','Oleic acid (C18:1 cis-9), the main fat in olive oil, has a single cis double bond between C9 and C10 that puts one kink in the chain.'),
-('Straight vs kinked, side by side','Stearic (saturated, straight) above oleic (cis, kinked) in the same ball-and-stick style, numbered C1 to C18 with the double bond in orange.'),
-('Space-filling: the real shape','Drawn at true atom sizes, each fatty acid is a solid rod. Stearic is a straight rod; oleic is bent at the cis double bond.'),
-('Why shape decides solid vs liquid','Straight rods stack tightly, so saturated fats like butter are solid. Kinked rods leave gaps and slide past each other, so oils like olive oil are liquid.'),
-('Omega numbers: count from the tail','Omega numbers count from the tail end (ω1 = the last carbon). If the first double bond starts at ω3 it is an omega-3 (ALA); at ω6 it is an omega-6 (linoleic acid).'),
-('Putting it together: a triglyceride','Glycerol holds three fatty acids through ester bonds. This one carries a saturated, a monounsaturated and an omega-6 chain. Almost all fat in food and in your body is built this way.'),
-]
 PN_CSS=''
 def pn(prev=None,nxt=None):
     o='<nav class="pn">'
     o+=f'<a class="pv" href="{prev[1]}"><small>← Previous lesson</small>{prev[0]}</a>' if prev else '<span style="flex:1"></span>'
     o+=f'<a class="nx" href="{nxt[1]}"><small>Next lesson →</small>{nxt[0]}</a>' if nxt else '<span style="flex:1"></span>'
     return o+'</nav>'
-BASICS=('Fats, step by step','macronutrients-fats-basics.html'); FATS=('Fats: shapes, omegas and trans','macronutrients-fats.html')
 CSS=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'curr.css')).read()
 THEME='''<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>'''
 def page(title,hero,body,extra=''):
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style></head><body>
 <div class="hero"><div class="in"><button id="theme">Dark</button>{hero}</div></div>{body}{THEME}{extra}</body></html>'''
-NOTES='''<section class="notes"><h2>Key facts</h2><ul>
-<li><b>9 kcal per gram</b> for all fats, whether saturated, unsaturated or trans (protein and carbs give 4 kcal/g).</li>
-<li><b>Melting:</b> straight chains (saturated, trans) pack tightly and are solid at room temperature. Kinked cis chains (unsaturated) are liquid. Longer chains melt higher.</li>
-<li><b>Body fat</b> is mostly triglycerides, and most of its fatty acids are unsaturated, with oleic acid the single most common.</li>
-<li><b>Firmer near the cooler skin, softer deeper in:</b> fat gets firmer as it cools. The body also tends to keep its outer fat layers slightly more unsaturated so they don't harden.</li></ul></section>'''
+
+# ---------------- Merged lesson: Module 1 · Fats (basic -> complex) ----------------
+SVG_TREE,SVG_MELT,SVG_BODY=FIG[0][2],FIG[10][2],FIG[11][2]
+import struct
+def _png_size(path):
+    with open(path,'rb') as f: f.read(16); return struct.unpack('>II',f.read(8))
+def img(n,alt):
+    w,h=_png_size(os.path.join(OUT,'img','fats',f'fig-{n:02d}.png'))  # width/height reserve space so #fig-N jumps land correctly
+    return f'<img src="img/fats/fig-{n:02d}.png" width="{w}" height="{h}" alt="Figure {n}: {alt}" loading="{"eager" if n<3 else "lazy"}" decoding="async">'
+# (title, caption, art) ; art None => ball-and-stick image img/fats/fig-NN.png
+LESSON=[
+('Meet the atoms in fat','Fat is built from just three kinds of atom: carbon (dark grey, makes 4 bonds), hydrogen (white, makes 1 bond) and oxygen (red, makes 2 bonds).',None),
+('Single bond vs double bond','Two carbons can share one pair of electrons (single bond) or two pairs (double bond). Carbon always makes 4 bonds in total, so a double-bonded carbon has room for fewer hydrogens.',None),
+('Carbons link into a zigzag chain','Carbons join end to end. The bond angle is about 109.5°, so a chain zigzags instead of running in a straight line. Each carbon fills its remaining bonds with hydrogen. This is hexane, 6 carbons.',None),
+('Three ways to draw the same chain','A is the 3D ball-and-stick model used throughout this lesson. B writes out every atom. C is the skeletal line drawing you will see in textbooks and on Wikipedia: every corner is a carbon and the hydrogens on carbons are left out. If a line drawing confuses you, picture A.',None),
+('The acid head: the carboxyl group','Every fatty acid ends in a carboxyl group, –COOH: one carbon double-bonded to an oxygen and single-bonded to an O–H. This "acid" end is what later attaches to glycerol (Figure 16).',None),
+('A fatty acid = acid head + carbon tail','Butyric acid (C4:0), the short fat in butter: an acid head plus a tail of carbons. Carbons are numbered from the head, so C1 is the acid carbon. The far end of the tail is the omega (ω) end.',None),
+('A long fatty acid: stearic acid (C18:0)','Real food fats are longer. Stearic acid has 18 carbons, C1 to C18, with no double bonds, so the zigzag runs straight. It melts at about 69 °C, so fats rich in it, like cocoa butter and beef fat, are solid.',None),
+('Saturated = full of hydrogen','In a saturated chain every tail carbon holds two hydrogens (the end carbon holds three). There is no room for more, so the chain is "saturated" with hydrogen.',None),
+('A double bond removes two hydrogens','Compare C9–C10 in stearic acid (single bond, four H) with oleic acid (double bond, two H). "Unsaturated" means hydrogens are missing because a double bond took their place.',None),
+('Cis vs trans','Same atoms, different arrangement. At a double bond the two hydrogens can sit on the same side (cis), which bends the chain, or on opposite sides (trans), which keeps it straight. Plant oils and most natural fats are cis; trans comes mainly from partial hydrogenation (Figure 18), with small natural amounts in dairy and ruminant meat (Figure 17).',None),
+('Monounsaturated: oleic acid (C18:1 cis-9)','Stearic (saturated, straight) on top, oleic below: the same 18 carbons, but oleic has one cis double bond between C9 and C10 (orange) that puts one kink in the chain. Oleic acid, the main fat in olive oil, melts at about 13 °C, so olive oil is liquid.',None),
+('Space-filling: the real shape','Drawn at true atom sizes, each fatty acid is a solid rod. Stearic is a straight rod; oleic is bent at the cis double bond.',None),
+('Why shape decides solid vs liquid','Straight rods stack tightly like pencils in a box, so saturated fats like butter, lard and cocoa butter are solid. Kinked rods leave gaps and slide past each other, so oils like olive, canola and sunflower are liquid.',None),
+('The fat family tree','The map of everything so far. Every fat gives 9 kcal per gram (protein and carbs give 4). Saturated = no double bonds; monounsaturated = one; polyunsaturated = two or more, which includes the omega-3 and omega-6 families. Trans fats are mostly made from unsaturated oils by partial hydrogenation (dashed arrow, Figure 18).',SVG_TREE),
+('Omega numbers: count from the tail','Polyunsaturated fats are named by counting from the tail (ω) end, where ω1 is the last carbon. ALA (C18:3, three cis double bonds; flax, chia, walnuts) has its first double bond at ω3, so it is an omega-3. Linoleic acid (C18:2, two cis double bonds; sunflower, corn and other seed oils) starts at ω6, so it is an omega-6.',None),
+('Putting it together: a triglyceride','Glycerol holds three fatty acids by their acid heads through ester bonds, hence "tri-glyceride". The three chains can differ: this one carries a saturated, a monounsaturated and an omega-6 chain. Almost all fat in food and in your body is built this way.',None),
+('Trans fats: industrial and ruminant','Elaidic acid has its double bond at the same spot as oleic acid (C9=C10), but in the trans shape the chain stays straight, so it packs like saturated fat and melts at about 45 °C. It is the main trans fat in partially hydrogenated oil. Vaccenic acid is the main natural trans fat: bacteria in the stomachs of cows, sheep and goats make it, and it is a few percent of the fat in milk, butter, beef and lamb.',None),
+('Hydrogenation: how oils become solid fats','Factories add hydrogen gas with a nickel catalyst and heat. Full hydrogenation removes every double bond and gives saturated fat. Partial hydrogenation stops partway: some double bonds remain and some flip from cis to trans, which is where industrial trans fat came from. Industrial trans fat is banned in the US and limited in the EU.',None),
+('Melting points compared','Approximate melting points of the pure fatty acids; the dashed line is room temperature. Straighter chains (saturated, trans) melt higher, every cis kink lowers the melting point, and longer chains melt higher.',SVG_MELT),
+('Body fat: mostly unsaturated triglycerides','Stored human fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the single most common, so it stays soft at body temperature. Fat gets firmer as it cools, so it is firmer near the cooler skin and softer deeper in.',SVG_BODY),
+]
 BODY={
-3:[('Saturated fat','Part of the structure of cell membranes (in phospholipids), a dense backup fuel stored in fat tissue, and used to make some signaling lipids. The liver can also build cholesterol, the raw material for steroid hormones, from fat breakdown products. Eating a lot raises LDL ("bad") cholesterol.')],
-4:[('Monounsaturated fat','The main fatty acids in stored body fat, your energy reserve; oleic acid is the most common. Helps keep cell membranes flexible. Diets that swap saturated fat for monounsaturated fat are linked to a better LDL/HDL cholesterol profile.')],
-6:[('All polyunsaturated fats (Figures 6–7)','The parent omega-3 (ALA) and omega-6 (linoleic acid) are essential: the body cannot make them, so they must come from food. They are raw material for signaling molecules called eicosanoids.'),
-   ('Omega-3','Its signaling molecules tend to calm inflammation. DHA is a major structural fat in the brain and retina. ALA from plants converts only poorly to EPA and DHA, so fish or algae are the direct sources.')],
-7:[('Omega-6','Through arachidonic acid it makes signals for immune responses, inflammation and blood clotting. Too much omega-6 relative to omega-3 may tilt the balance toward inflammation.')],
-9:[('Trans fat','The body does not handle the straight trans shape like natural unsaturated fat; it packs into cell membranes much like saturated fat. It raises LDL and lowers HDL and is strongly linked to heart disease, which is why industrial trans fat is now mostly banned in the US.')]}
+8:[('Saturated fat','Part of the structure of cell membranes (in phospholipids), a dense backup fuel stored in fat tissue, and used to make some signaling lipids. The liver can also build cholesterol, the raw material for steroid hormones, from fat breakdown products. Eating a lot raises LDL ("bad") cholesterol.')],
+11:[('Monounsaturated fat','The main fatty acids in stored body fat, your energy reserve; oleic acid is the most common. Helps keep cell membranes flexible. Diets that swap saturated fat for monounsaturated fat are linked to a better LDL/HDL cholesterol profile.')],
+15:[('All polyunsaturated fats','The parent omega-3 (ALA) and omega-6 (linoleic acid) are essential: the body cannot make them, so they must come from food. They are raw material for signaling molecules called eicosanoids.'),
+    ('Omega-3','Its signaling molecules tend to calm inflammation. DHA is a major structural fat in the brain and retina. ALA from plants converts only poorly to EPA and DHA, so fish or algae are the direct sources.'),
+    ('Omega-6','Through arachidonic acid it makes signals for immune responses, inflammation and blood clotting. Too much omega-6 relative to omega-3 may tilt the balance toward inflammation.')],
+17:[('Trans fat','The body does not handle the straight trans shape like natural unsaturated fat; it packs into cell membranes much like saturated fat. It raises LDL and lowers HDL and is strongly linked to heart disease, which is why industrial trans fat is now mostly banned in the US.'),
+    ('Ruminant trans fat','Eaten in much smaller amounts. At normal intakes the evidence of harm is weaker; in high-dose trials it raises LDL much like industrial trans fat.')]}
+NOTE={20:'<b>Evidence note:</b> It is often said the body keeps its outer fat layers slightly more unsaturated so they don\'t harden. That is well shown in pigs and other animals, but the evidence in humans is weaker.'}
+QUIZ=[('How many bonds does carbon make, and how many does hydrogen make?','Carbon 4, hydrogen 1, oxygen 2 (Figure 1).'),
+('What does "saturated" mean?','Every tail carbon holds as many hydrogens as it can, because there are no double bonds (Figure 8).'),
+('Why is butter solid at room temperature while olive oil is liquid?','Butter is rich in saturated fatty acids with straight chains that pack tightly. Olive oil is mostly oleic acid, whose cis double bond kinks the chain so it can\'t pack (Figures 11 and 13).'),
+('What does the "3" in omega-3 mean, and where do you start counting?','Count from the tail (ω) end, ω1 = last carbon; the first double bond starts at carbon 3 (Figure 15).'),
+('Which omega-3s come straight from fish or algae?','EPA and DHA. Plant ALA converts to them only poorly (Figure 15, pink box).'),
+('How is industrial trans fat made, and why does it behave like saturated fat?','By partial hydrogenation of vegetable oil, which flips some cis double bonds to trans (Figure 18). A trans double bond keeps the chain straight, so it packs and solidifies like saturated fat (Figures 10 and 17).'),
+('Name a natural source of trans fat.','Milk, butter, cheese, beef or lamb: vaccenic acid made by bacteria in cows, sheep and goats (Figure 17).'),
+('Do steroid hormones come from saturated fat?','No. They are made from cholesterol, which the liver can build from fat breakdown products (Figure 8, pink box).')]
 def callout(i):
-    if i not in BODY: return ''
-    return '<aside class="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
-figs=''.join(f'<figure class="fig" id="fig-{i}"><div class="fh"><a class="badge" href="#fig-{i}">{i}</a><div><div class="fl">Figure {i}</div><h3>{t}</h3></div></div><div class="art">{b}</div><figcaption>{c}</figcaption>{callout(i)}</figure>' for i,(t,c,b) in enumerate(FIG,1))
-idx=''.join(f'<a href="#fig-{i}" title="{t}">{i}</a>' for i,(t,c,b) in enumerate(FIG,1))
+    o=''
+    if i in BODY: o+='<aside class="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
+    if i in NOTE: o+=f'<aside class="enote">{NOTE[i]}</aside>'
+    return o
+figs=''.join(f'<figure class="fig" id="fig-{i}"><div class="fh"><a class="badge" href="#fig-{i}">{i}</a><div><div class="fl">Figure {i}</div><h3>{t}</h3></div></div><div class="art">{a if a else img(i,t)}</div><figcaption>{c}</figcaption>{callout(i)}</figure>' for i,(t,c,a) in enumerate(LESSON,1))
+idx=''.join(f'<a href="#fig-{i}" title="{t}">{i}</a>' for i,(t,c,a) in enumerate(LESSON,1))
+quiz='<section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section>'
 SPY='''<script>const links=[...document.querySelectorAll('.findex a')],figs=[...document.querySelectorAll('.fig')];let cur='';function spy(){let id=figs[0].id;for(const f of figs)if(f.getBoundingClientRect().top<=window.innerHeight*0.35)id=f.id;if(innerHeight+scrollY>=document.body.scrollHeight-4&&!location.hash)id=figs[figs.length-1].id;if(id!=cur){cur=id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+id));const a=links.find(a=>a.classList.contains('on'));a&&a.parentNode.scrollTo({left:a.offsetLeft-a.parentNode.clientWidth/2,behavior:'smooth'})}}addEventListener('scroll',spy,{passive:true});addEventListener('hashchange',()=>setTimeout(spy,400));spy();</script>'''
-open(os.path.join(OUT,'macronutrients-fats.html'),'w').write(page('Fats · Curriculum · Food Label Tree',
- '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Macronutrients: Fats</h1><p>Shapes, double bonds and why some fats are solid. Tell students "go to Figure N".</p><p class="pnl">New to this? Start with <a href="macronutrients-fats-basics.html">Fats, step by step</a>.</p>',
- f'<div class="findex"><span>Figures</span>{idx}</div><main>{figs}{NOTES}</main>'+pn(prev=BASICS),PN_CSS+SPY))
-sfigs=''.join(f'<figure class="fig" id="step-{i}"><div class="fh"><a class="badge" href="#step-{i}">{i}</a><div><div class="fl">Step {i}</div><h3>{t}</h3></div></div><div class="art"><img src="img/fats-basics/step-{i:02d}.png" alt="Step {i}: {t}" loading="{"eager" if i<3 else "lazy"}" decoding="async"></div><figcaption>{c}</figcaption></figure>' for i,(t,c) in enumerate(STEPS,1))
-sidx=''.join(f'<a href="#step-{i}" title="{t}">{i}</a>' for i,(t,c) in enumerate(STEPS,1))
-open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write(page('Fats, step by step · Curriculum · Food Label Tree',
- '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats, step by step</h1><p>From single atoms to a whole fat molecule in 16 steps. Tell students "go to Step N".</p><p class="pnl">Next: <a href="macronutrients-fats.html">Fats: shapes, omegas and trans</a> →</p>',
- f'<div class="findex"><span>Steps</span>{sidx}</div><main>{sfigs}</main>'+pn(nxt=FATS),PN_CSS+SPY))
-MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats, step by step','macronutrients-fats-basics.html',f'{len(STEPS)} steps'),('Fats','macronutrients-fats.html',f'{len(FIG)} figures')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
+open(os.path.join(OUT,'macronutrients-fats.html'),'w').write(page('Module 1 · Fats · Curriculum · Food Label Tree',
+ f'<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>From single atoms to trans fats in {len(LESSON)} figures, basic to complex. Tell students "go to Figure N". Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
+ f'<div class="findex"><span>Figures</span>{idx}</div><main>{figs}{quiz}</main>',SPY))
+# Old step-by-step page -> tiny redirect (maps #step-N to the new #fig-N)
+STEP2FIG={1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9,10:10,11:11,12:11,13:12,14:13,15:15,16:16}
+open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved: Module 1 · Fats</title><meta http-equiv="refresh" content="0; url=macronutrients-fats.html"><link rel="canonical" href="macronutrients-fats.html"><script>var m={'+','.join(f'{k}:{v}' for k,v in STEP2FIG.items())+'},s=/^#step-(\\d+)$/.exec(location.hash);location.replace("macronutrients-fats.html"+(s&&m[s[1]]?"#fig-"+m[s[1]]:""))</script></head><body><p>This lesson moved to <a href="macronutrients-fats.html">Module 1 · Fats</a>.</p></body></html>\n')
+MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats','macronutrients-fats.html',f'{len(LESSON)} figures')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
 cards=''
 for n,nm,ic,c,live,soon in MOD:
     items=''.join(f'<a class="les" href="{h}">{t} <span>{k} →</span></a>' for t,h,k in live)+''.join(f'<div class="les off">{t} <span>coming soon</span></div>' for t in soon)
     if not live: items='<div class="les off">Coming soon</div>'
     cards+=f'<section class="mod" style="--a:{c}"><div class="mh"><span class="mn">{n}</span><span class="ico">{ic}</span><h2>Module {n} · {nm}</h2></div>{items}</section>'
 open(os.path.join(OUT,'index.html'),'w').write(page('Curriculum · Food Label Tree','<nav class="crumbs"><a href="../">Food Label Tree</a> › Curriculum</nav><h1>Curriculum</h1><p>Lessons with numbered figures, made for teaching by phone.</p>',f'<main class="mods">{cards}</main>'))
-print(len(FIG),'figures')
+print(len(LESSON),'figures')
