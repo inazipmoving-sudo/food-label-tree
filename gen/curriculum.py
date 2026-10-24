@@ -176,6 +176,7 @@ def img(n,alt):
     return f'<img src="img/fats/fig-{n:02d}.png" width="{w}" height="{h}" alt="Figure {n}: {alt}" loading="{"eager" if n<3 else "lazy"}" decoding="async">'
 # (title, caption, art) ; art None => ball-and-stick image img/fats/fig-NN.png
 LESSON=[
+('The fat family tree: the map of this lesson','Here is the map of where this lesson is heading; we will build up to each branch, starting from single atoms. Every fat gives 9 kcal per gram (protein and carbs give 4). Saturated fats have no double bonds (Figures 8–9); monounsaturated have one (Figure 12); polyunsaturated have two or more and include the omega-3 and omega-6 families (Figure 15). Trans fats are mostly made from unsaturated oils by partial hydrogenation, the dashed arrow (Figures 17–18).',SVG_TREE),
 ('Meet the atoms in fat','Fat is built from just three kinds of atom: carbon (dark grey, makes 4 bonds), hydrogen (white, makes 1 bond) and oxygen (red, makes 2 bonds).',None),
 ('Single bond vs double bond','Two carbons can share one pair of electrons (single bond) or two pairs (double bond). Carbon always makes 4 bonds in total, so a double-bonded carbon has room for fewer hydrogens.',None),
 ('Carbons link into a zigzag chain','Carbons join end to end. The bond angle is about 109.5°, so a chain zigzags instead of running in a straight line. Each carbon fills its remaining bonds with hydrogen. This is hexane, 6 carbons.',None),
@@ -189,7 +190,6 @@ LESSON=[
 ('Monounsaturated: oleic acid (C18:1 cis-9)','Stearic (saturated, straight) on top, oleic below: the same 18 carbons, but oleic has one cis double bond between C9 and C10 (orange) that puts one kink in the chain. Oleic acid, the main fat in olive oil, melts at about 13 °C, so olive oil is liquid.',None),
 ('Space-filling: the real shape','Drawn at true atom sizes, each fatty acid is a solid rod. Stearic is a straight rod; oleic is bent at the cis double bond.',None),
 ('Why shape decides solid vs liquid','Straight rods stack tightly like pencils in a box, so saturated fats like butter, lard and cocoa butter are solid. Kinked rods leave gaps and slide past each other, so oils like olive, canola and sunflower are liquid.',None),
-('The fat family tree','The map of everything so far. Every fat gives 9 kcal per gram (protein and carbs give 4). Saturated = no double bonds; monounsaturated = one; polyunsaturated = two or more, which includes the omega-3 and omega-6 families. Trans fats are mostly made from unsaturated oils by partial hydrogenation (dashed arrow, Figure 18).',SVG_TREE),
 ('Omega numbers: count from the tail','Polyunsaturated fats are named by counting from the tail (ω) end, where ω1 is the last carbon. ALA (C18:3, three cis double bonds; flax, chia, walnuts) has its first double bond at ω3, so it is an omega-3. Linoleic acid (C18:2, two cis double bonds; sunflower, corn and other seed oils) starts at ω6, so it is an omega-6.',None),
 ('Putting it together: a triglyceride','Glycerol holds three fatty acids by their acid heads through ester bonds, hence "tri-glyceride". The three chains can differ: this one carries a saturated, a monounsaturated and an omega-6 chain. Almost all fat in food and in your body is built this way.',None),
 ('Trans fats: industrial and ruminant','Elaidic acid has its double bond at the same spot as oleic acid (C9=C10), but in the trans shape the chain stays straight, so it packs like saturated fat and melts at about 45 °C. It is the main trans fat in partially hydrogenated oil. Vaccenic acid is the main natural trans fat: bacteria in the stomachs of cows, sheep and goats make it, and it is a few percent of the fat in milk, butter, beef and lamb.',None),
@@ -198,22 +198,22 @@ LESSON=[
 ('Body fat: mostly unsaturated triglycerides','Stored human fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the single most common, so it stays soft at body temperature. Fat gets firmer as it cools, so it is firmer near the cooler skin and softer deeper in.',SVG_BODY),
 ]
 BODY={
-8:[('Saturated fat','Part of the structure of cell membranes (in phospholipids), a dense backup fuel stored in fat tissue, and used to make some signaling lipids. The liver can also build cholesterol, the raw material for steroid hormones, from fat breakdown products. Eating a lot raises LDL ("bad") cholesterol.')],
-11:[('Monounsaturated fat','The main fatty acids in stored body fat, your energy reserve; oleic acid is the most common. Helps keep cell membranes flexible. Diets that swap saturated fat for monounsaturated fat are linked to a better LDL/HDL cholesterol profile.')],
+9:[('Saturated fat','Part of the structure of cell membranes (in phospholipids), a dense backup fuel stored in fat tissue, and used to make some signaling lipids. The liver can also build cholesterol, the raw material for steroid hormones, from fat breakdown products. Eating a lot raises LDL ("bad") cholesterol.')],
+12:[('Monounsaturated fat','The main fatty acids in stored body fat, your energy reserve; oleic acid is the most common. Helps keep cell membranes flexible. Diets that swap saturated fat for monounsaturated fat are linked to a better LDL/HDL cholesterol profile.')],
 15:[('All polyunsaturated fats','The parent omega-3 (ALA) and omega-6 (linoleic acid) are essential: the body cannot make them, so they must come from food. They are raw material for signaling molecules called eicosanoids.'),
     ('Omega-3','Its signaling molecules tend to calm inflammation. DHA is a major structural fat in the brain and retina. ALA from plants converts only poorly to EPA and DHA, so fish or algae are the direct sources.'),
     ('Omega-6','Through arachidonic acid it makes signals for immune responses, inflammation and blood clotting. Too much omega-6 relative to omega-3 may tilt the balance toward inflammation.')],
 17:[('Trans fat','The body does not handle the straight trans shape like natural unsaturated fat; it packs into cell membranes much like saturated fat. It raises LDL and lowers HDL and is strongly linked to heart disease, which is why industrial trans fat is now mostly banned in the US.'),
     ('Ruminant trans fat','Eaten in much smaller amounts. At normal intakes the evidence of harm is weaker; in high-dose trials it raises LDL much like industrial trans fat.')]}
 NOTE={20:'<b>Evidence note:</b> It is often said the body keeps its outer fat layers slightly more unsaturated so they don\'t harden. That is well shown in pigs and other animals, but the evidence in humans is weaker.'}
-QUIZ=[('How many bonds does carbon make, and how many does hydrogen make?','Carbon 4, hydrogen 1, oxygen 2 (Figure 1).'),
-('What does "saturated" mean?','Every tail carbon holds as many hydrogens as it can, because there are no double bonds (Figure 8).'),
-('Why is butter solid at room temperature while olive oil is liquid?','Butter is rich in saturated fatty acids with straight chains that pack tightly. Olive oil is mostly oleic acid, whose cis double bond kinks the chain so it can\'t pack (Figures 11 and 13).'),
+QUIZ=[('How many bonds does carbon make, and how many does hydrogen make?','Carbon 4, hydrogen 1, oxygen 2 (Figure 2).'),
+('What does "saturated" mean?','Every tail carbon holds as many hydrogens as it can, because there are no double bonds (Figure 9).'),
+('Why is butter solid at room temperature while olive oil is liquid?','Butter is rich in saturated fatty acids with straight chains that pack tightly. Olive oil is mostly oleic acid, whose cis double bond kinks the chain so it can\'t pack (Figures 12 and 14).'),
 ('What does the "3" in omega-3 mean, and where do you start counting?','Count from the tail (ω) end, ω1 = last carbon; the first double bond starts at carbon 3 (Figure 15).'),
 ('Which omega-3s come straight from fish or algae?','EPA and DHA. Plant ALA converts to them only poorly (Figure 15, pink box).'),
-('How is industrial trans fat made, and why does it behave like saturated fat?','By partial hydrogenation of vegetable oil, which flips some cis double bonds to trans (Figure 18). A trans double bond keeps the chain straight, so it packs and solidifies like saturated fat (Figures 10 and 17).'),
+('How is industrial trans fat made, and why does it behave like saturated fat?','By partial hydrogenation of vegetable oil, which flips some cis double bonds to trans (Figure 18). A trans double bond keeps the chain straight, so it packs and solidifies like saturated fat (Figures 11 and 17).'),
 ('Name a natural source of trans fat.','Milk, butter, cheese, beef or lamb: vaccenic acid made by bacteria in cows, sheep and goats (Figure 17).'),
-('Do steroid hormones come from saturated fat?','No. They are made from cholesterol, which the liver can build from fat breakdown products (Figure 8, pink box).')]
+('Do steroid hormones come from saturated fat?','No. They are made from cholesterol, which the liver can build from fat breakdown products (Figure 9, pink box).')]
 def callout(i):
     o=''
     if i in BODY: o+='<aside class="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
@@ -227,7 +227,7 @@ open(os.path.join(OUT,'macronutrients-fats.html'),'w').write(page('Module 1 · F
  f'<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>From single atoms to trans fats in {len(LESSON)} figures, basic to complex. Tell students "go to Figure N". Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
  f'<div class="findex"><span>Figures</span>{idx}</div><main>{figs}{quiz}</main>',SPY))
 # Old step-by-step page -> tiny redirect (maps #step-N to the new #fig-N)
-STEP2FIG={1:1,2:2,3:3,4:4,5:5,6:6,7:7,8:8,9:9,10:10,11:11,12:11,13:12,14:13,15:15,16:16}
+STEP2FIG={1:2,2:3,3:4,4:5,5:6,6:7,7:8,8:9,9:10,10:11,11:12,12:12,13:13,14:14,15:15,16:16}
 open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved: Module 1 · Fats</title><meta http-equiv="refresh" content="0; url=macronutrients-fats.html"><link rel="canonical" href="macronutrients-fats.html"><script>var m={'+','.join(f'{k}:{v}' for k,v in STEP2FIG.items())+'},s=/^#step-(\\d+)$/.exec(location.hash);location.replace("macronutrients-fats.html"+(s&&m[s[1]]?"#fig-"+m[s[1]]:""))</script></head><body><p>This lesson moved to <a href="macronutrients-fats.html">Module 1 · Fats</a>.</p></body></html>\n')
 MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats','macronutrients-fats.html',f'{len(LESSON)} figures')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
 cards=''
