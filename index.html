@@ -10,7 +10,7 @@
 .sbox{background:var(--card);border-radius:16px;box-shadow:0 8px 30px #0000001f;padding:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 #q{flex:1 1 240px;border:0;background:var(--chip);color:var(--text);border-radius:12px;padding:12px 14px;font:inherit;font-size:1rem;outline:none}#q:focus{box-shadow:0 0 0 2px #6366f1}
 .btn{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:10px;padding:9px 12px;font:inherit;font-size:.85rem;cursor:pointer}.btn:hover{background:var(--chip)}
-#info{font-size:.8rem;color:var(--muted);padding:0 4px}
+.topnav{margin-bottom:8px}.topnav a{color:#fff;text-decoration:none;font-weight:600;background:#ffffff26;border:1px solid #ffffff40;border-radius:999px;padding:6px 14px;display:inline-block}.topnav a:hover{background:#ffffff40}#info{font-size:.8rem;color:var(--muted);padding:0 4px}
 main{max-width:900px;margin:18px auto 60px;padding:0 16px}ul{list-style:none;margin:0;padding:0}
 .top{background:var(--card);border-radius:16px;box-shadow:var(--shadow);margin-bottom:12px;border-left:5px solid var(--a);overflow:hidden}
 .kids{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s ease}.kids>ul{overflow:hidden;min-height:0}.open>.kids{grid-template-rows:1fr}
@@ -27,7 +27,7 @@ main{max-width:900px;margin:18px auto 60px;padding:0 16px}ul{list-style:none;mar
 .kids>ul>li.bnote{border-left:0;margin:2px 0 6px 10px;padding:7px 11px;font-size:.84rem;line-height:1.45;color:var(--muted);background:color-mix(in srgb,var(--a) 8%,transparent);border-radius:10px;font-style:italic}.hidden{display:none!important}mark{background:#fde047;color:#111;border-radius:3px;padding:0 2px}
 @media(max-width:600px){.hero{padding:24px 16px 56px}#theme{position:static;margin-bottom:10px}.kids>ul>li{margin-left:6px;padding-left:8px}.card{margin-left:4px}}
 </style></head><body>
-<div class="hero"><div class="in"><button id="theme">🌙 Dark</button><h1>🍎 Food Label Tree</h1><p>Over 1,000 nutrients, bioactives, additives, flavor compounds and processing by-products from the back of food labels — what they are, what they do, and where they come from.</p></div></div>
+<div class="hero"><div class="in"><button id="theme">🌙 Dark</button><nav class="topnav"><a id="curr" href="curriculum/">📚 Curriculum</a></nav><h1>🍎 Food Label Tree</h1><p>Over 1,000 nutrients, bioactives, additives, flavor compounds and processing by-products from the back of food labels — what they are, what they do, and where they come from.</p></div></div>
 <div class="sbar"><div class="sbox"><input id="q" placeholder="Search a compound or food — salmon, B12, E211, omega-3…"><button class="btn" id="ex">Expand all</button><button class="btn" id="co">Collapse all</button><span id="info"></span></div></div>
 <main><ul id="tree"></ul></main><script src="data.js"></script><script>
 const T=window.TREE,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
