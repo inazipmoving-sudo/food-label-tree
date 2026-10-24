@@ -170,7 +170,7 @@ STEPS=[
 ('Omega numbers: count from the tail','Omega numbers count from the tail end (ω1 = the last carbon). If the first double bond starts at ω3 it is an omega-3 (ALA); at ω6 it is an omega-6 (linoleic acid).'),
 ('Putting it together: a triglyceride','Glycerol holds three fatty acids through ester bonds. This one carries a saturated, a monounsaturated and an omega-6 chain. Almost all fat in food and in your body is built this way.'),
 ]
-PN_CSS='<style>.pn{display:flex;justify-content:space-between;gap:12px;max-width:960px;margin:0 auto 40px;padding:0 16px}.pn a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;text-decoration:none;font-weight:600}.pn a.nx{text-align:right}.pn small{display:block;color:var(--muted);font-weight:500}.art img{display:block;width:100%;height:auto;background:#fff;border-radius:10px}.hero .pnl{margin-top:10px;font-size:.9rem}.hero .pnl a{border-bottom:1px solid #ffffff80;text-decoration:none}</style>'
+PN_CSS=''
 def pn(prev=None,nxt=None):
     o='<nav class="pn">'
     o+=f'<a class="pv" href="{prev[1]}"><small>← Previous lesson</small>{prev[0]}</a>' if prev else '<span style="flex:1"></span>'
@@ -178,10 +178,10 @@ def pn(prev=None,nxt=None):
     return o+'</nav>'
 BASICS=('Fats, step by step','macronutrients-fats-basics.html'); FATS=('Fats: shapes, omegas and trans','macronutrients-fats.html')
 CSS=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'curr.css')).read()
-THEME='''<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'☀️ Light':'🌙 Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>'''
+THEME='''<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>'''
 def page(title,hero,body,extra=''):
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style></head><body>
-<div class="hero"><div class="in"><button id="theme">🌙 Dark</button>{hero}</div></div>{body}{THEME}{extra}</body></html>'''
+<div class="hero"><div class="in"><button id="theme">Dark</button>{hero}</div></div>{body}{THEME}{extra}</body></html>'''
 NOTES='''<section class="notes"><h2>Key facts</h2><ul>
 <li><b>9 kcal per gram</b> for all fats, whether saturated, unsaturated or trans (protein and carbs give 4 kcal/g).</li>
 <li><b>Melting:</b> straight chains (saturated, trans) pack tightly and are solid at room temperature. Kinked cis chains (unsaturated) are liquid. Longer chains melt higher.</li>
@@ -196,7 +196,7 @@ BODY={
 9:[('Trans fat','The body does not handle the straight trans shape like natural unsaturated fat; it packs into cell membranes much like saturated fat. It raises LDL and lowers HDL and is strongly linked to heart disease, which is why industrial trans fat is now mostly banned in the US.')]}
 def callout(i):
     if i not in BODY: return ''
-    return '<aside class="body"><div class="bh">🫀 What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
+    return '<aside class="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
 figs=''.join(f'<figure class="fig" id="fig-{i}"><div class="fh"><a class="badge" href="#fig-{i}">{i}</a><div><div class="fl">Figure {i}</div><h3>{t}</h3></div></div><div class="art">{b}</div><figcaption>{c}</figcaption>{callout(i)}</figure>' for i,(t,c,b) in enumerate(FIG,1))
 idx=''.join(f'<a href="#fig-{i}" title="{t}">{i}</a>' for i,(t,c,b) in enumerate(FIG,1))
 SPY='''<script>const links=[...document.querySelectorAll('.findex a')],figs=[...document.querySelectorAll('.fig')];let cur='';function spy(){let id=figs[0].id;for(const f of figs)if(f.getBoundingClientRect().top<=window.innerHeight*0.35)id=f.id;if(innerHeight+scrollY>=document.body.scrollHeight-4&&!location.hash)id=figs[figs.length-1].id;if(id!=cur){cur=id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+id));const a=links.find(a=>a.classList.contains('on'));a&&a.parentNode.scrollTo({left:a.offsetLeft-a.parentNode.clientWidth/2,behavior:'smooth'})}}addEventListener('scroll',spy,{passive:true});addEventListener('hashchange',()=>setTimeout(spy,400));spy();</script>'''
@@ -208,11 +208,11 @@ sidx=''.join(f'<a href="#step-{i}" title="{t}">{i}</a>' for i,(t,c) in enumerate
 open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write(page('Fats, step by step · Curriculum · Food Label Tree',
  '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats, step by step</h1><p>From single atoms to a whole fat molecule in 16 steps. Tell students "go to Step N".</p><p class="pnl">Next: <a href="macronutrients-fats.html">Fats: shapes, omegas and trans</a> →</p>',
  f'<div class="findex"><span>Steps</span>{sidx}</div><main>{sfigs}</main>'+pn(nxt=FATS),PN_CSS+SPY))
-MOD=[('1','Macronutrients','🍗','#f97316',[('Fats, step by step','macronutrients-fats-basics.html',f'{len(STEPS)} steps'),('Fats','macronutrients-fats.html',f'{len(FIG)} figures')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','💊','#8b5cf6',[],[]),('3','Additives','🧪','#ef4444',[],[]),('4','Antinutrients','🚫','#64748b',[],[]),('5','Processing','🏭','#0ea5e9',[],[])]
+MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats, step by step','macronutrients-fats-basics.html',f'{len(STEPS)} steps'),('Fats','macronutrients-fats.html',f'{len(FIG)} figures')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
 cards=''
 for n,nm,ic,c,live,soon in MOD:
     items=''.join(f'<a class="les" href="{h}">{t} <span>{k} →</span></a>' for t,h,k in live)+''.join(f'<div class="les off">{t} <span>coming soon</span></div>' for t in soon)
     if not live: items='<div class="les off">Coming soon</div>'
     cards+=f'<section class="mod" style="--a:{c}"><div class="mh"><span class="mn">{n}</span><span class="ico">{ic}</span><h2>Module {n} · {nm}</h2></div>{items}</section>'
-open(os.path.join(OUT,'index.html'),'w').write(page('Curriculum · Food Label Tree','<nav class="crumbs"><a href="../">Food Label Tree</a> › Curriculum</nav><h1>📚 Curriculum</h1><p>Lessons with numbered figures, made for teaching by phone.</p>',f'<main class="mods">{cards}</main>'))
+open(os.path.join(OUT,'index.html'),'w').write(page('Curriculum · Food Label Tree','<nav class="crumbs"><a href="../">Food Label Tree</a> › Curriculum</nav><h1>Curriculum</h1><p>Lessons with numbered figures, made for teaching by phone.</p>',f'<main class="mods">{cards}</main>'))
 print(len(FIG),'figures')

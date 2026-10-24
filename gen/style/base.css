@@ -1,0 +1,17 @@
+:root{--hdr:#E4E4E4;--bg:#F0F0F0;--hair:#CBCBCB;--card:#F7F7F5;--text:#2B2B2B;--muted:#6E6E6E;--line:#D9D8D4;--chip:#ECEBE7;--acc:#3E5C76;--acc-soft:#3E5C7614;--mark:#E7DCC3;--vein:.045;--serif:"Cormorant Garamond","Cormorant",Garamond,"EB Garamond",Georgia,"Times New Roman",serif;--sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+[data-theme=dark]{--hdr:#262625;--bg:#1F1F1E;--hair:#3A3936;--card:#2A2A28;--text:#E8E6E1;--muted:#A19E97;--line:#3A3936;--chip:#32322F;--acc:#8FA9C2;--acc-soft:#8FA9C21c;--mark:#5A4F38;--vein:.04}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+a{color:inherit}
+.hero{position:relative;background-color:var(--hdr);color:var(--text);border-bottom:1px solid var(--hair);padding:44px 24px 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:var(--vein);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='260' viewBox='0 0 900 260'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round'%3E%3Cpath d='M-20 70 C 120 40, 210 120, 340 90 S 560 20, 700 70 S 860 140, 940 100' stroke-width='1.1'/%3E%3Cpath d='M-20 190 C 90 170, 180 210, 300 175 S 520 120, 640 160 S 820 230, 940 190' stroke-width='.8'/%3E%3Cpath d='M180 -10 C 220 60, 200 120, 260 170 S 300 250, 330 280' stroke-width='.6'/%3E%3Cpath d='M610 -10 C 590 50, 640 90, 620 150 S 660 230, 650 280' stroke-width='.5'/%3E%3Cpath d='M340 90 C 380 110, 420 105, 470 130' stroke-width='.5'/%3E%3C/g%3E%3C/svg%3E");background-size:900px 260px;background-repeat:repeat}
+[data-theme=dark] .hero::before{filter:invert(1)}
+.hero .in{max-width:920px;margin:auto;position:relative}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3.1rem);letter-spacing:.005em;line-height:1.1;margin:8px 0 0}
+.hero p{margin:10px 0 0;color:var(--muted);max-width:640px}
+#theme{position:absolute;right:0;top:0;background:transparent;border:1px solid var(--hair);color:var(--muted);border-radius:4px;padding:5px 12px;cursor:pointer;font:inherit;font-size:.72rem;text-transform:uppercase;letter-spacing:.16em}#theme:hover{color:var(--text);border-color:var(--muted)}
+.crumbs,.topnav{font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}.crumbs a,.topnav a{text-decoration:none;border-bottom:1px solid var(--hair);padding-bottom:1px}.crumbs a:hover,.topnav a:hover{color:var(--acc);border-color:var(--acc)}
+.hero .pnl{font-size:.9rem;margin-top:14px}.hero .pnl a{color:var(--acc);text-decoration:none;border-bottom:1px solid currentColor}
+.lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-weight:500}
+:root{--c-macronutrients:#A86B53;--c-micronutrients:#66788A;--c-bioactives:#7A8256;--c-additives:#A98A4E;--c-flavorings:#9C8A70;--c-processing:#3E5C76;--c-antinutrients:#7E7A72}
+[data-theme=dark]{--c-macronutrients:#C99582;--c-micronutrients:#9AAABA;--c-bioactives:#A8AF85;--c-additives:#CDB07A;--c-flavorings:#C4B49A;--c-processing:#8FA9C2;--c-antinutrients:#ABA79E}
+h1,h2,h3,.badge,.findex a,.mn,.pn a,.top>.row{font-variant-numeric:lining-nums}
