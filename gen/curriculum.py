@@ -151,6 +151,32 @@ bf=['<rect class="skin" x="40" y="30" width="620" height="34" rx="8"/><text clas
  '<rect class="fat2" x="40" y="146" width="620" height="70" rx="8"/><text class="nt" x="350" y="176" text-anchor="middle">Deeper fat: softer</text><text class="lab" x="350" y="200" text-anchor="middle">at core body temperature (~37 °C)</text>',
  '<rect class="core" x="40" y="222" width="620" height="34" rx="8"/><text class="nt" x="350" y="245" text-anchor="middle">Muscle / organs (warm core)</text>']
 fig('Body fat: mostly unsaturated triglycerides','Stored human fat is mostly triglycerides rich in oleic acid, so it stays soft at body temperature. It is firmer near the cooler skin and softer deeper in.',svg(bf,(0,0,700,270),'Body fat layers'))
+
+STEPS=[
+('Meet the atoms in fat','Fat is built from just three kinds of atom: carbon (dark grey, makes 4 bonds), hydrogen (white, makes 1 bond) and oxygen (red, makes 2 bonds).'),
+('Single bond vs double bond','Two carbons can share one pair of electrons (single bond) or two pairs (double bond). Carbon always makes 4 bonds in total, so a double-bonded carbon has room for fewer hydrogens.'),
+('Carbons link into a zigzag chain','Carbons join end to end. The bond angle is about 109.5°, so a chain zigzags instead of running in a straight line. Each carbon fills its remaining bonds with hydrogen.'),
+('Three ways to draw the same chain','The same molecule as a 3D ball-and-stick model, a full structural formula, and the skeletal line drawing used on the Fats page. In a line drawing every corner is a carbon and the hydrogens on carbons are left out.'),
+('The acid head: the carboxyl group','Every fatty acid ends in a carboxyl group, –COOH: one carbon double-bonded to an oxygen and single-bonded to an O–H. This "acid" end is what later attaches to glycerol.'),
+('A fatty acid = acid head + carbon tail','Butyric acid (C4:0), the short fat in butter: an acid head plus a tail of carbons. Carbons are numbered from the head, so C1 is the acid carbon.'),
+('A long fatty acid: stearic acid','Real food fats are longer. Stearic acid has 18 carbons, C1 to C18, with no double bonds, so the zigzag runs straight.'),
+('Saturated = full of hydrogen','In a saturated chain every tail carbon holds two hydrogens (the end carbon holds three). There is no room for more, so the chain is "saturated" with hydrogen.'),
+('A double bond removes two hydrogens','Compare C9–C10 in stearic acid (single bond, four H) with oleic acid (double bond, two H). "Unsaturated" means hydrogens are missing because a double bond took their place.'),
+('Cis vs trans','At a double bond the hydrogens can sit on the same side (cis), which bends the chain, or on opposite sides (trans), which keeps it straight. Natural unsaturated fats are almost all cis.'),
+('One cis double bond = one kink: oleic acid','Oleic acid (C18:1 cis-9), the main fat in olive oil, has a single cis double bond between C9 and C10 that puts one kink in the chain.'),
+('Straight vs kinked, side by side','Stearic (saturated, straight) above oleic (cis, kinked) in the same ball-and-stick style, numbered C1 to C18 with the double bond in orange.'),
+('Space-filling: the real shape','Drawn at true atom sizes, each fatty acid is a solid rod. Stearic is a straight rod; oleic is bent at the cis double bond.'),
+('Why shape decides solid vs liquid','Straight rods stack tightly, so saturated fats like butter are solid. Kinked rods leave gaps and slide past each other, so oils like olive oil are liquid.'),
+('Omega numbers: count from the tail','Omega numbers count from the tail end (ω1 = the last carbon). If the first double bond starts at ω3 it is an omega-3 (ALA); at ω6 it is an omega-6 (linoleic acid).'),
+('Putting it together: a triglyceride','Glycerol holds three fatty acids through ester bonds. This one carries a saturated, a monounsaturated and an omega-6 chain. Almost all fat in food and in your body is built this way.'),
+]
+PN_CSS='<style>.pn{display:flex;justify-content:space-between;gap:12px;max-width:960px;margin:0 auto 40px;padding:0 16px}.pn a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;text-decoration:none;font-weight:600}.pn a.nx{text-align:right}.pn small{display:block;color:var(--muted);font-weight:500}.art img{display:block;width:100%;height:auto;background:#fff;border-radius:10px}.hero .pnl{margin-top:10px;font-size:.9rem}.hero .pnl a{border-bottom:1px solid #ffffff80;text-decoration:none}</style>'
+def pn(prev=None,nxt=None):
+    o='<nav class="pn">'
+    o+=f'<a class="pv" href="{prev[1]}"><small>← Previous lesson</small>{prev[0]}</a>' if prev else '<span style="flex:1"></span>'
+    o+=f'<a class="nx" href="{nxt[1]}"><small>Next lesson →</small>{nxt[0]}</a>' if nxt else '<span style="flex:1"></span>'
+    return o+'</nav>'
+BASICS=('Fats, step by step','macronutrients-fats-basics.html'); FATS=('Fats: shapes, omegas and trans','macronutrients-fats.html')
 CSS=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'curr.css')).read()
 THEME='''<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'☀️ Light':'🌙 Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>'''
 def page(title,hero,body,extra=''):
@@ -175,12 +201,17 @@ figs=''.join(f'<figure class="fig" id="fig-{i}"><div class="fh"><a class="badge"
 idx=''.join(f'<a href="#fig-{i}" title="{t}">{i}</a>' for i,(t,c,b) in enumerate(FIG,1))
 SPY='''<script>const links=[...document.querySelectorAll('.findex a')],figs=[...document.querySelectorAll('.fig')];let cur='';function spy(){let id=figs[0].id;for(const f of figs)if(f.getBoundingClientRect().top<=window.innerHeight*0.35)id=f.id;if(innerHeight+scrollY>=document.body.scrollHeight-4&&!location.hash)id=figs[figs.length-1].id;if(id!=cur){cur=id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+id));const a=links.find(a=>a.classList.contains('on'));a&&a.parentNode.scrollTo({left:a.offsetLeft-a.parentNode.clientWidth/2,behavior:'smooth'})}}addEventListener('scroll',spy,{passive:true});addEventListener('hashchange',()=>setTimeout(spy,400));spy();</script>'''
 open(os.path.join(OUT,'macronutrients-fats.html'),'w').write(page('Fats · Curriculum · Food Label Tree',
- '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Macronutrients: Fats</h1><p>Shapes, double bonds and why some fats are solid. Tell students "go to Figure N".</p>',
- f'<div class="findex"><span>Figures</span>{idx}</div><main>{figs}{NOTES}</main>',SPY))
-MOD=[('1','Macronutrients','🍗','#f97316',[('Fats','macronutrients-fats.html')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','💊','#8b5cf6',[],[]),('3','Additives','🧪','#ef4444',[],[]),('4','Antinutrients','🚫','#64748b',[],[]),('5','Processing','🏭','#0ea5e9',[],[])]
+ '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Macronutrients: Fats</h1><p>Shapes, double bonds and why some fats are solid. Tell students "go to Figure N".</p><p class="pnl">New to this? Start with <a href="macronutrients-fats-basics.html">Fats, step by step</a>.</p>',
+ f'<div class="findex"><span>Figures</span>{idx}</div><main>{figs}{NOTES}</main>'+pn(prev=BASICS),PN_CSS+SPY))
+sfigs=''.join(f'<figure class="fig" id="step-{i}"><div class="fh"><a class="badge" href="#step-{i}">{i}</a><div><div class="fl">Step {i}</div><h3>{t}</h3></div></div><div class="art"><img src="img/fats-basics/step-{i:02d}.png" alt="Step {i}: {t}" loading="{"eager" if i<3 else "lazy"}" decoding="async"></div><figcaption>{c}</figcaption></figure>' for i,(t,c) in enumerate(STEPS,1))
+sidx=''.join(f'<a href="#step-{i}" title="{t}">{i}</a>' for i,(t,c) in enumerate(STEPS,1))
+open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write(page('Fats, step by step · Curriculum · Food Label Tree',
+ '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats, step by step</h1><p>From single atoms to a whole fat molecule in 16 steps. Tell students "go to Step N".</p><p class="pnl">Next: <a href="macronutrients-fats.html">Fats: shapes, omegas and trans</a> →</p>',
+ f'<div class="findex"><span>Steps</span>{sidx}</div><main>{sfigs}</main>'+pn(nxt=FATS),PN_CSS+SPY))
+MOD=[('1','Macronutrients','🍗','#f97316',[('Fats, step by step','macronutrients-fats-basics.html',f'{len(STEPS)} steps'),('Fats','macronutrients-fats.html',f'{len(FIG)} figures')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','💊','#8b5cf6',[],[]),('3','Additives','🧪','#ef4444',[],[]),('4','Antinutrients','🚫','#64748b',[],[]),('5','Processing','🏭','#0ea5e9',[],[])]
 cards=''
 for n,nm,ic,c,live,soon in MOD:
-    items=''.join(f'<a class="les" href="{h}">{t} <span>{len(FIG)} figures →</span></a>' for t,h in live)+''.join(f'<div class="les off">{t} <span>coming soon</span></div>' for t in soon)
+    items=''.join(f'<a class="les" href="{h}">{t} <span>{k} →</span></a>' for t,h,k in live)+''.join(f'<div class="les off">{t} <span>coming soon</span></div>' for t in soon)
     if not live: items='<div class="les off">Coming soon</div>'
     cards+=f'<section class="mod" style="--a:{c}"><div class="mh"><span class="mn">{n}</span><span class="ico">{ic}</span><h2>Module {n} · {nm}</h2></div>{items}</section>'
 open(os.path.join(OUT,'index.html'),'w').write(page('Curriculum · Food Label Tree','<nav class="crumbs"><a href="../">Food Label Tree</a> › Curriculum</nav><h1>📚 Curriculum</h1><p>Lessons with numbered figures, made for teaching by phone.</p>',f'<main class="mods">{cards}</main>'))
