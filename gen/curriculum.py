@@ -410,7 +410,7 @@ F10_EXTRA=('<section class="rsec qa" data-part="extras"><div class="part">Worth 
  '<h4>Cholesterol is a different lipid</h4><p>Cholesterol is not a triglyceride: it is a sterol, built from four fused carbon rings, with no glycerol and no fatty acids. Your liver makes most of what you need; it goes into cell membranes and is the raw material for steroid hormones, vitamin D and bile acids. In food it comes only from animal products (eggs, meat, dairy, shellfish). LDL and HDL are not kinds of cholesterol but lipoprotein particles that carry cholesterol and triglycerides in the blood.</p>'
  '<h4>Every food fat is a mix</h4><p>No food fat is just one type. Olive oil is about three-quarters monounsaturated, butter about two-thirds saturated, and coconut oil over 80% saturated; a fat is named for the type that dominates.</p>'
  '<p class="fnote">General education, not medical advice. Health notes follow mainstream guidance (US Dietary Guidelines, WHO, American Heart Association).</p></section>')
-F10_HTML='<!--noart-->'+F10_TREE+F10_RECAP+F10_EXTRA
+F10_HTML='<!--noart-->'+F10_TREE+F10_EXTRA  # figure-by-figure recap list removed (rev 8); the tree and Worth knowing stay
 def figure_card(n,title,art_html,caption,pre='',after=''):
     """One numbered figure card. Give images/boxes a data-part="..." so script segments can point at them."""
     return (f'<figure class="fig" id="fig-{n}" data-fig="{n}"><div class="fh" data-part="head"><a class="badge" href="#fig-{n}">{n}</a><div><div class="fl">Figure {n}</div><h3>{title}</h3>{f'<p class="fsub">{SUB[n]}</p>' if n in SUB else ''}</div></div>'

@@ -3,7 +3,7 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 7,
+ "revision": 8,
  "idRevision": 4,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -575,8 +575,8 @@
      "seg": 5,
      "name": "What Happens in the Body",
      "text": "Now quickly, figure by figure. Fats and oils are the same kind of molecule, and packing decides solid or liquid. A bond is a shared pair of electrons, and a double bond is stiff and can't rotate. Cis kinks the chain, and trans keeps it straight. One double bond is mono, two or more is poly, and every extra kink lowers the melting point. Omega numbers count from the tail, and your body can make omega-9 but not omega-3 or omega-6. Hydrogenation adds hydrogen, and partial hydrogenation is where most trans fat came from. Body fat is mostly unsaturated, so it stays soft at body temperature. And when you need energy, lipases cut a triglyceride into glycerol, which goes to the liver, and three fatty acids, which ride on albumin to muscle and the heart and are burned two carbons at a time by beta-oxidation, with ketones as a backup in a longer fast. The energy is in the carbon-hydrogen bonds.",
-     "part": "recap",
-     "cue": "Recap list, Figures 2 to 9; each Figure link jumps back to that figure",
+     "part": "tree",
+     "cue": "The tree above, top to bottom; the figure numbers in the top bar jump back to any figure",
      "slug": "what-happens-in-the-body"
     },
     {
