@@ -3,7 +3,7 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 10,
+ "revision": 11,
  "idRevision": 4,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -269,7 +269,7 @@
      "id": "5.2",
      "seg": 2,
      "name": "Two or More",
-     "text": "At the bottom is linoleic acid, which is polyunsaturated, 'poly' meaning many, with two cis double bonds at C9 and C12; it's in sunflower, corn and other seed oils. Each extra kink lowers the melting point again, from about 13 °C for oleic acid to about minus 5 °C for linoleic.",
+     "text": "At the bottom is linoleic acid, which is polyunsaturated, 'poly' meaning many, with two cis double bonds at C9 and C12; it's in sunflower, corn and other seed oils. Each extra kink lowers the melting point again, from about 13 °C for oleic acid to about minus 5 °C for linoleic. You'll meet it again in Figure 6, in the linoleic acid diagram.",
      "cue": "Bottom: linoleic",
      "slug": "two-or-more"
     },
@@ -304,7 +304,7 @@
      "id": "6.1",
      "seg": 1,
      "name": "Count From the Tail",
-     "text": "Now count from the tail end of the chain, where omega 1 is the last carbon. On top is ALA, the plant omega-3 in flax, chia and walnuts: it has three cis double bonds, and the first one starts at omega 3, so it's an omega-3.",
+     "text": "Now count from the tail end of the chain, where omega 1 is the last carbon. On top is ALA, the plant omega-3 in flax, chia and walnuts: it has three cis double bonds, and the first one starts at omega 3, so it's an omega-3. You can see it in the ALA diagram, the first molecule in the omega-3 row.",
      "cue": "The ω labels, top: ALA",
      "slug": "count-from-the-tail"
     },
@@ -312,7 +312,7 @@
      "id": "6.2",
      "seg": 2,
      "name": "The Omega-6 Pattern",
-     "text": "Below it is linoleic acid, the main omega-6 in seed oils like sunflower and corn oil. It has two double bonds, and the first one starts at omega 6, so it's an omega-6.",
+     "text": "Below it is linoleic acid, the main omega-6 in seed oils like sunflower and corn oil. It has two double bonds, and the first one starts at omega 6, so it's an omega-6. It's the linoleic acid diagram that starts the omega-6 row, below the omega-3 row.",
      "cue": "Bottom: linoleic acid",
      "slug": "the-omega-6-pattern"
     },
@@ -320,7 +320,7 @@
      "id": "6.3",
      "seg": 3,
      "name": "Omega-3 in Your Body",
-     "text": "In the pink box, omega-3 signals tend to calm inflammation, and DHA is a major building block of your brain and the retina of your eye. Plant ALA converts only poorly into EPA and DHA, so fish or algae are the direct sources.",
+     "text": "In the pink box, omega-3 signals tend to calm inflammation, and DHA is a major building block of your brain and the retina of your eye. Plant ALA converts only poorly into EPA and DHA, so fish or algae are the direct sources. EPA and DHA are the EPA and DHA diagrams that follow ALA in the omega-3 row.",
      "box": "body",
      "part": "body",
      "cue": "Pink box: Omega-3",
@@ -330,7 +330,7 @@
      "id": "6.4",
      "seg": 4,
      "name": "Omega-6 in Your Body",
-     "text": "Omega-6, through arachidonic acid, makes the signals for immune responses, inflammation and blood clotting, and those are useful jobs. But too much omega-6 compared with omega-3 may tip the balance toward inflammation.",
+     "text": "Omega-6, through arachidonic acid, makes the signals for immune responses, inflammation and blood clotting, and those are useful jobs. But too much omega-6 compared with omega-3 may tip the balance toward inflammation. Arachidonic acid is the arachidonic acid diagram at the end of the omega-6 row.",
      "box": "body",
      "part": "body",
      "cue": "Pink box: Omega-6",
@@ -385,7 +385,7 @@
      "id": "6.10",
      "seg": 10,
      "name": "Why LA and ALA Are Essential",
-     "text": "That's why linoleic acid and alpha-linolenic acid are the essential fatty acids: you have to eat them. Animals and fish don't make them either; they get them from plants and algae.",
+     "text": "That's why linoleic acid and alpha-linolenic acid are the essential fatty acids: you have to eat them. Animals and fish don't make them either; they get them from plants and algae. They're the ALA diagram at the start of the omega-3 row and the linoleic acid diagram at the start of the omega-6 row.",
      "part": "essential",
      "cue": "Key list: second point",
      "slug": "why-la-and-ala-are-essential"
@@ -394,7 +394,7 @@
      "id": "6.11",
      "seg": 11,
      "name": "Building Longer Chains",
-     "text": "Your body can lengthen these chains and add more double bonds near the acid end. Linoleic acid becomes arachidonic acid, and ALA becomes EPA and then DHA. But only a small share of ALA gets that far, so fish and algae, which supply EPA and DHA ready-made, matter.",
+     "text": "Your body can lengthen these chains and add more double bonds near the acid end. Linoleic acid becomes arachidonic acid, and ALA becomes EPA and then DHA. But only a small share of ALA gets that far, so fish and algae, which supply EPA and DHA ready-made, matter. The two rows at the top show those steps: linoleic acid to arachidonic acid in the omega-6 row, and ALA to EPA to DHA in the omega-3 row, each arrow adding carbons and double bonds at the acid end while the omega end stays the same.",
      "part": "essential",
      "cue": "Key list: third point",
      "slug": "building-longer-chains"
@@ -459,7 +459,7 @@
      "id": "8.1",
      "seg": 1,
      "name": "Melting Points",
-     "text": "At the top are the melting points of the pure fatty acids, and the dashed line is room temperature. Anything above it, like stearic and elaidic acid, is solid in your kitchen, and anything below, like oleic, linoleic and ALA, is liquid.",
+     "text": "At the top are the melting points of the pure fatty acids, and the dashed line is room temperature. Anything above it, like stearic and elaidic acid, is solid in your kitchen, and anything below, like oleic, linoleic and ALA, is liquid. The ALA and linoleic acid molecules themselves are in the ALA and linoleic acid diagrams in Figure 6.",
      "part": "melt",
      "cue": "Top chart, dashed line",
      "slug": "melting-points"
@@ -538,7 +538,7 @@
      "id": "10.1",
      "seg": 1,
      "name": "The Whole Family",
-     "text": "That's the whole module, so Figure 10 puts it all together. This is the family tree from Figure 1 again, but now every branch has its molecule next to it, all drawn at the same scale with every hydrogen showing. At the top is the triglyceride, the form almost all fat takes in food and in your body: a glycerol backbone holding three fatty acids by ester links. This one carries palmitic, oleic and linoleic acid, which is typical, because every food fat is a mix. Everything below it is about those fatty-acid chains, and what sorts them into families is the double bonds between carbons: how many there are, where they sit, and which way the hydrogens point around them.",
+     "text": "That's the whole module, so Figure 10 puts it all together. This is the family tree from Figure 1 again, but now every branch has its molecule next to it, all drawn at the same scale with every hydrogen showing. At the top is the triglyceride, the form almost all fat takes in food and in your body: a glycerol backbone holding three fatty acids by ester links. This one carries palmitic, oleic and linoleic acid, which is typical, because every food fat is a mix. Everything below it is about those fatty-acid chains, and what sorts them into families is the double bonds between carbons: how many there are, where they sit, and which way the hydrogens point around them. Linoleic acid on its own is also drawn in the omega-6 row of Figure 6.",
      "part": "family",
      "cue": "Top node: the triglyceride, glycerol in the purple box, ester links in red; then follow the lines down",
      "slug": "the-whole-family"
@@ -556,7 +556,7 @@
      "id": "10.3",
      "seg": 3,
      "name": "Unsaturated",
-     "text": "Unsaturated fats have at least one carbon-carbon double bond, and in food these are almost always cis, so each one puts a kink in the chain and the fat usually stays liquid. Monounsaturated means exactly one, and most of it is omega-9: oleic acid, the main fat in olive oil, avocados, almonds and macadamias. Your body makes oleic acid itself, so omega-9 isn't essential. Polyunsaturated means two or more, and that's where omega-3 and omega-6 come in, named by counting from the tail end. Alpha-linolenic acid, ALA, has its first double bond three carbons from the end, so it's an omega-3, from flax, chia and walnuts. Linoleic acid starts at the sixth carbon from the end, so it's an omega-6, from seeds, nuts and poultry. Those two are the essential fatty acids: your body can't make them, so they have to come from food. Your body can turn some ALA into EPA and DHA, but only a small fraction, so oily fish and algae are the direct sources.",
+     "text": "Unsaturated fats have at least one carbon-carbon double bond, and in food these are almost always cis, so each one puts a kink in the chain and the fat usually stays liquid. Monounsaturated means exactly one, and most of it is omega-9: oleic acid, the main fat in olive oil, avocados, almonds and macadamias. Your body makes oleic acid itself, so omega-9 isn't essential. Polyunsaturated means two or more, and that's where omega-3 and omega-6 come in, named by counting from the tail end. Alpha-linolenic acid, ALA, has its first double bond three carbons from the end, so it's an omega-3, from flax, chia and walnuts. Linoleic acid starts at the sixth carbon from the end, so it's an omega-6, from seeds, nuts and poultry. Those two are the essential fatty acids: your body can't make them, so they have to come from food. Your body can turn some ALA into EPA and DHA, but only a small fraction, so oily fish and algae are the direct sources. ALA, EPA and DHA are drawn side by side in the omega-3 row of Figure 6, and linoleic acid in the omega-6 row.",
      "part": "unsat",
      "cue": "Middle branch: Monounsaturated → Omega-9 (oleic), and Polyunsaturated → Omega-3 (ALA) and Omega-6 (linoleic); tap a molecule to enlarge it",
      "slug": "unsaturated"

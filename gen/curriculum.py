@@ -303,6 +303,7 @@ QUIZ=[('How many bonds does carbon make, and how many does hydrogen make?','Carb
 ('What happens to a triglyceride when your body needs energy?','Lipases (ATGL, then HSL) cut its 3 ester links, adding water at each, into 1 glycerol and 3 free fatty acids. Glycerol goes to the liver, which can make glucose from it; the fatty acids ride on albumin to muscle and the heart to be burned for fuel, and in a deeper fast the liver turns some into ketones (Figure 9).')]
 def art(i,t,a):
     if a=='F10': return F10_HTML
+    if i==6: return '<!--noart-->'+F6_FAM  # rev 11: replaces fig-06.png (text was baked in)
     if i==9:  # panel A images, then panel B heading/intro as page text, then panel B images
         A,B=ARTIMG[9][:3],ARTIMG[9][3:]
         return ''.join(img(fn,i,al,pt) for fn,al,pt in A)+'</div>'+F9B+'<div class="art">'+''.join(img(fn,i,al,pt) for fn,al,pt in B)
@@ -340,6 +341,42 @@ F6_REACH=('<section class="reach" data-part="ends"><div class="part">Counting fr
  '<li><b>Longer chains, edited at the acid end.</b> LA → arachidonic acid; ALA → EPA → DHA, but only a small share of ALA becomes EPA and even less DHA, so fish and algae (EPA and DHA ready-made) matter.</li>'
  '<li><b>No switching families.</b> The omega end is never changed, so omega-6 and omega-3 can\'t be turned into each other: you need both.</li></ul>'
  '<p class="rrule" data-part="rule">Rule of thumb: your body can edit a chain near the acid end, but not near the omega end.</p></section>')
+ZOOM='<svg class="zi" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M10 10l4 4M4.5 6.5h4M6.5 4.5v4"/></svg>'
+# ---------------- Figure 6 top (rev 11): the omega-3 row ALA -> EPA -> DHA and the omega-6 row LA -> AA ----------------
+FAM6=json.load(open(os.path.join(GEN,'data','fig06-fam.json'),encoding='utf-8'))  # made by /workspace/nutrition/fats_omega_fam.py
+def _fam_mol(name,title,facts,cap):
+    r=FAM6['mols'][name]; w,h=_png_size(os.path.join(OUT,'img','fats',r['file'])); n=r['n']; om=r['omega']; labs=''
+    for l in r['labels']:
+        if l['n'] in (1,n): continue  # carbon 1 and the last carbon (= ω1) are named in the end labels
+        labs+=f'<span class="cn{" k" if l["hi"] else ""}{" hi" if l["hi"] else ""}" style="left:{l["a"][0]}%;top:{l["a"][1]}%">{l["n"]}</span>'
+        if l['w'] in (3,6,9): labs+=f'<span class="cw k{" fam" if l["w"]==om else ""}" style="left:{l["o"][0]}%;top:{l["o"][1]}%">ω{l["w"]}</span>'
+    e=r['ends']
+    labs+=(f'<span class="cend ca" style="left:{e["acid"][0]}%;top:{e["acid"][1]}%">acid end<br>COOH<br>carbon 1</span>'
+           f'<span class="cend co {e["odir"]}" style="left:{e["omega"][0]}%;top:{e["omega"][1]}%">omega end<br>CH<sub>3</sub><br>carbon {n} = ω1</span>')
+    return (f'<div class="fmol" data-mol="{name}"><div class="rrh"><span class="rrn">{title}</span><span class="rrs">{facts}</span></div>'
+            f'<button type="button" class="mz fz" data-cap="{_html.escape(title+": "+facts)}" aria-label="Enlarge {_html.escape(title)}"><div class="rimg fimg">'
+            f'<img src="img/fats/{r["file"]}" width="{w}" height="{h}" alt="Figure 6: {_html.escape(title)}, ball-and-stick with every hydrogen; {_html.escape(facts)}" loading="lazy" decoding="async">{labs}</div>{ZOOM}</button>'
+            f'<p class="fcap">{cap}</p></div>')
+def _fstep(how,what): return f'<div class="fstep" aria-label="becomes"><span class="fa">↓</span><span><b>{how}</b> {what}</span></div>'
+F6_FAM=('<section class="fams" data-part="families"><div class="part">The omega-3 and omega-6 families, molecule by molecule</div>'
+ '<p class="rlead">Every molecule is drawn at the same scale as the diagrams below, with every hydrogen shown. Blue numbers count from the acid end (orange = double-bond carbons); grey ω numbers count from the omega end. Tap a molecule to enlarge it.</p>'
+ '<div class="frow" data-fam="omega-3"><h4 class="fh4">Omega-3 row: ALA → EPA → DHA</h4><div class="rrows">'
+ +_fam_mol('ala','Alpha-linolenic acid (ALA)','18:3 omega-3 · 18 carbons, 3 cis double bonds, the first at ω3','C<sub>18</sub>H<sub>30</sub>O<sub>2</sub>. The plant omega-3, in flax, chia, walnuts and canola. Essential: you have to eat it.')
+ +_fstep('Δ6 desaturase, elongase, Δ5 desaturase:','2 more carbons and 2 more double bonds, all added at the acid end.')
+ +_fam_mol('epa','Eicosapentaenoic acid (EPA)','20:5 omega-3 · 20 carbons, 5 cis double bonds, the first still at ω3','C<sub>20</sub>H<sub>30</sub>O<sub>2</sub>. In oily fish and algae. Your body makes only a small amount from ALA.')
+ +_fstep('Two elongations, a Δ6 desaturase, then one round of trimming:','2 more carbons and 1 more double bond, again at the acid end.')
+ +_fam_mol('dha','Docosahexaenoic acid (DHA)','22:6 omega-3 · 22 carbons, 6 cis double bonds, the first still at ω3','C<sub>22</sub>H<sub>32</sub>O<sub>2</sub>. In oily fish and algae oil. A major building block of the brain and the retina; even less of it is made from ALA.')
+ +'</div></div><div class="frow" data-fam="omega-6"><h4 class="fh4">Omega-6 row: linoleic acid → arachidonic acid</h4><div class="rrows">'
+ +_fam_mol('la','Linoleic acid (LA)','18:2 omega-6 · 18 carbons, 2 cis double bonds, the first at ω6','C<sub>18</sub>H<sub>32</sub>O<sub>2</sub>. The main omega-6 in sunflower, corn and soybean oil, nuts and poultry. Essential: you have to eat it.')
+ +_fstep('Δ6 desaturase, elongase, Δ5 desaturase:','the same enzymes as the omega-3 row, so 2 more carbons and 2 more double bonds at the acid end.')
+ +_fam_mol('aa','Arachidonic acid (AA)','20:4 omega-6 · 20 carbons, 4 cis double bonds, the first still at ω6','C<sub>20</sub>H<sub>32</sub>O<sub>2</sub>. In meat and eggs, and made from linoleic acid. The starting point for omega-6 signals for immune responses, inflammation and blood clotting.')
+ +'</div></div><p class="fnote">Each step keeps the omega end as it was, so an omega-3 stays an omega-3 and an omega-6 stays an omega-6. Pathways: Δ6 and Δ5 desaturases with elongases in the liver; the last step to DHA passes through a 24-carbon chain that is shortened by 2 carbons in peroxisomes.</p>'
+ '<dialog class="lbx lbm lb6" aria-label="Molecule, full size"><button type="button" class="lbx-x" aria-label="Close">×</button><div class="lbx-b"></div><p class="lbx-c"></p></dialog>'
+ '<script>(()=>{const sec=document.querySelector(".fams"),dlg=sec&&sec.querySelector("dialog.lb6");if(!dlg)return;'
+ 'sec.addEventListener("click",e=>{const b=e.target.closest(".fz");if(!b)return;const c=b.querySelector(".fimg").cloneNode(true),i=b.querySelector("img");'
+ 'c.querySelectorAll("img").forEach(x=>x.loading="eager");c.style.width=Math.min(innerWidth*0.94-40,i.naturalWidth||1306,Math.max(i.getBoundingClientRect().width*1.6,(innerHeight*0.92-90)*i.width/i.height))+"px";'
+ 'dlg.querySelector(".lbx-b").replaceChildren(c);dlg.querySelector(".lbx-c").textContent=b.dataset.cap;dlg.showModal();});'
+ 'dlg.addEventListener("click",()=>dlg.close());dlg.addEventListener("keydown",e=>{if(e.key!=="Escape")e.stopPropagation()});})();</script></section>')
 def callout(i):
     o=''
     if i in BODY: o+='<aside class="body" data-part="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
@@ -348,7 +385,6 @@ def callout(i):
     return o
 # ---------------- Figure 10: Putting It All Together (recap) ----------------
 T10=json.load(open(os.path.join(GEN,'data','fig10-tree.json'),encoding='utf-8'))  # widths in C–C bond units, so every molecule shows at one scale
-ZOOM='<svg class="zi" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M10 10l4 4M4.5 6.5h4M6.5 4.5v4"/></svg>'
 def _mol(name,label,alt):
     w,h=_png_size(os.path.join(OUT,'img','fats',f'fig-10-{name}.png'))
     return (f'<div class="rn-mol"><button type="button" class="mz" data-cap="{_html.escape(label)}" aria-label="Enlarge {_html.escape(label)}">'
@@ -380,7 +416,7 @@ F10_TREE=('<div class="part">The whole family, molecule by molecule</div><div cl
    'partially hydrogenated oils (banned in the US); traces in dairy, beef')
  +'</div></div><p class="rleg"><span class="k c"></span>carbon <span class="k h"></span>hydrogen <span class="k o"></span>oxygen <span class="k d"></span>C=C double bond · every molecule at the same scale with every hydrogen shown · tap a molecule to enlarge it</p>'
  '<dialog class="lbx" aria-label="Molecule, full size"><button type="button" class="lbx-x" aria-label="Close">×</button><img alt=""><p class="lbx-c"></p></dialog>'
- '<script>(()=>{const ft=document.querySelector(".ft");if(!ft)return;const svg=ft.querySelector(".tlines"),G=ft.querySelector(".tgrid"),dlg=document.querySelector("dialog.lbx");'
+ '<script>(()=>{const ft=document.querySelector(".ft");if(!ft)return;const svg=ft.querySelector(".tlines"),G=ft.querySelector(".tgrid"),dlg=ft.closest(".fig").querySelector("dialog.lbx:not(.lb6)");'
  'function draw(){const R=ft.getBoundingClientRect(),wide=getComputedStyle(G).display==="grid";let d="";'
  'ft.querySelectorAll("[data-parent]").forEach(n=>{const p=ft.querySelector(`[data-node="${n.dataset.parent}"]`),a=p.getBoundingClientRect(),b=n.getBoundingClientRect();'
  'if(wide){const px=a.left+a.width/2-R.left,py=a.bottom-R.top,cx=b.left+b.width/2-R.left,cy=b.top-R.top,g=Math.min(30,cy-py),y0=cy-g;d+=`M${px},${py}V${y0}C${px},${y0+g/2} ${cx},${y0+g/2} ${cx},${cy}`;}'
