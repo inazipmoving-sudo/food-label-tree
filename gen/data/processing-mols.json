@@ -1,0 +1,288 @@
+{
+ "hexane": {
+  "units": 6.604,
+  "hunits": 2.897,
+  "formula": "C6H14",
+  "anchors": {
+   "c": [
+    17.0,
+    50.0
+   ]
+  }
+ },
+ "asparagine": {
+  "units": 5.887,
+  "hunits": 4.271,
+  "formula": "C4H8N2O3",
+  "anchors": {
+   "amide": [
+    31.15,
+    56.58
+   ],
+   "aa": [
+    75.91,
+    50.96
+   ]
+  }
+ },
+ "acrylamide": {
+  "units": 4.644,
+  "hunits": 3.285,
+  "formula": "C3H5NO",
+  "anchors": {
+   "vinyl": [
+    31.69,
+    39.94
+   ],
+   "amide": [
+    58.14,
+    54.88
+   ]
+  }
+ },
+ "lysine": {
+  "units": 7.482,
+  "hunits": 4.371,
+  "formula": "C6H14N2O2",
+  "anchors": {
+   "n": [
+    15.02,
+    26.26
+   ],
+   "aa": [
+    83.21,
+    48.73
+   ]
+  }
+ },
+ "cml": {
+  "units": 9.66,
+  "hunits": 4.16,
+  "formula": "C8H16N2O4",
+  "anchors": {
+   "n": [
+    32.07,
+    56.01
+   ],
+   "add": [
+    18.62,
+    50.0
+   ],
+   "aa": [
+    85.86,
+    56.01
+   ]
+  }
+ },
+ "phip": {
+  "units": 9.182,
+  "hunits": 4.882,
+  "formula": "C13H12N4",
+  "anchors": {
+   "nh2": [
+    10.16,
+    54.12
+   ],
+   "ph": [
+    67.16,
+    54.12
+   ],
+   "me": [
+    27.5,
+    23.74
+   ]
+  }
+ },
+ "bap": {
+  "units": 8.825,
+  "hunits": 5.855,
+  "formula": "C20H12",
+  "anchors": {
+   "c": [
+    54.31,
+    40.3
+   ]
+  }
+ },
+ "guaiacol": {
+  "units": 5.314,
+  "hunits": 4.752,
+  "formula": "C7H8O2",
+  "anchors": {
+   "ome": [
+    40.53,
+    77.22
+   ],
+   "oh": [
+    21.71,
+    40.77
+   ]
+  }
+ },
+ "nitrite": {
+  "units": 2.732,
+  "hunits": 1.5,
+  "formula": "NO2-",
+  "anchors": {
+   "n": [
+    50.0,
+    33.33
+   ]
+  }
+ },
+ "dma": {
+  "units": 3.872,
+  "hunits": 2.816,
+  "formula": "C2H7N",
+  "anchors": {
+   "n": [
+    50.59,
+    41.19
+   ]
+  }
+ },
+ "ndma": {
+  "units": 3.872,
+  "hunits": 3.656,
+  "formula": "C2H6N2O",
+  "anchors": {
+   "n": [
+    50.59,
+    54.7
+   ],
+   "no": [
+    61.78,
+    20.51
+   ]
+  }
+ },
+ "lactic": {
+  "units": 4.32,
+  "hunits": 3.279,
+  "formula": "C3H6O3",
+  "anchors": {
+   "c": [
+    61.57,
+    41.66
+   ],
+   "oh": [
+    26.85,
+    15.25
+   ]
+  }
+ },
+ "ethanol": {
+  "units": 3.897,
+  "hunits": 2.662,
+  "formula": "C2H6O",
+  "anchors": {
+   "oh": [
+    72.5,
+    56.56
+   ]
+  }
+ },
+ "co2": {
+  "units": 3.0,
+  "hunits": 1.0,
+  "formula": "CO2",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "acetic": {
+  "units": 3.279,
+  "hunits": 3.16,
+  "formula": "C2H4O2",
+  "anchors": {
+   "acid": [
+    58.34,
+    52.53
+   ]
+  }
+ },
+ "h2": {
+  "units": 1.62,
+  "hunits": 1.0,
+  "formula": "H2",
+  "anchors": {
+   "h": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "cisbutene": {
+  "units": 4.297,
+  "hunits": 3.031,
+  "formula": "C4H8",
+  "anchors": {
+   "db": [
+    49.81,
+    35.36
+   ]
+  }
+ },
+ "transbutene": {
+  "units": 4.281,
+  "hunits": 3.826,
+  "formula": "C4H8",
+  "anchors": {
+   "db": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "butane": {
+  "units": 4.92,
+  "hunits": 2.808,
+  "formula": "C4H10",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "ca": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Ca2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "hydroxide": {
+  "units": 1.66,
+  "hunits": 1.0,
+  "formula": "OH-",
+  "anchors": {
+   "o": [
+    30.12,
+    50.0
+   ]
+  }
+ },
+ "niacin": {
+  "units": 5.214,
+  "hunits": 4.267,
+  "formula": "C6H5NO2",
+  "anchors": {
+   "acid": [
+    24.09,
+    34.73
+   ],
+   "n": [
+    74.83,
+    34.73
+   ]
+  }
+ }
+}

@@ -1,0 +1,489 @@
+{
+ "schemaVersion": 1,
+ "module": "processing",
+ "title": "Module 5 · Processing",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "segmentFields": {
+  "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
+  "cue": "optional: what to point at; not spoken",
+  "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
+  "subtitle": "figure-level: short muted subtitle under the title"
+ },
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "The Processing Family Tree",
+   "subtitle": "What happens to food between farm and plate, in three groups.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "Processing",
+     "text": "Module five is about processing: everything that happens to food between the farm and your plate. Almost every food is processed somehow, and this tree sorts what we'll cover into three groups.",
+     "part": "head",
+     "cue": "Title, then the root box",
+     "slug": "processing"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Unlisted Helpers",
+     "text": "On the left are processing aids, like the solvent hexane, which help make a food and then are removed, so they never reach the label.",
+     "part": "tree",
+     "cue": "The left branch",
+     "slug": "unlisted-helpers"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Made by Heat",
+     "text": "In the middle are compounds that form when food is heated hard. Browning makes acrylamide and AGEs, grilling and smoking make HCAs and PAHs, and curing plus frying makes nitrosamines.",
+     "part": "tree",
+     "cue": "The middle branch",
+     "slug": "made-by-heat"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Changing the Food",
+     "text": "On the right are methods that change the food itself: fermenting, pasteurizing, hydrogenating, refining and nixtamalizing. Each box links to its figure.",
+     "part": "tree",
+     "cue": "The right branch",
+     "slug": "changing-the-food"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Good, Bad and Both",
+     "text": "Processing isn't good or bad as a whole. Pasteurizing and fermenting make food safer, nixtamalizing makes corn more nutritious, charring and partial hydrogenation make things worth limiting, and refining trades nutrients for shelf life.",
+     "part": "label",
+     "cue": "The three boxes",
+     "slug": "good-bad-and-both"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "Processing Aids",
+   "subtitle": "Helpers like hexane that never reach the label.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Hexane",
+     "text": "Here's hexane: six carbons in a row with nothing but hydrogens around them. With no oxygen, it mixes with oil, not water.",
+     "part": "hex",
+     "cue": "Marker 1",
+     "slug": "hexane"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Pulling Out Oil",
+     "text": "That's why it's used to make most soybean, canola, corn and sunflower oil. Crushed seeds are washed with hexane, which dissolves the oil out, and then the hexane is boiled off and recycled.",
+     "part": "hex",
+     "box": "what",
+     "slug": "pulling-out-oil"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "How Much Is Left",
+     "text": "Hexane isn't a nutrient. Breathing high levels at work can damage nerves, but the traces left in oil are tiny; the EU caps them at one milligram per kilogram. Expeller-pressed, cold-pressed and USDA organic oils are made without it.",
+     "part": "hex",
+     "slug": "how-much-is-left"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "Other Aids",
+     "text": "Other processing aids include enzymes that clear fruit juice, fining agents like gelatin or clay that pull haze out of wine and beer, anti-foaming agents, and carryover additives that came in with an ingredient.",
+     "part": "aids",
+     "cue": "The table, row by row",
+     "slug": "other-aids"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "Why Not Listed",
+     "text": "US and EU rules let manufacturers leave these off the label when they're removed or do nothing in the final food. The exception is allergens: if an aid comes from fish, milk or another major allergen, it must still be declared.",
+     "part": "rules",
+     "cue": "The two boxes",
+     "slug": "why-not-listed"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "Browning: Acrylamide and AGEs",
+   "subtitle": "What forms when sugars meet amino acids in dry heat.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "Asparagine",
+     "text": "Browning starts with amino acids. Asparagine is plentiful in potatoes and grains. Heated above about 120 degrees Celsius with a sugar like glucose, it loses its amino-acid end.",
+     "part": "acr",
+     "cue": "Markers 1 and 2",
+     "slug": "asparagine"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Acrylamide",
+     "text": "What's left is acrylamide: a reactive double bond next to the same amide group. It's part of the Maillard reaction, the browning that colors crusts, chips and coffee, and it was found in food in 2002.",
+     "part": "acr",
+     "cue": "Markers 3 and 4",
+     "slug": "acrylamide"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "The Risk",
+     "text": "The body turns acrylamide into a compound that can damage DNA. It causes cancer in animals at high doses, and IARC calls it probably carcinogenic to humans. Studies in people haven't shown a clear link, but the advice is to fry, bake and toast to golden, not dark brown.",
+     "part": "acr",
+     "box": "body",
+     "slug": "the-risk"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Found In",
+     "text": "It's in fries, chips, crackers, cookies, toast, cereals and coffee. Boiled and steamed foods have essentially none.",
+     "part": "acr",
+     "slug": "found-in"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "AGEs",
+     "text": "Sugars can also stick to proteins. Lysine's side chain ends in a free NH2 group, and after several steps it can carry this small acid group. That's carboxymethyl-lysine, the best-known AGE, or advanced glycation end product.",
+     "part": "age",
+     "cue": "Markers 5 and 6",
+     "slug": "ages"
+    },
+    {
+     "id": "3.6",
+     "seg": 6,
+     "name": "AGEs in Food",
+     "text": "AGEs build up in the body with age and in diabetes, and food adds some, mostly from meat grilled, roasted or fried. How much food AGEs matter is still debated. Stewing, poaching and steaming make far fewer.",
+     "part": "age",
+     "slug": "ages-in-food"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "Grilling and Smoking: HCAs and PAHs",
+   "subtitle": "Compounds made in charred meat and smoke.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "HCAs",
+     "text": "This is PhIP, a heterocyclic amine, or HCA: rings containing nitrogen with an amino group. HCAs form when creatine, amino acids and sugar in muscle meat react at very high heat.",
+     "part": "hca",
+     "cue": "Markers 1 and 2",
+     "slug": "hcas"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "HCA Risk",
+     "text": "The liver activates HCAs into forms that damage DNA, and IARC lists PhIP as possibly carcinogenic. The National Cancer Institute suggests avoiding direct flame, turning meat often, and cutting off charred parts.",
+     "part": "hca",
+     "box": "body",
+     "slug": "hca-risk"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "PAHs",
+     "text": "Benzo a pyrene is a PAH: five benzene rings fused into one flat sheet. PAHs form when fat drips onto flames and the smoke coats the food.",
+     "part": "pah",
+     "cue": "Marker 3",
+     "slug": "pahs"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "PAH Risk",
+     "text": "IARC classifies benzo a pyrene as carcinogenic to humans, and the EU limits it in smoked foods. Trim fat, avoid flare-ups, and scrape off char. Cigarette smoke is a far bigger source than food.",
+     "part": "pah",
+     "box": "body",
+     "slug": "pah-risk"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "Smoke Flavor",
+     "text": "Guaiacol is a benzene ring with an OH and a methoxy group side by side. It forms when wood burns and gives smoked foods their aroma, and phenols like it slow spoilage.",
+     "part": "smoke",
+     "cue": "Markers 4 and 5",
+     "slug": "smoke-flavor"
+    },
+    {
+     "id": "4.6",
+     "seg": 6,
+     "name": "Smoked Foods",
+     "text": "Guaiacol itself isn't a concern; the concern with smoking is the PAHs that come with the smoke. Liquid smoke is filtered, so most PAHs are removed.",
+     "part": "smoke",
+     "slug": "smoked-foods"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "Curing and Nitrosamines",
+   "subtitle": "How curing salt can form nitrosamines, and how vitamin C stops it.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Nitrite",
+     "text": "Nitrite is the curing salt from the Additives lesson. It keeps cured meat pink, adds flavor and stops the bacterium that causes botulism.",
+     "part": "nit",
+     "cue": "Marker 1",
+     "slug": "nitrite"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "Making a Nitrosamine",
+     "text": "Amines like dimethylamine come from protein breakdown. In frying heat or stomach acid, nitrite puts an N=O group on the amine's nitrogen, making a nitrosamine. NDMA is the most common one.",
+     "part": "nit",
+     "cue": "Markers 2 and 3",
+     "slug": "making-a-nitrosamine"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Nitrosamine Risk",
+     "text": "Nitrosamines cause cancer in many animal species, and IARC calls NDMA probably carcinogenic. They're thought to be one reason processed meat is classed as carcinogenic to humans, mainly for colorectal cancer. Crisp-fried bacon forms the most.",
+     "part": "nit",
+     "box": "body",
+     "slug": "nitrosamine-risk"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Vitamin C Blocks It",
+     "text": "Vitamin C, as ascorbate or erythorbate, reacts with nitrite first and blocks the reaction. US rules for bacon require it alongside the nitrite.",
+     "part": "block",
+     "cue": "First box",
+     "slug": "vitamin-c-blocks-it"
+    },
+    {
+     "id": "5.5",
+     "seg": 5,
+     "name": "Uncured and Vegetables",
+     "text": "Meat labeled uncured is usually cured with celery powder, which bacteria turn into nitrite, so the chemistry is the same. Vegetables are different: they supply most dietary nitrate, along with vitamin C, and are linked to lower cancer risk.",
+     "part": "block",
+     "cue": "The last two boxes",
+     "slug": "uncured-and-vegetables"
+    }
+   ]
+  },
+  {
+   "fig": 6,
+   "anchor": "fig-6",
+   "title": "Fermentation and Pasteurization",
+   "subtitle": "Microbes that preserve food, and heat that makes it safe.",
+   "segments": [
+    {
+     "id": "6.1",
+     "seg": 1,
+     "name": "Lactic Acid",
+     "text": "Fermentation uses microbes to change food. Lactic acid bacteria turn sugar into lactic acid, which sours milk into yogurt and preserves cabbage as sauerkraut and kimchi.",
+     "part": "ferm",
+     "cue": "Marker 1",
+     "slug": "lactic-acid"
+    },
+    {
+     "id": "6.2",
+     "seg": 2,
+     "name": "Alcohol, Gas and Vinegar",
+     "text": "Yeast turns sugar into ethanol and carbon dioxide; in bread the gas raises the dough and the alcohol bakes off. Then Acetobacter bacteria can turn ethanol into acetic acid: vinegar.",
+     "part": "ferm",
+     "cue": "Markers 2 to 4",
+     "slug": "alcohol-gas-and-vinegar"
+    },
+    {
+     "id": "6.3",
+     "seg": 3,
+     "name": "Why Ferment",
+     "text": "The acid keeps harmful bacteria from growing, and fermentation can predigest food: yogurt has less lactose, and sourdough less phytate. The things to watch are alcohol and the salt in some ferments.",
+     "part": "ferm",
+     "box": "body",
+     "slug": "why-ferment"
+    },
+    {
+     "id": "6.4",
+     "seg": 4,
+     "name": "Pasteurization",
+     "text": "Pasteurization uses just enough heat to kill germs. Most milk is heated to 72 degrees Celsius for 15 seconds; ultra-high temperature milk gets about 135 to 150 degrees for a few seconds and keeps without refrigeration until opened.",
+     "part": "past",
+     "cue": "The table, row by row",
+     "slug": "pasteurization"
+    },
+    {
+     "id": "6.5",
+     "seg": 5,
+     "name": "Why Pasteurize",
+     "text": "It kills Listeria, Salmonella, E. coli and Campylobacter while barely changing the nutrients. US health agencies warn that raw milk is riskier, especially for children, pregnant women and older adults.",
+     "part": "pnote",
+     "cue": "The two boxes",
+     "slug": "why-pasteurize"
+    }
+   ]
+  },
+  {
+   "fig": 7,
+   "anchor": "fig-7",
+   "title": "Hydrogenation and Refining",
+   "subtitle": "Firming oils, and stripping grains and oils down.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "Adding Hydrogen",
+     "text": "Hydrogenation bubbles hydrogen gas through hot oil with a nickel catalyst. A four-carbon piece stands in for a fatty acid here, with a natural cis double bond.",
+     "part": "hyd",
+     "cue": "The first cell, then marker 1",
+     "slug": "adding-hydrogen"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "Full or Partial",
+     "text": "Add both hydrogens and the double bond becomes single: a straight, solid, saturated chain. Stop partway and some double bonds flip to trans instead. That's trans fat, from Figure 7 of the Fats lesson.",
+     "part": "hyd",
+     "cue": "Markers 2 and 3",
+     "slug": "full-or-partial"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "Trans Fat Rules",
+     "text": "Industrial trans fat raises LDL and lowers HDL. In 2015 the FDA ruled partially hydrogenated oils no longer generally recognized as safe, and they've been removed from US foods. Fully hydrogenated oil is saturated fat with almost no trans.",
+     "part": "hyd",
+     "box": "high",
+     "slug": "trans-fat-rules"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "Refining Grain",
+     "text": "Refining grain removes the bran and germ, leaving the starchy endosperm. That loses fiber, B vitamins, iron, magnesium, zinc and vitamin E. Enriched flour gets some B vitamins, folic acid and iron back, but not the fiber or the other minerals.",
+     "part": "refine",
+     "cue": "The table, column by column",
+     "slug": "refining-grain"
+    },
+    {
+     "id": "7.5",
+     "seg": 5,
+     "name": "Refining Oil",
+     "text": "Most oils are also refined, bleached and deodorized. That makes them clear, mild and stable for frying, but strips much of their vitamin E and polyphenols. Extra-virgin olive oil and cold-pressed oils skip these steps.",
+     "part": "oil",
+     "slug": "refining-oil"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
+   "title": "Nixtamalization",
+   "subtitle": "The lime soak that makes corn more nutritious.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "Lime",
+     "text": "Nixtamalization starts with slaked lime, calcium hydroxide. In water it breaks into calcium ions and hydroxide, making a strongly alkaline soak.",
+     "part": "nix",
+     "cue": "The first two cells",
+     "slug": "lime"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Freeing Niacin",
+     "text": "In raw corn, niacin, vitamin B3, is tied to other molecules and can't be absorbed. The alkaline soak cuts it free.",
+     "part": "nix",
+     "cue": "Markers 2 and 3",
+     "slug": "freeing-niacin"
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
+     "name": "Other Gains",
+     "text": "It also loosens the hull, adds calcium, improves the balance of available amino acids, lowers some mold toxins, and lets the dough hold together for tortillas.",
+     "part": "nix",
+     "box": "body",
+     "slug": "other-gains"
+    },
+    {
+     "id": "8.4",
+     "seg": 4,
+     "name": "Pellagra",
+     "text": "Where corn became a staple without it, in parts of Europe and the US South, pellagra was common: niacin deficiency, with dermatitis, diarrhea and dementia.",
+     "part": "nix",
+     "box": "low",
+     "slug": "pellagra"
+    },
+    {
+     "id": "8.5",
+     "seg": 5,
+     "name": "Corn to Tortilla",
+     "text": "The steps are simple: cook dried corn with lime, steep it overnight, rinse, and grind into masa. Corn tortillas, tamales and hominy are nixtamalized; cornmeal, grits and polenta usually aren't.",
+     "part": "steps",
+     "cue": "The steps, left to right",
+     "slug": "corn-to-tortilla"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
+   "title": "Putting It All Together",
+   "subtitle": "The whole lesson in one table, plus a few extras.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "One Table",
+     "text": "Here's the whole lesson in one table: each process, what it does, what forms or changes, the main foods, and what's worth doing.",
+     "part": "table",
+     "cue": "The table, row by row",
+     "slug": "one-table"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Worth Knowing",
+     "text": "A few extras. Diets high in ultra-processed foods are linked to obesity and chronic disease, though which features matter is still debated. Frying oil reused many times breaks down. And fast, moist methods like microwaving and pressure-cooking keep more vitamins and form few of these heat compounds.",
+     "part": "worth",
+     "cue": "The three notes",
+     "slug": "worth-knowing"
+    }
+   ]
+  }
+ ],
+ "page": "curriculum/processing.html",
+ "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/processing.html",
+ "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/processing.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 9,
+ "segmentCount": 44
+}
