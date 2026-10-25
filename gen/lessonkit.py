@@ -8,18 +8,44 @@ def fsub(t):
     """chemical formula -> HTML subscripts (C6H12O6 -> C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>); charges ^2+ -> superscript"""
     t=_re.sub(r'\^(\d*[+-])',r'<sup>\1</sup>',t)
     return _re.sub(r'(?<=[A-Za-z\)\]])(\d+)',r'<sub>\1</sub>',t)
+_MASKS={}
+def _auto_mark(slug,name,d,xp,yp,taken,R=0.5):
+    """place a numbered marker near anchor (xp,yp in %) in the clearest nearby spot: returns (dx,dy) in bond units.
+    Searches rings of offsets (0.55..2.2 bonds, 32 directions) for the first spot whose marker disc (radius R bonds) touches no atom or bond pixel."""
+    import numpy as _np
+    from PIL import Image as _I
+    k=(slug,name)
+    if k not in _MASKS:
+        a=_np.asarray(_I.open(os.path.join(OUT,'img',slug,name+'.png')).convert('RGBA')).astype(int)
+        _MASKS[k]=(a[...,3]>40)&(a[...,:3].min(axis=2)<235)
+    M=_MASKS[k]; H,W=M.shape; ppb=W/d['units']; ax=xp/100*W; ay=yp/100*H; r=R*ppb
+    yy,xx=_np.nonzero(M)
+    best=None
+    for dist in _np.arange(0.55,2.25,0.15):
+        for t in range(32):
+            th=t/32*2*_np.pi; cx=ax+dist*ppb*_np.cos(th); cy=ay+dist*ppb*_np.sin(th)
+            if not(r*0.6<=cx<=W-r*0.6 and r*0.6<=cy<=H-r*0.6): continue
+            if any((cx-tx)**2+(cy-ty)**2<(2.2*r)**2 for tx,ty in taken): continue
+            dd=_np.min((xx-cx)**2+(yy-cy)**2) if len(xx) else 1e9
+            sc=dd**0.5-r
+            if sc>=0: return (cx-ax)/ppb,(cy-ay)/ppb
+            if best is None or sc>best[0]: best=(sc,cx,cy)
+    _,cx,cy=best; return (cx-ax)/ppb,(cy-ay)/ppb
 def mk_lmol(slug):
     D=json.load(open(os.path.join(GEN,'data',slug+'-mols.json'),encoding='utf-8'))
     def lm(name,alt,marks=(),cap='',cls='',part=None,eager=False):
         d=D[name]; lm.used.add(name); w,h=_png_size(os.path.join(OUT,'img',slug,name+'.png')); mk=''
+        _tk=[]
         for key,txt,dx,dy,*kind in marks:
             x,y=d['anchors'][key] if isinstance(key,str) else key
+            if dx is None: dx,dy=_auto_mark(slug,name,d,x,y,taken=_tk)
             x+=dx/d['units']*100; y+=dy/d['hunits']*100
+            _tk.append((x/100*w,y/100*h))
             mk+=f'<span class="mk{(" "+kind[0]) if kind else ""}" style="left:{x:.1f}%;top:{y:.1f}%">{txt}</span>'
         capt=_html.escape(_re.sub('<[^>]+>','',cap or alt))
         return (f'<div class="lm{(" "+cls) if cls else ""}" style="--u:{d["units"]};--hu:{d["hunits"]}"{f' data-part="{part}"' if part else ''}>'
                 f'<button type="button" class="mz lmz" data-cap="{capt}" aria-label="Enlarge: {capt}"><img src="img/{slug}/{name}.png" width="{w}" height="{h}" alt="{_html.escape(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async">{ZOOM}</button>{mk}</div>')
-    lm.D=D; lm.used=set(); return lm
+    lm.D=D; lm.used=set(); lm.taken={}; return lm
 EL_NAMES={'c':'carbon','h':'hydrogen','o':'oxygen','n':'nitrogen','p':'phosphorus','s':'sulfur','na':'sodium','cl':'chlorine','kk':'potassium','ca':'calcium','mg':'magnesium','fe':'iron','zn':'zinc','cu':'copper','i':'iodine','se':'selenium','f':'fluorine','mn':'manganese','cr':'chromium','mo':'molybdenum','co':'cobalt'}
 def legend(els='c h o n',note='every molecule on this page is drawn at the same scale with every hydrogen shown · tap one to enlarge it'):
     return '<p class="rleg">'+' '.join(f'<span class="k {e}"></span>{EL_NAMES[e]}' for e in els.split())+f' · {note}</p>'
