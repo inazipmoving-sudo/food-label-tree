@@ -1,0 +1,192 @@
+{
+ "inositol": {
+  "units": 5.66,
+  "hunits": 5.607,
+  "formula": "C6H12O6",
+  "anchors": {
+   "ring": [
+    67.67,
+    50.0
+   ],
+   "oh": [
+    85.34,
+    50.0
+   ]
+  }
+ },
+ "phosphate": {
+  "units": 3.66,
+  "hunits": 3.33,
+  "formula": "H3O4P",
+  "anchors": {
+   "p": [
+    50.0,
+    45.05
+   ]
+  }
+ },
+ "phytic": {
+  "units": 8.32,
+  "hunits": 9.071,
+  "formula": "C6H18O24P6",
+  "anchors": {
+   "ring": [
+    59.01,
+    54.77
+   ],
+   "p": [
+    80.05,
+    59.55
+   ],
+   "p2": [
+    56.01,
+    78.64
+   ]
+  }
+ },
+ "zn": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Zn2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "fe": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Fe3+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "oxalic": {
+  "units": 3.895,
+  "hunits": 3.619,
+  "formula": "C2H2O4",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "oxalate": {
+  "units": 3.646,
+  "hunits": 3.619,
+  "formula": "C2O4 2-",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "ca": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Ca2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "caox": {
+  "units": 3.732,
+  "hunits": 3.416,
+  "formula": "CaC2O4",
+  "anchors": {
+   "ca": [
+    50.0,
+    85.36
+   ],
+   "ox": [
+    50.0,
+    29.27
+   ]
+  }
+ },
+ "gallic": {
+  "units": 5.83,
+  "hunits": 5.036,
+  "formula": "C7H6O5",
+  "anchors": {
+   "acid": [
+    17.15,
+    55.68
+   ],
+   "oh": [
+    85.76,
+    55.68
+   ]
+  }
+ },
+ "catechin": {
+  "units": 9.686,
+  "hunits": 6.447,
+  "formula": "C15H14O6",
+  "anchors": {
+   "a": [
+    11.6,
+    34.77
+   ],
+   "c": [
+    60.38,
+    80.46
+   ],
+   "b": [
+    93.55,
+    34.77
+   ]
+  }
+ },
+ "iodide": {
+  "units": 1.64,
+  "hunits": 1.64,
+  "formula": "I-",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "thiocyanate": {
+  "units": 3.0,
+  "hunits": 1.0,
+  "formula": "SCN-",
+  "anchors": {
+   "s": [
+    16.67,
+    50.0
+   ]
+  }
+ },
+ "goitrin": {
+  "units": 5.513,
+  "hunits": 3.969,
+  "formula": "C5H7NOS",
+  "anchors": {
+   "vinyl": [
+    21.02,
+    26.5
+   ],
+   "s": [
+    90.93,
+    26.5
+   ],
+   "n": [
+    74.62,
+    65.26
+   ]
+  }
+ }
+}
