@@ -190,3 +190,6 @@ dialog.lbm .lm{margin:0}
 .pair .pc .mt{width:100%}
 dialog.lbm{overflow:auto}
 dialog.lbm img{max-height:none;max-width:none;width:100%;height:auto}
+.mfact{margin:8px 0 0;color:#2B2B2B;line-height:1.5}.mfact b{color:#2B2B2B}.mfact+.mfact{margin-top:2px}
+svg.tree a.tlk{cursor:pointer}svg.tree a.tlk:hover rect,svg.tree a.tlk:focus-visible rect{stroke:var(--acc);stroke-width:2.2}svg.tree a.tlk:hover .nt{text-decoration:underline}
+.art svg.tree.ltree{max-height:none}
