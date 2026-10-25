@@ -171,7 +171,7 @@ def page(title,hero,body,extra='',head=''):
 # A module needs only: figure cards (figure_card) + a script JSON in gen/scripts/<module>.json.
 # lesson_page() validates the script, embeds it, publishes curriculum/scripts/<module>.json and
 # copies gen/player.js + gen/player.css to curriculum/assets/ (cache-busted by content hash).
-import json, html as _html, hashlib
+import json, re, html as _html, hashlib
 GEN=os.path.dirname(os.path.abspath(__file__))
 SITE='https://inazipmoving-sudo.github.io/food-label-tree/'
 def _asset(name):
@@ -179,6 +179,7 @@ def _asset(name):
     os.makedirs(os.path.join(OUT,'assets'),exist_ok=True)
     open(os.path.join(OUT,'assets',name),'w',encoding='utf-8').write(src)
     return f'assets/{name}?v='+hashlib.sha1(src.encode()).hexdigest()[:10]
+def slugify(t): return re.sub(r'[^a-z0-9]+','-',t.lower()).strip('-')
 def load_script(module,figs_html):
     d=json.load(open(os.path.join(GEN,'scripts',module+'.json'),encoding='utf-8'))
     assert d.get('schemaVersion')==1 and d.get('module')==module, 'script: schemaVersion 1 and matching module id required'
@@ -188,6 +189,9 @@ def load_script(module,figs_html):
         for k,sg in enumerate(f['segments'],1):
             assert sg['id']==f"{f['fig']}.{k}" and sg.get('seg',k)==k, f"segment id {sg['id']} out of order"
             sg['seg']=k; assert sg['text'].strip()
+            if sg.get('name'):
+                sg['slug']=slugify(sg['name']); assert not sg['slug'].startswith('seg-') and sg['slug']
+                assert sum(1 for x in f['segments'] if x.get('name') and slugify(x['name'])==sg['slug'])==1, f"segment {sg['id']}: duplicate name in figure {f['fig']}"
             if sg.get('part'): assert f'data-part="{sg["part"]}"' in fh, f"segment {sg['id']}: no data-part={sg['part']} in figure {f['fig']}"
     return d
 def _seg_li(sg):
@@ -198,13 +202,14 @@ def _seg_li(sg):
     if sg.get('verbatim'): tags+='<span class="lp-tag">Word for word</span>'
     cue=f'<span class="lp-cue">{tags}{e(sg["cue"]) if sg.get("cue") else ""}</span>' if (tags or sg.get('cue')) else ''
     q=f'<h4 class="lp-q">{e(sg["q"])}</h4>' if sg.get('q') else ''
+    if sg.get('name'): q=f'<h4 class="lp-name">{e(sg["name"])}</h4>'+q
     box=f' data-box="{sg["box"]}"' if sg.get('box') else ''
-    return f'<li class="lp-seg" id="seg-{sg["id"]}" data-id="{sg["id"]}"{box} tabindex="0"><span class="lp-sid">{sg["id"]}</span><div>{q}<p class="lp-tx">{e(sg["text"])}</p>{cue}</div></li>'
+    return f'<li class="lp-seg" id="seg-{sg["id"]}" data-id="{sg["id"]}"{box}{f' data-slug="{sg["slug"]}"' if sg.get('slug') else ''} tabindex="0"><span class="lp-sid">{sg["id"]}</span><div>{q}<p class="lp-tx">{e(sg["text"])}</p>{cue}</div></li>'
 IC={'prevfig':'<path d="M3 2h2v12H3zM14 2v12L6 8z"/>','prevseg':'<path d="M10.5 2.5 5 8l5.5 5.5 1.2-1.2L7.4 8l4.3-4.3z"/>','nextseg':'<path d="M5.5 2.5 11 8l-5.5 5.5-1.2-1.2L8.6 8 4.3 3.7z"/>','nextfig':'<path d="M11 2h2v12h-2zM2 2v12l8-6z"/>'}
 def _ib(act,label,keys):
     return f'<button type="button" class="lp-btn" data-act="{act}" aria-label="{label}" title="{label} ({keys})"><svg viewBox="0 0 16 16" aria-hidden="true">{IC[act]}</svg></button>'
 CONTROLS=('<div class="lp-ctl" role="toolbar" aria-label="Lesson controls"><button type="button" class="lp-now" data-act="now" title="Show this line in the script"></button>'
- '<div class="lp-pos"><span class="lp-nowk">Now</span><span class="lp-where">1.1</span><span class="lp-of"></span></div><span class="lp-nx"></span><span class="lp-brk"></span>'
+ '<div class="lp-pos"><span class="lp-nowk">Now</span><span class="lp-where">1.1</span><span class="lp-nm"></span><span class="lp-of"></span></div><span class="lp-nx"></span><span class="lp-brk"></span>'
  +_ib('prevfig','Previous figure','Shift + Left')+_ib('prevseg','Previous line','Left arrow')
  +'<button type="button" class="lp-btn next" data-act="nextseg" aria-label="Next line" title="Next line (Right arrow)"><span class="lp-bl">Next</span><span class="lp-nl"></span><svg viewBox="0 0 16 16" aria-hidden="true">'+IC['nextseg']+'</svg></button>'
  +_ib('nextfig','Next figure','Shift + Right')
@@ -217,7 +222,7 @@ def lesson_page(module,title,hero,figs_html,after_html='',out_name=None):
     d=load_script(module,figs_html)
     nseg=sum(len(f['segments']) for f in d['figures'])
     pub=dict(d); pub.update({'page':f'curriculum/{out_name}','pageUrl':SITE+f'curriculum/{out_name}','scriptUrl':SITE+f'curriculum/scripts/{module}.json',
-        'hashFormat':'#fig-{fig}/seg-{seg}','figureCount':len(d['figures']),'segmentCount':nseg})
+        'hashFormat':'#fig-{fig}/seg-{seg}','hashAliases':'#fig-{fig}/{slug} for segments with a name','figureCount':len(d['figures']),'segmentCount':nseg})
     os.makedirs(os.path.join(OUT,'scripts'),exist_ok=True)
     open(os.path.join(OUT,'scripts',module+'.json'),'w',encoding='utf-8').write(json.dumps(pub,ensure_ascii=False,indent=1)+'\n')
     css,js=_asset('player.css'),_asset('player.js')

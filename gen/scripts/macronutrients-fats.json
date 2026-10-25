@@ -10,7 +10,8 @@
   "verbatim": "true if text must be read word for word",
   "cue": "optional: what to point at; not spoken",
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
-  "part": "optional: data-part of the figure element the segment is about"
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "optional short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-1/three-categories)"
  },
  "figures": [
   {
@@ -21,9 +22,45 @@
     {
      "id": "1.1",
      "seg": 1,
-     "text": "Fat is one of the three macronutrients, alongside protein and carbohydrates, and it's the most energy-dense: every gram of fat gives about 9 calories, while protein and carbs give about 4. In your body, fat is stored energy, it builds the membranes around every cell, it helps you absorb vitamins A, D, E and K, and some fats are raw material for signaling molecules. Almost all the fat in food comes as triglycerides: a glycerol backbone holding three fatty acids, and each fatty acid is a chain of carbon atoms. What makes one fat different from another is those chains, specifically whether they have any double bonds between carbons. That gives three main categories. Saturated fats have no double bonds, so the chain is straight and packed full of hydrogen; they're common in butter, beef fat and coconut oil and tend to be solid at room temperature. Monounsaturated fats have exactly one double bond, and polyunsaturated fats have two or more. Those last two are the two kinds of unsaturated fat, and each double bond usually puts a kink in the chain, which is why olive oil, canola and nut oils stay liquid. Within polyunsaturated fats there are two important families, omega-3 and omega-6, named for where the first double bond sits when you count from the tail end of the chain. Your body can't make the parent omega-3, ALA, or the parent omega-6, linoleic acid, so they're essential and have to come from food: omega-3 from flax, walnuts and oily fish, and omega-6 from seed oils, nuts and poultry. Finally there are trans fats. A small amount occurs naturally in dairy, beef and lamb, but most trans fat in food was man-made by partially hydrogenating unsaturated oils, which straightens the chains so the oil turns solid. Trans fat raises LDL and lowers HDL cholesterol, which is why it's now banned in the US and limited in the EU. Every fat in food is a mix of all these types; we just label it by the one that dominates.",
+     "name": "Fats Overview",
+     "text": "Fat is one of the three macronutrients, alongside protein and carbohydrates, and it's the most energy-dense: every gram of fat gives about 9 calories, while protein and carbs give about 4. In your body, fat is stored energy, it builds the membranes around every cell, it helps you absorb vitamins A, D, E and K, and some fats are raw material for signaling molecules.",
      "verbatim": true,
      "cue": "Whole tree"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Triglycerides and Chains",
+     "text": "Almost all the fat in food comes as triglycerides: a glycerol backbone holding three fatty acids, and each fatty acid is a chain of carbon atoms. What makes one fat different from another is those chains, specifically whether they have any double bonds between carbons.",
+     "verbatim": true
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Three Categories",
+     "text": "That gives three main categories. Saturated fats have no double bonds, so the chain is straight and packed full of hydrogen; they're common in butter, beef fat and coconut oil and tend to be solid at room temperature. Monounsaturated fats have exactly one double bond, and polyunsaturated fats have two or more. Those last two are the two kinds of unsaturated fat, and each double bond usually puts a kink in the chain, which is why olive oil, canola and nut oils stay liquid.",
+     "verbatim": true
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Omega Families",
+     "text": "Within polyunsaturated fats there are two important families, omega-3 and omega-6, named for where the first double bond sits when you count from the tail end of the chain. Your body can't make the parent omega-3, ALA, or the parent omega-6, linoleic acid, so they're essential and have to come from food: omega-3 from flax, walnuts and oily fish, and omega-6 from seed oils, nuts and poultry.",
+     "verbatim": true
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Trans Fats",
+     "text": "Finally there are trans fats. A small amount occurs naturally in dairy, beef and lamb, but most trans fat in food was man-made by partially hydrogenating unsaturated oils, which straightens the chains so the oil turns solid. Trans fat raises LDL and lowers HDL cholesterol, which is why it's now banned in the US and limited in the EU.",
+     "verbatim": true
+    },
+    {
+     "id": "1.6",
+     "seg": 6,
+     "name": "The Mix",
+     "text": "Every fat in food is a mix of all these types; we just label it by the one that dominates.",
+     "verbatim": true
     }
    ]
   },

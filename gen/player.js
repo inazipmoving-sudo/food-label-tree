@@ -36,13 +36,18 @@
   function valid(fig, seg) { return idx(fig, seg) >= 0; }
   function cur() { return flat[idx(S.fig, S.seg)]; }
   function parseHash(h) {
-    var m = /^#fig-(\d+)(?:\/seg-(\d+))?$/.exec(h || '');
+    var m = /^#fig-(\d+)(?:\/(?:seg-(\d+)|([a-z0-9-]+)))?\/?$/.exec(decodeURIComponent(h || '').toLowerCase());
     if (!m) return null;
     var f = +m[1], s = m[2] ? +m[2] : 1;
     if (!figData(f)) return null;
+    if (m[3]) { /* name link, e.g. #fig-1/three-categories */
+      var hit = figData(f).segments.filter(function (x) { return x.name && slug(x.name) === m[3]; })[0];
+      s = hit ? hit.seg : 1;
+    }
     if (!valid(f, s)) s = 1;
     return { fig: f, seg: s };
   }
+  function slug(t) { return String(t).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); }
   function hashOf(p) { return '#fig-' + p.fig + '/seg-' + p.seg; }
   function label(p) { return p.fig + '.' + p.seg; }
 
@@ -64,8 +69,10 @@
     var f = figData(S.fig), i = idx(S.fig, S.seg);
     var nx = flat[i + 1];
     $('.lp-where', ctl).textContent = label(S);
+    var nm = $('.lp-nm', ctl), cn = cur().s.name; if (nm) { nm.textContent = cn ? '· ' + cn : ''; nm.hidden = !cn; }
+    var nxn = nx && nx.s.name && nx.fig === S.fig ? ' · ' + nx.s.name : '';
     $('.lp-of', ctl).textContent = 'Line ' + (i + 1) + ' of ' + flat.length;
-    $('.lp-nx', ctl).textContent = nx ? 'Next: ' + label(nx) : 'Last line';
+    $('.lp-nx', ctl).textContent = nx ? 'Next: ' + label(nx) + nxn : 'Last line';
     $('.lp-nl', ctl).textContent = nx ? label(nx) : '';
     var h = $('.lp-scripthead', root);
     if (h) h.innerHTML = '<span class="lp-k">Figure ' + f.fig + ' script</span><span class="lp-t"></span><span class="lp-n">' + f.segments.length + (f.segments.length === 1 ? ' segment' : ' segments') + '</span>';
@@ -94,8 +101,8 @@
       if (mark) qb.textContent = isQ ? 'Question break at ' + label(mark) + '. Press Back to lesson to return.'
         : 'Paused at ' + label(mark) + '. Press Continue to pick up there.';
     }
-    var now = $('.lp-now', ctl); if (now) { var cs = cur().s; now.textContent = (cs.q ? cs.q + ' ' : '') + cs.text; }
-    var live = $('.lp-live', root); if (live) live.textContent = 'Segment ' + label(S);
+    var now = $('.lp-now', ctl); if (now) { var cs = cur().s; now.textContent = (cs.name ? cs.name + ': ' : '') + (cs.q ? cs.q + ' ' : '') + cs.text; }
+    var live = $('.lp-live', root); if (live) live.textContent = 'Segment ' + label(S) + (cur().s.name ? ', ' + cur().s.name : '');
     if (!opts.noScroll) reveal(figChanged);
   }
   function scrollWithin(col, el, pad) {
@@ -122,7 +129,8 @@
     if (scrCol && li) {
       if (figChanged) scrCol.scrollTo({ top: 0 });
       var lr = li.getBoundingClientRect(), cr = scrCol.getBoundingClientRect();
-      if (lr.top < cr.top + 70 || lr.bottom > cr.bottom - 10) scrollWithin(scrCol, li, 80);
+      var top = (ctl && scrCol.contains(ctl) ? ctl.offsetHeight : 70) + 12;
+      if (lr.top < cr.top + top || lr.bottom > cr.bottom - 10) scrollWithin(scrCol, li, top);
     }
   }
 

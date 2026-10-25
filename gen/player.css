@@ -44,6 +44,9 @@
 .lp.ready .lp-seg.on{opacity:1;background:var(--acc-soft);border-left-color:var(--acc)}
 .lp-sid{align-self:start;margin-top:3px;text-align:center;font-size:.72rem;font-weight:600;letter-spacing:.04em;font-variant-numeric:lining-nums tabular-nums;color:var(--acc);border:1px solid var(--line);border-radius:3px;padding:2px 0;background:var(--card)}
 .lp-seg.on .lp-sid{background:var(--acc);border-color:var(--acc);color:var(--card)}
+.lp-name{font-family:var(--serif);font-size:1.05rem;font-weight:600;letter-spacing:.01em;color:var(--acc);margin:0 0 3px;line-height:1.25}
+.lp-seg:not(.on) .lp-name{color:var(--text)}
+.lp-nm{font-family:var(--serif);font-size:1.25rem;font-weight:600;color:var(--acc);line-height:1.1}
 .lp-q{font-family:var(--serif);font-size:1.2rem;font-weight:500;margin:0 0 2px;line-height:1.25}
 .lp-tx{margin:0;font-size:1.02rem;line-height:1.62}
 .lp-cue{display:block;margin-top:5px;font-size:.76rem;line-height:1.4;color:var(--muted)}
@@ -70,6 +73,10 @@
  .lp-btn.next{min-width:96px;flex:1 1 auto}
  .lp-where{font-size:1.9rem}
  .lp-nx{display:none}
+ .lp-pos{flex:1 1 0;min-width:0;flex-wrap:nowrap;overflow:hidden}
+ .lp-nm{font-size:1.05rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+ .lp-where{flex:none}
+ .lp-nowk{flex:none}
  .lp-hint{font-size:.76rem;padding:8px 14px}
  .lp-btn.q{margin-left:0}
  .lp-pos,.lp-nx,.lp-btn.pz,.lp-btn.q{order:1}
