@@ -246,7 +246,7 @@ def _png_size(path):
     with open(path,'rb') as f: f.read(16); return struct.unpack('>II',f.read(8))
 def img(fname,n,alt,part=None):
     w,h=_png_size(os.path.join(OUT,'img','fats',fname))  # width/height reserve space so #fig-N jumps land correctly
-    return f'<img src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}"{f' data-part="{part}"' if part else ''} loading="{"eager" if n<2 else "lazy"}" decoding="async">'
+    return f'<img{' class="bleed"' if fname.startswith("fig-09-") else ''} src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}"{f' data-part="{part}"' if part else ''} loading="{"eager" if n<2 else "lazy"}" decoding="async">'
 # (title, caption, art) ; art None => ball-and-stick image img/fats/fig-NN.png
 LESSON=[
 ('The fat family tree: the map of this lesson','',SVG_TREE),
@@ -260,7 +260,12 @@ LESSON=[
 ('Melting points and body fat','<b>Top:</b> approximate melting points of the pure fatty acids; the dashed line is room temperature. Straighter chains (saturated, trans) melt higher, every cis kink lowers the melting point, and longer chains melt higher. <b>Bottom:</b> stored human fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the single most common, so it stays soft at body temperature (about 37 °C). Fat gets firmer as it cools, so it is firmer near the cooler skin and softer deeper in.','<div class="artstack">'+SVG_MELT.replace('<svg ','<svg data-part="melt" ',1)+SVG_BODY.replace('<svg ','<svg data-part="bodyfat" ',1)+'</div>'),
 ('Breaking a fat down for energy','<b>A, many kinds:</b> the glycerol backbone has 3 slots and any fatty acid can sit in any of them, so with about 20 common fatty acids there are about 8,000 possible triglycerides: tristearin (S-S-S), triolein (O-O-O) and a mixed palmitic-oleic-linoleic one are three examples, and every food fat is a mix of many. <b>B, breakdown:</b> when energy is low, adrenaline and glucagon rise and insulin falls, switching on the lipases in fat tissue (ATGL, then HSL). They cut the 3 ester links, adding water at each, to release 1 glycerol and 3 free fatty acids. Glycerol goes to the liver, which can make glucose from it; the fatty acids ride on albumin in the blood to muscle and the heart and are burned for fuel by beta-oxidation, 2 carbons at a time. In a deeper fast the liver turns some into ketones. The energy is in the C–H bonds of the chain, which is why fat gives 9 kcal per gram.','IMG2'),
 ]
-ARTIMG={9:[('fig-09-kinds.png','many kinds of triglyceride: tristearin, triolein and a mixed one, slots 1 to 3','kinds'),('fig-09-breakdown.png','breakdown: a triglyceride cut into glycerol and 3 fatty acids, and where they go','breakdown')],
+ARTIMG={9:[('fig-09-kinds-1.png','A, many kinds: tristearin, three stearic acids (S S S) on glycerol slots 1 to 3','kinds'),
+           ('fig-09-kinds-2.png','triolein, three oleic acids (O O O), each with one cis kink','kinds'),
+           ('fig-09-kinds-3.png','a mixed triglyceride: palmitic, oleic and linoleic (P O L), with legend','kinds'),
+           ('fig-09-breakdown-1.png','B, breakdown step 1: lipases cut the 3 ester links, adding water','breakdown'),
+           ('fig-09-breakdown-2.png','step 2: 1 glycerol plus 3 free fatty acids carried on albumin in the blood','breakdown'),
+           ('fig-09-breakdown-3.png','step 3: where they go, glycerol to the liver, fatty acids to muscle and heart','breakdown')],
         2:[('fig-02a.png','the triglyceride molecule','molecule'),('fig-02b.png','fat vs oil: tristearin vs triolein','fatoil')]}
 BODY={
 3:[('Saturated fat','Part of the structure of cell membranes (in phospholipids), a dense backup fuel stored in fat tissue, and used to make some signaling lipids. The liver can also build cholesterol, the raw material for steroid hormones, from fat breakdown products. Eating a lot raises LDL ("bad") cholesterol.'),

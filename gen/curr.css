@@ -53,3 +53,6 @@ svg text{fill:var(--text);font-family:var(--sans)}.bond{stroke:var(--text);strok
 .part{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.18em;color:var(--acc);margin:4px 0 10px}.qa{margin:14px 0 22px}.qa h4{font-family:var(--serif);font-weight:500;font-size:1.25rem;margin:14px 0 4px}.qa p{margin:0 0 8px}.qa .fnote{font-size:.85rem;color:var(--muted);margin-top:10px}
 .nd.root text.ns{fill:var(--card)!important;opacity:.8}
 @media(max-width:600px){svg.tree .nt{font-size:18px}svg.tree .ns{font-size:15px}svg.tree .lab{font-size:17px}}
+
+/* Figure 9: six stacked full-width images; on phones they run edge to edge so labels stay at body-text size */
+@media(max-width:600px){.art img.bleed{width:100vw;max-width:none;margin-left:calc(50% - 50vw);border-radius:0}.art:has(img.bleed){overflow:visible;border-left:0;border-right:0;border-radius:0}}
