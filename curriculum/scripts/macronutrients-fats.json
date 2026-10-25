@@ -3,9 +3,10 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
+ "revision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
-  "text": "what to say (1-3 sentences)",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
   "q": "optional question heading, said before text",
   "verbatim": "true if text must be read word for word",
   "cue": "optional: what to point at; not spoken",
@@ -73,451 +74,359 @@
   {
    "fig": 2,
    "anchor": "fig-2",
-   "title": "Fats: the molecule",
+   "title": "Breaking a fat down for energy",
    "segments": [
     {
      "id": "2.1",
      "seg": 1,
-     "text": "A bond is the attraction that holds two atoms together in a molecule. In the fats we're looking at, it's mostly carbon sharing electrons with hydrogen or with another carbon, and that sharing is what builds the chains.",
-     "q": "What is a bond?",
+     "name": "Many Kinds of Triglyceride",
+     "text": "Not every triglyceride is the same. The glycerol backbone has three slots, and each slot can hold a different fatty acid: saturated or unsaturated, short or long, omega-3 or omega-6. Which chains sit in which slots is what makes one specific triglyceride different from another. With about twenty common fatty acids in food, that's already around eight thousand possible combinations, because twenty times twenty times twenty is eight thousand and the order of the slots matters, so in practice there are thousands of different triglycerides, and every food fat is a mix of many of them. Olive oil, for example, is mostly triglycerides with oleic acid in two or three of the slots, while butter mixes short, medium and long saturated chains.",
      "verbatim": true,
-     "part": "atoms",
-     "cue": "Meet the atoms, panel A: C and H share one pair of electrons (blue dots)"
+     "part": "kinds",
+     "cue": "Panel A: tristearin S-S-S, triolein O-O-O, the mixed P-O-L one; slots 1, 2, 3",
+     "slug": "many-kinds-of-triglyceride"
     },
     {
      "id": "2.2",
      "seg": 2,
-     "text": "Atoms have electrons in shells around them, and atoms are happiest when their outer shell is full. A bond is when two atoms share a pair of those outer electrons so each one gets to count them.",
-     "q": "How does that work exactly?",
+     "name": "Breakdown and Release",
+     "text": "When your body is low on energy, for example between meals, during exercise or overnight, hormones like adrenaline and glucagon rise and insulin falls, and that switches on the fat-releasing enzymes in your fat tissue: adipose triglyceride lipase starts the job and hormone-sensitive lipase continues it. Together they snip a triglyceride apart into its pieces: one glycerol plus three free fatty acids. The cut happens at the ester links, where each fatty acid's carboxyl end, the part with the oxygens, was attached to the glycerol backbone; water is added at each link, so the acid head is restored. The glycerol is small and water-soluble, so it travels to the liver, which can turn it into glucose. The fatty acids don't dissolve well in blood, so they ride on a carrier protein called albumin to muscle and the heart, where they're burned for fuel. In a deeper or longer fast, the liver takes up more of them and turns part of them into ketones, a backup fuel even the brain can use. Inside the cell, the chain is chopped two carbons at a time, a process called beta-oxidation. The oxygen end is just the handle; the real energy payoff is in the long run of carbon-hydrogen bonds, which is why fat gives 9 calories per gram.",
      "verbatim": true,
-     "part": "atoms",
-     "cue": "Panel A again: the shared pair"
-    },
-    {
-     "id": "2.3",
-     "seg": 3,
-     "text": "One shared pair is a single bond, which lets the atoms spin freely around each other. Two shared pairs is a double bond, which is shorter, stronger, and locks the atoms in place so they can't rotate.",
-     "verbatim": true,
-     "part": "atoms",
-     "cue": "Panel B: single bond rotates, double bond is locked"
-    },
-    {
-     "id": "2.4",
-     "seg": 4,
-     "text": "That's the whole trick behind saturated versus unsaturated fat: saturated chains are all single bonds, so they lie straight and pack tight. Unsaturated ones have double bonds that put a kink in the chain, and that's what keeps oils liquid.",
-     "verbatim": true,
-     "part": "atoms",
-     "cue": "Panel C: straight saturated chain vs kinked cis chain"
-    },
-    {
-     "id": "2.5",
-     "seg": 5,
-     "text": "One footnote: the kink comes from cis double bonds; trans double bonds stay nearly straight. We'll see that in Figure 3.",
-     "part": "qa",
-     "cue": "Footnote under the Q&A"
-    },
-    {
-     "id": "2.6",
-     "seg": 6,
-     "text": "Now the triglyceride image. Almost every fat you eat, and the fat stored in your body, is one kind of molecule: a triglyceride.",
-     "part": "molecule"
-    },
-    {
-     "id": "2.7",
-     "seg": 7,
-     "text": "The purple box on the left is the glycerol backbone, three carbons. Hanging off it are three fatty acids.",
-     "part": "molecule",
-     "cue": "Purple glycerol box"
-    },
-    {
-     "id": "2.8",
-     "seg": 8,
-     "text": "Each fatty acid starts with an acid head, the end with the red oxygens. On its own it's a carboxyl group, COOH, and it reacts with one of glycerol's OH groups, giving off water, to make an ester link: the red bar.",
-     "part": "molecule",
-     "cue": "Red oxygens and red ester bar"
-    },
-    {
-     "id": "2.9",
-     "seg": 9,
-     "text": "The long part sticking out to the right is the carbon tail: a zigzag of carbons numbered from the head, C1, out to the far end, the omega end.",
-     "part": "molecule",
-     "cue": "Carbon tails"
-    },
-    {
-     "id": "2.10",
-     "seg": 10,
-     "text": "Only three elements: carbon makes 4 bonds, oxygen 2, and hydrogen 1. Hydrogens are hidden here to keep it clean.",
-     "part": "molecule"
-    },
-    {
-     "id": "2.11",
-     "seg": 11,
-     "text": "In the tails, one line between carbons is a single bond; the orange pair with two lines is a C=C double bond. A double-bonded carbon has room for fewer hydrogens.",
-     "part": "molecule",
-     "cue": "Orange double bonds"
-    },
-    {
-     "id": "2.12",
-     "seg": 12,
-     "text": "The top chain has no double bonds, the middle one has one, and the bottom one has two.",
-     "part": "molecule"
-    },
-    {
-     "id": "2.13",
-     "seg": 13,
-     "text": "Now the last image, fat versus oil. On the left is tristearin, three straight saturated chains; it melts at about 72 °C, so it's solid.",
-     "part": "fatoil",
-     "cue": "Left: FAT, tristearin"
-    },
-    {
-     "id": "2.14",
-     "seg": 14,
-     "text": "On the right is triolein, three kinked chains with one cis double bond each; it melts at about 5 °C, so it's liquid.",
-     "part": "fatoil",
-     "cue": "Right: OIL, triolein"
-    },
-    {
-     "id": "2.15",
-     "seg": 15,
-     "text": "Same kind of molecule, same elements: C, H and O. The oil just has six fewer hydrogens because of its three double bonds.",
-     "part": "fatoil",
-     "cue": "Element strips and formulas"
-    },
-    {
-     "id": "2.16",
-     "seg": 16,
-     "text": "'Fat' or 'oil' only tells you whether it's solid or liquid at room temperature, about 20 to 25 °C. Real fats are mixes: coconut oil is mostly saturated and melts around 24 °C, so it's solid in a cool kitchen and liquid in a warm one.",
-     "part": "fatoil"
-    },
-    {
-     "id": "2.17",
-     "seg": 17,
-     "text": "We'll see why shape matters in Figure 4. And trans fats, which we meet in Figure 3, are mostly man-made.",
-     "part": "caption"
+     "part": "breakdown",
+     "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart",
+     "slug": "breakdown-and-release"
     }
    ]
   },
   {
    "fig": 3,
    "anchor": "fig-3",
-   "title": "Saturated vs unsaturated vs trans",
+   "title": "Fats: the molecule",
    "segments": [
     {
      "id": "3.1",
      "seg": 1,
-     "text": "Same 18 carbons, three ways, and this time the small white hydrogens are shown."
+     "name": "What Is a Bond?",
+     "text": "A bond is the attraction that holds two atoms together in a molecule. In the fats we're looking at, it's mostly carbon sharing electrons with hydrogen or with another carbon, and that sharing is what builds the chains.",
+     "q": "What is a bond?",
+     "verbatim": true,
+     "part": "atoms",
+     "cue": "Meet the atoms, panel A: C and H share one pair of electrons (blue dots)",
+     "slug": "what-is-a-bond"
     },
     {
      "id": "3.2",
      "seg": 2,
-     "text": "Top: stearic acid, saturated. No double bonds, so every tail carbon holds as many hydrogens as it can, two each and three on the end, and the zigzag runs straight. It melts at about 69 °C.",
-     "cue": "Top row"
+     "name": "How Bonds Work",
+     "text": "Atoms have electrons in shells around them, and atoms are happiest when their outer shell is full. A bond is when two atoms share a pair of those outer electrons so each one gets to count them. One shared pair is a single bond, which lets the atoms spin freely around each other. Two shared pairs is a double bond, which is shorter, stronger, and locks the atoms in place so they can't rotate. That's the whole trick behind saturated versus unsaturated fat: saturated chains are all single bonds, so they lie straight and pack tight. Unsaturated ones have double bonds that put a kink in the chain, and that's what keeps oils liquid.",
+     "q": "How does that work exactly?",
+     "verbatim": true,
+     "part": "atoms",
+     "cue": "Panels A to C: shared pair, single vs double bond, straight vs kinked chain",
+     "slug": "how-bonds-work"
     },
     {
      "id": "3.3",
      "seg": 3,
-     "text": "Middle: oleic acid. Between C9 and C10 there's an orange double bond, and two hydrogens are gone; that's what 'unsaturated' means.",
-     "cue": "Middle row, orange C9=C10"
+     "name": "Cis and Trans Footnote",
+     "text": "One footnote: the kink comes from cis double bonds; trans double bonds stay nearly straight. We'll see that in Figure 4.",
+     "part": "qa",
+     "cue": "Footnote under the Q&A",
+     "slug": "cis-and-trans-footnote"
     },
     {
      "id": "3.4",
      "seg": 4,
-     "text": "The two hydrogens left on that bond sit on the same side, which is called cis, and that bends the chain. It melts at about 13 °C.",
-     "cue": "Middle row, the kink"
+     "name": "The Triglyceride",
+     "text": "Now the triglyceride image. Almost every fat you eat, and the fat stored in your body, is one kind of molecule called a triglyceride. The purple box on the left is the glycerol backbone, three carbons long, and hanging off it are three fatty acids. Each fatty acid starts with an acid head, the end with the red oxygens. On its own that head is a carboxyl group, COOH, and it reacts with one of glycerol's OH groups, giving off water, to make an ester link, the red bar that holds the fatty acid on.",
+     "part": "molecule",
+     "cue": "Purple glycerol box, red oxygens and red ester bars",
+     "slug": "the-triglyceride"
     },
     {
      "id": "3.5",
      "seg": 5,
-     "text": "Bottom: elaidic acid, trans. Same double bond in the same place, but the hydrogens sit on opposite sides, so the chain stays nearly straight and melts at about 45 °C.",
-     "cue": "Bottom row"
+     "name": "Carbon Tails",
+     "text": "The long part sticking out to the right is the carbon tail, a zigzag of carbons numbered from the head, C1, out to the far end, which is called the omega end. There are only three elements here: carbon makes 4 bonds, oxygen makes 2 and hydrogen makes 1, and the hydrogens are hidden to keep the picture clean. In the tails, one line between carbons is a single bond, while the orange pair with two lines is a C=C double bond, and a double-bonded carbon has room for fewer hydrogens. The top chain has no double bonds, the middle one has one, and the bottom one has two.",
+     "part": "molecule",
+     "cue": "Carbon tails and orange double bonds",
+     "slug": "carbon-tails"
     },
     {
      "id": "3.6",
      "seg": 6,
-     "text": "So trans fat behaves much like saturated fat. Plant oils and most natural fats are cis."
-    },
-    {
-     "id": "3.7",
-     "seg": 7,
-     "text": "Most trans fat in food was man-made, by partial hydrogenation of vegetable oil, which we'll see in Figure 7. Small natural amounts come from ruminant animals, cows, sheep and goats, so dairy, beef and lamb contain a little; the main one is vaccenic acid.",
-     "box": "note",
-     "part": "note",
-     "cue": "Grey note"
-    },
-    {
-     "id": "3.8",
-     "seg": 8,
-     "text": "In the pink box: saturated fat is part of the structure of your cell membranes and a dense backup fuel stored in fat tissue.",
-     "box": "body",
-     "part": "body",
-     "cue": "Pink box: Saturated fat"
-    },
-    {
-     "id": "3.9",
-     "seg": 9,
-     "text": "Your liver can build cholesterol from fat breakdown products, and cholesterol is the raw material for steroid hormones. So the hormones come from cholesterol, not from saturated fat directly.",
-     "box": "body",
-     "part": "body"
-    },
-    {
-     "id": "3.10",
-     "seg": 10,
-     "text": "But eating a lot of saturated fat raises LDL, the 'bad' cholesterol.",
-     "box": "body",
-     "part": "body"
-    },
-    {
-     "id": "3.11",
-     "seg": 11,
-     "text": "Trans fat: your body doesn't handle the straight trans shape like natural unsaturated fat; it packs into cell membranes much like saturated fat.",
-     "box": "body",
-     "part": "body",
-     "cue": "Pink box: Trans fat"
-    },
-    {
-     "id": "3.12",
-     "seg": 12,
-     "text": "Trans fat raises LDL, the 'bad' cholesterol, and lowers HDL, the 'good' one, and it is strongly linked to heart disease. That's why industrial trans fat is now mostly banned in the US.",
-     "box": "body",
-     "part": "body"
-    },
-    {
-     "id": "3.13",
-     "seg": 13,
-     "text": "Ruminant trans fat is eaten in much smaller amounts. At normal intakes the evidence of harm is weaker, but in high-dose trials it raises LDL too.",
-     "box": "body",
-     "part": "body",
-     "cue": "Pink box: Ruminant trans fat"
+     "name": "Fat Versus Oil",
+     "text": "Now the last image, fat versus oil. On the left is tristearin, three straight saturated chains, which melts at about 72 °C, so it's solid. On the right is triolein, three kinked chains with one cis double bond each, which melts at about 5 °C, so it's liquid. They're the same kind of molecule made of the same elements, carbon, hydrogen and oxygen; the oil just has six fewer hydrogens because of its three double bonds. So 'fat' or 'oil' only tells you whether it's solid or liquid at room temperature, about 20 to 25 °C. Real fats are mixes, too: coconut oil is mostly saturated and melts around 24 °C, so it's solid in a cool kitchen and liquid in a warm one. We'll see why shape matters in Figure 5, and trans fats, which we meet in Figure 4, are mostly man-made.",
+     "part": "fatoil",
+     "cue": "Left: FAT, tristearin; right: OIL, triolein; element strips",
+     "slug": "fat-versus-oil"
     }
    ]
   },
   {
    "fig": 4,
    "anchor": "fig-4",
-   "title": "Why some fats are solid and some oils are liquid",
+   "title": "Saturated vs unsaturated vs trans",
    "segments": [
     {
      "id": "4.1",
      "seg": 1,
-     "text": "This is the space-filling style: every atom at its true size, so each fatty acid looks like a solid rod."
+     "name": "Straight and Saturated",
+     "text": "Here are the same 18 carbons three ways, and this time the small white hydrogens are shown. On top is stearic acid, which is saturated: there are no double bonds, so every tail carbon holds as many hydrogens as it can, two each and three on the end, and the zigzag runs straight. It melts at about 69 °C.",
+     "cue": "Top row",
+     "slug": "straight-and-saturated"
     },
     {
      "id": "4.2",
      "seg": 2,
-     "text": "On the left, four straight saturated chains stack tightly, like pencils in a box. They grip each other, so it takes more heat to melt them: about 69 °C for stearic acid.",
-     "cue": "Left stack: saturated"
+     "name": "The Cis Kink",
+     "text": "In the middle is oleic acid. Between C9 and C10 there's an orange double bond, and two hydrogens are gone, which is exactly what 'unsaturated' means. The two hydrogens left on that bond sit on the same side, which is called cis, and that bends the chain, so it melts at about 13 °C.",
+     "cue": "Middle row, orange C9=C10 and the kink",
+     "slug": "the-cis-kink"
     },
     {
      "id": "4.3",
      "seg": 3,
-     "text": "That's why butter, lard and cocoa butter are solid at room temperature."
+     "name": "Trans Stays Straight",
+     "text": "At the bottom is elaidic acid, a trans fat. It has the same double bond in the same place, but the hydrogens sit on opposite sides, so the chain stays nearly straight and melts at about 45 °C. So trans fat behaves much like saturated fat, while plant oils and most natural fats are cis.",
+     "cue": "Bottom row",
+     "slug": "trans-stays-straight"
     },
     {
      "id": "4.4",
      "seg": 4,
-     "text": "In the middle, trans chains are almost straight, so they pack almost as tightly and melt at about 45 °C. That's why partially hydrogenated oil turned solid.",
-     "cue": "Middle stack: trans"
+     "name": "Where Trans Fat Comes From",
+     "text": "As the grey note says, most trans fat in food was man-made, by partial hydrogenation of vegetable oil, which we'll see in Figure 8. Small natural amounts come from ruminant animals, cows, sheep and goats, so dairy, beef and lamb contain a little, and the main one is vaccenic acid.",
+     "box": "note",
+     "part": "note",
+     "cue": "Grey note",
+     "slug": "where-trans-fat-comes-from"
     },
     {
      "id": "4.5",
      "seg": 5,
-     "text": "On the right, the cis kinks keep oleic chains apart and leave gaps, so they slide past each other and melt at about 13 °C. That's why olive and canola oil are liquid.",
-     "cue": "Right stack: cis"
+     "name": "Saturated Fat in Your Body",
+     "text": "In the pink box, saturated fat is part of the structure of your cell membranes and a dense backup fuel stored in fat tissue. Your liver can build cholesterol from fat breakdown products, and cholesterol is the raw material for steroid hormones, so the hormones come from cholesterol, not from saturated fat directly. But eating a lot of saturated fat raises LDL, the 'bad' cholesterol.",
+     "box": "body",
+     "part": "body",
+     "cue": "Pink box: Saturated fat",
+     "slug": "saturated-fat-in-your-body"
     },
     {
      "id": "4.6",
      "seg": 6,
-     "text": "In real fats these chains sit on triglycerides, like in Figure 2, and the same rule holds."
+     "name": "Trans Fat in Your Body",
+     "text": "Trans fat is different: your body doesn't handle the straight trans shape like natural unsaturated fat, so it packs into cell membranes much like saturated fat. It raises LDL, the 'bad' cholesterol, lowers HDL, the 'good' one, and is strongly linked to heart disease, which is why industrial trans fat is now mostly banned in the US. Ruminant trans fat is eaten in much smaller amounts; at normal intakes the evidence of harm is weaker, but in high-dose trials it raises LDL too.",
+     "box": "body",
+     "part": "body",
+     "cue": "Pink box: Trans fat and Ruminant trans fat",
+     "slug": "trans-fat-in-your-body"
     }
    ]
   },
   {
    "fig": 5,
    "anchor": "fig-5",
-   "title": "Monounsaturated vs polyunsaturated",
+   "title": "Why some fats are solid and some oils are liquid",
    "segments": [
     {
      "id": "5.1",
      "seg": 1,
-     "text": "Unsaturated fats are grouped by how many double bonds they have."
+     "name": "Atoms at True Size",
+     "text": "This is the space-filling style, with every atom drawn at its true size, so each fatty acid looks like a solid rod.",
+     "cue": "Whole image",
+     "slug": "atoms-at-true-size"
     },
     {
      "id": "5.2",
      "seg": 2,
-     "text": "Top: oleic acid, monounsaturated, 'mono' meaning one: a single cis double bond at C9. It's the main fat in olive oil.",
-     "cue": "Top: oleic"
+     "name": "Straight Chains Pack Tight",
+     "text": "On the left, four straight saturated chains stack tightly, like pencils in a box. They grip each other, so it takes more heat to melt them, about 69 °C for stearic acid, and that's why butter, lard and cocoa butter are solid at room temperature.",
+     "cue": "Left stack: saturated",
+     "slug": "straight-chains-pack-tight"
     },
     {
      "id": "5.3",
      "seg": 3,
-     "text": "Bottom: linoleic acid, polyunsaturated, 'poly' meaning many, with two cis double bonds at C9 and C12. It's in sunflower, corn and other seed oils.",
-     "cue": "Bottom: linoleic"
+     "name": "Trans Packs Almost as Tight",
+     "text": "In the middle, the trans chains are almost straight, so they pack almost as tightly and melt at about 45 °C, which is why partially hydrogenated oil turned solid.",
+     "cue": "Middle stack: trans",
+     "slug": "trans-packs-almost-as-tight"
     },
     {
      "id": "5.4",
      "seg": 4,
-     "text": "Each extra kink lowers the melting point again: about 13 °C for oleic, about minus 5 °C for linoleic."
-    },
-    {
-     "id": "5.5",
-     "seg": 5,
-     "text": "In the pink box: monounsaturated fat, mostly oleic acid, is the main fat in your stored body fat, your energy reserve. It helps keep cell membranes flexible.",
-     "box": "body",
-     "part": "body",
-     "cue": "Pink box: Monounsaturated fat"
-    },
-    {
-     "id": "5.6",
-     "seg": 6,
-     "text": "Diets that swap saturated fat for monounsaturated fat are linked to better cholesterol numbers, with lower LDL and a better LDL-to-HDL balance.",
-     "box": "body",
-     "part": "body"
-    },
-    {
-     "id": "5.7",
-     "seg": 7,
-     "text": "All polyunsaturated fats: the parent omega-3 and omega-6 are essential, so your body can't make them and they must come from food. It uses them to build signaling molecules called eicosanoids.",
-     "box": "body",
-     "part": "body",
-     "cue": "Pink box: All polyunsaturated fats"
+     "name": "Kinks Leave Gaps",
+     "text": "On the right, the cis kinks keep the oleic chains apart and leave gaps, so they slide past each other and melt at about 13 °C, and that's why olive and canola oil are liquid. In real fats these chains sit on triglycerides, like the ones in Figure 3, and the same rule holds.",
+     "cue": "Right stack: cis",
+     "slug": "kinks-leave-gaps"
     }
    ]
   },
   {
    "fig": 6,
    "anchor": "fig-6",
-   "title": "Omega-3 vs omega-6: count from the tail",
+   "title": "Monounsaturated vs polyunsaturated",
    "segments": [
     {
      "id": "6.1",
      "seg": 1,
-     "text": "Now count from the tail. Omega 1 is the last carbon.",
-     "cue": "The ω labels"
+     "name": "One Double Bond",
+     "text": "Unsaturated fats are grouped by how many double bonds they have. On top is oleic acid, which is monounsaturated, 'mono' meaning one: it has a single cis double bond at C9, and it's the main fat in olive oil.",
+     "cue": "Top: oleic",
+     "slug": "one-double-bond"
     },
     {
      "id": "6.2",
      "seg": 2,
-     "text": "On top is ALA, the plant omega-3 in flax, chia and walnuts. It has three cis double bonds, and the first one starts at omega 3, so it's an omega-3.",
-     "cue": "Top: ALA"
+     "name": "Two or More",
+     "text": "At the bottom is linoleic acid, which is polyunsaturated, 'poly' meaning many, with two cis double bonds at C9 and C12; it's in sunflower, corn and other seed oils. Each extra kink lowers the melting point again, from about 13 °C for oleic acid to about minus 5 °C for linoleic.",
+     "cue": "Bottom: linoleic",
+     "slug": "two-or-more"
     },
     {
      "id": "6.3",
      "seg": 3,
-     "text": "Below is linoleic acid, the main omega-6 in seed oils like sunflower and corn oil. It has two double bonds, and the first starts at omega 6, so it's an omega-6.",
-     "cue": "Bottom: linoleic acid"
+     "name": "Monounsaturated Fat in Your Body",
+     "text": "In the pink box, monounsaturated fat, mostly oleic acid, is the main fat in your stored body fat, your energy reserve, and it helps keep cell membranes flexible. Diets that swap saturated fat for monounsaturated fat are linked to better cholesterol numbers, with lower LDL and a better LDL-to-HDL balance.",
+     "box": "body",
+     "part": "body",
+     "cue": "Pink box: Monounsaturated fat",
+     "slug": "monounsaturated-fat-in-your-body"
     },
     {
      "id": "6.4",
      "seg": 4,
-     "text": "Omega-3: its signals tend to calm inflammation, and DHA is a major building block of your brain and the retina of your eye.",
+     "name": "Essential Polyunsaturated Fats",
+     "text": "As for all polyunsaturated fats, the parent omega-3 and omega-6 are essential, so your body can't make them and they must come from food. Your body uses them to build signaling molecules called eicosanoids.",
      "box": "body",
      "part": "body",
-     "cue": "Pink box: Omega-3"
-    },
-    {
-     "id": "6.5",
-     "seg": 5,
-     "text": "Plant ALA converts only poorly into EPA and DHA, so fish or algae are the direct sources.",
-     "box": "body",
-     "part": "body"
-    },
-    {
-     "id": "6.6",
-     "seg": 6,
-     "text": "Omega-6: through arachidonic acid it makes the signals for immune responses, inflammation and blood clotting. Those are useful jobs.",
-     "box": "body",
-     "part": "body",
-     "cue": "Pink box: Omega-6"
-    },
-    {
-     "id": "6.7",
-     "seg": 7,
-     "text": "But too much omega-6 compared with omega-3 may tip the balance toward inflammation.",
-     "box": "body",
-     "part": "body"
+     "cue": "Pink box: All polyunsaturated fats",
+     "slug": "essential-polyunsaturated-fats"
     }
    ]
   },
   {
    "fig": 7,
    "anchor": "fig-7",
-   "title": "Hydrogenation: how oils become solid fats",
+   "title": "Omega-3 vs omega-6: count from the tail",
    "segments": [
     {
      "id": "7.1",
      "seg": 1,
-     "text": "This is how factories turn liquid oil into solid fat: they add hydrogen gas with a nickel catalyst and heat.",
-     "cue": "Top: the starting oil"
+     "name": "Count From the Tail",
+     "text": "Now count from the tail end of the chain, where omega 1 is the last carbon. On top is ALA, the plant omega-3 in flax, chia and walnuts: it has three cis double bonds, and the first one starts at omega 3, so it's an omega-3.",
+     "cue": "The ω labels, top: ALA",
+     "slug": "count-from-the-tail"
     },
     {
      "id": "7.2",
      "seg": 2,
-     "text": "Full hydrogenation, at the bottom, removes every double bond and gives saturated fat.",
-     "cue": "Bottom row"
+     "name": "The Omega-6 Pattern",
+     "text": "Below it is linoleic acid, the main omega-6 in seed oils like sunflower and corn oil. It has two double bonds, and the first one starts at omega 6, so it's an omega-6.",
+     "cue": "Bottom: linoleic acid",
+     "slug": "the-omega-6-pattern"
     },
     {
      "id": "7.3",
      "seg": 3,
-     "text": "Partial hydrogenation, in the middle, stops partway: some double bonds remain and some flip from cis to trans.",
-     "cue": "Middle row"
+     "name": "Omega-3 in Your Body",
+     "text": "In the pink box, omega-3 signals tend to calm inflammation, and DHA is a major building block of your brain and the retina of your eye. Plant ALA converts only poorly into EPA and DHA, so fish or algae are the direct sources.",
+     "box": "body",
+     "part": "body",
+     "cue": "Pink box: Omega-3",
+     "slug": "omega-3-in-your-body"
     },
     {
      "id": "7.4",
      "seg": 4,
-     "text": "That's where most trans fat in food came from, the man-made trans fat from Figure 3. Industrial trans fat is banned in the US and limited in the EU."
+     "name": "Omega-6 in Your Body",
+     "text": "Omega-6, through arachidonic acid, makes the signals for immune responses, inflammation and blood clotting, and those are useful jobs. But too much omega-6 compared with omega-3 may tip the balance toward inflammation.",
+     "box": "body",
+     "part": "body",
+     "cue": "Pink box: Omega-6",
+     "slug": "omega-6-in-your-body"
     }
    ]
   },
   {
    "fig": 8,
    "anchor": "fig-8",
-   "title": "Melting points and body fat",
+   "title": "Hydrogenation: how oils become solid fats",
    "segments": [
     {
      "id": "8.1",
      "seg": 1,
-     "text": "Top: melting points of the pure fatty acids. The dashed line is room temperature.",
-     "part": "melt",
-     "cue": "Top chart, dashed line"
+     "name": "Adding Hydrogen",
+     "text": "This is how factories turn liquid oil into solid fat: starting from the oil at the top, they add hydrogen gas with a nickel catalyst and heat.",
+     "cue": "Top: the starting oil",
+     "slug": "adding-hydrogen"
     },
     {
      "id": "8.2",
      "seg": 2,
-     "text": "Anything above it, like stearic and elaidic acid, is solid in your kitchen; anything below, like oleic, linoleic and ALA, is liquid.",
-     "part": "melt"
+     "name": "Full Versus Partial",
+     "text": "Full hydrogenation, at the bottom, removes every double bond and gives saturated fat. Partial hydrogenation, in the middle, stops partway, so some double bonds remain and some flip from cis to trans.",
+     "cue": "Bottom row, then middle row",
+     "slug": "full-versus-partial"
     },
     {
      "id": "8.3",
      "seg": 3,
-     "text": "Straighter chains melt higher, every cis kink lowers the melting point, and longer chains melt higher.",
-     "part": "melt"
+     "name": "Where Trans Fat Came From",
+     "text": "That's where most trans fat in food came from, the man-made trans fat from Figure 4. Industrial trans fat is now banned in the US and limited in the EU.",
+     "slug": "where-trans-fat-came-from"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
+   "title": "Melting points and body fat",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Melting Points",
+     "text": "At the top are the melting points of the pure fatty acids, and the dashed line is room temperature. Anything above it, like stearic and elaidic acid, is solid in your kitchen, and anything below, like oleic, linoleic and ALA, is liquid.",
+     "part": "melt",
+     "cue": "Top chart, dashed line",
+     "slug": "melting-points"
     },
     {
-     "id": "8.4",
-     "seg": 4,
-     "text": "Bottom: the same idea inside you. Stored body fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the most common.",
+     "id": "9.2",
+     "seg": 2,
+     "name": "What Sets the Melting Point",
+     "text": "The pattern is simple: straighter chains melt higher, every cis kink lowers the melting point, and longer chains melt higher.",
+     "part": "melt",
+     "slug": "what-sets-the-melting-point"
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "Fat Inside You",
+     "text": "At the bottom is the same idea inside you. Stored body fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the most common, so it stays soft at body temperature, about 37 °C. Fat just under the cooler skin is firmer, and fat deeper in is softer.",
      "part": "bodyfat",
-     "cue": "Bottom diagram"
+     "cue": "Bottom diagram",
+     "slug": "fat-inside-you"
     },
     {
-     "id": "8.5",
-     "seg": 5,
-     "text": "So it stays soft at body temperature, about 37 °C. Fat just under the cooler skin is firmer, and fat deeper in is softer.",
-     "part": "bodyfat"
-    },
-    {
-     "id": "8.6",
-     "seg": 6,
+     "id": "9.4",
+     "seg": 4,
+     "name": "An Evidence Note",
      "text": "You'll sometimes hear that the body keeps its outer fat layers more unsaturated so they don't harden. That's well shown in pigs and other animals, but the evidence in humans is weaker, so treat it as a maybe.",
      "box": "note",
      "part": "note",
-     "cue": "Grey evidence note"
+     "cue": "Grey evidence note",
+     "slug": "an-evidence-note"
     },
     {
-     "id": "8.7",
-     "seg": 7,
+     "id": "9.5",
+     "seg": 5,
+     "name": "Back to the Family Tree",
      "text": "That completes the family tree from Figure 1: saturated, mono, poly with the omegas, and trans. The quiz is below.",
-     "cue": "Back to Figure 1 if there is time"
+     "cue": "Back to Figure 1 if there is time",
+     "slug": "back-to-the-family-tree"
     }
    ]
   }
@@ -527,6 +436,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-fats.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 8,
- "segmentCount": 67
+ "figureCount": 9,
+ "segmentCount": 40
 }

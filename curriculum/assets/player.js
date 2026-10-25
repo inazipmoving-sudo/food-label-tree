@@ -14,6 +14,9 @@
   var D = JSON.parse(dataEl.textContent);
   if (D.schemaVersion !== 1) { console.warn('lesson player: unknown schemaVersion', D.schemaVersion); }
   var MOD = D.module, KEY = 'flt-lesson:' + MOD, QKEY = 'flt-lesson-q:' + MOD;
+  /* script revision: saved spots and marks from an older revision (e.g. before figures were renumbered) are ignored */
+  var REV = D.revision || 0;
+  function sameRev(v) { return v && (v.rev || 0) === REV ? v : null; }
   var FIGS = D.figures, NF = FIGS.length;
   var flat = [];
   FIGS.forEach(function (f, fi) { f.segments.forEach(function (s, si) { flat.push({ fig: f.fig, seg: s.seg, s: s, fi: fi, si: si }); }); });
@@ -23,7 +26,7 @@
     get: function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
     set: function (k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
-  var mark = store.get(QKEY); /* {fig, seg, kind: 'pause' | 'question'} */
+  var mark = sameRev(store.get(QKEY)); /* {fig, seg, kind: 'pause' | 'question'} */
   if (mark && !(FIGS.some(function (f) { return f.fig === mark.fig; }))) mark = null;
   if (mark && !FIGS.filter(function (f) { return f.fig === mark.fig; })[0].segments.some(function (x) { return x.seg === mark.seg; })) mark.seg = 1;
   if (mark && mark.kind !== 'pause') mark.kind = 'question';
@@ -136,7 +139,7 @@
 
   /* ---------- state changes ---------- */
   function save() {
-    store.set(KEY, { fig: S.fig, seg: S.seg, t: Date.now() });
+    store.set(KEY, { fig: S.fig, seg: S.seg, t: Date.now(), rev: REV });
     if (location.hash !== hashOf(S)) history.replaceState(null, '', hashOf(S));
     var rb = $('[data-act=resume]', root); if (rb) rb.hidden = true;
   }
@@ -154,7 +157,7 @@
     if (d < 0 && S.seg > 1) return go(S.fig, 1);
     var t = FIGS[fi + d]; if (t) go(t.fig, 1);
   }
-  function setMark(m) { mark = m; store.set(QKEY, m); }
+  function setMark(m) { mark = m; store.set(QKEY, m ? { fig: m.fig, seg: m.seg, kind: m.kind, rev: REV } : m); }
   /* Pause marks the spot; Continue goes back to it. Nothing advances by itself. */
   function pause() {
     if (mark) return;
@@ -186,7 +189,7 @@
   });
   root.addEventListener('click', function (e) {
     var r = e.target.closest('[data-act=resume]');
-    if (r) { var sv = store.get(KEY); if (sv && valid(sv.fig, sv.seg)) go(sv.fig, sv.seg); return; }
+    if (r) { var sv = sameRev(store.get(KEY)); if (sv && valid(sv.fig, sv.seg)) go(sv.fig, sv.seg); return; }
     var li = e.target.closest('.lp-seg'); if (!li) return;
     var p = li.dataset.id.split('.'); go(+p[0], +p[1]);
   });
@@ -212,7 +215,7 @@
 
   /* ---------- start ---------- */
   var fromHash = parseHash(location.hash);
-  var saved = store.get(KEY);
+  var saved = sameRev(store.get(KEY));
   /* a saved spot whose line no longer exists (script edited) falls back to that figure's first line */
   function fix(p) { if (!p || !figData(p.fig)) return null; if (!valid(p.fig, p.seg)) p.seg = 1; return p; }
   saved = fix(saved);
