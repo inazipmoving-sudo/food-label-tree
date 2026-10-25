@@ -31,9 +31,10 @@ Curriculum pages use a two-column player: the current figure on the left (sticky
 
 Behaviour (shared `player.js`, nothing module-specific):
 - State is `{fig, seg, playing}`. Links: `#fig-3/seg-2` opens Figure 3 at segment 2; `#fig-N` opens segment 1, so old figure links and the `#step-N` redirects still work. The hash updates as you move.
-- Controls: play/pause, previous/next segment, previous/next figure, click any segment to jump to it. Keys: Space play/pause, Left/Right segment, Shift+Left/Right figure (Up/Down still scroll the page).
-- Play advances on a reading-pace timer; tick "Read aloud" to use the browser's speech (speechSynthesis), which speaks each segment and advances when it ends. Pause stops mid-segment; play restarts that segment.
-- Position is saved in localStorage (`flt-lesson:<module>`); opening the page again shows "Resume where you left off". "Question" pauses and marks the spot (`flt-lesson-q:<module>`); "Back to lesson" returns to it. Read-aloud choice: `flt-lesson-tts`.
-- `window.lessonPlayer` exposes `state`, `go(fig, seg)`, `play()`, `pause()`, `next()`, `prev()`, `nextFigure()`, `prevFigure()`, `question()` and `script` for a voice assistant or tests.
+- Mode is "Live with Nutrition": the script is read aloud on the call, so the page never advances by itself (no timer, no browser speech). It moves only when you tap Next, tap a line, or use the keys. The bar shows a large "Now 3.2" and the next line's ID.
+- Controls: previous/next figure, previous line, Next (labelled with the next ID), Pause / Continue, Question / Back to lesson; click any line to jump. Keys: Right/Left line, Shift+Right/Left figure, Space pause or continue (Up/Down still scroll the page).
+- Pause marks the spot and Continue returns to it; Question does the same with a "Question break" note and "Back to lesson". The mark is saved in `flt-lesson-q:<module>` as `{fig, seg, kind}`.
+- Position is saved in localStorage (`flt-lesson:<module>`); opening the page again shows "Resume where you left off".
+- `window.lessonPlayer` exposes `state` (`playing` = live, not paused), `mark`, `go(fig, seg)`, `pause()`, `play()` / `cont()` (Continue), `next()`, `prev()`, `nextFigure()`, `prevFigure()`, `question()` and `script` for a voice assistant or tests.
 - Without JavaScript, all figures and script lines are shown in order.
 

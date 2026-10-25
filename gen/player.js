@@ -1,8 +1,11 @@
 /* Food Label Tree lesson player (shared by every curriculum page).
    Needs: <script type="application/json" id="lesson-script"> (schemaVersion 1),
    a .lp[data-player] stage with figure.fig[data-fig] cards and ol.lp-segs[data-fig] lists,
-   and the .lp-ctl control bar. State is {fig, seg, playing}; position is saved in
-   localStorage and in the URL hash (#fig-3/seg-2). Old #fig-N links still work. */
+   and the .lp-ctl control bar. Mode: "Live with Nutrition". The script is read on the
+   call, so nothing advances by itself: the learner taps Next, taps a line, or uses the keys.
+   State is {fig, seg, playing}; playing means "live" (not paused). Pause and Question mark
+   the spot; Continue / Back to lesson return to it. Position is saved in localStorage and in
+   the URL hash (#fig-3/seg-2). Old #fig-N links still work. */
 (function () {
   'use strict';
   var dataEl = document.getElementById('lesson-script');
@@ -10,7 +13,7 @@
   if (!dataEl || !root) return;
   var D = JSON.parse(dataEl.textContent);
   if (D.schemaVersion !== 1) { console.warn('lesson player: unknown schemaVersion', D.schemaVersion); }
-  var MOD = D.module, KEY = 'flt-lesson:' + MOD, QKEY = 'flt-lesson-q:' + MOD, TKEY = 'flt-lesson-tts';
+  var MOD = D.module, KEY = 'flt-lesson:' + MOD, QKEY = 'flt-lesson-q:' + MOD;
   var FIGS = D.figures, NF = FIGS.length;
   var flat = [];
   FIGS.forEach(function (f, fi) { f.segments.forEach(function (s, si) { flat.push({ fig: f.fig, seg: s.seg, s: s, fi: fi, si: si }); }); });
@@ -20,11 +23,9 @@
     get: function (k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
     set: function (k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
-  var S = { fig: 1, seg: 1, playing: false };
-  var mark = store.get(QKEY);
-  var canSpeak = 'speechSynthesis' in window && typeof SpeechSynthesisUtterance === 'function';
-  var tts = canSpeak && store.get(TKEY) === true;
-  var token = 0, timer = null;
+  var mark = store.get(QKEY); /* {fig, seg, kind: 'pause' | 'question'} */
+  if (mark && mark.kind !== 'pause') mark.kind = 'question';
+  var S = { fig: 1, seg: 1, playing: !mark };
   var ctl = $('.lp-ctl'), figCol = $('.lp-figcol', root), scrCol = $('.lp-scriptcol', root);
   var mq = window.matchMedia('(max-width: 900px)');
 
@@ -52,32 +53,45 @@
     $$('.lp-seg', root).forEach(function (li) {
       var on = li.dataset.id === label(S);
       li.classList.toggle('on', on);
-      li.classList.toggle('qmark', !!(mark && li.dataset.id === label(mark)));
+      var mk = !!(mark && li.dataset.id === label(mark));
+      li.classList.toggle('qmark', mk && mark.kind === 'question');
+      li.classList.toggle('pmark', mk && mark.kind === 'pause');
       if (on) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current');
     });
     $$('.findex a[href^="#fig-"]').forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#fig-' + S.fig); });
     var f = figData(S.fig), i = idx(S.fig, S.seg);
+    var nx = flat[i + 1];
     $('.lp-where', ctl).textContent = label(S);
-    $('.lp-of', ctl).textContent = 'Segment ' + (i + 1) + ' of ' + flat.length;
+    $('.lp-of', ctl).textContent = 'Line ' + (i + 1) + ' of ' + flat.length;
+    $('.lp-nx', ctl).textContent = nx ? 'Next: ' + label(nx) : 'Last line';
+    $('.lp-nl', ctl).textContent = nx ? label(nx) : '';
     var h = $('.lp-scripthead', root);
     if (h) h.innerHTML = '<span class="lp-k">Figure ' + f.fig + ' script</span><span class="lp-t"></span><span class="lp-n">' + f.segments.length + ' segments</span>';
     if (h) $('.lp-t', h).textContent = f.title;
     var pb = $('[data-act=play]', ctl);
-    pb.setAttribute('aria-pressed', S.playing ? 'true' : 'false');
-    pb.setAttribute('aria-label', S.playing ? 'Pause' : 'Play');
-    pb.title = (S.playing ? 'Pause' : 'Play') + ' (Space)';
-    $('.lp-pl', pb).textContent = S.playing ? 'Pause' : 'Play';
+    var paused = !!(mark && mark.kind === 'pause');
+    pb.setAttribute('aria-pressed', paused ? 'true' : 'false');
+    $('.lp-pl', pb).textContent = paused ? 'Continue' : 'Pause';
+    pb.title = paused ? 'Continue at ' + label(mark) + ' (Space)' : 'Pause and mark ' + label(S) + ' (Space)';
+    pb.setAttribute('aria-label', pb.title.replace(' (Space)', ''));
+    pb.disabled = !!(mark && mark.kind === 'question');
     root.classList.toggle('playing', S.playing);
+    root.classList.toggle('paused', !S.playing);
     $('[data-act=prevseg]', ctl).disabled = i <= 0;
     $('[data-act=nextseg]', ctl).disabled = i >= flat.length - 1;
     $('[data-act=prevfig]', ctl).disabled = i <= 0;
     $('[data-act=nextfig]', ctl).disabled = S.fig >= FIGS[NF - 1].fig;
     var q = $('[data-act=question]', ctl);
-    q.textContent = mark ? 'Back to lesson' : 'Question';
-    q.classList.toggle('on', !!mark);
-    q.title = mark ? 'Return to ' + label(mark) : 'Pause and mark this spot';
+    var isQ = !!(mark && mark.kind === 'question');
+    q.textContent = isQ ? 'Back to lesson' : 'Question';
+    q.classList.toggle('on', isQ);
+    q.title = isQ ? 'Return to ' + label(mark) : 'Stop for a question and mark this spot';
     var qb = $('.lp-qbanner', root);
-    if (qb) { qb.hidden = !mark; if (mark) qb.textContent = 'Question break at ' + label(mark) + '. Press Back to lesson to return.'; }
+    if (qb) {
+      qb.hidden = !mark;
+      if (mark) qb.textContent = isQ ? 'Question break at ' + label(mark) + '. Press Back to lesson to return.'
+        : 'Paused at ' + label(mark) + '. Press Continue to pick up there.';
+    }
     var now = $('.lp-now', ctl); if (now) { var cs = cur().s; now.textContent = (cs.q ? cs.q + ' ' : '') + cs.text; }
     var live = $('.lp-live', root); if (live) live.textContent = 'Segment ' + label(S);
     if (!opts.noScroll) reveal(figChanged);
@@ -123,7 +137,6 @@
     S.fig = fig; S.seg = seg;
     if (how.save !== false) save();
     render({ figChanged: figChanged, noScroll: how.noScroll });
-    if (S.playing) runSeg();
   }
   function step(d) { var i = idx(S.fig, S.seg) + d; if (i >= 0 && i < flat.length) go(flat[i].fig, flat[i].seg); }
   function stepFig(d) {
@@ -131,44 +144,21 @@
     if (d < 0 && S.seg > 1) return go(S.fig, 1);
     var t = FIGS[fi + d]; if (t) go(t.fig, 1);
   }
-  function stopRun() {
-    token++;
-    if (timer) { clearTimeout(timer); timer = null; }
-    if (canSpeak) { try { window.speechSynthesis.cancel(); } catch (e) {} }
-    var li = $('.lp-seg.on', root); if (li) li.style.removeProperty('--dur');
-    $$('.lp-seg.run', root).forEach(function (x) { x.classList.remove('run'); });
+  function setMark(m) { mark = m; store.set(QKEY, m); }
+  /* Pause marks the spot; Continue goes back to it. Nothing advances by itself. */
+  function pause() {
+    if (mark) return;
+    setMark({ fig: S.fig, seg: S.seg, kind: 'pause' }); S.playing = false; render({ noScroll: true });
   }
-  function words(s) { return ((s.q ? s.q + ' ' : '') + s.text).split(/\s+/).length; }
-  function runSeg() {
-    stopRun();
-    var my = token, c = cur(), li = $('.lp-seg.on', root);
-    var done = function () { if (my === token && S.playing) advance(); };
-    if (tts) {
-      var u = new SpeechSynthesisUtterance((c.s.q ? c.s.q + ' ' : '') + c.s.text);
-      u.lang = D.lang || 'en';
-      u.onend = done;
-      u.onerror = function (e) { if (my === token && e.error !== 'interrupted' && e.error !== 'canceled') { S.playing = false; render({ noScroll: true }); } };
-      window.speechSynthesis.speak(u);
-    } else {
-      var ms = Math.round(words(c.s) / 2.6 * 1000) + 900; /* about 155 words a minute, then a short pause */
-      if (li) { li.style.setProperty('--dur', ms + 'ms'); void li.offsetWidth; li.classList.add('run'); }
-      timer = setTimeout(done, ms);
-    }
+  function play() { /* Continue: return to the marked spot (pause or question) */
+    var m = mark; setMark(null); S.playing = true;
+    if (m && valid(m.fig, m.seg)) go(m.fig, m.seg); else render({ noScroll: true });
   }
-  function advance() {
-    var i = idx(S.fig, S.seg);
-    if (i < flat.length - 1) go(flat[i + 1].fig, flat[i + 1].seg);
-    else { pause(); }
-  }
-  function play() {
-    if (mark) { var m = mark; mark = null; store.set(QKEY, null); S.playing = true; go(m.fig, m.seg); return; }
-    S.playing = true; render({ noScroll: true }); runSeg();
-  }
-  function pause() { S.playing = false; stopRun(); render({ noScroll: true }); }
-  function toggle() { if (S.playing) pause(); else play(); }
+  function toggle() { if (mark) play(); else pause(); }
   function question() {
-    if (mark) { var m = mark; mark = null; store.set(QKEY, null); pause(); go(m.fig, m.seg); return; }
-    pause(); mark = { fig: S.fig, seg: S.seg }; store.set(QKEY, mark); render({ noScroll: true });
+    if (mark && mark.kind === 'question') { play(); return; }
+    setMark({ fig: mark ? mark.fig : S.fig, seg: mark ? mark.seg : S.seg, kind: 'question' });
+    S.playing = false; render({ noScroll: true });
   }
 
   /* ---------- wiring ---------- */
@@ -184,12 +174,6 @@
     else if (a === 'question') question();
     if (e.detail > 0) b.blur(); /* mouse/touch: keep Space for play/pause */
   });
-  var tt = $('[data-act=tts]', ctl);
-  if (tt) {
-    if (!canSpeak) tt.closest('label').hidden = true;
-    tt.checked = tts;
-    tt.addEventListener('change', function () { tts = tt.checked; store.set(TKEY, tts); if (S.playing) runSeg(); tt.blur(); });
-  }
   root.addEventListener('click', function (e) {
     var r = e.target.closest('[data-act=resume]');
     if (r) { var sv = store.get(KEY); if (sv && valid(sv.fig, sv.seg)) go(sv.fig, sv.seg); return; }
@@ -215,7 +199,6 @@
     else if (e.key === 'ArrowLeft') { e.preventDefault(); e.shiftKey ? stepFig(-1) : step(-1); }
   });
   window.addEventListener('hashchange', function () { var p = parseHash(location.hash); if (p) go(p.fig, p.seg); });
-  window.addEventListener('pagehide', function () { stopRun(); });
 
   /* ---------- start ---------- */
   var fromHash = parseHash(location.hash);
@@ -240,8 +223,8 @@
   }
   window.lessonPlayer = {
     get state() { return { fig: S.fig, seg: S.seg, playing: S.playing }; },
-    get mark() { return mark ? { fig: mark.fig, seg: mark.seg } : null; },
-    script: D, go: go, play: play, pause: pause, next: function () { step(1); }, prev: function () { step(-1); },
+    get mark() { return mark ? { fig: mark.fig, seg: mark.seg, kind: mark.kind } : null; },
+    mode: 'live', script: D, go: go, play: play, cont: play, pause: pause, next: function () { step(1); }, prev: function () { step(-1); },
     nextFigure: function () { stepFig(1); }, prevFigure: function () { stepFig(-1); }, question: question
   };
 })();

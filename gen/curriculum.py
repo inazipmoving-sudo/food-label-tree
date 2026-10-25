@@ -203,12 +203,14 @@ def _seg_li(sg):
 IC={'prevfig':'<path d="M3 2h2v12H3zM14 2v12L6 8z"/>','prevseg':'<path d="M10.5 2.5 5 8l5.5 5.5 1.2-1.2L7.4 8l4.3-4.3z"/>','nextseg':'<path d="M5.5 2.5 11 8l-5.5 5.5-1.2-1.2L8.6 8 4.3 3.7z"/>','nextfig':'<path d="M11 2h2v12h-2zM2 2v12l8-6z"/>'}
 def _ib(act,label,keys):
     return f'<button type="button" class="lp-btn" data-act="{act}" aria-label="{label}" title="{label} ({keys})"><svg viewBox="0 0 16 16" aria-hidden="true">{IC[act]}</svg></button>'
-CONTROLS=('<div class="lp-ctl" role="toolbar" aria-label="Lesson controls"><button type="button" class="lp-now" data-act="now" title="Show this line in the script"></button><div class="lp-pos"><span class="lp-where">1.1</span><span class="lp-of"></span></div>'
- '<label class="lp-tts" title="Read each segment aloud with your browser voice"><input type="checkbox" data-act="tts"> Read aloud</label><span class="lp-brk"></span>'
- +_ib('prevfig','Previous figure','Shift + Left')+_ib('prevseg','Previous segment','Left arrow')
- +'<button type="button" class="lp-btn play" data-act="play" aria-pressed="false" aria-label="Play" title="Play (Space)"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2v12l10-6z"/></svg><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2h3v12h-3zM9.5 2h3v12h-3z"/></svg><span class="lp-pl">Play</span></button>'
- +_ib('nextseg','Next segment','Right arrow')+_ib('nextfig','Next figure','Shift + Right')
- +'<button type="button" class="lp-btn q" data-act="question" title="Pause and mark this spot">Question</button></div>')
+CONTROLS=('<div class="lp-ctl" role="toolbar" aria-label="Lesson controls"><button type="button" class="lp-now" data-act="now" title="Show this line in the script"></button>'
+ '<div class="lp-pos"><span class="lp-nowk">Now</span><span class="lp-where">1.1</span><span class="lp-of"></span></div><span class="lp-nx"></span><span class="lp-brk"></span>'
+ +_ib('prevfig','Previous figure','Shift + Left')+_ib('prevseg','Previous line','Left arrow')
+ +'<button type="button" class="lp-btn next" data-act="nextseg" aria-label="Next line" title="Next line (Right arrow)"><span class="lp-bl">Next</span><span class="lp-nl"></span><svg viewBox="0 0 16 16" aria-hidden="true">'+IC['nextseg']+'</svg></button>'
+ +_ib('nextfig','Next figure','Shift + Right')
+ +'<button type="button" class="lp-btn pz" data-act="play" aria-pressed="false" title="Pause and mark this spot (Space)"><span class="lp-pl">Pause</span></button>'
+ +'<button type="button" class="lp-btn q" data-act="question" title="Stop for a question and mark this spot">Question</button></div>')
+HINT='<p class="lp-hint">Nutrition reads this on your call. Tap Next as we go, or tell Nutrition the line number.</p>'
 def lesson_page(module,title,hero,figs_html,after_html='',out_name=None):
     """Two-column lesson page: sticky figure left, script right, controls, then after_html (the quiz)."""
     out_name=out_name or module+'.html'
@@ -221,10 +223,10 @@ def lesson_page(module,title,hero,figs_html,after_html='',out_name=None):
     css,js=_asset('player.css'),_asset('player.js')
     idx=''.join(f'<a href="#fig-{f["fig"]}" title="{_html.escape(f["title"])}">{f["fig"]}</a>' for f in d['figures'])
     lists=''.join(f'<ol class="lp-segs" data-fig="{f["fig"]}" data-label="Figure {f["fig"]} script" aria-label="Figure {f["fig"]} script">'+''.join(_seg_li(sg) for sg in f['segments'])+'</ol>' for f in d['figures'])
-    script_col=('<aside class="lp-scriptcol" aria-label="Lesson script">'+CONTROLS+'<div class="lp-scripthead"></div>'
+    script_col=('<aside class="lp-scriptcol" aria-label="Lesson script">'+CONTROLS+HINT+'<div class="lp-scripthead"></div>'
         '<button type="button" class="lp-resume" data-act="resume" hidden>Resume where you left off<span class="lp-rs"></span></button>'
         '<p class="lp-qbanner" role="status" hidden></p>'+lists+
-        '<p class="lp-keys"><kbd>Space</kbd> play or pause · <kbd>←</kbd> <kbd>→</kbd> segments · <kbd>Shift</kbd> + <kbd>←</kbd> <kbd>→</kbd> figures · click a line to jump</p><div class="lp-live lp-sr" aria-live="polite"></div></aside>')
+        '<p class="lp-keys"><kbd>→</kbd> next line · <kbd>←</kbd> previous · <kbd>Space</kbd> pause or continue · <kbd>Shift</kbd> + <kbd>←</kbd> <kbd>→</kbd> figures · click a line to jump</p><div class="lp-live lp-sr" aria-live="polite"></div></aside>')
     data=json.dumps(pub,ensure_ascii=False).replace('</','<\\/')
     body=(f'<div class="findex"><span>Figures</span>{idx}</div><div class="lp" data-player data-module="{module}"><div class="lp-figcol">{"".join(figs_html)}</div>{script_col}</div>{after_html}'
         f'<script type="application/json" id="lesson-script">{data}</script>')
