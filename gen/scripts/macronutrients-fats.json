@@ -3,7 +3,7 @@
   "module": "macronutrients-fats",
   "title": "Module 1 · Fats",
   "lang": "en",
-  "revision": 9,
+  "revision": 10,
   "idRevision": 4,
   "segmentFields": {
     "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -523,6 +523,15 @@
           "text": "A few extras worth knowing. Fat gives about nine calories per gram, against about four for carbohydrate and protein and about seven for alcohol. Vitamins A, D, E and K dissolve in fat, so you absorb them along with the fat in a meal. Cholesterol is also a lipid, but it isn't a triglyceride at all: it's a sterol, built from four fused carbon rings. Your liver makes most of what you need, and in food it comes only from animal products. LDL and HDL aren't two kinds of cholesterol; they're the particles that carry it in the blood. And no food fat is just one type: olive oil is about three-quarters monounsaturated and butter about two-thirds saturated. The table sums up the fat types side by side. This is general education, not medical advice, and the quiz is right below.",
           "part": "extras",
           "cue": "Worth knowing: energy per gram, the comparison table, essential fatty acids, vitamins, cholesterol"
+        },
+        {
+          "id": "10.6",
+          "seg": 6,
+          "name": "Lipids in the Body",
+          "text": "Lipids in the human body, by share of total body lipid. Reference adult: about 70 kilograms, with about 13.5 kilograms of lipid in all, most of it in about 15 kilograms of fat tissue. Triglycerides, about 95 percent, about 12.8 kilograms: stored fat, almost all of it in fat tissue, about 12 kilograms, with smaller stores in muscle, liver, bone marrow and blood. Phospholipids, about 4 percent, about half a kilogram: the double layer of every cell membrane, most of it in muscle, brain and liver. Cholesterol, about 1 percent, about 150 grams: mostly free cholesterol in cell membranes, about a quarter of it in the brain and nerves, plus some stored as cholesterol esters. Miscellaneous, each under 1 percent, under half a percent together, about 50 grams: glycolipids, mostly in the brain, free fatty acids, the fat-soluble vitamins A, D, E and K, coenzyme Q10, carotenoids, bile acids, steroid hormones, eicosanoids, and skin waxes and ceramides.",
+          "verbatim": true,
+          "part": "body-lipids",
+          "cue": "Lipids in the human body list, top to bottom: read each line as written"
         }
       ]
     }

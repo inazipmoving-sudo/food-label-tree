@@ -3,7 +3,7 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 9,
+ "revision": 10,
  "idRevision": 4,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -578,6 +578,16 @@
      "part": "extras",
      "cue": "Worth knowing: energy per gram, the comparison table, essential fatty acids, vitamins, cholesterol",
      "slug": "worth-knowing"
+    },
+    {
+     "id": "10.6",
+     "seg": 6,
+     "name": "Lipids in the Body",
+     "text": "Lipids in the human body, by share of total body lipid. Reference adult: about 70 kilograms, with about 13.5 kilograms of lipid in all, most of it in about 15 kilograms of fat tissue. Triglycerides, about 95 percent, about 12.8 kilograms: stored fat, almost all of it in fat tissue, about 12 kilograms, with smaller stores in muscle, liver, bone marrow and blood. Phospholipids, about 4 percent, about half a kilogram: the double layer of every cell membrane, most of it in muscle, brain and liver. Cholesterol, about 1 percent, about 150 grams: mostly free cholesterol in cell membranes, about a quarter of it in the brain and nerves, plus some stored as cholesterol esters. Miscellaneous, each under 1 percent, under half a percent together, about 50 grams: glycolipids, mostly in the brain, free fatty acids, the fat-soluble vitamins A, D, E and K, coenzyme Q10, carotenoids, bile acids, steroid hormones, eicosanoids, and skin waxes and ceramides.",
+     "verbatim": true,
+     "part": "body-lipids",
+     "cue": "Lipids in the human body list, top to bottom: read each line as written",
+     "slug": "lipids-in-the-body"
     }
    ]
   }
@@ -588,5 +598,5 @@
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 10,
- "segmentCount": 55
+ "segmentCount": 56
 }
