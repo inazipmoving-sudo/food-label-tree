@@ -3,8 +3,8 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 12,
- "idRevision": 4,
+ "revision": 13,
+ "idRevision": 5,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -650,6 +650,21 @@
     {
      "id": "9.1",
      "seg": 1,
+     "name": "What a Triglyceride Is",
+     "part": "intro",
+     "cue": "Intro text at the top of Figure 9; the molecule itself is in Figure 3",
+     "text": "First, a quick reminder of what a triglyceride is. It's one glycerol backbone joined to three fatty acids, and those three fatty acids are where the 'tri' in the name comes from. It's the main form of fat in food, and about 95 percent of the fat in your body, almost all of it stored in fat tissue. It's the same molecule you saw in Figure 3, with the glycerol backbone in the purple box and the three fatty-acid tails.",
+     "foodBody": [
+      {
+       "name": "Triglycerides and glycerol",
+       "text": "Where they are found and what they do is in the \"In food and in the body\" notes under 8.3 (triglycerides) and 1.2 (glycerol)."
+      }
+     ],
+     "slug": "what-a-triglyceride-is"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
      "name": "Many Kinds of Triglyceride",
      "text": "Not every triglyceride is the same. The glycerol backbone has three slots, and each slot can hold a different fatty acid: saturated or unsaturated, short or long, omega-3 or omega-6. Which chains sit in which slots is what makes one specific triglyceride different from another. With about twenty common fatty acids in food, that's already around eight thousand possible combinations, because twenty times twenty times twenty is eight thousand and the order of the slots matters, so in practice there are thousands of different triglycerides, and every food fat is a mix of many of them. Olive oil, for example, is mostly triglycerides with oleic acid in two or three of the slots, while butter mixes short, medium and long saturated chains.",
      "verbatim": true,
@@ -658,8 +673,8 @@
      "slug": "many-kinds-of-triglyceride"
     },
     {
-     "id": "9.2",
-     "seg": 2,
+     "id": "9.3",
+     "seg": 3,
      "name": "Breakdown and Release",
      "text": "When your body is low on energy, for example between meals, during exercise or overnight, hormones like adrenaline and glucagon rise and insulin falls, and that switches on the fat-releasing enzymes in your fat tissue: adipose triglyceride lipase starts the job and hormone-sensitive lipase continues it. Together they snip a triglyceride apart into its pieces: one glycerol plus three free fatty acids. The cut happens at the ester links, where each fatty acid's carboxyl end, the part with the oxygens, was attached to the glycerol backbone; water is added at each link, so the acid head is restored. The glycerol is small and water-soluble, so it travels to the liver, which can turn it into glucose. The fatty acids don't dissolve well in blood, so they ride on a carrier protein called albumin to muscle and the heart, where they're burned for fuel. In a deeper or longer fast, the liver takes up more of them and turns part of them into ketones, a backup fuel even the brain can use. Inside the cell, the chain is chopped two carbons at a time, a process called beta-oxidation. The oxygen end is just the handle; the real energy payoff is in the long run of carbon-hydrogen bonds, which is why fat gives 9 calories per gram.",
      "verbatim": true,
@@ -805,5 +820,5 @@
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 10,
- "segmentCount": 56
+ "segmentCount": 57
 }
