@@ -247,7 +247,13 @@ def _png_size(path):
     with open(path,'rb') as f: f.read(16); return struct.unpack('>II',f.read(8))
 def img(fname,n,alt,part=None):
     w,h=_png_size(os.path.join(OUT,'img','fats',fname))  # width/height reserve space so #fig-N jumps land correctly
-    return f'<img{' class="bleed"' if fname.startswith("fig-09-") else ''} src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}"{f' data-part="{part}"' if part else ''} loading="{"eager" if n<2 else "lazy"}" decoding="async">'
+    cls=('bleed f9-narrow' if fname=='fig-09-breakdown-3.png' else 'bleed') if fname.startswith("fig-09-") else ''
+    tag=f'<img{f' class="{cls}"' if cls else ''} src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}"{f' data-part="{part}"' if part else ''} loading="{"eager" if n<2 else "lazy"}" decoding="async">'
+    dname=fname.replace('.png','-d.png')
+    if os.path.exists(os.path.join(OUT,'img','fats',dname)):  # Figure 9: desktop variant with labels drawn smaller so they match page text
+        dw,dh=_png_size(os.path.join(OUT,'img','fats',dname))
+        tag=f'<picture><source media="(min-width:601px)" srcset="img/fats/{dname}" width="{dw}" height="{dh}">{tag}</picture>'
+    return tag
 # (title, caption, art) ; art None => ball-and-stick image img/fats/fig-NN.png
 LESSON=[
 ('The fat family tree: the map of this lesson','',SVG_TREE),
@@ -291,10 +297,15 @@ QUIZ=[('How many bonds does carbon make, and how many does hydrogen make?','Carb
 ('Do steroid hormones come from saturated fat?','No. They are made from cholesterol, which the liver can build from fat breakdown products (Figure 4, pink box).'),
 ('What happens to a triglyceride when your body needs energy?','Lipases (ATGL, then HSL) cut its 3 ester links, adding water at each, into 1 glycerol and 3 free fatty acids. Glycerol goes to the liver, which can make glucose from it; the fatty acids ride on albumin to muscle and the heart to be burned for fuel, and in a deeper fast the liver turns some into ketones (Figure 9).')]
 def art(i,t,a):
+    if i==9:  # panel A images, then panel B heading/intro as page text, then panel B images
+        A,B=ARTIMG[9][:3],ARTIMG[9][3:]
+        return ''.join(img(fn,i,al,pt) for fn,al,pt in A)+'</div>'+F9B+'<div class="art">'+''.join(img(fn,i,al,pt) for fn,al,pt in B)
     if i in ARTIMG: return ''.join(img(fn,i,al,pt) for fn,al,pt in ARTIMG[i])
     return a if a else img(f'fig-{i:02d}.png',i,t)
 QA_HTML=(img('fig-03-bonds.png',3,'meet the atoms: what is a bond','atoms')+'</div><div class="qa" data-part="qa"><h4>What is a bond?</h4><p>A bond is the attraction that holds two atoms together in a molecule. In the fats we\'re looking at, it\'s mostly carbon sharing electrons with hydrogen or with another carbon, and that sharing is what builds the chains.</p><h4>How does that work exactly?</h4><p>Atoms have electrons in shells around them, and atoms are happiest when their outer shell is full. A bond is when two atoms share a pair of those outer electrons so each one gets to count them. One shared pair is a single bond, which lets the atoms spin freely around each other. Two shared pairs is a double bond, which is shorter, stronger, and locks the atoms in place so they can\'t rotate. That\'s the whole trick behind saturated versus unsaturated fat: saturated chains are all single bonds, so they lie straight and pack tight. Unsaturated ones have double bonds that put a kink in the chain, and that\'s what keeps oils liquid.</p><p class="fnote">The kink comes from cis double bonds; trans double bonds stay nearly straight. See Figure 4.</p></div>')
-PRE={3:'<div class="part">Meet the atoms</div><div class="art">'+QA_HTML+'<div class="part">The fat molecule</div>'}
+F9A='<div class="qa f9h" data-part="kinds"><h4>A. Many kinds of triglyceride</h4><p>The glycerol backbone has 3 slots (1, 2, 3), and any fatty acid can sit in any slot. About 20 common fatty acids give 20 × 20 × 20 = 8,000 combinations.</p></div>'
+F9B='<div class="qa f9h" data-part="breakdown"><h4>B. Breakdown and release</h4><p>Low on energy (between meals, exercise, overnight): adrenaline and glucagon rise, insulin falls, and the fat-releasing lipases switch on.</p></div>'
+PRE={9:F9A,3:'<div class="part">Meet the atoms</div><div class="art">'+QA_HTML+'<div class="part">The fat molecule</div>'}
 def callout(i):
     o=''
     if i in BODY: o+='<aside class="body" data-part="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
