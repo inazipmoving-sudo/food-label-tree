@@ -15,7 +15,8 @@
   if (D.schemaVersion !== 1) { console.warn('lesson player: unknown schemaVersion', D.schemaVersion); }
   var MOD = D.module, KEY = 'flt-lesson:' + MOD, QKEY = 'flt-lesson-q:' + MOD;
   /* script revision: saved spots and marks from an older revision (e.g. before figures were renumbered) are ignored */
-  var REV = D.revision || 0;
+  /* saved spots compare idRevision (bumped only when figure/section IDs change); wording-only revisions keep them valid */
+  var REV = D.idRevision || D.revision || 0;
   function sameRev(v) { return v && (v.rev || 0) === REV ? v : null; }
   var FIGS = D.figures, NF = FIGS.length;
   var flat = [];

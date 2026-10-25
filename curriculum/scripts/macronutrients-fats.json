@@ -3,7 +3,8 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 3,
+ "revision": 4,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -129,9 +130,9 @@
      "id": "2.6",
      "seg": 6,
      "name": "Fat Versus Oil",
-     "text": "Now the last image, fat versus oil. On the left is tristearin, three straight saturated chains, which melts at about 72 °C, so it's solid. On the right is triolein, three kinked chains with one cis double bond each, which melts at about 5 °C, so it's liquid. They're the same kind of molecule made of the same elements, carbon, hydrogen and oxygen; the oil just has six fewer hydrogens because of its three double bonds. So 'fat' or 'oil' only tells you whether it's solid or liquid at room temperature, about 20 to 25 °C. Real fats are mixes, too: coconut oil is mostly saturated and melts around 24 °C, so it's solid in a cool kitchen and liquid in a warm one. We'll see why shape matters in Figure 4, and trans fats, which we meet in Figure 3, are mostly man-made.",
+     "text": "Now the last image, fat versus oil. On top is tristearin, three straight saturated chains, which melts at about 72 °C, so it's solid. Below is triolein, three kinked chains with one cis double bond each, which melts at about 5 °C, so it's liquid. They're the same kind of molecule made of the same elements, carbon, hydrogen and oxygen; the oil just has six fewer hydrogens because of its three double bonds. So 'fat' or 'oil' only tells you whether it's solid or liquid at room temperature, about 20 to 25 °C. Real fats are mixes, too: coconut oil is mostly saturated and melts around 24 °C, so it's solid in a cool kitchen and liquid in a warm one. We'll see why shape matters in Figure 4, and trans fats, which we meet in Figure 3, are mostly man-made.",
      "part": "fatoil",
-     "cue": "Left: FAT, tristearin; right: OIL, triolein; element strips",
+     "cue": "Top: FAT, tristearin; below: OIL, triolein; element lines",
      "slug": "fat-versus-oil"
     }
    ]
@@ -397,7 +398,7 @@
      "id": "8.5",
      "seg": 5,
      "name": "Back to the Family Tree",
-     "text": "That completes the family tree from Figure 1: saturated, mono, poly with the omegas, and trans. The quiz is below.",
+     "text": "That completes the family tree from Figure 1: saturated, mono, poly with the omegas, and trans. Next, Figure 9 shows how your body breaks a fat down for energy.",
      "cue": "Back to Figure 1 if there is time",
      "slug": "back-to-the-family-tree"
     }
@@ -425,7 +426,7 @@
      "text": "When your body is low on energy, for example between meals, during exercise or overnight, hormones like adrenaline and glucagon rise and insulin falls, and that switches on the fat-releasing enzymes in your fat tissue: adipose triglyceride lipase starts the job and hormone-sensitive lipase continues it. Together they snip a triglyceride apart into its pieces: one glycerol plus three free fatty acids. The cut happens at the ester links, where each fatty acid's carboxyl end, the part with the oxygens, was attached to the glycerol backbone; water is added at each link, so the acid head is restored. The glycerol is small and water-soluble, so it travels to the liver, which can turn it into glucose. The fatty acids don't dissolve well in blood, so they ride on a carrier protein called albumin to muscle and the heart, where they're burned for fuel. In a deeper or longer fast, the liver takes up more of them and turns part of them into ketones, a backup fuel even the brain can use. Inside the cell, the chain is chopped two carbons at a time, a process called beta-oxidation. The oxygen end is just the handle; the real energy payoff is in the long run of carbon-hydrogen bonds, which is why fat gives 9 calories per gram.",
      "verbatim": true,
      "part": "breakdown",
-     "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart",
+     "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart; after this, the quiz is below the figures",
      "slug": "breakdown-and-release"
     }
    ]
