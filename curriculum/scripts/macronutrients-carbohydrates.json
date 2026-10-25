@@ -3,7 +3,7 @@
  "module": "macronutrients-carbohydrates",
  "title": "Module 1 · Carbohydrates",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -36,7 +36,7 @@
      "name": "Sugars",
      "text": "On the left are the sugars: small carbohydrates with one or two units. Single sugars like glucose, fructose and galactose are the building blocks. Double sugars like table sugar and milk sugar are two of them joined. Below them are sugar alcohols, made from sugars, and added sugars, the ones put in during cooking or manufacturing.",
      "part": "tree",
-     "cue": "Left branch: Sugars, then its four boxes",
+     "cue": "Left branch: Sugars, Single sugars and Double sugars; then the dashed related group below: Sugar alcohols (dotted made-from arrow) and Added sugars",
      "slug": "sugars"
     },
     {
@@ -45,7 +45,7 @@
      "name": "Starch",
      "text": "In the middle is starch: long chains of glucose that plants use to store energy. It comes in a straight form, amylose, and a branched form, amylopectin. Some starch escapes digestion and acts like fiber; that's resistant starch. Your own body stores glucose in a very branched form called glycogen.",
      "part": "tree",
-     "cue": "Middle branch: Starch, Amylose, Amylopectin, Resistant, Glycogen",
+     "cue": "Middle branch: Starch, Amylose (straight), Amylopectin (branched), Resistant; then the dashed digestion arrow down to Glucose, stored as Glycogen in the in-your-body frame",
      "slug": "starch"
     },
     {
