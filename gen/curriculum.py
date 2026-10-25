@@ -421,16 +421,32 @@ FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) 
 lesson_page('macronutrients-fats','Module 1 · Fats · Curriculum · Food Label Tree',
  '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 10 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
  FATS_FIGS,quiz+pn(None,('Lipids Beyond Fats','macronutrients-lipids.html')))
+# Lesson registry, in course order: (slug, module no, module name, short title, live?). A lesson is live once its gen/lessons/<slug>.py exists.
+REG=[(sl,mn,mname,t,sl in ('macronutrients-fats','macronutrients-lipids') or os.path.exists(os.path.join(GEN,'lessons',sl+'.py'))) for sl,mn,mname,t in [
+ ('macronutrients-fats','1','Macronutrients','Fats'),('macronutrients-lipids','1','Macronutrients','Lipids Beyond Fats'),
+ ('macronutrients-protein','1','Macronutrients','Protein'),('macronutrients-carbohydrates','1','Macronutrients','Carbohydrates'),('macronutrients-water-ethanol','1','Macronutrients','Water and Ethanol'),
+ ('micronutrients-fat-soluble-vitamins','2','Micronutrients','Fat-Soluble Vitamins'),('micronutrients-water-soluble-vitamins','2','Micronutrients','Water-Soluble Vitamins'),
+ ('micronutrients-major-minerals','2','Micronutrients','Major Minerals'),('micronutrients-trace-minerals','2','Micronutrients','Trace Minerals'),
+ ('additives','3','Additives','Additives and E-Numbers'),('antinutrients','4','Antinutrients','Antinutrients'),('processing','5','Processing','Processing'),
+ ('bioactives','6','Bioactives','Bioactives'),('flavorings','7','Flavorings','Flavorings'),('final-review','8','Final Review','Final Review')]]
+def NEXT_OF(slug):
+    live=[r for r in REG if r[4]]; i=[r[0] for r in live].index(slug)
+    return (f'Module {live[i+1][1]} · {live[i+1][3]}',live[i+1][0]+'.html') if i+1<len(live) else None
 exec(open(os.path.join(GEN,'lipids.py'),encoding='utf-8').read())
+exec(open(os.path.join(GEN,'lessonkit.py'),encoding='utf-8').read())
 N_LIPIDS=build_lipids()
 # Old step-by-step page -> tiny redirect (maps #step-N to the new #fig-N)
 STEP2FIG={1:3,2:3,3:3,4:3,5:3,6:3,7:4,8:4,9:4,10:4,11:4,12:5,13:2,14:2,15:6,16:3}
 open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved: Module 1 · Fats</title><meta http-equiv="refresh" content="0; url=macronutrients-fats.html"><link rel="canonical" href="macronutrients-fats.html"><script>var m={'+','.join(f'{k}:{v}' for k,v in STEP2FIG.items())+'},s=/^#step-(\\d+)$/.exec(location.hash);location.replace("macronutrients-fats.html"+(s&&m[s[1]]?"#fig-"+m[s[1]]:""))</script></head><body><p>This lesson moved to <a href="macronutrients-fats.html">Module 1 · Fats</a>.</p></body></html>\n')
-MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats','macronutrients-fats.html',f'{len(LESSON)} figures + script'),('Lipids Beyond Fats','macronutrients-lipids.html',f'{N_LIPIDS} figures + script')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
+MODS=[]
+for r in REG:
+    if not MODS or MODS[-1][0]!=r[1]: MODS.append((r[1],r[2],[]))
+    MODS[-1][2].append(r)
+NFIG={'macronutrients-fats':len(LESSON),'macronutrients-lipids':N_LIPIDS}
 cards=''
-for n,nm,ic,c,live,soon in MOD:
-    items=''.join(f'<a class="les" href="{h}">{t} <span>{k} →</span></a>' for t,h,k in live)+''.join(f'<div class="les off">{t} <span>coming soon</span></div>' for t in soon)
-    if not live: items='<div class="les off">Coming soon</div>'
-    cards+=f'<section class="mod" style="--a:{c}"><div class="mh"><span class="mn">{n}</span><span class="ico">{ic}</span><h2>Module {n} · {nm}</h2></div>{items}</section>'
+for n,nm,rs in MODS:
+    items=''.join(f'<a class="les" href="{r[0]}.html">{r[3]} <span>{NFIG.get(r[0]) or len(json.load(open(os.path.join(GEN,"scripts",r[0]+".json")))["figures"])} figures + script →</span></a>' if r[4] else f'<div class="les off">{r[3]} <span>coming soon</span></div>' for r in rs)
+    cards+=f'<section class="mod" style="--a:var(--c-{nm.lower().replace(" ","-")},var(--acc))"><div class="mh"><span class="mn">{n}</span><span class="ico"></span><h2>Module {n} · {nm}</h2></div>{items}</section>'
+
 open(os.path.join(OUT,'index.html'),'w').write(page('Curriculum · Food Label Tree','<nav class="crumbs"><a href="../">Food Label Tree</a> › Curriculum</nav><h1>Curriculum</h1><p>Lessons with numbered figures, made for teaching by phone.</p>',f'<main class="mods">{cards}</main>'))
 print(len(LESSON),'figures')

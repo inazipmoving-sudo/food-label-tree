@@ -222,7 +222,8 @@ LQUIZ=[('What makes a molecule a lipid?','It is oily and doesn’t dissolve in w
 def build_lipids():
     figs=[figure_card(i,t,h,'',sub=s) for i,(t,s,h) in enumerate(LIPID_LESSON,1)]
     lq='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(LQUIZ,1))+'</section></main>'
-    after=lq+pn(('Module 1 · Fats','macronutrients-fats.html'),None)+LIPID_JS
+    _N=NEXT_OF('macronutrients-lipids')
+    after=lq+('<main class="lp-after"><p class="fwd" data-part="nextlesson">Next lesson: <a href="'+_N[1]+'">'+_N[0]+'</a> →</p></main>' if _N else '')+pn(('Module 1 · Fats','macronutrients-fats.html'),_N)+LIPID_JS
     lesson_page('macronutrients-lipids','Module 1 · Lipids Beyond Fats · Curriculum · Food Label Tree',
      '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Lipids Beyond Fats</h1>'
      '<p>Fats are one kind of lipid. This lesson meets the rest of the family, one group at a time: phospholipids that build every cell membrane, cholesterol and plant sterols, sphingolipids and waxes, the eicosanoid signals your body makes from fatty acids, and the fat-soluble vitamins, then puts them all in one table. Every molecule is drawn at the same scale with every hydrogen shown. The figure is on the left and the lesson script on the right; the quiz is at the end.</p>'
