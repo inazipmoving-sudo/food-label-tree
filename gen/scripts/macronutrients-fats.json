@@ -3,8 +3,8 @@
   "module": "macronutrients-fats",
   "title": "Module 1 · Fats",
   "lang": "en",
-  "revision": 4,
-  "idRevision": 3,
+  "revision": 5,
+  "idRevision": 4,
   "segmentFields": {
     "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
     "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -13,7 +13,8 @@
     "cue": "optional: what to point at; not spoken",
     "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
     "part": "optional: data-part of the figure element the segment is about",
-    "name": "optional short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-1/three-categories)"
+    "name": "optional short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-1/three-categories)",
+    "subtitle": "figure-level: optional short muted subtitle under the title"
   },
   "figures": [
     {
@@ -69,10 +70,66 @@
     {
       "fig": 2,
       "anchor": "fig-2",
-      "title": "Fats: the molecule",
+      "title": "Fats and Oils Are the Same Thing",
+      "subtitle": "Same kind of molecule, different packing.",
       "segments": [
         {
           "id": "2.1",
+          "seg": 1,
+          "name": "Same Kind of Molecule",
+          "text": "Fats and oils are the same kind of molecule, a triglyceride, made of carbon, hydrogen and oxygen, and the only difference is how tightly the chains pack. We'll see why in Figures 3 and 4.",
+          "part": "head",
+          "cue": "Title and subtitle: same kind of molecule, different packing"
+        },
+        {
+          "id": "2.2",
+          "seg": 2,
+          "name": "Fat Versus Oil",
+          "text": "The first image puts a fat above an oil. On top is tristearin, three straight saturated chains, which melts at about 72 °C, so it's solid. Below is triolein, three kinked chains with one cis double bond each, which melts at about 5 °C, so it's liquid. They're the same kind of molecule made of the same elements, carbon, hydrogen and oxygen; the oil just has six fewer hydrogens because of its three double bonds. So 'fat' or 'oil' only tells you whether it's solid or liquid at room temperature, about 20 to 25 °C. Real fats are mixes, too: coconut oil is mostly saturated and melts around 24 °C, so it's solid in a cool kitchen and liquid in a warm one. The next image shows why that shape matters, and trans fats, which we meet in Figure 4, are mostly man-made.",
+          "part": "fatoil",
+          "cue": "Top: FAT, tristearin; below: OIL, triolein; element lines"
+        },
+        {
+          "id": "2.3",
+          "seg": 3,
+          "name": "Atoms at True Size",
+          "text": "The next image is in the space-filling style, with every atom drawn at its true size, so each fatty acid looks like a solid rod.",
+          "cue": "Whole image",
+          "part": "packing"
+        },
+        {
+          "id": "2.4",
+          "seg": 4,
+          "name": "Straight Chains Pack Tight",
+          "text": "On the left, four straight saturated chains stack tightly, like pencils in a box. They grip each other, so it takes more heat to melt them, about 69 °C for stearic acid, and that's why butter, lard and cocoa butter are solid at room temperature.",
+          "cue": "Left stack: saturated",
+          "part": "packing"
+        },
+        {
+          "id": "2.5",
+          "seg": 5,
+          "name": "Trans Packs Almost as Tight",
+          "text": "In the middle are trans chains, which we meet in Figure 4. They are almost straight, so they pack almost as tightly and melt at about 45 °C, which is why partially hydrogenated oil turned solid.",
+          "cue": "Middle stack: trans",
+          "part": "packing"
+        },
+        {
+          "id": "2.6",
+          "seg": 6,
+          "name": "Kinks Leave Gaps",
+          "text": "On the right, the cis kinks keep the oleic chains apart and leave gaps, so they slide past each other and melt at about 13 °C, and that's why olive and canola oil are liquid. In real fats these chains sit on triglycerides, like the two in the image above, and the same rule holds.",
+          "cue": "Right stack: cis",
+          "part": "packing"
+        }
+      ]
+    },
+    {
+      "fig": 3,
+      "anchor": "fig-3",
+      "title": "Fats: the molecule",
+      "segments": [
+        {
+          "id": "3.1",
           "seg": 1,
           "name": "What Is a Bond?",
           "text": "A bond is the attraction that holds two atoms together in a molecule. In the fats we're looking at, it's mostly carbon sharing electrons with hydrogen or with another carbon, and that sharing is what builds the chains.",
@@ -82,7 +139,7 @@
           "cue": "Meet the atoms, panel A: C and H share one pair of electrons (blue dots)"
         },
         {
-          "id": "2.2",
+          "id": "3.2",
           "seg": 2,
           "name": "How Bonds Work",
           "text": "Atoms have electrons in shells around them, and atoms are happiest when their outer shell is full. A bond is when two atoms share a pair of those outer electrons so each one gets to count them. One shared pair is a single bond, which lets the atoms spin freely around each other. Two shared pairs is a double bond, which is shorter, stronger, and locks the atoms in place so they can't rotate. That's the whole trick behind saturated versus unsaturated fat: saturated chains are all single bonds, so they lie straight and pack tight. Unsaturated ones have double bonds that put a kink in the chain, and that's what keeps oils liquid.",
@@ -92,15 +149,15 @@
           "cue": "Panels A to C: shared pair, single vs double bond, straight vs kinked chain"
         },
         {
-          "id": "2.3",
+          "id": "3.3",
           "seg": 3,
           "name": "Cis and Trans Footnote",
-          "text": "One footnote: the kink comes from cis double bonds; trans double bonds stay nearly straight. We'll see that in Figure 3.",
+          "text": "One footnote: the kink comes from cis double bonds; trans double bonds stay nearly straight. We'll see that in Figure 4.",
           "part": "qa",
           "cue": "Footnote under the Q&A"
         },
         {
-          "id": "2.4",
+          "id": "3.4",
           "seg": 4,
           "name": "The Triglyceride",
           "text": "Now the triglyceride image. Almost every fat you eat, and the fat stored in your body, is one kind of molecule called a triglyceride. The purple box on the left is the glycerol backbone, three carbons long, and hanging off it are three fatty acids. Each fatty acid starts with an acid head, the end with the red oxygens. On its own that head is a carboxyl group, COOH, and it reacts with one of glycerol's OH groups, giving off water, to make an ester link, the red bar that holds the fatty acid on.",
@@ -108,51 +165,43 @@
           "cue": "Purple glycerol box, red oxygens and red ester bars"
         },
         {
-          "id": "2.5",
+          "id": "3.5",
           "seg": 5,
           "name": "Carbon Tails",
           "text": "The long part sticking out to the right is the carbon tail, a zigzag of carbons numbered from the head, C1, out to the far end, which is called the omega end. There are only three elements here: carbon makes 4 bonds, oxygen makes 2 and hydrogen makes 1, and the hydrogens are hidden to keep the picture clean. In the tails, one line between carbons is a single bond, while the orange pair with two lines is a C=C double bond, and a double-bonded carbon has room for fewer hydrogens. The top chain has no double bonds, the middle one has one, and the bottom one has two.",
           "part": "molecule",
           "cue": "Carbon tails and orange double bonds"
-        },
-        {
-          "id": "2.6",
-          "seg": 6,
-          "name": "Fat Versus Oil",
-          "text": "Now the last image, fat versus oil. On top is tristearin, three straight saturated chains, which melts at about 72 °C, so it's solid. Below is triolein, three kinked chains with one cis double bond each, which melts at about 5 °C, so it's liquid. They're the same kind of molecule made of the same elements, carbon, hydrogen and oxygen; the oil just has six fewer hydrogens because of its three double bonds. So 'fat' or 'oil' only tells you whether it's solid or liquid at room temperature, about 20 to 25 °C. Real fats are mixes, too: coconut oil is mostly saturated and melts around 24 °C, so it's solid in a cool kitchen and liquid in a warm one. We'll see why shape matters in Figure 4, and trans fats, which we meet in Figure 3, are mostly man-made.",
-          "part": "fatoil",
-          "cue": "Top: FAT, tristearin; below: OIL, triolein; element lines"
         }
       ]
     },
     {
-      "fig": 3,
-      "anchor": "fig-3",
+      "fig": 4,
+      "anchor": "fig-4",
       "title": "Saturated vs unsaturated vs trans",
       "segments": [
         {
-          "id": "3.1",
+          "id": "4.1",
           "seg": 1,
           "name": "Straight and Saturated",
           "text": "Here are the same 18 carbons three ways, and this time the small white hydrogens are shown. On top is stearic acid, which is saturated: there are no double bonds, so every tail carbon holds as many hydrogens as it can, two each and three on the end, and the zigzag runs straight. It melts at about 69 °C.",
           "cue": "Top row"
         },
         {
-          "id": "3.2",
+          "id": "4.2",
           "seg": 2,
           "name": "The Cis Kink",
           "text": "In the middle is oleic acid. Between C9 and C10 there's an orange double bond, and two hydrogens are gone, which is exactly what 'unsaturated' means. The two hydrogens left on that bond sit on the same side, which is called cis, and that bends the chain, so it melts at about 13 °C.",
           "cue": "Middle row, orange C9=C10 and the kink"
         },
         {
-          "id": "3.3",
+          "id": "4.3",
           "seg": 3,
           "name": "Trans Stays Straight",
           "text": "At the bottom is elaidic acid, a trans fat. It has the same double bond in the same place, but the hydrogens sit on opposite sides, so the chain stays nearly straight and melts at about 45 °C. So trans fat behaves much like saturated fat, while plant oils and most natural fats are cis.",
           "cue": "Bottom row"
         },
         {
-          "id": "3.4",
+          "id": "4.4",
           "seg": 4,
           "name": "Where Trans Fat Comes From",
           "text": "As the grey note says, most trans fat in food was man-made, by partial hydrogenation of vegetable oil, which we'll see in Figure 7. Small natural amounts come from ruminant animals, cows, sheep and goats, so dairy, beef and lamb contain a little, and the main one is vaccenic acid.",
@@ -161,7 +210,7 @@
           "cue": "Grey note"
         },
         {
-          "id": "3.5",
+          "id": "4.5",
           "seg": 5,
           "name": "Saturated Fat in Your Body",
           "text": "In the pink box, saturated fat is part of the structure of your cell membranes and a dense backup fuel stored in fat tissue. Your liver can build cholesterol from fat breakdown products, and cholesterol is the raw material for steroid hormones, so the hormones come from cholesterol, not from saturated fat directly. But eating a lot of saturated fat raises LDL, the 'bad' cholesterol.",
@@ -170,48 +219,13 @@
           "cue": "Pink box: Saturated fat"
         },
         {
-          "id": "3.6",
+          "id": "4.6",
           "seg": 6,
           "name": "Trans Fat in Your Body",
           "text": "Trans fat is different: your body doesn't handle the straight trans shape like natural unsaturated fat, so it packs into cell membranes much like saturated fat. It raises LDL, the 'bad' cholesterol, lowers HDL, the 'good' one, and is strongly linked to heart disease, which is why industrial trans fat is now mostly banned in the US. Ruminant trans fat is eaten in much smaller amounts; at normal intakes the evidence of harm is weaker, but in high-dose trials it raises LDL too.",
           "box": "body",
           "part": "body",
           "cue": "Pink box: Trans fat and Ruminant trans fat"
-        }
-      ]
-    },
-    {
-      "fig": 4,
-      "anchor": "fig-4",
-      "title": "Why some fats are solid and some oils are liquid",
-      "segments": [
-        {
-          "id": "4.1",
-          "seg": 1,
-          "name": "Atoms at True Size",
-          "text": "This is the space-filling style, with every atom drawn at its true size, so each fatty acid looks like a solid rod.",
-          "cue": "Whole image"
-        },
-        {
-          "id": "4.2",
-          "seg": 2,
-          "name": "Straight Chains Pack Tight",
-          "text": "On the left, four straight saturated chains stack tightly, like pencils in a box. They grip each other, so it takes more heat to melt them, about 69 °C for stearic acid, and that's why butter, lard and cocoa butter are solid at room temperature.",
-          "cue": "Left stack: saturated"
-        },
-        {
-          "id": "4.3",
-          "seg": 3,
-          "name": "Trans Packs Almost as Tight",
-          "text": "In the middle, the trans chains are almost straight, so they pack almost as tightly and melt at about 45 °C, which is why partially hydrogenated oil turned solid.",
-          "cue": "Middle stack: trans"
-        },
-        {
-          "id": "4.4",
-          "seg": 4,
-          "name": "Kinks Leave Gaps",
-          "text": "On the right, the cis kinks keep the oleic chains apart and leave gaps, so they slide past each other and melt at about 13 °C, and that's why olive and canola oil are liquid. In real fats these chains sit on triglycerides, like the ones in Figure 2, and the same rule holds.",
-          "cue": "Right stack: cis"
         }
       ]
     },
@@ -316,7 +330,7 @@
           "id": "7.3",
           "seg": 3,
           "name": "Where Trans Fat Came From",
-          "text": "That's where most trans fat in food came from, the man-made trans fat from Figure 3. Industrial trans fat is now banned in the US and limited in the EU."
+          "text": "That's where most trans fat in food came from, the man-made trans fat from Figure 4. Industrial trans fat is now banned in the US and limited in the EU."
         }
       ]
     },

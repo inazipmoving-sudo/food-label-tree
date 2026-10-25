@@ -56,3 +56,4 @@ svg text{fill:var(--text);font-family:var(--sans)}.bond{stroke:var(--text);strok
 
 /* Figure 9: six stacked full-width images; on phones they run edge to edge so labels stay at body-text size */
 @media(max-width:600px){.art img.bleed{width:100vw;max-width:none;margin-left:calc(50% - 50vw);border-radius:0}.art:has(img.bleed){overflow:visible;border-left:0;border-right:0;border-radius:0}}
+.fsub{margin:4px 0 0;color:var(--muted);font-family:var(--serif);font-style:italic;font-size:1.08rem;line-height:1.3}
