@@ -1,0 +1,226 @@
+{
+ "fe2": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Fe2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "fe3": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Fe3+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "zn": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Zn2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "cu": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Cu2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "iodide": {
+  "units": 1.64,
+  "hunits": 1.64,
+  "formula": "I-",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "fluoride": {
+  "units": 1.03,
+  "hunits": 1.03,
+  "formula": "F-",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "mn": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Mn2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "cr": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Cr3+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "na": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Na+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "molybdate": {
+  "units": 3.3,
+  "hunits": 3.3,
+  "formula": "MoO4 2-",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "cysteine": {
+  "units": 4.644,
+  "hunits": 4.705,
+  "formula": "C3H7NO2S",
+  "anchors": {
+   "x": [
+    29.65,
+    80.19
+   ],
+   "bb": [
+    40.5,
+    38.45
+   ]
+  }
+ },
+ "selenocysteine": {
+  "units": 4.644,
+  "hunits": 4.705,
+  "formula": "C3H7NO2Se",
+  "anchors": {
+   "x": [
+    29.65,
+    80.19
+   ],
+   "bb": [
+    40.5,
+    38.45
+   ]
+  }
+ },
+ "selenomethionine": {
+  "units": 4.557,
+  "hunits": 6.509,
+  "formula": "C5H11NO2Se",
+  "anchors": {
+   "x": [
+    40.67,
+    26.94
+   ],
+   "bb": [
+    47.59,
+    72.2
+   ]
+  }
+ },
+ "thyroxine": {
+  "units": 9.947,
+  "hunits": 6.166,
+  "formula": "C15H11I4NO4",
+  "anchors": {
+   "i1": [
+    51.15,
+    66.11
+   ],
+   "i2": [
+    84.59,
+    43.56
+   ],
+   "o": [
+    60.38,
+    72.56
+   ],
+   "aa": [
+    21.94,
+    25.3
+   ],
+   "oh": [
+    92.67,
+    33.89
+   ]
+  }
+ },
+ "t3": {
+  "units": 9.947,
+  "hunits": 6.166,
+  "formula": "C15H12I3NO4",
+  "anchors": {
+   "i2": [
+    94.97,
+    66.11
+   ],
+   "o": [
+    60.38,
+    72.56
+   ],
+   "h": [
+    92.67,
+    33.89
+   ]
+  }
+ },
+ "heme": {
+  "units": 12.06,
+  "hunits": 9.82,
+  "formula": "C34H32FeN4O4",
+  "anchors": {
+   "fe": [
+    56.7,
+    46.82
+   ],
+   "ring": [
+    56.7,
+    36.53
+   ],
+   "acid": [
+    15.89,
+    38.11
+   ],
+   "vinyl": [
+    65.09,
+    57.12
+   ]
+  }
+ }
+}

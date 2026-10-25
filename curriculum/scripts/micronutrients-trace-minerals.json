@@ -1,0 +1,449 @@
+{
+ "schemaVersion": 1,
+ "module": "micronutrients-trace-minerals",
+ "title": "Module 2 · Trace Minerals",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "segmentFields": {
+  "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
+  "cue": "optional: what to point at; not spoken",
+  "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
+  "subtitle": "figure-level: short muted subtitle under the title"
+ },
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "The Trace Mineral Family Tree",
+   "subtitle": "Nine minerals needed in amounts under 20 mg a day.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "Trace Minerals",
+     "text": "The last micronutrient lesson covers the trace minerals: nine elements you need in amounts under about twenty milligrams a day, some only in micrograms.",
+     "part": "head",
+     "cue": "Title, then the root box",
+     "slug": "trace-minerals"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Four Groups",
+     "text": "They're grouped by job. Iron and copper for blood and oxygen; zinc and selenium for enzymes and defense; iodine for the thyroid; and fluoride, manganese, chromium and molybdenum for teeth, bones and enzymes.",
+     "part": "tree",
+     "cue": "The second and third rows, left to right",
+     "slug": "four-groups"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Too Little",
+     "text": "The bottom row shows what happens with too little. Iron deficiency causes anemia, and iodine deficiency causes goiter. Several others are rarely short in a varied diet. Each box links to its figure.",
+     "part": "tree",
+     "cue": "The bottom row",
+     "slug": "too-little"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Small Amounts, Big Jobs",
+     "text": "Most trace minerals sit at the active center of enzymes or other proteins, so tiny amounts matter.",
+     "part": "label",
+     "cue": "First box",
+     "slug": "small-amounts-big-jobs"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "A Narrow Window",
+     "text": "For several of them, especially iron, selenium and fluoride, the gap between enough and too much is small, so food is safer than high-dose supplements. And soil and the rest of the meal affect how much you get.",
+     "part": "label",
+     "cue": "The last two boxes",
+     "slug": "a-narrow-window"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "Iron and Heme",
+   "subtitle": "Two charges, and iron held in a ring.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Two Charges",
+     "text": "Iron is carried as an ion with either two or three positive charges: ferrous iron and ferric iron. It switches between them by gaining or losing one electron.",
+     "part": "fe",
+     "cue": "The ions, left to right",
+     "slug": "two-charges"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Useful but Risky",
+     "text": "That easy switching is what makes iron useful for carrying oxygen and electrons. It's also why loose iron can spark damaging reactions, so your body keeps it bound to proteins.",
+     "part": "fe",
+     "box": "note",
+     "slug": "useful-but-risky"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "Heme",
+     "text": "Here's heme. An iron atom sits at the center, held by four nitrogens of a large flat ring made of four smaller rings: a porphyrin ring.",
+     "part": "heme",
+     "cue": "Markers 1 and 2",
+     "slug": "heme"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "Oxygen Binds Here",
+     "text": "In hemoglobin, heme sits in a pocket of the protein, and oxygen binds to the iron from above. The two acid side chains help hold it in place.",
+     "part": "heme",
+     "cue": "Marker 3",
+     "slug": "oxygen-binds-here"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "Heme and Nonheme",
+     "text": "Heme iron comes only from meat, poultry and fish, and it's absorbed well. Nonheme iron, the form in plants, eggs, dairy and fortified foods, is absorbed less well and depends on the rest of the meal.",
+     "part": "heme",
+     "box": "body",
+     "slug": "heme-and-nonheme"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "Iron in Your Body",
+   "subtitle": "Absorption, use, storage and recycling.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "Absorption",
+     "text": "Iron is absorbed in the upper small intestine. Heme iron is taken up whole. Nonheme iron must first be changed from ferric to ferrous iron, and vitamin C helps with that.",
+     "part": "path",
+     "cue": "The first step",
+     "slug": "absorption"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Transport and Use",
+     "text": "In blood, iron travels bound to a protein called transferrin. About seventy percent of your iron is in hemoglobin in red blood cells and myoglobin in muscle.",
+     "part": "path",
+     "cue": "Steps two and three",
+     "slug": "transport-and-use"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "Storage and Recycling",
+     "text": "Spare iron is stored as ferritin in the liver, spleen and bone marrow. Old red cells are broken down and their iron reused. Your body has no active way to get rid of extra iron, so it controls how much it absorbs.",
+     "part": "path",
+     "cue": "The last two steps",
+     "slug": "storage-and-recycling"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Iron Facts",
+     "text": "Men and women over fifty need eight milligrams a day; women nineteen to fifty need eighteen, to replace menstrual losses, and twenty-seven in pregnancy. Iron deficiency is the most common nutrient deficiency in the world, causing tiredness and anemia.",
+     "part": "fefacts",
+     "cue": "The facts",
+     "slug": "iron-facts"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "Too Much",
+     "text": "The upper limit is forty-five milligrams a day. Iron supplements are dangerous for young children, so keep them out of reach. Good sources are red meat, shellfish, sardines, lentils, beans, tofu and pumpkin seeds.",
+     "part": "fefacts",
+     "box": "body",
+     "slug": "too-much"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "Zinc and Copper",
+   "subtitle": "Enzyme metals that compete with each other.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "Zinc",
+     "text": "Zinc gives up two electrons and never changes charge. It holds proteins in shape, including zinc fingers that grip DNA, and it's the working part of about a hundred enzymes.",
+     "part": "zn",
+     "cue": "The ion",
+     "slug": "zinc"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Zinc Facts",
+     "text": "It's needed for immunity, wound healing, growth, and taste and smell. Men need eleven milligrams a day, women eight. Oysters are by far the richest source, then beef, crab, pumpkin seeds and beans.",
+     "part": "zn",
+     "box": "body",
+     "slug": "zinc-facts"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "Copper",
+     "text": "Copper, like iron, switches between two charges, so it works in enzymes that move electrons. It's needed to make energy and connective tissue, and to move iron out of storage, so a shortage can cause anemia.",
+     "part": "cu",
+     "cue": "The ion",
+     "slug": "copper"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Copper Facts",
+     "text": "Adults need nine hundred micrograms a day, from oysters, liver, nuts, seeds, mushrooms and dark chocolate. Deficiency is rare.",
+     "part": "cu",
+     "box": "body",
+     "slug": "copper-facts"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "They Compete",
+     "text": "Zinc and copper compete for absorption. Long-term high-dose zinc supplements can cause copper deficiency.",
+     "part": "cu",
+     "box": "note",
+     "slug": "they-compete"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "Selenium",
+   "subtitle": "The 21st amino acid.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Selenocysteine",
+     "text": "Selenium sits just below sulfur in the periodic table. Swap the sulfur in cysteine for selenium and you get selenocysteine, sometimes called the twenty-first amino acid. It's built into about twenty-five human proteins.",
+     "part": "se",
+     "cue": "Markers 1 and 2",
+     "slug": "selenocysteine"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "In Plants",
+     "text": "Plants take up selenium from soil and build it into selenomethionine, in place of methionine. So the selenium in plant foods depends on where they grew.",
+     "part": "se",
+     "cue": "Marker 3",
+     "slug": "in-plants"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "What It Does",
+     "text": "Selenium proteins include antioxidant enzymes and the enzymes that activate thyroid hormone. Adults need fifty-five micrograms a day. Deficiency is rare in the US.",
+     "part": "se",
+     "box": "body",
+     "slug": "what-it-does"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Brazil Nuts",
+     "text": "Too much causes selenosis: garlic breath, brittle hair and nails. A single Brazil nut can contain more than a day's needs, so eat them only occasionally. Fish, eggs, poultry and whole grains are steady sources.",
+     "part": "se",
+     "box": "note",
+     "slug": "brazil-nuts"
+    }
+   ]
+  },
+  {
+   "fig": 6,
+   "anchor": "fig-6",
+   "title": "Iodine and the Thyroid",
+   "subtitle": "Iodide, T4 and T3.",
+   "segments": [
+    {
+     "id": "6.1",
+     "seg": 1,
+     "name": "Iodide",
+     "text": "Iodine is taken in as iodide, a large negative ion. Your thyroid gland traps it from the blood.",
+     "part": "iodide",
+     "cue": "The ion",
+     "slug": "iodide"
+    },
+    {
+     "id": "6.2",
+     "seg": 2,
+     "name": "Thyroxine",
+     "text": "The thyroid builds iodide into thyroxine: two rings joined by an oxygen, with two iodines on each ring. Four iodines, so it's called T4. It's built from the amino acid tyrosine.",
+     "part": "thyroid",
+     "cue": "Markers 1 to 3",
+     "slug": "thyroxine"
+    },
+    {
+     "id": "6.3",
+     "seg": 3,
+     "name": "T3",
+     "text": "In body tissues a selenium enzyme removes one outer iodine, giving T3, the active hormone. Thyroid hormones set your metabolic rate and are essential for brain development before birth and in infancy.",
+     "part": "thyroid",
+     "cue": "Marker 4",
+     "slug": "t3"
+    },
+    {
+     "id": "6.4",
+     "seg": 4,
+     "name": "Iodine Facts",
+     "text": "Adults need a hundred and fifty micrograms a day, two hundred and twenty in pregnancy. Too little causes goiter, an enlarged thyroid, and in pregnancy can impair the baby's brain development. Seaweed, fish, dairy, eggs and iodized salt are the main sources.",
+     "part": "thyroid",
+     "box": "body",
+     "slug": "iodine-facts"
+    },
+    {
+     "id": "6.5",
+     "seg": 5,
+     "name": "Not All Salt",
+     "text": "Sea salt, kosher salt and most salt in processed foods usually aren't iodized.",
+     "part": "thyroid",
+     "box": "note",
+     "slug": "not-all-salt"
+    }
+   ]
+  },
+  {
+   "fig": 7,
+   "anchor": "fig-7",
+   "title": "Fluoride, Manganese, Chromium, Molybdenum",
+   "subtitle": "Four more, in brief.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "Four Ions",
+     "text": "Here are the last four, as the ions or compound they're carried in. Molybdenum arrives mostly as molybdate, a molybdenum atom with four oxygens.",
+     "part": "four",
+     "cue": "Left to right",
+     "slug": "four-ions"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "Fluoride",
+     "text": "Fluoride replaces the OH in tooth enamel, making it more resistant to acid. Too little means more tooth decay; too much while teeth are forming causes white flecks. Fluoridated water and tea are the main sources.",
+     "part": "table4",
+     "cue": "First row",
+     "slug": "fluoride"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "Manganese and Chromium",
+     "text": "Manganese is part of enzymes for bone and metabolism, and an antioxidant enzyme. Chromium may help insulin work, though supplements show little clear benefit. Shortage of either is rare.",
+     "part": "table4",
+     "cue": "Rows two and three",
+     "slug": "manganese-and-chromium"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "Molybdenum",
+     "text": "Molybdenum is a cofactor for four enzymes. Beans, lentils and whole grains supply plenty, and deficiency in healthy people is essentially unknown.",
+     "part": "table4",
+     "cue": "Last row",
+     "slug": "molybdenum"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
+   "title": "Absorption and Labels",
+   "subtitle": "What helps and blocks absorption, and Daily Values.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "Helpers and Blockers",
+     "text": "What else is in the meal matters. Vitamin C and meat increase nonheme iron absorption. Phytate in whole grains and beans lowers iron and zinc absorption, and tea and coffee lower iron absorption.",
+     "part": "help",
+     "cue": "The table, row by row",
+     "slug": "helpers-and-blockers"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Easier to Absorb",
+     "text": "Soaking beans, sprouting grains and fermenting bread break down phytate. And cooking acidic foods in a cast-iron pan adds some iron.",
+     "part": "soak",
+     "cue": "The two boxes",
+     "slug": "easier-to-absorb"
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
+     "name": "Daily Values",
+     "text": "The Daily Values are listed in this table: eighteen milligrams of iron, eleven of zinc, a hundred and fifty micrograms of iodine, and so on.",
+     "part": "dv",
+     "cue": "The table",
+     "slug": "daily-values"
+    },
+    {
+     "id": "8.4",
+     "seg": 4,
+     "name": "On the Label",
+     "text": "Iron must appear on every Nutrition Facts label. The others appear only if added or claimed.",
+     "part": "labelnote",
+     "cue": "The box",
+     "slug": "on-the-label"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
+   "title": "Putting It All Together",
+   "subtitle": "The whole lesson in one table, plus a few extras.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "One Table",
+     "text": "Here are the nine trace minerals in one table: their main job, what happens with too little, and whole-food sources.",
+     "part": "table",
+     "cue": "The table, row by row",
+     "slug": "one-table"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Worth Knowing",
+     "text": "A few extras. Heme, vitamin B12 and chlorophyll all hold a metal in the same kind of ring. Each blood donation removes about two hundred to two hundred and fifty milligrams of iron. And iodized salt, introduced in the US in 1924, all but eliminated goiter. Try the quiz below.",
+     "part": "worth",
+     "cue": "Worth knowing, then down to the quiz",
+     "slug": "worth-knowing"
+    }
+   ]
+  }
+ ],
+ "page": "curriculum/micronutrients-trace-minerals.html",
+ "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/micronutrients-trace-minerals.html",
+ "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/micronutrients-trace-minerals.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 9,
+ "segmentCount": 39
+}
