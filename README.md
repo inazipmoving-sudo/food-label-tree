@@ -8,7 +8,8 @@ Live: https://inazipmoving-sudo.github.io/food-label-tree/curriculum/food-label-
 - `curriculum/food-label-tree.html`: the tree app (Module 5), built from `gen/tree_page.src.html` with the course header and prev/next pager; it loads `../data.js`, so `data.js`/`data.json` stay at the root. A hash or query arriving at the root that is not a home-page anchor is forwarded to this page unchanged.
 - Everything is rebuilt by `python3 gen/curriculum.py` (after `gen/gen.py && build.py` when the tree data changes).
 
-Categories: Macronutrients (incl. Water, Ethanol), Micronutrients, Bioactives, Additives, Flavorings, Processing.
+Categories (same top level as Nutrition 101): Macronutrients (incl. Organic acids, Water, Ethanol), Micronutrients, and Non-Nutrients, which holds Additives, Antinutrients, Processing, Bioactives and Flavorings in Module 3 order. tree.txt still lists the six original categories; `build.py` regroups them into the three branches when it writes data.json/data.js, and gathers Antinutrients (phytic acid, oxalic acid, lectins, trypsin inhibitors, cyanogenic glycosides) from Bioactives > Other bioactives. It asserts that every leaf is kept unchanged.
+Tree deep links: `curriculum/food-label-tree.html#<branch>` opens that branch at any depth, by its name in lowercase with hyphens (e.g. `#non-nutrients`, `#bioactives`, `#polyphenols`). Old top-level names such as `#additives` still work, including when they arrive at the root and are forwarded.
 Category nodes can carry a short note: write `Name :: note` on the branch line in tree.txt. The Fats restructure is in gen/fats.py.
 
 ## Build

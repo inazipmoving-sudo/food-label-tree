@@ -3,7 +3,7 @@
  "module": "final-review",
  "title": "Module 4 · Final Review",
  "lang": "en",
- "revision": 3,
+ "revision": 4,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -25,7 +25,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "One Chart",
-     "text": "This is the final review, and it starts with the whole course on one chart. Everything in food falls into three branches, one for each of the first three modules, and every line on a label belongs to one of them.",
+     "text": "This is the final review, and it starts with the whole course on one chart. Everything in food falls into three branches, one for each of the first three modules and the same three that the Food Label Tree in Module 5 is built on, and every line on a label belongs to one of them.",
      "part": "head",
      "cue": "Title, then the root box",
      "slug": "one-chart"

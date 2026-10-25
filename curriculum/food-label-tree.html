@@ -14,8 +14,8 @@ a{color:inherit}
 .crumbs,.topnav{font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}.crumbs a,.topnav a{text-decoration:none;border-bottom:1px solid var(--hair);padding-bottom:1px}.crumbs a:hover,.topnav a:hover{color:var(--acc);border-color:var(--acc)}
 .hero .pnl{font-size:.9rem;margin-top:14px}.hero .pnl a{color:var(--acc);text-decoration:none;border-bottom:1px solid currentColor}
 .lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-weight:500}
-:root{--c-macronutrients:#A86B53;--c-micronutrients:#66788A;--c-bioactives:#7A8256;--c-additives:#A98A4E;--c-flavorings:#9C8A70;--c-processing:#3E5C76;--c-antinutrients:#7E7A72}
-[data-theme=dark]{--c-macronutrients:#C99582;--c-micronutrients:#9AAABA;--c-bioactives:#A8AF85;--c-additives:#CDB07A;--c-flavorings:#C4B49A;--c-processing:#8FA9C2;--c-antinutrients:#ABA79E}
+:root{--c-macronutrients:#A86B53;--c-micronutrients:#66788A;--c-bioactives:#7A8256;--c-additives:#A98A4E;--c-flavorings:#9C8A70;--c-processing:#3E5C76;--c-antinutrients:#7E7A72;--c-non-nutrients:#7A8256}#tree li{scroll-margin-top:72px}
+[data-theme=dark]{--c-macronutrients:#C99582;--c-micronutrients:#9AAABA;--c-bioactives:#A8AF85;--c-additives:#CDB07A;--c-flavorings:#C4B49A;--c-processing:#8FA9C2;--c-antinutrients:#ABA79E;--c-non-nutrients:#A8AF85}
 h1,h2,h3,.badge,.findex a,.mn,.pn a,.top>.row{font-variant-numeric:lining-nums}
 .topnav{margin-bottom:6px}
 .sbar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
@@ -27,7 +27,7 @@ main{max-width:920px;margin:32px auto 80px;padding:0 24px}ul{list-style:none;mar
 .top{background:var(--card);border:1px solid var(--line);border-radius:6px;margin-bottom:14px;overflow:hidden}
 .kids{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s ease}.kids>ul{overflow:hidden;min-height:0}.open>.kids{grid-template-rows:1fr}
 .kids>ul>li{margin-left:14px;padding-left:14px;border-left:1px solid var(--line)}
-.top>.kids>ul{padding:0 14px 14px 8px}
+.top>.kids>ul{padding:0 14px 14px 8px}.top:not(.open)>.kids>ul{padding-bottom:0}.bnote{font-variant-numeric:lining-nums}
 .row{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:4px;cursor:pointer;user-select:none}.row:hover{background:var(--chip)}
 .top>.row{padding:18px 20px;font-family:var(--serif);font-weight:500;font-size:1.5rem;letter-spacing:.01em}
 .top>.row .ico{width:22px;height:1px;background:var(--a);flex:none}
@@ -42,15 +42,18 @@ main{max-width:920px;margin:32px auto 80px;padding:0 24px}ul{list-style:none;mar
 @media(max-width:600px){.hero{padding:22px 18px 26px}#theme{position:static;margin-bottom:12px}.sbox{padding:10px 16px}main{padding:0 14px;margin-top:20px}.kids>ul>li{margin-left:6px;padding-left:9px}.card{margin-left:4px}.top>.row{font-size:1.3rem;padding:15px 16px}}
 .pn{display:flex;justify-content:space-between;gap:14px;max-width:920px;margin:40px auto 60px;padding:0 24px}.pn a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 18px;text-decoration:none;font-family:var(--serif);font-size:1.25rem;font-variant-numeric:lining-nums}.pn a:hover{border-color:var(--acc)}.pn a.nx{text-align:right}.pn small{display:block;font-family:var(--sans);font-size:.64rem;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:2px}@media(max-width:600px){.pn{flex-direction:column;padding:0 12px}}
 .ai{color:var(--acc);font-weight:600;letter-spacing:.01em}.brand{display:inline-block;margin-bottom:10px;font-family:var(--serif);font-size:1.25rem;font-weight:500;letter-spacing:.02em;text-decoration:none;color:var(--text)}.brand:hover{color:var(--text)}.brand:hover .ai{text-decoration:underline;text-underline-offset:3px}</style></head><body>
-<div class="hero"><div class="in"><button id="theme">Dark</button><div><a class="brand" href="../">LeCl<span class="ai">ai</span>re Institute</a></div><nav class="crumbs"><a href="../">Home</a> › <a href="./">Nutrition 101</a> › Module 5</nav><h1>Module 5 · Food Label Tree</h1><p>Over 1,000 nutrients, bioactives, additives, flavor compounds and processing by-products from the back of food labels — what they are, what they do, and where they come from.</p><p class="pnl">Previous lesson: <a href="final-review.html">Module 4 · Final Review</a></p></div></div>
+<div class="hero"><div class="in"><button id="theme">Dark</button><div><a class="brand" href="../">LeCl<span class="ai">ai</span>re Institute</a></div><nav class="crumbs"><a href="../">Home</a> › <a href="./">Nutrition 101</a> › Module 5</nav><h1>Module 5 · Food Label Tree</h1><p>Over 1,000 compounds from the back of food labels — what they are, what they do, and where they come from — in the same three branches as Nutrition 101: macronutrients, micronutrients and non-nutrients (additives, antinutrients, processing, bioactives and flavorings).</p><p class="pnl">Previous lesson: <a href="final-review.html">Module 4 · Final Review</a></p></div></div>
 <div class="sbar"><div class="sbox"><input id="q" placeholder="Search a compound or food — salmon, B12, E211, omega-3…"><button class="btn" id="ex">Expand all</button><button class="btn" id="co">Collapse all</button><span id="info"></span></div></div>
 <main><ul id="tree"></ul></main><nav class="pn"><a class="pv" href="final-review.html"><small>← Previous lesson</small>Module 4 · Final Review</a><span style="flex:1"></span></nav><script src="../data.js"></script><script>
 const T=window.TREE,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 (function pre(n){n.c=n.children?n.children.reduce((a,x)=>a+pre(x),0):1;n.t=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.found||'')+' '+(n.note||'')).toLowerCase();return n.c})(T);
 let Q='';const hl=n=>{const i=Q?n.toLowerCase().indexOf(Q):-1;return i<0?esc(n):esc(n.slice(0,i))+'<mark>'+esc(n.slice(i,i+Q.length))+'</mark>'+esc(n.slice(i+Q.length))};
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const FAM=new Set((T.children.find(c=>c.name=='Non-Nutrients')||{children:[]}).children);
 function node(n,d,kids,open){const li=document.createElement('li');li.n=n;li.kids=kids;const r=document.createElement('div');r.className='row';li.appendChild(r);let h='';
- if(d==0){li.className='top';li.dataset.cat=n.name;li.style.setProperty('--a',`var(--c-${n.name.toLowerCase()},#3E5C76)`);h='<span class="ico"></span>'}
+ if(FAM.has(n)){li.dataset.cat=n.name;li.style.setProperty('--a',`var(--c-${slug(n.name)})`)}
+ if(d==0){li.className='top';li.dataset.cat=n.name;li.style.setProperty('--a',`var(--c-${slug(n.name)},#3E5C76)`);h='<span class="ico"></span>'}
  if(n.children){li.classList.add('br');r.innerHTML=h+`<span class="tw">▶</span><span class="nm">${hl(n.name)}</span><span class="cnt">${kids?kids.c:n.c}</span>`;r.onclick=()=>tog(li);if(open)tog(li,true,true)}
  else{li.classList.add('leaf');r.innerHTML='<span class="dot"></span><span class="nm">'+hl(n.name)+'</span>';const c=document.createElement('div');c.className='card';
   c.innerHTML=`<div class="k">What</div>${esc(n.what)}`+(n.does?`<div class="k">In the body</div>${esc(n.does)}`:'')+(n.found?`<div class="k">Found in</div><div class="chips">${n.found.split(/[,;] /).map(f=>`<button class="chip">${esc(f)}</button>`).join('')}</div>`:'');li.appendChild(c)}
@@ -73,4 +76,9 @@ const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='da
 let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
 theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};
 render();
+function openHash(){const h=decodeURIComponent(location.hash.slice(1)).toLowerCase();if(!h||Q)return;
+ const path=(function f(n,acc){for(const c of n.children||[]){if(!c.children)continue;const a=[...acc,c];if(slug(c.name)==h)return a;const r=f(c,a);if(r)return r}return null})(T,[]);
+ if(!path)return;let ul=tree,li=null;for(const n of path){li=[...ul.children].find(x=>x.n===n);if(!li)return;tog(li,true);ul=li.querySelector(':scope>.kids>ul')}
+ setTimeout(()=>li.scrollIntoView({block:'start'}),300)}
+openHash();addEventListener('hashchange',openHash);
 </script></body></html>
