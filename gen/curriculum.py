@@ -162,18 +162,84 @@ def pn(prev=None,nxt=None):
     return o+'</nav>'
 CSS=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'curr.css')).read()
 THEME='''<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>'''
-def page(title,hero,body,extra=''):
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style></head><body>
+def page(title,hero,body,extra='',head=''):
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style>{head}</head><body>
 <div class="hero"><div class="in"><button id="theme">Dark</button>{hero}</div></div>{body}{THEME}{extra}</body></html>'''
+
+
+# ---------------- Lesson player (shared by every curriculum page) ----------------
+# A module needs only: figure cards (figure_card) + a script JSON in gen/scripts/<module>.json.
+# lesson_page() validates the script, embeds it, publishes curriculum/scripts/<module>.json and
+# copies gen/player.js + gen/player.css to curriculum/assets/ (cache-busted by content hash).
+import json, html as _html, hashlib
+GEN=os.path.dirname(os.path.abspath(__file__))
+SITE='https://inazipmoving-sudo.github.io/food-label-tree/'
+def _asset(name):
+    src=open(os.path.join(GEN,name),encoding='utf-8').read()
+    os.makedirs(os.path.join(OUT,'assets'),exist_ok=True)
+    open(os.path.join(OUT,'assets',name),'w',encoding='utf-8').write(src)
+    return f'assets/{name}?v='+hashlib.sha1(src.encode()).hexdigest()[:10]
+def load_script(module,figs_html):
+    d=json.load(open(os.path.join(GEN,'scripts',module+'.json'),encoding='utf-8'))
+    assert d.get('schemaVersion')==1 and d.get('module')==module, 'script: schemaVersion 1 and matching module id required'
+    assert [f['fig'] for f in d['figures']]==list(range(1,len(figs_html)+1)), 'script figures must be 1..N, one per figure card'
+    for f,fh in zip(d['figures'],figs_html):
+        f.setdefault('anchor',f"fig-{f['fig']}")
+        for k,sg in enumerate(f['segments'],1):
+            assert sg['id']==f"{f['fig']}.{k}" and sg.get('seg',k)==k, f"segment id {sg['id']} out of order"
+            sg['seg']=k; assert sg['text'].strip()
+            if sg.get('part'): assert f'data-part="{sg["part"]}"' in fh, f"segment {sg['id']}: no data-part={sg['part']} in figure {f['fig']}"
+    return d
+def _seg_li(sg):
+    e=_html.escape
+    tags=''
+    if sg.get('box')=='body': tags+='<span class="lp-tag box">In your body</span>'
+    elif sg.get('box')=='note': tags+='<span class="lp-tag box">Note</span>'
+    if sg.get('verbatim'): tags+='<span class="lp-tag">Word for word</span>'
+    cue=f'<span class="lp-cue">{tags}{e(sg["cue"]) if sg.get("cue") else ""}</span>' if (tags or sg.get('cue')) else ''
+    q=f'<h4 class="lp-q">{e(sg["q"])}</h4>' if sg.get('q') else ''
+    box=f' data-box="{sg["box"]}"' if sg.get('box') else ''
+    return f'<li class="lp-seg" id="seg-{sg["id"]}" data-id="{sg["id"]}"{box} tabindex="0"><span class="lp-sid">{sg["id"]}</span><div>{q}<p class="lp-tx">{e(sg["text"])}</p>{cue}</div></li>'
+IC={'prevfig':'<path d="M3 2h2v12H3zM14 2v12L6 8z"/>','prevseg':'<path d="M10.5 2.5 5 8l5.5 5.5 1.2-1.2L7.4 8l4.3-4.3z"/>','nextseg':'<path d="M5.5 2.5 11 8l-5.5 5.5-1.2-1.2L8.6 8 4.3 3.7z"/>','nextfig':'<path d="M11 2h2v12h-2zM2 2v12l8-6z"/>'}
+def _ib(act,label,keys):
+    return f'<button type="button" class="lp-btn" data-act="{act}" aria-label="{label}" title="{label} ({keys})"><svg viewBox="0 0 16 16" aria-hidden="true">{IC[act]}</svg></button>'
+CONTROLS=('<div class="lp-ctl" role="toolbar" aria-label="Lesson controls"><button type="button" class="lp-now" data-act="now" title="Show this line in the script"></button><div class="lp-pos"><span class="lp-where">1.1</span><span class="lp-of"></span></div>'
+ '<label class="lp-tts" title="Read each segment aloud with your browser voice"><input type="checkbox" data-act="tts"> Read aloud</label><span class="lp-brk"></span>'
+ +_ib('prevfig','Previous figure','Shift + Left')+_ib('prevseg','Previous segment','Left arrow')
+ +'<button type="button" class="lp-btn play" data-act="play" aria-pressed="false" aria-label="Play" title="Play (Space)"><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2v12l10-6z"/></svg><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2h3v12h-3zM9.5 2h3v12h-3z"/></svg><span class="lp-pl">Play</span></button>'
+ +_ib('nextseg','Next segment','Right arrow')+_ib('nextfig','Next figure','Shift + Right')
+ +'<button type="button" class="lp-btn q" data-act="question" title="Pause and mark this spot">Question</button></div>')
+def lesson_page(module,title,hero,figs_html,after_html='',out_name=None):
+    """Two-column lesson page: sticky figure left, script right, controls, then after_html (the quiz)."""
+    out_name=out_name or module+'.html'
+    d=load_script(module,figs_html)
+    nseg=sum(len(f['segments']) for f in d['figures'])
+    pub=dict(d); pub.update({'page':f'curriculum/{out_name}','pageUrl':SITE+f'curriculum/{out_name}','scriptUrl':SITE+f'curriculum/scripts/{module}.json',
+        'hashFormat':'#fig-{fig}/seg-{seg}','figureCount':len(d['figures']),'segmentCount':nseg})
+    os.makedirs(os.path.join(OUT,'scripts'),exist_ok=True)
+    open(os.path.join(OUT,'scripts',module+'.json'),'w',encoding='utf-8').write(json.dumps(pub,ensure_ascii=False,indent=1)+'\n')
+    css,js=_asset('player.css'),_asset('player.js')
+    idx=''.join(f'<a href="#fig-{f["fig"]}" title="{_html.escape(f["title"])}">{f["fig"]}</a>' for f in d['figures'])
+    lists=''.join(f'<ol class="lp-segs" data-fig="{f["fig"]}" data-label="Figure {f["fig"]} script" aria-label="Figure {f["fig"]} script">'+''.join(_seg_li(sg) for sg in f['segments'])+'</ol>' for f in d['figures'])
+    script_col=('<aside class="lp-scriptcol" aria-label="Lesson script">'+CONTROLS+'<div class="lp-scripthead"></div>'
+        '<button type="button" class="lp-resume" data-act="resume" hidden>Resume where you left off<span class="lp-rs"></span></button>'
+        '<p class="lp-qbanner" role="status" hidden></p>'+lists+
+        '<p class="lp-keys"><kbd>Space</kbd> play or pause · <kbd>←</kbd> <kbd>→</kbd> segments · <kbd>Shift</kbd> + <kbd>←</kbd> <kbd>→</kbd> figures · click a line to jump</p><div class="lp-live lp-sr" aria-live="polite"></div></aside>')
+    data=json.dumps(pub,ensure_ascii=False).replace('</','<\\/')
+    body=(f'<div class="findex"><span>Figures</span>{idx}</div><div class="lp" data-player data-module="{module}"><div class="lp-figcol">{"".join(figs_html)}</div>{script_col}</div>{after_html}'
+        f'<script type="application/json" id="lesson-script">{data}</script>')
+    open(os.path.join(OUT,out_name),'w',encoding='utf-8').write(page(title,hero,body,f'<script src="{js}"></script>',head=f'<link rel="stylesheet" href="{css}">'))
+    print(module,len(d['figures']),'figures',nseg,'segments',{f['fig']:len(f['segments']) for f in d['figures']})
+    return d
 
 # ---------------- Merged lesson: Module 1 · Fats (basic -> complex) ----------------
 SVG_TREE,SVG_MELT,SVG_BODY=FIG[0][2],FIG[10][2],FIG[11][2]
 import struct
 def _png_size(path):
     with open(path,'rb') as f: f.read(16); return struct.unpack('>II',f.read(8))
-def img(fname,n,alt):
+def img(fname,n,alt,part=None):
     w,h=_png_size(os.path.join(OUT,'img','fats',fname))  # width/height reserve space so #fig-N jumps land correctly
-    return f'<img src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}" loading="{"eager" if n<2 else "lazy"}" decoding="async">'
+    return f'<img src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}"{f' data-part="{part}"' if part else ''} loading="{"eager" if n<2 else "lazy"}" decoding="async">'
 # (title, caption, art) ; art None => ball-and-stick image img/fats/fig-NN.png
 LESSON=[
 ('The fat family tree: the map of this lesson','Here is the map of where this lesson is heading; we will build up to each branch, starting from single atoms. Every fat gives 9 kcal per gram (protein and carbs give 4). Saturated fats have no double bonds (Figure 3); monounsaturated have one (Figure 5); polyunsaturated have two or more and include the omega-3 and omega-6 families (Figures 5 and 6). Trans fats are mostly made from unsaturated oils by partial hydrogenation, the dashed arrow (Figures 3 and 7).',SVG_TREE),
@@ -184,9 +250,9 @@ LESSON=[
 ('Monounsaturated vs polyunsaturated','Unsaturated fats are grouped by how many double bonds they have. <b>Monounsaturated</b> ("one"): oleic acid, C18:1, one cis double bond at C9=C10; the main fat in olive oil. <b>Polyunsaturated</b> ("many"): linoleic acid, C18:2, two cis double bonds at C9=C10 and C12=C13; found in sunflower, corn and other seed oils. Each extra cis kink lowers the melting point further: about 13 °C for oleic, about −5 °C for linoleic.',None),
 ('Omega-3 vs omega-6: count from the tail','Polyunsaturated fats are named by counting from the tail (ω) end, where ω1 is the last carbon. ALA (C18:3, three cis double bonds; flax, chia, walnuts) has its first double bond at ω3, so it is an omega-3. Linoleic acid (C18:2, two cis double bonds; sunflower, corn and other seed oils) starts at ω6, so it is an omega-6.',None),
 ('Hydrogenation: how oils become solid fats','Factories add hydrogen gas with a nickel catalyst and heat. Full hydrogenation removes every double bond and gives saturated fat. Partial hydrogenation stops partway: some double bonds remain and some flip from cis to trans, which is where most trans fat in food came from (Figure 3). Industrial trans fat is banned in the US and limited in the EU.',None),
-('Melting points and body fat','<b>Top:</b> approximate melting points of the pure fatty acids; the dashed line is room temperature. Straighter chains (saturated, trans) melt higher, every cis kink lowers the melting point, and longer chains melt higher. <b>Bottom:</b> stored human fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the single most common, so it stays soft at body temperature (about 37 °C). Fat gets firmer as it cools, so it is firmer near the cooler skin and softer deeper in.','<div class="artstack">'+SVG_MELT+SVG_BODY+'</div>'),
+('Melting points and body fat','<b>Top:</b> approximate melting points of the pure fatty acids; the dashed line is room temperature. Straighter chains (saturated, trans) melt higher, every cis kink lowers the melting point, and longer chains melt higher. <b>Bottom:</b> stored human fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the single most common, so it stays soft at body temperature (about 37 °C). Fat gets firmer as it cools, so it is firmer near the cooler skin and softer deeper in.','<div class="artstack">'+SVG_MELT.replace('<svg ','<svg data-part="melt" ',1)+SVG_BODY.replace('<svg ','<svg data-part="bodyfat" ',1)+'</div>'),
 ]
-ARTIMG={2:[('fig-02a.png','the triglyceride molecule'),('fig-02b.png','fat vs oil: tristearin vs triolein')]}
+ARTIMG={2:[('fig-02a.png','the triglyceride molecule','molecule'),('fig-02b.png','fat vs oil: tristearin vs triolein','fatoil')]}
 BODY={
 3:[('Saturated fat','Part of the structure of cell membranes (in phospholipids), a dense backup fuel stored in fat tissue, and used to make some signaling lipids. The liver can also build cholesterol, the raw material for steroid hormones, from fat breakdown products. Eating a lot raises LDL ("bad") cholesterol.'),
    ('Trans fat','The body does not handle the straight trans shape like natural unsaturated fat; it packs into cell membranes much like saturated fat. It raises LDL and lowers HDL and is strongly linked to heart disease, which is why industrial trans fat is now mostly banned in the US.'),
@@ -208,26 +274,28 @@ QUIZ=[('How many bonds does carbon make, and how many does hydrogen make?','Carb
 ('Name a natural source of trans fat.','Milk, butter, cheese, beef or lamb: vaccenic acid made by bacteria in cows, sheep and goats (Figure 3, note).'),
 ('Do steroid hormones come from saturated fat?','No. They are made from cholesterol, which the liver can build from fat breakdown products (Figure 3, pink box).')]
 def art(i,t,a):
-    if i in ARTIMG: return ''.join(img(fn,i,al) for fn,al in ARTIMG[i])
+    if i in ARTIMG: return ''.join(img(fn,i,al,pt) for fn,al,pt in ARTIMG[i])
     return a if a else img(f'fig-{i:02d}.png',i,t)
-QA_HTML=(img('fig-02-bonds.png',2,'meet the atoms: what is a bond')+'</div><div class="qa"><h4>What is a bond?</h4><p>A bond is the attraction that holds two atoms together in a molecule. In the fats we\'re looking at, it\'s mostly carbon sharing electrons with hydrogen or with another carbon, and that sharing is what builds the chains.</p><h4>How does that work exactly?</h4><p>Atoms have electrons in shells around them, and atoms are happiest when their outer shell is full. A bond is when two atoms share a pair of those outer electrons so each one gets to count them. One shared pair is a single bond, which lets the atoms spin freely around each other. Two shared pairs is a double bond, which is shorter, stronger, and locks the atoms in place so they can\'t rotate. That\'s the whole trick behind saturated versus unsaturated fat: saturated chains are all single bonds, so they lie straight and pack tight. Unsaturated ones have double bonds that put a kink in the chain, and that\'s what keeps oils liquid.</p><p class="fnote">The kink comes from cis double bonds; trans double bonds stay nearly straight. See Figure 3.</p></div>')
+QA_HTML=(img('fig-02-bonds.png',2,'meet the atoms: what is a bond','atoms')+'</div><div class="qa" data-part="qa"><h4>What is a bond?</h4><p>A bond is the attraction that holds two atoms together in a molecule. In the fats we\'re looking at, it\'s mostly carbon sharing electrons with hydrogen or with another carbon, and that sharing is what builds the chains.</p><h4>How does that work exactly?</h4><p>Atoms have electrons in shells around them, and atoms are happiest when their outer shell is full. A bond is when two atoms share a pair of those outer electrons so each one gets to count them. One shared pair is a single bond, which lets the atoms spin freely around each other. Two shared pairs is a double bond, which is shorter, stronger, and locks the atoms in place so they can\'t rotate. That\'s the whole trick behind saturated versus unsaturated fat: saturated chains are all single bonds, so they lie straight and pack tight. Unsaturated ones have double bonds that put a kink in the chain, and that\'s what keeps oils liquid.</p><p class="fnote">The kink comes from cis double bonds; trans double bonds stay nearly straight. See Figure 3.</p></div>')
 PRE={2:'<div class="part">Meet the atoms</div><div class="art">'+QA_HTML+'<div class="part">The fat molecule</div>'}
 def callout(i):
     o=''
-    if i in BODY: o+='<aside class="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
-    if i in NOTE: o+=f'<aside class="enote">{NOTE[i]}</aside>'
+    if i in BODY: o+='<aside class="body" data-part="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
+    if i in NOTE: o+=f'<aside class="enote" data-part="note">{NOTE[i]}</aside>'
     return o
-figs=''.join(f'<figure class="fig" id="fig-{i}"><div class="fh"><a class="badge" href="#fig-{i}">{i}</a><div><div class="fl">Figure {i}</div><h3>{t}</h3></div></div>{PRE.get(i,"")}<div class="art">{art(i,t,a)}</div><figcaption>{c}</figcaption>{callout(i)}</figure>' for i,(t,c,a) in enumerate(LESSON,1))
-idx=''.join(f'<a href="#fig-{i}" title="{t}">{i}</a>' for i,(t,c,a) in enumerate(LESSON,1))
-quiz='<section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section>'
-SPY='''<script>const links=[...document.querySelectorAll('.findex a')],figs=[...document.querySelectorAll('.fig')];let cur='';function spy(){let id=figs[0].id;for(const f of figs)if(f.getBoundingClientRect().top<=window.innerHeight*0.35)id=f.id;if(innerHeight+scrollY>=document.body.scrollHeight-4&&!location.hash)id=figs[figs.length-1].id;if(id!=cur){cur=id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+id));const a=links.find(a=>a.classList.contains('on'));a&&a.parentNode.scrollTo({left:a.offsetLeft-a.parentNode.clientWidth/2,behavior:'smooth'})}}addEventListener('scroll',spy,{passive:true});addEventListener('hashchange',()=>setTimeout(spy,400));spy();</script>'''
-open(os.path.join(OUT,'macronutrients-fats.html'),'w').write(page('Module 1 · Fats · Curriculum · Food Label Tree',
- f'<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: {len(LESSON)} figures covering what a fat is, the kinds of fatty acid, why some are solid, then hydrogenation and body fat. Tell students "go to Figure N". Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
- f'<div class="findex"><span>Figures</span>{idx}</div><main>{figs}{quiz}</main>',SPY))
+def figure_card(n,title,art_html,caption,pre='',after=''):
+    """One numbered figure card. Give images/boxes a data-part="..." so script segments can point at them."""
+    return (f'<figure class="fig" id="fig-{n}" data-fig="{n}"><div class="fh"><a class="badge" href="#fig-{n}">{n}</a><div><div class="fl">Figure {n}</div><h3>{title}</h3></div></div>'
+            f'{pre}<div class="art">{art_html}</div><figcaption data-part="caption">{caption}</figcaption>{after}</figure>')
+quiz='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
+FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) in enumerate(LESSON,1)]
+lesson_page('macronutrients-fats','Module 1 · Fats · Curriculum · Food Label Tree',
+ '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 8 figures covering what a fat is, the kinds of fatty acid, why some are solid, then hydrogenation and body fat. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
+ FATS_FIGS,quiz)
 # Old step-by-step page -> tiny redirect (maps #step-N to the new #fig-N)
 STEP2FIG={1:2,2:2,3:2,4:2,5:2,6:2,7:3,8:3,9:3,10:3,11:3,12:5,13:4,14:4,15:6,16:2}
 open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved: Module 1 · Fats</title><meta http-equiv="refresh" content="0; url=macronutrients-fats.html"><link rel="canonical" href="macronutrients-fats.html"><script>var m={'+','.join(f'{k}:{v}' for k,v in STEP2FIG.items())+'},s=/^#step-(\\d+)$/.exec(location.hash);location.replace("macronutrients-fats.html"+(s&&m[s[1]]?"#fig-"+m[s[1]]:""))</script></head><body><p>This lesson moved to <a href="macronutrients-fats.html">Module 1 · Fats</a>.</p></body></html>\n')
-MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats','macronutrients-fats.html',f'{len(LESSON)} figures')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
+MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats','macronutrients-fats.html',f'{len(LESSON)} figures + script')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
 cards=''
 for n,nm,ic,c,live,soon in MOD:
     items=''.join(f'<a class="les" href="{h}">{t} <span>{k} →</span></a>' for t,h,k in live)+''.join(f'<div class="les off">{t} <span>coming soon</span></div>' for t in soon)
