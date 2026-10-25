@@ -242,6 +242,6 @@ LIPID_JS=('<dialog class="lbx lbm" aria-label="Molecule, full size"><button type
  'new ResizeObserver(draw).observe(ft);addEventListener("load",draw);draw();});'
  'document.addEventListener("click",e=>{const b=e.target.closest(".lmz");if(!b||!dlg)return;const lm=b.closest(".lm"),c=lm.cloneNode(true),u=+lm.style.getPropertyValue("--u"),hu=+lm.style.getPropertyValue("--hu");'
  'c.querySelectorAll("button").forEach(x=>x.replaceWith(...x.childNodes));c.querySelectorAll(".zi").forEach(x=>x.remove());'
- 'const lb=Math.min((innerWidth*0.94-40)/(u+(lm.classList.contains("hz")?3:0)),Math.max((innerHeight*0.92-90)/hu,lm.querySelector("img").getBoundingClientRect().width/u*1.6),72);c.style.setProperty("--lb",lb+"px");c.removeAttribute("data-part");'
+ 'const lb=Math.min((innerWidth*0.94-40)/(u+(lm.classList.contains("hz")?3:0)),Math.max((innerHeight*0.92-90)/hu,lm.querySelector("img").getBoundingClientRect().width/u*1.6),110);c.style.setProperty("--lb",lb+"px");c.removeAttribute("data-part");'
  'const box=dlg.querySelector(".lbx-b");box.replaceChildren(c);dlg.querySelector(".lbx-c").textContent=b.dataset.cap;dlg.showModal();});'
  'if(dlg){dlg.addEventListener("click",()=>dlg.close());dlg.addEventListener("keydown",e=>{if(e.key!=="Escape")e.stopPropagation()});}})();</script>')
