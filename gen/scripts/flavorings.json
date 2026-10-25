@@ -1,9 +1,9 @@
 {
  "schemaVersion": 1,
  "module": "flavorings",
- "title": "Module 7 · Flavorings",
+ "title": "Module 3 · Flavorings",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -25,7 +25,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "Flavor",
-     "text": "Module seven is about flavor and flavorings. What we call flavor is mostly two senses working together: taste on the tongue and smell in the nose.",
+     "text": "This lesson is about flavor and flavorings. What we call flavor is mostly two senses working together: taste on the tongue and smell in the nose.",
      "part": "head",
      "cue": "Title, then the root box"
     },

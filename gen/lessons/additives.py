@@ -1,5 +1,5 @@
 import math
-# ---------------- Module 3 · Additives and E-Numbers ----------------
+# ---------------- Module 3 · Non-Nutrients · Additives and E-Numbers ----------------
 MA=mk_lmol('additives')
 A=None
 _C=[(50,'Colors','E100s · Fig. 3','#fig-3','Curcumin','E100','#fig-3'),

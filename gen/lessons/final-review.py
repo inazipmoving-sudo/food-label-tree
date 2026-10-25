@@ -1,4 +1,4 @@
-# ---------------- Module 8 · Final Review ----------------
+# ---------------- Module 4 · Final Review ----------------
 # Whole-site family tree, then five whole-food labels read line by line. Label numbers are TYPICAL values (USDA FoodData Central-style
 # averages, rounded the way FDA labels round); they are illustrative, not any brand's label. Every molecule is reused from the lesson that teaches it.
 MR=mk_lmol('final-review')
@@ -15,16 +15,16 @@ def nflabel(part,food,serving,cal,rows,ingred,extra=''):
             f'<p class="nfi"><b>Ingredients:</b> {ingred}</p>{extra}</div></div>')
 MAPH=['Label line','Branch','What it is here','Lesson']
 # ---- Figure 1: the whole-site tree ----
-_C=[115,340,565,790]
+_C=[150,450,750]
 _HD=[('Macronutrients','Module 1 · grams','nd s','macronutrients-fats.html'),('Micronutrients','Module 2 · mg and µg','nd u','micronutrients-fat-soluble-vitamins.html'),
-     ('Added or Changed','Modules 3, 5 and 7','nd t','additives.html'),('Plant Compounds','Modules 4 and 6','nd l','antinutrients.html')]
+     ('Non-Nutrients','Module 3 · not nutrients','nd t','additives.html')]
 _KIDS=[[('Fats','9 kcal/g','macronutrients-fats.html'),('Lipids','cholesterol, sterols','macronutrients-lipids.html'),
         ('Protein','4 kcal/g','macronutrients-protein.html'),('Carbohydrates','4 kcal/g · fiber','macronutrients-carbohydrates.html'),
         ('Water and Ethanol','alcohol 7 kcal/g','macronutrients-water-ethanol.html')],
        [('Vitamins A, D, E, K','fat-soluble','micronutrients-fat-soluble-vitamins.html'),('B Vitamins and C','water-soluble','micronutrients-water-soluble-vitamins.html'),
         ('Major Minerals','sodium, calcium','micronutrients-major-minerals.html'),('Trace Minerals','iron, zinc, iodine','micronutrients-trace-minerals.html')],
-       [('Additives','E-numbers','additives.html'),('Processing','heat, microbes','processing.html'),('Flavorings','taste and smell','flavorings.html')],
-       [('Antinutrients','phytate, lectins','antinutrients.html'),('Bioactives','polyphenols','bioactives.html')]]
+       [('Additives','E-numbers','additives.html'),('Antinutrients','phytate, lectins','antinutrients.html'),('Processing','heat, microbes','processing.html'),
+        ('Bioactives','polyphenols','bioactives.html'),('Flavorings','taste and smell','flavorings.html')]]
 _Y0=150; _DY=84; _W=196
 FR_NODES=[(450,30,330,'What’s in Food','every label line belongs to one branch','nd root','#fig-2')]
 FR_EDGES=[]
@@ -34,10 +34,10 @@ for cx,(t,s,c,h),kids in zip(_C,_HD,_KIDS):
     FR_EDGES.append(('line',tx,_Y0+32,tx,ys[-1]+5))
     for y,(kt,ks,kh) in zip(ys,kids):
         FR_NODES.append((cx+12,y,_W-24,kt,ks,c,kh)); FR_EDGES.append(('line',tx,y+5,cx+12-(_W-24)/2,y+5))
-P1=('<!--noart-->'+ftree(FR_NODES,FR_EDGES,_Y0+_DY*5+50,'Tree diagram of the whole curriculum. What’s in food splits into four branches. Macronutrients, needed in grams: Fats, Lipids, Protein, Carbohydrates, Water and Ethanol. Micronutrients, needed in milligrams and micrograms: vitamins A, D, E and K; B vitamins and C; major minerals; trace minerals. Added or changed by people: Additives, Processing, Flavorings. Plant compounds that come with the food: Antinutrients and Bioactives. Each box links to its lesson.')
+P1=('<!--noart-->'+ftree(FR_NODES,FR_EDGES,_Y0+_DY*5+50,'Tree diagram of the whole curriculum. What’s in food splits into three branches, one per module. Macronutrients, needed in grams: Fats, Lipids, Protein, Carbohydrates, Water and Ethanol. Micronutrients, needed in milligrams and micrograms: vitamins A, D, E and K; B vitamins and C; major minerals; trace minerals. Non-nutrients, things in food or done to food that are not nutrients: Additives, Antinutrients, Processing, Bioactives, Flavorings. Each box links to its lesson.')
  +lblock('label','What the tree shows',[('Two branches are on the Nutrition Facts panel','Macronutrients and micronutrients are the nutrients the panel counts: grams of fat, carbohydrate and protein, and milligrams or micrograms of a few vitamins and minerals.'),
-   ('One branch is in the ingredient list','Additives, processing words and flavorings show up in the ingredient list, and sometimes in words like “cultured”, “enriched” or “pasteurized”.'),
-   ('One branch is never printed','Antinutrients and bioactives, such as phytate and polyphenols, come with the whole food but have no label line. You find them by knowing the food, which is what the next five figures practise.')]))
+   ('Part of the third branch is in the ingredient list','Additives, processing words and flavorings show up in the ingredient list, and sometimes in words like “cultured”, “enriched” or “pasteurized”.'),
+   ('The rest of the third branch is never printed','Antinutrients and bioactives, such as phytate and polyphenols, come with the whole food but have no label line. You find them by knowing the food, which is what the next five figures practise.')]))
 # ---- Figure 2: the method ----
 P2=('<!--noart-->'+table('panel',['Label line','Branch','Lesson'],[
    ['Calories','energy from protein and carbohydrate (4 kcal per gram), fat (9) and alcohol (7)',L('macronutrients-fats',1)+' · '+L('macronutrients-water-ethanol',5)],
@@ -50,7 +50,7 @@ P2=('<!--noart-->'+table('panel',['Label line','Branch','Lesson'],[
    ['% Daily Value','how much of a day’s reference amount one serving gives; 5% or less is low, 20% or more is high','—']],'The Nutrition Facts panel')
  +lblock('list','The ingredient list',[('Order by weight','Ingredients are listed from most to least by weight, so the first one or two make up most of the food.'),
    ('Additives and flavor lines','Additives appear by name or, in the EU, by E-number, and flavorings as “natural flavor” or “artificial flavor” (Additives; Flavorings).'),
-   ('Processing words','“Cultured”, “pasteurized”, “enriched”, “rolled” and “hydrogenated” each name a process from Module 5.'),
+   ('Processing words','“Cultured”, “pasteurized”, “enriched”, “rolled” and “hydrogenated” each name a process from the Processing lesson.'),
    ('What is not printed','Antinutrients and bioactives have no line. A single-ingredient food can carry several of them.')]))
 # ---- Figures 3-7: five labels ----
 P3=('<!--noart-->'+nflabel('label','Plain whole-milk yogurt','1 cup (245 g)','150',[
@@ -191,7 +191,7 @@ FR_QUIZ=[('How many calories does a gram of protein, carbohydrate, fat and alcoh
  ('Where do the holes in bread come from?','Yeast ferments sugar into carbon dioxide gas, which the gluten network traps; the ethanol bakes off (Figure 7; Water and Ethanol, Figure 5).'),
  ('Why toast bread to golden rather than dark brown?','Browning forms acrylamide, and darker toast has more of it (Figure 7; Processing, Figure 3).'),
  ('Which fat-soluble vitamin does olive oil supply, and what does it protect?','Vitamin E, alpha-tocopherol, which protects fats in the oil and in your cell membranes from oxidation (Figure 6; Fat-Soluble Vitamins, Figure 5).'),
- ('Which two branches of the tree never get their own label line?','Antinutrients and bioactives, such as phytate and polyphenols (Figures 1 and 2).'),
+ ('Which two Non-Nutrients lessons cover compounds that never get their own label line?','Antinutrients and bioactives, such as phytate and polyphenols (Figures 1 and 2).'),
  ('Does “0 g trans fat” guarantee there is none?','No. Less than 0.5 g per serving can be listed as 0 g (Figure 8).'),
  ('On the % Daily Value column, what counts as low and what counts as high?','5% or less is low and 20% or more is high (Figure 2).')]
 NFL_CSS=('<style>.nflw{padding:4px}.nfl{max-width:430px;margin:0 auto;background:#fff;color:#1f1f1f;border:2px solid #1f1f1f;padding:10px 12px;font-family:var(--sans);line-height:1.35}'

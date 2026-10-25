@@ -1,9 +1,9 @@
 {
  "schemaVersion": 1,
  "module": "bioactives",
- "title": "Module 6 · Bioactives",
+ "title": "Module 3 · Bioactives",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -25,7 +25,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "Bioactives",
-     "text": "Module six is about bioactives: compounds in food that aren't essential nutrients, so there's no deficiency disease, but that still act on the body. Most come from plants, which make them as pigments, defenses or signals.",
+     "text": "This lesson is about bioactives: compounds in food that aren't essential nutrients, so there's no deficiency disease, but that still act on the body. Most come from plants, which make them as pigments, defenses or signals.",
      "part": "head",
      "cue": "Title, then the root box"
     },

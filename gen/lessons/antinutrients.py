@@ -1,4 +1,4 @@
-# ---------------- Module 4 · Antinutrients ----------------
+# ---------------- Module 3 · Non-Nutrients · Antinutrients ----------------
 MN=mk_lmol('antinutrients')
 A=None
 _L=[(75,'Phytate','Fig. 3','#fig-3','Grains, beans','soak, sprout','#fig-8'),(225,'Oxalate','Fig. 4','#fig-4','Spinach, rhubarb','boil','#fig-8'),

@@ -3,7 +3,7 @@
  "module": "additives",
  "title": "Module 3 · Additives and E-Numbers",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -25,7 +25,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "Additives",
-     "text": "Module three is about additives: substances added to food on purpose to do a job. This tree sorts them by that job.",
+     "text": "Module three is Non-Nutrients: things in food, or done to food, that aren't nutrients. We start with additives: substances added to food on purpose to do a job. This tree sorts them by that job.",
      "part": "head",
      "cue": "Title, then the root box"
     },

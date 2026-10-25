@@ -1,9 +1,9 @@
 {
  "schemaVersion": 1,
  "module": "final-review",
- "title": "Module 8 · Final Review",
+ "title": "Module 4 · Final Review",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -25,7 +25,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "One Chart",
-     "text": "This is the final review, and it starts with the whole course on one chart. Everything in food falls into four branches, and every line on a label belongs to one of them.",
+     "text": "This is the final review, and it starts with the whole course on one chart. Everything in food falls into three branches, one for each module, and every line on a label belongs to one of them.",
      "part": "head",
      "cue": "Title, then the root box"
     },
@@ -48,16 +48,16 @@
     {
      "id": "1.4",
      "seg": 4,
-     "name": "Added or Changed",
-     "text": "The third branch is what people add or change: additives, processing and flavorings. And the fourth is plant compounds that simply come with the food: antinutrients and bioactives. Each box links to its lesson.",
+     "name": "Non-Nutrients",
+     "text": "The third branch is the non-nutrients, Module 3: things in food, or done to food, that aren't nutrients. Additives, processing and flavorings are what people add or change. Antinutrients and bioactives are plant compounds that simply come with the food. Each box links to its lesson.",
      "part": "tree",
-     "cue": "Third and fourth columns"
+     "cue": "Third column"
     },
     {
      "id": "1.5",
      "seg": 5,
      "name": "Where They Show Up",
-     "text": "Here's the key idea for the rest of this lesson. The first two branches are counted on the Nutrition Facts panel, the third shows up in the ingredient list, and the fourth is never printed at all. You find it by knowing the food.",
+     "text": "Here's the key idea for the rest of this lesson. The first two branches are counted on the Nutrition Facts panel. In the third, additives, processing and flavorings show up in the ingredient list, while antinutrients and bioactives are never printed at all. You find those by knowing the food.",
      "part": "label",
      "cue": "The three boxes"
     }

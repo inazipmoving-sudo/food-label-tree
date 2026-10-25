@@ -1,9 +1,9 @@
 {
  "schemaVersion": 1,
  "module": "antinutrients",
- "title": "Module 4 · Antinutrients",
+ "title": "Module 3 · Antinutrients",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -25,7 +25,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "Antinutrients",
-     "text": "Module four is about antinutrients: compounds that plants make naturally which reduce how well you absorb or use a nutrient. There are six main ones, and this tree sorts them by what they block.",
+     "text": "This lesson is about antinutrients: compounds that plants make naturally which reduce how well you absorb or use a nutrient. There are six main ones, and this tree sorts them by what they block.",
      "part": "head",
      "cue": "Title, then the root box"
     },

@@ -1,4 +1,4 @@
-# ---------------- Module 6 · Bioactives ----------------
+# ---------------- Module 3 · Non-Nutrients · Bioactives ----------------
 MB=mk_lmol('bioactives')
 A=None
 _X=[64,193,321,450,579,707,836]

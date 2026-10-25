@@ -1,4 +1,4 @@
-# ---------------- Module 7 · Flavorings ----------------
+# ---------------- Module 3 · Non-Nutrients · Flavorings ----------------
 MF=mk_lmol('flavorings')
 A=None
 _X=[64,193,321,450,579,707,836]

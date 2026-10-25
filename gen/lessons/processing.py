@@ -1,4 +1,4 @@
-# ---------------- Module 5 · Processing ----------------
+# ---------------- Module 3 · Non-Nutrients · Processing ----------------
 MP=mk_lmol('processing')
 A=None
 _L=[(50,'Solvents','Fig. 2','#fig-2','Hexane','oil extraction','#fig-2'),

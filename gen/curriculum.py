@@ -427,8 +427,8 @@ REG=[(sl,mn,mname,t,sl in ('macronutrients-fats','macronutrients-lipids') or os.
  ('macronutrients-protein','1','Macronutrients','Protein'),('macronutrients-carbohydrates','1','Macronutrients','Carbohydrates'),('macronutrients-water-ethanol','1','Macronutrients','Water and Ethanol'),
  ('micronutrients-fat-soluble-vitamins','2','Micronutrients','Fat-Soluble Vitamins'),('micronutrients-water-soluble-vitamins','2','Micronutrients','Water-Soluble Vitamins'),
  ('micronutrients-major-minerals','2','Micronutrients','Major Minerals'),('micronutrients-trace-minerals','2','Micronutrients','Trace Minerals'),
- ('additives','3','Additives','Additives and E-Numbers'),('antinutrients','4','Antinutrients','Antinutrients'),('processing','5','Processing','Processing'),
- ('bioactives','6','Bioactives','Bioactives'),('flavorings','7','Flavorings','Flavorings'),('final-review','8','Final Review','Final Review')]]
+ ('additives','3','Non-Nutrients','Additives and E-Numbers'),('antinutrients','3','Non-Nutrients','Antinutrients'),('processing','3','Non-Nutrients','Processing'),
+ ('bioactives','3','Non-Nutrients','Bioactives'),('flavorings','3','Non-Nutrients','Flavorings'),('final-review','4','Final Review','Final Review')]]
 def NEXT_OF(slug):
     live=[r for r in REG if r[4]]; i=[r[0] for r in live].index(slug)
     return (f'Module {live[i+1][1]} · {live[i+1][3]}',live[i+1][0]+'.html') if i+1<len(live) else None

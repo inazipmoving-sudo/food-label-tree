@@ -1,9 +1,9 @@
 {
  "schemaVersion": 1,
  "module": "processing",
- "title": "Module 5 · Processing",
+ "title": "Module 3 · Processing",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -25,7 +25,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "Processing",
-     "text": "Module five is about processing: everything that happens to food between the farm and your plate. Almost every food is processed somehow, and this tree sorts what we'll cover into three groups.",
+     "text": "This lesson is about processing: everything that happens to food between the farm and your plate. Almost every food is processed somehow, and this tree sorts what we'll cover into three groups.",
      "part": "head",
      "cue": "Title, then the root box"
     },
