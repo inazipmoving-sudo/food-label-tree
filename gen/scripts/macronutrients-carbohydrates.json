@@ -3,7 +3,7 @@
  "module": "macronutrients-carbohydrates",
  "title": "Module 1 · Carbohydrates",
  "lang": "en",
- "revision": 2,
+ "revision": 3,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "notes": "optional: extra grey notes, a list of {heading, text}. Not part of text; shown as a separate note under the section with its own heading."
  },
  "figures": [
   {
@@ -91,7 +92,13 @@
      "name": "Glucose as a Chain",
      "text": "Here's glucose drawn as a chain of six carbons. Carbon one, on the left, carries a C double bond O: that's the reactive end. Carbons two to five each carry an OH group, and carbon six on the right is a CH2OH. All those OH groups are why sugar dissolves so easily and tastes sweet.",
      "part": "chain",
-     "cue": "Markers 1, 2, 3 on the chain"
+     "cue": "Markers 1, 2, 3 on the chain",
+     "notes": [
+      {
+       "heading": "Why the OH groups taste sweet",
+       "text": "Why the OH groups taste sweet: your sweet receptor, a protein pair called T1R2 and T1R3, has a pocket lined with charged amino acids. Sugar's OH groups form hydrogen bonds with them, the pocket closes around the sugar, and the receptor signals sweet. The spacing of neighbouring OH groups is what makes the fit work."
+      }
+     ]
     },
     {
      "id": "2.4",

@@ -195,6 +195,7 @@ def load_script(module,figs_html):
             if sg.get('name'):
                 sg['slug']=slugify(sg['name']); assert not sg['slug'].startswith('seg-') and sg['slug']
                 assert sum(1 for x in f['segments'] if x.get('name') and slugify(x['name'])==sg['slug'])==1, f"segment {sg['id']}: duplicate name in figure {f['fig']}"
+            for nb in sg.get('notes',[]): assert set(nb)=={'heading','text'} and nb['heading'].strip() and nb['text'].strip(), f"segment {sg['id']}: notes need heading and text"
             for nb in sg.get('foodBody',[]): assert set(nb)=={'name','text'} and nb['name'].strip() and nb['text'].strip(), f"segment {sg['id']}: foodBody notes need name and text"
             if sg.get('part'): assert f'data-part="{sg["part"]}"' in fh, f"segment {sg['id']}: no data-part={sg['part']} in figure {f['fig']}"
     return d
@@ -205,6 +206,10 @@ def _food_body(sg):
     e=_html.escape
     return ('<aside class="lp-fb" data-foodbody="'+str(len(fb))+'"><span class="lp-fbk">In food and in the body</span>'
             +''.join(f'<p><b>{e(n["name"])}.</b> {e(n["text"])}</p>' for n in fb)+'</aside>')
+def _notes(sg):
+    """Extra grey notes with their own heading (same look as the foodBody note); never part of the spoken text."""
+    e=_html.escape
+    return ''.join(f'<aside class="lp-fb lp-note" data-note="{e(n["heading"])}"><span class="lp-fbk">{e(n["heading"])}</span><p>{e(n["text"])}</p></aside>' for n in sg.get('notes',[]))
 def _seg_li(sg):
     e=_html.escape
     tags=''
@@ -215,7 +220,7 @@ def _seg_li(sg):
     q=f'<h4 class="lp-q">{e(sg["q"])}</h4>' if sg.get('q') else ''
     if sg.get('name'): q=f'<h4 class="lp-name">{e(sg["name"])}</h4>'+q
     box=f' data-box="{sg["box"]}"' if sg.get('box') else ''
-    return f'<li class="lp-seg" id="seg-{sg["id"]}" data-id="{sg["id"]}"{box}{f' data-slug="{sg["slug"]}"' if sg.get('slug') else ''} tabindex="0"><span class="lp-sid">{sg["id"]}</span><div>{q}<p class="lp-tx">{e(sg["text"])}</p>{_food_body(sg)}{cue}</div></li>'
+    return f'<li class="lp-seg" id="seg-{sg["id"]}" data-id="{sg["id"]}"{box}{f' data-slug="{sg["slug"]}"' if sg.get('slug') else ''} tabindex="0"><span class="lp-sid">{sg["id"]}</span><div>{q}<p class="lp-tx">{e(sg["text"])}</p>{_food_body(sg)}{_notes(sg)}{cue}</div></li>'
 IC={'prevfig':'<path d="M3 2h2v12H3zM14 2v12L6 8z"/>','prevseg':'<path d="M10.5 2.5 5 8l5.5 5.5 1.2-1.2L7.4 8l4.3-4.3z"/>','nextseg':'<path d="M5.5 2.5 11 8l-5.5 5.5-1.2-1.2L8.6 8 4.3 3.7z"/>','nextfig':'<path d="M11 2h2v12h-2zM2 2v12l8-6z"/>'}
 def _ib(act,label,keys):
     return f'<button type="button" class="lp-btn" data-act="{act}" aria-label="{label}" title="{label} ({keys})"><svg viewBox="0 0 16 16" aria-hidden="true">{IC[act]}</svg></button>'
