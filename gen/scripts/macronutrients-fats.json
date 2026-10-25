@@ -3,7 +3,7 @@
   "module": "macronutrients-fats",
   "title": "Module 1 · Fats",
   "lang": "en",
-  "revision": 11,
+  "revision": 12,
   "idRevision": 4,
   "segmentFields": {
     "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -14,7 +14,8 @@
     "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
     "part": "optional: data-part of the figure element the segment is about",
     "name": "optional short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-1/three-categories)",
-    "subtitle": "figure-level: optional short muted subtitle under the title"
+    "subtitle": "figure-level: optional short muted subtitle under the title",
+    "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
   },
   "figures": [
     {
@@ -28,14 +29,30 @@
           "name": "Fats Overview",
           "text": "Fat is one of the three macronutrients, alongside protein and carbohydrates, and it's the most energy-dense: every gram of fat gives about 9 calories, while protein and carbs give about 4. In your body, fat is stored energy, it builds the membranes around every cell, it helps you absorb vitamins A, D, E and K, and some fats are raw material for signaling molecules.",
           "verbatim": true,
-          "cue": "Whole tree"
+          "cue": "Whole tree",
+          "foodBody": [
+            {
+              "name": "Vitamins A, D, E and K",
+              "text": "These are the fat-soluble vitamins: A is in liver, eggs and dairy, and as beta-carotene in orange and green vegetables; D is in oily fish and egg yolks and is also made in the skin in sunlight; E is in nuts, seeds and plant oils; K is in leafy greens. In the body, A is needed for vision and immunity, D for absorbing calcium for bones, E protects cell membranes from damage by oxidation, and K is needed for blood clotting."
+            }
+          ]
         },
         {
           "id": "1.2",
           "seg": 2,
           "name": "Triglycerides and Chains",
           "text": "Almost all the fat in food comes as triglycerides: a glycerol backbone holding three fatty acids, and each fatty acid is a chain of carbon atoms. What makes one fat different from another is those chains, specifically whether they have any double bonds between carbons.",
-          "verbatim": true
+          "verbatim": true,
+          "foodBody": [
+            {
+              "name": "Triglycerides",
+              "text": "Where they are found and what they do is in the \"In food and in the body\" note under 8.3."
+            },
+            {
+              "name": "Glycerol",
+              "text": "Glycerol is the backbone of every triglyceride, so it comes with all food fats and oils, and it is also added to some processed foods to keep them moist. In the body it is released when stored fat is broken down, and the liver can turn it into glucose."
+            }
+          ]
         },
         {
           "id": "1.3",
@@ -49,14 +66,26 @@
           "seg": 4,
           "name": "Omega Families",
           "text": "Within polyunsaturated fats there are two important families, omega-3 and omega-6, named for where the first double bond sits when you count from the tail end of the chain. Your body can't make the parent omega-3, ALA, or the parent omega-6, linoleic acid, so they're essential and have to come from food: omega-3 from flax, walnuts and oily fish, and omega-6 from seed oils, nuts and poultry.",
-          "verbatim": true
+          "verbatim": true,
+          "foodBody": [
+            {
+              "name": "ALA and linoleic acid",
+              "text": "Where they are found and what they do is in the \"In food and in the body\" note under 8.1."
+            }
+          ]
         },
         {
           "id": "1.5",
           "seg": 5,
           "name": "Trans Fats",
           "text": "Finally there are trans fats. A small amount occurs naturally in dairy, beef and lamb, but most trans fat in food was man-made by partially hydrogenating unsaturated oils, which straightens the chains so the oil turns solid. Trans fat raises LDL and lowers HDL cholesterol, which is why it's now banned in the US and limited in the EU.",
-          "verbatim": true
+          "verbatim": true,
+          "foodBody": [
+            {
+              "name": "Cholesterol",
+              "text": "Cholesterol is found only in animal foods, such as egg yolks, meat, organ meats, shellfish and full-fat dairy; plants have none, and the liver makes most of what the body needs. It is part of every cell membrane and the raw material for steroid hormones, vitamin D and bile acids. LDL and HDL are the protein-wrapped particles that carry it in the blood: LDL delivers it to tissues and can build up in artery walls, and HDL carries extra back to the liver."
+            }
+          ]
         },
         {
           "id": "1.6",
@@ -87,7 +116,17 @@
           "name": "Fat Versus Oil",
           "text": "The first image puts a fat above an oil. On top is tristearin, three straight saturated chains, which melts at about 72 °C, so it's solid. Below is triolein, three kinked chains with one cis double bond each, which melts at about 5 °C, so it's liquid. They're the same kind of molecule made of the same elements, carbon, hydrogen and oxygen; the oil just has six fewer hydrogens because of its three double bonds. So 'fat' or 'oil' only tells you whether it's solid or liquid at room temperature, about 20 to 25 °C. Real fats are mixes, too: coconut oil is mostly saturated and melts around 24 °C, so it's solid in a cool kitchen and liquid in a warm one. The next image shows why that shape matters, and trans fats, which we meet in Figure 4, are mostly man-made.",
           "part": "fatoil",
-          "cue": "Top: FAT, tristearin; below: OIL, triolein; element lines"
+          "cue": "Top: FAT, tristearin; below: OIL, triolein; element lines",
+          "foodBody": [
+            {
+              "name": "Tristearin",
+              "text": "Tristearin is a triglyceride with three stearic acids; it is found in small amounts in beef and mutton fat and cocoa butter, and in fully hydrogenated oils. In the body it is digested, stored and burned like any other triglyceride."
+            },
+            {
+              "name": "Triolein",
+              "text": "Triolein is a triglyceride with three oleic acids and the most common single triglyceride in olive oil. In the body it is digested, stored and burned like any other triglyceride."
+            }
+          ]
         },
         {
           "id": "2.3",
@@ -103,7 +142,13 @@
           "name": "Straight Chains Pack Tight",
           "text": "On the left, four straight saturated chains stack tightly, like pencils in a box. They grip each other, so it takes more heat to melt them, about 69 °C for stearic acid, and that's why butter, lard and cocoa butter are solid at room temperature.",
           "cue": "Left stack: saturated",
-          "part": "packing"
+          "part": "packing",
+          "foodBody": [
+            {
+              "name": "Stearic acid",
+              "text": "Where it is found and what it does is in the \"In food and in the body\" note under 8.1."
+            }
+          ]
         },
         {
           "id": "2.5",
@@ -119,7 +164,13 @@
           "name": "Kinks Leave Gaps",
           "text": "On the right, the cis kinks keep the oleic chains apart and leave gaps, so they slide past each other and melt at about 13 °C, and that's why olive and canola oil are liquid. In real fats these chains sit on triglycerides, like the two in the image above, and the same rule holds.",
           "cue": "Right stack: cis",
-          "part": "packing"
+          "part": "packing",
+          "foodBody": [
+            {
+              "name": "Oleic acid",
+              "text": "Where it is found and what it does is in the \"In food and in the body\" note under 8.1."
+            }
+          ]
         }
       ]
     },
@@ -198,7 +249,13 @@
           "seg": 3,
           "name": "Trans Stays Straight",
           "text": "At the bottom is elaidic acid, a trans fat. It has the same double bond in the same place, but the hydrogens sit on opposite sides, so the chain stays nearly straight and melts at about 45 °C. So trans fat behaves much like saturated fat, while plant oils and most natural fats are cis.",
-          "cue": "Bottom row"
+          "cue": "Bottom row",
+          "foodBody": [
+            {
+              "name": "Elaidic acid",
+              "text": "Where it came from and what it does is in the \"In food and in the body\" note under 7.3."
+            }
+          ]
         },
         {
           "id": "4.4",
@@ -207,7 +264,13 @@
           "text": "As the grey note says, most trans fat in food was man-made, by partial hydrogenation of vegetable oil, which we'll see in Figure 7. Small natural amounts come from ruminant animals, cows, sheep and goats, so dairy, beef and lamb contain a little, and the main one is vaccenic acid.",
           "box": "note",
           "part": "note",
-          "cue": "Grey note"
+          "cue": "Grey note",
+          "foodBody": [
+            {
+              "name": "Vaccenic acid",
+              "text": "Vaccenic acid is the main natural trans fat, made by bacteria in the stomachs of cows, sheep and goats, so it is in milk, butter, cheese, beef and lamb. The body can turn some of it into rumenic acid, a conjugated linoleic acid, and at normal intakes it is not linked to heart disease the way industrial trans fat is."
+            }
+          ]
         },
         {
           "id": "4.5",
@@ -216,7 +279,13 @@
           "text": "In the pink box, saturated fat is part of the structure of your cell membranes and a dense backup fuel stored in fat tissue. Your liver can build cholesterol from fat breakdown products, and cholesterol is the raw material for steroid hormones, so the hormones come from cholesterol, not from saturated fat directly. But eating a lot of saturated fat raises LDL, the 'bad' cholesterol.",
           "box": "body",
           "part": "body",
-          "cue": "Pink box: Saturated fat"
+          "cue": "Pink box: Saturated fat",
+          "foodBody": [
+            {
+              "name": "Steroid hormones",
+              "text": "Steroid hormones such as cortisol, aldosterone, estrogen and testosterone don't need to come from food; the adrenal glands, ovaries and testes make them from cholesterol. They control the stress response, salt and water balance, and sexual development and reproduction."
+            }
+          ]
         },
         {
           "id": "4.6",
@@ -264,7 +333,13 @@
           "text": "As for all polyunsaturated fats, the parent omega-3 and omega-6 are essential, so your body can't make them and they must come from food. Your body uses them to build signaling molecules called eicosanoids.",
           "box": "body",
           "part": "body",
-          "cue": "Pink box: All polyunsaturated fats"
+          "cue": "Pink box: All polyunsaturated fats",
+          "foodBody": [
+            {
+              "name": "Eicosanoids",
+              "text": "Eicosanoids are not eaten; the body makes them on the spot from 20-carbon fatty acids, mainly arachidonic acid and EPA. They include prostaglandins, thromboxanes and leukotrienes, short-lived signals that control inflammation, blood clotting, blood vessel tone and pain."
+            }
+          ]
         }
       ]
     },
@@ -294,7 +369,13 @@
           "text": "In the pink box, omega-3 signals tend to calm inflammation, and DHA is a major building block of your brain and the retina of your eye. Plant ALA converts only poorly into EPA and DHA, so fish or algae are the direct sources. EPA and DHA are the EPA and DHA diagrams that follow ALA in the omega-3 row.",
           "box": "body",
           "part": "body",
-          "cue": "Pink box: Omega-3"
+          "cue": "Pink box: Omega-3",
+          "foodBody": [
+            {
+              "name": "EPA and DHA",
+              "text": "EPA and DHA are in oily fish such as salmon, mackerel, sardines and herring, in fish and algae oils, and in small amounts in eggs and meat. EPA is a raw material for signals that calm inflammation, and DHA is built into the membranes of brain cells and the retina."
+            }
+          ]
         },
         {
           "id": "6.4",
@@ -303,7 +384,13 @@
           "text": "Omega-6, through arachidonic acid, makes the signals for immune responses, inflammation and blood clotting, and those are useful jobs. But too much omega-6 compared with omega-3 may tip the balance toward inflammation. Arachidonic acid is the arachidonic acid diagram at the end of the omega-6 row.",
           "box": "body",
           "part": "body",
-          "cue": "Pink box: Omega-6"
+          "cue": "Pink box: Omega-6",
+          "foodBody": [
+            {
+              "name": "Arachidonic acid",
+              "text": "Arachidonic acid is in meat, poultry, eggs and fish, and the body also makes it from linoleic acid. It sits in cell membranes, especially in the brain, and is the main raw material for eicosanoids, the signals for inflammation, immunity and blood clotting."
+            }
+          ]
         },
         {
           "id": "6.5",
@@ -327,7 +414,13 @@
           "name": "Desaturases Add Double Bonds",
           "text": "Your body makes double bonds with enzymes called desaturases. A desaturase takes two hydrogens off a chain and turns a single carbon-carbon bond into a double bond, and each one works at a fixed spot, counted from the acid end.",
           "part": "ends",
-          "cue": "Any ringed double bond"
+          "cue": "Any ringed double bond",
+          "foodBody": [
+            {
+              "name": "Desaturases",
+              "text": "Desaturases are enzymes the body makes, mostly in the liver; they don't come from food. Each one adds a double bond at its own fixed position on a fatty acid chain."
+            }
+          ]
         },
         {
           "id": "6.8",
@@ -335,7 +428,13 @@
           "name": "How Far Human Enzymes Reach",
           "text": "Human desaturases only reach the first nine carbons from the acid end; that is called delta 9. That is enough to put a double bond at carbon 9 and turn stearic acid into oleic acid. On an eighteen-carbon chain carbon 9 is also omega 9, so omega-9 is not essential: your body makes it.",
           "part": "reach",
-          "cue": "Top row: oleic acid, ring inside the blue zone"
+          "cue": "Top row: oleic acid, ring inside the blue zone",
+          "foodBody": [
+            {
+              "name": "Delta-9 desaturase",
+              "text": "Delta-9 desaturase, also called stearoyl-CoA desaturase, is made in the liver and fat tissue. It turns stearic acid into oleic acid and palmitic acid into palmitoleic acid, and it is most active when the diet is high in carbohydrate."
+            }
+          ]
         },
         {
           "id": "6.9",
@@ -343,7 +442,13 @@
           "name": "Out of Reach: Carbons 12 and 15",
           "text": "On the same eighteen-carbon chain, the omega-6 double bond sits at carbon 12 and the omega-3 double bond at carbon 15. Humans lack the delta 12 and delta 15 desaturases that put them there. Plants, algae and some microbes have them.",
           "part": "reach",
-          "cue": "Middle and bottom rows: dashed rings in the green zone"
+          "cue": "Middle and bottom rows: dashed rings in the green zone",
+          "foodBody": [
+            {
+              "name": "Delta-12 and delta-15 desaturases",
+              "text": "These enzymes are found in plants, algae and some microbes, not in humans or other animals. In plants they make linoleic acid and ALA, which is why seed oils, nuts and leafy greens carry these essential fats."
+            }
+          ]
         },
         {
           "id": "6.10",
@@ -390,7 +495,13 @@
           "seg": 1,
           "name": "Adding Hydrogen",
           "text": "This is how factories turn liquid oil into solid fat: starting from the oil at the top, they add hydrogen gas with a nickel catalyst and heat.",
-          "cue": "Top: the starting oil"
+          "cue": "Top: the starting oil",
+          "foodBody": [
+            {
+              "name": "Hydrogen gas",
+              "text": "Hydrogen gas is only a processing ingredient here: it is used up in the reaction, so none is left in the food as gas, and it is not a nutrient."
+            }
+          ]
         },
         {
           "id": "7.2",
@@ -403,7 +514,13 @@
           "id": "7.3",
           "seg": 3,
           "name": "Where Trans Fat Came From",
-          "text": "That's where most trans fat in food came from, the man-made trans fat from Figure 4. Industrial trans fat is now banned in the US and limited in the EU."
+          "text": "That's where most trans fat in food came from, the man-made trans fat from Figure 4. Industrial trans fat is now banned in the US and limited in the EU.",
+          "foodBody": [
+            {
+              "name": "Elaidic acid",
+              "text": "The main man-made trans fat is elaidic acid. It used to come from partially hydrogenated oils, which went into stick margarine, shortening, fried fast food, and packaged baked goods like crackers and pastries. Beef, lamb, butter and milk still have a little natural trans fat, mostly vaccenic acid. The body doesn't need trans fat for anything. Elaidic acid raises LDL, the 'bad' cholesterol, lowers HDL, the 'good' cholesterol, and raises heart disease risk."
+            }
+          ]
         }
       ]
     },
@@ -418,7 +535,25 @@
           "name": "Melting Points",
           "text": "At the top are the melting points of the pure fatty acids, and the dashed line is room temperature. Anything above it, like stearic and elaidic acid, is solid in your kitchen, and anything below, like oleic, linoleic and ALA, is liquid. The ALA and linoleic acid molecules themselves are in the ALA and linoleic acid diagrams in Figure 6.",
           "part": "melt",
-          "cue": "Top chart, dashed line"
+          "cue": "Top chart, dashed line",
+          "foodBody": [
+            {
+              "name": "Stearic acid",
+              "text": "Stearic acid is in beef fat, cocoa butter, dark chocolate, lard and butter. The body uses it for energy and in cell membranes and turns some of it into oleic acid, and it barely raises LDL."
+            },
+            {
+              "name": "Oleic acid",
+              "text": "Oleic acid is in olive oil, avocados, almonds, cashews and canola oil. It is the most common fatty acid in body fat and cell membranes and a steady fuel, and the body can make it."
+            },
+            {
+              "name": "Linoleic acid",
+              "text": "Linoleic acid is in soybean, corn and sunflower oils, walnuts and seeds. It keeps the skin's water barrier intact and is the starting point for arachidonic acid."
+            },
+            {
+              "name": "ALA (alpha-linolenic acid)",
+              "text": "ALA is in flax, chia, walnuts and canola oil. The body uses it as a fuel and converts a small amount to EPA and DHA."
+            }
+          ]
         },
         {
           "id": "8.2",
@@ -433,7 +568,13 @@
           "name": "Fat Inside You",
           "text": "At the bottom is the same idea inside you. Stored body fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the most common, so it stays soft at body temperature, about 37 °C. Fat just under the cooler skin is firmer, and fat deeper in is softer.",
           "part": "bodyfat",
-          "cue": "Bottom diagram"
+          "cue": "Bottom diagram",
+          "foodBody": [
+            {
+              "name": "Triglycerides",
+              "text": "Triglycerides are in every food fat and oil. In the body they are the main stored energy, and they also insulate, cushion organs and carry the fat-soluble vitamins."
+            }
+          ]
         },
         {
           "id": "8.4",
@@ -474,7 +615,41 @@
           "text": "When your body is low on energy, for example between meals, during exercise or overnight, hormones like adrenaline and glucagon rise and insulin falls, and that switches on the fat-releasing enzymes in your fat tissue: adipose triglyceride lipase starts the job and hormone-sensitive lipase continues it. Together they snip a triglyceride apart into its pieces: one glycerol plus three free fatty acids. The cut happens at the ester links, where each fatty acid's carboxyl end, the part with the oxygens, was attached to the glycerol backbone; water is added at each link, so the acid head is restored. The glycerol is small and water-soluble, so it travels to the liver, which can turn it into glucose. The fatty acids don't dissolve well in blood, so they ride on a carrier protein called albumin to muscle and the heart, where they're burned for fuel. In a deeper or longer fast, the liver takes up more of them and turns part of them into ketones, a backup fuel even the brain can use. Inside the cell, the chain is chopped two carbons at a time, a process called beta-oxidation. The oxygen end is just the handle; the real energy payoff is in the long run of carbon-hydrogen bonds, which is why fat gives 9 calories per gram.",
           "verbatim": true,
           "part": "breakdown",
-          "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart; after this, Figure 10 recaps the module"
+          "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart; after this, Figure 10 recaps the module",
+          "foodBody": [
+            {
+              "name": "Adrenaline",
+              "text": "Adrenaline, also called epinephrine, is not something you eat; the adrenal glands make it from the amino acid tyrosine. It is the fight-or-flight hormone: it raises heart rate and blood sugar and tells fat tissue to release fatty acids."
+            },
+            {
+              "name": "Glucagon",
+              "text": "Glucagon is a hormone made by the pancreas when blood sugar falls, not something you eat. It tells the liver to release glucose and fat tissue to release fat."
+            },
+            {
+              "name": "Insulin",
+              "text": "Insulin is a hormone made by the pancreas when blood sugar rises after a meal; it is a protein, so insulin in food would simply be digested. It moves glucose into cells and tells fat tissue to store fat rather than release it."
+            },
+            {
+              "name": "Adipose triglyceride lipase (ATGL)",
+              "text": "ATGL is an enzyme made inside fat cells, not something you eat. It makes the first cut, taking one fatty acid off a stored triglyceride."
+            },
+            {
+              "name": "Hormone-sensitive lipase (HSL)",
+              "text": "HSL is also made in fat cells and makes the second cut; it is named for being switched on by hormones such as adrenaline. A third enzyme, monoglyceride lipase, usually makes the last cut."
+            },
+            {
+              "name": "Glucose",
+              "text": "Glucose comes from starch and sugars in foods like bread, rice, potatoes and fruit, and the liver can also make it from glycerol and some amino acids. It is the main fuel for the brain and red blood cells."
+            },
+            {
+              "name": "Albumin",
+              "text": "Albumin is the most abundant protein in blood plasma and is made by the liver; it is not the same as egg white's main protein, ovalbumin. Besides fatty acids, it carries hormones, calcium and many drugs, and it helps hold water in the bloodstream."
+            },
+            {
+              "name": "Ketones",
+              "text": "Ketones, mainly acetoacetate and beta-hydroxybutyrate, are made by the liver from fatty acids during fasting, very low-carbohydrate diets or long exercise; food supplies almost none. The brain, heart and muscles can burn them when glucose is short."
+            }
+          ]
         }
       ]
     },
@@ -490,7 +665,13 @@
           "name": "The Whole Family",
           "text": "That's the whole module, so Figure 10 puts it all together. This is the family tree from Figure 1 again, but now every branch has its molecule next to it, all drawn at the same scale with every hydrogen showing. At the top is the triglyceride, the form almost all fat takes in food and in your body: a glycerol backbone holding three fatty acids by ester links. This one carries palmitic, oleic and linoleic acid, which is typical, because every food fat is a mix. Everything below it is about those fatty-acid chains, and what sorts them into families is the double bonds between carbons: how many there are, where they sit, and which way the hydrogens point around them. Linoleic acid on its own is also drawn in the omega-6 row of Figure 6.",
           "part": "family",
-          "cue": "Top node: the triglyceride, glycerol in the purple box, ester links in red; then follow the lines down"
+          "cue": "Top node: the triglyceride, glycerol in the purple box, ester links in red; then follow the lines down",
+          "foodBody": [
+            {
+              "name": "Palmitic acid",
+              "text": "Palmitic acid is the most common saturated fatty acid in food, in palm oil, meat, butter and cheese, and the body also makes it from extra carbohydrate. It is stored in body fat, built into cell membranes and lung surfactant, and in large amounts it raises LDL."
+            }
+          ]
         },
         {
           "id": "10.2",
@@ -531,7 +712,33 @@
           "text": "Lipids in the human body, by share of total body lipid. Reference adult: about 70 kilograms, with about 13.5 kilograms of lipid in all, most of it in about 15 kilograms of fat tissue. Triglycerides, about 95 percent, about 12.8 kilograms: stored fat, almost all of it in fat tissue, about 12 kilograms, with smaller stores in muscle, liver, bone marrow and blood. Phospholipids, about 4 percent, about half a kilogram: the double layer of every cell membrane, most of it in muscle, brain and liver. Cholesterol, about 1 percent, about 150 grams: mostly free cholesterol in cell membranes, about a quarter of it in the brain and nerves, plus some stored as cholesterol esters. Miscellaneous, each under 1 percent, under half a percent together, about 50 grams: glycolipids, mostly in the brain, free fatty acids, the fat-soluble vitamins A, D, E and K, coenzyme Q10, carotenoids, bile acids, steroid hormones, eicosanoids, and skin waxes and ceramides.",
           "verbatim": true,
           "part": "body-lipids",
-          "cue": "Lipids in the human body list, top to bottom: read each line as written"
+          "cue": "Lipids in the human body list, top to bottom: read each line as written",
+          "foodBody": [
+            {
+              "name": "Phospholipids",
+              "text": "Phospholipids are in egg yolks, soybeans (as soy lecithin), organ meats and in small amounts in all whole foods, and the body makes its own. They form the double layer of every cell membrane and coat the lungs and the fat particles carried in the blood."
+            },
+            {
+              "name": "Glycolipids",
+              "text": "Glycolipids, lipids with a sugar attached, are in small amounts in milk, meat and plant leaves, but the body makes its own. They sit on the outside of cell membranes, especially in the brain and nerves, where they help cells recognise each other and help form myelin."
+            },
+            {
+              "name": "Coenzyme Q10",
+              "text": "Coenzyme Q10 is in meat, fish, organ meats and nuts, and the body makes most of its own. It passes electrons along in the mitochondria to make energy and works as an antioxidant in membranes."
+            },
+            {
+              "name": "Carotenoids",
+              "text": "Carotenoids are the orange, red and yellow pigments in carrots, sweet potatoes, tomatoes, leafy greens and egg yolk. Some, like beta-carotene, are turned into vitamin A, and lutein and zeaxanthin collect in the retina of the eye."
+            },
+            {
+              "name": "Bile acids",
+              "text": "Bile acids are not eaten; the liver makes them from cholesterol. They are released into the gut to break fat into tiny droplets for digestion, and most are reabsorbed and reused."
+            },
+            {
+              "name": "Ceramides",
+              "text": "Ceramides are in small amounts in foods such as eggs, dairy, wheat and soy, but the body makes its own. In the skin they help seal in water, and inside cells they act as signals."
+            }
+          ]
         }
       ]
     }

@@ -195,8 +195,16 @@ def load_script(module,figs_html):
             if sg.get('name'):
                 sg['slug']=slugify(sg['name']); assert not sg['slug'].startswith('seg-') and sg['slug']
                 assert sum(1 for x in f['segments'] if x.get('name') and slugify(x['name'])==sg['slug'])==1, f"segment {sg['id']}: duplicate name in figure {f['fig']}"
+            for nb in sg.get('foodBody',[]): assert set(nb)=={'name','text'} and nb['name'].strip() and nb['text'].strip(), f"segment {sg['id']}: foodBody notes need name and text"
             if sg.get('part'): assert f'data-part="{sg["part"]}"' in fh, f"segment {sg['id']}: no data-part={sg['part']} in figure {f['fig']}"
     return d
+def _food_body(sg):
+    """'In food and in the body' notes: a separate grey note under the section, never part of the spoken text."""
+    fb=sg.get('foodBody')
+    if not fb: return ''
+    e=_html.escape
+    return ('<aside class="lp-fb" data-foodbody="'+str(len(fb))+'"><span class="lp-fbk">In food and in the body</span>'
+            +''.join(f'<p><b>{e(n["name"])}.</b> {e(n["text"])}</p>' for n in fb)+'</aside>')
 def _seg_li(sg):
     e=_html.escape
     tags=''
@@ -207,7 +215,7 @@ def _seg_li(sg):
     q=f'<h4 class="lp-q">{e(sg["q"])}</h4>' if sg.get('q') else ''
     if sg.get('name'): q=f'<h4 class="lp-name">{e(sg["name"])}</h4>'+q
     box=f' data-box="{sg["box"]}"' if sg.get('box') else ''
-    return f'<li class="lp-seg" id="seg-{sg["id"]}" data-id="{sg["id"]}"{box}{f' data-slug="{sg["slug"]}"' if sg.get('slug') else ''} tabindex="0"><span class="lp-sid">{sg["id"]}</span><div>{q}<p class="lp-tx">{e(sg["text"])}</p>{cue}</div></li>'
+    return f'<li class="lp-seg" id="seg-{sg["id"]}" data-id="{sg["id"]}"{box}{f' data-slug="{sg["slug"]}"' if sg.get('slug') else ''} tabindex="0"><span class="lp-sid">{sg["id"]}</span><div>{q}<p class="lp-tx">{e(sg["text"])}</p>{_food_body(sg)}{cue}</div></li>'
 IC={'prevfig':'<path d="M3 2h2v12H3zM14 2v12L6 8z"/>','prevseg':'<path d="M10.5 2.5 5 8l5.5 5.5 1.2-1.2L7.4 8l4.3-4.3z"/>','nextseg':'<path d="M5.5 2.5 11 8l-5.5 5.5-1.2-1.2L8.6 8 4.3 3.7z"/>','nextfig':'<path d="M11 2h2v12h-2zM2 2v12l8-6z"/>'}
 def _ib(act,label,keys):
     return f'<button type="button" class="lp-btn" data-act="{act}" aria-label="{label}" title="{label} ({keys})"><svg viewBox="0 0 16 16" aria-hidden="true">{IC[act]}</svg></button>'
@@ -454,11 +462,43 @@ BODY_LIPIDS=[('Triglycerides','about 95%','about 12.8 kg','stored fat, almost al
  ('Phospholipids','about 4%','about 0.5 kg','the double layer of every cell membrane, most of it in muscle, brain and liver',4),
  ('Cholesterol','about 1%','about 150 g','mostly free cholesterol in cell membranes, about a quarter of it in the brain and nerves, plus some stored as cholesterol esters',1),
  ('Miscellaneous (each under 1%)','under 0.5% together','about 50 g','glycolipids (mostly in the brain), free fatty acids, the fat-soluble vitamins A, D, E and K, coenzyme Q10, carotenoids, bile acids, steroid hormones, eicosanoids, and skin waxes and ceramides',0.4)]
+# Collapsible breakdowns (Samuel, Oct 25 2026): only for categories strictly above 1% of body lipid (Triglycerides, Phospholipids).
+# Inside a breakdown the same 1% rule applies: parts under 1% are grouped. Shares are of ALL body lipid; bar widths use the same scale.
+BODY_SUBS={
+ 'Triglycerides':('Breakdown by fatty acid',[
+  ('Oleic acid (18:1, monounsaturated)','about 44%','about 5.9 kg','about 46% of the fatty acids in stored fat, counting the small amount of vaccenic acid',43.7),
+  ('Palmitic acid (16:0, saturated)','about 21%','about 2.8 kg','about 22% of the fatty acids in stored fat',20.9),
+  ('Linoleic acid (18:2 omega-6, polyunsaturated)','about 13%','about 1.8 kg','about 14% of the fatty acids in stored fat; this share follows the diet most closely',13.3),
+  ('Palmitoleic acid (16:1, monounsaturated)','about 6%','about 0.8 kg','about 6% of the fatty acids in stored fat',5.7),
+  ('Stearic acid (18:0, saturated)','about 5%','about 0.6 kg','about 5% of the fatty acids in stored fat',4.75),
+  ('Myristic acid (14:0, saturated)','about 3%','about 0.4 kg','about 3% of the fatty acids in stored fat',2.85),
+  ('Other fatty acids (each under 1%)','about 4% together','about 0.5 kg','ALA (18:3 omega-3, about 1% of the fatty acids in stored fat), odd-chain fatty acids, and small amounts of longer omega-3 and omega-6 fatty acids such as EPA, DHA and arachidonic acid',3.8)],
+  'Each share includes that fatty acid\'s part of the glycerol backbone. Rounded, so the parts may not add up exactly.'),
+ 'Phospholipids':('Breakdown by type',[
+  ('Phosphatidylcholine (lecithin)','about 2%','about 0.25 kg','about half of all phospholipid; the main lipid of the outer layer of cell membranes',2),
+  ('Phosphatidylethanolamine','about 1%','about 0.12 kg','about a quarter of all phospholipid; richest in the brain, nerves and mitochondria',1),
+  ('Other phospholipids (each under 1%)','about 1% together','about 0.12 kg','sphingomyelin, phosphatidylinositol, phosphatidylserine, cardiolipin (in mitochondria), and small amounts of phosphatidic acid and phosphatidylglycerol',1)],
+  'Shares are of all body lipid, not of phospholipid alone.'),
+}
+# Cholesterol free/esterified split: built but OFF (Cholesterol is about 1%, not strictly above). To re-enable, add 'Cholesterol' to BODY_SUBS_ON.
+BODY_SUBS_OFF={
+ 'Cholesterol':('Breakdown by form',[
+  ('Free (unesterified) cholesterol','about 0.9%','about 135 g','about nine-tenths of body cholesterol, built into cell membranes and myelin',0.9),
+  ('Cholesterol esters','about 0.1%','about 15 g','about a tenth, mostly carried in blood lipoproteins and stored in the liver and adrenal glands',0.1)],
+  'Estimate; most body cholesterol is unesterified.')}
+BODY_SUBS_ON=('Triglycerides','Phospholipids')
+def _blsub(n):
+    src={**BODY_SUBS,**BODY_SUBS_OFF}
+    if n not in BODY_SUBS_ON or n not in src: return ''
+    lab,rows,note=src[n]
+    return (f'<details class="bls"><summary>{lab}</summary><ul class="blsub">'
+     +''.join(f'<li><div class="blh"><span class="bln">{a}</span><span class="blp">{pc}</span></div><div class="blbar" aria-hidden="true"><span style="width:{max(w,0.6)}%"></span></div><p><span class="blm">{m}</span> · {d}</p></li>' for a,pc,m,d,w in rows)
+     +f'</ul><p class="blsn">{note}</p></details>')
 F10_BODY=('<section class="rsec qa blip" data-part="body-lipids"><div class="part">Lipids in the human body</div>'
  '<h4>Lipids in the human body, by share of total body lipid</h4>'
  '<p class="blref">Reference adult: about 70 kg, with about 13.5 kg of lipid in all, most of it in about 15 kg of fat tissue.</p><ol class="blist">'
- +''.join(f'<li><div class="blh"><span class="bln">{n}</span><span class="blp">{pc}</span></div><div class="blbar" aria-hidden="true"><span style="width:{max(w,0.6)}%"></span></div><p><span class="blm">{m}</span> · {d}</p></li>' for n,pc,m,d,w in BODY_LIPIDS)
- +'</ol><p class="fnote">Approximate, for a reference adult; real bodies vary most in the triglyceride store. Sources: body lipid 13.5 kg and adipose tissue 15 kg at about 80% fat, ICRP Publication 23, <i>Report of the Task Group on Reference Man</i> (Snyder et al., 1975); total cholesterol about 2.2 g per kg body weight, 23% of it in the brain and nerves, Dietschy and Turley, <i>J Lipid Res</i> 45:1375 (2004); phospholipids estimated from typical tissue contents (e.g. liver about 25 mg/g, Kwiterovich et al., <i>J Lipid Res</i> 11:322 (1970)) times Reference Man organ masses; the miscellaneous group is an upper estimate.</p></section>')
+ +''.join(f'<li><div class="blh"><span class="bln">{n}</span><span class="blp">{pc}</span></div><div class="blbar" aria-hidden="true"><span style="width:{max(w,0.6)}%"></span></div><p><span class="blm">{m}</span> · {d}</p>{_blsub(n)}</li>' for n,pc,m,d,w in BODY_LIPIDS)
+ +'</ol><p class="fnote">Approximate, for a reference adult; real bodies vary most in the triglyceride store. Sources: body lipid 13.5 kg and adipose tissue 15 kg at about 80% fat, ICRP Publication 23, <i>Report of the Task Group on Reference Man</i> (Snyder et al., 1975); total cholesterol about 2.2 g per kg body weight, 23% of it in the brain and nerves, Dietschy and Turley, <i>J Lipid Res</i> 45:1375 (2004); phospholipids estimated from typical tissue contents (e.g. liver about 25 mg/g, Kwiterovich et al., <i>J Lipid Res</i> 11:322 (1970)) times Reference Man organ masses; the miscellaneous group is an upper estimate. Breakdowns: adipose fatty acid composition, Hodson, Skeaff and Fielding, <i>Prog Lipid Res</i> 47:348 (2008); phospholipid classes, Vance, <i>Traffic</i> 16:1 (2015).</p></section>')
 F10_NEXT='<p class="fwd" data-part="next">Fats are one kind of lipid; see the next lesson, <a href="macronutrients-lipids.html">Lipids Beyond Fats</a> →</p>'
 F10_HTML='<!--noart-->'+F10_TREE+F10_NEXT+F10_EXTRA+F10_BODY  # figure-by-figure recap list removed (rev 8); the tree and Worth knowing stay
 def figure_card(n,title,art_html,caption,pre='',after='',sub=None):

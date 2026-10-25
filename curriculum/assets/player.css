@@ -89,3 +89,4 @@
  .lp.ready .lp-keys{display:none}
 }
 @media(max-width:420px){.lp-of{display:none}}
+.lp-fb{margin:8px 0 2px;padding:8px 10px 9px;background:var(--chip,#EEEDEA);border-left:2px solid var(--line);border-radius:3px;font-size:.92rem;line-height:1.5;color:var(--text)}.lp-fb p{margin:4px 0 0}.lp-fb b{font-weight:600}.lp-fbk{display:block;font-size:.66rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
