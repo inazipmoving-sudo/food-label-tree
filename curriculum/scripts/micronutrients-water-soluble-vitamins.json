@@ -1,0 +1,449 @@
+{
+ "schemaVersion": 1,
+ "module": "micronutrients-water-soluble-vitamins",
+ "title": "Module 2 · Water-Soluble Vitamins",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "segmentFields": {
+  "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
+  "cue": "optional: what to point at; not spoken",
+  "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
+  "subtitle": "figure-level: short muted subtitle under the title"
+ },
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "The Water-Soluble Vitamin Family Tree",
+   "subtitle": "Eight B vitamins and vitamin C.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "Nine Vitamins",
+     "text": "The second micronutrient lesson covers the water-soluble vitamins. There are nine: eight B vitamins and vitamin C.",
+     "part": "head",
+     "cue": "Title, then the root box",
+     "slug": "nine-vitamins"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "The B Vitamins",
+     "text": "The B vitamins are grouped by what they help with. B1, B2 and B3, and B5 and B7, help release energy from food. B6 and folate help build amino acids, DNA and new cells. B12 keeps blood and nerves healthy. Each box links to its figure.",
+     "part": "tree",
+     "cue": "The B-vitamin branch, left to right",
+     "slug": "the-b-vitamins"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Vitamin C",
+     "text": "Vitamin C, on the right, is needed to make collagen and works as an antioxidant.",
+     "part": "tree",
+     "cue": "The right-hand branch",
+     "slug": "vitamin-c"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Too Little",
+     "text": "The bottom row shows what happens with too little: beriberi and pellagra, anemia and nerve damage, neural tube defects in pregnancy, and scurvy. Pantothenic acid and biotin are in almost all foods, so shortages are rare.",
+     "part": "tree",
+     "cue": "The bottom row",
+     "slug": "too-little"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "What They Share",
+     "text": "All nine are covered in oxygen and nitrogen atoms, so they dissolve in water. Apart from B12, the body keeps only small stores and passes extra in urine, so a steady supply from food matters. And they're easily lost in cooking.",
+     "part": "label",
+     "cue": "The three boxes",
+     "slug": "what-they-share"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "Coenzymes: What B Vitamins Do",
+   "subtitle": "Small helpers that let enzymes work.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Enzymes Need Helpers",
+     "text": "Enzymes are proteins that speed up the reactions in your cells. Many can't work alone: they need a small helper molecule, a coenzyme, to carry electrons, carbon atoms or other groups.",
+     "part": "coenzyme",
+     "cue": "The first two steps",
+     "slug": "enzymes-need-helpers"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Vitamins Become Coenzymes",
+     "text": "Each B vitamin is changed slightly in the body, often by adding phosphate, to make one of these helpers. Because coenzymes are reused, you need only milligrams or micrograms a day.",
+     "part": "coenzyme",
+     "cue": "The last two steps",
+     "slug": "vitamins-become-coenzymes"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "Each Vitamin, Its Coenzyme",
+     "text": "This table pairs each B vitamin with its coenzyme. Thiamin becomes TPP, riboflavin becomes FAD, niacin becomes NAD, pantothenic acid becomes coenzyme A, B6 becomes PLP, folate becomes THF, and B12 becomes two cobalamin coenzymes.",
+     "part": "table",
+     "cue": "The table, row by row",
+     "slug": "each-vitamin-its-coenzyme"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "No Energy of Their Own",
+     "text": "A common mix-up: B vitamins don't give you energy. They have no usable calories. They're the tools that release the energy in carbohydrate, fat and protein. A shortage makes you tired, but extra won't make you more energetic.",
+     "part": "energy",
+     "cue": "The box",
+     "slug": "no-energy-of-their-own"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "B1, B2 and B3",
+   "subtitle": "Thiamin, riboflavin and niacin: energy release.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "Thiamin",
+     "text": "Thiamin, vitamin B1, is two rings joined by a short bridge. The left ring has two nitrogens; the right ring has a sulfur, in yellow. Two phosphates added at the OH make its coenzyme, TPP, which helps break down glucose.",
+     "part": "b1",
+     "cue": "Markers 1 to 3",
+     "slug": "thiamin"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Thiamin Facts",
+     "text": "Too little causes beriberi, with nerve damage, weakness and heart failure, and in heavy drinkers a serious brain disorder. Adults need about 1.1 to 1.2 milligrams a day, from pork, trout, beans, lentils, whole grains and sunflower seeds.",
+     "part": "b1",
+     "box": "body",
+     "slug": "thiamin-facts"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "Riboflavin",
+     "text": "Riboflavin, B2, has three flat rings that can pick up and release two hydrogens. That's how its coenzyme, FAD, carries electrons. The rings also make it bright yellow. The chain hanging off is a sugar alcohol.",
+     "part": "b2",
+     "cue": "Markers 1 and 2",
+     "slug": "riboflavin"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Riboflavin Facts",
+     "text": "Too little causes cracks at the corners of the mouth and a sore tongue. It's in milk, yogurt, eggs, almonds and mushrooms. Light destroys it, which is why milk comes in opaque containers.",
+     "part": "b2",
+     "box": "body",
+     "slug": "riboflavin-facts"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "Niacin",
+     "text": "Niacin, B3, comes in two simple forms: nicotinic acid, ending in COOH, and nicotinamide, ending in CONH2. Both make NAD, used in hundreds of reactions. Your body can also make niacin from the amino acid tryptophan. Too little causes pellagra: a rash in sunlight, diarrhea and confusion. Large supplement doses of nicotinic acid cause flushing. Good sources are tuna, chicken, peanuts, mushrooms and brown rice.",
+     "part": "b3",
+     "cue": "Markers 1 and 2",
+     "slug": "niacin"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "B5 and B7",
+   "subtitle": "Pantothenic acid and biotin.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "Pantothenic Acid",
+     "text": "Pantothenic acid, B5, is two small pieces joined by an amide link, like a peptide bond. The body builds it into coenzyme A, which carries two-carbon pieces in and out of the energy cycle and is needed to make and break down fat.",
+     "part": "b5",
+     "cue": "Markers 1 and 2",
+     "slug": "pantothenic-acid"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "From Everywhere",
+     "text": "Its name means from everywhere: almost every food has some, so a shortage is very rare. Liver, chicken, mushrooms, avocado and eggs are rich sources.",
+     "part": "b5",
+     "box": "body",
+     "slug": "from-everywhere"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "Biotin",
+     "text": "Biotin, B7, is two fused rings, one with sulfur and one with two NH groups. The NH ring is where carbon dioxide is attached and handed on; the acid tail links biotin to its enzymes.",
+     "part": "b7",
+     "cue": "Markers 1 to 3",
+     "slug": "biotin"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Biotin Facts",
+     "text": "Biotin helps make fat, glucose and some amino acids. A shortage is rare. Raw egg white contains avidin, which binds biotin, but cooking destroys it. Food sources include egg yolks, liver, salmon, seeds and sweet potato.",
+     "part": "b7",
+     "box": "body",
+     "slug": "biotin-facts"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "A Lab-Test Warning",
+     "text": "No harm is known from high biotin intake, but high-dose supplements can distort some blood tests, including thyroid and heart tests, so tell your doctor if you take them.",
+     "part": "b7",
+     "box": "note",
+     "slug": "a-lab-test-warning"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "B6 and Folate",
+   "subtitle": "Amino acids, DNA, and folate versus folic acid.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Vitamin B6",
+     "text": "Pyridoxine, one form of B6, is a ring with one nitrogen. In the body, one CH2OH becomes an aldehyde and a phosphate is added, making PLP, needed by over a hundred enzymes, mostly for amino acids, and for making neurotransmitters.",
+     "part": "b6",
+     "cue": "Markers 1 and 2",
+     "slug": "vitamin-b6"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "B6 Facts",
+     "text": "Too little causes anemia, cracked lips and confusion. Too much, from supplements above a hundred milligrams a day for a long time, can damage nerves. Chickpeas, fish, chicken, potatoes and bananas are good sources.",
+     "part": "b6",
+     "box": "body",
+     "slug": "b6-facts"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Folic Acid",
+     "text": "Folate has three parts: a two-ring pterin, a benzene ring, and the amino acid glutamate. This is folic acid, the synthetic form added to flour and supplements. It's very stable and well absorbed.",
+     "part": "folate",
+     "cue": "Folic acid, markers 1 to 3",
+     "slug": "folic-acid"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Food Folate",
+     "text": "The main form in food and blood looks almost the same, but the pterin carries four extra hydrogens and a methyl group. That's the active form, ready to hand on a one-carbon unit. Your body must add those hydrogens to folic acid before it can use it.",
+     "part": "folate",
+     "cue": "The second molecule, markers 4 and 5",
+     "slug": "food-folate"
+    },
+    {
+     "id": "5.5",
+     "seg": 5,
+     "name": "Folate Facts",
+     "text": "Folate is needed to build DNA, so every dividing cell depends on it. Too little causes anemia, and before and early in pregnancy raises the risk of neural tube defects, which is why folic acid is recommended for anyone who could become pregnant. Too much folic acid can hide the anemia of B12 deficiency. Lentils, chickpeas, leafy greens and asparagus are rich in folate.",
+     "part": "folate",
+     "box": "body",
+     "slug": "folate-facts"
+    }
+   ]
+  },
+  {
+   "fig": 6,
+   "anchor": "fig-6",
+   "title": "Vitamin B12",
+   "subtitle": "The cobalt vitamin, and who runs short.",
+   "segments": [
+    {
+     "id": "6.1",
+     "seg": 1,
+     "name": "The Cobalt Vitamin",
+     "text": "B12 is the largest vitamin, about a hundred and eighty atoms, so it's shown as a cartoon. At its center is a cobalt atom, held by a ring of four linked five-membered rings, with a long tail looping underneath. The group on top changes: methyl or adenosyl in the body, cyano in most supplements.",
+     "part": "b12",
+     "cue": "The cartoon",
+     "slug": "the-cobalt-vitamin"
+    },
+    {
+     "id": "6.2",
+     "seg": 2,
+     "name": "Absorption",
+     "text": "Absorbing B12 takes several steps. Stomach acid frees it from protein; intrinsic factor, made by the stomach lining, binds it; and the pair is taken up at the end of the small intestine. The liver stores enough for several years.",
+     "part": "absorb",
+     "cue": "The steps, top to bottom",
+     "slug": "absorption"
+    },
+    {
+     "id": "6.3",
+     "seg": 3,
+     "name": "Who Runs Short",
+     "text": "Only bacteria make B12, and it reaches us through animal foods, so vegans need fortified foods or a supplement. Many older adults absorb less from food. And people without intrinsic factor need treatment under a doctor's care.",
+     "part": "who",
+     "cue": "The three boxes",
+     "slug": "who-runs-short"
+    },
+    {
+     "id": "6.4",
+     "seg": 4,
+     "name": "B12 Facts",
+     "text": "B12 works with folate to make DNA and red blood cells, and keeps nerves healthy. Too little causes anemia and nerve damage that can become permanent. No harm is known from too much. Adults need 2.4 micrograms a day, from clams, liver, fish, meat, eggs and dairy.",
+     "part": "b12facts",
+     "cue": "The facts",
+     "slug": "b12-facts"
+    },
+    {
+     "id": "6.5",
+     "seg": 5,
+     "name": "Why It Matters",
+     "text": "Because folic acid can correct the anemia but not the nerve damage, a B12 shortage can go unnoticed when folic acid intake is high.",
+     "part": "b12facts",
+     "box": "note",
+     "slug": "why-it-matters"
+    }
+   ]
+  },
+  {
+   "fig": 7,
+   "anchor": "fig-7",
+   "title": "Vitamin C",
+   "subtitle": "Ascorbic acid: collagen, iron and antioxidant.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "Ascorbic Acid",
+     "text": "Vitamin C is ascorbic acid: a five-membered ring with a short side chain and four OH groups. The two OH groups on the double bond give up their hydrogens very easily. That makes it an antioxidant.",
+     "part": "c",
+     "cue": "Ascorbic acid, markers 1 and 3",
+     "slug": "ascorbic-acid"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "Oxidized and Back",
+     "text": "Once it has given them up, both carbons carry a C double bond O: dehydroascorbic acid. Your cells can turn it back into ascorbic acid.",
+     "part": "c",
+     "cue": "Marker 2",
+     "slug": "oxidized-and-back"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "What It Does",
+     "text": "Vitamin C keeps the enzymes that make collagen working, helps you absorb iron from plant foods in the same meal, and mops up reactive molecules.",
+     "part": "jobs",
+     "cue": "The three boxes",
+     "slug": "what-it-does"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "Vitamin C Facts",
+     "text": "Humans can't make vitamin C, so it must come from food. Adults need 75 to 90 milligrams a day, more for smokers. Too little for about a month causes scurvy: bleeding gums, bruising and slow healing. Very high supplement doses can upset the stomach. Peppers, kiwi, citrus, strawberries and broccoli are rich sources.",
+     "part": "c",
+     "box": "body",
+     "slug": "vitamin-c-facts"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
+   "title": "Cooking and Labels",
+   "subtitle": "What destroys them, and the forms on labels.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "Cooking Losses",
+     "text": "Vitamin C, folate and thiamin are damaged by heat and leach into cooking water. Steaming or microwaving briefly keeps more, and eating some vegetables raw helps. Riboflavin is damaged by light.",
+     "part": "losses",
+     "cue": "The table",
+     "slug": "cooking-losses"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Forms on the Label",
+     "text": "On ingredient lists you'll see thiamin mononitrate, niacinamide, calcium pantothenate, pyridoxine hydrochloride, folic acid and cyanocobalamin. Ascorbic acid is also added to foods to stop browning.",
+     "part": "labelforms",
+     "cue": "The table, row by row",
+     "slug": "forms-on-the-label"
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
+     "name": "Enriched Flour",
+     "text": "Refined flour loses B vitamins and iron in milling. In the US, enriched flour has thiamin, riboflavin, niacin and iron added back, and since 1998 folic acid as well.",
+     "part": "enriched",
+     "cue": "First box",
+     "slug": "enriched-flour"
+    },
+    {
+     "id": "8.4",
+     "seg": 4,
+     "name": "Daily Values",
+     "text": "Folate is listed in micrograms of dietary folate equivalents, which allows for folic acid being better absorbed. The Daily Values are listed in the last box.",
+     "part": "enriched",
+     "cue": "The last two boxes",
+     "slug": "daily-values"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
+   "title": "Putting It All Together",
+   "subtitle": "The whole lesson in one table, plus a few extras.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "One Table",
+     "text": "Here are all nine water-soluble vitamins in one table: their main job, what happens with too little, and whole-food sources.",
+     "part": "table",
+     "cue": "The table, row by row",
+     "slug": "one-table"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Worth Knowing",
+     "text": "A few extras. Bright yellow urine after a B-complex pill is just extra riboflavin. Regular vitamin C doesn't prevent colds for most people. Cooking corn with lime frees its niacin, which protected people from pellagra. And choline, found in eggs and liver, is an essential nutrient often grouped with the B vitamins. Try the quiz below.",
+     "part": "worth",
+     "cue": "Worth knowing, then down to the quiz",
+     "slug": "worth-knowing"
+    }
+   ]
+  }
+ ],
+ "page": "curriculum/micronutrients-water-soluble-vitamins.html",
+ "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/micronutrients-water-soluble-vitamins.html",
+ "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/micronutrients-water-soluble-vitamins.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 9,
+ "segmentCount": 39
+}
