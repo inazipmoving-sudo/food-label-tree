@@ -1,6 +1,6 @@
 # Site-wide settings and the course catalog shown on the home page (index.html at the site root).
 # Rename the university/site here; every page title and the home page heading use this one constant.
-UNIVERSITY_NAME = "LeClair Institute"
+UNIVERSITY_NAME = "LeClaire Institute"
 BRAND_EMPHASIS = "ai"  # letters of the name shown in the accent colour (same case as in the name)
 # Tagline under the site title on the home page; "" hides it (none for now).
 TAGLINE = ""
