@@ -1,0 +1,357 @@
+{
+ "lactose": {
+  "units": 7.843,
+  "hunits": 5.487,
+  "formula": "C12H22O11",
+  "anchors": {
+   "link": [
+    48.05,
+    55.25
+   ],
+   "c1": [
+    37.45,
+    54.13
+   ],
+   "c4": [
+    60.61,
+    52.09
+   ]
+  },
+  "src": "macronutrients-carbohydrates"
+ },
+ "glucose_a": {
+  "units": 4.698,
+  "hunits": 4.779,
+  "formula": "C6H12O6",
+  "anchors": {
+   "c1": [
+    75.38,
+    62.15
+   ],
+   "oh1": [
+    75.26,
+    75.01
+   ],
+   "o5": [
+    73.2,
+    43.3
+   ],
+   "c4": [
+    37.96,
+    44.98
+   ],
+   "oh4": [
+    20.93,
+    44.19
+   ]
+  },
+  "src": "macronutrients-carbohydrates"
+ },
+ "glucose_b": {
+  "units": 4.873,
+  "hunits": 4.779,
+  "formula": "C6H12O6",
+  "anchors": {
+   "c1": [
+    72.68,
+    62.15
+   ],
+   "oh1": [
+    89.74,
+    63.44
+   ],
+   "o5": [
+    70.58,
+    43.3
+   ],
+   "c4": [
+    36.6,
+    44.98
+   ],
+   "oh4": [
+    20.18,
+    44.19
+   ]
+  },
+  "src": "macronutrients-carbohydrates"
+ },
+ "cellobiose": {
+  "units": 8.447,
+  "hunits": 5.487,
+  "formula": "C12H22O11",
+  "anchors": {
+   "link": [
+    51.77,
+    55.25
+   ],
+   "c1": [
+    41.93,
+    54.13
+   ],
+   "c4": [
+    63.43,
+    52.09
+   ]
+  },
+  "src": "macronutrients-carbohydrates"
+ },
+ "lactic": {
+  "units": 4.32,
+  "hunits": 3.279,
+  "formula": "C3H6O3",
+  "anchors": {
+   "c": [
+    61.57,
+    41.66
+   ],
+   "oh": [
+    26.85,
+    15.25
+   ]
+  },
+  "src": "processing"
+ },
+ "acrylamide": {
+  "units": 4.644,
+  "hunits": 3.285,
+  "formula": "C3H5NO",
+  "anchors": {
+   "vinyl": [
+    31.69,
+    39.94
+   ],
+   "amide": [
+    58.14,
+    54.88
+   ]
+  },
+  "src": "processing"
+ },
+ "ca": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Ca2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  },
+  "src": "micronutrients-major-minerals"
+ },
+ "na": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Na+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  },
+  "src": "micronutrients-major-minerals"
+ },
+ "cl": {
+  "units": 1.366,
+  "hunits": 1.366,
+  "formula": "Cl-",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  },
+  "src": "micronutrients-major-minerals"
+ },
+ "leucine": {
+  "units": 5.057,
+  "hunits": 5.658,
+  "formula": "C6H13NO2",
+  "anchors": {
+   "amine": [
+    38.74,
+    73.49
+   ],
+   "alpha": [
+    55.86,
+    64.65
+   ],
+   "carboxyl": [
+    78.7,
+    76.44
+   ],
+   "r": [
+    38.74,
+    38.14
+   ]
+  },
+  "src": "macronutrients-protein"
+ },
+ "lysine": {
+  "units": 5.114,
+  "hunits": 6.83,
+  "formula": "C6H14N2O2",
+  "anchors": {
+   "amine": [
+    39.42,
+    78.04
+   ],
+   "alpha": [
+    56.35,
+    70.72
+   ],
+   "carboxyl": [
+    78.93,
+    80.48
+   ],
+   "r": [
+    36.03,
+    35.58
+   ]
+  },
+  "src": "macronutrients-protein"
+ },
+ "phytic": {
+  "units": 8.32,
+  "hunits": 9.071,
+  "formula": "C6H18O24P6",
+  "anchors": {
+   "ring": [
+    59.01,
+    54.77
+   ],
+   "p": [
+    80.05,
+    59.55
+   ],
+   "p2": [
+    56.01,
+    78.64
+   ]
+  },
+  "src": "antinutrients"
+ },
+ "fe2": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Fe2+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  },
+  "src": "micronutrients-trace-minerals"
+ },
+ "triglyceride": {
+  "units": 17.139,
+  "hunits": 16.736,
+  "formula": "C55H100O6 (palmitic + oleic + linoleic)",
+  "anchors": {},
+  "src": "lipids"
+ },
+ "hydroxytyrosol": {
+  "units": 7.042,
+  "hunits": 4.929,
+  "formula": "C8H10O3",
+  "anchors": {
+   "cat": [
+    80.61,
+    36.34
+   ],
+   "ch2oh": [
+    10.47,
+    52.11
+   ]
+  },
+  "src": "bioactives"
+ },
+ "tocopherol": {
+  "units": 15.287,
+  "hunits": 7.275,
+  "formula": "C29H50O2",
+  "anchors": {
+   "oh": [
+    17.0,
+    86.9
+   ],
+   "ring": [
+    20.02,
+    60.15
+   ],
+   "me5": [
+    29.53,
+    79.02
+   ],
+   "tail": [
+    58.95,
+    49.85
+   ]
+  },
+  "src": "micronutrients-fat-soluble-vitamins"
+ },
+ "ethanol": {
+  "units": 3.897,
+  "hunits": 2.662,
+  "formula": "C2H6O",
+  "anchors": {
+   "c1": [
+    28.05,
+    56.56
+   ],
+   "c2": [
+    50.28,
+    37.78
+   ],
+   "oh": [
+    72.5,
+    56.56
+   ]
+  },
+  "src": "macronutrients-water-ethanol"
+ },
+ "co2": {
+  "units": 3.0,
+  "hunits": 1.0,
+  "formula": "CO2",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ],
+   "o1": [
+    16.67,
+    50.0
+   ],
+   "o2": [
+    83.33,
+    50.0
+   ]
+  },
+  "src": "macronutrients-water-ethanol"
+ },
+ "folicacid": {
+  "units": 16.156,
+  "hunits": 7.703,
+  "formula": "C19H19N7O6",
+  "anchors": {
+   "pter": [
+    19.49,
+    35.25
+   ],
+   "paba": [
+    50.3,
+    43.54
+   ],
+   "glu": [
+    81.97,
+    61.08
+   ],
+   "n5": [
+    33.57,
+    38.66
+   ]
+  },
+  "src": "micronutrients-water-soluble-vitamins"
+ }
+}

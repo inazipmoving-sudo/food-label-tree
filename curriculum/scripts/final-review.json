@@ -1,0 +1,423 @@
+{
+ "schemaVersion": 1,
+ "module": "final-review",
+ "title": "Module 8 · Final Review",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "segmentFields": {
+  "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
+  "cue": "optional: what to point at; not spoken",
+  "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
+  "subtitle": "figure-level: short muted subtitle under the title"
+ },
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "The Whole Curriculum Family Tree",
+   "subtitle": "Every lesson on one chart, grouped the way a label is read.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "One Chart",
+     "text": "This is the final review, and it starts with the whole course on one chart. Everything in food falls into four branches, and every line on a label belongs to one of them.",
+     "part": "head",
+     "cue": "Title, then the root box",
+     "slug": "one-chart"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Macronutrients",
+     "text": "On the left are the macronutrients, the things you eat in grams: fats, the other lipids like cholesterol, protein, carbohydrates, and water and ethanol. They supply the calories.",
+     "part": "tree",
+     "cue": "First column",
+     "slug": "macronutrients"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Micronutrients",
+     "text": "Next are the micronutrients, eaten in milligrams and micrograms: the fat-soluble vitamins A, D, E and K, the B vitamins and C, and the major and trace minerals.",
+     "part": "tree",
+     "cue": "Second column",
+     "slug": "micronutrients"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Added or Changed",
+     "text": "The third branch is what people add or change: additives, processing and flavorings. And the fourth is plant compounds that simply come with the food: antinutrients and bioactives. Each box links to its lesson.",
+     "part": "tree",
+     "cue": "Third and fourth columns",
+     "slug": "added-or-changed"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Where They Show Up",
+     "text": "Here's the key idea for the rest of this lesson. The first two branches are counted on the Nutrition Facts panel, the third shows up in the ingredient list, and the fourth is never printed at all. You find it by knowing the food.",
+     "part": "label",
+     "cue": "The three boxes",
+     "slug": "where-they-show-up"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "Reading a Label Line by Line",
+   "subtitle": "Which branch each line of the Nutrition Facts panel and ingredient list belongs to.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Calories",
+     "text": "Let's walk down a Nutrition Facts panel. Calories come from the macronutrients: about four per gram of protein and carbohydrate, nine per gram of fat, and seven per gram of alcohol.",
+     "part": "panel",
+     "cue": "Row 1",
+     "slug": "calories"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Fat, Cholesterol, Sodium",
+     "text": "Total fat, saturated fat and trans fat are the fats lesson. Cholesterol is a sterol, not a fat, so it gets its own line in milligrams. Sodium is a major mineral, and the salt is about two and a half times that number.",
+     "part": "panel",
+     "cue": "Rows 2 to 4",
+     "slug": "fat-cholesterol-sodium"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "Carbs, Protein, Micronutrients",
+     "text": "Total carbohydrate, fiber and sugars are the carbohydrate lesson, protein is protein, and the four required micronutrients are vitamin D, calcium, iron and potassium. On the Daily Value column, five percent or less is low and twenty percent or more is high.",
+     "part": "panel",
+     "cue": "Rows 5 to 8",
+     "slug": "carbs-protein-micronutrients"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "The Ingredient List",
+     "text": "Then the ingredient list. It runs from most to least by weight, and it's where additives, flavor lines and processing words like cultured, enriched or rolled appear.",
+     "part": "list",
+     "cue": "First three boxes",
+     "slug": "the-ingredient-list"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "What Is Not Printed",
+     "text": "Antinutrients and bioactives never get a line. Even a one-ingredient food can carry several of them, as we'll see in the next five foods.",
+     "part": "list",
+     "cue": "Last box",
+     "slug": "what-is-not-printed"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "Plain Yogurt",
+   "subtitle": "Milk sugar, fermentation and calcium.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "The Label",
+     "text": "Our first food is plain whole-milk yogurt. These are typical values for one cup, for illustration, not any brand's label. The ingredient list is just cultured pasteurized whole milk.",
+     "part": "label",
+     "cue": "The whole label",
+     "slug": "the-label"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Sugars With None Added",
+     "text": "It shows eleven grams of total sugars but zero added. All of that is lactose, the sugar already in milk, which is why the added sugars line matters.",
+     "part": "map",
+     "cue": "Row 1",
+     "slug": "sugars-with-none-added"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "Cultured and Pasteurized",
+     "text": "Cultured means bacteria turned some lactose into lactic acid. That acid sets the milk protein into a soft gel and gives the tang, which is sour taste from the flavorings lesson. Pasteurized means the milk was heated first to kill harmful microbes.",
+     "part": "map",
+     "cue": "Rows 2 and 3",
+     "slug": "cultured-and-pasteurized"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Fat, Protein, Calcium",
+     "text": "The fat is mostly saturated milk fat, and cholesterol has its own line. The protein is casein and whey, a complete protein rich in leucine. And one cup gives about a quarter of the calcium Daily Value.",
+     "part": "map",
+     "cue": "Rows 4 to 6",
+     "slug": "fat-protein-calcium"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "The Molecules",
+     "text": "Here are the molecules: lactose, the lactic acid the cultures make from it, leucine from the milk protein, and the calcium ion. Because the cultures use up some lactose, many people who are lactose intolerant manage yogurt better than milk.",
+     "part": "mols",
+     "cue": "Markers 1 to 4",
+     "slug": "the-molecules"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "Canned Beans",
+   "subtitle": "Salt, an additive, fiber and the antinutrients the can deals with.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "The Label",
+     "text": "Next, canned black beans, drained, half a cup. The ingredients are black beans, water, salt and calcium chloride.",
+     "part": "label",
+     "cue": "The whole label",
+     "slug": "the-label"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Salt and an Additive",
+     "text": "Four hundred milligrams of sodium is about a gram of salt, mostly from the canning liquid. Draining and rinsing washes some away, and no-salt-added cans have far less. Calcium chloride is an additive, E509, a firming agent that keeps the beans from going mushy.",
+     "part": "map",
+     "cue": "Rows 1 and 2",
+     "slug": "salt-and-an-additive"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "Fiber and Protein",
+     "text": "The fiber is a quarter of the Daily Value in half a cup. The protein is rich in lysine but low in methionine, which is why beans pair so well with grains.",
+     "part": "map",
+     "cue": "Rows 3 and 4",
+     "slug": "fiber-and-protein"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "What the Can Handles",
+     "text": "The iron is plant iron, better absorbed with vitamin C in the same meal. And the lines that aren't printed: phytate, which binds some iron and zinc, and lectins, which the canning heat destroys. That's why canned beans are safe straight from the can, while raw or undercooked kidney beans are not.",
+     "part": "map",
+     "cue": "Rows 5 and 6",
+     "slug": "what-the-can-handles"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "The Molecules",
+     "text": "In the molecules you can see salt as sodium and chloride ions, lysine with its long side chain, phytic acid with its six phosphate groups that grip mineral ions, and the iron ion it competes for.",
+     "part": "mols",
+     "cue": "Markers 1 to 4",
+     "slug": "the-molecules"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "Rolled Oats",
+   "subtitle": "One ingredient: starch, beta-glucan fiber and a processing step.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "One Ingredient",
+     "text": "Rolled oats have a one-line ingredient list: whole grain rolled oats. Half a cup dry has no sodium, no added sugar, and four grams of fiber.",
+     "part": "label",
+     "cue": "The whole label",
+     "slug": "one-ingredient"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "Starch and Fiber",
+     "text": "Most of the twenty-seven grams of carbohydrate is starch, long chains of alpha-glucose. Part of the fiber is beta-glucan, a soluble fiber made of beta-glucose.",
+     "part": "map",
+     "cue": "Rows 1 and 2",
+     "slug": "starch-and-fiber"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Rolled Is a Process",
+     "text": "Rolled is a processing word. The oats are steamed first, to stop a fat-splitting enzyme that would turn them rancid, then flattened between rollers. The protein is grain protein, low in lysine, so oats pair well with milk, yogurt or beans, and they keep their phytate-rich outer layers.",
+     "part": "map",
+     "cue": "Rows 3 to 6",
+     "slug": "rolled-is-a-process"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Alpha and Beta",
+     "text": "Here's the chemistry. Alpha-glucose and beta-glucose differ only in which way one OH group points. Starch is built from alpha-glucose, and your amylase enzymes cut those links into blood glucose.",
+     "part": "mols",
+     "cue": "Markers 1 and 2",
+     "slug": "alpha-and-beta"
+    },
+    {
+     "id": "5.5",
+     "seg": 5,
+     "name": "Why It Is Fiber",
+     "text": "Beta links like this one resist your enzymes, so beta-glucan reaches the gut as soluble fiber and thickens into a gel. About three grams a day from oats, in a diet low in saturated fat, can lower LDL cholesterol, and the FDA allows a heart-health claim for it.",
+     "part": "mols",
+     "cue": "Marker 3",
+     "slug": "why-it-is-fiber"
+    }
+   ]
+  },
+  {
+   "fig": 6,
+   "anchor": "fig-6",
+   "title": "Olive Oil",
+   "subtitle": "Almost pure fat, plus vitamin E and polyphenols.",
+   "segments": [
+    {
+     "id": "6.1",
+     "seg": 1,
+     "name": "Almost Pure Fat",
+     "text": "Extra virgin olive oil, one tablespoon. Fourteen grams of fat times nine calories per gram is a hundred and twenty-six, and the label rounds it to a hundred and twenty.",
+     "part": "label",
+     "cue": "Calories and Total Fat",
+     "slug": "almost-pure-fat"
+    },
+    {
+     "id": "6.2",
+     "seg": 2,
+     "name": "Mostly Monounsaturated",
+     "text": "Ten of those fourteen grams are monounsaturated, mostly oleic acid, the omega-9 fatty acid. And zero cholesterol, because plants don't make it.",
+     "part": "map",
+     "cue": "Rows 2 and 3",
+     "slug": "mostly-monounsaturated"
+    },
+    {
+     "id": "6.3",
+     "seg": 3,
+     "name": "Extra Virgin",
+     "text": "Extra virgin is a processing term: the oil is pressed from olives without heat-and-solvent refining, so it keeps its vitamin E and more of its polyphenols, like hydroxytyrosol. Those polyphenols are also why fresh oil tastes peppery and bitter.",
+     "part": "map",
+     "cue": "Rows 4 to 6",
+     "slug": "extra-virgin"
+    },
+    {
+     "id": "6.4",
+     "seg": 4,
+     "name": "The Triglyceride",
+     "text": "Here's a triglyceride, the shape of every fat and oil: glycerol, shaded, holding three fatty acids. The kink at the cis double bond is what keeps olive oil liquid.",
+     "part": "mols",
+     "cue": "Markers 1 and 2",
+     "slug": "the-triglyceride"
+    },
+    {
+     "id": "6.5",
+     "seg": 5,
+     "name": "Vitamin E and Hydroxytyrosol",
+     "text": "Vitamin E dissolves in the oil and gives up a hydrogen from its OH group to stop fats from going rancid. Hydroxytyrosol has two neighbouring OH groups, and the EU allows a claim that olive oil polyphenols help protect blood lipids from oxidation.",
+     "part": "mols",
+     "cue": "Markers 3 and 4",
+     "slug": "vitamin-e-and-hydroxytyrosol"
+    }
+   ]
+  },
+  {
+   "fig": 7,
+   "anchor": "fig-7",
+   "title": "Simple Bread",
+   "subtitle": "Enriched flour, yeast, salt and the crust.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "Four Ingredients",
+     "text": "Last, a simple white sandwich bread: enriched wheat flour, water, yeast and salt, and a Contains line for wheat.",
+     "part": "label",
+     "cue": "Ingredients",
+     "slug": "four-ingredients"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "Enriched Flour",
+     "text": "Enriched means milling removed the bran and germ, so B vitamins and iron are added back: niacin, thiamin, riboflavin, reduced iron and folic acid. Folic acid has been required in US enriched grain since 1998, to help prevent neural tube defects.",
+     "part": "map",
+     "cue": "Rows 1 to 3",
+     "slug": "enriched-flour"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "Yeast and Crust",
+     "text": "Yeast ferments sugar into carbon dioxide, which raises the dough, and ethanol, which bakes off. In the oven, browning makes the crust's flavor and a little acrylamide, so toast to golden, not dark brown.",
+     "part": "map",
+     "cue": "Rows 4 and 5",
+     "slug": "yeast-and-crust"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "Salt and Wheat",
+     "text": "Bread isn't very salty per slice, but people eat it so often that it's one of the biggest sources of sodium in many diets. And wheat is a major allergen; its gluten proteins form the stretchy network that traps the gas.",
+     "part": "map",
+     "cue": "Rows 6 and 7",
+     "slug": "salt-and-wheat"
+    },
+    {
+     "id": "7.5",
+     "seg": 5,
+     "name": "The Molecules",
+     "text": "The molecules: folic acid, the stable added form of folate; ethanol and carbon dioxide, the two things yeast makes from each glucose; and acrylamide, which forms from the amino acid asparagine and sugar in dry heat.",
+     "part": "mols",
+     "cue": "Markers 1 to 3",
+     "slug": "the-molecules"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
+   "title": "Putting It All Together",
+   "subtitle": "The five foods in one table, plus a few things worth knowing.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "Five Foods",
+     "text": "Here are all five foods in one table. Notice that even single-ingredient foods touch half the tree, and that each one has something important that isn't on the label at all.",
+     "part": "table",
+     "cue": "The table",
+     "slug": "five-foods"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Worth Knowing",
+     "text": "A few last things. Labels round, so zero grams of trans fat can still mean a little. Serving sizes are reference amounts, not advice. Many whole foods have no label, so use a database like USDA FoodData Central. And every number in this lesson is a typical value; always read the package in your hand.",
+     "part": "worth",
+     "cue": "The four notes",
+     "slug": "worth-knowing"
+    }
+   ]
+  }
+ ],
+ "page": "curriculum/final-review.html",
+ "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/final-review.html",
+ "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/final-review.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 8,
+ "segmentCount": 37
+}
