@@ -410,20 +410,23 @@ F10_EXTRA=('<section class="rsec qa" data-part="extras"><div class="part">Worth 
  '<h4>Cholesterol is a different lipid</h4><p>Cholesterol is not a triglyceride: it is a sterol, built from four fused carbon rings, with no glycerol and no fatty acids. Your liver makes most of what you need; it goes into cell membranes and is the raw material for steroid hormones, vitamin D and bile acids. In food it comes only from animal products (eggs, meat, dairy, shellfish). LDL and HDL are not kinds of cholesterol but lipoprotein particles that carry cholesterol and triglycerides in the blood.</p>'
  '<h4>Every food fat is a mix</h4><p>No food fat is just one type. Olive oil is about three-quarters monounsaturated, butter about two-thirds saturated, and coconut oil over 80% saturated; a fat is named for the type that dominates.</p>'
  '<p class="fnote">General education, not medical advice. Health notes follow mainstream guidance (US Dietary Guidelines, WHO, American Heart Association).</p></section>')
-F10_HTML='<!--noart-->'+F10_TREE+F10_EXTRA  # figure-by-figure recap list removed (rev 8); the tree and Worth knowing stay
-def figure_card(n,title,art_html,caption,pre='',after=''):
+F10_NEXT='<p class="fwd" data-part="next">Fats are one kind of lipid; see the next lesson, <a href="macronutrients-lipids.html">Lipids Beyond Fats</a> →</p>'
+F10_HTML='<!--noart-->'+F10_TREE+F10_NEXT+F10_EXTRA  # figure-by-figure recap list removed (rev 8); the tree and Worth knowing stay
+def figure_card(n,title,art_html,caption,pre='',after='',sub=None):
     """One numbered figure card. Give images/boxes a data-part="..." so script segments can point at them."""
-    return (f'<figure class="fig" id="fig-{n}" data-fig="{n}"><div class="fh" data-part="head"><a class="badge" href="#fig-{n}">{n}</a><div><div class="fl">Figure {n}</div><h3>{title}</h3>{f'<p class="fsub">{SUB[n]}</p>' if n in SUB else ''}</div></div>'
+    return (f'<figure class="fig" id="fig-{n}" data-fig="{n}"><div class="fh" data-part="head"><a class="badge" href="#fig-{n}">{n}</a><div><div class="fl">Figure {n}</div><h3>{title}</h3>{f'<p class="fsub">{sub if sub is not None else SUB[n]}</p>' if (sub or (sub is None and n in SUB)) else ''}</div></div>'
             f'{pre}{art_html[12:] if art_html.startswith("<!--noart-->") else f'<div class="art">{art_html}</div>'}{f'<figcaption data-part="caption">{caption}</figcaption>' if caption else ''}{after}</figure>')
 quiz='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
 FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) in enumerate(LESSON,1)]
 lesson_page('macronutrients-fats','Module 1 · Fats · Curriculum · Food Label Tree',
  '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 10 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
- FATS_FIGS,quiz)
+ FATS_FIGS,quiz+pn(None,('Lipids Beyond Fats','macronutrients-lipids.html')))
+exec(open(os.path.join(GEN,'lipids.py'),encoding='utf-8').read())
+N_LIPIDS=build_lipids()
 # Old step-by-step page -> tiny redirect (maps #step-N to the new #fig-N)
 STEP2FIG={1:3,2:3,3:3,4:3,5:3,6:3,7:4,8:4,9:4,10:4,11:4,12:5,13:2,14:2,15:6,16:3}
 open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved: Module 1 · Fats</title><meta http-equiv="refresh" content="0; url=macronutrients-fats.html"><link rel="canonical" href="macronutrients-fats.html"><script>var m={'+','.join(f'{k}:{v}' for k,v in STEP2FIG.items())+'},s=/^#step-(\\d+)$/.exec(location.hash);location.replace("macronutrients-fats.html"+(s&&m[s[1]]?"#fig-"+m[s[1]]:""))</script></head><body><p>This lesson moved to <a href="macronutrients-fats.html">Module 1 · Fats</a>.</p></body></html>\n')
-MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats','macronutrients-fats.html',f'{len(LESSON)} figures + script')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
+MOD=[('1','Macronutrients','','var(--c-macronutrients)',[('Fats','macronutrients-fats.html',f'{len(LESSON)} figures + script'),('Lipids Beyond Fats','macronutrients-lipids.html',f'{N_LIPIDS} figures + script')],['Protein','Carbohydrates','Water & ethanol']),('2','Micronutrients','','var(--c-micronutrients)',[],[]),('3','Additives','','var(--c-additives)',[],[]),('4','Antinutrients','','var(--c-antinutrients)',[],[]),('5','Processing','','var(--c-processing)',[],[])]
 cards=''
 for n,nm,ic,c,live,soon in MOD:
     items=''.join(f'<a class="les" href="{h}">{t} <span>{k} →</span></a>' for t,h,k in live)+''.join(f'<div class="les off">{t} <span>coming soon</span></div>' for t in soon)
