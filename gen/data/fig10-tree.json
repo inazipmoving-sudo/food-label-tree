@@ -1,0 +1,26 @@
+{
+ "triglyceride": {
+  "units": 17.141,
+  "formula": "C55H100O6"
+ },
+ "stearic": {
+  "units": 17.062,
+  "formula": "C18H36O2"
+ },
+ "oleic": {
+  "units": 15.06,
+  "formula": "C18H34O2"
+ },
+ "linoleic": {
+  "units": 11.352,
+  "formula": "C18H32O2"
+ },
+ "ala": {
+  "units": 10.971,
+  "formula": "C18H30O2"
+ },
+ "elaidic": {
+  "units": 17.062,
+  "formula": "C18H34O2"
+ }
+}

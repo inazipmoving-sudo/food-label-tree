@@ -3,7 +3,7 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 6,
+ "revision": 7,
  "idRevision": 4,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -298,7 +298,7 @@
   {
    "fig": 6,
    "anchor": "fig-6",
-   "title": "Omega-3 vs omega-6: count from the tail",
+   "title": "Omega-3, omega-6 and omega-9",
    "segments": [
     {
      "id": "6.1",
@@ -335,8 +335,90 @@
      "part": "body",
      "cue": "Pink box: Omega-6",
      "slug": "omega-6-in-your-body"
+    },
+    {
+     "id": "6.5",
+     "seg": 5,
+     "name": "Two Ends",
+     "text": "A fatty acid has two ends. The acid end, the COOH group, is carbon 1, and it's the end that joins glycerol. The other end is a CH3 group called the omega end. Omega is the last letter of the Greek alphabet, so it just means the far end.",
+     "part": "ends",
+     "cue": "Lower diagram: acid end on the left, omega end on the right",
+     "slug": "two-ends"
+    },
+    {
+     "id": "6.6",
+     "seg": 6,
+     "name": "Omega Is an Address",
+     "text": "An omega number is an address. Omega-3, omega-6 and omega-9 tell you the first double bond starts 3, 6 or 9 carbons in from the omega end. The grey omega numbers count that way; the blue numbers count from the acid end.",
+     "part": "ends",
+     "cue": "Grey ω numbers vs blue carbon numbers",
+     "slug": "omega-is-an-address"
+    },
+    {
+     "id": "6.7",
+     "seg": 7,
+     "name": "Desaturases Add Double Bonds",
+     "text": "Your body makes double bonds with enzymes called desaturases. A desaturase takes two hydrogens off a chain and turns a single carbon-carbon bond into a double bond, and each one works at a fixed spot, counted from the acid end.",
+     "part": "ends",
+     "cue": "Any ringed double bond",
+     "slug": "desaturases-add-double-bonds"
+    },
+    {
+     "id": "6.8",
+     "seg": 8,
+     "name": "How Far Human Enzymes Reach",
+     "text": "Human desaturases only reach the first nine carbons from the acid end; that is called delta 9. That is enough to put a double bond at carbon 9 and turn stearic acid into oleic acid. On an eighteen-carbon chain carbon 9 is also omega 9, so omega-9 is not essential: your body makes it.",
+     "part": "reach",
+     "cue": "Top row: oleic acid, ring inside the blue zone",
+     "slug": "how-far-human-enzymes-reach"
+    },
+    {
+     "id": "6.9",
+     "seg": 9,
+     "name": "Out of Reach: Carbons 12 and 15",
+     "text": "On the same eighteen-carbon chain, the omega-6 double bond sits at carbon 12 and the omega-3 double bond at carbon 15. Humans lack the delta 12 and delta 15 desaturases that put them there. Plants, algae and some microbes have them.",
+     "part": "reach",
+     "cue": "Middle and bottom rows: dashed rings in the green zone",
+     "slug": "out-of-reach-carbons-12-and-15"
+    },
+    {
+     "id": "6.10",
+     "seg": 10,
+     "name": "Why LA and ALA Are Essential",
+     "text": "That's why linoleic acid and alpha-linolenic acid are the essential fatty acids: you have to eat them. Animals and fish don't make them either; they get them from plants and algae.",
+     "part": "essential",
+     "cue": "Key list: second point",
+     "slug": "why-la-and-ala-are-essential"
+    },
+    {
+     "id": "6.11",
+     "seg": 11,
+     "name": "Building Longer Chains",
+     "text": "Your body can lengthen these chains and add more double bonds near the acid end. Linoleic acid becomes arachidonic acid, and ALA becomes EPA and then DHA. But only a small share of ALA gets that far, so fish and algae, which supply EPA and DHA ready-made, matter.",
+     "part": "essential",
+     "cue": "Key list: third point",
+     "slug": "building-longer-chains"
+    },
+    {
+     "id": "6.12",
+     "seg": 12,
+     "name": "No Switching Families",
+     "text": "The omega end is never changed. So an omega-6 stays an omega-6 and an omega-3 stays an omega-3; your body can't turn one into the other, and you need both.",
+     "part": "essential",
+     "cue": "Key list: fourth point",
+     "slug": "no-switching-families"
+    },
+    {
+     "id": "6.13",
+     "seg": 13,
+     "name": "The Rule of Thumb",
+     "text": "So the rule of thumb is: your body can edit a chain near the acid end, but not near the omega end.",
+     "part": "rule",
+     "cue": "Rule of thumb line",
+     "slug": "the-rule-of-thumb"
     }
-   ]
+   ],
+   "subtitle": "Counted from the tail end; only omega-9 can be made by your body."
   },
   {
    "fig": 7,
@@ -413,7 +495,7 @@
      "id": "8.5",
      "seg": 5,
      "name": "Back to the Family Tree",
-     "text": "That completes the family tree from Figure 1: saturated, mono, poly with the omegas, and trans. Next, Figure 9 shows how your body breaks a fat down for energy.",
+     "text": "That completes the family tree from Figure 1: saturated, mono with omega-9, poly with omega-3 and omega-6, and trans. Next, Figure 9 shows how your body breaks a fat down for energy.",
      "cue": "Back to Figure 1 if there is time",
      "slug": "back-to-the-family-tree"
     }
@@ -458,7 +540,7 @@
      "name": "The Whole Family",
      "text": "That's the whole module, so Figure 10 puts it all together. This is the family tree from Figure 1 again, but now every branch has its molecule next to it, all drawn at the same scale with every hydrogen showing. At the top is the triglyceride, the form almost all fat takes in food and in your body: a glycerol backbone holding three fatty acids by ester links. This one carries palmitic, oleic and linoleic acid, which is typical, because every food fat is a mix. Everything below it is about those fatty-acid chains, and what sorts them into families is the double bonds between carbons: how many there are, where they sit, and which way the hydrogens point around them.",
      "part": "family",
-     "cue": "Top node: the triglyceride, glycerol in the purple box, ester links in red; then follow the tree down",
+     "cue": "Top node: the triglyceride, glycerol in the purple box, ester links in red; then follow the lines down",
      "slug": "the-whole-family"
     },
     {
@@ -467,16 +549,16 @@
      "name": "Saturated",
      "text": "Saturated fat has no double bonds at all. Every carbon in the tail holds as many hydrogens as it can, so the zigzag runs straight, the chains pack tightly, and the fat is solid at room temperature. Our example is stearic acid, eighteen carbons, which melts at about sixty-nine degrees Celsius. You find saturated fat in butter, cheese, beef and lamb fat, coconut and cocoa butter. Mainstream guidelines suggest keeping it under about ten percent of daily calories, because eating a lot of it raises LDL cholesterol.",
      "part": "sat",
-     "cue": "Saturated node: the straight stearic chain, then Found in",
+     "cue": "Left branch: Saturated, the straight stearic chain, then the e.g. line",
      "slug": "saturated"
     },
     {
      "id": "10.3",
      "seg": 3,
      "name": "Unsaturated",
-     "text": "Unsaturated fats have at least one carbon-carbon double bond, and in food these are almost always cis, so each one puts a kink in the chain and the fat usually stays liquid. Monounsaturated means exactly one: oleic acid, the main fat in olive oil, avocados and many nuts. Polyunsaturated means two or more, and that's where the omega families come in, named by counting from the tail end. Alpha-linolenic acid, ALA, has its first double bond three carbons from the end, so it's an omega-3, from flax, chia and walnuts. Linoleic acid starts at the sixth carbon from the end, so it's an omega-6, from seeds, nuts and poultry. Those two are the essential fatty acids: your body can't make them, so they have to come from food. Your body can turn some ALA into EPA and DHA, but only a small fraction, so oily fish and algae are the direct sources.",
+     "text": "Unsaturated fats have at least one carbon-carbon double bond, and in food these are almost always cis, so each one puts a kink in the chain and the fat usually stays liquid. Monounsaturated means exactly one, and most of it is omega-9: oleic acid, the main fat in olive oil, avocados, almonds and macadamias. Your body makes oleic acid itself, so omega-9 isn't essential. Polyunsaturated means two or more, and that's where omega-3 and omega-6 come in, named by counting from the tail end. Alpha-linolenic acid, ALA, has its first double bond three carbons from the end, so it's an omega-3, from flax, chia and walnuts. Linoleic acid starts at the sixth carbon from the end, so it's an omega-6, from seeds, nuts and poultry. Those two are the essential fatty acids: your body can't make them, so they have to come from food. Your body can turn some ALA into EPA and DHA, but only a small fraction, so oily fish and algae are the direct sources.",
      "part": "unsat",
-     "cue": "Unsaturated branch: oleic (one orange kink), then Polyunsaturated: ALA (omega-3) and linoleic (omega-6)",
+     "cue": "Middle branch: Monounsaturated → Omega-9 (oleic), and Polyunsaturated → Omega-3 (ALA) and Omega-6 (linoleic); tap a molecule to enlarge it",
      "slug": "unsaturated"
     },
     {
@@ -485,14 +567,14 @@
      "name": "Trans",
      "text": "Trans fat has the same kind of double bond as oleic acid, but its hydrogens sit on opposite sides, so the chain stays nearly straight and behaves like saturated fat. Elaidic acid is the classic example. Most trans fat in food was made by partially hydrogenating unsaturated oils, the dashed arrow in Figure 1, and small natural amounts come from dairy, beef and lamb. It raises LDL and lowers HDL, which is why industrial trans fat is now banned in the US.",
      "part": "trans",
-     "cue": "Trans node: the nearly straight elaidic chain; compare with oleic above",
+     "cue": "Right branch: Trans, the nearly straight elaidic chain; compare with oleic, bottom left",
      "slug": "trans"
     },
     {
      "id": "10.5",
      "seg": 5,
      "name": "What Happens in the Body",
-     "text": "Now quickly, figure by figure. Fats and oils are the same kind of molecule, and packing decides solid or liquid. A bond is a shared pair of electrons, and a double bond is stiff and can't rotate. Cis kinks the chain, and trans keeps it straight. One double bond is mono, two or more is poly, and every extra kink lowers the melting point. Omega numbers count from the tail. Hydrogenation adds hydrogen, and partial hydrogenation is where most trans fat came from. Body fat is mostly unsaturated, so it stays soft at body temperature. And when you need energy, lipases cut a triglyceride into glycerol, which goes to the liver, and three fatty acids, which ride on albumin to muscle and the heart and are burned two carbons at a time by beta-oxidation, with ketones as a backup in a longer fast. The energy is in the carbon-hydrogen bonds.",
+     "text": "Now quickly, figure by figure. Fats and oils are the same kind of molecule, and packing decides solid or liquid. A bond is a shared pair of electrons, and a double bond is stiff and can't rotate. Cis kinks the chain, and trans keeps it straight. One double bond is mono, two or more is poly, and every extra kink lowers the melting point. Omega numbers count from the tail, and your body can make omega-9 but not omega-3 or omega-6. Hydrogenation adds hydrogen, and partial hydrogenation is where most trans fat came from. Body fat is mostly unsaturated, so it stays soft at body temperature. And when you need energy, lipases cut a triglyceride into glycerol, which goes to the liver, and three fatty acids, which ride on albumin to muscle and the heart and are burned two carbons at a time by beta-oxidation, with ketones as a backup in a longer fast. The energy is in the carbon-hydrogen bonds.",
      "part": "recap",
      "cue": "Recap list, Figures 2 to 9; each Figure link jumps back to that figure",
      "slug": "what-happens-in-the-body"
@@ -515,5 +597,5 @@
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 10,
- "segmentCount": 47
+ "segmentCount": 56
 }
