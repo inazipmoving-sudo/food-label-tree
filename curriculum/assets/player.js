@@ -24,6 +24,8 @@
     set: function (k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
   };
   var mark = store.get(QKEY); /* {fig, seg, kind: 'pause' | 'question'} */
+  if (mark && !(FIGS.some(function (f) { return f.fig === mark.fig; }))) mark = null;
+  if (mark && !FIGS.filter(function (f) { return f.fig === mark.fig; })[0].segments.some(function (x) { return x.seg === mark.seg; })) mark.seg = 1;
   if (mark && mark.kind !== 'pause') mark.kind = 'question';
   var S = { fig: 1, seg: 1, playing: !mark };
   var ctl = $('.lp-ctl'), figCol = $('.lp-figcol', root), scrCol = $('.lp-scriptcol', root);
@@ -66,7 +68,7 @@
     $('.lp-nx', ctl).textContent = nx ? 'Next: ' + label(nx) : 'Last line';
     $('.lp-nl', ctl).textContent = nx ? label(nx) : '';
     var h = $('.lp-scripthead', root);
-    if (h) h.innerHTML = '<span class="lp-k">Figure ' + f.fig + ' script</span><span class="lp-t"></span><span class="lp-n">' + f.segments.length + ' segments</span>';
+    if (h) h.innerHTML = '<span class="lp-k">Figure ' + f.fig + ' script</span><span class="lp-t"></span><span class="lp-n">' + f.segments.length + (f.segments.length === 1 ? ' segment' : ' segments') + '</span>';
     if (h) $('.lp-t', h).textContent = f.title;
     var pb = $('[data-act=play]', ctl);
     var paused = !!(mark && mark.kind === 'pause');
@@ -203,7 +205,9 @@
   /* ---------- start ---------- */
   var fromHash = parseHash(location.hash);
   var saved = store.get(KEY);
-  if (saved && !valid(saved.fig, saved.seg)) saved = null;
+  /* a saved spot whose line no longer exists (script edited) falls back to that figure's first line */
+  function fix(p) { if (!p || !figData(p.fig)) return null; if (!valid(p.fig, p.seg)) p.seg = 1; return p; }
+  saved = fix(saved);
   if (fromHash) { S.fig = fromHash.fig; S.seg = fromHash.seg; }
   root.classList.add('ready');
   document.documentElement.classList.add('has-player');
