@@ -1,16 +1,26 @@
 # ---------------- Module 1 · Protein ----------------
 P_=mk_lmol('macronutrients-protein')
 def _aa(n): return P_.D[n]['formula']
-# Figure 1: family tree (Fats Figure 1 style)
-PT_NODES=[(450,30,150,'Protein','4 kcal/g','nd root',None),
- (160,150,230,'Amino acids','20 building blocks · Fig. 2','nd l','#fig-2'),(450,150,220,'Chains','peptide bonds · Fig. 3','nd l','#fig-3'),(720,150,220,'In food','complete or not · Fig. 7','nd l','#fig-7'),
- (85,290,160,'Essential','9 · must eat · Fig. 4','nd u','#fig-4'),(255,290,160,'Non-essential','11 · body makes','nd s','#fig-4'),
- (450,290,170,'Peptides','2 to ~50 amino acids','nd l','#fig-3'),(635,290,160,'Complete','all 9 essentials','nd u','#fig-7'),(805,290,160,'Incomplete','low in 1 or more','nd t','#fig-7'),
- (255,410,180,'Conditional','6 of the 11 · Fig. 4','nd s','#fig-4'),(450,410,170,'Proteins','folded · Fig. 5','nd l','#fig-5'),(805,410,160,'Combine them','beans + grains','nd t','#fig-7'),
- (450,530,190,'Digested','to amino acids · Fig. 6','nd l','#fig-6')]
-PT_EDGES=[(450,52,160,128),(450,52,450,128),(450,52,720,128),(160,182,85,268),(160,182,255,268),(450,182,450,268),(720,182,635,268),(720,182,805,268),
- (255,322,255,388),(450,322,450,388),(805,322,805,388),(450,442,450,508)]
-P1=('<!--noart-->'+ftree(PT_NODES,PT_EDGES,580,'Tree diagram of protein: amino acids (9 essential, 11 non-essential of which 6 are conditionally essential); chains (peptides, then folded proteins, which are digested back to amino acids); protein in food (complete, incomplete, combine them)')
+# Figure 1: family tree (Fats Figure 1 style), drawn as a build-up: amino acids -> peptide bonds -> peptide -> folded protein -> what proteins do.
+# Food sits to the right as the SOURCE: its protein is digested (dashed arrow) back to amino acids, which feed the top of the chain.
+PT_NODES=[(450,50,220,'Amino acids','20 building blocks · Fig. 2','nd l','#fig-2'),
+ (150,150,190,'Essential','9 · must eat · Fig. 4','nd u','#fig-4'),(150,240,190,'Non-essential','11 · body makes','nd s','#fig-4'),(150,340,190,'Conditional','6 of the 11 · Fig. 4','nd s','#fig-4'),
+ (450,190,220,'Peptide','short chain, 2 to ~50','nd l','#fig-3'),
+ (450,330,240,'Protein','longer chain, folded · Fig. 5','nd root','#fig-5'),
+ (780,50,200,'Food','the source · Fig. 7','nd l','#fig-7'),
+ (790,150,170,'Complete','all 9 essentials','nd u','#fig-7'),(790,240,170,'Incomplete','low in 1 or more','nd t','#fig-7'),(790,340,170,'Combine them','beans + grains','nd t','#fig-7'),
+ (120,460,180,'Muscle','structure · Fig. 6','nd l','#fig-6'),(340,460,180,'Enzymes','speed reactions · Fig. 5','nd l','#fig-5'),
+ (560,460,180,'Antibodies','fight germs · Fig. 6','nd l','#fig-6'),(780,460,180,'Hemoglobin','carries oxygen · Fig. 5','nd l','#fig-5')]
+PT_EDGES=[('side',340,50,245,150),('side',340,50,245,240),(150,272,150,318),
+ ('line',700,82,700,240),('line',700,150,705,150),('line',700,240,705,240),(790,272,790,318),
+ (450,362,120,438),(450,362,340,438),(450,362,560,438),(450,362,780,438)]
+PT_EXTRA=['<path class="edge" d="M450,84 L450,164" marker-end="url(#lar)"/>',
+ '<a class="tlk" href="#fig-3"><text class="lab hotl" x="464" y="130">peptide bonds · Fig. 3</text></a>',
+ '<path class="edge" d="M450,224 L450,304" marker-end="url(#lar)"/>',
+ '<a class="tlk" href="#fig-5"><text class="lab hotl" x="464" y="270">longer chain folds</text></a>',
+ '<path class="edge dash" d="M678,50 L564,50" marker-end="url(#lar)"/>',
+ '<a class="tlk" href="#fig-6"><text class="lab hotl" x="620" y="38" text-anchor="middle">digestion</text><text class="lab hotl" x="620" y="72" text-anchor="middle">Fig. 6</text></a>']
+P1=('<!--noart-->'+ftree(PT_NODES,PT_EDGES,500,'Build-up diagram of protein. Amino acids, 20 in all (9 essential, 11 non-essential of which 6 are conditionally essential), are joined by peptide bonds into a chain. A short chain, up to about 50, is a peptide; a longer chain folds into a working protein: muscle, enzymes, antibodies, hemoglobin. Food is the source: its protein (complete, incomplete, or combined) is digested back down to amino acids, which feed the start of the chain.',PT_EXTRA)
  +lblock('label','Protein on a food label',[('Protein (grams)','Every gram gives about 4 kcal, the same as carbohydrate. The grams are total protein, whatever the source.'),
    ('%DV is often missing','In the US the % Daily Value for protein is optional unless the package makes a protein claim or the food is for young children; then it is adjusted for protein quality.'),
    ('Not listed: which amino acids','The label doesn’t say whether a protein is complete. Figure 7 shows how to tell from the food itself.')]))
@@ -109,7 +119,7 @@ P8=('<!--noart-->'+table('table',['Idea','In one line','See'],[
    ('Collagen is incomplete','Collagen, the most common protein in your body, is rich in glycine and proline but has almost no tryptophan, so on its own it’s an incomplete protein.'),
    ('Gelatin is cooked collagen','Simmering bones and skin unfolds collagen into gelatin, which sets into a gel as it cools.'),
    ('Protein quality scores','PDCAAS and DIAAS score proteins by their essential amino acids and how well they are digested. Milk, eggs and soy score near the top.')]))
-PROTEIN_LESSON=[('The Protein Family Tree','Amino acids, the chains they make, and protein in food.',P1),
+PROTEIN_LESSON=[('The Protein Family Tree','Amino acids build up into peptides and proteins; food supplies the amino acids.',P1),
  ('From Atoms to an Amino Acid','Four kinds of atom, one shared backbone, one side chain that changes.',P2),
  ('The Peptide Bond','Amino acids join head to tail and release water.',P3),
  ('The 20 Amino Acids','Same backbone, 20 side chains; 9 you must eat.',P4),

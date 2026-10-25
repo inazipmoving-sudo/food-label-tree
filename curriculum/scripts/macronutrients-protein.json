@@ -3,7 +3,7 @@
  "module": "macronutrients-protein",
  "title": "Module 1 · Protein",
  "lang": "en",
- "revision": 1,
+ "revision": 2,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -12,14 +12,15 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
    "fig": 1,
    "anchor": "fig-1",
    "title": "The Protein Family Tree",
-   "subtitle": "Amino acids, the chains they make, and protein in food.",
+   "subtitle": "Amino acids build up into peptides and proteins; food supplies the amino acids.",
    "segments": [
     {
      "id": "1.1",
@@ -27,34 +28,48 @@
      "name": "What Protein Is",
      "text": "Protein is the next macronutrient in this course. Like fat it gives energy, about four calories per gram, the same as carbohydrate. But energy isn't its main job. Protein is what your body is built from and what does most of its work: muscle, skin and hair, the enzymes that run every chemical reaction, the antibodies that fight infection, and the hemoglobin that carries oxygen in your blood.",
      "part": "head",
-     "cue": "Title, then the Protein box at the top",
+     "cue": "Title, then the chain down the middle, from Amino acids to Protein",
+     "foodBody": [
+      {
+       "name": "Enzymes",
+       "text": "Enzymes are proteins that speed up chemical reactions without being used up. The lipases that break down fat in Fats Figure 9 are enzymes, and so are pepsin and trypsin, which digest protein in Figure 6."
+      },
+      {
+       "name": "Antibodies",
+       "text": "Antibodies are Y-shaped immune proteins that latch onto germs and tag them for your immune system to destroy. Eating enough protein, plus zinc from foods like meat, shellfish and seeds, supports making them."
+      },
+      {
+       "name": "Hemoglobin",
+       "text": "Hemoglobin is the iron-containing protein in red blood cells that carries oxygen. Your body builds it from dietary protein plus iron, from foods like red meat, liver, beans and spinach."
+      }
+     ],
      "slug": "what-protein-is"
     },
     {
      "id": "1.2",
      "seg": 2,
      "name": "Amino Acids",
-     "text": "Every protein is made of smaller units called amino acids, the left branch. There are twenty of them. Nine are essential, meaning your body can't make them, so they have to come from food. The other eleven your body can make, although six of those, called conditionally essential, can run short when you're ill, injured or growing fast.",
+     "text": "Every protein is built from smaller units called amino acids, the box at the top. There are twenty of them. Nine are essential, meaning your body can't make them, so they have to come from food. The other eleven your body can make, although six of those, called conditionally essential, can run short when you're ill, injured or growing fast.",
      "part": "tree",
-     "cue": "Left branch: Amino acids, then Essential, Non-essential and Conditional",
+     "cue": "Top: Amino acids, then Essential, Non-essential and Conditional on the left",
      "slug": "amino-acids"
     },
     {
      "id": "1.3",
      "seg": 3,
      "name": "Chains",
-     "text": "In the middle, amino acids join into chains. A short chain, up to about fifty, is called a peptide. A longer one folds into a working shape and becomes a protein. When you eat protein, you digest it back down into amino acids and use them to build your own.",
+     "text": "Follow the arrows down the middle. Amino acids link together with peptide bonds, one after another, into a chain. A short chain, up to about fifty amino acids, is called a peptide. A longer chain folds into a working shape and becomes a protein. A peptide and a protein are the same kind of chain, just different lengths. Folded proteins make up your muscle and work as enzymes, antibodies and hemoglobin.",
      "part": "tree",
-     "cue": "Middle branch: Chains, Peptides, Proteins, Digested",
+     "cue": "Down the middle: peptide bonds, Peptide, Protein, then the four boxes underneath",
      "slug": "chains"
     },
     {
      "id": "1.4",
      "seg": 4,
      "name": "Protein in Food",
-     "text": "On the right is protein in food. A complete protein has all nine essential amino acids in good amounts. An incomplete one is low in at least one, but two incomplete proteins can cover each other's gaps. Each box links to the figure that explains it.",
+     "text": "On the right is food, where the amino acids come from. The protein you eat is digested back down into amino acids, the dashed arrow, and your body rebuilds them into its own proteins. A complete protein has all nine essential amino acids in good amounts. An incomplete one is low in at least one, but two incomplete proteins can cover each other's gaps. Each box links to the figure that explains it.",
      "part": "tree",
-     "cue": "Right branch: In food, Complete, Incomplete, Combine them",
+     "cue": "Right: Food, Complete, Incomplete, Combine them, and the dashed digestion arrow into Amino acids",
      "slug": "protein-in-food"
     },
     {
