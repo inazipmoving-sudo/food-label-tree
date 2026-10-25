@@ -73,16 +73,45 @@ _BC=['#3E5C76','#7A8256','#A86B53','#5F7F99','#8E7A4A','#6E8C70']
 _beads='<div class="beads" role="img" aria-label="A chain of amino acid beads: Gly, Ala, Ser, Leu, Lys, Glu, Phe, Val, His, Met, Trp">'+''.join(f'<span style="background:{_BC[k%6]}">{c}</span>' for k,c in enumerate(['Gly','Ala','Ser','Leu','Lys','Glu','Phe','Val','His','Met','Trp']))+'</div>'
 _helix=''.join(f'<path d="M{20+k*26},40 q13,40 26,0" fill="none" style="stroke:var(--acc)" stroke-width="7" stroke-linecap="round"/><path d="M{33+k*26},40 q13,-40 26,0" fill="none" stroke="#9fb3c4" stroke-width="7" stroke-linecap="round"/>' for k in range(8))
 _sheet=''.join(f'<path d="M{300},{14+k*28} h150 l0,-8 l22,14 l-22,14 l0,-8 h-150z" fill="#7A8256" opacity="{0.95-k*0.15:.2f}"/>' for k in range(3))
-_sec=svgd(_helix+_sheet,'0 0 500 90','Alpha helix drawn as a spiral ribbon, and beta sheet drawn as three parallel arrows',420)+'<div class="sgl"><span>alpha helix (spiral)</span><span>beta sheet (strands side by side)</span></div>'
+exec(open(GEN+'/protein_shapes.py').read())  # Figure 5 close-ups: helix, sheet, tertiary + pocket, hemoglobin, collagen (labels are page HTML)
 _ter=svgd('<path d="M60,90 C60,30 140,20 160,60 S230,120 250,70 S200,10 280,20 S360,90 320,120 S220,140 180,110 S110,150 90,120" fill="none" style="stroke:var(--acc)" stroke-width="8" stroke-linecap="round"/>','30 0 340 160','A single chain folded into a compact knot-like shape',300)
-_qua=svgd(''.join(f'<ellipse cx="{x}" cy="{y}" rx="44" ry="34" fill="{c}"/><circle cx="{x}" cy="{y}" r="9" fill="#E06633" stroke="#7a2a0a" stroke-width="2"/>' for x,y,c in ((50,40,'#3E5C76'),(130,40,'#7A8256'),(50,102,'#7A8256'),(130,102,'#3E5C76'))),'0 0 180 142','Hemoglobin drawn as four chains packed together, each with an orange iron-containing heme',170)
 P5=('<!--noart-->'+stages('levels','Four levels of structure',[
    ('1 · Primary: the order of amino acids',_beads,'Set by your genes. Change one amino acid and the whole protein can change: sickle-cell hemoglobin differs from normal hemoglobin by a single swap.'),
-   ('2 · Secondary: local coils and sheets',_sec,'Held by hydrogen bonds between the C=O of one peptide bond and the N–H of another.'),
-   ('3 · Tertiary: the whole chain folds',_ter,'Oily side chains tuck inside, water-loving ones face out, and sulfur cross-links between cysteines can hold the fold. The shape decides the job.'),
-   ('4 · Quaternary: chains team up',_qua,'Hemoglobin is 4 chains, each holding one heme with an iron atom (orange) that carries oxygen.')],
-   cap='Cartoons, not to scale: each bead is a whole amino acid, and each ribbon is a stretch of chain.')
+   ('2 · Secondary: local coils and sheets',helix_panel()+sheet_panel(),'Held by hydrogen bonds between the C=O of one peptide bond and the N–H of another.','secondary'),
+   ('3 · Tertiary: the whole chain folds',_ter+tertiary_panel()+pocket_panel(),'Oily side chains tuck inside, water-loving ones face out, and sulfur cross-links between cysteines can hold the fold. The shape decides the job.','tertiary'),
+   ('4 · Quaternary: chains team up',hemoglobin_panel()+collagen_panel(),'Hemoglobin is 4 chains (2 alpha, 2 beta), each holding one heme with an iron atom (orange) that carries oxygen. Collagen is 3 chains wound into a rope.','quaternary')],
+   cap='Cartoons, not to scale: each bead is a whole amino acid, and each ribbon is a stretch of chain. The helix and sheet are drawn ball-and-stick, backbone only. Tap any white panel to enlarge it.')
+ +SS_LBX
  +note('denature','Cooking unfolds proteins','<p>Heat, acid, salt or whipping break the weak bonds that hold the folds, so the chain unravels: this is <b>denaturing</b>. Egg white turns from clear to white, milk curdles with lemon juice, meat firms up. The peptide bonds stay, so the amino acids are all still there; your stomach does the same thing with acid.</p>'))
+# Figure 6, section 6.5 second diagram: one amino acid (alanine) split into its nitrogen (to urea) and its carbon skeleton (pyruvate, three fates)
+_AR=lambda t='':f'<div class="nu-ar"><span>{t}</span></div>'
+NFATE=('<div class="art mols nu" data-part="nfate"><p class="mt">Following one amino acid: alanine</p>'
+ +'<div class="nu-top">'+mcell(P_('alanine','Alanine: amine group (NH2) on the left of the alpha carbon, methyl side chain on top, carboxyl group on the right; every hydrogen shown',[],'Alanine, C3H7NO2'),'Alanine, '+fsub(_aa('alanine')),'its amine group (NH₂) holds the nitrogen; the rest is the carbon skeleton')+'</div>'
+ +'<div class="nu-lanes">'
+ +'<section class="nu-lane nN"><h4 class="nu-h">The nitrogen → urea</h4>'
+ +'<p class="nu-s"><b>1 · The amine group comes off.</b> Alanine hands it to another molecule (transamination), and the liver then pulls it off as ammonia (deamination).</p>'+_AR()
+ +mcell(P_('ammonia','Ammonia: one nitrogen with three hydrogens',[],'Ammonia, NH3'),'Ammonia, NH₃','toxic, even in small amounts')+_AR()
+ +'<p class="nu-s"><b>2 · The urea cycle, in the liver.</b> Two nitrogens, one from ammonia and one passed in by another amino acid (aspartate), are joined to one carbon and one oxygen, which come from CO₂.</p>'+_AR()
+ +mcell(P_('urea','Urea: a carbon with a C=O and two NH2 groups; every hydrogen shown',[],'Urea, CH4N2O'),'Urea, '+fsub(_aa('urea')),'harmless and dissolves in water')+_AR()
+ +'<p class="nu-end"><b>3 · Out of the body:</b> blood → kidneys → urine</p></section>'
+ +'<section class="nu-lane nC"><h4 class="nu-h">The carbon skeleton → fuel, glucose or fat</h4>'
+ +'<p class="nu-s"><b>What’s left</b> once the amine group is gone is pyruvate: the same three carbons, with a C=O where the amine group was.</p>'+_AR()
+ +mcell(P_('pyruvate','Pyruvate (drawn as pyruvic acid): three carbons, a C=O in the middle where alanine had its amine group, and a carboxyl group; every hydrogen shown',[],'Pyruvate, C3H4O3 (drawn as pyruvic acid)'),'Pyruvate, '+fsub(_aa('pyruvate')),'drawn as pyruvic acid, like the amino acids')+_AR()+'<p class="nu-s"><b>Then one of three fates:</b></p>'
+ +'<div class="nu-fates"><p><b>Burned for energy</b>pyruvate → acetyl-CoA → citric acid cycle → CO₂ + water + energy (ATP)</p>'
+ +'<p><b>Made into glucose</b>in the liver, when blood sugar runs low</p>'
+ +'<p><b>Made into fat</b>when there’s more than you need: through acetyl-CoA into fatty acids</p></div></section>'
+ +'</div><p class="ccap nu-cap">Every amino acid splits the same way: its nitrogen leaves as urea, and its carbon skeleton is burned or rebuilt. Same scale as every molecule on this page; tap one to enlarge it.</p></div>'
+ +'<style>.nu-top{display:flex;justify-content:center;margin:4px 0 10px}.nu-lanes{display:grid;grid-template-columns:1fr;gap:12px}'
+ '@container (min-width:600px){.nu-lanes{grid-template-columns:1fr 1fr}}'
+ '.nu-lane{border-radius:6px;padding:10px 12px 12px;display:flex;flex-direction:column;align-items:center;text-align:center;color:#2B2B2B}'
+ '.nu-lane{background:#fff}.nu-lane.nN{border:2px solid #3050F8}.nu-lane.nC{border:2px solid #333333}'
+ '.nu-h{margin:-10px -12px 10px;padding:8px 12px;font:600 1.08rem/1.3 var(--serif);align-self:stretch;color:#fff;border-radius:3px 3px 0 0}.nN .nu-h{background:#3050F8}.nC .nu-h{background:#333}'
+ '.nu-s,.nu-end{margin:0;font-size:.95rem;line-height:1.45}.nu-end{padding:6px 10px;border-radius:5px;background:#fff;border:1px solid #3050F8}'
+ '.nu-ar{position:relative;height:30px;width:100%;display:flex;justify-content:center}.nu-ar:before{content:"";position:absolute;top:2px;bottom:9px;left:50%;border-left:3px solid;transform:translateX(-50%)}'
+ '.nu-ar:after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);border:8px solid transparent;border-top:10px solid;border-bottom:0}'
+ '.nN .nu-ar{color:#3050F8}.nC .nu-ar{color:#333}.nu-ar span{position:relative;left:52px;top:4px;font-size:.82rem;color:#55534E;white-space:nowrap}'
+ '.nu-fates{display:grid;gap:8px;align-self:stretch;margin-top:6px}.nu-fates p{margin:0;padding:8px 10px;background:#fff;border:1px solid #333;border-left:5px solid #333;border-radius:5px;font-size:.92rem;line-height:1.4;text-align:left}'
+ '.nu-fates b{display:block;font-size:.98rem}.nu .mc{margin:0;max-width:100%;flex:0 1 auto}.nu .mcl{max-width:100%}.nu-cap{margin-top:10px}</style>')
 # Figure 6: digestion and use
 _st=[('Mouth','chewing only; no protein digestion'),('Stomach','acid unfolds proteins; pepsin cuts them into shorter pieces'),('Small intestine','trypsin and chymotrypsin from the pancreas, then enzymes on the gut wall, cut down to single amino acids and pairs or threes'),
  ('Into the blood','absorbed and carried to the liver first'),('The amino acid pool','your body’s supply, used to build proteins all day')]
@@ -94,7 +123,7 @@ P6=('<!--noart-->'+flow('path','From plate to amino acids',_st,cap='The small in
    [('1','<b>Two nitrogens</b>: when an amino acid is burned, its amine group comes off as ammonia, which is toxic. The liver packs it into urea, and the kidneys send it out in urine.','')],
    fx=facts(body='Protein builds and repairs every tissue and makes enzymes, antibodies and many hormones.',
     low='Too little over time causes muscle loss, slow healing, weaker immunity, thin hair and, in severe shortage, swelling from fluid (kwashiorkor) and poor growth in children.',
-    high='Extra protein is burned or stored as fat, and makes more urea to clear, so you need a little more water. Very high intakes are a concern mainly for people with kidney disease.'),head='Getting rid of the nitrogen')+legend('c h o n'))
+    high='Extra protein is burned or stored as fat, and makes more urea to clear, so you need a little more water. Very high intakes are a concern mainly for people with kidney disease.'),head='Getting rid of the nitrogen')+NFATE+legend('c h o n'))
 # Figure 7: complete vs incomplete
 P7=('<!--noart-->'+table('foods',['Food','Protein type','Lowest essential amino acid'],[
   ['Meat, poultry, fish','Complete','none'],['Eggs, milk, yogurt, cheese','Complete','none'],['Soybeans (tofu, tempeh, edamame)','Complete','none really (methionine a little low)'],

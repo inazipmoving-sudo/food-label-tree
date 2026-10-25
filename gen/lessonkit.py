@@ -91,9 +91,9 @@ def flow(part,title,steps,cap=None):
     return ((f'<div class="part">{title}</div>' if title else '')+f'<div class="art flw" data-part="{part}"><ol class="flow">'
             +''.join(f'<li><b>{t}</b><span>{x}</span></li>' for t,x in steps)+'</ol>'+(f'<p class="ccap">{cap}</p>' if cap else '')+'</div>')
 def stages(part,title,rows,cap=None):
-    """stacked labelled stages: rows = [(heading, drawing_html_or_svg, text)]; text stays page HTML"""
+    """stacked labelled stages: rows = [(heading, drawing_html_or_svg, text[, data-part])]; text stays page HTML"""
     return ((f'<div class="part">{title}</div>' if title else '')+f'<div class="art stg" data-part="{part}">'
-            +''.join(f'<div class="sg"><p class="sgh">{h}</p>{d}<p class="sgt">{t}</p></div>' for h,d,t in rows)+(f'<p class="ccap">{cap}</p>' if cap else '')+'</div>')
+            +''.join(f'<div class="sg"{f' data-part="{r[3]}"' if len(r)>3 else ''}><p class="sgh">{r[0]}</p>{r[1]}<p class="sgt">{r[2]}</p></div>' for r in rows)+(f'<p class="ccap">{cap}</p>' if cap else '')+'</div>')
 def svgd(inner,vb,aria,maxw=None):
     return f'<svg class="sgd" viewBox="{vb}" role="img" aria-label="{_html.escape(aria)}"{f' style="max-width:{maxw}px"' if maxw else ''}>{inner}</svg>'
 def note(part,title,html): return f'<section class="rsec qa" data-part="{part}"><div class="part">{title}</div>{html}</section>'

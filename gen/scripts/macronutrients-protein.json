@@ -3,7 +3,7 @@
  "module": "macronutrients-protein",
  "title": "Module 1 · Protein",
  "lang": "en",
- "revision": 2,
+ "revision": 3,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -241,24 +241,24 @@
      "seg": 2,
      "name": "Secondary",
      "text": "Secondary structure is how short stretches coil or line up. The two common shapes are the alpha helix, a spiral, and the beta sheet, strands lying side by side. Both are held by hydrogen bonds: weak attractions between the C=O of one peptide bond and the N–H of another.",
-     "part": "levels",
-     "cue": "Level 2: helix, then sheet"
+     "part": "secondary",
+     "cue": "Level 2: the helix close-up (each C=O dashed to the N–H four along), then the sheet (C=O on one strand to N–H on the next)"
     },
     {
      "id": "5.3",
      "seg": 3,
      "name": "Tertiary",
      "text": "Tertiary structure is the whole chain folded into its final shape. Oily side chains tuck inside, away from water, and water-loving ones face out, with a few sulfur cross-links holding it steady. The shape decides the job: an enzyme's pocket fits only the molecule it works on.",
-     "part": "levels",
-     "cue": "Level 3: the folded chain"
+     "part": "tertiary",
+     "cue": "Level 3: the folded chain, then the close-up: oily side chains inside, water-loving outside, the two S–S links, and the enzyme-pocket inset"
     },
     {
      "id": "5.4",
      "seg": 4,
      "name": "Quaternary",
      "text": "Some proteins are teams of chains, and that's quaternary structure. Hemoglobin is four chains, each holding a heme group with an iron atom that grabs oxygen. Collagen, the most common protein in your body, is three chains wound into a rope.",
-     "part": "levels",
-     "cue": "Level 4: hemoglobin"
+     "part": "quaternary",
+     "cue": "Level 4: hemoglobin (two alpha and two beta chains, each heme with its iron and O2), then collagen's three-chain rope"
     },
     {
      "id": "5.5",
@@ -313,8 +313,8 @@
      "seg": 5,
      "name": "Urea",
      "text": "Burning an amino acid leaves its nitrogen behind as ammonia, which is toxic. Your liver joins two nitrogens with a carbon and an oxygen to make urea, this small molecule, and your kidneys send it out in urine. That's why a very high protein intake means a little more water.",
-     "part": "urea",
-     "cue": "Marker 1: the two nitrogens"
+     "part": "nfate",
+     "cue": "Marker 1: the two nitrogens on urea; then the alanine diagram: the blue nitrogen lane (ammonia, urea, out in urine) and the grey carbon lane (pyruvate and its three fates)"
     },
     {
      "id": "6.6",
