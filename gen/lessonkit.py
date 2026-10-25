@@ -115,10 +115,10 @@ def build_lesson(slug,title,intro,LESSON,QUIZ,after_extra='',mols=None,scale=Non
     lq='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
     nx=f'<p class="fwd" data-part="nextlesson">Next lesson: <a href="{N[1]}">{N[0]}</a> →</p>' if N else ''
     after=lq+'<main class="lp-after">'+nx+'</main>'+pn(P,N)+LIPID_JS+after_extra
-    lesson_page(slug,f'Module {r[1]} · {title} · Curriculum · Food Label Tree',
-     f'<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module {r[1]}</nav><h1>Module {r[1]} · {title}</h1><p>{intro}</p>'
+    lesson_page(slug,f'Module {r[1]} · {title} · {COURSE} · {UNIVERSITY_NAME}',
+     f'<nav class="crumbs">{CRUMB_HOME} › Module {r[1]}</nav><h1>Module {r[1]} · {title}</h1><p>{intro}</p>'
      +(f'<p class="pnl">Previous lesson: <a href="{P[1]}">{P[0]}</a></p>' if P else ''),figs,after)
     return len(LESSON)
 for _r in REG:
-    if _r[4] and _r[0] not in ('macronutrients-fats','macronutrients-lipids'):
+    if _r[4] and _r[0] not in ('macronutrients-fats','macronutrients-lipids','food-label-tree'):
         exec(open(os.path.join(GEN,'lessons',_r[0]+'.py'),encoding='utf-8').read())

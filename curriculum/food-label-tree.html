@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Module 5 · Food Label Tree · Nutrition 101 · LeClair Institute</title><style>
+:root{--hdr:#E4E4E4;--bg:#F0F0F0;--hair:#CBCBCB;--card:#F7F7F5;--text:#2B2B2B;--muted:#6E6E6E;--line:#D9D8D4;--chip:#ECEBE7;--acc:#3E5C76;--acc-soft:#3E5C7614;--mark:#E7DCC3;--vein:.045;--serif:"Cormorant Garamond","Cormorant",Garamond,"EB Garamond",Georgia,"Times New Roman",serif;--sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+[data-theme=dark]{--hdr:#262625;--bg:#1F1F1E;--hair:#3A3936;--card:#2A2A28;--text:#E8E6E1;--muted:#A19E97;--line:#3A3936;--chip:#32322F;--acc:#8FA9C2;--acc-soft:#8FA9C21c;--mark:#5A4F38;--vein:.04}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s}
+a{color:inherit}
+.hero{position:relative;background-color:var(--hdr);color:var(--text);border-bottom:1px solid var(--hair);padding:44px 24px 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:var(--vein);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='260' viewBox='0 0 900 260'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round'%3E%3Cpath d='M-20 70 C 120 40, 210 120, 340 90 S 560 20, 700 70 S 860 140, 940 100' stroke-width='1.1'/%3E%3Cpath d='M-20 190 C 90 170, 180 210, 300 175 S 520 120, 640 160 S 820 230, 940 190' stroke-width='.8'/%3E%3Cpath d='M180 -10 C 220 60, 200 120, 260 170 S 300 250, 330 280' stroke-width='.6'/%3E%3Cpath d='M610 -10 C 590 50, 640 90, 620 150 S 660 230, 650 280' stroke-width='.5'/%3E%3Cpath d='M340 90 C 380 110, 420 105, 470 130' stroke-width='.5'/%3E%3C/g%3E%3C/svg%3E");background-size:900px 260px;background-repeat:repeat}
+[data-theme=dark] .hero::before{filter:invert(1)}
+.hero .in{max-width:920px;margin:auto;position:relative}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3.1rem);letter-spacing:.005em;line-height:1.1;margin:8px 0 0}
+.hero p{margin:10px 0 0;color:var(--muted);max-width:640px}
+#theme{position:absolute;right:0;top:0;background:transparent;border:1px solid var(--hair);color:var(--muted);border-radius:4px;padding:5px 12px;cursor:pointer;font:inherit;font-size:.72rem;text-transform:uppercase;letter-spacing:.16em}#theme:hover{color:var(--text);border-color:var(--muted)}
+.crumbs,.topnav{font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}.crumbs a,.topnav a{text-decoration:none;border-bottom:1px solid var(--hair);padding-bottom:1px}.crumbs a:hover,.topnav a:hover{color:var(--acc);border-color:var(--acc)}
+.hero .pnl{font-size:.9rem;margin-top:14px}.hero .pnl a{color:var(--acc);text-decoration:none;border-bottom:1px solid currentColor}
+.lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-weight:500}
+:root{--c-macronutrients:#A86B53;--c-micronutrients:#66788A;--c-bioactives:#7A8256;--c-additives:#A98A4E;--c-flavorings:#9C8A70;--c-processing:#3E5C76;--c-antinutrients:#7E7A72}
+[data-theme=dark]{--c-macronutrients:#C99582;--c-micronutrients:#9AAABA;--c-bioactives:#A8AF85;--c-additives:#CDB07A;--c-flavorings:#C4B49A;--c-processing:#8FA9C2;--c-antinutrients:#ABA79E}
+h1,h2,h3,.badge,.findex a,.mn,.pn a,.top>.row{font-variant-numeric:lining-nums}
+.topnav{margin-bottom:6px}
+.sbar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.sbox{max-width:920px;margin:auto;padding:12px 24px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#q{flex:1 1 260px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:4px;padding:11px 14px;font:inherit;font-size:1rem;outline:none}#q::placeholder{color:var(--muted)}#q:focus{border-color:var(--acc)}
+.btn{border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:4px;padding:9px 12px;font:inherit;font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;cursor:pointer}.btn:hover{color:var(--text);border-color:var(--muted)}
+#info{font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);padding:0 4px}
+main{max-width:920px;margin:32px auto 80px;padding:0 24px}ul{list-style:none;margin:0;padding:0}
+.top{background:var(--card);border:1px solid var(--line);border-radius:6px;margin-bottom:14px;overflow:hidden}
+.kids{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s ease}.kids>ul{overflow:hidden;min-height:0}.open>.kids{grid-template-rows:1fr}
+.kids>ul>li{margin-left:14px;padding-left:14px;border-left:1px solid var(--line)}
+.top>.kids>ul{padding:0 14px 14px 8px}
+.row{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:4px;cursor:pointer;user-select:none}.row:hover{background:var(--chip)}
+.top>.row{padding:18px 20px;font-family:var(--serif);font-weight:500;font-size:1.5rem;letter-spacing:.01em}
+.top>.row .ico{width:22px;height:1px;background:var(--a);flex:none}
+.tw{width:12px;color:var(--muted);transition:transform .2s;flex:none;font-size:.6rem}.open>.row .tw{transform:rotate(90deg)}.top>.row .tw{color:var(--a)}
+.nm{flex:1}.cnt{font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.1em;color:var(--a);border:1px solid color-mix(in srgb,var(--a) 45%,transparent);border-radius:3px;padding:1px 8px}
+.leaf>.row{font-weight:400}.leaf>.row .tw{transform:none}.dot{width:5px;height:5px;border-radius:50%;background:var(--a);opacity:.75;flex:none;margin:0 4px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px 14px;margin:2px 0 10px 12px;font-size:.9rem;line-height:1.55}
+.card .k{font-size:.64rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);font-weight:500;margin-top:8px}.card .k:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:5px}.chip{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:3px;padding:3px 10px;font:inherit;font-size:.8rem;cursor:pointer}.chip:hover{border-color:var(--acc);color:var(--acc)}
+.kids>ul>li.bnote{border-left:1px solid var(--a);margin:4px 0 8px 12px;padding:8px 12px;font-size:.86rem;line-height:1.5;color:var(--muted);background:transparent;font-family:var(--serif);font-size:1.02rem;font-style:italic}
+.hidden{display:none!important}mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 2px}
+@media(max-width:600px){.hero{padding:22px 18px 26px}#theme{position:static;margin-bottom:12px}.sbox{padding:10px 16px}main{padding:0 14px;margin-top:20px}.kids>ul>li{margin-left:6px;padding-left:9px}.card{margin-left:4px}.top>.row{font-size:1.3rem;padding:15px 16px}}
+.pn{display:flex;justify-content:space-between;gap:14px;max-width:920px;margin:40px auto 60px;padding:0 24px}.pn a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 18px;text-decoration:none;font-family:var(--serif);font-size:1.25rem;font-variant-numeric:lining-nums}.pn a:hover{border-color:var(--acc)}.pn a.nx{text-align:right}.pn small{display:block;font-family:var(--sans);font-size:.64rem;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:2px}@media(max-width:600px){.pn{flex-direction:column;padding:0 12px}}
+.ai{color:var(--acc);font-weight:600;letter-spacing:.01em}.brand{display:inline-block;margin-bottom:10px;font-family:var(--serif);font-size:1.25rem;font-weight:500;letter-spacing:.02em;text-decoration:none;color:var(--text)}.brand:hover{color:var(--text)}.brand:hover .ai{text-decoration:underline;text-underline-offset:3px}</style></head><body>
+<div class="hero"><div class="in"><button id="theme">Dark</button><div><a class="brand" href="../">LeCl<span class="ai">ai</span>r Institute</a></div><nav class="crumbs"><a href="../">Home</a> › <a href="./">Nutrition 101</a> › Module 5</nav><h1>Module 5 · Food Label Tree</h1><p>Over 1,000 nutrients, bioactives, additives, flavor compounds and processing by-products from the back of food labels — what they are, what they do, and where they come from.</p><p class="pnl">Previous lesson: <a href="final-review.html">Module 4 · Final Review</a></p></div></div>
+<div class="sbar"><div class="sbox"><input id="q" placeholder="Search a compound or food — salmon, B12, E211, omega-3…"><button class="btn" id="ex">Expand all</button><button class="btn" id="co">Collapse all</button><span id="info"></span></div></div>
+<main><ul id="tree"></ul></main><nav class="pn"><a class="pv" href="final-review.html"><small>← Previous lesson</small>Module 4 · Final Review</a><span style="flex:1"></span></nav><script src="../data.js"></script><script>
+const T=window.TREE,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+(function pre(n){n.c=n.children?n.children.reduce((a,x)=>a+pre(x),0):1;n.t=(n.name+' '+(n.what||'')+' '+(n.does||'')+' '+(n.found||'')+' '+(n.note||'')).toLowerCase();return n.c})(T);
+let Q='';const hl=n=>{const i=Q?n.toLowerCase().indexOf(Q):-1;return i<0?esc(n):esc(n.slice(0,i))+'<mark>'+esc(n.slice(i,i+Q.length))+'</mark>'+esc(n.slice(i+Q.length))};
+function node(n,d,kids,open){const li=document.createElement('li');li.n=n;li.kids=kids;const r=document.createElement('div');r.className='row';li.appendChild(r);let h='';
+ if(d==0){li.className='top';li.dataset.cat=n.name;li.style.setProperty('--a',`var(--c-${n.name.toLowerCase()},#3E5C76)`);h='<span class="ico"></span>'}
+ if(n.children){li.classList.add('br');r.innerHTML=h+`<span class="tw">▶</span><span class="nm">${hl(n.name)}</span><span class="cnt">${kids?kids.c:n.c}</span>`;r.onclick=()=>tog(li);if(open)tog(li,true,true)}
+ else{li.classList.add('leaf');r.innerHTML='<span class="dot"></span><span class="nm">'+hl(n.name)+'</span>';const c=document.createElement('div');c.className='card';
+  c.innerHTML=`<div class="k">What</div>${esc(n.what)}`+(n.does?`<div class="k">In the body</div>${esc(n.does)}`:'')+(n.found?`<div class="k">Found in</div><div class="chips">${n.found.split(/[,;] /).map(f=>`<button class="chip">${esc(f)}</button>`).join('')}</div>`:'');li.appendChild(c)}
+ return li}
+function fill(li,deep){if(li.filled)return;li.filled=1;const k=document.createElement('div');k.className='kids';const ul=document.createElement('ul');if(li.n.note){const b=document.createElement('li');b.className='bnote';b.innerHTML=hl(li.n.note);ul.appendChild(b)}
+ (li.kids?li.kids.list:li.n.children.map(x=>({n:x}))).forEach(x=>ul.appendChild(node(x.n,1,x.k,deep||!!x.k)));k.appendChild(ul);li.appendChild(k)}
+function tog(li,o,deep){if(!li.classList.contains('br'))return;o=o??!li.classList.contains('open');if(o)fill(li,deep);
+ if(o&&!deep)requestAnimationFrame(()=>li.classList.add('open'));else li.classList.toggle('open',o)}
+const tree=document.getElementById('tree');
+function render(){tree.textContent='';if(!Q){T.children.forEach(c=>tree.appendChild(node(c,0)));info.textContent=T.c+' items';return}
+ let m=0;const f=n=>{const self=n.t.includes(Q);if(!n.children){if(self)m++;return self?{n,c:1}:null}
+  const list=n.children.map(f).filter(Boolean);if(!list.length&&!self)return null;
+  if(!list.length&&self){m++;return {n,k:{list:n.children.map(x=>({n:x})),c:n.c}}}return {n,k:{list,c:list.reduce((a,x)=>a+(x.c||x.k.c),0)},c:0}};
+ T.children.map(f).filter(Boolean).forEach(x=>tree.appendChild(node(x.n,0,x.k,true)));info.textContent=m+' match'+(m==1?'':'es')}
+let tm;q.oninput=()=>{clearTimeout(tm);tm=setTimeout(()=>{Q=q.value.trim().toLowerCase();render()},180)};
+ex.onclick=()=>{const go=li=>{tog(li,true,true);li.querySelectorAll(':scope>.kids>ul>li.br').forEach(go)};[...tree.children].forEach(go)};
+co.onclick=()=>tree.querySelectorAll('li.open').forEach(l=>l.classList.remove('open'));
+tree.addEventListener('click',e=>{const c=e.target.closest('.chip');if(!c)return;q.value=c.textContent;Q=c.textContent.toLowerCase();render();window.scrollTo({top:0,behavior:'smooth'})});
+const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};
+let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
+theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};
+render();
+</script></body></html>

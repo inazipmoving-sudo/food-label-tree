@@ -2,6 +2,9 @@
 # Ball-and-stick images live in curriculum/img/fats/fig-NN.png (made by /workspace/nutrition/fats_basics.py + fats_merged.py).
 # The FIG list below builds the legacy SVG figures; only the tree, melting-point chart and body-fat diagram are reused.
 import math, os
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'site.py'),encoding='utf-8').read())  # UNIVERSITY_NAME, COURSES
+COURSE='Nutrition 101'
+CRUMB_HOME='<a href="../">Home</a> › <a href="./">'+COURSE+'</a>'
 OUT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..','curriculum')
 L=24  # bond length px
 def chain(n,dbl={},start=(0,0),ang=-30.0,first=-1):
@@ -162,9 +165,9 @@ def pn(prev=None,nxt=None):
     return o+'</nav>'
 CSS=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'curr.css')).read()
 THEME='''<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>'''
-def page(title,hero,body,extra='',head=''):
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style>{head}</head><body>
-<div class="hero"><div class="in"><button id="theme">Dark</button>{hero}</div></div>{body}{THEME}{extra}</body></html>'''
+def page(title,hero,body,extra='',head='',brand='../'):
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}{BRAND_CSS}</style>{head}</head><body>
+<div class="hero"><div class="in"><button id="theme">Dark</button>{(f'<div><a class="brand" href="{brand}">{brand_html()}</a></div>' if brand else '')}{hero}</div></div>{body}{THEME}{extra}</body></html>'''
 
 
 # ---------------- Lesson player (shared by every curriculum page) ----------------
@@ -418,17 +421,18 @@ def figure_card(n,title,art_html,caption,pre='',after='',sub=None):
             f'{pre}{art_html[12:] if art_html.startswith("<!--noart-->") else f'<div class="art">{art_html}</div>'}{f'<figcaption data-part="caption">{caption}</figcaption>' if caption else ''}{after}</figure>')
 quiz='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
 FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) in enumerate(LESSON,1)]
-lesson_page('macronutrients-fats','Module 1 · Fats · Curriculum · Food Label Tree',
- '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 10 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
+lesson_page('macronutrients-fats','Module 1 · Fats · '+COURSE+' · '+UNIVERSITY_NAME,
+ '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 10 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
  FATS_FIGS,quiz+pn(None,('Lipids Beyond Fats','macronutrients-lipids.html')))
 # Lesson registry, in course order: (slug, module no, module name, short title, live?). A lesson is live once its gen/lessons/<slug>.py exists.
-REG=[(sl,mn,mname,t,sl in ('macronutrients-fats','macronutrients-lipids') or os.path.exists(os.path.join(GEN,'lessons',sl+'.py'))) for sl,mn,mname,t in [
+REG=[(sl,mn,mname,t,sl in ('macronutrients-fats','macronutrients-lipids','food-label-tree') or os.path.exists(os.path.join(GEN,'lessons',sl+'.py'))) for sl,mn,mname,t in [
  ('macronutrients-fats','1','Macronutrients','Fats'),('macronutrients-lipids','1','Macronutrients','Lipids Beyond Fats'),
  ('macronutrients-protein','1','Macronutrients','Protein'),('macronutrients-carbohydrates','1','Macronutrients','Carbohydrates'),('macronutrients-water-ethanol','1','Macronutrients','Water and Ethanol'),
  ('micronutrients-fat-soluble-vitamins','2','Micronutrients','Fat-Soluble Vitamins'),('micronutrients-water-soluble-vitamins','2','Micronutrients','Water-Soluble Vitamins'),
  ('micronutrients-major-minerals','2','Micronutrients','Major Minerals'),('micronutrients-trace-minerals','2','Micronutrients','Trace Minerals'),
  ('additives','3','Non-Nutrients','Additives and E-Numbers'),('antinutrients','3','Non-Nutrients','Antinutrients'),('processing','3','Non-Nutrients','Processing'),
- ('bioactives','3','Non-Nutrients','Bioactives'),('flavorings','3','Non-Nutrients','Flavorings'),('final-review','4','Final Review','Final Review')]]
+ ('bioactives','3','Non-Nutrients','Bioactives'),('flavorings','3','Non-Nutrients','Flavorings'),('final-review','4','Final Review','Final Review'),
+ ('food-label-tree','5','Food Label Tree','Food Label Tree')]]
 def NEXT_OF(slug):
     live=[r for r in REG if r[4]]; i=[r[0] for r in live].index(slug)
     return (f'Module {live[i+1][1]} · {live[i+1][3]}',live[i+1][0]+'.html') if i+1<len(live) else None
@@ -444,9 +448,12 @@ for r in REG:
     MODS[-1][2].append(r)
 NFIG={'macronutrients-fats':len(LESSON),'macronutrients-lipids':N_LIPIDS}
 cards=''
+_cnt=lambda n:sum(map(_cnt,n['children'])) if 'children' in n else 1
+TREE_N=_cnt(json.load(open(os.path.join(GEN,'..','data.json'),encoding='utf-8')))
 for n,nm,rs in MODS:
-    items=''.join(f'<a class="les" href="{r[0]}.html">{r[3]} <span>{NFIG.get(r[0]) or len(json.load(open(os.path.join(GEN,"scripts",r[0]+".json")))["figures"])} figures + script →</span></a>' if r[4] else f'<div class="les off">{r[3]} <span>coming soon</span></div>' for r in rs)
+    items=''.join((f'<a class="les" href="{r[0]}.html">{r[3]} <span>{TREE_N:,} compounds · searchable tree →</span></a>' if r[0]=='food-label-tree' else f'<a class="les" href="{r[0]}.html">{r[3]} <span>{NFIG.get(r[0]) or len(json.load(open(os.path.join(GEN,"scripts",r[0]+".json")))["figures"])} figures + script →</span></a>') if r[4] else f'<div class="les off">{r[3]} <span>coming soon</span></div>' for r in rs)
     cards+=f'<section class="mod" style="--a:var(--c-{nm.lower().replace(" ","-")},var(--acc))"><div class="mh"><span class="mn">{n}</span><span class="ico"></span><h2>Module {n} · {nm}</h2></div>{items}</section>'
 
-open(os.path.join(OUT,'index.html'),'w').write(page('Curriculum · Food Label Tree','<nav class="crumbs"><a href="../">Food Label Tree</a> › Curriculum</nav><h1>Curriculum</h1><p>Lessons with numbered figures, made for teaching by phone.</p>',f'<main class="mods">{cards}</main>'))
+open(os.path.join(OUT,'index.html'),'w').write(page(COURSE+' · '+UNIVERSITY_NAME,'<nav class="crumbs"><a href="../">Home</a> › '+COURSE+'</nav><h1>'+COURSE+'</h1><p>Lessons with numbered figures, made for teaching by phone. Five modules, from the molecules in food to the full Food Label Tree.</p>',f'<main class="mods">{cards}</main>'))
 print(len(LESSON),'figures')
+exec(open(os.path.join(GEN,'site_pages.py'),encoding='utf-8').read())  # home catalog + Module 5 tree page
