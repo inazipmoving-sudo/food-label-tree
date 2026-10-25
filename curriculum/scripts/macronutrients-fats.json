@@ -3,7 +3,7 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 5,
+ "revision": 6,
  "idRevision": 4,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -441,8 +441,70 @@
      "text": "When your body is low on energy, for example between meals, during exercise or overnight, hormones like adrenaline and glucagon rise and insulin falls, and that switches on the fat-releasing enzymes in your fat tissue: adipose triglyceride lipase starts the job and hormone-sensitive lipase continues it. Together they snip a triglyceride apart into its pieces: one glycerol plus three free fatty acids. The cut happens at the ester links, where each fatty acid's carboxyl end, the part with the oxygens, was attached to the glycerol backbone; water is added at each link, so the acid head is restored. The glycerol is small and water-soluble, so it travels to the liver, which can turn it into glucose. The fatty acids don't dissolve well in blood, so they ride on a carrier protein called albumin to muscle and the heart, where they're burned for fuel. In a deeper or longer fast, the liver takes up more of them and turns part of them into ketones, a backup fuel even the brain can use. Inside the cell, the chain is chopped two carbons at a time, a process called beta-oxidation. The oxygen end is just the handle; the real energy payoff is in the long run of carbon-hydrogen bonds, which is why fat gives 9 calories per gram.",
      "verbatim": true,
      "part": "breakdown",
-     "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart; after this, the quiz is below the figures",
+     "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart; after this, Figure 10 recaps the module",
      "slug": "breakdown-and-release"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
+   "title": "Putting It All Together",
+   "subtitle": "A recap of the whole module.",
+   "segments": [
+    {
+     "id": "10.1",
+     "seg": 1,
+     "name": "The Whole Family",
+     "text": "That's the whole module, so Figure 10 puts it all together. This is the family tree from Figure 1 again, but now every branch has its molecule next to it, all drawn at the same scale with every hydrogen showing. At the top is the triglyceride, the form almost all fat takes in food and in your body: a glycerol backbone holding three fatty acids by ester links. This one carries palmitic, oleic and linoleic acid, which is typical, because every food fat is a mix. Everything below it is about those fatty-acid chains, and what sorts them into families is the double bonds between carbons: how many there are, where they sit, and which way the hydrogens point around them.",
+     "part": "family",
+     "cue": "Top node: the triglyceride, glycerol in the purple box, ester links in red; then follow the tree down",
+     "slug": "the-whole-family"
+    },
+    {
+     "id": "10.2",
+     "seg": 2,
+     "name": "Saturated",
+     "text": "Saturated fat has no double bonds at all. Every carbon in the tail holds as many hydrogens as it can, so the zigzag runs straight, the chains pack tightly, and the fat is solid at room temperature. Our example is stearic acid, eighteen carbons, which melts at about sixty-nine degrees Celsius. You find saturated fat in butter, cheese, beef and lamb fat, coconut and cocoa butter. Mainstream guidelines suggest keeping it under about ten percent of daily calories, because eating a lot of it raises LDL cholesterol.",
+     "part": "sat",
+     "cue": "Saturated node: the straight stearic chain, then Found in",
+     "slug": "saturated"
+    },
+    {
+     "id": "10.3",
+     "seg": 3,
+     "name": "Unsaturated",
+     "text": "Unsaturated fats have at least one carbon-carbon double bond, and in food these are almost always cis, so each one puts a kink in the chain and the fat usually stays liquid. Monounsaturated means exactly one: oleic acid, the main fat in olive oil, avocados and many nuts. Polyunsaturated means two or more, and that's where the omega families come in, named by counting from the tail end. Alpha-linolenic acid, ALA, has its first double bond three carbons from the end, so it's an omega-3, from flax, chia and walnuts. Linoleic acid starts at the sixth carbon from the end, so it's an omega-6, from seeds, nuts and poultry. Those two are the essential fatty acids: your body can't make them, so they have to come from food. Your body can turn some ALA into EPA and DHA, but only a small fraction, so oily fish and algae are the direct sources.",
+     "part": "unsat",
+     "cue": "Unsaturated branch: oleic (one orange kink), then Polyunsaturated: ALA (omega-3) and linoleic (omega-6)",
+     "slug": "unsaturated"
+    },
+    {
+     "id": "10.4",
+     "seg": 4,
+     "name": "Trans",
+     "text": "Trans fat has the same kind of double bond as oleic acid, but its hydrogens sit on opposite sides, so the chain stays nearly straight and behaves like saturated fat. Elaidic acid is the classic example. Most trans fat in food was made by partially hydrogenating unsaturated oils, the dashed arrow in Figure 1, and small natural amounts come from dairy, beef and lamb. It raises LDL and lowers HDL, which is why industrial trans fat is now banned in the US.",
+     "part": "trans",
+     "cue": "Trans node: the nearly straight elaidic chain; compare with oleic above",
+     "slug": "trans"
+    },
+    {
+     "id": "10.5",
+     "seg": 5,
+     "name": "What Happens in the Body",
+     "text": "Now quickly, figure by figure. Fats and oils are the same kind of molecule, and packing decides solid or liquid. A bond is a shared pair of electrons, and a double bond is stiff and can't rotate. Cis kinks the chain, and trans keeps it straight. One double bond is mono, two or more is poly, and every extra kink lowers the melting point. Omega numbers count from the tail. Hydrogenation adds hydrogen, and partial hydrogenation is where most trans fat came from. Body fat is mostly unsaturated, so it stays soft at body temperature. And when you need energy, lipases cut a triglyceride into glycerol, which goes to the liver, and three fatty acids, which ride on albumin to muscle and the heart and are burned two carbons at a time by beta-oxidation, with ketones as a backup in a longer fast. The energy is in the carbon-hydrogen bonds.",
+     "part": "recap",
+     "cue": "Recap list, Figures 2 to 9; each Figure link jumps back to that figure",
+     "slug": "what-happens-in-the-body"
+    },
+    {
+     "id": "10.6",
+     "seg": 6,
+     "name": "Worth Knowing",
+     "text": "A few extras worth knowing. Fat gives about nine calories per gram, against about four for carbohydrate and protein and about seven for alcohol. Vitamins A, D, E and K dissolve in fat, so you absorb them along with the fat in a meal. Cholesterol is also a lipid, but it isn't a triglyceride at all: it's a sterol, built from four fused carbon rings. Your liver makes most of what you need, and in food it comes only from animal products. LDL and HDL aren't two kinds of cholesterol; they're the particles that carry it in the blood. And no food fat is just one type: olive oil is about three-quarters monounsaturated and butter about two-thirds saturated. The table sums up the fat types side by side. This is general education, not medical advice, and the quiz is right below.",
+     "part": "extras",
+     "cue": "Worth knowing: energy per gram, the comparison table, essential fatty acids, vitamins, cholesterol",
+     "slug": "worth-knowing"
     }
    ]
   }
@@ -452,6 +514,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-fats.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 9,
- "segmentCount": 41
+ "figureCount": 10,
+ "segmentCount": 47
 }

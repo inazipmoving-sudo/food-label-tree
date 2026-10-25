@@ -240,7 +240,7 @@ def lesson_page(module,title,hero,figs_html,after_html='',out_name=None):
     return d
 
 # ---------------- Merged lesson: Module 1 · Fats (basic -> complex) ----------------
-SUB={2:'Same kind of molecule, different packing.'}  # muted subtitle under a figure title
+SUB={2:'Same kind of molecule, different packing.',10:'A recap of the whole module.'}  # muted subtitle under a figure title
 SVG_TREE,SVG_MELT,SVG_BODY=FIG[0][2],FIG[10][2],FIG[11][2]
 import struct
 def _png_size(path):
@@ -266,6 +266,7 @@ LESSON=[
 ('Hydrogenation: how oils become solid fats','Factories add hydrogen gas with a nickel catalyst and heat. Full hydrogenation removes every double bond and gives saturated fat. Partial hydrogenation stops partway: some double bonds remain and some flip from cis to trans, which is where most trans fat in food came from (Figure 4). Industrial trans fat is banned in the US and limited in the EU.',None),
 ('Melting points and body fat','<b>Top:</b> approximate melting points of the pure fatty acids; the dashed line is room temperature. Straighter chains (saturated, trans) melt higher, every cis kink lowers the melting point, and longer chains melt higher. <b>Bottom:</b> stored human fat is mostly triglycerides, and most of their fatty acids are unsaturated, with oleic acid the single most common, so it stays soft at body temperature (about 37 °C). Fat gets firmer as it cools, so it is firmer near the cooler skin and softer deeper in.','<div class="artstack">'+SVG_MELT.replace('<svg ','<svg data-part="melt" ',1)+SVG_BODY.replace('<svg ','<svg data-part="bodyfat" ',1)+'</div>'),
 ('Breaking a fat down for energy','<b>A, many kinds:</b> the glycerol backbone has 3 slots and any fatty acid can sit in any of them, so with about 20 common fatty acids there are about 8,000 possible triglycerides: tristearin (S-S-S), triolein (O-O-O) and a mixed palmitic-oleic-linoleic one are three examples, and every food fat is a mix of many. <b>B, breakdown:</b> when energy is low, adrenaline and glucagon rise and insulin falls, switching on the lipases in fat tissue (ATGL, then HSL). They cut the 3 ester links, adding water at each, to release 1 glycerol and 3 free fatty acids. Glycerol goes to the liver, which can make glucose from it; the fatty acids ride on albumin in the blood to muscle and the heart and are burned for fuel by beta-oxidation, 2 carbons at a time. In a deeper fast the liver turns some into ketones. The energy is in the C–H bonds of the chain, which is why fat gives 9 kcal per gram.','IMG2'),
+('Putting It All Together','','F10'),
 ]
 ARTIMG={9:[('fig-09-kinds-1.png','A, many kinds: tristearin, three stearic acids (S S S) on glycerol slots 1 to 3','kinds'),
            ('fig-09-kinds-2.png','triolein, three oleic acids (O O O), each with one cis kink','kinds'),
@@ -297,6 +298,7 @@ QUIZ=[('How many bonds does carbon make, and how many does hydrogen make?','Carb
 ('Do steroid hormones come from saturated fat?','No. They are made from cholesterol, which the liver can build from fat breakdown products (Figure 4, pink box).'),
 ('What happens to a triglyceride when your body needs energy?','Lipases (ATGL, then HSL) cut its 3 ester links, adding water at each, into 1 glycerol and 3 free fatty acids. Glycerol goes to the liver, which can make glucose from it; the fatty acids ride on albumin to muscle and the heart to be burned for fuel, and in a deeper fast the liver turns some into ketones (Figure 9).')]
 def art(i,t,a):
+    if a=='F10': return F10_HTML
     if i==9:  # panel A images, then panel B heading/intro as page text, then panel B images
         A,B=ARTIMG[9][:3],ARTIMG[9][3:]
         return ''.join(img(fn,i,al,pt) for fn,al,pt in A)+'</div>'+F9B+'<div class="art">'+''.join(img(fn,i,al,pt) for fn,al,pt in B)
@@ -311,14 +313,70 @@ def callout(i):
     if i in BODY: o+='<aside class="body" data-part="body"><div class="bh">What it does in your body <span>Fig '+str(i)+'</span></div>'+''.join(f'<p><b>{t}:</b> {x}</p>' for t,x in BODY[i])+'</aside>'
     if i in NOTE: o+=f'<aside class="enote" data-part="note">{NOTE[i]}</aside>'
     return o
+# ---------------- Figure 10: Putting It All Together (recap) ----------------
+def _mol(name,alt):
+    w,h=_png_size(os.path.join(OUT,'img','fats',f'fig-10-{name}.png'))
+    return f'<div class="rn-mol"><img src="img/fats/fig-10-{name}.png" width="{w}" height="{h}" alt="Figure 10: {alt}" loading="lazy" decoding="async"></div>'
+def _node(cls,part,name,defn,mol='',ex='',found='',kids=''):
+    # each node is its own box; children hang off a rail beside it (not inside it), so every molecule can share one display width
+    return (f'<div class="rbranch"><div class="rn {cls}"{f' data-part="{part}"' if part else ''}><div class="rn-h"><span class="rn-k">{name}</span><span class="rn-d">{defn}</span></div>'
+            f'{mol}{f'<p class="rn-x">{ex}</p>' if ex else ''}{f'<p class="rn-f"><b>Found in</b> {found}</p>' if found else ''}</div>'
+            f'{f'<div class="rkids {cls.split()[0]}">{kids}</div>' if kids else ''}</div>')
+F10_TREE=('<div class="part">The whole family, molecule by molecule</div><div class="rtree">'+_node('rn-root','family','Fats: the triglyceride','Almost all fat in food and in your body: a glycerol backbone holding 3 fatty acids by ester links. 9 kcal per gram.',
+  _mol('triglyceride','a triglyceride: glycerol (purple box) holding palmitic, oleic and linoleic acid by ester links (red), every hydrogen shown'),
+  'Example: palmitic + oleic + linoleic on glycerol (C<sub>55</sub>H<sub>100</sub>O<sub>6</sub>). Every food fat is a mix of many triglycerides.',
+  'all food fats and oils: nuts, seeds, olives, avocados, dairy, meat, fish and egg yolk',
+  _node('rn-s','sat','Saturated','No C=C double bonds: every tail carbon holds as many hydrogens as it can, so the chain is straight.',
+    _mol('stearic','stearic acid, a straight saturated chain of 18 carbons, every hydrogen shown'),'Example: stearic acid, C18:0 (C<sub>18</sub>H<sub>36</sub>O<sub>2</sub>) · straight · melts at about 69 °C, so solid',
+    'butter, cheese, beef and lamb fat, coconut, cocoa butter')
+  +_node('rn-u rn-g','unsat','Unsaturated','At least one C=C double bond; in food these are almost all cis, so each one kinks the chain and the fat is usually liquid.','','','',
+    _node('rn-u','','Monounsaturated','Exactly one cis double bond.',
+      _mol('oleic','oleic acid, 18 carbons with one cis double bond (orange) at C9=C10 that kinks the chain'),'Example: oleic acid, C18:1 cis-9 (C<sub>18</sub>H<sub>34</sub>O<sub>2</sub>) · one kink · melts at about 13 °C, so liquid',
+      'olives and olive oil, avocados, almonds, hazelnuts, macadamias, pecans')
+    +_node('rn-u rn-g','','Polyunsaturated','Two or more cis double bonds. Named by counting from the tail (ω) end.','','','',
+      _node('rn-u','','Omega-3','First double bond at the 3rd carbon from the tail end. ALA is essential: it must come from food.',
+        _mol('ala','alpha-linolenic acid, ALA, 18 carbons with three cis double bonds (orange), the first at omega-3'),'Example: alpha-linolenic acid, ALA, C18:3 (C<sub>18</sub>H<sub>30</sub>O<sub>2</sub>) · three kinks',
+        'flaxseed, chia seeds, walnuts, hemp seeds; EPA and DHA come from oily fish (salmon, sardines, mackerel) and algae')
+      +_node('rn-u','','Omega-6','First double bond at the 6th carbon from the tail end. Linoleic acid is essential: it must come from food.',
+        _mol('linoleic','linoleic acid, LA, 18 carbons with two cis double bonds (orange), the first at omega-6'),'Example: linoleic acid, LA, C18:2 (C<sub>18</sub>H<sub>32</sub>O<sub>2</sub>) · two kinks · melts at about −5 °C',
+        'sunflower and pumpkin seeds, walnuts, pine nuts, soybeans, corn, poultry, eggs')))
+  +_node('rn-t','trans','Trans','A double bond with its hydrogens on opposite sides, so the chain stays nearly straight and packs like saturated fat. Mostly made from unsaturated oils by partial hydrogenation (Figure 7).',
+    _mol('elaidic','elaidic acid, 18 carbons with one trans double bond (orange) at C9=C10; the chain stays nearly straight'),'Example: elaidic acid, C18:1 trans-9 (C<sub>18</sub>H<sub>34</sub>O<sub>2</sub>) · nearly straight · melts at about 45 °C',
+    'partially hydrogenated oils (now banned in the US); small natural amounts in milk, butter, cheese, beef and lamb (mainly vaccenic acid)'))
+  +'</div><p class="rleg"><span class="k c"></span>carbon <span class="k h"></span>hydrogen <span class="k o"></span>oxygen <span class="k d"></span>C=C double bond · every image is drawn at the same scale with every hydrogen shown</p>')
+RECAP=[(2,'Fats and oils are the same thing','Both are triglycerides made of C, H and O. Straight saturated chains pack tightly and are solid at room temperature; cis-kinked chains can\'t pack and stay liquid.'),
+(3,'The molecule','A glycerol backbone holds 3 fatty acids by ester links. Carbon makes 4 bonds, oxygen 2, hydrogen 1. A bond is a shared pair of electrons; a double bond is shorter, stronger and can\'t rotate.'),
+(4,'Saturated, cis and trans','Saturated: no double bonds, straight. Cis: hydrogens on the same side, so the chain kinks. Trans: opposite sides, so it stays nearly straight and packs like saturated fat.'),
+(5,'Mono vs poly','Monounsaturated has one double bond (oleic acid, olive oil); polyunsaturated has two or more (linoleic acid, seed oils). Each cis kink lowers the melting point.'),
+(6,'Omega-3 vs omega-6','Omega numbers count from the tail end. ALA (omega-3) and linoleic acid (omega-6) are essential; EPA and DHA come directly from fish or algae.'),
+(7,'Hydrogenation','Adding hydrogen removes double bonds. Full hydrogenation gives saturated fat; partial hydrogenation flips some cis bonds to trans, the source of most trans fat in food.'),
+(8,'Melting points and body fat','Straighter and longer chains melt higher. Body fat is mostly unsaturated triglycerides, oleic acid most of all, so it stays soft at body temperature.'),
+(9,'Breaking a fat down for energy','Lipases (ATGL, then HSL) cut the 3 ester links. Glycerol goes to the liver, which can make glucose; fatty acids ride on albumin to muscle and the heart and are burned by beta-oxidation, 2 carbons at a time. In a deeper fast the liver makes ketones. The energy is in the C–H bonds.')]
+F10_RECAP=('<section class="rsec" data-part="recap"><div class="part">Recap, figure by figure</div><ol class="recap">'+''.join(f'<li><a class="rfig" href="#fig-{n}">Figure {n}</a><div><b>{t}.</b> {x}</div></li>' for n,t,x in RECAP)+'</ol></section>')
+TBL=[('Saturated','0','straight','solid','butter, cheese, beef, lamb, coconut','Raises LDL; US and WHO guidelines advise under 10% of daily calories.'),
+('Monounsaturated','1 (cis)','one kink','liquid','olives, avocados, almonds, hazelnuts','Linked to better cholesterol levels when it replaces saturated fat.'),
+('Omega-3 (poly)','2 or more (cis), first at ω3','several kinks','liquid','flax, chia, walnuts, oily fish','ALA is essential; oily fish about twice a week is a common recommendation.'),
+('Omega-6 (poly)','2 or more (cis), first at ω6','several kinks','liquid','sunflower and pumpkin seeds, walnuts, soybeans','Linoleic acid is essential; replacing saturated fat with it lowers LDL.'),
+('Trans','1 or more (trans)','nearly straight','solid or semi-solid','small natural amounts in dairy, beef, lamb','Raises LDL and lowers HDL; industrial trans fat is banned in the US.')]
+TH=['Type','C=C double bonds','Chain shape','At room temperature','Whole-food examples','Mainstream health note']
+F10_EXTRA=('<section class="rsec qa" data-part="extras"><div class="part">Worth knowing</div>'
+ '<h4>Energy per gram</h4><p>Fat gives about 9 kcal per gram; carbohydrate and protein about 4, and alcohol about 7. A tablespoon of oil (about 14 g) is roughly 120 kcal.</p>'
+ '<h4>The fat types side by side</h4><div class="rtbl-wrap"><table class="rtbl"><thead><tr>'+''.join(f'<th>{h}</th>' for h in TH)+'</tr></thead><tbody>'
+ +''.join('<tr>'+''.join(f'<td data-l="{h}">{v}</td>' for h,v in zip(TH,r))+'</tr>' for r in TBL)+'</tbody></table></div>'
+ '<h4>The two essential fatty acids</h4><p>Your body can\'t make ALA (omega-3) or linoleic acid (omega-6), so they must come from food. It can turn ALA into EPA and DHA, but only a small fraction gets converted, so oily fish and algae are the direct sources of EPA and DHA.</p>'
+ '<h4>Fat-soluble vitamins</h4><p>Vitamins A, D, E and K dissolve in fat, not water, and are absorbed along with the fat in a meal.</p>'
+ '<h4>Cholesterol is a different lipid</h4><p>Cholesterol is not a triglyceride: it is a sterol, built from four fused carbon rings, with no glycerol and no fatty acids. Your liver makes most of what you need; it goes into cell membranes and is the raw material for steroid hormones, vitamin D and bile acids. In food it comes only from animal products (eggs, meat, dairy, shellfish). LDL and HDL are not kinds of cholesterol but lipoprotein particles that carry cholesterol and triglycerides in the blood.</p>'
+ '<h4>Every food fat is a mix</h4><p>No food fat is just one type. Olive oil is about three-quarters monounsaturated, butter about two-thirds saturated, and coconut oil over 80% saturated; a fat is named for the type that dominates.</p>'
+ '<p class="fnote">General education, not medical advice. Health notes follow mainstream guidance (US Dietary Guidelines, WHO, American Heart Association).</p></section>')
+F10_HTML='<!--noart-->'+F10_TREE+F10_RECAP+F10_EXTRA
 def figure_card(n,title,art_html,caption,pre='',after=''):
     """One numbered figure card. Give images/boxes a data-part="..." so script segments can point at them."""
     return (f'<figure class="fig" id="fig-{n}" data-fig="{n}"><div class="fh" data-part="head"><a class="badge" href="#fig-{n}">{n}</a><div><div class="fl">Figure {n}</div><h3>{title}</h3>{f'<p class="fsub">{SUB[n]}</p>' if n in SUB else ''}</div></div>'
-            f'{pre}<div class="art">{art_html}</div>{f'<figcaption data-part="caption">{caption}</figcaption>' if caption else ''}{after}</figure>')
+            f'{pre}{art_html[12:] if art_html.startswith("<!--noart-->") else f'<div class="art">{art_html}</div>'}{f'<figcaption data-part="caption">{caption}</figcaption>' if caption else ''}{after}</figure>')
 quiz='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
 FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) in enumerate(LESSON,1)]
 lesson_page('macronutrients-fats','Module 1 · Fats · Curriculum · Food Label Tree',
- '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 9 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, and finally how your body breaks a fat down for energy. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
+ '<nav class="crumbs"><a href="../">Food Label Tree</a> › <a href="./">Curriculum</a> › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 10 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
  FATS_FIGS,quiz)
 # Old step-by-step page -> tiny redirect (maps #step-N to the new #fig-N)
 STEP2FIG={1:3,2:3,3:3,4:3,5:3,6:3,7:4,8:4,9:4,10:4,11:4,12:5,13:2,14:2,15:6,16:3}
