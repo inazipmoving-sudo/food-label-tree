@@ -1,0 +1,458 @@
+{
+ "schemaVersion": 1,
+ "module": "micronutrients-major-minerals",
+ "title": "Module 2 · Major Minerals",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "segmentFields": {
+  "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
+  "cue": "optional: what to point at; not spoken",
+  "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
+  "subtitle": "figure-level: short muted subtitle under the title"
+ },
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "The Major Mineral Family Tree",
+   "subtitle": "Seven minerals needed in amounts over 100 mg a day.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "Minerals",
+     "text": "Minerals are single elements your body needs but can't make. This lesson covers the seven major minerals, the ones you need in amounts over about a hundred milligrams a day.",
+     "part": "head",
+     "cue": "Title, then the root box",
+     "slug": "minerals"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Electrolytes",
+     "text": "On the left are the electrolytes: sodium, chloride and potassium. They're charged particles dissolved in your body fluids, and they control fluid balance and carry nerve signals.",
+     "part": "tree",
+     "cue": "The left branch",
+     "slug": "electrolytes"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Bone Minerals and Sulfur",
+     "text": "In the middle are the bone minerals: calcium, phosphorus and magnesium. On the right is sulfur, which comes to you mainly in protein. Each box links to its figure.",
+     "part": "tree",
+     "cue": "The middle and right branches",
+     "slug": "bone-minerals-and-sulfur"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Major Is About Amount",
+     "text": "Major means you need more of them, not that they matter more. Trace minerals like iron and zinc are needed in smaller amounts but are just as essential.",
+     "part": "label",
+     "cue": "First box",
+     "slug": "major-is-about-amount"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Elements and Ions",
+     "text": "Because a mineral is an element, it can't be destroyed by cooking or made by the body. And in food and in your body, minerals almost always exist as charged atoms called ions.",
+     "part": "label",
+     "cue": "The last two boxes",
+     "slug": "elements-and-ions"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "From Atoms to Ions",
+   "subtitle": "How minerals get their charge, and the salt crystal.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Giving and Taking",
+     "text": "A sodium atom easily gives away one electron. With one more proton than electrons, it becomes a positive sodium ion. A chlorine atom takes one electron and becomes a negative chloride ion.",
+     "part": "ions",
+     "cue": "Sodium ion, then chloride ion",
+     "slug": "giving-and-taking"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Ionic Bonds",
+     "text": "Opposite charges attract. That attraction, an ionic bond, holds salt together. Notice chloride is bigger than sodium; it really is.",
+     "part": "ions",
+     "box": "note",
+     "slug": "ionic-bonds"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "The Salt Crystal",
+     "text": "In a salt crystal, sodium and chloride ions alternate. Every sodium is surrounded by chlorides, and every chloride by sodiums. Here the sticks show neighbors, not shared electrons.",
+     "part": "salt",
+     "cue": "Markers 1 and 2",
+     "slug": "the-salt-crystal"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "Different Sizes",
+     "text": "Here are the other ions at the same scale. Magnesium and calcium give away two electrons each, so they carry a charge of two plus. Potassium is noticeably bigger than sodium, and cells use that difference to tell them apart.",
+     "part": "sizes",
+     "cue": "Left to right",
+     "slug": "different-sizes"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "The Seven",
+     "text": "This table lists the main form of each major mineral in your body, and its charge. Phosphorus and sulfur travel as phosphate and sulfate, small groups of atoms with oxygen.",
+     "part": "charges",
+     "cue": "The table, row by row",
+     "slug": "the-seven"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "Sodium and Chloride",
+   "subtitle": "Salt in water, fluid balance and stomach acid.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "Salt Dissolves",
+     "text": "When salt meets water, water molecules crowd around each ion. A sodium ion attracts the slightly negative oxygen ends of water; a chloride ion attracts the slightly positive hydrogen ends. Surrounded like this, the ions drift apart, and salt dissolves.",
+     "part": "dissolve",
+     "cue": "Markers 1 to 3",
+     "slug": "salt-dissolves"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Water Follows Sodium",
+     "text": "Sodium is the main positive ion in the fluid outside your cells. Where sodium goes, water follows, so sodium sets your fluid volume and helps control blood pressure.",
+     "part": "dissolve",
+     "box": "body",
+     "slug": "water-follows-sodium"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "Sodium Facts",
+     "text": "You need about fifteen hundred milligrams a day. Running short from diet is rare. The common problem is too much: in many people it raises blood pressure, which increases the risk of heart disease and stroke. US guidance is to keep under twenty-three hundred milligrams; most Americans eat about thirty-four hundred.",
+     "part": "na",
+     "cue": "The facts",
+     "slug": "sodium-facts"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Stomach Acid",
+     "text": "Chloride is the main negative ion outside cells, paired with sodium. Your stomach also uses it to make hydrochloric acid, which splits in water into a hydrogen ion, making the stomach acidic, and chloride.",
+     "part": "cl",
+     "cue": "Marker 1",
+     "slug": "stomach-acid"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "Chloride Facts",
+     "text": "Chloride comes mostly with salt, so the concern with too much is really the sodium. Seaweed, tomatoes, celery and olives also supply it.",
+     "part": "cl",
+     "box": "body",
+     "slug": "chloride-facts"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "Potassium",
+   "subtitle": "The ion inside your cells.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "Potassium Chloride",
+     "text": "Potassium chloride forms the same grid as table salt, with bigger potassium ions in place of sodium. It's the main ingredient of salt substitutes.",
+     "part": "kcl",
+     "cue": "Marker 1",
+     "slug": "potassium-chloride"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Inside and Outside",
+     "text": "About ninety-eight percent of your potassium is inside your cells, while most sodium stays outside.",
+     "part": "pump",
+     "cue": "The first two steps",
+     "slug": "inside-and-outside"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "The Pump",
+     "text": "A protein in every cell membrane, the sodium-potassium pump, keeps it that way, pushing three sodium ions out and bringing two potassium ions in, using energy from ATP. The difference in charge lets nerves fire, muscles contract and your heart beat steadily.",
+     "part": "pump",
+     "cue": "The last two steps",
+     "slug": "the-pump"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Potassium Facts",
+     "text": "Adults need about twenty-six hundred to thirty-four hundred milligrams a day, and many people eat less, which is linked with higher blood pressure. Beans, potatoes, squash, leafy greens, bananas and yogurt are rich sources.",
+     "part": "k",
+     "cue": "The facts",
+     "slug": "potassium-facts"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "A Caution",
+     "text": "Healthy kidneys remove extra potassium from food. With kidney disease or some blood-pressure medicines it can build up and disturb the heart rhythm, so salt substitutes and supplements need a doctor's advice.",
+     "part": "k",
+     "box": "note",
+     "slug": "a-caution"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "Calcium",
+   "subtitle": "Bones, teeth and a steady blood level.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Calcium Carbonate",
+     "text": "A calcium ion carries two plus charges. Here it's paired with carbonate, a carbon with three oxygens and two minus charges. Calcium carbonate is chalk, eggshell and seashell, and the most common calcium supplement.",
+     "part": "ca",
+     "cue": "Markers 1 and 2",
+     "slug": "calcium-carbonate"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "Where It Is",
+     "text": "About ninety-nine percent of your calcium is in bones and teeth, as hard crystals with phosphate. The other one percent runs muscle contraction, nerve signals and blood clotting.",
+     "part": "where",
+     "cue": "The first two boxes",
+     "slug": "where-it-is"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Bone Is a Bank",
+     "text": "Your body keeps blood calcium in a narrow range. When you eat too little, hormones and vitamin D draw it from bone, so low intake shows up years later as weak bones.",
+     "part": "where",
+     "cue": "The third box",
+     "slug": "bone-is-a-bank"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Calcium Facts",
+     "text": "Adults need a thousand to twelve hundred milligrams a day. Too little over time leads to osteoporosis; too much, usually from supplements, can cause kidney stones. Dairy, sardines and canned salmon with bones, calcium-set tofu, kale and bok choy are good sources.",
+     "part": "cafacts",
+     "cue": "The facts",
+     "slug": "calcium-facts"
+    },
+    {
+     "id": "5.5",
+     "seg": 5,
+     "name": "Spinach",
+     "text": "Spinach has plenty of calcium, but a compound called oxalate binds most of it, so little is absorbed. We'll meet oxalate in the antinutrients lesson.",
+     "part": "cafacts",
+     "box": "note",
+     "slug": "spinach"
+    }
+   ]
+  },
+  {
+   "fig": 6,
+   "anchor": "fig-6",
+   "title": "Phosphorus and Magnesium",
+   "subtitle": "Phosphate in bone and ATP; magnesium for enzymes.",
+   "segments": [
+    {
+     "id": "6.1",
+     "seg": 1,
+     "name": "Phosphate",
+     "text": "In your body, phosphorus is almost always phosphate: one phosphorus atom with four oxygens. At the pH of blood, much of it carries one hydrogen.",
+     "part": "phos",
+     "cue": "Markers 1 and 2",
+     "slug": "phosphate"
+    },
+    {
+     "id": "6.2",
+     "seg": 2,
+     "name": "Phosphorus Facts",
+     "text": "About eighty-five percent is in bone, with calcium. Phosphate is also part of DNA, of cell membranes and of ATP. Adults need seven hundred milligrams a day, easily supplied by dairy, meat, fish, beans and nuts. Shortage is rare; build-up is a problem in kidney disease.",
+     "part": "phos",
+     "box": "body",
+     "slug": "phosphorus-facts"
+    },
+    {
+     "id": "6.3",
+     "seg": 3,
+     "name": "Magnesium in Water",
+     "text": "Magnesium is small and doubly charged, so it holds six water molecules tightly around it, much more tightly than sodium does.",
+     "part": "mgaq",
+     "cue": "Markers 1 and 2",
+     "slug": "magnesium-in-water"
+    },
+    {
+     "id": "6.4",
+     "seg": 4,
+     "name": "Magnesium Facts",
+     "text": "About half your magnesium is in bone. It's needed by over three hundred enzymes, and ATP works mostly paired with magnesium. Magnesium sits at the center of chlorophyll, which is why green vegetables are a good source, along with seeds, nuts, beans and whole grains.",
+     "part": "mgaq",
+     "box": "body",
+     "slug": "magnesium-facts"
+    },
+    {
+     "id": "6.5",
+     "seg": 5,
+     "name": "Too Little or Too Much",
+     "text": "Many people eat less magnesium than recommended, though true deficiency is uncommon. Food can't give you too much, but supplements over three hundred and fifty milligrams a day can cause diarrhea.",
+     "part": "mgaq",
+     "box": "note",
+     "slug": "too-little-or-too-much"
+    }
+   ]
+  },
+  {
+   "fig": 7,
+   "anchor": "fig-7",
+   "title": "Sulfur",
+   "subtitle": "In protein: methionine, cysteine and sulfate.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "Sulfur Amino Acids",
+     "text": "Most of your sulfur comes in two amino acids. Methionine, which is essential, has sulfur in the middle of its side chain. Cysteine has an SH group at the end.",
+     "part": "samino",
+     "cue": "Markers 1 and 2",
+     "slug": "sulfur-amino-acids"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "Disulfide Bridges",
+     "text": "Two cysteines in a protein can join through their sulfurs, forming a bridge that holds proteins like keratin, in hair and nails, in shape.",
+     "part": "samino",
+     "box": "note",
+     "slug": "disulfide-bridges"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "Sulfate",
+     "text": "Extra sulfur from amino acids becomes sulfate, one sulfur with four oxygens. It's used to build cartilage and to help the liver clear some drugs; the rest leaves in urine.",
+     "part": "sulfate",
+     "cue": "Marker 3",
+     "slug": "sulfate"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "Sulfur Facts",
+     "text": "Sulfur is the third most plentiful mineral in your body. It's part of glutathione, an important antioxidant, and of thiamin and biotin. There's no separate requirement: enough protein supplies enough sulfur. Garlic, onions and cabbage-family vegetables also contain sulfur compounds that give them their smell.",
+     "part": "sulfate",
+     "box": "body",
+     "slug": "sulfur-facts"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
+   "title": "Salt and the Label",
+   "subtitle": "Daily Values, and salt versus sodium.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "On the Label",
+     "text": "Sodium must appear on every Nutrition Facts label. Since the 2016 update, potassium and calcium must too. The Daily Values are listed in the table.",
+     "part": "dv",
+     "cue": "The table, row by row",
+     "slug": "on-the-label"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Salt Versus Sodium",
+     "text": "Salt is about forty percent sodium. One teaspoon of salt has about twenty-three hundred milligrams of sodium, a whole day's Daily Value. Sea salt, kosher salt and pink salt are all mostly sodium chloride.",
+     "part": "salt",
+     "cue": "The first two boxes",
+     "slug": "salt-versus-sodium"
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
+     "name": "Where It Comes From",
+     "text": "Most sodium in US diets comes from packaged and restaurant foods, not the salt shaker, so cooking from whole foods makes it easier to control.",
+     "part": "salt",
+     "cue": "The third box",
+     "slug": "where-it-comes-from"
+    },
+    {
+     "id": "8.4",
+     "seg": 4,
+     "name": "Five and Twenty",
+     "text": "A quick guide: five percent of the Daily Value or less is low, twenty percent or more is high. Aim low for sodium, high for potassium and calcium.",
+     "part": "pct",
+     "cue": "The two boxes",
+     "slug": "five-and-twenty"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
+   "title": "Putting It All Together",
+   "subtitle": "The whole lesson in one table, plus a few extras.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "One Table",
+     "text": "Here are the seven major minerals in one table: their main jobs, what happens with too little or too much, and whole-food sources.",
+     "part": "table",
+     "cue": "The table, row by row",
+     "slug": "one-table"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Worth Knowing",
+     "text": "A few extras. Cooking can't destroy minerals, but boiling leaches potassium into the water, so soups keep it. Hard tap water supplies some calcium and magnesium. And bone is living tissue, rebuilt throughout life. Try the quiz below.",
+     "part": "worth",
+     "cue": "Worth knowing, then down to the quiz",
+     "slug": "worth-knowing"
+    }
+   ]
+  }
+ ],
+ "page": "curriculum/micronutrients-major-minerals.html",
+ "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/micronutrients-major-minerals.html",
+ "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/micronutrients-major-minerals.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 9,
+ "segmentCount": 40
+}
