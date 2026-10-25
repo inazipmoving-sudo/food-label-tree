@@ -1,0 +1,450 @@
+{
+ "schemaVersion": 1,
+ "module": "macronutrients-carbohydrates",
+ "title": "Module 1 · Carbohydrates",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "segmentFields": {
+  "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
+  "cue": "optional: what to point at; not spoken",
+  "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
+  "subtitle": "figure-level: short muted subtitle under the title"
+ },
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "The Carbohydrate Family Tree",
+   "subtitle": "Sugars, starch and fiber, and how they show up on a label.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "What Carbohydrates Are",
+     "text": "Carbohydrates are the third energy-giving macronutrient, after fat and protein. Every gram you digest gives about four calories, the same as protein. They're your body's quickest fuel, and the brain and red blood cells depend on the glucose they supply.",
+     "part": "head",
+     "cue": "Title, then the Carbohydrate box at the top",
+     "slug": "what-carbohydrates-are"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Sugars",
+     "text": "On the left are the sugars: small carbohydrates with one or two units. Single sugars like glucose, fructose and galactose are the building blocks. Double sugars like table sugar and milk sugar are two of them joined. Below them are sugar alcohols, made from sugars, and added sugars, the ones put in during cooking or manufacturing.",
+     "part": "tree",
+     "cue": "Left branch: Sugars, then its four boxes",
+     "slug": "sugars"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Starch",
+     "text": "In the middle is starch: long chains of glucose that plants use to store energy. It comes in a straight form, amylose, and a branched form, amylopectin. Some starch escapes digestion and acts like fiber; that's resistant starch. Your own body stores glucose in a very branched form called glycogen.",
+     "part": "tree",
+     "cue": "Middle branch: Starch, Amylose, Amylopectin, Resistant, Glycogen",
+     "slug": "starch"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Fiber",
+     "text": "On the right is fiber: carbohydrate your own enzymes can't break down. Soluble fiber dissolves into a gel; insoluble fiber adds bulk. Both are still important, as we'll see. Each box links to the figure that explains it.",
+     "part": "tree",
+     "cue": "Right branch: Fiber, Soluble, Insoluble",
+     "slug": "fiber"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "On the Label",
+     "text": "On a nutrition label, Total Carbohydrate includes all of these: starch, sugars, fiber and sugar alcohols. Dietary fiber and total sugars are listed inside it, and added sugars inside total sugars. The Daily Values are 275 grams for total carbohydrate, 28 for fiber and 50 for added sugars.",
+     "part": "label",
+     "cue": "The three boxes under the tree",
+     "slug": "on-the-label"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "From Atoms to a Sugar",
+   "subtitle": "Carbon, hydrogen and oxygen; a six-carbon chain that closes into a ring.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Three Kinds of Atom",
+     "text": "Carbohydrates are built from just three kinds of atom. Carbon makes four bonds, like methane. Oxygen makes two, like water. Hydrogen makes one. Unlike protein, there's no nitrogen.",
+     "part": "atoms",
+     "cue": "Methane, then water",
+     "slug": "three-kinds-of-atom"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Hydrated Carbon",
+     "text": "Many carbohydrates have the formula C n H 2 O n: one carbon for every water's worth of hydrogen and oxygen. That's where the name comes from, carbo-hydrate, hydrated carbon. There's no actual water inside; the atoms are just in that ratio. Glucose is C6H12O6.",
+     "part": "atoms",
+     "box": "note",
+     "slug": "hydrated-carbon"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "Glucose as a Chain",
+     "text": "Here's glucose drawn as a chain of six carbons. Carbon one, on the left, carries a C double bond O: that's the reactive end. Carbons two to five each carry an OH group, and carbon six on the right is a CH2OH. All those OH groups are why sugar dissolves so easily and tastes sweet.",
+     "part": "chain",
+     "cue": "Markers 1, 2, 3 on the chain",
+     "slug": "glucose-as-a-chain"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "Closing the Ring",
+     "text": "In water, the chain bends round and the oxygen of the OH on carbon five attacks carbon one. That oxygen becomes part of a ring with five carbons, and carbon one's old C double bond O turns into a new OH. Nothing is added or lost; it's still C6H12O6.",
+     "part": "ring",
+     "cue": "Markers 1 and 2, then the ring",
+     "slug": "closing-the-ring"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "Drawn in 3D",
+     "text": "More than ninety-nine percent of glucose is in the ring form at any moment. The rings on this page are drawn as 3D models, tilted so you can see which groups point up and which point down, because that turns out to matter a great deal.",
+     "part": "ring",
+     "cue": "Markers 3 and 4 on the ring",
+     "slug": "drawn-in-3d"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "The Single Sugars",
+   "subtitle": "Glucose, galactose and fructose: same formula, different shapes.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "Alpha and Beta",
+     "text": "When the ring closes, the new OH on carbon one can point either way. Pointing down, below the ring, it's alpha-glucose; pointing out to the side, it's beta-glucose. In water they keep switching, about one third alpha and two thirds beta. Once glucose is locked into a chain, the choice is fixed, and that one direction decides whether you can digest it.",
+     "part": "anomers",
+     "cue": "Markers 1 and 2",
+     "slug": "alpha-and-beta"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Glucose",
+     "text": "Glucose is the main sugar in your blood and the fuel every cell can use. Your brain alone uses roughly a hundred and twenty grams a day. If you eat little carbohydrate, your liver makes glucose from protein and from the glycerol part of fats. Blood glucose that stays high, as in diabetes, damages blood vessels, nerves, kidneys and eyes over time. You find it free in fruit and honey, and as starch in grains, potatoes and beans.",
+     "part": "anomers",
+     "box": "body",
+     "slug": "glucose"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "Galactose",
+     "text": "Galactose is glucose with one OH flipped: the one on carbon four points up instead of to the side. That's the only difference. Galactose is rarely free in food; it comes as half of milk sugar, lactose. The liver turns it into glucose.",
+     "part": "galactose",
+     "cue": "Markers 1 and 2: carbon 4",
+     "slug": "galactose"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Fructose",
+     "text": "Fructose has the same formula again, C6H12O6, but its C double bond O is on carbon two, so it closes into a five-sided ring. It's the sweetest natural sugar, found in fruit and honey. This one is drawn flat, showing every atom but not which way each OH points.",
+     "part": "fructose",
+     "cue": "Markers 1 and 2",
+     "slug": "fructose"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "How Fructose Is Handled",
+     "text": "Fructose is absorbed more slowly than glucose and handled mainly by the liver, which turns most of it into glucose, glycogen, lactate or fat. In whole fruit it comes with fiber and water. Large amounts as added sugar are linked to fatty liver and higher blood fats.",
+     "part": "fructose",
+     "box": "body",
+     "slug": "how-fructose-is-handled"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "The Double Sugars",
+   "subtitle": "Two single sugars joined by a glycosidic bond.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "The Glycosidic Bond",
+     "text": "Two single sugars join through an oxygen bridge called a glycosidic bond. As with the peptide bond, a water molecule is released when it forms, and added back when it's digested. Here, in maltose, carbon one of the first glucose, with its alpha OH pointing down, links to carbon four of the second. That's an alpha one-to-four link, the same one that holds starch together.",
+     "part": "maltose",
+     "cue": "Markers 1, 2, 3",
+     "slug": "the-glycosidic-bond"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Sucrose",
+     "text": "Sucrose, table sugar, is glucose joined to fructose. Both reactive carbons are used in the link. It's naturally in fruit, carrots and beets, and maple sap, and refined from sugar cane and beets. The enzyme sucrase on the gut wall splits it apart.",
+     "part": "sucrose",
+     "cue": "Markers 1, 2, 3",
+     "slug": "sucrose"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "Lactose",
+     "text": "Lactose, milk sugar, is galactose joined to glucose, but this time with a beta link: the bridge runs out level with the rings. Lactase, an enzyme on the gut wall, splits it. Babies make plenty of lactase; most adults worldwide make much less after childhood.",
+     "part": "lactose",
+     "cue": "Markers 1, 2, 3",
+     "slug": "lactose"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Lactose Intolerance",
+     "text": "If lactase is low, lactose reaches the colon, where bacteria ferment it into gas, causing bloating, cramps and loose stools. That's lactose intolerance. Yogurt and hard cheeses have much of their lactose already used up by bacteria, so they're often fine.",
+     "part": "lactose",
+     "box": "body",
+     "slug": "lactose-intolerance"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "Starch and Glycogen",
+   "subtitle": "Long glucose chains: how plants and you store fuel.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Amylose",
+     "text": "Starch is how plants store glucose. Amylose is a single long chain, hundreds to thousands of glucoses, all joined by alpha one-to-four links. The alpha link puts a slight turn in each step, so the chain coils into a helix. Each hexagon in these cartoons stands for one glucose ring.",
+     "part": "starch",
+     "cue": "Stage 1: the coiling chain",
+     "slug": "amylose"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "Amylopectin",
+     "text": "Amylopectin is the same chain with branches. Every twenty to thirty glucoses, a new chain starts from carbon six, an alpha one-to-six link. Most starch is about three quarters amylopectin and a quarter amylose.",
+     "part": "starch",
+     "cue": "Stage 2: the branches",
+     "slug": "amylopectin"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Glycogen",
+     "text": "Animals, including you, store glucose as glycogen. It's like amylopectin but much more branched, every eight to twelve glucoses, built around a protein core. All those branch ends mean enzymes can release lots of glucose at once when you need it.",
+     "part": "starch",
+     "cue": "Stage 3: the bushy ball",
+     "slug": "glycogen"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Cooking Starch",
+     "text": "Cooking changes starch. Heat and water make starch granules swell and burst, which is why rice softens and gravy thickens, and it makes starch much easier to digest. When cooked starch cools, some chains line up again into resistant starch, which acts like fiber. You'll find starch in grains, potatoes, beans, lentils and green bananas.",
+     "part": "cook",
+     "cue": "The three boxes",
+     "slug": "cooking-starch"
+    }
+   ]
+  },
+  {
+   "fig": 6,
+   "anchor": "fig-6",
+   "title": "Fiber",
+   "subtitle": "Beta links you can’t digest, and the bacteria that can.",
+   "segments": [
+    {
+     "id": "6.1",
+     "seg": 1,
+     "name": "Alpha Versus Beta",
+     "text": "Here are two glucoses joined two ways, at the same scale. Maltose has an alpha link, like starch. Cellobiose has a beta link, like cellulose. Same atoms, same formula; only the direction of one bond differs. Your enzymes fit the alpha shape and cut it, but no human enzyme can cut the beta link.",
+     "part": "ab",
+     "cue": "Markers 1 and 2",
+     "slug": "alpha-versus-beta"
+    },
+    {
+     "id": "6.2",
+     "seg": 2,
+     "name": "Cellulose",
+     "text": "So cellulose, the main material of plant cell walls, passes through you undigested. Its beta links keep each chain straight, so chains pack side by side and lock together with hydrogen bonds, making strong fibers. Cows and termites only digest it because microbes in their guts can.",
+     "part": "cellulose",
+     "cue": "The stacked chains",
+     "slug": "cellulose"
+    },
+    {
+     "id": "6.3",
+     "seg": 3,
+     "name": "Soluble and Insoluble",
+     "text": "Fiber comes in two broad kinds. Soluble fiber, like the beta-glucan in oats and the pectin in apples, dissolves into a gel; it slows digestion and helps lower LDL cholesterol. Insoluble fiber, like the cellulose in bran and vegetable skins, holds water and adds bulk, helping food move through. Resistant starch behaves much like soluble fiber.",
+     "part": "types",
+     "cue": "The table, row by row",
+     "slug": "soluble-and-insoluble"
+    },
+    {
+     "id": "6.4",
+     "seg": 4,
+     "name": "Food for Bacteria",
+     "text": "In your colon, bacteria ferment fiber into short-chain fatty acids: acetate, propionate and butyrate, this small molecule. Butyrate is the main fuel of the cells lining your colon. That's how fiber still gives about two calories per gram.",
+     "part": "butyrate",
+     "cue": "Marker 1, then the facts",
+     "slug": "food-for-bacteria"
+    },
+    {
+     "id": "6.5",
+     "seg": 5,
+     "name": "How Much Fiber",
+     "text": "The US target is fourteen grams of fiber for every thousand calories, about twenty-five grams a day for women and thirty-eight for men under fifty, and most people get about half that. Too little is linked to constipation and, over the long term, more heart disease, type 2 diabetes and colon cancer. Too much too fast causes gas, so increase it slowly and drink enough water.",
+     "part": "need",
+     "cue": "The three boxes",
+     "box": "body",
+     "slug": "how-much-fiber"
+    }
+   ]
+  },
+  {
+   "fig": 7,
+   "anchor": "fig-7",
+   "title": "Digestion and Blood Sugar",
+   "subtitle": "Cut down to single sugars, absorbed, and kept in balance.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "In the Mouth",
+     "text": "Carbohydrate digestion starts in your mouth: amylase in saliva begins cutting starch into shorter pieces. That's why bread starts to taste sweet if you chew it long enough. In the stomach, acid stops the amylase.",
+     "part": "path",
+     "cue": "Mouth, then Stomach",
+     "slug": "in-the-mouth"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "In the Small Intestine",
+     "text": "In the small intestine, amylase from the pancreas cuts starch down to maltose, and enzymes on the gut wall, maltase, sucrase and lactase, split the double sugars. Only single sugars can be absorbed. They go to the liver first. Fiber and resistant starch carry on to the colon.",
+     "part": "path",
+     "cue": "Small intestine, Into the blood, Colon",
+     "slug": "in-the-small-intestine"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "Insulin",
+     "text": "After a meal, blood glucose rises. The pancreas releases insulin, which lets muscle, fat and liver cells take glucose in. Extra glucose is stored as glycogen, and beyond that, as fat.",
+     "part": "balance",
+     "cue": "The first three steps",
+     "slug": "insulin"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "Glucagon",
+     "text": "Between meals, as glucose falls, the pancreas releases glucagon, and the liver breaks down its glycogen to send glucose back into the blood. Your liver holds roughly a hundred grams of glycogen; your muscles hold a few hundred grams more, but only for their own use.",
+     "part": "balance",
+     "cue": "The last two steps",
+     "slug": "glucagon"
+    },
+    {
+     "id": "7.5",
+     "seg": 5,
+     "name": "Glycemic Index and Needs",
+     "text": "The glycemic index compares how fast a food raises blood glucose with pure glucose. Fiber, fat, protein and intact grains slow it down. The US recommended amount of carbohydrate for adults is a hundred and thirty grams a day, based on the brain's glucose use, and the acceptable range is forty-five to sixty-five percent of calories.",
+     "part": "store",
+     "cue": "The three boxes",
+     "slug": "glycemic-index-and-needs"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
+   "title": "Sugars on the Label",
+   "subtitle": "Total sugars, added sugars and sugar alcohols.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "Sugars in Whole Foods",
+     "text": "Plenty of whole foods contain sugar. Fruit has fructose, glucose and sucrose; milk has lactose; sweet vegetables and sprouted grains have their own. In whole foods, sugars come packaged with fiber, water, vitamins and minerals.",
+     "part": "sugars",
+     "cue": "The table",
+     "slug": "sugars-in-whole-foods"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Total and Added Sugars",
+     "text": "On the label, total sugars counts every single and double sugar, whether it grew in the food or was added. The added sugars line counts only what was put in, including honey, syrups and concentrated juice. Its Daily Value is fifty grams, and the Dietary Guidelines advise keeping added sugars under ten percent of calories.",
+     "part": "label",
+     "cue": "The first two boxes",
+     "slug": "total-and-added-sugars"
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
+     "name": "Sugar Alcohols",
+     "text": "Sugar alcohols, or polyols, are sugars whose C double bond O has gained two hydrogens. Here glucose becomes sorbitol: now every carbon carries an OH. They're only partly absorbed, so they give fewer calories, raise blood glucose less, and don't cause cavities. They're counted in total carbohydrate, not in sugars.",
+     "part": "sorbitol",
+     "cue": "Markers 1 and 2",
+     "slug": "sugar-alcohols"
+    },
+    {
+     "id": "8.4",
+     "seg": 4,
+     "name": "Sorbitol",
+     "text": "Sorbitol is found naturally in prunes, pears, apples and stone fruit. In large amounts it draws water into the gut and ferments, causing gas and diarrhea, which is part of why prunes have their reputation.",
+     "part": "sorbitol",
+     "box": "body",
+     "slug": "sorbitol"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
+   "title": "Putting It All Together",
+   "subtitle": "The whole lesson in one table, plus a few extras.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "One Table",
+     "text": "Here's every carbohydrate in this lesson in one table: what it's made of, the bond that holds it, whether you can digest it, and where you find it. Notice how much depends on the bond: starch and cellulose are both just glucose.",
+     "part": "table",
+     "cue": "The table, row by row",
+     "slug": "one-table"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Worth Knowing",
+     "text": "A few extras. Brown, raw and white sugar are all almost entirely sucrose. Honey is mostly free fructose and glucose, and shouldn't be given to babies under one. Whole grains keep the bran and germ, with their fiber, vitamins and minerals; refined grains are mostly starch. And bread tastes sweet as you chew because amylase is already making maltose. That's carbohydrates. Try the quiz below.",
+     "part": "worth",
+     "cue": "Worth knowing, then down to the quiz",
+     "slug": "worth-knowing"
+    }
+   ]
+  }
+ ],
+ "page": "curriculum/macronutrients-carbohydrates.html",
+ "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/macronutrients-carbohydrates.html",
+ "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-carbohydrates.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 9,
+ "segmentCount": 39
+}
