@@ -1,0 +1,321 @@
+{
+ "citric": {
+  "units": 6.0,
+  "hunits": 4.804,
+  "formula": "C6H8O7",
+  "anchors": {
+   "acid": [
+    25.0,
+    59.66
+   ],
+   "acid2": [
+    75.0,
+    59.66
+   ],
+   "acid3": [
+    50.0,
+    20.82
+   ],
+   "oh": [
+    50.0,
+    62.45
+   ]
+  }
+ },
+ "curcumin": {
+  "units": 14.819,
+  "hunits": 6.156,
+  "formula": "C21H20O6",
+  "anchors": {
+   "ring": [
+    13.0,
+    75.64
+   ],
+   "mid": [
+    53.9,
+    67.51
+   ],
+   "oh": [
+    13.0,
+    43.15
+   ]
+  }
+ },
+ "allura": {
+  "units": 12.052,
+  "hunits": 6.026,
+  "formula": "C18H14N2O8S2 2-",
+  "anchors": {
+   "azo": [
+    49.14,
+    51.71
+   ],
+   "so3": [
+    16.81,
+    22.67
+   ],
+   "so3b": [
+    88.67,
+    22.67
+   ]
+  }
+ },
+ "tio2": {
+  "units": 3.1,
+  "hunits": 1.0,
+  "formula": "TiO2",
+  "anchors": {
+   "ti": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "sorbic": {
+  "units": 6.565,
+  "hunits": 3.57,
+  "formula": "C6H8O2",
+  "anchors": {
+   "acid": [
+    82.41,
+    63.23
+   ],
+   "chain": [
+    17.6,
+    36.77
+   ]
+  }
+ },
+ "benzoic": {
+  "units": 5.15,
+  "hunits": 4.921,
+  "formula": "C7H6O2",
+  "anchors": {
+   "acid": [
+    69.52,
+    69.89
+   ],
+   "ring": [
+    36.5,
+    63.24
+   ]
+  }
+ },
+ "nitrite": {
+  "units": 2.732,
+  "hunits": 1.5,
+  "formula": "NO2-",
+  "anchors": {
+   "n": [
+    50.0,
+    33.33
+   ]
+  }
+ },
+ "so2": {
+  "units": 2.732,
+  "hunits": 1.5,
+  "formula": "O2S",
+  "anchors": {
+   "s": [
+    50.0,
+    33.33
+   ]
+  }
+ },
+ "ascorbic": {
+  "units": 6.214,
+  "hunits": 4.356,
+  "formula": "C6H8O6",
+  "anchors": {
+   "ene": [
+    70.52,
+    39.11
+   ]
+  }
+ },
+ "bht": {
+  "units": 7.337,
+  "hunits": 6.293,
+  "formula": "C15H24O",
+  "anchors": {
+   "oh": [
+    49.69,
+    18.03
+   ],
+   "tb": [
+    73.29,
+    33.92
+   ],
+   "tb2": [
+    26.08,
+    33.92
+   ]
+  }
+ },
+ "bha": {
+  "units": 5.583,
+  "hunits": 6.791,
+  "formula": "C11H16O2",
+  "anchors": {
+   "oh": [
+    65.29,
+    16.71
+   ],
+   "tb": [
+    34.27,
+    31.43
+   ],
+   "ome": [
+    65.29,
+    75.61
+   ]
+  }
+ },
+ "phosphoric": {
+  "units": 3.66,
+  "hunits": 3.33,
+  "formula": "H3O4P",
+  "anchors": {
+   "p": [
+    50.0,
+    45.05
+   ]
+  }
+ },
+ "monostearin": {
+  "units": 6.486,
+  "hunits": 18.688,
+  "formula": "C21H42O4",
+  "anchors": {
+   "tail": [
+    82.17,
+    20.0
+   ],
+   "head": [
+    35.92,
+    10.74
+   ]
+  }
+ },
+ "galacturonic": {
+  "units": 5.66,
+  "hunits": 5.902,
+  "formula": "C6H10O7",
+  "anchors": {
+   "acid": [
+    32.33,
+    76.85
+   ]
+  }
+ },
+ "bicarbonate": {
+  "units": 3.304,
+  "hunits": 2.5,
+  "formula": "HCO3-",
+  "anchors": {
+   "c": [
+    41.35,
+    60.0
+   ]
+  }
+ },
+ "glutamate": {
+  "units": 6.196,
+  "hunits": 4.16,
+  "formula": "C5H8NO4-",
+  "anchors": {
+   "aa": [
+    36.02,
+    56.01
+   ],
+   "coo": [
+    77.95,
+    43.99
+   ]
+  }
+ },
+ "na": {
+  "units": 1.0,
+  "hunits": 1.0,
+  "formula": "Na+",
+  "anchors": {
+   "c": [
+    50.0,
+    50.0
+   ]
+  }
+ },
+ "aspartame": {
+  "units": 8.853,
+  "hunits": 8.214,
+  "formula": "C14H18N2O5",
+  "anchors": {
+   "phe": [
+    54.23,
+    84.88
+   ],
+   "asp": [
+    86.96,
+    26.99
+   ],
+   "ome": [
+    12.89,
+    26.99
+   ],
+   "amide": [
+    49.07,
+    43.07
+   ]
+  }
+ },
+ "sucrose": {
+  "units": 9.825,
+  "hunits": 6.442,
+  "formula": "C12H22O11",
+  "anchors": {
+   "o": [
+    10.04,
+    49.22
+   ],
+   "o2": [
+    50.78,
+    31.91
+   ],
+   "o3": [
+    89.51,
+    46.39
+   ]
+  }
+ },
+ "sucralose": {
+  "units": 8.807,
+  "hunits": 6.442,
+  "formula": "C12H19Cl3O8",
+  "anchors": {
+   "cl": [
+    5.68,
+    49.22
+   ],
+   "cl2": [
+    51.12,
+    31.91
+   ],
+   "cl3": [
+    94.32,
+    46.39
+   ]
+  }
+ },
+ "erythritol": {
+  "units": 6.419,
+  "hunits": 3.909,
+  "formula": "C4H10O4",
+  "anchors": {
+   "c": [
+    30.34,
+    60.17
+   ]
+  }
+ }
+}

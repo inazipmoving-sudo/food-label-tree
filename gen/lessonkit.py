@@ -46,7 +46,7 @@ def mk_lmol(slug):
         return (f'<div class="lm{(" "+cls) if cls else ""}" style="--u:{d["units"]};--hu:{d["hunits"]}"{f' data-part="{part}"' if part else ''}>'
                 f'<button type="button" class="mz lmz" data-cap="{capt}" aria-label="Enlarge: {capt}"><img src="img/{slug}/{name}.png" width="{w}" height="{h}" alt="{_html.escape(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async">{ZOOM}</button>{mk}</div>')
     lm.D=D; lm.used=set(); lm.taken={}; return lm
-EL_NAMES={'c':'carbon','h':'hydrogen','o':'oxygen','n':'nitrogen','p':'phosphorus','s':'sulfur','na':'sodium','cl':'chlorine','kk':'potassium','ca':'calcium','mg':'magnesium','fe':'iron','zn':'zinc','cu':'copper','i':'iodine','se':'selenium','f':'fluorine','mn':'manganese','cr':'chromium','mo':'molybdenum','co':'cobalt'}
+EL_NAMES={'c':'carbon','h':'hydrogen','o':'oxygen','n':'nitrogen','p':'phosphorus','s':'sulfur','na':'sodium','cl':'chlorine','kk':'potassium','ca':'calcium','mg':'magnesium','fe':'iron','zn':'zinc','cu':'copper','i':'iodine','se':'selenium','f':'fluorine','mn':'manganese','cr':'chromium','mo':'molybdenum','co':'cobalt','ti':'titanium'}
 def legend(els='c h o n',note='every molecule on this page is drawn at the same scale with every hydrogen shown · tap one to enlarge it'):
     return '<p class="rleg">'+' '.join(f'<span class="k {e}"></span>{EL_NAMES[e]}' for e in els.split())+f' · {note}</p>'
 def facts(what=None,body=None,low=None,high=None,found=None):
