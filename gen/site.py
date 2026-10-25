@@ -2,8 +2,8 @@
 # Rename the university/site here; every page title and the home page heading use this one constant.
 UNIVERSITY_NAME = "LeClaire Institute"
 BRAND_EMPHASIS = "ai"  # letters of the name shown in the accent colour (same case as in the name)
-# Tagline under the site title on the home page; "" hides it (none for now).
-TAGLINE = ""
+# Tagline under the site title on the home page; "" hides it.
+TAGLINE = "The Orcutt Shortcut"
 def brand_html(name=None):
     """The name as page HTML with BRAND_EMPHASIS emphasized (accent colour, slightly heavier); plain text is used in <title>."""
     name = name or UNIVERSITY_NAME

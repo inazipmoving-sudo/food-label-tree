@@ -34,7 +34,7 @@ def _course_card(c):
             f'<p class="cmeta">{nmod} modules · {nles} lessons</p>'+(f'<ol class="cmods">{ml}</ol>' if ml else '')
             +f'<a class="les" href="{c["href"]}">Open the course <span>{c["title"]} →</span></a></section>')
 _cards=''.join(_course_card(c) for c in COURSES)
-_HOME_CSS=('<style>.hero p.tagline{margin:6px 0 0;font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.4vw,1.4rem);letter-spacing:.04em;color:var(--acc)}.course .mn{font-variant-numeric:lining-nums}.course h2 a{text-decoration:none}.course h2 a:hover{color:var(--acc)}.cdesc{margin:10px 0 0 44px;line-height:1.6}'
+_HOME_CSS=('<style>.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-variant:small-caps;font-size:clamp(1.05rem,2.2vw,1.25rem);letter-spacing:.12em;color:var(--muted)}.course .mn{font-variant-numeric:lining-nums}.course h2 a{text-decoration:none}.course h2 a:hover{color:var(--acc)}.cdesc{margin:10px 0 0 44px;line-height:1.6}'
            '.cmeta{margin:8px 0 0 44px;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}'
            '.cmods{list-style:none;margin:12px 0 0 44px;padding:0;display:flex;flex-wrap:wrap;gap:8px}.cmods li{border:1px solid var(--line);border-radius:4px;padding:4px 10px;font-size:.9rem;background:var(--bg)}'
            '.cmods li span{font-family:var(--serif);font-variant-numeric:lining-nums;color:var(--acc);margin-right:6px;font-size:1.05rem}'

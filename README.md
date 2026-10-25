@@ -3,7 +3,7 @@ A searchable, collapsible tree of 1,103 compounds and items found on food labels
 Live: https://inazipmoving-sudo.github.io/food-label-tree/curriculum/food-label-tree.html (Module 5 of Nutrition 101). The site root is now a course catalog.
 
 ## Site layout
-- `index.html` (site root): course catalog, generated from `gen/site.py` (`UNIVERSITY_NAME` = "LeClaire Institute", the one place to rename the site, shown with "ai" in the accent colour (`BRAND_EMPHASIS`) via `brand_html()` in the header of every page; `TAGLINE`, empty for now; and the `COURSES` list; add a dict to add a course) by `gen/site_pages.py`.
+- `index.html` (site root): course catalog, generated from `gen/site.py` (`UNIVERSITY_NAME` = "LeClaire Institute", the one place to rename the site, shown with "ai" in the accent colour (`BRAND_EMPHASIS`) via `brand_html()` in the header of every page; `TAGLINE` = "The Orcutt Shortcut", shown under the name on the home page; and the `COURSES` list; add a dict to add a course) by `gen/site_pages.py`.
 - `curriculum/`: the Nutrition 101 course (index, lessons, scripts). Lesson URLs are unchanged.
 - `curriculum/food-label-tree.html`: the tree app (Module 5), built from `gen/tree_page.src.html` with the course header and prev/next pager; it loads `../data.js`, so `data.js`/`data.json` stay at the root. A hash or query arriving at the root that is not a home-page anchor is forwarded to this page unchanged.
 - Everything is rebuilt by `python3 gen/curriculum.py` (after `gen/gen.py && build.py` when the tree data changes).
