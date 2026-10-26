@@ -3,8 +3,8 @@
  "module": "macronutrients-fats",
  "title": "Module 1 · Fats",
  "lang": "en",
- "revision": 13,
- "idRevision": 5,
+ "revision": 14,
+ "idRevision": 6,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -679,7 +679,7 @@
      "text": "When your body is low on energy, for example between meals, during exercise or overnight, hormones like adrenaline and glucagon rise and insulin falls, and that switches on the fat-releasing enzymes in your fat tissue: adipose triglyceride lipase starts the job and hormone-sensitive lipase continues it. Together they snip a triglyceride apart into its pieces: one glycerol plus three free fatty acids. The cut happens at the ester links, where each fatty acid's carboxyl end, the part with the oxygens, was attached to the glycerol backbone; water is added at each link, so the acid head is restored. The glycerol is small and water-soluble, so it travels to the liver, which can turn it into glucose. The fatty acids don't dissolve well in blood, so they ride on a carrier protein called albumin to muscle and the heart, where they're burned for fuel. In a deeper or longer fast, the liver takes up more of them and turns part of them into ketones, a backup fuel even the brain can use. Inside the cell, the chain is chopped two carbons at a time, a process called beta-oxidation. The oxygen end is just the handle; the real energy payoff is in the long run of carbon-hydrogen bonds, which is why fat gives 9 calories per gram.",
      "verbatim": true,
      "part": "breakdown",
-     "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart; after this, Figure 10 recaps the module",
+     "cue": "Panel B, left to right: the 3 cuts (+ H2O), glycerol and 3 fatty acids, then liver and muscle/heart; after this, Figure 11 recaps the module",
      "foodBody": [
       {
        "name": "Adrenaline",
@@ -721,14 +721,104 @@
   {
    "fig": 10,
    "anchor": "fig-10",
-   "title": "Putting It All Together",
-   "subtitle": "A recap of the whole module.",
+   "title": "Where fats are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
    "segments": [
     {
      "id": "10.1",
      "seg": 1,
+     "name": "Where Fats End Up",
+     "text": "Here's a marble statue of the body with every place fat is used or stored. Most of the fat you eat ends up as triglyceride in fat tissue, your energy store. The rest is burned for fuel or built into your cells. Tap a number to see what that place does with it.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places",
+     "slug": "where-fats-end-up"
+    },
+    {
+     "id": "10.2",
+     "seg": 2,
+     "name": "Stored Fat",
+     "text": "Fat under the skin holds most of the store, as triglycerides packed into fat cells, and it also insulates and cushions you. Fat around the organs is a smaller store that cushions the gut and kidneys; when there's a lot of it, it's linked to heart disease and type 2 diabetes.",
+     "part": "site-subq",
+     "cue": "Numbers 1 and 2: under the skin and around the organs",
+     "foodBody": [
+      {
+       "name": "Triglycerides",
+       "text": "Almost all the fat in oils, butter, meat, nuts and dairy is triglyceride. In your body, fat cells store it and release fatty acids and glycerol into the blood when energy runs low."
+      }
+     ],
+     "slug": "stored-fat"
+    },
+    {
+     "id": "10.3",
+     "seg": 3,
+     "name": "Fat as Fuel",
+     "text": "Between meals, fatty acids leave fat tissue and are burned for energy. The heart gets most of its energy this way, and muscles burn fat at rest and during long, easy exercise. The liver packs some fat into VLDL to send out, and in a long fast it turns fatty acids into ketones, which the brain can use.",
+     "part": "site-heart",
+     "cue": "Numbers 3 to 5: heart, muscle and liver",
+     "foodBody": [
+      {
+       "name": "Fatty acids",
+       "text": "Every food fat is mostly fatty acids, three to each glycerol. In your body they travel on albumin in the blood and are burned two carbons at a time for energy."
+      },
+      {
+       "name": "Ketones",
+       "text": "Food hardly contains them. Your liver makes ketones from fatty acids during a long fast or a very low-carb diet, and the brain, heart and muscles burn them for fuel."
+      }
+     ],
+     "slug": "fat-as-fuel"
+    },
+    {
+     "id": "10.4",
+     "seg": 4,
+     "name": "Fat in Every Cell",
+     "text": "Fat is also built into you. Fatty acids form the tails of the phospholipids in every cell membrane. The brain and the retina are rich in DHA, an omega-3, and myelin, the fatty wrapping that speeds nerve signals, is mostly lipid.",
+     "part": "site-brain",
+     "cue": "Numbers 6 to 9: brain, retina, myelin and membranes",
+     "foodBody": [
+      {
+       "name": "DHA",
+       "text": "Found in oily fish such as salmon and sardines, and in algae oil; your body makes only a little from ALA in flax and walnuts. It is concentrated in the membranes of the brain and retina."
+      }
+     ],
+     "slug": "fat-in-every-cell"
+    },
+    {
+     "id": "10.5",
+     "seg": 5,
+     "name": "Signals Made From Fat",
+     "text": "Some 20-carbon fatty acids become eicosanoids, short-lived local signals. Prostaglandins help protect the stomach lining, and others control inflammation, pain, clotting and blood flow wherever they're made.",
+     "part": "site-stomach",
+     "cue": "Number 10: the stomach lining",
+     "foodBody": [
+      {
+       "name": "Arachidonic acid and EPA",
+       "text": "Arachidonic acid, an omega-6, comes from meat and eggs and is made from linoleic acid in seed oils; EPA, an omega-3, comes from oily fish. Your cells turn both into eicosanoids."
+      }
+     ],
+     "slug": "signals-made-from-fat"
+    },
+    {
+     "id": "10.6",
+     "seg": 6,
+     "name": "Simplified",
+     "text": "This is simplified. Fat is in every cell and fat tissue is spread all through the body, so the numbers mark typical places, not every one.",
+     "cue": "The caption under the statue",
+     "box": "note",
+     "slug": "simplified"
+    }
+   ]
+  },
+  {
+   "fig": 11,
+   "anchor": "fig-11",
+   "title": "Putting It All Together",
+   "subtitle": "A recap of the whole module.",
+   "segments": [
+    {
+     "id": "11.1",
+     "seg": 1,
      "name": "The Whole Family",
-     "text": "That's the whole module, so Figure 10 puts it all together. This is the family tree from Figure 1 again, but now every branch has its molecule next to it, all drawn at the same scale with every hydrogen showing. At the top is the triglyceride, the form almost all fat takes in food and in your body: a glycerol backbone holding three fatty acids by ester links. This one carries palmitic, oleic and linoleic acid, which is typical, because every food fat is a mix. Everything below it is about those fatty-acid chains, and what sorts them into families is the double bonds between carbons: how many there are, where they sit, and which way the hydrogens point around them. Linoleic acid on its own is also drawn in the omega-6 row of Figure 6.",
+     "text": "That's the whole module, so Figure 11 puts it all together. This is the family tree from Figure 1 again, but now every branch has its molecule next to it, all drawn at the same scale with every hydrogen showing. At the top is the triglyceride, the form almost all fat takes in food and in your body: a glycerol backbone holding three fatty acids by ester links. This one carries palmitic, oleic and linoleic acid, which is typical, because every food fat is a mix. Everything below it is about those fatty-acid chains, and what sorts them into families is the double bonds between carbons: how many there are, where they sit, and which way the hydrogens point around them. Linoleic acid on its own is also drawn in the omega-6 row of Figure 6.",
      "part": "family",
      "cue": "Top node: the triglyceride, glycerol in the purple box, ester links in red; then follow the lines down",
      "foodBody": [
@@ -740,7 +830,7 @@
      "slug": "the-whole-family"
     },
     {
-     "id": "10.2",
+     "id": "11.2",
      "seg": 2,
      "name": "Saturated",
      "text": "Saturated fat has no double bonds at all. Every carbon in the tail holds as many hydrogens as it can, so the zigzag runs straight, the chains pack tightly, and the fat is solid at room temperature. Our example is stearic acid, eighteen carbons, which melts at about sixty-nine degrees Celsius. You find saturated fat in butter, cheese, beef and lamb fat, coconut and cocoa butter. Mainstream guidelines suggest keeping it under about ten percent of daily calories, because eating a lot of it raises LDL cholesterol.",
@@ -749,7 +839,7 @@
      "slug": "saturated"
     },
     {
-     "id": "10.3",
+     "id": "11.3",
      "seg": 3,
      "name": "Unsaturated",
      "text": "Unsaturated fats have at least one carbon-carbon double bond, and in food these are almost always cis, so each one puts a kink in the chain and the fat usually stays liquid. Monounsaturated means exactly one, and most of it is omega-9: oleic acid, the main fat in olive oil, avocados, almonds and macadamias. Your body makes oleic acid itself, so omega-9 isn't essential. Polyunsaturated means two or more, and that's where omega-3 and omega-6 come in, named by counting from the tail end. Alpha-linolenic acid, ALA, has its first double bond three carbons from the end, so it's an omega-3, from flax, chia and walnuts. Linoleic acid starts at the sixth carbon from the end, so it's an omega-6, from seeds, nuts and poultry. Those two are the essential fatty acids: your body can't make them, so they have to come from food. Your body can turn some ALA into EPA and DHA, but only a small fraction, so oily fish and algae are the direct sources. ALA, EPA and DHA are drawn side by side in the omega-3 row of Figure 6, and linoleic acid in the omega-6 row.",
@@ -758,7 +848,7 @@
      "slug": "unsaturated"
     },
     {
-     "id": "10.4",
+     "id": "11.4",
      "seg": 4,
      "name": "Trans",
      "text": "Trans fat has the same kind of double bond as oleic acid, but its hydrogens sit on opposite sides, so the chain stays nearly straight and behaves like saturated fat. Elaidic acid is the classic example. Most trans fat in food was made by partially hydrogenating unsaturated oils, the dashed arrow in Figure 1, and small natural amounts come from dairy, beef and lamb. It raises LDL and lowers HDL, which is why industrial trans fat is now banned in the US.",
@@ -767,7 +857,7 @@
      "slug": "trans"
     },
     {
-     "id": "10.5",
+     "id": "11.5",
      "seg": 5,
      "name": "Worth Knowing",
      "text": "A few extras worth knowing. Fat gives about nine calories per gram, against about four for carbohydrate and protein and about seven for alcohol. Vitamins A, D, E and K dissolve in fat, so you absorb them along with the fat in a meal. Cholesterol is also a lipid, but it isn't a triglyceride at all: it's a sterol, built from four fused carbon rings. Your liver makes most of what you need, and in food it comes only from animal products. LDL and HDL aren't two kinds of cholesterol; they're the particles that carry it in the blood. And no food fat is just one type: olive oil is about three-quarters monounsaturated and butter about two-thirds saturated. The table sums up the fat types side by side. This is general education, not medical advice, and the quiz is right below.",
@@ -776,7 +866,7 @@
      "slug": "worth-knowing"
     },
     {
-     "id": "10.6",
+     "id": "11.6",
      "seg": 6,
      "name": "Lipids in the Body",
      "text": "Lipids in the human body, by share of total body lipid. Reference adult: about 70 kilograms, with about 13.5 kilograms of lipid in all, most of it in about 15 kilograms of fat tissue. Triglycerides, about 95 percent, about 12.8 kilograms: stored fat, almost all of it in fat tissue, about 12 kilograms, with smaller stores in muscle, liver, bone marrow and blood. Phospholipids, about 4 percent, about half a kilogram: the double layer of every cell membrane, most of it in muscle, brain and liver. Cholesterol, about 1 percent, about 150 grams: mostly free cholesterol in cell membranes, about a quarter of it in the brain and nerves, plus some stored as cholesterol esters. Miscellaneous, each under 1 percent, under half a percent together, about 50 grams: glycolipids, mostly in the brain, free fatty acids, the fat-soluble vitamins A, D, E and K, coenzyme Q10, carotenoids, bile acids, steroid hormones, eicosanoids, and skin waxes and ceramides.",
@@ -819,6 +909,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-fats.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 10,
- "segmentCount": 57
+ "figureCount": 11,
+ "segmentCount": 63
 }

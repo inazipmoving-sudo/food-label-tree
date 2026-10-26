@@ -111,6 +111,7 @@ def build_lesson(slug,title,intro,LESSON,QUIZ,after_extra='',mols=None,scale=Non
     r=reg_of(slug); P,N=prev_next(slug)
     if mols is not None and scale is None and mols.used: scale=round(max(9.0,max(mols.D[n]['units'] for n in mols.used)+1.1),2)
     if scale: after_extra=f'<style>.mols .lm{{--lb:calc(100cqw / {scale})}}.mgrid{{column-gap:calc(100cqw / {scale} * .6)}}</style>'+after_extra
+    if slug in BODY_USES.LIVE: LESSON=with_uses(slug,LESSON); after_extra=after_extra+bodymap_assets()
     figs=[figure_card(i,t,h,'',sub=s) for i,(t,s,h) in enumerate(LESSON,1)]
     lq='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
     nx=f'<p class="fwd" data-part="nextlesson">Next lesson: <a href="{N[1]}">{N[0]}</a> →</p>' if N else ''

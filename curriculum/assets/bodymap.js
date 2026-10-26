@@ -72,7 +72,7 @@
     function routePanel() {
       var r = D.routes[st.route];
       panel.innerHTML = '<p class="bm-h">' + esc(r.name) + '</p><ol class="bm-list bm-steps">' + r.stops.map(function (s, i) { return '<li><span class="bm-n">' + (i + 1) + '</span><b>' + esc(s[2]) + '</b> <span class="bm-job">' + esc(s[3]) + '</span></li>'; }).join('') + '</ol>' +
-        '<p class="bm-end"><b>Ends up:</b> ' + esc(r.end) + '</p><p class="bm-simp"><b>Simplified:</b> ' + esc(r.simp) + '</p><p class="bm-les">Lesson: <a href="' + r.lesson[0] + '">' + esc(r.lesson[1]) + ' →</a></p>';
+        '<p class="bm-end"><b>Ends up:</b> ' + esc(r.end) + '</p><p class="bm-simp"><b>Simplified:</b> ' + esc(r.simp) + '</p>' + (r.lesson ? '<p class="bm-les">Lesson: <a href="' + r.lesson[0] + '">' + esc(r.lesson[1]) + ' →</a></p>' : '');
       pinHTML(r.stops.map(function (s) { return [s[0], s[1], s[2], '']; }));
     }
     function layer(l) {
@@ -138,8 +138,28 @@
     var s0 = D.start; if (s0.dive) { st.layer = D.dives[s0.dive].layer; dive(s0.dive); } else layer(s0.layer);
     if (s0.route) route(s0.route);
   }
+  function SiteMap(root) {
+    // a statue with numbered sites (bodymap_sites.py): tap a pin or a list entry to pick a site and highlight its organs
+    var D = JSON.parse($('.bm-data', root).textContent), svg = $('.bm-svg', root), sel = null;
+    function parts(keys, cls) { keys.forEach(function (k) { $$('[data-k="' + k + '"]', svg).forEach(function (e) { e.classList.add(cls); }); }); }
+    function show() {
+      $$('.hi,.hs', svg).forEach(function (e) { e.classList.remove('hi'); e.classList.remove('hs'); });
+      parts(D.all || [], 'hs');
+      if (sel) parts(D.hl[sel] || [], 'hi');
+      $$('.bm-pin', root).forEach(function (p) { p.classList.toggle('on', p.dataset.k === sel); });
+      $$('.bm-part', root).forEach(function (p) { p.classList.toggle('on', p.dataset.k === sel); });
+      var sl = $('.bm-sel', root), li = sel && $('.bm-part[data-k="' + sel + '"]', root);
+      if (sl) { sl.hidden = !li; sl.innerHTML = li ? '<b>' + $('.bm-n', li).textContent + '. ' + $('.bm-pb b', li).innerHTML + '</b>' + $('.bm-job', li).innerHTML : ''; }
+    }
+    root.addEventListener('click', function (e) {
+      var b = e.target.closest('.bm-pin,.bm-pb'); if (!b || !root.contains(b)) return;
+      sel = sel === b.dataset.k ? null : b.dataset.k; show();
+    });
+    this.apply = function (part) { var m = /^site-(.+)$/.exec(part); sel = m ? m[1] : null; show(); };
+    show();
+  }
   function init() {
-    var maps = $$('.bm').map(function (r) { var m = new BodyMap(r); r._bm = m; return m; });
+    var maps = $$('.bm').map(function (r) { var m = r.classList.contains('bm-sites') ? new SiteMap(r) : new BodyMap(r); r._bm = m; return m; });
     if (!maps.length) return;
     var sc = $('#lesson-script'), segs = {};
     if (sc) { try { JSON.parse(sc.textContent).figures.forEach(function (f) { f.segments.forEach(function (s) { segs[s.id] = { fig: f.fig, part: s.part }; }); }); } catch (e) {} }

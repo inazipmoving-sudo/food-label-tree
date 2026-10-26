@@ -404,7 +404,7 @@ T10=json.load(open(os.path.join(GEN,'data','fig10-tree.json'),encoding='utf-8'))
 def _mol(name,label,alt):
     w,h=_png_size(os.path.join(OUT,'img','fats',f'fig-10-{name}.png'))
     return (f'<div class="rn-mol"><button type="button" class="mz" data-cap="{_html.escape(label)}" aria-label="Enlarge {_html.escape(label)}">'
-            f'<img src="img/fats/fig-10-{name}.png" width="{w}" height="{h}" style="--u:{T10[name]["units"]}" alt="Figure 10: {alt}" loading="lazy" decoding="async">{ZOOM}</button></div>')
+            f'<img src="img/fats/fig-10-{name}.png" width="{w}" height="{h}" style="--u:{T10[name]["units"]}" alt="Figure 11: {alt}" loading="lazy" decoding="async">{ZOOM}</button></div>')
 def _node(key,parent,depth,cls,part,name,defn,mol='',found=''):
     return (f'<div class="rn {cls} t-{key} d{depth}" data-node="{key}"{f' data-parent="{parent}"' if parent else ''}{f' data-part="{part}"' if part else ''}>'
             f'<div class="rn-h"><span class="rn-k">{name}</span><span class="rn-d">{defn}</span></div>{mol}{f'<p class="rn-f"><b>e.g.</b> {found}</p>' if found else ''}</div>')
@@ -514,10 +514,17 @@ def figure_card(n,title,art_html,caption,pre='',after='',sub=None):
     return (f'<figure class="fig" id="fig-{n}" data-fig="{n}"><div class="fh" data-part="head"><a class="badge" href="#fig-{n}">{n}</a><div><div class="fl">Figure {n}</div><h3>{title}</h3>{f'<p class="fsub">{sub if sub is not None else SUB[n]}</p>' if (sub or (sub is None and n in SUB)) else ''}</div></div>'
             f'{pre}{art_html[12:] if art_html.startswith("<!--noart-->") else f'<div class="art">{art_html}</div>'}{f'<figcaption data-part="caption">{caption}</figcaption>' if caption else ''}{after}</figure>')
 quiz='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
-FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) in enumerate(LESSON,1)]
+# the shared marble statue (gen/bodymap*.py); every Nutrition 101 lesson gets a "Where ... is used in the body" figure before Putting It All Together
+_BM=dict(globals())   # own namespace: the statue code has its own BODY, which must not replace the Fats callouts' BODY
+for _m in ('bodymap_geo','bodymap','bodymap_widget','bodymap_sites'): exec(open(os.path.join(GEN,_m+'.py'),encoding='utf-8').read(),_BM)
+BODY_USES,uses_figure,with_uses,bodymap_assets=_BM['BODY_USES'],_BM['uses_figure'],_BM['with_uses'],_BM['bodymap_assets']
+FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) in enumerate(LESSON[:-1],1)]
+_i=len(LESSON); _BU='macronutrients-fats' in BODY_USES.LIVE
+if _BU: _ut,_us,_uh=uses_figure('macronutrients-fats'); FATS_FIGS.append(figure_card(_i,_ut,_uh,'',sub=_us))
+_t,_c,_a=LESSON[-1]; FATS_FIGS.append(figure_card(_i+_BU,_t,art(_i,_t,_a),_c,PRE.get(_i,''),callout(_i),sub=SUB.get(_i,'')))  # Putting It All Together: built as Figure 10, shown as Figure 11
 lesson_page('macronutrients-fats','Module 1 · Fats · '+COURSE+' · '+UNIVERSITY_NAME,
- '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 10 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
- FATS_FIGS,quiz+pn(None,('Other Lipids','macronutrients-lipids.html')))
+ '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 11 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, where fats are used in the body, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
+ FATS_FIGS,quiz+pn(None,('Other Lipids','macronutrients-lipids.html'))+bodymap_assets())
 # Lesson registry, in course order: (slug, module no, module name, short title, live?). A lesson is live once its gen/lessons/<slug>.py exists.
 REG=[(sl,mn,mname,t,sl in ('macronutrients-fats','macronutrients-lipids','food-label-tree') or os.path.exists(os.path.join(GEN,'lessons',sl+'.py'))) for sl,mn,mname,t in [
  ('macronutrients-fats','1','Macronutrients','Fats'),('macronutrients-lipids','1','Macronutrients','Other Lipids'),
@@ -540,7 +547,7 @@ MODS=[]
 for r in REG:
     if not MODS or MODS[-1][0]!=r[1]: MODS.append((r[1],r[2],[]))
     MODS[-1][2].append(r)
-NFIG={'macronutrients-fats':len(LESSON),'macronutrients-lipids':N_LIPIDS}
+NFIG={'macronutrients-fats':len(FATS_FIGS),'macronutrients-lipids':N_LIPIDS}
 cards=''
 _cnt=lambda n:sum(map(_cnt,n['children'])) if 'children' in n else 1
 TREE_N=_cnt(json.load(open(os.path.join(GEN,'..','data.json'),encoding='utf-8')))

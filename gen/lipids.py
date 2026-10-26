@@ -229,16 +229,16 @@ LQUIZ=[('What makes a molecule a lipid?','It is oily and doesn’t dissolve in w
 ('Which fatty acids are eicosanoids made from?','The 20-carbon fatty acids arachidonic acid (omega-6) and EPA (omega-3) (Figure 5).'),
 ('Why do vitamins A, D, E and K need some fat in the meal?','They are lipids, so they are absorbed along with fat (Figure 6).')]
 def build_lipids():
-    figs=[figure_card(i,t,h,'',sub=s) for i,(t,s,h) in enumerate(LIPID_LESSON,1)]
+    figs=[figure_card(i,t,h,'',sub=s) for i,(t,s,h) in enumerate(with_uses('macronutrients-lipids',LIPID_LESSON),1)]
     lq='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(LQUIZ,1))+'</section></main>'
     _N=NEXT_OF('macronutrients-lipids')
-    after=lq+('<main class="lp-after"><p class="fwd" data-part="nextlesson">Next lesson: <a href="'+_N[1]+'">'+_N[0]+'</a> →</p></main>' if _N else '')+pn(('Module 1 · Fats','macronutrients-fats.html'),_N)+LIPID_JS
+    after=lq+('<main class="lp-after"><p class="fwd" data-part="nextlesson">Next lesson: <a href="'+_N[1]+'">'+_N[0]+'</a> →</p></main>' if _N else '')+pn(('Module 1 · Fats','macronutrients-fats.html'),_N)+LIPID_JS+(bodymap_assets() if 'macronutrients-lipids' in BODY_USES.LIVE else '')
     lesson_page('macronutrients-lipids','Module 1 · Other Lipids · '+COURSE+' · '+UNIVERSITY_NAME,
      '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Other Lipids</h1>'
      '<p>Fats are one kind of lipid. This lesson meets the rest of the family, one group at a time: phospholipids that build every cell membrane, cholesterol and plant sterols, sphingolipids and waxes, the eicosanoid signals your body makes from fatty acids, and the fat-soluble vitamins, then puts them all in one table. Every molecule is drawn at the same scale with every hydrogen shown. The figure is on the left and the lesson script on the right; the quiz is at the end.</p>'
      '<p class="pnl">Previous lesson: <a href="macronutrients-fats.html">Module 1 · Fats</a></p>',
      figs,after)
-    return len(LIPID_LESSON)
+    return len(with_uses('macronutrients-lipids',LIPID_LESSON))
 # tree connectors (curves from the root, rails down each column) + tap-to-enlarge for every labelled molecule
 LIPID_JS=('<dialog class="lbx lbm" aria-label="Molecule, full size"><button type="button" class="lbx-x" aria-label="Close">×</button><div class="lbx-b"></div><p class="lbx-c"></p></dialog>'
  '<script>(()=>{const dlg=document.querySelector("dialog.lbm");'

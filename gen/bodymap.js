@@ -148,6 +148,8 @@
       if (sel) parts(D.hl[sel] || [], 'hi');
       $$('.bm-pin', root).forEach(function (p) { p.classList.toggle('on', p.dataset.k === sel); });
       $$('.bm-part', root).forEach(function (p) { p.classList.toggle('on', p.dataset.k === sel); });
+      var sl = $('.bm-sel', root), li = sel && $('.bm-part[data-k="' + sel + '"]', root);
+      if (sl) { sl.hidden = !li; sl.innerHTML = li ? '<b>' + $('.bm-n', li).textContent + '. ' + $('.bm-pb b', li).innerHTML + '</b>' + $('.bm-job', li).innerHTML : ''; }
     }
     root.addEventListener('click', function (e) {
       var b = e.target.closest('.bm-pin,.bm-pb'); if (!b || !root.contains(b)) return;
