@@ -3,8 +3,8 @@
  "module": "micronutrients-fat-soluble-vitamins",
  "title": "Module 2 · Fat-Soluble Vitamins",
  "lang": "en",
- "revision": 1,
- "idRevision": 1,
+ "revision": 2,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -346,11 +347,81 @@
   {
    "fig": 8,
    "anchor": "fig-8",
+   "title": "Where fat-soluble vitamins are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "Where Vitamins A, D, E and K Go",
+     "text": "Here's the statue with every place the fat-soluble vitamins are used or stored. Because they dissolve in fat, they're absorbed with fat and can be stored, mostly in the liver and fat tissue. Tap a number to see what that place does.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Vitamin A",
+     "text": "In the eye, vitamin A becomes retinal, the part of rhodopsin that catches light, so a shortage causes night blindness first. It also keeps the skin and the linings of the gut and lungs healthy. The liver stores most of your vitamin A.",
+     "part": "site-eyes",
+     "cue": "Numbers 1 to 3: eyes, liver and skin",
+     "foodBody": [
+      {
+       "name": "Retinol and beta-carotene",
+       "text": "Retinol comes from liver, eggs and dairy; beta-carotene from carrots, sweet potatoes and leafy greens, and your gut turns it into vitamin A. In the eye it becomes retinal."
+      }
+     ]
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
+     "name": "Vitamin D",
+     "text": "The skin makes vitamin D in sunlight. The liver turns it into its blood form, and the kidneys into calcitriol, the active hormone. Calcitriol helps the small intestine absorb calcium for the bones.",
+     "part": "site-kidneys",
+     "cue": "Numbers 3 to 6: skin, liver, kidneys, small intestine and bones",
+     "foodBody": [
+      {
+       "name": "Vitamin D",
+       "text": "Oily fish, egg yolks and fortified milk give some, but most people get much of theirs from sunlight on the skin. In the body it works as a hormone that controls calcium."
+      }
+     ]
+    },
+    {
+     "id": "8.4",
+     "seg": 4,
+     "name": "Vitamins E and K",
+     "text": "Vitamin E sits in cell membranes and protects them from oxidation; fat tissue holds most of the store. Vitamin K lets the liver make clotting factors, so blood can clot, and it also activates proteins in bone.",
+     "part": "site-fat",
+     "cue": "Numbers 6 to 8: bones, fat tissue and blood",
+     "foodBody": [
+      {
+       "name": "Vitamin E",
+       "text": "Nuts, seeds and plant oils such as sunflower oil. In the body it is an antioxidant in membranes."
+      },
+      {
+       "name": "Vitamin K",
+       "text": "Leafy greens give K1; fermented foods and gut bacteria give some K2. In the body it activates clotting factors and bone proteins."
+      }
+     ]
+    },
+    {
+     "id": "8.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Vitamin A and vitamin D act in many tissues, so the numbers mark the main places, not every one.",
+     "cue": "The caption under the statue",
+     "box": "note"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "8.1",
+     "id": "9.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here are the four fat-soluble vitamins in one table: their main forms, what they do, what happens with too little or too much, and where to find them in whole foods.",
@@ -358,7 +429,7 @@
      "cue": "The table, row by row"
     },
     {
-     "id": "8.2",
+     "id": "9.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Eat colorful vegetables with a little fat to absorb their carotenoids and vitamin K. Liver is so rich in vitamin A that it's best eaten occasionally, especially in pregnancy. Sunlight can't give you too much vitamin D, but supplements can. And these vitamins are close relatives of cholesterol, built from the same isoprene units. Try the quiz below.",

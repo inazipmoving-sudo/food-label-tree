@@ -16,7 +16,7 @@ def seg(name,text,part=None,cue=None,box=None,fb=None):
     return d
 USES={}
 # lessons whose page and script carry the figure (switched on lesson by lesson as each is pushed and checked live)
-LIVE=['macronutrients-fats','macronutrients-lipids','macronutrients-carbohydrates','macronutrients-water-ethanol']
+LIVE=['macronutrients-fats','macronutrients-lipids','macronutrients-carbohydrates','macronutrients-water-ethanol','micronutrients-fat-soluble-vitamins']
 
 USES['macronutrients-fats']=dict(cat='fats',title='Where fats are used in the body',
  lead='Most fat you eat is stored; the rest is burned for fuel or built into cells.',
@@ -252,7 +252,9 @@ USES['processing']=dict(cat='processed foods',title='Where processed foods act i
   seg('Liver and Blood Vessels',"The liver activates and clears acrylamide, HCAs and PAHs, and some of the products can damage DNA, which is why charring and very browned starchy food are best kept moderate. Trans fat from partial hydrogenation raises LDL cholesterol and harms blood vessels. The kidneys clear what's left in urine.",'site-liver','Numbers 3, 4 and 6: liver, blood vessels and kidneys',
       fb=[('Acrylamide','Formed when starchy foods such as fries, chips and toast brown at high heat. The liver turns it into glycidamide, which can damage DNA.'),
           ('HCAs and PAHs','HCAs form in meat cooked very hot, PAHs in smoke and charring. The liver activates and clears both.')]),
-  seg('Fermentation and the Gut',"Live cultures from yogurt and other fermented foods meet the gut bacteria in the large intestine. Eating a lot of processed meat is linked to colon cancer.",'site-colon','Number 5: the large intestine'),
+  seg('Fermentation and the Gut',"Live cultures from yogurt and other fermented foods meet the gut bacteria in the large intestine. Eating a lot of processed meat is linked to colon cancer.",'site-colon','Number 5: the large intestine',
+      fb=[('Live cultures','Bacteria such as Lactobacillus in yogurt and kefir. Many die in the stomach, and those that survive pass through the large intestine; most don’t stay there for long.'),
+          ('Processed meat','Bacon, ham and sausages, preserved with salt and nitrite. Eating a lot of it is linked to colon cancer.')]),
   seg('Simplified',"This is simplified. The amounts in normal diets are small, and the links to disease come from large studies of people, so the numbers mark where these compounds act, not a measure of harm.",None,'The caption under the statue','note')])
 
 USES['bioactives']=dict(cat='bioactives',title='Where bioactives are used in the body',
@@ -291,8 +293,10 @@ USES['flavorings']=dict(cat='flavorings',title='Where flavorings are used in the
   seg('Taste, Smell and Feel',"Taste buds on the tongue sense sweet, bitter, sour, salty and umami. The nose has about 400 kinds of smell receptor, which pick up aromas from the front and from inside the mouth as you chew. The trigeminal nerve senses the cool of menthol and the bite of mustard.",'site-tongue','Numbers 1 to 3: tongue, nose and mouth nerves',
       fb=[('Vanillin','The main flavor of vanilla, natural or made in a factory. A smell receptor in your nose detects it; the liver then clears it like other food molecules.'),
           ('Menthol','In mint. It triggers TRPM8, the cold receptor, so mint feels cool.')]),
-  seg('The Brain',"The brain combines taste, smell, texture and heat into the single experience we call flavor. That's why food tastes flat when your nose is blocked.",'site-brain','Number 4: the brain'),
-  seg('Digested and Cleared',"Flavor molecules are swallowed and absorbed like the rest of the food; the gut even has taste receptors of its own. The liver breaks most of them down, and the kidneys send the products out in urine.",'site-gut','Numbers 5 to 7: gut, liver and kidneys'),
+  seg('The Brain',"The brain combines taste, smell, texture and heat into the single experience we call flavor. That's why food tastes flat when your nose is blocked.",'site-brain','Number 4: the brain',
+      fb=[('Aroma molecules','The small molecules that give food its smell, like vanillin in vanilla. As you chew, they rise up the back of your nose to smell receptors that signal the brain.')]),
+  seg('Digested and Cleared',"Flavor molecules are swallowed and absorbed like the rest of the food; the gut even has taste receptors of its own. The liver breaks most of them down, and the kidneys send the products out in urine.",'site-gut','Numbers 5 to 7: gut, liver and kidneys',
+      fb=[('Flavorings','Natural and artificial flavorings are used in tiny amounts. Your gut absorbs them, the liver changes most of them so they dissolve in water, and the kidneys pass them out in urine.')]),
   seg('Simplified',"This is simplified. Flavorings are used in tiny amounts, so the numbers mark where they act, not a dose.",None,'The caption under the statue','note')])
 
 USES['macronutrients-protein']=dict(cat='protein',title='Where protein is used in the body',
@@ -319,5 +323,6 @@ USES['macronutrients-protein']=dict(cat='protein',title='Where protein is used i
   seg('Carrying and Defending',"The liver makes albumin, the main blood protein, and the clotting factors. Red blood cells carry oxygen on hemoglobin. Immune cells, in the spleen and elsewhere, make antibodies that tag germs, and the brain makes neurotransmitters such as serotonin from amino acids.",'site-liver','Numbers 5, 6, 7 and 10: liver, blood, spleen and brain',
       fb=[('Albumin','Egg white is mostly a related protein, ovalbumin. Your liver makes albumin, which carries fatty acids and hormones in the blood and holds water in it.'),
           ('Serotonin','Not eaten as such: the brain and gut make it from the amino acid tryptophan, found in turkey, eggs, cheese and nuts.')]),
-  seg('The Leftovers',"Your body doesn't store spare amino acids. The liver removes their nitrogen as urea, which the kidneys send out in urine, and burns the rest for energy or turns it into glucose or fat.",'site-kidneys','Numbers 5 and 11: liver and kidneys'),
+  seg('The Leftovers',"Your body doesn't store spare amino acids. The liver removes their nitrogen as urea, which the kidneys send out in urine, and burns the rest for energy or turns it into glucose or fat.",'site-kidneys','Numbers 5 and 11: liver and kidneys',
+      fb=[('Urea','Not something you eat: your liver makes it from the nitrogen of spare amino acids. Your kidneys filter it out, and it is the main nitrogen waste in urine.')]),
   seg('Simplified',"This is simplified. Every cell is full of proteins, so the numbers mark typical places, not every one.",None,'The caption under the statue','note')])
