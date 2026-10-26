@@ -3,7 +3,7 @@
  "module": "macronutrients-lipids",
  "title": "Module 1 · Other Lipids",
  "lang": "en",
- "revision": 4,
+ "revision": 5,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -202,7 +202,18 @@
      "name": "Skin and Nerves",
      "text": "Ceramides make up about half of the oily material between the cells of the outermost layer of your skin, where they help seal in water and keep things out. Add a phosphate and choline head to a ceramide and you get sphingomyelin, a major part of myelin, the insulating wrap around many nerve fibres, and of other cell membranes too.",
      "part": "ceramide",
+     "cue": "The ceramide, then the sphingomyelin below it: the same ceramide with a phosphate-choline head (markers 1 and 2 on the sphingomyelin)",
      "box": "body",
+     "foodBody": [
+      {
+       "name": "Ceramides",
+       "text": "Your body makes ceramides itself, starting from the amino acid serine and palmitic acid. Food has small amounts, in eggs, dairy, meat, soy and wheat. In your skin they help seal the barrier; inside cells they also act as signals."
+      },
+      {
+       "name": "Sphingomyelin",
+       "text": "Sphingomyelin is in eggs, milk and dairy foods, meat and fish, and your body makes its own. It is a major part of myelin, the insulating wrap around nerve fibres, and of your cell membranes."
+      }
+     ],
      "slug": "skin-and-nerves"
     },
     {

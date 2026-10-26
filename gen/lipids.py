@@ -105,6 +105,7 @@ L3_HTML=('<!--noart--><div class="part">Cholesterol, next to a fat at the same s
  +'</div>'+LEGEND)
 
 # ---- Figure 4: sphingolipids and waxes ----
+SM_MARKS=[('choline','1',-2.1,0),('phosphate','2',-1.6,0.2),('sphingosine','3',-2.1,-0.6),('amide','4',1.9,-0.95),('fa','5',1.45,0)]
 L4_HTML=('<!--noart--><div class="art mols" data-part="molecules"><div class="pair">'
  '<div class="pc" data-part="ceramide"><p class="mt">A ceramide (sphingolipid)<br><small>C<sub>36</sub>H<sub>71</sub>NO<sub>3</sub></small></p>'
  +lmol('ceramide','A ceramide, C36H71NO3: the sphingosine backbone (left tail with a trans double bond, two OH groups and an NH at the top) joined by an amide link to a stearic acid tail (right); every hydrogen shown',
@@ -115,6 +116,15 @@ L4_HTML=('<!--noart--><div class="art mols" data-part="molecules"><div class="pa
  +'</div></div>'
  +mleg([('1','<b>Sphingosine</b>: an 18-carbon backbone with two OH groups and an N, used instead of glycerol.',''),('2','<b>Amide link</b> (N–C=O) holding one fatty acid.',''),('3','<b>Fatty acid</b>: here stearic acid.',''),
         ('A','<b>Ester link</b>, the same kind that holds fatty acids to glycerol.','w'),('B','<b>Fatty acid</b>: palmitic acid.','w'),('C','<b>Long-chain alcohol</b>: cetyl alcohol, 16 carbons ending in O.','w')])
+ +'</div>'
+ +'<div class="art mols" data-part="sphingomyelin"><div class="part">Ceramide + phosphate-choline head = sphingomyelin</div><div class="pair"><div class="pc">'
+ '<p class="mt">Sphingomyelin (d18:1/18:0)<br><small>C<sub>41</sub>H<sub>83</sub>N<sub>2</sub>O<sub>6</sub>P</small></p>'
+ +lmol('sphingomyelin','Sphingomyelin, C41H83N2O6P: the same ceramide as above (sphingosine on the left with its trans double bond and OH, stearic acid on the right joined by an amide link) with a phosphate group on the C1 oxygen and a choline head (N+) on top; every hydrogen shown',
+   SM_MARKS,'Sphingomyelin (d18:1/18:0): the ceramide + a phosphate-choline head, C41H83N2O6P')
+ +'</div></div>'
+ +mleg([('1','<b>Choline</b> (N⁺) head.',''),('2','<b>Phosphate</b>: P with four O, negative charge, bonded to sphingosine’s C1 oxygen.',''),
+        ('3','<b>Sphingosine</b> backbone: 18 carbons, the trans C4=C5 double bond, the C3 OH.',''),('4','<b>Amide link</b> (N–C=O).',''),('5','<b>Fatty acid</b>: stearic acid.','')])
+ +'<p class="mnote">The same ceramide with a phosphate-choline head, the head phosphatidylcholine has in Figure 2. A major part of myelin, the insulating wrap around nerve fibres.</p>'
  +'</div>'+LEGEND)
 
 # ---- Figure 5: eicosanoids ----
