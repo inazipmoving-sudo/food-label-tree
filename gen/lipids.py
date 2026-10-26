@@ -24,17 +24,17 @@ LEGEND='<p class="rleg"><span class="k c"></span>carbon <span class="k h"></span
 
 # ---- Figure 1: the lipid family tree ----
 # Same SVG chart as the Fats page Figure 1 (box()/edge() from curriculum.py, class "tree", 900-wide viewBox, same CSS and
-# mobile font rules). A 'Lipids' root with seven side branches off a trunk; the trunk ends at Fats (triglycerides), which
+# mobile font rules). A 'Lipids' root with six side branches off a trunk (3 left, 3 right); fatty acids are not a branch, they
+# are part of the triglycerides box; the trunk ends at Fats (triglycerides), which
 # carries the Fats chart's subtree unchanged, shifted down by L1_DY. Each box links to the figure that covers it.
-L1_DY=410
+L1_DY=335
 def l1link(href,svgnode): return f'<a class="tlk" href="{href}">{svgnode}</a>'
 def l1side(x,y,side):  # S-curve from the trunk (x=450) to a side box's inner edge
     ex=x+135 if side=='L' else x-135; y0=y-26
     return f'<path class="edge" d="M450,{y0} C{(450+ex)/2:.0f},{y0} {(450+ex)/2:.0f},{y} {ex},{y}"/>'
-L1_SIDE=[('L',150,130,'Fatty acids','building blocks · Fats lesson','macronutrients-fats.html#fig-3'),
- ('L',150,205,'Phospholipids','cell membranes · Fig. 2','#fig-2'),
- ('L',150,280,'Sterols','cholesterol, plant sterols · Fig. 3','#fig-3'),
- ('L',150,355,'Sphingolipids','skin &amp; nerve membranes · Fig. 4','#fig-4'),
+L1_SIDE=[('L',150,130,'Phospholipids','cell membranes · Fig. 2','#fig-2'),
+ ('L',150,205,'Sterols','cholesterol, plant sterols · Fig. 3','#fig-3'),
+ ('L',150,280,'Sphingolipids','skin &amp; nerve membranes · Fig. 4','#fig-4'),
  ('R',750,130,'Waxes','fruit &amp; leaf coatings · Fig. 4','#fig-4'),
  ('R',750,205,'Fat-soluble vitamins','&amp; carotenoids · Fig. 6','#fig-6'),
  ('R',750,280,'Eicosanoids','made in the body · Fig. 5','#fig-5')]
@@ -46,10 +46,10 @@ def _l1():
      f'<path class="edge dash" d="M545,{182+D} C575,{222+D} 665,{222+D} 712,{184+D}" marker-end="url(#lar)"/>',f'<text class="lab hotl" x="668" y="{238+D}" text-anchor="middle">partial hydrogenation</text>']
     T+=[box(450,30,210,'Lipids','won’t dissolve in water','nd root')]
     T+=[l1link(h,box(x,y,270,t,sub,'nd l')) for sd,x,y,t,sub,h in L1_SIDE]
-    T+=[l1link('macronutrients-fats.html#fig-1',box(450,30+D,280,'Fats (triglycerides)','~95% of lipids we eat · 9 kcal/g','nd root')),
+    T+=[l1link('macronutrients-fats.html#fig-1',box(450,30+D,420,'Fats (triglycerides)','glycerol + 3 fatty acids · ~95% of lipids we eat · 9 kcal/g','nd root')),
      box(170,150+D,200,'Saturated','no double bonds · solid','nd s'),box(450,150+D,200,'Unsaturated','double bonds · liquid','nd u'),box(730,150+D,200,'Trans','straightened · semi-solid','nd t'),
      box(330,290+D,190,'Monounsaturated','1 double bond','nd u'),box(600,290+D,190,'Polyunsaturated','2+ double bonds','nd u'),box(330,410+D,160,'Omega-9','oleic · body makes it','nd u'),box(520,410+D,160,'Omega-3','ALA · EPA · DHA','nd u'),box(690,410+D,160,'Omega-6','LA · GLA · AA','nd u')]
-    return (f'<svg class="tree ltree" viewBox="0 0 900 {450+D}" role="img" aria-label="Tree diagram of the lipid family: Lipids branch into fatty acids, phospholipids, sterols, sphingolipids, waxes, fat-soluble vitamins and carotenoids, eicosanoids, and fats (triglycerides), which split into saturated, unsaturated (monounsaturated: omega-9; polyunsaturated: omega-3, omega-6) and trans">'
+    return (f'<svg class="tree ltree" viewBox="0 0 900 {450+D}" role="img" aria-label="Tree diagram of the lipid family: Lipids branch into six side branches, phospholipids, sterols and sphingolipids on the left and waxes, fat-soluble vitamins and carotenoids, and eicosanoids on the right, and at the bottom of the trunk fats (triglycerides: glycerol plus 3 fatty acids), which split into saturated, unsaturated (monounsaturated: omega-9; polyunsaturated: omega-3, omega-6) and trans">'
             '<defs><marker id="lar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" class="arh"/></marker></defs>'+''.join(T)+'</svg>')
 L1_TREE='<div class="art" data-part="tree">'+_l1()+'</div>'
 L1_CLASS=('<section class="rsec qa" data-part="label"><div class="part">Which ones count as “fat” on a food label</div><div class="lcls">'

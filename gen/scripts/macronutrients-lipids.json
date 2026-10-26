@@ -3,7 +3,7 @@
  "module": "macronutrients-lipids",
  "title": "Module 1 · Other Lipids",
  "lang": "en",
- "revision": 2,
+ "revision": 3,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -32,10 +32,10 @@
     {
      "id": "1.2",
      "seg": 2,
-     "name": "Eight Branches",
-     "text": "The tree has the same layout as the fat family tree from the last lesson, now with lipids at the top. Seven branches come off the trunk to either side: fatty acids, the building blocks; phospholipids; sterols, like cholesterol and plant sterols; sphingolipids; waxes; the fat-soluble vitamins and carotenoids; and eicosanoids, signals your body makes for itself. At the bottom of the trunk is the eighth branch, the fats, or triglycerides, with the whole fat family tree from the Fats lesson hanging below it, unchanged. Tap any box to jump to the figure that covers it.",
+     "name": "Seven Branches",
+     "text": "The tree has the same layout as the fat family tree from the last lesson, now with lipids at the top. Six branches come off the trunk to either side: phospholipids; sterols, like cholesterol and plant sterols; sphingolipids; waxes; the fat-soluble vitamins and carotenoids; and eicosanoids, signals your body makes for itself. At the bottom of the trunk is the seventh branch, the fats, or triglycerides, which are built from fatty acids, with the whole fat family tree from the Fats lesson hanging below it, unchanged. Tap any box to jump to the figure that covers it.",
      "part": "tree",
-     "cue": "The Lipids root, the seven side branches left then right, then down the trunk to Fats (triglycerides) and its subtree"
+     "cue": "The Lipids root, the six side branches (phospholipids, sterols, sphingolipids on the left; waxes, fat-soluble vitamins, eicosanoids on the right), then down the trunk to Fats (triglycerides: glycerol + 3 fatty acids) and its subtree"
     },
     {
      "id": "1.3",
