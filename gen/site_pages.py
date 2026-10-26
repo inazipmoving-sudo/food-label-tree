@@ -31,7 +31,7 @@ def _course_card(c):
     ml=''.join(f'<li><span>{n}</span>{nm}</li>' for n,nm in mods)
     return (f'<section class="mod course" id="{c["slug"]}" style="--a:var(--acc)"><div class="mh"><span class="mn">{c.get("code","").split(" ")[-1]}</span><span class="ico"></span>'
             f'<h2><a href="{c["href"]}">{c["title"]}</a></h2></div><p class="cdesc">{c["desc"]}</p>'
-            f'<p class="cmeta">{nmod} modules · {nles} lessons</p>'+(f'<ol class="cmods">{ml}</ol>' if ml else '')
+            f'<p class="cmeta">{nmod} module{'s'*(nmod!=1)} · {nles} lesson{'s'*(nles!=1)}</p>'+(f'<ol class="cmods">{ml}</ol>' if ml else '')
             +f'<a class="les" href="{c["href"]}">Open the course <span>{c["title"]} →</span></a></section>')
 _cards=''.join(_course_card(c) for c in COURSES)
 _HOME_CSS=('<style>.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-variant:small-caps;font-size:clamp(1.05rem,2.2vw,1.25rem);letter-spacing:.12em;color:var(--muted)}.course .mn{font-variant-numeric:lining-nums}.course h2 a{text-decoration:none}.course h2 a:hover{color:var(--acc)}.cdesc{margin:10px 0 0 44px;line-height:1.6}'
