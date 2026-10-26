@@ -75,11 +75,45 @@ _helix=''.join(f'<path d="M{20+k*26},40 q13,40 26,0" fill="none" style="stroke:v
 _sheet=''.join(f'<path d="M{300},{14+k*28} h150 l0,-8 l22,14 l-22,14 l0,-8 h-150z" fill="#7A8256" opacity="{0.95-k*0.15:.2f}"/>' for k in range(3))
 exec(open(GEN+'/protein_shapes.py').read())  # Figure 5 close-ups: helix, sheet, tertiary + pocket, hemoglobin, collagen (labels are page HTML)
 _ter=svgd('<path d="M60,90 C60,30 140,20 160,60 S230,120 250,70 S200,10 280,20 S360,90 320,120 S220,140 180,110 S110,150 90,120" fill="none" style="stroke:var(--acc)" stroke-width="8" stroke-linecap="round"/>','30 0 340 160','A single chain folded into a compact knot-like shape',300)
+# Figure 5.4 heme close-up: ball-and-stick from real atom positions (PDB 2DN1, made by lessons/heme_scene.py), labels are page HTML.
+# The whole panel is a .ssp, so a tap opens it, labels and all, in the Figure 5 dialog; the images are plain (no image-only lightbox) so one tap opens one thing.
+def _hm_plain(h):
+    return re.sub(r'<button type="button" class="mz lmz"[^>]*>','<span class="hmi">',h).replace(ZOOM+'</button>','</span>')
+_HM_MAIN=[(k,t,0,0,'tx') if not t.isdigit() else ((k,t,0,0,'w') if t in '678' else (k,t,0,0)) for k,t in (('o2','O₂'),('his7','His E7'),('his8','His F8'),('fe','Fe'),
+ ('pyrrole','1'),('methine','2'),('methyl','3'),('vinyl','4'),('propionate','5'),('val','6'),('phe','7'),('leu','8'),('ehelix','E helix'),('fhelix','F helix'))]
+_HM_SIDE=[(k,t,0,0,'tx') for k,t in (('o2','O₂'),('hb','H-bond'),('his7','His E7'),('his8','His F8'),('fe','Fe'),('ring','flat ring'))]
+def heme_panel():
+    main=_hm_plain(P_('heme_pocket','One heme in its pocket in hemoglobin, ball-and-stick with every hydrogen: a flat ring of four pyrroles joined by CH bridges, its four nitrogens (blue) holding an orange iron atom at the centre. Above the iron an oxygen molecule (two red atoms) is bound end-on and bent; the distal histidine E7 above it hydrogen-bonds the far oxygen (dashed line). Below, the proximal histidine F8 is bonded to the iron. Valine, phenylalanine and leucine side chains (sticks) line the pocket, and pale blue tubes trace the E and F helices of the protein chain.',
+        _HM_MAIN,'Heme in its pocket'))
+    side=_hm_plain(P_('heme_side','The same heme seen edge-on: the ring is a flat line with the iron in it; the O2 sits straight above the iron, bent, with histidine E7 above it, and histidine F8 sits straight below.',
+        _HM_SIDE,'Heme seen edge-on'))
+    leg=mleg([('1','pyrrole: a five-atom ring with one N; four of them make the heme ring',''),('2','methine bridge (=CH–) joining two pyrroles',''),
+        ('3','methyl, CH₃ (four on the ring)',''),('4','vinyl, CH=CH₂ (two)',''),('5','propionate, CH₂CH₂COO⁻ (two, charged, they face the water)',''),
+        ('6','valine E11','w'),('7','phenylalanine CD1','w'),('8','leucine FG3: 6 to 8 are oily side chains (sticks) that keep water away from the iron','w')])
+    return ('<div class="art mols ssp hmc" role="button" tabindex="0" aria-label="Close-up: one heme in its pocket, atom by atom: tap to enlarge">'
+        '<p class="ssh">Close-up: one heme in its pocket, atom by atom</p><p class="hmt">The iron (Fe) sits in the middle of the flat ring. O₂ binds on top and His E7 hydrogen-bonds it (dashed line); His F8 holds the iron from below.</p>'
+        +main+'<p class="hmt">Side view: the same heme edge-on. The ring is flat; the iron sits in it, with O₂ and His E7 straight above and His F8 straight below.</p>'+side+leg
+        +'<p class="rleg"><span class="k c"></span>carbon <span class="k h"></span>hydrogen <span class="k o"></span>oxygen <span class="k n"></span>nitrogen <span class="k fe"></span>iron (Fe²⁺)'
+        ' <b class="hmh"></b>hydrogen bond <b class="hmb"></b>protein backbone (helix) · same scale as every molecule on this page, every hydrogen shown</p>'
+        '<p class="ssc">Real atom positions from the X-ray structure of oxygen-carrying human hemoglobin (Protein Data Bank 2DN1, 1.25 Å), one α chain; hydrogens added, since X-rays barely see them. '
+        'In this structure the iron is bonded to the four ring nitrogens (2.0 Å) and sits almost exactly in the ring; the O₂ binds end-on (Fe–O 1.8 Å) and bends at 124°. '
+        'In the side view the iron is drawn in front of the ring edge so you can see it.</p>'
+        +ZOOM+'</div>'
+        '<style>.hmc.art.mols{display:block;margin:12px -17px 6px;width:calc(100% + 34px);border:1px solid var(--line);border-radius:6px;cursor:zoom-in;position:relative;box-sizing:border-box}'
+        '.hmc .ssh{padding:0 8px}.hmc .hmi{display:block;line-height:0}.hmc .hmi img{display:block;width:100%;height:auto}'
+        '.hmc .mk{font-size:.8rem;min-width:22px;height:22px;line-height:22px;border-radius:11px}.hmc .mk.tx{font-size:.88rem;font-weight:600;padding:0 6px;height:auto;line-height:1.5;border-radius:4px;border-color:#7a7a7a}'
+        '.hmc .mleg,.hmc .rleg,.hmc .hmt,.hmc .ssc{padding-left:8px;padding-right:8px}.hmc .hmt{margin:14px 0 4px;color:#2B2B2B;font-weight:600;font-family:var(--serif,Georgia,serif)}'
+        '.hmc .mleg .mk{font-size:.8rem}.hmc .rleg .fe{background:#E06633;border-color:#7a2a0a}'
+        '.hmc .hmh{display:inline-block;width:22px;border-top:2px dashed #1F4E79;vertical-align:4px;margin:0 4px 0 10px}'
+        '.hmc .hmb{display:inline-block;width:22px;height:9px;border-radius:5px;background:#C9D5E0;vertical-align:0;margin:0 4px 0 10px}'
+        '.hmc .rleg,.hmc .ssc,.hmc .mleg{color:#2B2B2B}'
+        'dialog.lbs .hmc.art.mols{margin:0;width:min(1240px,max(880px,92vw))}'
+        '@media(max-width:600px){.hmc .mk.tx{font-size:.78rem;padding:0 4px}.hmc .mk{font-size:.72rem;min-width:19px;height:19px;line-height:19px}}</style>')
 P5=('<!--noart-->'+stages('levels','Four levels of structure',[
    ('1 · Primary: the order of amino acids',_beads,'Set by your genes. Change one amino acid and the whole protein can change: sickle-cell hemoglobin differs from normal hemoglobin by a single swap.'),
    ('2 · Secondary: local coils and sheets',helix_panel()+sheet_panel(),'Held by hydrogen bonds between the C=O of one peptide bond and the N–H of another.','secondary'),
    ('3 · Tertiary: the whole chain folds',_ter+tertiary_panel()+pocket_panel(),'Oily side chains tuck inside, water-loving ones face out, and sulfur cross-links between cysteines can hold the fold. The shape decides the job.','tertiary'),
-   ('4 · Quaternary: chains team up',hemoglobin_panel()+collagen_panel(),'Hemoglobin is 4 chains (2 alpha, 2 beta), each holding one heme with an iron atom (orange) that carries oxygen. Collagen is 3 chains wound into a rope.','quaternary')],
+   ('4 · Quaternary: chains team up',hemoglobin_panel()+heme_panel()+collagen_panel(),'Hemoglobin is 4 chains (2 alpha, 2 beta), each holding one heme with an iron atom (orange) that carries oxygen. Collagen is 3 chains wound into a rope.','quaternary')],
    cap='Cartoons, not to scale: each bead is a whole amino acid, and each ribbon is a stretch of chain. The helix and sheet are drawn ball-and-stick, backbone only. Tap any white panel to enlarge it.')
  +SS_LBX
  +note('denature','Cooking unfolds proteins','<p>Heat, acid, salt or whipping break the weak bonds that hold the folds, so the chain unravels: this is <b>denaturing</b>. Egg white turns from clear to white, milk curdles with lemon juice, meat firms up. The peptide bonds stay, so the amino acids are all still there; your stomach does the same thing with acid.</p>'))

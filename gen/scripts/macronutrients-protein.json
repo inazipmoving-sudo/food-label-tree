@@ -3,7 +3,7 @@
  "module": "macronutrients-protein",
  "title": "Module 1 · Protein",
  "lang": "en",
- "revision": 3,
+ "revision": 4,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -258,7 +258,17 @@
      "name": "Quaternary",
      "text": "Some proteins are teams of chains, and that's quaternary structure. Hemoglobin is four chains, each holding a heme group with an iron atom that grabs oxygen. Collagen, the most common protein in your body, is three chains wound into a rope.",
      "part": "quaternary",
-     "cue": "Level 4: hemoglobin (two alpha and two beta chains, each heme with its iron and O2), then collagen's three-chain rope"
+     "cue": "Level 4: hemoglobin (two alpha and two beta chains, each heme with its iron and O2), then the close-up of one heme in its pocket (iron in the flat ring, bent O2 above it, His E7 above, His F8 below, side view edge-on), then collagen's three-chain rope",
+     "foodBody": [
+      {
+       "name": "Hemoglobin",
+       "text": "Hemoglobin needs iron. Red meat, liver and shellfish give heme iron, which your body absorbs well; beans, lentils and spinach give non-heme iron, which is less well absorbed. Inside red blood cells, hemoglobin carries oxygen from your lungs to your tissues."
+      },
+      {
+       "name": "Collagen",
+       "text": "Collagen comes from skin-on chicken, bone broth, gelatin and the connective tissue in meat. Your gut breaks it down to amino acids like any other protein, and your body builds its own collagen from them, using vitamin C. It is the main structural protein of skin, tendons, ligaments, bone and cartilage."
+      }
+     ]
     },
     {
      "id": "5.5",

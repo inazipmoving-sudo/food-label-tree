@@ -258,12 +258,12 @@ def hemoglobin_panel():
     o+=''.join(_heme(hx,hy) for hx,hy in H)
     vb=(0,0,520,450); hx,hy=H[0]
     labs=[_lab(x+(-58 if x<260 else 58),y+(-76 if y<230 else 76),vb,f'{n[0]} chain','chn') for n,x,y,sd in C]
-    labs+=[_lab(hx,hy+52,vb,'heme (flat ring)','hm'),_lab(hx-50,hy,vb,'Fe','fe'),_lab(hx+52,hy-48,vb,'O₂','ox')]
+    labs+=[_lab(hx,hy+52,vb,'heme (see close-up)','hm'),_lab(hx-50,hy,vb,'Fe','fe'),_lab(hx+52,hy-48,vb,'O₂','ox')]
     leg=(_dot_(HB_COL['α1'],'#2B2B2B','α chain')+_dot_(HB_COL['α2'],'#2B2B2B','α chain')+_dot_(HB_COL['β1'],'#2B2B2B','β chain')+_dot_(HB_COL['β2'],'#2B2B2B','β chain')
          +f'<span><b class="hmk"></b>heme ring</span>'+_dot_(FE,FE_E,'iron (Fe)')+_dot_(FC['O'],EC['O'],'oxygen (O₂)')+_dot_(FC['N'],EC['N'],'nitrogen'))
     return _panel('Hemoglobin: four chains, each with a heme',vb,o,labs,
         'Cartoon of hemoglobin: four folded chains packed together in a square, two alpha chains in blues and two beta chains in olive and sand. Each chain holds one heme, a flat square ring held by four nitrogens around an orange iron atom; a red two-atom oxygen molecule is bound to each iron.',
-        leg,'Cartoon, not to scale. Each heme’s iron holds one O₂, so one hemoglobin carries four.',maxw=560)
+        leg,'Cartoon, not to scale. Each heme’s iron holds one O₂, so one hemoglobin carries four. The close-up below shows one heme atom by atom.',maxw=560)
 def collagen_panel():
     W,Hh=420,150; cy=75; A=36; cols=['#3E5C76','#A86B53','#7A8256']; segs=[]; beads=[]
     N=240; per=170.0
