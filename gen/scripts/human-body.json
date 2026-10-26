@@ -1,0 +1,442 @@
+{
+ "schemaVersion": 1,
+ "module": "human-body",
+ "title": "Module 6 · The Human Body",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "segmentFields": {
+  "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
+  "text": "what to say; a figure's sections read together as one flowing paragraph",
+  "cue": "optional: what to point at; not spoken",
+  "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
+  "part": "optional: data-part of the figure element the segment is about",
+  "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
+ },
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "The Body Map Family Tree",
+   "subtitle": "Where everything you eat goes: two roads into the blood, one out the other end.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "Where Food Goes",
+     "text": "This last module puts the whole course on one body. Every nutrient we've met so far, from glucose to iron, has to get from your plate to a place where it's used or stored. This tree is the short version of that journey, and each box links to the figure that shows it on the statue.",
+     "part": "head",
+     "cue": "Title, then the Food box at the top"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Digestion First",
+     "text": "First, digestion. Between your mouth and the end of your small intestine, food is broken into pieces small enough to absorb: starch and sugars into glucose, fats into fatty acids, and proteins into amino acids. Almost all of the absorbing happens in the small intestine.",
+     "part": "tree",
+     "cue": "Food, then Digestion",
+     "foodBody": [
+      {
+       "name": "Glucose",
+       "text": "The main sugar in your blood and the fuel your brain prefers. Starch in bread, rice and potatoes is long chains of glucose; table sugar is half glucose."
+      },
+      {
+       "name": "Fatty acids",
+       "text": "The long chains that make up most of every fat and oil. Three of them on a glycerol make a triglyceride, the fat in food and in your fat tissue."
+      },
+      {
+       "name": "Amino acids",
+       "text": "The twenty building blocks of protein, from meat, fish, eggs, dairy, beans and grains. Your body builds its own proteins from them."
+      }
+     ]
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Two Roads In",
+     "text": "After that, nutrients take one of two roads. Most go into the blood and travel straight to the liver through the portal vein, so the liver gets first pick. Fats and the fat-soluble vitamins take the other road: they're packed into chylomicrons and travel up the lymph, joining the blood near your left collarbone.",
+     "part": "tree",
+     "cue": "Blood road and Lymph road",
+     "foodBody": [
+      {
+       "name": "Chylomicrons",
+       "text": "Big bubbles of fat wrapped in protein, made by the cells of your small intestine after a meal with fat. They carry triglycerides and vitamins A, D, E and K and are cleared from the blood within hours."
+      }
+     ]
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Into the Bloodstream",
+     "text": "Either way, everything ends up in the bloodstream, and the heart pumps it out to where it's needed. The brain runs mostly on glucose. Muscle uses glucose and fat and is built from amino acids. The liver and muscles also store glucose as glycogen, and fat tissue stores fat.",
+     "part": "tree",
+     "cue": "Liver and Bloodstream, then the bottom row",
+     "foodBody": [
+      {
+       "name": "Glycogen",
+       "text": "Your body's short-term glucose store: branched chains of glucose packed into liver and muscle cells. About a hundred grams in the liver and around four hundred in the muscles. There's almost none in food, because animal glycogen breaks down after slaughter."
+      }
+     ]
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Three Ideas",
+     "text": "Three ideas run through the whole module. Food is broken down before it's absorbed. The liver sees almost everything first. And what isn't absorbed, like most fiber, goes on to the large intestine, where gut bacteria feed on it. Bones store calcium, marrow uses iron, and the kidneys pass out waste like urea.",
+     "part": "ideas",
+     "cue": "The three boxes",
+     "foodBody": [
+      {
+       "name": "Calcium",
+       "text": "The most common mineral in the body, almost all of it in bones and teeth. In milk, yogurt, cheese, tofu made with calcium, canned fish with bones and some greens."
+      },
+      {
+       "name": "Iron",
+       "text": "The metal at the center of hemoglobin, which carries oxygen in red blood cells. In red meat, poultry and fish, and in beans, lentils and fortified cereals."
+      },
+      {
+       "name": "Urea",
+       "text": "A small waste molecule the liver makes from the nitrogen of extra amino acids. The kidneys pass it out in urine."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "The Statue in Six Layers",
+   "subtitle": "One figure, six systems: tap a layer to change what you see.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "One Statue, Six Layers",
+     "text": "Here's our body, drawn like a marble statue. The buttons above it peel it back one system at a time: skin, muscles, bones, nerves, organs and circulation. Tap any part to zoom in and see what it's called and what it does. We'll go through five of the layers here and save the organs for the next figure.",
+     "part": "body",
+     "cue": "The statue, then the layer buttons"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Skin",
+     "text": "The outer layer is skin, your largest organ, about two square meters in an adult. It keeps water in and germs out, and it sweats to cool you. Zoom in and you see three layers: the thin epidermis on top, the tougher dermis with the blood vessels and sweat glands, and a layer of fat underneath, where most of your body fat is stored. Skin also makes vitamin D when sunlight hits it.",
+     "part": "layer-skin",
+     "cue": "Skin button, then tap the statue for the slice",
+     "foodBody": [
+      {
+       "name": "Vitamin D",
+       "text": "Made in your skin from a cholesterol relative when UVB sunlight hits it, and found in oily fish, egg yolks and fortified milk. It helps you absorb calcium from food."
+      }
+     ]
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "Muscles",
+     "text": "Under the skin are the muscles, about a third to two fifths of your body weight. The hatching shows the direction of the fibers, because muscle can only pull. Muscle holds most of your body's protein and is a big user of glucose and fat. The thigh muscles, the biggest group, hold a large share of your glycogen.",
+     "part": "layer-muscles",
+     "cue": "Muscles button, then the thigh"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "Bones",
+     "text": "Next, the skeleton: two hundred and six bones. They hold about ninety-nine percent of your calcium. They're alive, too. Inside many of them is red marrow, which makes every red cell, white cell and platelet in your blood, and that's where much of the iron you eat ends up.",
+     "part": "layer-bones",
+     "cue": "Bones button, then the pelvis and thigh bone"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "Nerves",
+     "text": "Then the nerves: the brain, the spinal cord and the branches that run out to every part of you. Each signal is a tiny flow of sodium and potassium across a cell's surface. Your brain is about two percent of your weight but uses around a fifth of your resting energy, mostly as glucose. The vagus nerve, drawn dotted, links the brain to the gut and carries the feeling of fullness.",
+     "part": "layer-nerves",
+     "cue": "Nerves button, then the brain and vagus"
+    },
+    {
+     "id": "2.6",
+     "seg": 6,
+     "name": "Circulation",
+     "text": "Last, circulation. Arteries, in terracotta, carry blood out from the heart; veins, in blue, bring it back. Two special roads carry food. The portal vein, blue dashes, takes blood from the gut straight to the liver. The thoracic duct, green dots, is the main lymph vessel, the road for fats. We'll follow both in Figure 4.",
+     "part": "layer-circulation",
+     "cue": "Circulation button, then the portal vein and thoracic duct"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "Diving In: The Organs",
+   "subtitle": "The torso opened up, then one villus of the small intestine close up.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "Opening the Torso",
+     "text": "Now the organs. Imagine the front of the torso lifted away. At the top are the windpipe and the two lungs, with the heart between them. Under the dome of the diaphragm are the liver on your right, the stomach on your left, and below them the coils of the small intestine framed by the large intestine. The kidneys sit behind the gut, against your back, so they're dashed.",
+     "part": "dive-torso",
+     "cue": "The cutaway, top to bottom"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "The Digestive Tube",
+     "text": "Food goes through a single tube: mouth, esophagus, stomach, small intestine, large intestine. The stomach churns food with acid and starts on protein. The small intestine, several meters long, finishes digestion and absorbs almost everything. The large intestine takes back water and salts and is home to trillions of bacteria.",
+     "part": "dive-gut",
+     "cue": "Esophagus, stomach, small intestine, large intestine"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "The Small Intestine Close Up",
+     "text": "Zoom into the small intestine and its lining is covered in villi, tiny fingers about a millimeter tall. Each one is lined with absorbing cells that have their own brush border of even smaller folds. Inside each villus are capillaries, which pick up sugars, amino acids, minerals and water, and a central lymph vessel, the lacteal, which takes in fat. That's where the two roads begin.",
+     "part": "dive-villus",
+     "cue": "The villus: cells, capillaries, then the lacteal"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "The Helpers",
+     "text": "Three organs help digestion without food ever passing through them. The liver makes bile, and the gallbladder stores it and squeezes it out when fat arrives. The pancreas sends digestive enzymes into the small intestine, and it releases the hormones insulin and glucagon into the blood to keep blood glucose steady.",
+     "part": "dive-gut",
+     "cue": "Liver, gallbladder, pancreas",
+     "foodBody": [
+      {
+       "name": "Bile",
+       "text": "A greenish liquid made by the liver from cholesterol. It works like dish soap, breaking fat into tiny droplets that enzymes can reach."
+      },
+      {
+       "name": "Insulin",
+       "text": "A hormone from the pancreas, released when blood glucose rises after a meal. It helps muscle and fat cells take glucose in and tells the liver to store it."
+      },
+      {
+       "name": "Glucagon",
+       "text": "Insulin's opposite: released when blood glucose falls, it tells the liver to break down glycogen and send glucose out."
+      }
+     ]
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "Heart, Lungs and Kidneys",
+     "text": "The heart pumps about five liters of blood a minute. The lungs take in oxygen and breathe out carbon dioxide, the waste from burning fuel. And the two kidneys filter about a hundred and eighty liters of fluid out of your blood every day, keep almost all of it, and pass the rest out as urine with urea and extra salt.",
+     "part": "dive-torso",
+     "cue": "Heart, lungs, then the kidneys",
+     "foodBody": [
+      {
+       "name": "Carbon dioxide",
+       "text": "The gas left when your cells burn glucose, fat or protein for energy. Blood carries it to the lungs, and you breathe it out."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "Following the Macronutrients",
+   "subtitle": "Tap a nutrient to light up its road through the body.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "Tap a Nutrient",
+     "text": "Now we follow the food. Tap a nutrient above the statue and its road lights up, with numbered stops and a list of what happens at each one. Solid accent dashes are the gut, terracotta is blood, blue is the portal vein, green dots are lymph, and grey dots are the ways out. Each nutrient links back to its own lesson.",
+     "part": "body",
+     "cue": "The chips, then the colour key"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Glucose",
+     "text": "Glucose first. Starch starts breaking down in your mouth and finishes in the small intestine, where glucose is absorbed into the capillaries. The portal vein takes it to the liver, which keeps some as glycogen. The rest goes to the heart and out to every cell. Your brain uses about a hundred and twenty grams a day, and muscle takes it in, faster with insulin, and stores its own glycogen.",
+     "part": "n-glucose",
+     "cue": "Glucose chip, stops 1 to 6"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "Fats",
+     "text": "Fats take the other road. In the small intestine, bile breaks fat into droplets and lipase cuts off the fatty acids. The intestine's cells rebuild them into triglycerides and pack them into chylomicrons, which are too big for capillaries. So they go into the lacteals, up the thoracic duct, and into a vein near the left collarbone. From there, fat tissue stores the fatty acids and muscle burns them. The liver clears what's left.",
+     "part": "n-fats",
+     "cue": "Fats chip, stops 1 to 7",
+     "foodBody": [
+      {
+       "name": "Triglyceride",
+       "text": "Three fatty acids on one glycerol: the form of almost all the fat in food and in your fat tissue. Your gut takes it apart to absorb it and then rebuilds it."
+      }
+     ]
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Amino Acids",
+     "text": "Protein starts unfolding in the stomach's acid, and pepsin starts cutting it. The small intestine finishes the job and absorbs amino acids, which go by the portal vein to the liver and on to every cell to build new proteins. There's no store for extra protein. The liver strips off the nitrogen as urea, which the kidneys pass out in urine, and burns the rest or stores it.",
+     "part": "n-amino",
+     "cue": "Amino acids chip, stops 1 to 6"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "Water",
+     "text": "Water is the simplest. Most is absorbed in the small intestine and most of the rest in the large intestine. Then it moves freely between your blood, your cells and the spaces between them, so drawing one road is a simplification. It leaves mainly as urine, with the kidneys setting the amount, and also in breath and sweat.",
+     "part": "n-water",
+     "cue": "Water chip"
+    },
+    {
+     "id": "4.6",
+     "seg": 6,
+     "name": "Alcohol",
+     "text": "Alcohol needs no digestion. About a fifth is absorbed in the stomach and the rest in the small intestine. It goes straight to the liver, which turns ethanol into acetaldehyde and then acetate, at about one standard drink an hour. What the liver hasn't cleared spreads through all your body water, including your brain. A little leaves unchanged in breath and urine.",
+     "part": "n-alcohol",
+     "cue": "Alcohol chip",
+     "foodBody": [
+      {
+       "name": "Ethanol",
+       "text": "The alcohol in beer, wine and spirits, with seven calories per gram. Your body can't store it, so the liver clears it first."
+      },
+      {
+       "name": "Acetaldehyde",
+       "text": "The toxic first product when your liver breaks ethanol down. A second enzyme turns it into acetate, which cells burn for energy."
+      }
+     ]
+    },
+    {
+     "id": "4.7",
+     "seg": 7,
+     "name": "Fiber",
+     "text": "Fiber is the one that doesn't get absorbed. Your enzymes can't break it down, so it passes through the small intestine untouched. In the large intestine, gut bacteria ferment much of it into short-chain fatty acids, which feed the cells of the colon. The rest adds bulk to stool.",
+     "part": "n-fiber",
+     "cue": "Fiber chip",
+     "foodBody": [
+      {
+       "name": "Short-chain fatty acids",
+       "text": "Small acids such as acetate, propionate and butyrate, made by gut bacteria from fiber. The colon's cells run largely on butyrate."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "Following the Vitamins and Minerals",
+   "subtitle": "The same roads, with a few stores and one-way doors.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Fat-Soluble Vitamins",
+     "text": "Vitamins A, D, E and K follow the fat road. They're absorbed with fat, packed into chylomicrons and carried up the lymph. The liver stores most of your vitamin A, and fat tissue holds vitamins D and E. Vitamin D can also be made in your skin, then activated first in the liver and then in the kidneys. Because they're stored, you don't need them every day, but big supplement doses can build up.",
+     "part": "n-fat-vitamins",
+     "cue": "Vitamins A, D, E, K chip",
+     "foodBody": [
+      {
+       "name": "Vitamin A",
+       "text": "Needed for vision in dim light, skin and immunity. Liver, eggs and dairy have it ready-made; orange and green vegetables have beta-carotene, which your body converts."
+      },
+      {
+       "name": "Vitamin E",
+       "text": "An antioxidant that protects the fats in your cell membranes. In nuts, seeds and vegetable oils."
+      },
+      {
+       "name": "Vitamin K",
+       "text": "Needed to make the proteins that clot blood. In leafy greens, and also made by gut bacteria."
+      }
+     ]
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "Water-Soluble Vitamins",
+     "text": "The B vitamins and vitamin C take the blood road, like glucose. Most are absorbed in the small intestine, and any extra leaves in urine, so you need a steady supply. Vitamin B12 is the exception. It needs intrinsic factor, a protein from the stomach, is absorbed only at the very end of the small intestine, and the liver stores years of it.",
+     "part": "n-water-vitamins",
+     "cue": "B vitamins and C chip",
+     "foodBody": [
+      {
+       "name": "Vitamin B12",
+       "text": "Needed for nerves and for making red blood cells. Found only in animal foods such as meat, fish, eggs and dairy, plus fortified foods, so vegans need a supplement."
+      },
+      {
+       "name": "Vitamin C",
+       "text": "Needed to make collagen, and it helps you absorb iron from plants. In citrus, peppers, berries, kiwi and broccoli."
+      }
+     ]
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Iron",
+     "text": "Iron is absorbed at the very top of the small intestine, and how much depends on how much you need. Stomach acid and vitamin C help. In the blood it rides on a carrier called transferrin to the red marrow, which builds it into hemoglobin. Spare iron is stored in the liver as ferritin. Your body can't get rid of extra iron, so it controls absorption instead, and it recycles about twenty milligrams a day from old red cells in the spleen.",
+     "part": "n-iron",
+     "cue": "Iron chip",
+     "foodBody": [
+      {
+       "name": "Hemoglobin",
+       "text": "The protein that fills red blood cells and carries oxygen. Each of its four chains holds one iron atom at its center."
+      },
+      {
+       "name": "Ferritin",
+       "text": "A hollow protein shell that stores iron safely, mainly in the liver. Blood ferritin is the usual test of how much iron you have stored."
+      }
+     ]
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Calcium",
+     "text": "Calcium is absorbed in the small intestine with help from active vitamin D, which makes the carrier proteins. Only about a quarter to a third of the calcium you eat gets in. Ninety-nine percent ends up in bones and teeth. The one percent in your blood runs muscles and nerves, and when it dips, parathyroid hormone tells the kidneys to keep more and the bones to release some.",
+     "part": "n-calcium",
+     "cue": "Calcium chip",
+     "foodBody": [
+      {
+       "name": "Parathyroid hormone",
+       "text": "Made by four tiny glands in the neck. It raises blood calcium by drawing on bone, saving calcium in the kidneys and activating vitamin D."
+      }
+     ]
+    },
+    {
+     "id": "5.5",
+     "seg": 5,
+     "name": "Sodium",
+     "text": "Almost all the sodium you eat is absorbed. It's the main salt in your blood and the fluid around your cells, and water follows it. Sodium rushing into a nerve or muscle cell is what fires each signal. Your body doesn't store extra; the kidneys pass it out, and some leaves in sweat. That's the end of the routes; the last figure puts them side by side.",
+     "part": "n-sodium",
+     "cue": "Sodium chip",
+     "foodBody": [
+      {
+       "name": "Sodium",
+       "text": "Most of it comes as salt, sodium chloride. In most diets the largest share comes from processed and restaurant foods rather than the salt shaker."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "fig": 6,
+   "anchor": "fig-6",
+   "title": "Putting It All Together",
+   "subtitle": "Every nutrient’s road, side by side, plus a few extras.",
+   "segments": [
+    {
+     "id": "6.1",
+     "seg": 1,
+     "name": "One Table",
+     "text": "Here's every route in one table: where each nutrient is absorbed, which road it takes, where it ends up, and the lesson where you met it. Notice the pattern. Fats and the fat-soluble vitamins take the lymph; almost everything else goes to the liver first.",
+     "part": "table",
+     "cue": "The table, row by row"
+    },
+    {
+     "id": "6.2",
+     "seg": 2,
+     "name": "Worth Knowing",
+     "text": "A few extras. Your gut lining replaces itself every few days. The liver can regrow from a fraction of its size. Most body fat is under the skin, not around the organs. And a hollow bone is stronger for its weight than a solid one. That's the end of Nutrition 101. Try the quiz below.",
+     "part": "worth",
+     "cue": "Worth knowing, then down to the quiz"
+    }
+   ]
+  }
+ ]
+}

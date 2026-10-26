@@ -17,6 +17,6 @@ BRAND_CSS = (".ai{color:var(--acc);font-weight:600;letter-spacing:.01em}"
 COURSES = [
     dict(slug='nutrition-101', title='Nutrition 101', href='curriculum/', code='NUTR 101',
          desc='What food is made of, down to molecules and elements: macronutrients, micronutrients and the non-nutrients in whole foods, '
-              'a final review that reads real labels line by line, and the searchable Food Label Tree of over 1,000 label compounds.',
+              'a final review that reads real labels line by line, the searchable Food Label Tree of over 1,000 label compounds, and an interactive body map of where every nutrient goes.',
          reg='REG'),
 ]

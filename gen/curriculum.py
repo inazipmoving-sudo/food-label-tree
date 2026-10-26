@@ -525,7 +525,7 @@ REG=[(sl,mn,mname,t,sl in ('macronutrients-fats','macronutrients-lipids','food-l
  ('micronutrients-major-minerals','2','Micronutrients','Major Minerals'),('micronutrients-trace-minerals','2','Micronutrients','Trace Minerals'),
  ('additives','3','Non-Nutrients','Additives and E-Numbers'),('antinutrients','3','Non-Nutrients','Antinutrients'),('processing','3','Non-Nutrients','Processing'),
  ('bioactives','3','Non-Nutrients','Bioactives'),('flavorings','3','Non-Nutrients','Flavorings'),('final-review','4','Final Review','Final Review'),
- ('food-label-tree','5','Food Label Tree','Food Label Tree')]]
+ ('food-label-tree','5','Food Label Tree','Food Label Tree'),('human-body','6','The Human Body','Where Nutrients Go')]]
 def NEXT_OF(slug):
     live=[r for r in REG if r[4]]; i=[r[0] for r in live].index(slug)
     return (f'Module {live[i+1][1]} · {live[i+1][3]}',live[i+1][0]+'.html') if i+1<len(live) else None
@@ -547,6 +547,6 @@ for n,nm,rs in MODS:
     items=''.join((f'<a class="les" href="{r[0]}.html">{r[3]} <span>{TREE_N:,} compounds · searchable tree →</span></a>' if r[0]=='food-label-tree' else f'<a class="les" href="{r[0]}.html">{r[3]} <span>{NFIG.get(r[0]) or len(json.load(open(os.path.join(GEN,"scripts",r[0]+".json")))["figures"])} figures + script →</span></a>') if r[4] else f'<div class="les off">{r[3]} <span>coming soon</span></div>' for r in rs)
     cards+=f'<section class="mod" style="--a:var(--c-{nm.lower().replace(" ","-")},var(--acc))"><div class="mh"><span class="mn">{n}</span><span class="ico"></span><h2>Module {n} · {nm}</h2></div>{items}</section>'
 
-open(os.path.join(OUT,'index.html'),'w').write(page(COURSE+' · '+UNIVERSITY_NAME,'<nav class="crumbs"><a href="../">Home</a> › '+COURSE+'</nav><h1>'+COURSE+'</h1><p>Lessons with numbered figures, made for teaching by phone. Five modules, from the molecules in food to the full Food Label Tree.</p>',f'<main class="mods">{cards}</main>'))
+open(os.path.join(OUT,'index.html'),'w').write(page(COURSE+' · '+UNIVERSITY_NAME,'<nav class="crumbs"><a href="../">Home</a> › '+COURSE+'</nav><h1>'+COURSE+'</h1><p>Lessons with numbered figures, made for teaching by phone. Six modules, from the molecules in food to the full Food Label Tree and where every nutrient goes in your body.</p>',f'<main class="mods">{cards}</main>'))
 print(len(LESSON),'figures')
 exec(open(os.path.join(GEN,'site_pages.py'),encoding='utf-8').read())  # home catalog + Module 5 tree page
