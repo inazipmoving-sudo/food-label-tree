@@ -16,7 +16,7 @@ def seg(name,text,part=None,cue=None,box=None,fb=None):
     return d
 USES={}
 # lessons whose page and script carry the figure (switched on lesson by lesson as each is pushed and checked live)
-LIVE=['macronutrients-fats','macronutrients-lipids','macronutrients-carbohydrates']
+LIVE=['macronutrients-fats','macronutrients-lipids','macronutrients-carbohydrates','macronutrients-water-ethanol']
 
 USES['macronutrients-fats']=dict(cat='fats',title='Where fats are used in the body',
  lead='Most fat you eat is stored; the rest is burned for fuel or built into cells.',
@@ -104,7 +104,9 @@ USES['macronutrients-water-ethanol']=dict(cat='water and ethanol',title='Where w
  segs=[seg('Where Water and Ethanol Go',"Here's the statue with the places water and ethanol are used or end up. Water is in every part of you, about 60% of an adult's weight. Ethanol is absorbed, burned for energy by the liver, and acts on the brain on the way. Tap a number to see what that place does.",'body-uses','The statue and its numbered places'),
   seg('Water Everywhere',"Blood plasma is about 90% water and carries nutrients, heat and wastes. About two thirds of your water is inside your cells, and muscle is about three quarters water. Joints are lubricated by a watery fluid.",'site-blood','Numbers 1, 2 and 6: blood, cells and joints',
       fb=[('Water','Drinks, and food: fruit and vegetables are mostly water. Your body also makes a little when it burns food. It is the medium every chemical reaction in your cells happens in.')]),
-  seg('Keeping the Balance',"The kidneys filter about 180 liters of fluid a day and return nearly all of it, keeping one or two liters as urine. Water also leaves as sweat and in your breath, and the large intestine takes back most of what's left in the gut.",'site-kidneys','Numbers 3, 4, 5 and 11: kidneys, skin, large intestine and lungs'),
+  seg('Keeping the Balance',"The kidneys filter about 180 liters of fluid a day and return nearly all of it, keeping one or two liters as urine. Water also leaves as sweat and in your breath, and the large intestine takes back most of what's left in the gut.",'site-kidneys','Numbers 3, 4, 5 and 11: kidneys, skin, large intestine and lungs',
+      fb=[('Sodium','Mostly from salt in food. In your body it holds water in the blood and the fluid around cells, so the kidneys balance water and sodium together.'),
+          ('Alcohol','It blocks vasopressin, the hormone that tells the kidneys to hold on to water, so you pass more urine while alcohol is in your blood.')]),
   seg('The Path of Alcohol',"A little alcohol is absorbed in the stomach, and most in the small intestine. The liver breaks most of it down, to acetaldehyde and then acetate, at about one drink an hour. On the way, alcohol reaches the brain and slows nerve signals, and a little leaves in your breath.",'site-liver','Numbers 7 to 11: stomach, small intestine, liver, brain and lungs',
       fb=[('Ethanol','The alcohol in beer, wine and spirits. Your liver burns it for energy, about 7 kcal per gram, but it is not a nutrient, and less is better for health.'),
           ('Acetaldehyde','Not something you eat: your liver makes it from ethanol. It is toxic and causes much of a hangover, and the liver quickly turns it into acetate.')]),

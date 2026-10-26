@@ -3,8 +3,8 @@
  "module": "macronutrients-water-ethanol",
  "title": "Module 1 · Water and Ethanol",
  "lang": "en",
- "revision": 1,
- "idRevision": 1,
+ "revision": 2,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -327,11 +328,90 @@
   {
    "fig": 7,
    "anchor": "fig-7",
+   "title": "Where water and ethanol are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "Where Water and Ethanol Go",
+     "text": "Here's the statue with the places water and ethanol are used or end up. Water is in every part of you, about 60% of an adult's weight. Ethanol is absorbed, burned for energy by the liver, and acts on the brain on the way. Tap a number to see what that place does.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places",
+     "slug": "where-water-and-ethanol-go"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "Water Everywhere",
+     "text": "Blood plasma is about 90% water and carries nutrients, heat and wastes. About two thirds of your water is inside your cells, and muscle is about three quarters water. Joints are lubricated by a watery fluid.",
+     "part": "site-blood",
+     "cue": "Numbers 1, 2 and 6: blood, cells and joints",
+     "foodBody": [
+      {
+       "name": "Water",
+       "text": "Drinks, and food: fruit and vegetables are mostly water. Your body also makes a little when it burns food. It is the medium every chemical reaction in your cells happens in."
+      }
+     ],
+     "slug": "water-everywhere"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "Keeping the Balance",
+     "text": "The kidneys filter about 180 liters of fluid a day and return nearly all of it, keeping one or two liters as urine. Water also leaves as sweat and in your breath, and the large intestine takes back most of what's left in the gut.",
+     "part": "site-kidneys",
+     "cue": "Numbers 3, 4, 5 and 11: kidneys, skin, large intestine and lungs",
+     "foodBody": [
+      {
+       "name": "Sodium",
+       "text": "Mostly from salt in food. In your body it holds water in the blood and the fluid around cells, so the kidneys balance water and sodium together."
+      },
+      {
+       "name": "Alcohol",
+       "text": "It blocks vasopressin, the hormone that tells the kidneys to hold on to water, so you pass more urine while alcohol is in your blood."
+      }
+     ],
+     "slug": "keeping-the-balance"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "The Path of Alcohol",
+     "text": "A little alcohol is absorbed in the stomach, and most in the small intestine. The liver breaks most of it down, to acetaldehyde and then acetate, at about one drink an hour. On the way, alcohol reaches the brain and slows nerve signals, and a little leaves in your breath.",
+     "part": "site-liver",
+     "cue": "Numbers 7 to 11: stomach, small intestine, liver, brain and lungs",
+     "foodBody": [
+      {
+       "name": "Ethanol",
+       "text": "The alcohol in beer, wine and spirits. Your liver burns it for energy, about 7 kcal per gram, but it is not a nutrient, and less is better for health."
+      },
+      {
+       "name": "Acetaldehyde",
+       "text": "Not something you eat: your liver makes it from ethanol. It is toxic and causes much of a hangover, and the liver quickly turns it into acetate."
+      }
+     ],
+     "slug": "the-path-of-alcohol"
+    },
+    {
+     "id": "7.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Every cell holds water, and alcohol spreads through all body water, so the numbers mark typical places. Body water and the rate alcohol is cleared vary from person to person.",
+     "cue": "The caption under the statue",
+     "box": "note",
+     "slug": "simplified"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "7.1",
+     "id": "8.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's every molecule in this lesson in one table: its formula, its energy, what it does in your body and where you find it. Notice that ethanol's breakdown products, acetaldehyde and acetate, are molecules you've already met on this page.",
@@ -340,7 +420,7 @@
      "slug": "one-table"
     },
     {
-     "id": "7.2",
+     "id": "8.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Coffee and tea still count toward your water. Ice floats because hydrogen bonds hold it in an open lattice. Cooking doesn't remove all the alcohol from a dish; a long simmer removes most, but rarely all. And in the US, a non-alcoholic drink can still contain up to half a percent alcohol. That's Module 1. Try the quiz below.",
@@ -356,6 +436,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-water-ethanol.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 7,
- "segmentCount": 31
+ "figureCount": 8,
+ "segmentCount": 36
 }
