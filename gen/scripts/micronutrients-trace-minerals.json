@@ -3,8 +3,8 @@
  "module": "micronutrients-trace-minerals",
  "title": "Module 2 · Trace Minerals",
  "lang": "en",
- "revision": 1,
- "idRevision": 1,
+ "revision": 2,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -378,11 +379,85 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Where trace minerals are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Where the Trace Minerals Go",
+     "text": "Here's the statue with the places the trace minerals are used. You need only milligrams or micrograms of each, but they do big jobs: carrying oxygen, running enzymes, making thyroid hormones and hardening teeth. Tap a number to see what that place does.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Iron",
+     "text": "About two thirds of your iron is in the hemoglobin of red blood cells, which carry oxygen. Muscle holds oxygen with myoglobin, another iron protein. Bone marrow builds iron into new red cells, the spleen recycles it from old ones, and the liver stores it as ferritin. The small intestine controls how much gets in.",
+     "part": "site-blood",
+     "cue": "Numbers 1 to 6: blood, marrow, muscle, liver, spleen and small intestine",
+     "foodBody": [
+      {
+       "name": "Heme iron",
+       "text": "Red meat, liver and shellfish give heme iron, which is well absorbed; beans, lentils and spinach give non-heme iron, absorbed better with vitamin C. In the body it sits at the center of hemoglobin and myoglobin."
+      },
+      {
+       "name": "Ferritin",
+       "text": "Not something you eat: it is the protein your liver and other cells store iron in. Blood ferritin is the usual test of iron stores."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "Iodine and Selenium",
+     "text": "The thyroid builds iodine into its hormones, which set how fast your body uses energy, and selenium enzymes switch those hormones on.",
+     "part": "site-thyroid",
+     "cue": "Number 7: the thyroid",
+     "foodBody": [
+      {
+       "name": "Iodine",
+       "text": "Iodized salt, seafood, dairy and eggs. In the body almost all of it goes into thyroid hormones."
+      },
+      {
+       "name": "Selenium",
+       "text": "Brazil nuts, fish, eggs and grains. It is part of enzymes that activate thyroid hormone and protect cells from oxidation."
+      }
+     ]
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "Zinc, Copper and Fluoride",
+     "text": "Zinc runs hundreds of enzymes, helps wounds heal and supports the immune system; most of it sits in muscle and bone. Copper helps move iron, and fluoride strengthens tooth enamel against acid.",
+     "part": "site-skin",
+     "cue": "Numbers 2, 3, 8 and 9: marrow, muscle, teeth and skin",
+     "foodBody": [
+      {
+       "name": "Zinc",
+       "text": "Oysters, meat, shellfish, beans and seeds. In the body it is part of hundreds of enzymes and is needed for immunity, healing and taste."
+      }
+     ]
+    },
+    {
+     "id": "9.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Many trace minerals work in enzymes in every cell, so the numbers mark the main places, not every one.",
+     "cue": "The caption under the statue",
+     "box": "note"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here are the nine trace minerals in one table: their main job, what happens with too little, and whole-food sources.",
@@ -390,7 +465,7 @@
      "cue": "The table, row by row"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Heme, vitamin B12 and chlorophyll all hold a metal in the same kind of ring. Each blood donation removes about two hundred to two hundred and fifty milligrams of iron. And iodized salt, introduced in the US in 1924, all but eliminated goiter. Try the quiz below.",
