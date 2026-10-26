@@ -17,6 +17,10 @@ BRAND_CSS = (".ai{color:var(--acc);font-weight:600;letter-spacing:.01em}"
 COURSES = [
     dict(slug='nutrition-101', title='Nutrition 101', href='curriculum/', code='NUTR 101',
          desc='What food is made of, down to molecules and elements: macronutrients, micronutrients and the non-nutrients in whole foods, '
-              'a final review that reads real labels line by line, the searchable Food Label Tree of over 1,000 label compounds, and an interactive body map of where every nutrient goes.',
+              'a final review that reads real labels line by line, and the searchable Food Label Tree of over 1,000 label compounds.',
          reg='REG'),
+    dict(slug='anatomy', title='Anatomy', href='anatomy/', code='ANAT 101',
+         desc='The human body as a marble statue you can peel back layer by layer: skin, muscles, bones, nerves, organs and circulation. '
+              'Tap any part to zoom in, then follow each nutrient from your plate to where it is used or stored.',
+         reg='AREG'),
 ]

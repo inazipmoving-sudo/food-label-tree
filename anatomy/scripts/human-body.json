@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
  "module": "human-body",
- "title": "Module 6 · The Human Body",
+ "title": "Module 1 · The Human Body",
  "lang": "en",
  "revision": 1,
  "idRevision": 1,
@@ -26,7 +26,7 @@
      "id": "1.1",
      "seg": 1,
      "name": "Where Food Goes",
-     "text": "This last module puts the whole course on one body. Every nutrient we've met so far, from glucose to iron, has to get from your plate to a place where it's used or stored. This tree is the short version of that journey, and each box links to the figure that shows it on the statue.",
+     "text": "This module puts nutrition on one body. Every nutrient in your food, from glucose to iron, has to get from your plate to a place where it's used or stored. This tree is the short version of that journey, and each box links to the figure that shows it on the statue.",
      "part": "head",
      "cue": "Title, then the Food box at the top",
      "slug": "where-food-goes"
@@ -260,7 +260,7 @@
      "id": "4.1",
      "seg": 1,
      "name": "Tap a Nutrient",
-     "text": "Now we follow the food. Tap a nutrient above the statue and its road lights up, with numbered stops and a list of what happens at each one. Solid accent dashes are the gut, terracotta is blood, blue is the portal vein, green dots are lymph, and grey dots are the ways out. Each nutrient links back to its own lesson.",
+     "text": "Now we follow the food. Tap a nutrient above the statue and its road lights up, with numbered stops and a list of what happens at each one. Solid accent dashes are the gut, terracotta is blood, blue is the portal vein, green dots are lymph, and grey dots are the ways out.",
      "part": "body",
      "cue": "The chips, then the colour key",
      "slug": "tap-a-nutrient"
@@ -452,7 +452,7 @@
      "id": "6.1",
      "seg": 1,
      "name": "One Table",
-     "text": "Here's every route in one table: where each nutrient is absorbed, which road it takes, where it ends up, and the lesson where you met it. Notice the pattern. Fats and the fat-soluble vitamins take the lymph; almost everything else goes to the liver first.",
+     "text": "Here's every route in one table: where each nutrient is absorbed, which road it takes, where it ends up, and the figure that shows it. Notice the pattern. Fats and the fat-soluble vitamins take the lymph; almost everything else goes to the liver first.",
      "part": "table",
      "cue": "The table, row by row",
      "slug": "one-table"
@@ -461,7 +461,7 @@
      "id": "6.2",
      "seg": 2,
      "name": "Worth Knowing",
-     "text": "A few extras. Your gut lining replaces itself every few days. The liver can regrow from a fraction of its size. Most body fat is under the skin, not around the organs. And a hollow bone is stronger for its weight than a solid one. That's the end of Nutrition 101. Try the quiz below.",
+     "text": "A few extras. Your gut lining replaces itself every few days. The liver can regrow from a fraction of its size. Most body fat is under the skin, not around the organs. And a hollow bone is stronger for its weight than a solid one. That's the end of this module. Try the quiz below.",
      "part": "worth",
      "cue": "Worth knowing, then down to the quiz",
      "slug": "worth-knowing"
@@ -469,9 +469,9 @@
    ]
   }
  ],
- "page": "curriculum/human-body.html",
- "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/human-body.html",
- "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/human-body.json",
+ "page": "anatomy/human-body.html",
+ "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/anatomy/human-body.html",
+ "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/anatomy/scripts/human-body.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 6,

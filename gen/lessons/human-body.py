@@ -2,6 +2,7 @@
 exec(open(os.path.join(GEN,'bodymap_geo.py'),encoding='utf-8').read())
 exec(open(os.path.join(GEN,'bodymap.py'),encoding='utf-8').read())
 exec(open(os.path.join(GEN,'bodymap_widget.py'),encoding='utf-8').read())
+exec(open(os.path.join(GEN,'bodymap_sites.py'),encoding='utf-8').read())
 # Figure 1: the body-map family tree (Fats Figure 1 style), food at the top, destinations at the bottom
 HB_NODES=[(450,30,170,'Food','what you eat','nd root','#fig-4'),
  (450,140,190,'Digestion','mouth to gut','nd','#fig-3'),
@@ -27,22 +28,22 @@ P2=BMW(bodymap('skin',aria='Marble statue of a human body with six layer buttons
 P3=BMW(bodymap('organs','torso',aria='The torso of the marble statue opened as a cutaway: windpipe, lungs, heart, diaphragm, liver, gallbladder, stomach, spleen, pancreas, small and large intestine, kidneys and bladder. Buttons below zoom into the gut, one villus of the small intestine, and the heart.'),
  'The organs layer, zoomed into the torso. Use the buttons under the statue to zoom further, down to one villus of the small intestine. '+SIMP)
 P4=BMW(bodymap('organs',chips=MACRO,aria='The marble statue with its organs shown faintly and six nutrient buttons: glucose, fats, amino acids, water, alcohol and fiber. Tapping one draws its road through the body with numbered stops.'),
- 'Tap a nutrient to light up its road. The numbered stops match the steps in the panel, and each nutrient links to its lesson. Roads are drawn as single lines; blood really reaches every cell.')
+ 'Tap a nutrient to light up its road. The numbered stops match the steps in the panel. Roads are drawn as single lines; blood really reaches every cell.')
 P5=BMW(bodymap('organs',chips=MICRO,aria='The marble statue with its organs shown faintly and five buttons: vitamins A, D, E and K; B vitamins and C; iron; calcium; and sodium. Tapping one draws its road through the body with numbered stops.'),
  'The same roads for vitamins and minerals. Watch for the stores (liver, fat tissue, bone, marrow) and for the one-way door: the body can’t get rid of extra iron.')
 _HL=lambda h,t:f'<a href="{h}">{t}</a>'
-P6=('<!--noart-->'+table('table',['Nutrient','Absorbed','Road','Ends up','Lesson'],[
-  ['Glucose','Small intestine','Portal vein to liver','Every cell, brain especially; glycogen in liver and muscle',_HL('macronutrients-carbohydrates.html','Carbohydrates')],
-  ['Fats','Small intestine, with bile','Lymph, as chylomicrons','Fat tissue (stored), muscle (burned)',_HL('macronutrients-fats.html','Fats')],
-  ['Amino acids','Small intestine','Portal vein to liver','Proteins in every cell; extra nitrogen leaves as urea',_HL('macronutrients-protein.html','Protein')],
-  ['Water','Small and large intestine','Blood, then everywhere','Inside cells (two thirds); out as urine, breath, sweat',_HL('macronutrients-water-ethanol.html','Water and Ethanol')],
-  ['Alcohol','Stomach and small intestine','Portal vein to liver','Cleared by the liver at about one drink an hour',_HL('macronutrients-water-ethanol.html','Water and Ethanol')],
-  ['Fiber','Not absorbed','Stays in the gut','Gut bacteria in the large intestine; stool',_HL('macronutrients-carbohydrates.html','Carbohydrates')],
-  ['Vitamins A, D, E, K','Small intestine, with fat','Lymph, as chylomicrons','Stored in liver and fat tissue',_HL('micronutrients-fat-soluble-vitamins.html','Fat-Soluble Vitamins')],
-  ['B vitamins and C','Small intestine (B12 at its end)','Portal vein to liver','Used in every cell; extra in urine (B12 stored in liver)',_HL('micronutrients-water-soluble-vitamins.html','Water-Soluble Vitamins')],
-  ['Iron','Top of the small intestine','Blood, on transferrin','Hemoglobin from red marrow; stored as ferritin',_HL('micronutrients-trace-minerals.html','Trace Minerals')],
-  ['Calcium','Small intestine, with vitamin D','Blood','Bones and teeth (99%)',_HL('micronutrients-major-minerals.html','Major Minerals')],
-  ['Sodium','Small intestine','Blood','Fluid outside cells; extra out by the kidneys and sweat',_HL('micronutrients-major-minerals.html','Major Minerals')]],
+P6=('<!--noart-->'+table('table',['Nutrient','Absorbed','Road','Ends up','Figure'],[
+  ['Glucose','Small intestine','Portal vein to liver','Every cell, brain especially; glycogen in liver and muscle',_HL('#fig-4','Figure 4')],
+  ['Fats','Small intestine, with bile','Lymph, as chylomicrons','Fat tissue (stored), muscle (burned)',_HL('#fig-4','Figure 4')],
+  ['Amino acids','Small intestine','Portal vein to liver','Proteins in every cell; extra nitrogen leaves as urea',_HL('#fig-4','Figure 4')],
+  ['Water','Small and large intestine','Blood, then everywhere','Inside cells (two thirds); out as urine, breath, sweat',_HL('#fig-4','Figure 4')],
+  ['Alcohol','Stomach and small intestine','Portal vein to liver','Cleared by the liver at about one drink an hour',_HL('#fig-4','Figure 4')],
+  ['Fiber','Not absorbed','Stays in the gut','Gut bacteria in the large intestine; stool',_HL('#fig-4','Figure 4')],
+  ['Vitamins A, D, E, K','Small intestine, with fat','Lymph, as chylomicrons','Stored in liver and fat tissue',_HL('#fig-5','Figure 5')],
+  ['B vitamins and C','Small intestine (B12 at its end)','Portal vein to liver','Used in every cell; extra in urine (B12 stored in liver)',_HL('#fig-5','Figure 5')],
+  ['Iron','Top of the small intestine','Blood, on transferrin','Hemoglobin from red marrow; stored as ferritin',_HL('#fig-5','Figure 5')],
+  ['Calcium','Small intestine, with vitamin D','Blood','Bones and teeth (99%)',_HL('#fig-5','Figure 5')],
+  ['Sodium','Small intestine','Blood','Fluid outside cells; extra out by the kidneys and sweat',_HL('#fig-5','Figure 5')]],
   title='Every route in one table')
  +worth([('Your gut lining is replaced every few days','The cells covering the villi live only about three to five days before they are shed and replaced, one of the fastest turnovers in the body.'),
    ('The liver can regrow','Even after much of it is removed, the liver grows back to nearly its full size within months.'),
@@ -66,5 +67,5 @@ HB_QUIZ=[('Where in the body is almost all of your food absorbed?','The small in
  ('Why is vitamin B12 absorbed differently from the other B vitamins?','It needs intrinsic factor from the stomach and is absorbed only at the end of the small intestine; the liver stores years of it (Figure 5).'),
  ('Where does most of the iron for new red blood cells come from each day?','Recycled from old red cells broken down in the spleen. Only 1 to 2 mg a day is absorbed from food (Figure 5).'),
  ('Where is 99% of your calcium, and what raises blood calcium when it dips?','In bones and teeth. Parathyroid hormone tells the kidneys to keep more and the bones to release some (Figure 5).')]
-build_lesson('human-body','The Human Body','Where everything you eat goes. A marble statue of the body in six layers you can switch between and zoom into: skin, muscles, bones, nerves, organs and circulation. Then tap a nutrient to follow its road from the plate to where it is used or stored, with a link back to its lesson. Every route is simplified, and each says how. The figure is on the left and the lesson script on the right; the quiz is at the end.',
- HB_LESSON,HB_QUIZ,after_extra=f'<link rel="stylesheet" href="{_asset("bodymap.css")}">'+BM_DEFS+f'<script src="{_asset("bodymap.js")}"></script>')
+build_lesson('human-body','The Human Body','Where everything you eat goes. A marble statue of the body in six layers you can switch between and zoom into: skin, muscles, bones, nerves, organs and circulation. Then tap a nutrient to follow its road from the plate to where it is used or stored. Every route is simplified, and each says how. The figure is on the left and the lesson script on the right; the quiz is at the end.',
+ HB_LESSON,HB_QUIZ,after_extra=bodymap_assets())

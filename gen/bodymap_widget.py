@@ -235,6 +235,8 @@ ROUTES={
      (318,292,'Nerves and muscle','Sodium rushing into the cell is what fires each nerve signal and muscle contraction.'),(236,318,'Kidneys','Pass out the extra, so urine sodium tracks what you eat.'),(140,470,'Skin','Some is lost in sweat.')],
    end='Mostly in the fluid outside cells. The kidneys keep the total in balance; the body does not store extra.',
    simp='The heart and liver are on the road only because all blood from the gut passes through them; they do not process sodium.')}
+# ROUTE_LINKS: show each route's lesson link (set to a URL prefix such as '../curriculum/' to enable; off while the courses stand alone)
+ROUTE_LINKS=None
 MACRO=['glucose','fats','amino','water','alcohol','fiber']
 MICRO=['fat-vitamins','water-vitamins','iron','calcium','sodium']
 RCLS={'gut':'rt-g','blood':'rt-b','blood portal':'rt-b rt-p','lymph':'rt-l','bile':'rt-x','out':'rt-o'}
@@ -269,7 +271,7 @@ def bodymap(start_layer='skin',start_dive=None,chips=None,aria='',fig=None):
         ch='<div class="bm-chips" role="group" aria-label="Follow a nutrient"><span class="bm-chl">Follow a nutrient</span>'+''.join(f'<button type="button" class="bm-chip" data-n="{k}" data-part="n-{k}" aria-pressed="false">{ROUTES[k]["name"]}</button>' for k in chips)+'</div>'
     data={'parts':{k:list(v) for k,v in PARTS.items()},'dives':{k:{'t':d[0],'layer':d[1],'vb':d[2],'parts':d[3],'pins':d[4],'lead':d[5]} for k,d in DIVES.items()},
           'order':DIVE_ORDER,'closer':CLOSER,'intro':LAYER_INTRO,'names':dict(LAYERS),
-          'routes':{k:{'name':ROUTES[k]['name'],'lesson':ROUTES[k]['lesson'],'stops':[list(s) for s in ROUTES[k]['stops']],'end':ROUTES[k]['end'],'simp':ROUTES[k]['simp']} for k in (chips or [])},
+          'routes':{k:{'name':ROUTES[k]['name'],'lesson':([ROUTE_LINKS+ROUTES[k]['lesson'][0],ROUTES[k]['lesson'][1]] if ROUTE_LINKS else None),'stops':[list(s) for s in ROUTES[k]['stops']],'end':ROUTES[k]['end'],'simp':ROUTES[k]['simp']} for k in (chips or [])},
           'start':{'layer':start_layer,'dive':start_dive}}
     js=_bj.dumps(data,ensure_ascii=False).replace('</','<\\/')
     return (f'<div class="bm" id="{uid}" data-part="body" data-layer="{start_layer}" data-mode="layer">'+tabs+ch

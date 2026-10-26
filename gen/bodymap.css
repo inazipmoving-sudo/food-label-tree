@@ -134,3 +134,7 @@
 .bm-key{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--muted);margin:10px 0 0}
 .bm-key i{display:inline-block;width:22px;height:0;border-top:4px dashed;vertical-align:middle;margin-right:5px}
 .art .bm-fig svg.bm-svg{min-width:0;max-height:none;width:100%;height:100%}.art svg.bm-defs{min-width:0;max-height:none}
+.bm-sites .bm-pin{pointer-events:auto;font-family:inherit;padding:0 5px}
+.bm-sites .bm-pins{pointer-events:none}
+.bm-svg .hs .og,.bm-svg .hs.og,.bm-svg .hs .msh,.bm-svg .hs .bn{fill:var(--bm-hi-soft)}
+.bm-svg .hs .tb,.bm-svg .hs .colon,.bm-svg .hs .si,.bm-svg .hs .nv{stroke:var(--bm-hi)}
