@@ -3,8 +3,8 @@
  "module": "processing",
  "title": "Module 3 · Processing",
  "lang": "en",
- "revision": 2,
- "idRevision": 1,
+ "revision": 3,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -455,11 +456,90 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Where processed foods act in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Where Processed Foods Act",
+     "text": "Here's the statue with the places that compounds from cooking and processing act. Some are made by heat, some by curing, and some by refining. Tap a number to see what happens there.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places",
+     "slug": "where-processed-foods-act"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Digestion",
+     "text": "Cooking softens starch and protein so the small intestine digests them faster, and nixtamalization frees niacin in corn and adds calcium from the lime. In the stomach, nitrite from cured meat can form nitrosamines.",
+     "part": "site-gut",
+     "cue": "Numbers 1, 2 and 7: stomach, small intestine and bones",
+     "foodBody": [
+      {
+       "name": "Nitrosamines",
+       "text": "Formed from nitrite and amines in cured meats, especially when fried, and in the stomach. Some cause cancer in animals."
+      }
+     ],
+     "slug": "digestion"
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "Liver and Blood Vessels",
+     "text": "The liver activates and clears acrylamide, HCAs and PAHs, and some of the products can damage DNA, which is why charring and very browned starchy food are best kept moderate. Trans fat from partial hydrogenation raises LDL cholesterol and harms blood vessels. The kidneys clear what's left in urine.",
+     "part": "site-liver",
+     "cue": "Numbers 3, 4 and 6: liver, blood vessels and kidneys",
+     "foodBody": [
+      {
+       "name": "Acrylamide",
+       "text": "Formed when starchy foods such as fries, chips and toast brown at high heat. The liver turns it into glycidamide, which can damage DNA."
+      },
+      {
+       "name": "HCAs and PAHs",
+       "text": "HCAs form in meat cooked very hot, PAHs in smoke and charring. The liver activates and clears both."
+      }
+     ],
+     "slug": "liver-and-blood-vessels"
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "Fermentation and the Gut",
+     "text": "Live cultures from yogurt and other fermented foods meet the gut bacteria in the large intestine. Eating a lot of processed meat is linked to colon cancer.",
+     "part": "site-colon",
+     "cue": "Number 5: the large intestine",
+     "foodBody": [
+      {
+       "name": "Live cultures",
+       "text": "Bacteria such as Lactobacillus in yogurt and kefir. Many die in the stomach, and those that survive pass through the large intestine; most don’t stay there for long."
+      },
+      {
+       "name": "Processed meat",
+       "text": "Bacon, ham and sausages, preserved with salt and nitrite. Eating a lot of it is linked to colon cancer."
+      }
+     ],
+     "slug": "fermentation-and-the-gut"
+    },
+    {
+     "id": "9.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. The amounts in normal diets are small, and the links to disease come from large studies of people, so the numbers mark where these compounds act, not a measure of harm.",
+     "cue": "The caption under the statue",
+     "box": "note",
+     "slug": "simplified"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's the whole lesson in one table: each process, what it does, what forms or changes, the main foods, and what's worth doing.",
@@ -468,7 +548,7 @@
      "slug": "one-table"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Diets high in ultra-processed foods are linked to obesity and chronic disease, though which features matter is still debated. Frying oil reused many times breaks down. And fast, moist methods like microwaving and pressure-cooking keep more vitamins and form few of these heat compounds.",
@@ -484,6 +564,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/processing.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 9,
- "segmentCount": 44
+ "figureCount": 10,
+ "segmentCount": 49
 }
