@@ -184,8 +184,7 @@ L6_HTML=('<!--noart--><div class="art mols" data-part="molecule"><p class="mt">R
  '</tbody></table></div></div>'+L6_MORE+LEGEND)
 
 # ---- Figure 7: putting it all together (recap table only, no figure-by-figure list) ----
-RT=[('Fatty acids','none: a chain','carbon chain with an acid end','building blocks; fuel','yes, as part of fats','every food fat and oil','<a href="macronutrients-fats.html#fig-3">Fats lesson</a>'),
-('Triglycerides','glycerol','glycerol + 3 fatty acids, ester links','storing energy','yes, 9 kcal/g','oils, butter, meat fat, nuts','<a href="macronutrients-fats.html#fig-3">Fats lesson</a>'),
+RT=[('Triglycerides','glycerol','glycerol + 3 fatty acids (carbon chains with an acid end), ester links','storing energy; fuel','yes, 9 kcal/g','every food fat and oil: oils, butter, meat fat, nuts','<a href="macronutrients-fats.html#fig-3">Fats lesson</a>'),
 ('Phospholipids','glycerol','glycerol + 2 fatty acids + phosphate head','cell membranes; emulsifier','yes (counted in total fat)','egg yolk, soybeans, liver','<a href="#fig-2">Figure 2</a>'),
 ('Sterols','four fused rings','4 rings + OH + short tail','membranes; hormones; vitamin D; bile','no','cholesterol: animal foods; plant sterols: nuts, seeds, oils','<a href="#fig-3">Figure 3</a>'),
 ('Sphingolipids','sphingosine','sphingosine + 1 fatty acid (+ head)','skin barrier; myelin','not a real source','small amounts in milk, eggs, meat','<a href="#fig-4">Figure 4</a>'),
@@ -193,7 +192,7 @@ RT=[('Fatty acids','none: a chain','carbon chain with an acid end','building blo
 ('Eicosanoids','20-carbon fatty acid','made in cells from AA or EPA','short-lived signals','no, not a nutrient','made in your body','<a href="#fig-5">Figure 5</a>'),
 ('Fat-soluble vitamins & carotenoids','5-carbon units','rings and chains','vision, bones, clotting, antioxidants','no','liver, eggs, oily fish, nuts, greens, orange veg','<a href="#fig-6">Figure 6</a>')]
 RTH=['Group','Backbone','Structure','Main job','Energy?','Example foods','See']
-L7_HTML=('<!--noart--><section class="rsec" data-part="table"><div class="part">Every lipid in one table</div><div class="rtbl-wrap"><table class="rtbl lrt"><thead><tr>'+''.join(f'<th>{h}</th>' for h in RTH)+'</tr></thead><tbody>'
+L7_HTML=('<!--noart--><section class="rsec" data-part="table"><div class="part">Every lipid in one table</div><div class="rtbl-wrap"><table class="rtbl lrt" aria-label="Every lipid group side by side, 7 rows: triglycerides (glycerol plus 3 fatty acids), phospholipids, sterols, sphingolipids, waxes, eicosanoids, and fat-soluble vitamins and carotenoids; columns: group, backbone, structure, main job, energy, example foods, and where it is explained"><thead><tr>'+''.join(f'<th>{h}</th>' for h in RTH)+'</tr></thead><tbody>'
  +''.join('<tr>'+''.join(f'<td data-l="{h}">{v}</td>' for h,v in zip(RTH,r))+'</tr>' for r in RT)+'</tbody></table></div></section>'
  '<section class="rsec qa" data-part="energy"><div class="part">The two big ideas</div>'
  '<h4>Only fatty acids give energy</h4><p>Triglycerides and phospholipids give energy because of their fatty acids. Sterols, waxes, eicosanoids and the vitamins don’t: their jobs are building, signalling and protecting.</p>'

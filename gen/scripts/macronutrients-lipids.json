@@ -3,7 +3,7 @@
  "module": "macronutrients-lipids",
  "title": "Module 1 · Other Lipids",
  "lang": "en",
- "revision": 3,
+ "revision": 4,
  "idRevision": 1,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -335,7 +335,7 @@
      "id": "7.1",
      "seg": 1,
      "name": "One Table",
-     "text": "Here's the whole family in one table. For each group: its backbone, how it's built, its main job, whether it gives energy, and example foods. The last column links back to the figure that explains it, or to the Fats lesson for fatty acids and triglycerides.",
+     "text": "Here's the whole family in one table. For each group: its backbone, how it's built, its main job, whether it gives energy, and example foods. The last column links back to the figure that explains it, or to the Fats lesson for triglycerides and the fatty acids they're built from.",
      "part": "table",
      "cue": "The table, row by row"
     },
