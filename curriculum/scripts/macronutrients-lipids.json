@@ -3,8 +3,8 @@
  "module": "macronutrients-lipids",
  "title": "Module 1 · Other Lipids",
  "lang": "en",
- "revision": 5,
- "idRevision": 1,
+ "revision": 6,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-bilayer)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -372,11 +373,90 @@
   {
    "fig": 7,
    "anchor": "fig-7",
+   "title": "Where other lipids are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "7.1",
+     "seg": 1,
+     "name": "Where Other Lipids Go",
+     "text": "Here's the statue with every place the other lipids are used. They aren't stored for energy like fat. Instead they build membranes and are made into hormones, bile, vitamin D and signals. Tap a number to see what that place does.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places",
+     "slug": "where-other-lipids-go"
+    },
+    {
+     "id": "7.2",
+     "seg": 2,
+     "name": "Membranes",
+     "text": "Phospholipids and cholesterol make the membrane of every cell in the body. In the lungs, a phospholipid film called surfactant coats the tiny air sacs and stops them collapsing when you breathe out.",
+     "part": "site-membranes",
+     "cue": "Numbers 1 and 2: cell membranes and lungs",
+     "foodBody": [
+      {
+       "name": "Phospholipids",
+       "text": "Egg yolk and soy are rich in them, often sold as lecithin. In your body they form every cell membrane, help bile mix fat with water and make lung surfactant."
+      }
+     ],
+     "slug": "membranes"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
+     "name": "Cholesterol at Work",
+     "text": "The liver makes most of your cholesterol and sends it out in lipoproteins; it also turns some into bile acids, stored in the gallbladder. The brain makes its own cholesterol, about a quarter of the body's total. The adrenal glands turn cholesterol into steroid hormones, and in sunlight the skin makes vitamin D from a close relative.",
+     "part": "site-liver",
+     "cue": "Numbers 3 to 7: liver, gallbladder, brain, myelin and adrenal glands",
+     "foodBody": [
+      {
+       "name": "Cholesterol",
+       "text": "Only animal foods contain it: eggs, meat, shellfish and dairy. Your body makes most of what it needs and uses it in membranes and to make steroid hormones, bile acids and vitamin D."
+      },
+      {
+       "name": "Cortisol",
+       "text": "Not something you eat: your adrenal glands make it from cholesterol. It raises blood sugar and helps the body handle stress."
+      }
+     ],
+     "slug": "cholesterol-at-work"
+    },
+    {
+     "id": "7.4",
+     "seg": 4,
+     "name": "Sphingolipids and Signals",
+     "text": "Myelin, the wrapping on nerves, is rich in sphingolipids such as sphingomyelin. Ceramides help seal the skin's water barrier. And in the blood, platelets make thromboxane, an eicosanoid, to start a clot.",
+     "part": "site-myelin",
+     "cue": "Numbers 6, 8 and 9: myelin, skin and blood",
+     "foodBody": [
+      {
+       "name": "Ceramides",
+       "text": "Small amounts come from eggs, dairy, wheat and soy. In your body they are part of the skin barrier, together with cholesterol and fatty acids."
+      },
+      {
+       "name": "Thromboxane",
+       "text": "Not in food: platelets make it from arachidonic acid. Aspirin blocks its production, which is why it thins the blood."
+      }
+     ],
+     "slug": "sphingolipids-and-signals"
+    },
+    {
+     "id": "7.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Every cell uses these lipids, and the ovaries and testes also make steroid hormones from cholesterol, so the numbers mark typical places, not every one.",
+     "cue": "The caption under the statue",
+     "box": "note",
+     "slug": "simplified"
+    }
+   ]
+  },
+  {
+   "fig": 8,
+   "anchor": "fig-8",
    "title": "Putting It All Together",
    "subtitle": "Every lipid group side by side.",
    "segments": [
     {
-     "id": "7.1",
+     "id": "8.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's the whole family in one table. For each group: its backbone, how it's built, its main job, whether it gives energy, and example foods. The last column links back to the figure that explains it, or to the Fats lesson for triglycerides and the fatty acids they're built from.",
@@ -385,7 +465,7 @@
      "slug": "one-table"
     },
     {
-     "id": "7.2",
+     "id": "8.2",
      "seg": 2,
      "name": "Only Fatty Acids Give Energy",
      "text": "Read down the Energy column and one pattern stands out. Only the lipids whose fatty acids you digest and burn in real amounts give you energy: triglycerides, by far the biggest, and phospholipids. Everything else is for building, signalling and protecting.",
@@ -394,7 +474,7 @@
      "slug": "only-fatty-acids-give-energy"
     },
     {
-     "id": "7.3",
+     "id": "8.3",
      "seg": 3,
      "name": "Two-Sided Molecules",
      "text": "The second pattern is shape. Phospholipids, cholesterol and ceramides each have a small water-loving part and a big oily part. That two-sided shape is what lets them build the membranes around your cells and the barrier in your skin. That's the lipid family. Try the quiz below.",
@@ -410,6 +490,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-lipids.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 7,
- "segmentCount": 36
+ "figureCount": 8,
+ "segmentCount": 41
 }
