@@ -3,8 +3,8 @@
  "module": "macronutrients-carbohydrates",
  "title": "Module 1 · Carbohydrates",
  "lang": "en",
- "revision": 3,
- "idRevision": 1,
+ "revision": 4,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -13,6 +13,7 @@
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
   "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section.",
   "notes": "optional: extra grey notes, a list of {heading, text}. Not part of text; shown as a separate note under the section with its own heading."
  },
  "figures": [
@@ -386,11 +387,77 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Where carbohydrates are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Where Carbohydrates Go",
+     "text": "Here's the statue with every place carbohydrates are used. Starch and sugars are digested to glucose, the body's everyday fuel. Some is stored as glycogen, and fiber goes on to the large intestine. Tap a number to see what that place does.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Glucose as Fuel",
+     "text": "The brain burns about 120 grams of glucose a day, and red blood cells have no mitochondria, so glucose is all they can use. The pancreas keeps blood sugar in range, releasing insulin when it rises and glucagon when it falls.",
+     "part": "site-brain",
+     "cue": "Numbers 1, 2 and 5: brain, red blood cells and pancreas",
+     "foodBody": [
+      {
+       "name": "Glucose",
+       "text": "Starch in bread, rice, potatoes and pasta is all glucose, and table sugar is half glucose. In your body it is the main fuel of the brain and the only fuel of red blood cells."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "Glycogen Stores",
+     "text": "The liver stores about 100 grams of glycogen and breaks it down to keep blood sugar steady between meals. Muscles hold about 400 grams in total, but keep it for themselves during exercise. In a fast, the liver and kidneys also make new glucose.",
+     "part": "site-liver",
+     "cue": "Numbers 3, 4 and 6: liver, muscle and kidneys",
+     "foodBody": [
+      {
+       "name": "Glycogen",
+       "text": "There is almost none in food, because it breaks down after slaughter. Your body builds it from glucose and stores it in the liver and muscles."
+      }
+     ]
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "Fiber and the Rest",
+     "text": "Fiber you can't digest reaches the large intestine, where bacteria ferment it into short-chain fatty acids that feed the cells of the colon wall. In the mouth, saliva starts digesting starch, and bacteria on the teeth turn sugar into the acid that causes cavities. Joint cartilage is built around long sugar chains that hold water.",
+     "part": "site-colon",
+     "cue": "Numbers 7 to 9: large intestine, mouth and joint cartilage",
+     "foodBody": [
+      {
+       "name": "Short-chain fatty acids",
+       "text": "Not eaten as such: gut bacteria make them, mainly acetate, propionate and butyrate, from fiber in beans, oats and whole grains. Butyrate is the main fuel of the colon wall."
+      }
+     ]
+    },
+    {
+     "id": "9.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Almost every cell can burn glucose, so the numbers mark the places that depend on it most or store it, not every one. Glycogen amounts are typical adult values and vary with diet and exercise.",
+     "cue": "The caption under the statue",
+     "box": "note"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's every carbohydrate in this lesson in one table: what it's made of, the bond that holds it, whether you can digest it, and where you find it. Notice how much depends on the bond: starch and cellulose are both just glucose.",
@@ -398,7 +465,7 @@
      "cue": "The table, row by row"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Brown, raw and white sugar are all almost entirely sucrose. Honey is mostly free fructose and glucose, and shouldn't be given to babies under one. Whole grains keep the bran and germ, with their fiber, vitamins and minerals; refined grains are mostly starch. And bread tastes sweet as you chew because amylase is already making maltose. That's carbohydrates. Try the quiz below.",

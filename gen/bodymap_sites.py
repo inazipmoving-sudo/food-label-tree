@@ -32,9 +32,9 @@ def spread(pts,D=30,it=300):
         for q in Q: q[0]=min(386,max(14,q[0]));q[1]=min(786,max(14,q[1]))
         if not moved: break
     return [tuple(q) for q in Q]
-def body_sites(sites,layer='organs',title='',lead='',aria='',part='body-uses'):
+def body_sites(sites,layer='organs',title='',lead='',aria='',part='body-uses',uid=None):
     assert layer in SITE_LAYERS, layer
-    _BM_N[0]+=1;uid=f'bm{_BM_N[0]}'
+    if not uid: _BM_N[0]+=1;uid=f'bm{_BM_N[0]}'
     hl=sorted({k for s in sites for k in s.get('hl',())})
     svg=(f'<svg class="bm-svg" viewBox="0 0 400 800" role="img" aria-label="{_bh.escape(aria)}"><rect class="bm-bg" x="-400" y="-200" width="2000" height="1200"/>'
          f'<g class="bm-l" data-layer="{layer}">{layer_svg()[layer]}</g>LEADS</svg>')
@@ -62,7 +62,7 @@ _bus=_ilu.spec_from_file_location('body_uses',os.path.join(GEN,'body_uses.py'));
 def uses_figure(slug):
     U=BODY_USES.USES[slug]
     sites=[dict(k=k,name=n,role=r,at=at,hl=hl) for k,n,r,at,hl in U['sites']]
-    return (U['title'],BODY_USES.SUB,'<!--noart--><div class="art bmw">'+body_sites(sites,layer='organs',lead=U['lead'],aria=U['aria'])+f'<p class="ccap">{BODY_USES.CAP}</p></div>')
+    return (U['title'],BODY_USES.SUB,'<!--noart--><div class="art bmw">'+body_sites(sites,layer='organs',lead=U['lead'],aria=U['aria'],uid='bm-uses')+f'<p class="ccap">{BODY_USES.CAP}</p></div>')
 def with_uses(slug,figs):
     """insert the body-uses figure just before the last figure ("Putting It All Together") of a lesson's figure list"""
     if slug not in BODY_USES.LIVE: return figs
