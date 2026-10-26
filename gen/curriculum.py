@@ -506,7 +506,7 @@ F10_BODY=('<section class="rsec qa blip" data-part="body-lipids"><div class="par
  '<p class="blref">Reference adult: about 70 kg, with about 13.5 kg of lipid in all, most of it in about 15 kg of fat tissue.</p><ol class="blist">'
  +''.join(f'<li><div class="blh"><span class="bln">{n}</span><span class="blp">{pc}</span></div><div class="blbar" aria-hidden="true"><span style="width:{max(w,0.6)}%"></span></div><p><span class="blm">{m}</span> · {d}</p>{_blsub(n)}</li>' for n,pc,m,d,w in BODY_LIPIDS)
  +'</ol><p class="fnote">Approximate, for a reference adult; real bodies vary most in the triglyceride store. Sources: body lipid 13.5 kg and adipose tissue 15 kg at about 80% fat, ICRP Publication 23, <i>Report of the Task Group on Reference Man</i> (Snyder et al., 1975); total cholesterol about 2.2 g per kg body weight, 23% of it in the brain and nerves, Dietschy and Turley, <i>J Lipid Res</i> 45:1375 (2004); phospholipids estimated from typical tissue contents (e.g. liver about 25 mg/g, Kwiterovich et al., <i>J Lipid Res</i> 11:322 (1970)) times Reference Man organ masses; the miscellaneous group is an upper estimate. Breakdowns: adipose fatty acid composition, Hodson, Skeaff and Fielding, <i>Prog Lipid Res</i> 47:348 (2008); phospholipid classes, Vance, <i>Traffic</i> 16:1 (2015).</p></section>')
-F10_NEXT='<p class="fwd" data-part="next">Fats are one kind of lipid; see the next lesson, <a href="macronutrients-lipids.html">Lipids Beyond Fats</a> →</p>'
+F10_NEXT='<p class="fwd" data-part="next">Fats are one kind of lipid; see the next lesson, <a href="macronutrients-lipids.html">Other Lipids</a> →</p>'
 F10_HTML='<!--noart-->'+F10_TREE+F10_NEXT+F10_EXTRA+F10_BODY  # figure-by-figure recap list removed (rev 8); the tree and Worth knowing stay
 def figure_card(n,title,art_html,caption,pre='',after='',sub=None):
     """One numbered figure card. Give images/boxes a data-part="..." so script segments can point at them."""
@@ -516,10 +516,10 @@ quiz='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2>
 FATS_FIGS=[figure_card(i,t,art(i,t,a),c,PRE.get(i,''),callout(i)) for i,(t,c,a) in enumerate(LESSON,1)]
 lesson_page('macronutrients-fats','Module 1 · Fats · '+COURSE+' · '+UNIVERSITY_NAME,
  '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Fats</h1><p>The fat family tree first, then one fat molecule broken down step by step: 10 figures covering why fats and oils are the same thing, what a fat molecule is, the kinds of fatty acid, hydrogenation and body fat, how your body breaks a fat down for energy, and finally a recap that puts it all together. The figure is on the left and the lesson script on the right; every script line has an ID like 3.2 (Figure 3, segment 2). Pink boxes show what each fat does in your body; the quiz is at the end.</p>',
- FATS_FIGS,quiz+pn(None,('Lipids Beyond Fats','macronutrients-lipids.html')))
+ FATS_FIGS,quiz+pn(None,('Other Lipids','macronutrients-lipids.html')))
 # Lesson registry, in course order: (slug, module no, module name, short title, live?). A lesson is live once its gen/lessons/<slug>.py exists.
 REG=[(sl,mn,mname,t,sl in ('macronutrients-fats','macronutrients-lipids','food-label-tree') or os.path.exists(os.path.join(GEN,'lessons',sl+'.py'))) for sl,mn,mname,t in [
- ('macronutrients-fats','1','Macronutrients','Fats'),('macronutrients-lipids','1','Macronutrients','Lipids Beyond Fats'),
+ ('macronutrients-fats','1','Macronutrients','Fats'),('macronutrients-lipids','1','Macronutrients','Other Lipids'),
  ('macronutrients-protein','1','Macronutrients','Protein'),('macronutrients-carbohydrates','1','Macronutrients','Carbohydrates'),('macronutrients-water-ethanol','1','Macronutrients','Water and Ethanol'),
  ('micronutrients-fat-soluble-vitamins','2','Micronutrients','Fat-Soluble Vitamins'),('micronutrients-water-soluble-vitamins','2','Micronutrients','Water-Soluble Vitamins'),
  ('micronutrients-major-minerals','2','Micronutrients','Major Minerals'),('micronutrients-trace-minerals','2','Micronutrients','Trace Minerals'),

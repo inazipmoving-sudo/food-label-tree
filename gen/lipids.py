@@ -1,4 +1,4 @@
-# ---------------- Module 1 · Lipids Beyond Fats ----------------
+# ---------------- Module 1 · Other Lipids ----------------
 # exec'd from curriculum.py (shares its globals: figure_card, lesson_page, pn, _png_size, _html, OUT, GEN, ZOOM, json, os).
 # Molecule images: curriculum/img/lipids/*.png, made by /workspace/nutrition/build_lipid_mols.py (outside the repo) at the
 # Fats page's 72 px per C–C bond, every hydrogen drawn, no text in the images. gen/data/lipids-mols.json holds each image's
@@ -224,8 +224,8 @@ def build_lipids():
     lq='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(LQUIZ,1))+'</section></main>'
     _N=NEXT_OF('macronutrients-lipids')
     after=lq+('<main class="lp-after"><p class="fwd" data-part="nextlesson">Next lesson: <a href="'+_N[1]+'">'+_N[0]+'</a> →</p></main>' if _N else '')+pn(('Module 1 · Fats','macronutrients-fats.html'),_N)+LIPID_JS
-    lesson_page('macronutrients-lipids','Module 1 · Lipids Beyond Fats · '+COURSE+' · '+UNIVERSITY_NAME,
-     '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Lipids Beyond Fats</h1>'
+    lesson_page('macronutrients-lipids','Module 1 · Other Lipids · '+COURSE+' · '+UNIVERSITY_NAME,
+     '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Other Lipids</h1>'
      '<p>Fats are one kind of lipid. This lesson meets the rest of the family, one group at a time: phospholipids that build every cell membrane, cholesterol and plant sterols, sphingolipids and waxes, the eicosanoid signals your body makes from fatty acids, and the fat-soluble vitamins, then puts them all in one table. Every molecule is drawn at the same scale with every hydrogen shown. The figure is on the left and the lesson script on the right; the quiz is at the end.</p>'
      '<p class="pnl">Previous lesson: <a href="macronutrients-fats.html">Module 1 · Fats</a></p>',
      figs,after)
