@@ -3,8 +3,8 @@
  "module": "additives",
  "title": "Module 3 · Additives and E-Numbers",
  "lang": "en",
- "revision": 2,
- "idRevision": 1,
+ "revision": 3,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -386,11 +387,81 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Where additives are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Where Additives Go",
+     "text": "Here's the statue with the places additives act or end up. Most do their job in the food, not in you. Once eaten, they're absorbed and cleared, or passed on to the gut bacteria. Tap a number to see what happens there.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Taste and the Stomach",
+     "text": "Sweeteners fit the sweet receptor on the tongue, and MSG fits the umami receptor. In the stomach, acids simply add to stomach acid, but nitrite can react with amines to form nitrosamines, which is why vitamin C is added to cured meat.",
+     "part": "site-tongue",
+     "cue": "Numbers 1 and 2: tongue and stomach",
+     "foodBody": [
+      {
+       "name": "Aspartame",
+       "text": "In diet drinks and sugar-free gum. Your gut breaks it into two amino acids and a little methanol, absorbed like those from food."
+      },
+      {
+       "name": "Sodium nitrite",
+       "text": "In bacon, ham and hot dogs. It keeps meat pink and stops botulism; in the stomach it can form nitrosamines."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "Absorbed and Cleared",
+     "text": "The small intestine absorbs most small additives, such as preservatives, acids and many colors. The liver breaks them down; benzoate, for example, is joined to glycine and sent to the kidneys, which pass it out in urine. Some sweeteners, like sucralose, leave mostly unchanged.",
+     "part": "site-liver",
+     "cue": "Numbers 3 to 5: small intestine, liver and kidneys",
+     "foodBody": [
+      {
+       "name": "Sodium benzoate",
+       "text": "A preservative in soft drinks, pickles and sauces. The liver joins it to glycine to make hippuric acid, which leaves in urine."
+      }
+     ]
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "To the Gut Bacteria",
+     "text": "Gums, many emulsifiers and sugar alcohols aren't absorbed well, so they reach the large intestine, where bacteria ferment some of them; too much sugar alcohol causes gas and loose stools. Phosphate additives are absorbed and add to the phosphorus your body balances with calcium in bone.",
+     "part": "site-colon",
+     "cue": "Numbers 6 and 7: large intestine and bones",
+     "foodBody": [
+      {
+       "name": "Sugar alcohols",
+       "text": "Sorbitol, xylitol and erythritol in sugar-free sweets and gum. Most are only partly absorbed; bacteria in the large intestine ferment the rest."
+      }
+     ]
+    },
+    {
+     "id": "9.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Each additive has its own path, and approved amounts are set far below levels that cause harm, so the numbers mark typical places, not every one.",
+     "cue": "The caption under the statue",
+     "box": "note"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here are the E-number ranges in one table: each range's main job, examples, and whole foods that contain the same or similar compounds.",
@@ -398,7 +469,7 @@
      "cue": "The table, row by row"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. An E-number is an approval, not a warning. Uncured meat is still cured, with celery powder. And additives cluster in ultra-processed foods; whole foods need almost none. Try the quiz below.",
