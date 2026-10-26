@@ -3,8 +3,8 @@
  "module": "antinutrients",
  "title": "Module 3 · Antinutrients",
  "lang": "en",
- "revision": 2,
- "idRevision": 1,
+ "revision": 3,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -434,11 +435,71 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Where antinutrients act in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Where Antinutrients Act",
+     "text": "Here's the statue with the places antinutrients act. Most work inside the gut, on the minerals and protein in the meal you eat them with. A few are absorbed and reach the kidneys or the thyroid. Tap a number to see what happens there.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places",
+     "slug": "where-antinutrients-act"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "In the Gut",
+     "text": "In the small intestine, phytate, oxalate and tannins bind iron, zinc and calcium, so less is absorbed. Raw lectins resist digestion and can upset the gut, and trypsin inhibitors block the protein-digesting enzyme the pancreas sends in. Bacteria in the large intestine break down some of what's left.",
+     "part": "site-gut",
+     "cue": "Numbers 1 to 4: small intestine, stomach, pancreas and large intestine",
+     "foodBody": [
+      {
+       "name": "Phytate",
+       "text": "In whole grains, beans, nuts and seeds. It binds iron and zinc in the gut; soaking, sprouting and fermenting break much of it down."
+      },
+      {
+       "name": "Trypsin inhibitors",
+       "text": "In raw soybeans and other beans. They block trypsin, a protein-digesting enzyme; cooking destroys most of them."
+      }
+     ],
+     "slug": "in-the-gut"
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "Beyond the Gut",
+     "text": "A little oxalate is absorbed and leaves in urine, where it can join calcium to form kidney stones. Goitrogens from raw cabbage-family vegetables and cassava can reduce how much iodine the thyroid takes up, mainly when iodine is already low.",
+     "part": "site-kidneys",
+     "cue": "Numbers 5 and 6: kidneys and thyroid",
+     "foodBody": [
+      {
+       "name": "Oxalate",
+       "text": "In spinach, rhubarb, beet greens, nuts and tea. Most stays in the gut bound to calcium; the absorbed part leaves in urine."
+      }
+     ],
+     "slug": "beyond-the-gut"
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "Simplified",
+     "text": "This is simplified. In a varied diet, and after soaking or cooking, these effects are small, and many of these compounds have benefits too.",
+     "cue": "The caption under the statue",
+     "box": "note",
+     "slug": "simplified"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's the whole lesson in one table: each antinutrient, what it is, what it blocks, where it's found, and the best fix.",
@@ -447,7 +508,7 @@
      "slug": "one-table"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. The same compound can be an antinutrient or a helpful bioactive, depending on the amount, the rest of the diet and how the food is prepared. Cassava, bitter almonds and apricot kernels release cyanide unless they're properly prepared. And green potatoes make solanine, which cooking doesn't destroy, so cut away green parts and sprouts.",
@@ -463,6 +524,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/antinutrients.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 9,
- "segmentCount": 42
+ "figureCount": 10,
+ "segmentCount": 46
 }
