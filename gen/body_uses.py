@@ -16,7 +16,7 @@ def seg(name,text,part=None,cue=None,box=None,fb=None):
     return d
 USES={}
 # lessons whose page and script carry the figure (switched on lesson by lesson as each is pushed and checked live)
-LIVE=['macronutrients-fats','macronutrients-lipids','macronutrients-carbohydrates','macronutrients-water-ethanol','micronutrients-fat-soluble-vitamins','micronutrients-water-soluble-vitamins','micronutrients-major-minerals','micronutrients-trace-minerals','additives','antinutrients','processing','bioactives','flavorings']
+LIVE=['macronutrients-fats','macronutrients-lipids','macronutrients-carbohydrates','macronutrients-water-ethanol','micronutrients-fat-soluble-vitamins','micronutrients-water-soluble-vitamins','micronutrients-major-minerals','micronutrients-trace-minerals','additives','antinutrients','processing','bioactives','flavorings','macronutrients-protein']
 
 USES['macronutrients-fats']=dict(cat='fats',title='Where fats are used in the body',
  lead='Most fat you eat is stored; the rest is burned for fuel or built into cells.',

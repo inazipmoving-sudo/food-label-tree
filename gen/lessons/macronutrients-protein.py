@@ -201,5 +201,5 @@ PROTEIN_QUIZ=[('How many kcal does a gram of protein give?','About 4, the same a
  ('What happens to the nitrogen when amino acids are burned for energy?','It comes off as ammonia, the liver turns it into urea, and the kidneys remove it in urine (Figure 6).'),
  ('Why do rice and beans go well together?','Grains are low in lysine and beans in methionine; each supplies what the other lacks (Figure 7).'),
  ('What is the US RDA for protein for adults?','0.8 grams per kilogram of body weight per day, about 56 g for a 70 kg adult (Figure 7).'),
- ('Is collagen a complete protein?','No; it has almost no tryptophan (Figure 8).')]
+ ('Is collagen a complete protein?','No; it has almost no tryptophan (Figure 9).')]
 build_lesson('macronutrients-protein','Protein','Protein from the atoms up: the four kinds of atom in an amino acid, the shared backbone and changing side chain, the peptide bond, all 20 amino acids drawn at one scale, how chains fold into working shapes, how you digest and use protein, and which foods give you all 9 essential amino acids. The figure is on the left and the lesson script on the right; the quiz is at the end.',PROTEIN_LESSON,PROTEIN_QUIZ,mols=P_)

@@ -3,8 +3,8 @@
  "module": "macronutrients-protein",
  "title": "Module 1 · Protein",
  "lang": "en",
- "revision": 4,
- "idRevision": 1,
+ "revision": 5,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -433,11 +433,109 @@
   {
    "fig": 8,
    "anchor": "fig-8",
+   "title": "Where protein is used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "8.1",
+     "seg": 1,
+     "name": "Where Protein Goes",
+     "text": "Here's the statue with every place protein is used. Protein is digested to amino acids, and your cells build them back into the proteins that do almost every job in the body. Tap a number to see what that place does.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places",
+     "slug": "where-protein-goes"
+    },
+    {
+     "id": "8.2",
+     "seg": 2,
+     "name": "Digesting Protein",
+     "text": "Pepsin starts digesting protein in the stomach, and trypsin from the pancreas carries on in the small intestine, which absorbs the amino acids into the blood. The pancreas also makes insulin and glucagon, which are proteins too.",
+     "part": "site-stomach",
+     "cue": "Numbers 2 to 4: stomach, pancreas and small intestine",
+     "foodBody": [
+      {
+       "name": "Pepsin and trypsin",
+       "text": "Not eaten: your stomach makes pepsin and your pancreas makes trypsin, both protein enzymes. They cut the peptide bonds in the protein you eat."
+      },
+      {
+       "name": "Insulin",
+       "text": "A small protein hormone made by the pancreas. It tells cells to take up glucose after a meal."
+      }
+     ],
+     "slug": "digesting-protein"
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
+     "name": "Building and Moving",
+     "text": "Muscle holds about 40% of your body's protein; actin and myosin slide past each other to make it contract. Collagen gives strength to skin, bone, tendons and cartilage, and keratin makes hair and nails.",
+     "part": "site-muscle",
+     "cue": "Numbers 1, 8 and 9: muscle, skin and hair, joints and bones",
+     "foodBody": [
+      {
+       "name": "Actin and myosin",
+       "text": "Found in all meat, which is muscle. Your body digests them to amino acids and builds its own actin and myosin from them."
+      },
+      {
+       "name": "Keratin",
+       "text": "Hair, nails and feathers are keratin, which you can’t digest, so it isn’t food. Your skin cells build their own keratin from amino acids to make hair, nails and the outer skin."
+      }
+     ],
+     "slug": "building-and-moving"
+    },
+    {
+     "id": "8.4",
+     "seg": 4,
+     "name": "Carrying and Defending",
+     "text": "The liver makes albumin, the main blood protein, and the clotting factors. Red blood cells carry oxygen on hemoglobin. Immune cells, in the spleen and elsewhere, make antibodies that tag germs, and the brain makes neurotransmitters such as serotonin from amino acids.",
+     "part": "site-liver",
+     "cue": "Numbers 5, 6, 7 and 10: liver, blood, spleen and brain",
+     "foodBody": [
+      {
+       "name": "Albumin",
+       "text": "Egg white is mostly a related protein, ovalbumin. Your liver makes albumin, which carries fatty acids and hormones in the blood and holds water in it."
+      },
+      {
+       "name": "Serotonin",
+       "text": "Not eaten as such: the brain and gut make it from the amino acid tryptophan, found in turkey, eggs, cheese and nuts."
+      }
+     ],
+     "slug": "carrying-and-defending"
+    },
+    {
+     "id": "8.5",
+     "seg": 5,
+     "name": "The Leftovers",
+     "text": "Your body doesn't store spare amino acids. The liver removes their nitrogen as urea, which the kidneys send out in urine, and burns the rest for energy or turns it into glucose or fat.",
+     "part": "site-kidneys",
+     "cue": "Numbers 5 and 11: liver and kidneys",
+     "foodBody": [
+      {
+       "name": "Urea",
+       "text": "Not something you eat: your liver makes it from the nitrogen of spare amino acids. Your kidneys filter it out, and it is the main nitrogen waste in urine."
+      }
+     ],
+     "slug": "the-leftovers"
+    },
+    {
+     "id": "8.6",
+     "seg": 6,
+     "name": "Simplified",
+     "text": "This is simplified. Every cell is full of proteins, so the numbers mark typical places, not every one.",
+     "cue": "The caption under the statue",
+     "box": "note",
+     "slug": "simplified"
+    }
+   ]
+  },
+  {
+   "fig": 9,
+   "anchor": "fig-9",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "8.1",
+     "id": "9.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's the whole lesson in one table: the atoms, the amino acid, the peptide bond, the twenty amino acids, the four levels of shape, digestion, and protein in food. Each row links back to its figure.",
@@ -446,7 +544,7 @@
      "slug": "one-table"
     },
     {
-     "id": "8.2",
+     "id": "9.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Protein powders are just protein from milk, peas or soy, without the rest of the food. Collagen is rich in glycine and proline but has almost no tryptophan, so on its own it's incomplete; gelatin is collagen that has been cooked. And scores like PDCAAS and DIAAS rate proteins by their essential amino acids and digestibility; milk, eggs and soy score near the top. That's protein. Try the quiz below.",
@@ -462,6 +560,6 @@
  "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-protein.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 8,
- "segmentCount": 39
+ "figureCount": 9,
+ "segmentCount": 45
 }
