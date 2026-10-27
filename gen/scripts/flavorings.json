@@ -3,8 +3,8 @@
  "module": "flavorings",
  "title": "Module 3 · Flavorings",
  "lang": "en",
- "revision": 2,
- "idRevision": 1,
+ "revision": 3,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -393,11 +394,81 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Where flavorings are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Where Flavorings Go",
+     "text": "Here's the statue with the places flavorings are used. Flavor is built in the mouth, the nose and the brain. After that, the molecules are digested and cleared like any other part of food. Tap a number to see what each place does.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Taste, Smell and Feel",
+     "text": "Taste buds on the tongue sense sweet, bitter, sour, salty and umami. The nose has about 400 kinds of smell receptor, which pick up aromas from the front and from inside the mouth as you chew. The trigeminal nerve senses the cool of menthol and the bite of mustard.",
+     "part": "site-tongue",
+     "cue": "Numbers 1 to 3: tongue, nose and mouth nerves",
+     "foodBody": [
+      {
+       "name": "Vanillin",
+       "text": "The main flavor of vanilla, natural or made in a factory. A smell receptor in your nose detects it; the liver then clears it like other food molecules."
+      },
+      {
+       "name": "Menthol",
+       "text": "In mint. It triggers TRPM8, the cold receptor, so mint feels cool."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "The Brain",
+     "text": "The brain combines taste, smell, texture and heat into the single experience we call flavor. That's why food tastes flat when your nose is blocked.",
+     "part": "site-brain",
+     "cue": "Number 4: the brain",
+     "foodBody": [
+      {
+       "name": "Aroma molecules",
+       "text": "The small molecules that give food its smell, like vanillin in vanilla. As you chew, they rise up the back of your nose to smell receptors that signal the brain."
+      }
+     ]
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "Digested and Cleared",
+     "text": "Flavor molecules are swallowed and absorbed like the rest of the food; the gut even has taste receptors of its own. The liver breaks most of them down, and the kidneys send the products out in urine.",
+     "part": "site-gut",
+     "cue": "Numbers 5 to 7: gut, liver and kidneys",
+     "foodBody": [
+      {
+       "name": "Flavorings",
+       "text": "Natural and artificial flavorings are used in tiny amounts. Your gut absorbs them, the liver changes most of them so they dissolve in water, and the kidneys pass them out in urine."
+      }
+     ]
+    },
+    {
+     "id": "9.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Flavorings are used in tiny amounts, so the numbers mark where they act, not a dose.",
+     "cue": "The caption under the statue",
+     "box": "note"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's the whole lesson in one table: each taste, aroma and label line, with its molecules, receptor, main sources, and what's good to know.",
@@ -405,7 +476,7 @@
      "cue": "The table, row by row"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Losing your sense of smell makes food seem tasteless even though taste works; herbs, spices and acidity can help instead of more salt and sugar. Researchers are studying possible extra tastes, like kokumi and fat. And the pleasure of one flavor fades as you eat it, which is why there's always room for dessert.",
