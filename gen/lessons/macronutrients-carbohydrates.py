@@ -2,29 +2,32 @@
 C_=mk_lmol('macronutrients-carbohydrates')
 def _cf(n): return fsub(C_.D[n]['formula'])
 # Figure 1: family tree (Fats Figure 1 style). Sugars branch: only single and double sugars are KINDS of sugar; sugar alcohols (made from
-# sugars, dotted link) and added sugars (a label category) sit below in a dashed "related" group. Starch branch: amylose (-> resistant) and
-# amylopectin only. Glycogen sits beside the tree in an "in your body" frame: starch is digested (dashed arrow) to glucose, stored as glycogen.
-CB_NODES=[(450,30,170,'Carbohydrate','4 kcal/g','nd root',None),
- (165,150,230,'Sugars','1 or 2 units · Fig. 2','nd l','#fig-2'),(450,150,230,'Starch','long glucose chains · Fig. 5','nd l','#fig-5'),(755,150,230,'Fiber','not digested · Fig. 6','nd l','#fig-6'),
- (85,290,150,'Single sugars','glucose & co · Fig. 3','nd u','#fig-3'),(245,290,150,'Double sugars','sucrose & co · Fig. 4','nd u','#fig-4'),
- (380,290,140,'Amylose','straight · Fig. 5','nd s','#fig-5'),(530,290,140,'Amylopectin','branched · Fig. 5','nd s','#fig-5'),
- (680,290,130,'Soluble','gels · Fig. 6','nd t','#fig-6'),(830,290,130,'Insoluble','bulk · Fig. 6','nd t','#fig-6'),
- (80,440,140,'Sugar alcohols','sorbitol · Fig. 8','nd u','#fig-8'),(230,440,140,'Added sugars','on the label · Fig. 8','nd u','#fig-8'),
- (386,440,140,'Resistant','acts as fiber · Fig. 6','nd s','#fig-6'),
- (565,568,170,'Glucose','from digestion · Fig. 7','nd s','#fig-7'),(805,568,170,'Glycogen','your store · Fig. 7','nd root','#fig-7')]
-CB_EDGES=[(450,52,165,128),(450,52,450,128),(450,52,755,128),(165,182,85,268),(165,182,245,268),(450,182,380,268),(450,182,530,268),(755,182,680,268),(755,182,830,268),
- (380,322,386,418)]
-CB_EXTRA=['<rect class="grp" x="2" y="402" width="306" height="84" rx="14" style="fill:none;stroke:var(--muted);stroke-width:1.3;stroke-dasharray:3 5"/>',
- '<text class="lab" x="155" y="510" text-anchor="middle">related groups, not kinds of sugar</text>',
- '<path class="edge dash" d="M80,322 L80,414" marker-end="url(#lar)"/>',
- '<text class="lab hotl" x="91" y="372">made from</text>',
- '<rect class="grp" x="462" y="500" width="434" height="142" rx="16" style="fill:none;stroke:var(--muted);stroke-width:1.3;stroke-dasharray:3 5"/>',
- '<text class="lab" x="679" y="628" text-anchor="middle">how your body stores glucose: liver and muscle</text>',
- '<path class="edge dash" d="M552,322 C552,420 600,450 590,540" marker-end="url(#lar)"/>',
- '<a class="tlk" href="#fig-7"><text class="lab hotl" x="604" y="430">digestion</text></a>',
- '<path class="edge dash" d="M652,568 L716,568" marker-end="url(#lar)"/>',
- '<text class="lab hotl" x="684" y="530" text-anchor="middle">stored as</text>']
-P1=('<!--noart-->'+ftree(CB_NODES,CB_EDGES,650,'Tree diagram of carbohydrate. Three branches: sugars (single sugars and double sugars), starch (amylose, straight, some of which is resistant starch that acts as fiber; and amylopectin, branched), and fiber (soluble and insoluble). Below the sugars, in a separate related group, are sugar alcohols, made from sugars, and added sugars, a label category; neither is a kind of single or double sugar. Beside the tree, in your body: starch is digested to glucose, and glucose is stored as glycogen in the liver and muscle.',CB_EXTRA)
+# sugars, dotted link) and added sugars (a label category) sit below in a dashed "related" group, tied to Sugars by a faint dotted line.
+# Starch branch: amylose and amylopectin are its two kinds; resistant starch hangs from Starch itself (it can come from either), and the
+# dashed digestion arrow also leaves Starch itself into an "in your body" frame: glucose, stored as glycogen.
+# Box widths fit the mobile font sizes (svg.tree .nt 18px/.ns 15px); gaps between Double sugars/Amylose and around Amylopectin carry the lines.
+CB_NODES=[(500,30,170,'Carbohydrate','4 kcal/g','nd root',None),
+ (175,150,230,'Sugars','1 or 2 units · Fig. 2','nd l','#fig-2'),(500,150,230,'Starch','long glucose chains · Fig. 5','nd l','#fig-5'),(792,150,200,'Fiber','not digested · Fig. 6','nd l','#fig-6'),
+ (82,290,160,'Single sugars','glucose & co · Fig. 3','nd u','#fig-3'),(268,290,160,'Double sugars','sucrose & co · Fig. 4','nd u','#fig-4'),
+ (420,290,128,'Amylose','straight · Fig. 5','nd s','#fig-5'),(585,290,140,'Amylopectin','branched · Fig. 5','nd s','#fig-5'),
+ (738,290,104,'Soluble','gels · Fig. 6','nd t','#fig-6'),(847,290,102,'Insoluble','bulk · Fig. 6','nd t','#fig-6'),
+ (82,440,152,'Sugar alcohols','sorbitol · Fig. 8','nd u','#fig-8'),(245,440,156,'Added sugars','on the label · Fig. 8','nd u','#fig-8'),
+ (500,440,156,'Resistant','acts as fiber · Fig. 6','nd s','#fig-6'),
+ (600,568,180,'Glucose','from digestion · Fig. 7','nd s','#fig-7'),(810,568,160,'Glycogen','your store · Fig. 7','nd root','#fig-7')]
+CB_EDGES=[(500,52,175,128),(500,52,500,128),(500,52,792,128),(175,182,82,268),(175,182,268,268),(500,182,420,268),(500,182,585,268),(792,182,738,268),(792,182,847,268),
+ ('line',500,182,500,418)]
+CB_EXTRA=['<path class="edge" d="M175,182 L175,402" style="stroke-dasharray:2 5;opacity:.75"/>',
+ '<rect class="grp" x="2" y="402" width="328" height="84" rx="14" style="fill:none;stroke:var(--muted);stroke-width:1.3;stroke-dasharray:3 5"/>',
+ '<text class="lab" x="166" y="510" text-anchor="middle">related groups, not kinds of sugar</text>',
+ '<path class="edge dash" d="M60,322 L60,414" marker-end="url(#lar)"/>',
+ '<text class="lab hotl" x="69" y="372">made from</text>',
+ '<rect class="grp" x="492" y="500" width="406" height="142" rx="16" style="fill:none;stroke:var(--muted);stroke-width:1.3;stroke-dasharray:3 5"/>',
+ '<text class="lab" x="695" y="628" text-anchor="middle">how your body stores glucose: liver and muscle</text>',
+ '<path class="edge dash" d="M615,150 C650,150 670,165 670,200 L670,468 C670,506 610,500 610,542" marker-end="url(#lar)"/>',
+ '<a class="tlk" href="#fig-7"><text class="lab hotl" x="682" y="430">digestion</text></a>',
+ '<path class="edge dash" d="M692,568 L726,568" marker-end="url(#lar)"/>',
+ '<text class="lab hotl" x="709" y="530" text-anchor="middle">stored as</text>']
+P1=('<!--noart-->'+ftree(CB_NODES,CB_EDGES,650,'Tree diagram of carbohydrate. Three branches: sugars (single sugars and double sugars), starch (amylose, straight, and amylopectin, branched; also from starch, resistant starch, which acts as fiber), and fiber (soluble and insoluble). Below the sugars, in a separate related group linked to sugars, are sugar alcohols, made from sugars, and added sugars, a label category; neither is a kind of single or double sugar. Beside the tree, in your body: starch is digested to glucose, and glucose is stored as glycogen in the liver and muscle.',CB_EXTRA)
  +lblock('label','Carbohydrate on a food label',[('Total Carbohydrate','Every gram of digestible carbohydrate gives about 4 kcal. The total includes starch, sugars, fiber and any sugar alcohols. The Daily Value is 275 g.'),
    ('Dietary Fiber','Counted inside the total, but mostly not digested, so it gives fewer calories. The Daily Value is 28 g.'),
    ('Total Sugars, then Added Sugars','Total sugars counts all single and double sugars, including those naturally in fruit and milk. “Includes … Added Sugars” counts only the sugars put in during making; its Daily Value is 50 g.')]))
