@@ -1,0 +1,43 @@
+/* Nutrition 101 body-uses figures only (linked from uses_figure in gen/bodymap_sites.py; the Anatomy course does not load this file) */
+/* "Inside a cell" panel (gen/cell_panel.py, data gen/cell_uses.py) */
+@container (max-width:560px){.bm-cell .bm-fig{width:min(94cqw,420px)}}
+.bm-cell .bm-list .lp-fb{margin-top:6px}
+.c-svg .c-cyt{fill:url(#c-cyt);}
+.c-svg .c-mem{fill:none;stroke:var(--bm-line);stroke-width:1.6}.c-svg .c-mem2{fill:none;stroke:var(--bm-line);stroke-width:1.1;opacity:.75}
+.c-svg .c-ch{fill:var(--bm-m2);stroke:var(--bm-line);stroke-width:.8}.c-svg .c-rc{fill:none;stroke:var(--bm-line);stroke-width:1.6;stroke-linecap:round}
+.c-svg .c-fil{fill:none;stroke:var(--bm-line);stroke-width:.7;opacity:.35;stroke-dasharray:3 1.4}.c-svg .c-fil.a{stroke-dasharray:none;opacity:.45}
+.c-svg .c-tb{fill:none;stroke:var(--bm-line);stroke-width:5.4;stroke-linecap:round}.c-svg .c-tb-in{fill:none;stroke:var(--bm-m1);stroke-width:3.6;stroke-linecap:round}
+.c-svg .c-er{fill:var(--bm-m1);stroke:var(--bm-line);stroke-width:.9}
+.c-svg .c-rb{fill:var(--bm-line);opacity:.85}
+.c-svg .c-nuc{fill:var(--bm-m2);stroke:none}.c-svg .c-env{fill:none;stroke:var(--bm-line);stroke-width:1.2;stroke-linecap:round}
+.c-svg .c-chr{fill:none;stroke:var(--bm-cav);stroke-width:1.6;stroke-linecap:round;opacity:.9}.c-svg .c-nl{fill:var(--bm-m3);stroke:var(--bm-line);stroke-width:.8}
+.c-svg .c-go{fill:none;stroke:var(--bm-line);stroke-width:6;stroke-linecap:round}.c-svg .c-go-in{fill:none;stroke:var(--bm-m1);stroke-width:4;stroke-linecap:round}
+.c-svg .c-ves,.c-svg .c-ly,.c-svg .c-px,.c-svg .c-ld{fill:var(--bm-m1);stroke:var(--bm-line);stroke-width:.9}
+.c-svg .c-lyd,.c-svg .c-gl{fill:var(--bm-cav)}.c-svg .c-pxc{fill:var(--bm-m3)}.c-svg .c-ld{fill:#ece4cf}
+[data-theme=dark] .c-svg .c-ld{fill:#d9cfb4}
+.c-svg .c-mt{fill:var(--bm-m2);stroke:var(--bm-line);stroke-width:1}.c-svg .c-mt-in{fill:var(--bm-m1);stroke:var(--bm-line);stroke-width:.5;opacity:.8}.c-svg .c-cr{fill:none;stroke:var(--bm-line);stroke-width:.8;stroke-linejoin:round}
+/* highlight in Aegean blue: hs = every numbered part, hi = the one picked */
+.c-svg .hi .c-er,.c-svg .hi .c-mt,.c-svg .hi .c-ly,.c-svg .hi .c-ves,.c-svg .hi .c-px,.c-svg .hi .c-ld{fill:var(--bm-hi-soft);stroke:var(--bm-hi);stroke-width:1.6}
+.c-svg .hi .c-nuc{fill:var(--bm-hi-soft)}.c-svg .hi .c-env,.c-svg .hi .c-chr{stroke:var(--bm-hi)}
+.c-svg .hi .c-go,.c-svg .hi .c-tb{stroke:var(--bm-hi)}.c-svg .hi .c-go-in,.c-svg .hi .c-tb-in{stroke:#cfdbe6}
+.c-svg .hi .c-rb,.c-svg .hi .c-gl,.c-svg .hi .c-lyd{fill:var(--bm-hi);opacity:1}
+.c-svg .hi .c-fil{stroke:var(--bm-hi);opacity:.95;stroke-width:1.3}
+.c-svg .hi .c-mem,.c-svg .hi .c-mem2,.c-svg .hi .c-rc{stroke:var(--bm-hi)}.c-svg .hi .c-ch{fill:var(--bm-hi-soft);stroke:var(--bm-hi)}
+.c-svg .hi.cg[data-k=cytosol] .c-cyt{fill:var(--bm-hi-soft)}
+@container (max-width:560px){.bm-cell .c-cap{max-width:none}}
+
+.bm-cell{margin-top:4px}
+.bm-cell .bm-fig{height:auto;width:min(54cqw,520px);aspect-ratio:4/3}
+@container (max-width:560px){.bm-cell .bm-fig{width:min(94cqw,440px)}}
+.bm-cell .c-cap{margin:6px 0 0;max-width:min(54cqw,520px)}
+/* "Everywhere else in the body" list (gen/body_places.py) */
+.bp{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);container-type:inline-size}
+.bp-h{font-family:var(--serif);font-size:1.15em;margin:0 0 4px}
+.bp-lead{color:var(--muted);margin:0 0 12px}
+.bp-grid{columns:2 250px;column-gap:24px}
+.bp-g{break-inside:avoid;margin:0 0 16px}
+.bp-g h4{margin:0 0 4px;font-size:.98em;color:var(--acc)}
+.bp-g ul{list-style:none;margin:0;padding:0}
+.bp-g li{padding:4px 0;border-top:1px solid var(--line);font-size:.93em;line-height:1.45}
+.bp-g li b{color:var(--text)}
+.bp-g li span{color:var(--muted)}

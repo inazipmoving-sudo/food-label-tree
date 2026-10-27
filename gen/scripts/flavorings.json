@@ -3,8 +3,8 @@
  "module": "flavorings",
  "title": "Module 3 · Flavorings",
  "lang": "en",
- "revision": 3,
- "idRevision": 2,
+ "revision": 4,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -395,23 +395,45 @@
    "fig": 9,
    "anchor": "fig-9",
    "title": "Where flavorings are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "9.1",
      "seg": 1,
      "name": "Where Flavorings Go",
-     "text": "Here's the statue with the places flavorings are used. Flavor is built in the mouth, the nose and the brain. After that, the molecules are digested and cleared like any other part of food. Tap a number to see what each place does.",
+     "text": "Here's where flavorings are used: first inside a single cell, then everywhere else in the body. Flavor is built in the mouth, the nose and the brain. After that, the molecules are digested and cleared like any other part of food.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places"
+     "cue": "The cell drawing and the list of places"
     },
     {
      "id": "9.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Every flavor starts at a cell membrane. Taste cells have receptor proteins for sweet, umami and bitter, and channels for salt and sour. Smell cells in your nose have hundreds of kinds of receptors. Chili and mint even use the body's temperature channels, which is why chili feels hot and mint feels cool. Small differences in receptor genes explain why foods taste different to different people.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "MSG",
+       "text": "Glutamate, the umami taste; the same amino acid found in tomatoes, cheese and your own proteins."
+      },
+      {
+       "name": "Capsaicin",
+       "text": "From chili peppers; feels hot because it opens the heat channel."
+      },
+      {
+       "name": "Vanillin",
+       "text": "The main vanilla flavor, natural or made; detected by smell receptors."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
      "name": "Taste, Smell and Feel",
      "text": "Taste buds on the tongue sense sweet, bitter, sour, salty and umami. The nose has about 400 kinds of smell receptor, which pick up aromas from the front and from inside the mouth as you chew. The trigeminal nerve senses the cool of menthol and the bite of mustard.",
-     "part": "site-tongue",
-     "cue": "Numbers 1 to 3: tongue, nose and mouth nerves",
+     "part": "places",
+     "cue": "In the list: tongue, nose and mouth nerves",
      "foodBody": [
       {
        "name": "Vanillin",
@@ -424,12 +446,12 @@
      ]
     },
     {
-     "id": "9.3",
-     "seg": 3,
+     "id": "9.4",
+     "seg": 4,
      "name": "The Brain",
      "text": "The brain combines taste, smell, texture and heat into the single experience we call flavor. That's why food tastes flat when your nose is blocked.",
-     "part": "site-brain",
-     "cue": "Number 4: the brain",
+     "part": "places",
+     "cue": "In the list: the brain",
      "foodBody": [
       {
        "name": "Aroma molecules",
@@ -438,12 +460,12 @@
      ]
     },
     {
-     "id": "9.4",
-     "seg": 4,
+     "id": "9.5",
+     "seg": 5,
      "name": "Digested and Cleared",
      "text": "Flavor molecules are swallowed and absorbed like the rest of the food; the gut even has taste receptors of its own. The liver breaks most of them down, and the kidneys send the products out in urine.",
-     "part": "site-gut",
-     "cue": "Numbers 5 to 7: gut, liver and kidneys",
+     "part": "places",
+     "cue": "In the list: gut, liver and kidneys",
      "foodBody": [
       {
        "name": "Flavorings",
@@ -452,11 +474,11 @@
      ]
     },
     {
-     "id": "9.5",
-     "seg": 5,
+     "id": "9.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. Flavorings are used in tiny amounts, so the numbers mark where they act, not a dose.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. Flavorings are used in tiny amounts, so the list shows where they act, not a dose.",
+     "cue": "The note under the list",
      "box": "note"
     }
    ]

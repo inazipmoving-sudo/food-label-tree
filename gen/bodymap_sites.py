@@ -59,12 +59,25 @@ def body_sites(sites,layer='organs',title='',lead='',aria='',part='body-uses',ui
 # "Where [category] is used in the body" figures (data in gen/body_uses.py): (title, subtitle, html) for a lesson's figure list
 import importlib.util as _ilu
 _bus=_ilu.spec_from_file_location('body_uses',os.path.join(GEN,'body_uses.py')); BODY_USES=_ilu.module_from_spec(_bus); _bus.loader.exec_module(BODY_USES)
+import html as _bh
+def places_list(slug):
+    """'Everywhere else in the body': every place outside the cell where the lesson's items are found or used (gen/body_places.py)"""
+    P=BODY_USES.PLACES.get(slug)
+    if not P: return ''
+    g=''.join('<div class="bp-g"><h4>'+_bh.escape(it)+'</h4><ul>'+''.join(f'<li><b>{_bh.escape(pl)}.</b> <span>{_bh.escape(fn)}</span></li>' for pl,fn in rows)+'</ul></div>' for it,rows in P)
+    return ('<section class="bp" data-part="places"><p class="bp-h">Everywhere else in the body</p>'
+            '<p class="bp-lead">Each item, the places outside the cell where it is found or used, and what it does there.</p>'
+            f'<div class="bp-grid">{g}</div></section>')
 def uses_figure(slug):
+    """cell + places design: no statue; the 'Inside a cell' diagram, then the list of every other place"""
     U=BODY_USES.USES[slug]
-    sites=[dict(k=k,name=n,role=r,at=at,hl=hl) for k,n,r,at,hl in U['sites']]
-    return (U['title'],BODY_USES.SUB,'<!--noart--><div class="art bmw">'+body_sites(sites,layer='organs',lead=U['lead'],aria=U['aria'],uid='bm-uses')+f'<p class="ccap">{BODY_USES.CAP}</p></div>')
+    return (U['title'],BODY_USES.SUB,'<!--noart--><div class="art bmw" data-part="body-uses">'+f'<link rel="stylesheet" href="{_asset("uses.css")}">'
+            +f'<p class="bm-lead bp-top">{U["lead"]}</p>'+cell_panel(slug)+places_list(slug)+'</div>')
 def with_uses(slug,figs):
     """insert the body-uses figure just before the last figure ("Putting It All Together") of a lesson's figure list"""
     if slug not in BODY_USES.LIVE: return figs
     assert figs[-1][0]=='Putting It All Together', slug
     return figs[:-1]+[uses_figure(slug)]+figs[-1:]
+
+# the "Inside a cell" panel (Nutrition 101 body-uses figures only; the Anatomy course keeps its statue)
+for _m in ('cell_panel',): exec(open(os.path.join(GEN,_m+'.py'),encoding='utf-8').read())

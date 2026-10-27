@@ -326,3 +326,31 @@ USES['macronutrients-protein']=dict(cat='protein',title='Where protein is used i
   seg('The Leftovers',"Your body doesn't store spare amino acids. The liver removes their nitrogen as urea, which the kidneys send out in urine, and burns the rest for energy or turns it into glucose or fat.",'site-kidneys','Numbers 5 and 11: liver and kidneys',
       fb=[('Urea','Not something you eat: your liver makes it from the nitrogen of spare amino acids. Your kidneys filter it out, and it is the main nitrogen waste in urine.')]),
   seg('Simplified',"This is simplified. Every cell is full of proteins, so the numbers mark typical places, not every one.",None,'The caption under the statue','note')])
+
+# "Inside a cell" panels (gen/cell_uses.py): page data for gen/cell_panel.py, plus one new script section per lesson,
+# (moved to section 2 by the block at the end of this file)
+import importlib.util as _ilu, os as _os
+_cs=_ilu.spec_from_file_location('cell_uses',_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'cell_uses.py')); _CU=_ilu.module_from_spec(_cs); _cs.loader.exec_module(_CU)
+CELL,CELL_TITLE,CELL_CAP=_CU.CELL,_CU.TITLE,_CU.CAP
+for _k,_c in CELL.items():
+    if _k in USES and not any(x.get('part')=='cell-uses' for x in USES[_k]['segs']): USES[_k]['segs'].append(dict(_c['seg']))
+
+# ---- Cell + places design (Oct 27, 2026): the statue is gone. The figure is the 'Inside a cell' panel, then 'Everywhere else in the body'
+# (gen/body_places.py). The statue-era text above is the source; gen/uses_wording.py rewrites the first section, cues and note, and moves
+# 'Inside a Cell' to section 2. 'sites', 'aria' and CAP above are no longer drawn.
+_ws=_ilu.spec_from_file_location('cw',_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'uses_wording.py')); CW=_ilu.module_from_spec(_ws); _ws.loader.exec_module(CW)
+_ps=_ilu.spec_from_file_location('bp',_os.path.join(_os.path.dirname(_os.path.abspath(__file__)),'body_places.py')); _BP=_ilu.module_from_spec(_ps); _ps.loader.exec_module(_BP)
+PLACES=_BP.PLACES
+SUB=CW.SUB_NEW
+for _k,_U in USES.items():
+    _s=[dict(x) for x in _U['segs']]
+    _cell=[x for x in _s if x.get('part')=='cell-uses']; _rest=[x for x in _s if x.get('part')!='cell-uses']
+    for x in _cell: x['cue']=CW.CELL_CUE
+    _i=_rest[0]; _o,_n=CW.INTRO[_k]; assert _o in _i['text'],_k; _i['text']=_i['text'].replace(_o,_n)
+    for t in CW.TAP: _i['text']=_i['text'].replace(t,'')
+    assert 'Tap' not in _i['text'],_k; _i['cue']=CW.CUE_INTRO
+    _nt=_rest[-1]; assert _nt.get('box')=='note'
+    if CW.NOTE[_k]: assert CW.NOTE[_k][0] in _nt['text'],_k; _nt['text']=_nt['text'].replace(*CW.NOTE[_k])
+    _nt['cue']=CW.CUE_NOTE
+    for x in _rest[1:-1]: x['cue']=CW.site_cue(x['cue']); x['part']='places'
+    _U['segs']=[_i]+_cell+_rest[1:]

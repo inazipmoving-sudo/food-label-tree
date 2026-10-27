@@ -3,8 +3,8 @@
  "module": "micronutrients-major-minerals",
  "title": "Module 2 · Major Minerals",
  "lang": "en",
- "revision": 2,
- "idRevision": 2,
+ "revision": 3,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -388,23 +388,45 @@
    "fig": 9,
    "anchor": "fig-9",
    "title": "Where major minerals are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "9.1",
      "seg": 1,
      "name": "Where the Major Minerals Go",
-     "text": "Here's the statue with every place the major minerals are used. Some build hard structures, and some carry the electric signals that run your nerves and muscles. Tap a number to see what that place does.",
+     "text": "Here's where the major minerals are used: first inside a single cell, then everywhere else in the body. Some build hard structures, and some carry the electric signals that run your nerves and muscles.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places"
+     "cue": "The cell drawing and the list of places"
     },
     {
      "id": "9.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Inside each cell, major minerals carry the signals. A membrane pump pushes sodium out and pulls potassium in, and that difference powers nerve signals. Calcium is kept in the ER and let out in bursts to tell muscles to contract. Phosphate makes up the backbone of DNA and part of ATP, and magnesium helps hundreds of enzymes and the ribosomes work.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "Sodium and chloride",
+       "text": "Mostly from salt in processed foods."
+      },
+      {
+       "name": "Potassium",
+       "text": "From fruit, vegetables, beans and potatoes."
+      },
+      {
+       "name": "Calcium and phosphorus",
+       "text": "From dairy, fortified foods and greens; most of both ends up in bone, but cells need small amounts constantly."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
      "name": "Building Bone",
      "text": "Bones and teeth hold about 99% of your calcium, 85% of your phosphorus and over half your magnesium, mostly as calcium phosphate. The small intestine absorbs calcium with help from vitamin D.",
-     "part": "site-bones",
-     "cue": "Numbers 1 and 7: bones and teeth, and the small intestine",
+     "part": "places",
+     "cue": "In the list: bones and teeth, and the small intestine",
      "foodBody": [
       {
        "name": "Calcium phosphate",
@@ -413,12 +435,12 @@
      ]
     },
     {
-     "id": "9.3",
-     "seg": 3,
+     "id": "9.4",
+     "seg": 4,
      "name": "Electric Signals",
      "text": "Sodium flowing in and potassium flowing out carry every nerve signal. In muscle, calcium triggers each contraction, and the heart's steady rhythm depends on potassium, calcium and magnesium.",
-     "part": "site-nerves",
-     "cue": "Numbers 2 to 4: nerves, muscle and heart",
+     "part": "places",
+     "cue": "In the list: nerves, muscle and heart",
      "foodBody": [
       {
        "name": "Sodium and potassium",
@@ -427,12 +449,12 @@
      ]
     },
     {
-     "id": "9.4",
-     "seg": 4,
+     "id": "9.5",
+     "seg": 5,
      "name": "Balance and the Exit",
      "text": "The kidneys keep blood levels in range and send extra out in urine. Sweat carries out sodium and chloride, and the stomach uses chloride to make its acid. Sulfur ends up in protein: hair's keratin is rich in it.",
-     "part": "site-kidneys",
-     "cue": "Numbers 5, 6, 8 and 9: kidneys, stomach, skin and hair",
+     "part": "places",
+     "cue": "In the list: kidneys, stomach, skin and hair",
      "foodBody": [
       {
        "name": "Chloride",
@@ -441,11 +463,11 @@
      ]
     },
     {
-     "id": "9.5",
-     "seg": 5,
+     "id": "9.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. Every cell uses these minerals, and phosphorus is in every cell's DNA and ATP, so the numbers mark the main places, not every one.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. Every cell uses these minerals, and phosphorus is in every cell's DNA and ATP, so the list gives each place's main job, not every detail.",
+     "cue": "The note under the list",
      "box": "note"
     }
    ]

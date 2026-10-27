@@ -3,8 +3,8 @@
  "module": "micronutrients-water-soluble-vitamins",
  "title": "Module 2 · Water-Soluble Vitamins",
  "lang": "en",
- "revision": 2,
- "idRevision": 2,
+ "revision": 3,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -417,24 +417,47 @@
    "fig": 9,
    "anchor": "fig-9",
    "title": "Where water-soluble vitamins are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "9.1",
      "seg": 1,
      "name": "Where the B Vitamins and C Go",
-     "text": "Here's the statue with the places the water-soluble vitamins are used. They work in every cell, and most aren't stored, so the kidneys remove any extra. Vitamin B12 is the exception: the liver keeps a few years' worth. Tap a number to see what that place does.",
+     "text": "Here's where the water-soluble vitamins are used: first inside a single cell, then everywhere else in the body. They work in every cell, and most aren't stored, so the kidneys remove any extra. Vitamin B12 is the exception: the liver keeps a few years' worth.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places",
+     "cue": "The cell drawing and the list of places",
      "slug": "where-the-b-vitamins-and-c-go"
     },
     {
      "id": "9.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Water-soluble vitamins don't build anything themselves. They're helpers that enzymes need to work. Most of the B vitamins team up with the enzymes in the mitochondria that turn food into ATP. Folate, with help from B12, supplies parts the cell needs to copy DNA. Vitamin C works in the rough ER, helping finish collagen.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "B vitamins",
+       "text": "Spread across whole grains, meat, eggs, dairy and legumes; B12 comes only from animal foods or supplements."
+      },
+      {
+       "name": "Folate",
+       "text": "From leafy greens and beans, and folic acid in fortified flour; needed fast when cells divide, as in pregnancy."
+      },
+      {
+       "name": "Vitamin C",
+       "text": "From fruit and vegetables; without it, collagen is weak and scurvy follows."
+      }
+     ],
+     "slug": "inside-a-cell"
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
      "name": "Energy and Nerves",
      "text": "B1, B2, B3, B5 and B7 are coenzymes that help every cell, like these muscle cells, release energy from food. Nerve cells depend on thiamin to burn glucose, and B6 and B12 help make neurotransmitters and myelin.",
-     "part": "site-muscle",
-     "cue": "Numbers 1 and 2: brain and nerves, and muscle",
+     "part": "places",
+     "cue": "In the list: brain and nerves, and muscle",
      "foodBody": [
       {
        "name": "Thiamin (B1)",
@@ -444,12 +467,12 @@
      "slug": "energy-and-nerves"
     },
     {
-     "id": "9.3",
-     "seg": 3,
+     "id": "9.4",
+     "seg": 4,
      "name": "Blood and B12",
      "text": "Bone marrow needs folate and B12 to make new red blood cells. The stomach makes intrinsic factor, which B12 needs to be absorbed at the far end of the small intestine, and the liver stores a few years' supply.",
-     "part": "site-marrow",
-     "cue": "Numbers 3 to 6: bone marrow, stomach, small intestine and liver",
+     "part": "places",
+     "cue": "In the list: bone marrow, stomach, small intestine and liver",
      "foodBody": [
       {
        "name": "Folate",
@@ -463,12 +486,12 @@
      "slug": "blood-and-b12"
     },
     {
-     "id": "9.4",
-     "seg": 4,
+     "id": "9.5",
+     "seg": 5,
      "name": "Vitamin C and the Exit",
      "text": "Vitamin C is needed to make collagen, which holds the skin, gums and blood vessels together; the adrenal glands hold some of the highest levels. The kidneys remove the extra water-soluble vitamins, and riboflavin turns urine bright yellow.",
-     "part": "site-skin",
-     "cue": "Numbers 7 to 9: skin, adrenal glands and kidneys",
+     "part": "places",
+     "cue": "In the list: skin, adrenal glands and kidneys",
      "foodBody": [
       {
        "name": "Vitamin C",
@@ -478,11 +501,11 @@
      "slug": "vitamin-c-and-the-exit"
     },
     {
-     "id": "9.5",
-     "seg": 5,
+     "id": "9.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. These vitamins work in every cell, so the numbers mark the places that need them most or store them, not every one.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. These vitamins work in every cell, so the list gives the places that need them most or store them, and each one's main job.",
+     "cue": "The note under the list",
      "box": "note",
      "slug": "simplified"
     }
@@ -521,5 +544,5 @@
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 10,
- "segmentCount": 44
+ "segmentCount": 45
 }

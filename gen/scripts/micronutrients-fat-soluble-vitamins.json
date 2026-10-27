@@ -3,8 +3,8 @@
  "module": "micronutrients-fat-soluble-vitamins",
  "title": "Module 2 · Fat-Soluble Vitamins",
  "lang": "en",
- "revision": 2,
- "idRevision": 2,
+ "revision": 3,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -348,23 +348,45 @@
    "fig": 8,
    "anchor": "fig-8",
    "title": "Where fat-soluble vitamins are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "8.1",
      "seg": 1,
      "name": "Where Vitamins A, D, E and K Go",
-     "text": "Here's the statue with every place the fat-soluble vitamins are used or stored. Because they dissolve in fat, they're absorbed with fat and can be stored, mostly in the liver and fat tissue. Tap a number to see what that place does.",
+     "text": "Here's where the fat-soluble vitamins are used or stored: first inside a single cell, then everywhere else in the body. Because they dissolve in fat, they're absorbed with fat and can be stored, mostly in the liver and fat tissue.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places"
+     "cue": "The cell drawing and the list of places"
     },
     {
      "id": "8.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Fat-soluble vitamins live where the fat is. Vitamin E guards the membrane against oxidation. Vitamins A and D, once activated, go right into the nucleus and change which genes are read. Vitamin K works in the rough ER, finishing clotting proteins so they can grab calcium. And vitamin A is stored for months in fat droplets in liver cells.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "Vitamin A",
+       "text": "Retinol from liver, eggs and dairy; beta-carotene from orange and green vegetables is turned into it."
+      },
+      {
+       "name": "Vitamin D",
+       "text": "Made in skin from sunlight, or from fatty fish and fortified foods; it needs two activation steps."
+      },
+      {
+       "name": "Vitamin K",
+       "text": "K1 from leafy greens, K2 from fermented foods and some made by gut bacteria."
+      }
+     ]
+    },
+    {
+     "id": "8.3",
+     "seg": 3,
      "name": "Vitamin A",
      "text": "In the eye, vitamin A becomes retinal, the part of rhodopsin that catches light, so a shortage causes night blindness first. It also keeps the skin and the linings of the gut and lungs healthy. The liver stores most of your vitamin A.",
-     "part": "site-eyes",
-     "cue": "Numbers 1 to 3: eyes, liver and skin",
+     "part": "places",
+     "cue": "In the list: eyes, liver and skin",
      "foodBody": [
       {
        "name": "Retinol and beta-carotene",
@@ -373,12 +395,12 @@
      ]
     },
     {
-     "id": "8.3",
-     "seg": 3,
+     "id": "8.4",
+     "seg": 4,
      "name": "Vitamin D",
      "text": "The skin makes vitamin D in sunlight. The liver turns it into its blood form, and the kidneys into calcitriol, the active hormone. Calcitriol helps the small intestine absorb calcium for the bones.",
-     "part": "site-kidneys",
-     "cue": "Numbers 3 to 6: skin, liver, kidneys, small intestine and bones",
+     "part": "places",
+     "cue": "In the list: skin, liver, kidneys, small intestine and bones",
      "foodBody": [
       {
        "name": "Vitamin D",
@@ -387,12 +409,12 @@
      ]
     },
     {
-     "id": "8.4",
-     "seg": 4,
+     "id": "8.5",
+     "seg": 5,
      "name": "Vitamins E and K",
      "text": "Vitamin E sits in cell membranes and protects them from oxidation; fat tissue holds most of the store. Vitamin K lets the liver make clotting factors, so blood can clot, and it also activates proteins in bone.",
-     "part": "site-fat",
-     "cue": "Numbers 6 to 8: bones, fat tissue and blood",
+     "part": "places",
+     "cue": "In the list: bones, fat tissue and blood",
      "foodBody": [
       {
        "name": "Vitamin E",
@@ -405,11 +427,11 @@
      ]
     },
     {
-     "id": "8.5",
-     "seg": 5,
+     "id": "8.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. Vitamin A and vitamin D act in many tissues, so the numbers mark the main places, not every one.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. Vitamin A and vitamin D act in many tissues, so the list gives each place's main job, not every detail.",
+     "cue": "The note under the list",
      "box": "note"
     }
    ]

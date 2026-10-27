@@ -3,8 +3,8 @@
  "module": "bioactives",
  "title": "Module 3 · Bioactives",
  "lang": "en",
- "revision": 3,
- "idRevision": 2,
+ "revision": 4,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -393,23 +393,45 @@
    "fig": 9,
    "anchor": "fig-9",
    "title": "Where bioactives are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "9.1",
      "seg": 1,
      "name": "Where Bioactives Go",
-     "text": "Here's the statue with the places bioactives are used. They aren't essential nutrients, but they do act in the body. Tap a number to see what each place does with them.",
+     "text": "Here's where bioactives are used: first inside a single cell, then everywhere else in the body. They aren't essential nutrients, but they do act in the body.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places"
+     "cue": "The cell drawing and the list of places"
     },
     {
      "id": "9.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Bioactives aren't needed to live, but they change how cells behave. Sulforaphane from broccoli reaches the nucleus and switches on the cell's own antioxidant genes. Caffeine blocks a receptor on the membrane that normally signals tiredness. Most polyphenols are reworked by the liver's smooth ER, and much of their effect may come from these changed forms, many of them made by gut bacteria.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "Polyphenols",
+       "text": "In tea, coffee, berries, cocoa and olive oil; little is absorbed intact, and gut bacteria transform much of the rest."
+      },
+      {
+       "name": "Sulforaphane",
+       "text": "Forms when broccoli and other crucifers are chopped or chewed."
+      },
+      {
+       "name": "Caffeine",
+       "text": "In coffee, tea and cocoa; blocks adenosine receptors on brain cells."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
      "name": "Eyes, Skin and Brain",
      "text": "Lutein and zeaxanthin collect in the macula of the eye and filter blue light, and carotenoids in the skin can tint it slightly. Caffeine reaches the brain and blocks adenosine, the signal that builds up as you get tired.",
-     "part": "site-eyes",
-     "cue": "Numbers 1, 2 and 8: eyes, brain and skin",
+     "part": "places",
+     "cue": "In the list: eyes, brain and skin",
      "foodBody": [
       {
        "name": "Lutein",
@@ -422,12 +444,12 @@
      ]
     },
     {
-     "id": "9.3",
-     "seg": 3,
+     "id": "9.4",
+     "seg": 4,
      "name": "Heat, Vessels and the Gut",
      "text": "Capsaicin triggers the heat receptor in the mouth, which is why chili burns. Flavonoids from cocoa and tea can help blood vessel walls relax. In the small intestine, phytosterols block some cholesterol from being absorbed.",
-     "part": "site-mouth",
-     "cue": "Numbers 3 to 5: mouth, blood vessels and small intestine",
+     "part": "places",
+     "cue": "In the list: mouth, blood vessels and small intestine",
      "foodBody": [
       {
        "name": "Capsaicin",
@@ -440,12 +462,12 @@
      ]
     },
     {
-     "id": "9.4",
-     "seg": 4,
+     "id": "9.5",
+     "seg": 5,
      "name": "Gut Bacteria and the Liver",
      "text": "Most polyphenols aren't absorbed in the small intestine. Bacteria in the large intestine break them into smaller molecules, which are absorbed. The liver clears most bioactives, and sulforaphane from broccoli switches on its detox enzymes.",
-     "part": "site-colon",
-     "cue": "Numbers 6 and 7: large intestine and liver",
+     "part": "places",
+     "cue": "In the list: large intestine and liver",
      "foodBody": [
       {
        "name": "Sulforaphane",
@@ -454,11 +476,11 @@
      ]
     },
     {
-     "id": "9.5",
-     "seg": 5,
+     "id": "9.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. Many of these effects are measured in the lab or in short studies, so the numbers mark where these compounds act, not proven health benefits.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. Many of these effects are measured in the lab or in short studies, so the list shows where these compounds act, not proven health benefits.",
+     "cue": "The note under the list",
      "box": "note"
     }
    ]

@@ -3,8 +3,8 @@
  "module": "macronutrients-carbohydrates",
  "title": "Module 1 · Carbohydrates",
  "lang": "en",
- "revision": 4,
- "idRevision": 2,
+ "revision": 5,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -388,23 +388,45 @@
    "fig": 9,
    "anchor": "fig-9",
    "title": "Where carbohydrates are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "9.1",
      "seg": 1,
      "name": "Where Carbohydrates Go",
-     "text": "Here's the statue with every place carbohydrates are used. Starch and sugars are digested to glucose, the body's everyday fuel. Some is stored as glycogen, and fiber goes on to the large intestine. Tap a number to see what that place does.",
+     "text": "Here's where carbohydrates are used: first inside a single cell, then everywhere else in the body. Starch and sugars are digested to glucose, the body's everyday fuel. Some is stored as glycogen, and fiber goes on to the large intestine.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places"
+     "cue": "The cell drawing and the list of places"
     },
     {
      "id": "9.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Glucose enters through carrier proteins in the membrane. In the cytosol, glycolysis splits it in two, and the mitochondria burn the pieces to make most of the cell's ATP. Glucose you don't need right away is linked into glycogen granules for later. And sugars aren't just fuel: the ER and Golgi stick sugar chains onto proteins, giving the cell its outer coat.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "Starch",
+       "text": "From grains, potatoes and beans; digested to glucose. Glycogen is the animal version of the same idea."
+      },
+      {
+       "name": "Fiber",
+       "text": "Not digested by your cells; gut bacteria ferment some of it into short-chain fatty acids that colon cells burn for fuel."
+      },
+      {
+       "name": "Fructose",
+       "text": "From fruit and table sugar; handled mostly by liver cells, which turn it into glucose, glycogen or fat."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
      "name": "Glucose as Fuel",
      "text": "The brain burns about 120 grams of glucose a day, and red blood cells have no mitochondria, so glucose is all they can use. The pancreas keeps blood sugar in range, releasing insulin when it rises and glucagon when it falls.",
-     "part": "site-brain",
-     "cue": "Numbers 1, 2 and 5: brain, red blood cells and pancreas",
+     "part": "places",
+     "cue": "In the list: brain, red blood cells and pancreas",
      "foodBody": [
       {
        "name": "Glucose",
@@ -413,12 +435,12 @@
      ]
     },
     {
-     "id": "9.3",
-     "seg": 3,
+     "id": "9.4",
+     "seg": 4,
      "name": "Glycogen Stores",
      "text": "The liver stores about 100 grams of glycogen and breaks it down to keep blood sugar steady between meals. Muscles hold about 400 grams in total, but keep it for themselves during exercise. In a fast, the liver and kidneys also make new glucose.",
-     "part": "site-liver",
-     "cue": "Numbers 3, 4 and 6: liver, muscle and kidneys",
+     "part": "places",
+     "cue": "In the list: liver, muscle and kidneys",
      "foodBody": [
       {
        "name": "Glycogen",
@@ -427,12 +449,12 @@
      ]
     },
     {
-     "id": "9.4",
-     "seg": 4,
+     "id": "9.5",
+     "seg": 5,
      "name": "Fiber and the Rest",
      "text": "Fiber you can't digest reaches the large intestine, where bacteria ferment it into short-chain fatty acids that feed the cells of the colon wall. In the mouth, saliva starts digesting starch, and bacteria on the teeth turn sugar into the acid that causes cavities. Joint cartilage is built around long sugar chains that hold water.",
-     "part": "site-colon",
-     "cue": "Numbers 7 to 9: large intestine, mouth and joint cartilage",
+     "part": "places",
+     "cue": "In the list: large intestine, mouth and joint cartilage",
      "foodBody": [
       {
        "name": "Short-chain fatty acids",
@@ -441,11 +463,11 @@
      ]
     },
     {
-     "id": "9.5",
-     "seg": 5,
+     "id": "9.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. Almost every cell can burn glucose, so the numbers mark the places that depend on it most or store it, not every one. Glycogen amounts are typical adult values and vary with diet and exercise.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. Almost every cell can burn glucose, so the list gives the places that depend on it most or store it, and each one's main job. Glycogen amounts are typical adult values and vary with diet and exercise.",
+     "cue": "The note under the list",
      "box": "note"
     }
    ]

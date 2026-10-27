@@ -3,8 +3,8 @@
   "module": "macronutrients-fats",
   "title": "Module 1 · Fats",
   "lang": "en",
-  "revision": 14,
-  "idRevision": 6,
+  "revision": 15,
+  "idRevision": 7,
   "segmentFields": {
     "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
     "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -671,23 +671,45 @@
       "fig": 10,
       "anchor": "fig-10",
       "title": "Where fats are used in the body",
-      "subtitle": "Tap a number or a name to see what that place does with it.",
+      "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
       "segments": [
         {
           "id": "10.1",
           "seg": 1,
           "name": "Where Fats End Up",
-          "text": "Here's a marble statue of the body with every place fat is used or stored. Most of the fat you eat ends up as triglyceride in fat tissue, your energy store. The rest is burned for fuel or built into your cells. Tap a number to see what that place does with it.",
+          "text": "Here's where fat is used or stored: first inside a single cell, then everywhere else in the body. Most of the fat you eat ends up as triglyceride in fat tissue, your energy store. The rest is burned for fuel or built into your cells.",
           "part": "body-uses",
-          "cue": "The statue and its numbered places"
+          "cue": "The cell drawing and the list of places"
         },
         {
           "id": "10.2",
           "seg": 2,
+          "name": "Inside a Cell",
+          "text": "Inside a cell, fat has two big jobs. It is stored in lipid droplets as triglycerides, ready to burn, and it is built into the membrane that wraps every cell. When the cell needs energy, fatty acids go into the mitochondria and are cut down two carbons at a time to make ATP. The smooth ER does the building, turning fatty acids into new fats and membrane lipids.",
+          "part": "cell-uses",
+          "cue": "The cell drawing and its numbered parts",
+          "foodBody": [
+            {
+              "name": "Triglycerides",
+              "text": "Most food fat (oils, butter, meat fat) is triglyceride: three fatty acids on glycerol. Cells store fat in the same form."
+            },
+            {
+              "name": "Omega-3 and omega-6",
+              "text": "Essential fats from fish, seeds and vegetable oils; they are built into membranes and turned into signal molecules."
+            },
+            {
+              "name": "Trans fats",
+              "text": "From partly hydrogenated oils; they also end up in membranes, which is one reason to limit them."
+            }
+          ]
+        },
+        {
+          "id": "10.3",
+          "seg": 3,
           "name": "Stored Fat",
           "text": "Fat under the skin holds most of the store, as triglycerides packed into fat cells, and it also insulates and cushions you. Fat around the organs is a smaller store that cushions the gut and kidneys; when there's a lot of it, it's linked to heart disease and type 2 diabetes.",
-          "part": "site-subq",
-          "cue": "Numbers 1 and 2: under the skin and around the organs",
+          "part": "places",
+          "cue": "In the list: under the skin and around the organs",
           "foodBody": [
             {
               "name": "Triglycerides",
@@ -696,12 +718,12 @@
           ]
         },
         {
-          "id": "10.3",
-          "seg": 3,
+          "id": "10.4",
+          "seg": 4,
           "name": "Fat as Fuel",
           "text": "Between meals, fatty acids leave fat tissue and are burned for energy. The heart gets most of its energy this way, and muscles burn fat at rest and during long, easy exercise. The liver packs some fat into VLDL to send out, and in a long fast it turns fatty acids into ketones, which the brain can use.",
-          "part": "site-heart",
-          "cue": "Numbers 3 to 5: heart, muscle and liver",
+          "part": "places",
+          "cue": "In the list: heart, muscle and liver",
           "foodBody": [
             {
               "name": "Fatty acids",
@@ -714,12 +736,12 @@
           ]
         },
         {
-          "id": "10.4",
-          "seg": 4,
+          "id": "10.5",
+          "seg": 5,
           "name": "Fat in Every Cell",
           "text": "Fat is also built into you. Fatty acids form the tails of the phospholipids in every cell membrane. The brain and the retina are rich in DHA, an omega-3, and myelin, the fatty wrapping that speeds nerve signals, is mostly lipid.",
-          "part": "site-brain",
-          "cue": "Numbers 6 to 9: brain, retina, myelin and membranes",
+          "part": "places",
+          "cue": "In the list: brain, retina, myelin and membranes",
           "foodBody": [
             {
               "name": "DHA",
@@ -728,12 +750,12 @@
           ]
         },
         {
-          "id": "10.5",
-          "seg": 5,
+          "id": "10.6",
+          "seg": 6,
           "name": "Signals Made From Fat",
           "text": "Some 20-carbon fatty acids become eicosanoids, short-lived local signals. Prostaglandins help protect the stomach lining, and others control inflammation, pain, clotting and blood flow wherever they're made.",
-          "part": "site-stomach",
-          "cue": "Number 10: the stomach lining",
+          "part": "places",
+          "cue": "In the list: the stomach lining",
           "foodBody": [
             {
               "name": "Arachidonic acid and EPA",
@@ -742,11 +764,11 @@
           ]
         },
         {
-          "id": "10.6",
-          "seg": 6,
+          "id": "10.7",
+          "seg": 7,
           "name": "Simplified",
-          "text": "This is simplified. Fat is in every cell and fat tissue is spread all through the body, so the numbers mark typical places, not every one.",
-          "cue": "The caption under the statue",
+          "text": "This is simplified. Fat is in every cell and fat tissue is spread all through the body, so the list gives each place's main job, not every detail.",
+          "cue": "The note under the list",
           "box": "note"
         }
       ]

@@ -3,8 +3,8 @@
  "module": "micronutrients-trace-minerals",
  "title": "Module 2 · Trace Minerals",
  "lang": "en",
- "revision": 2,
- "idRevision": 2,
+ "revision": 3,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -417,24 +417,47 @@
    "fig": 9,
    "anchor": "fig-9",
    "title": "Where trace minerals are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "9.1",
      "seg": 1,
      "name": "Where the Trace Minerals Go",
-     "text": "Here's the statue with the places the trace minerals are used. You need only milligrams or micrograms of each, but they do big jobs: carrying oxygen, running enzymes, making thyroid hormones and hardening teeth. Tap a number to see what that place does.",
+     "text": "Here's where the trace minerals are used: first inside a single cell, then everywhere else in the body. You need only milligrams or micrograms of each, but they do big jobs: carrying oxygen, running enzymes, making thyroid hormones and hardening teeth.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places",
+     "cue": "The cell drawing and the list of places",
      "slug": "where-the-trace-minerals-go"
     },
     {
      "id": "9.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Trace minerals are needed in tiny amounts, but nothing works without them. Iron and copper pass electrons along in the mitochondria to make ATP. Zinc helps proteins grip DNA in the nucleus. Selenium, zinc, copper and manganese power the enzymes that mop up harmful oxidants. And in the thyroid, iodine is added to a protein to make thyroid hormone.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "Iron",
+       "text": "Heme iron from meat is absorbed better than iron from plants; vitamin C helps the plant kind."
+      },
+      {
+       "name": "Zinc",
+       "text": "From meat, shellfish, seeds and legumes; phytates in grains can hold it back."
+      },
+      {
+       "name": "Iodine and selenium",
+       "text": "From iodized salt, seafood, dairy, Brazil nuts; amounts in plants depend on the soil."
+      }
+     ],
+     "slug": "inside-a-cell"
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
      "name": "Iron",
      "text": "About two thirds of your iron is in the hemoglobin of red blood cells, which carry oxygen. Muscle holds oxygen with myoglobin, another iron protein. Bone marrow builds iron into new red cells, the spleen recycles it from old ones, and the liver stores it as ferritin. The small intestine controls how much gets in.",
-     "part": "site-blood",
-     "cue": "Numbers 1 to 6: blood, marrow, muscle, liver, spleen and small intestine",
+     "part": "places",
+     "cue": "In the list: blood, marrow, muscle, liver, spleen and small intestine",
      "foodBody": [
       {
        "name": "Heme iron",
@@ -448,12 +471,12 @@
      "slug": "iron"
     },
     {
-     "id": "9.3",
-     "seg": 3,
+     "id": "9.4",
+     "seg": 4,
      "name": "Iodine and Selenium",
      "text": "The thyroid builds iodine into its hormones, which set how fast your body uses energy, and selenium enzymes switch those hormones on.",
-     "part": "site-thyroid",
-     "cue": "Number 7: the thyroid",
+     "part": "places",
+     "cue": "In the list: the thyroid",
      "foodBody": [
       {
        "name": "Iodine",
@@ -467,12 +490,12 @@
      "slug": "iodine-and-selenium"
     },
     {
-     "id": "9.4",
-     "seg": 4,
+     "id": "9.5",
+     "seg": 5,
      "name": "Zinc, Copper and Fluoride",
      "text": "Zinc runs hundreds of enzymes, helps wounds heal and supports the immune system; most of it sits in muscle and bone. Copper helps move iron, and fluoride strengthens tooth enamel against acid.",
-     "part": "site-skin",
-     "cue": "Numbers 2, 3, 8 and 9: marrow, muscle, teeth and skin",
+     "part": "places",
+     "cue": "In the list: marrow, muscle, teeth and skin",
      "foodBody": [
       {
        "name": "Zinc",
@@ -482,11 +505,11 @@
      "slug": "zinc-copper-and-fluoride"
     },
     {
-     "id": "9.5",
-     "seg": 5,
+     "id": "9.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. Many trace minerals work in enzymes in every cell, so the numbers mark the main places, not every one.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. Many trace minerals work in enzymes in every cell, so the list gives each place's main job, not every detail.",
+     "cue": "The note under the list",
      "box": "note",
      "slug": "simplified"
     }
@@ -525,5 +548,5 @@
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 10,
- "segmentCount": 44
+ "segmentCount": 45
 }

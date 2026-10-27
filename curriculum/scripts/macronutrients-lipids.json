@@ -3,8 +3,8 @@
  "module": "macronutrients-lipids",
  "title": "Module 1 · Other Lipids",
  "lang": "en",
- "revision": 6,
- "idRevision": 2,
+ "revision": 7,
+ "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -374,24 +374,47 @@
    "fig": 7,
    "anchor": "fig-7",
    "title": "Where other lipids are used in the body",
-   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
      "id": "7.1",
      "seg": 1,
      "name": "Where Other Lipids Go",
-     "text": "Here's the statue with every place the other lipids are used. They aren't stored for energy like fat. Instead they build membranes and are made into hormones, bile, vitamin D and signals. Tap a number to see what that place does.",
+     "text": "Here's where the other lipids are used: first inside a single cell, then everywhere else in the body. They aren't stored for energy like fat. Instead they build membranes and are made into hormones, bile, vitamin D and signals.",
      "part": "body-uses",
-     "cue": "The statue and its numbered places",
+     "cue": "The cell drawing and the list of places",
      "slug": "where-other-lipids-go"
     },
     {
      "id": "7.2",
      "seg": 2,
+     "name": "Inside a Cell",
+     "text": "Lipids are what the cell's membranes are made of. Phospholipids line up tail to tail to make the membrane, with cholesterol tucked in to keep it steady. The smooth ER makes these lipids, and in hormone glands it works with the mitochondria to turn cholesterol into steroid hormones. Those hormones then travel to the nucleus of other cells and change which genes are switched on.",
+     "part": "cell-uses",
+     "cue": "The cell drawing and its numbered parts",
+     "foodBody": [
+      {
+       "name": "Cholesterol",
+       "text": "Found only in animal foods; the liver makes most of the body's supply anyway."
+      },
+      {
+       "name": "Lecithin",
+       "text": "A phospholipid (phosphatidylcholine) in egg yolk and soy, also used as an emulsifier; the same molecule is in your membranes."
+      },
+      {
+       "name": "Plant sterols",
+       "text": "In nuts, seeds and fortified spreads; they compete with cholesterol for absorption in the gut and are barely absorbed themselves."
+      }
+     ],
+     "slug": "inside-a-cell"
+    },
+    {
+     "id": "7.3",
+     "seg": 3,
      "name": "Membranes",
      "text": "Phospholipids and cholesterol make the membrane of every cell in the body. In the lungs, a phospholipid film called surfactant coats the tiny air sacs and stops them collapsing when you breathe out.",
-     "part": "site-membranes",
-     "cue": "Numbers 1 and 2: cell membranes and lungs",
+     "part": "places",
+     "cue": "In the list: cell membranes and lungs",
      "foodBody": [
       {
        "name": "Phospholipids",
@@ -401,12 +424,12 @@
      "slug": "membranes"
     },
     {
-     "id": "7.3",
-     "seg": 3,
+     "id": "7.4",
+     "seg": 4,
      "name": "Cholesterol at Work",
      "text": "The liver makes most of your cholesterol and sends it out in lipoproteins; it also turns some into bile acids, stored in the gallbladder. The brain makes its own cholesterol, about a quarter of the body's total. The adrenal glands turn cholesterol into steroid hormones, and in sunlight the skin makes vitamin D from a close relative.",
-     "part": "site-liver",
-     "cue": "Numbers 3 to 7: liver, gallbladder, brain, myelin and adrenal glands",
+     "part": "places",
+     "cue": "In the list: liver, gallbladder, brain, myelin and adrenal glands",
      "foodBody": [
       {
        "name": "Cholesterol",
@@ -420,12 +443,12 @@
      "slug": "cholesterol-at-work"
     },
     {
-     "id": "7.4",
-     "seg": 4,
+     "id": "7.5",
+     "seg": 5,
      "name": "Sphingolipids and Signals",
      "text": "Myelin, the wrapping on nerves, is rich in sphingolipids such as sphingomyelin. Ceramides help seal the skin's water barrier. And in the blood, platelets make thromboxane, an eicosanoid, to start a clot.",
-     "part": "site-myelin",
-     "cue": "Numbers 6, 8 and 9: myelin, skin and blood",
+     "part": "places",
+     "cue": "In the list: myelin, skin and blood",
      "foodBody": [
       {
        "name": "Ceramides",
@@ -439,11 +462,11 @@
      "slug": "sphingolipids-and-signals"
     },
     {
-     "id": "7.5",
-     "seg": 5,
+     "id": "7.6",
+     "seg": 6,
      "name": "Simplified",
-     "text": "This is simplified. Every cell uses these lipids, and the ovaries and testes also make steroid hormones from cholesterol, so the numbers mark typical places, not every one.",
-     "cue": "The caption under the statue",
+     "text": "This is simplified. Every cell uses these lipids, and the ovaries and testes also make steroid hormones from cholesterol, so the list gives each place's main job, not every detail.",
+     "cue": "The note under the list",
      "box": "note",
      "slug": "simplified"
     }
@@ -491,5 +514,5 @@
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 8,
- "segmentCount": 41
+ "segmentCount": 42
 }
