@@ -3,8 +3,8 @@
  "module": "bioactives",
  "title": "Module 3 · Bioactives",
  "lang": "en",
- "revision": 2,
- "idRevision": 1,
+ "revision": 3,
+ "idRevision": 2,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -12,7 +12,8 @@
   "box": "optional: \"body\" (pink box) or \"note\" (grey note)",
   "part": "optional: data-part of the figure element the segment is about",
   "name": "short title for the segment; shown above it and in the Now badge; its slug also works in links (#fig-2/the-amino-acid)",
-  "subtitle": "figure-level: short muted subtitle under the title"
+  "subtitle": "figure-level: short muted subtitle under the title",
+  "foodBody": "optional: \"In food and in the body\" notes, a list of {name, text}: where a molecule named in the section is found in food and what it does in the body. Not part of text; shown as a separate note under the section."
  },
  "figures": [
   {
@@ -391,11 +392,85 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Where bioactives are used in the body",
+   "subtitle": "Tap a number or a name to see what that place does with it.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Where Bioactives Go",
+     "text": "Here's the statue with the places bioactives are used. They aren't essential nutrients, but they do act in the body. Tap a number to see what each place does with them.",
+     "part": "body-uses",
+     "cue": "The statue and its numbered places"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Eyes, Skin and Brain",
+     "text": "Lutein and zeaxanthin collect in the macula of the eye and filter blue light, and carotenoids in the skin can tint it slightly. Caffeine reaches the brain and blocks adenosine, the signal that builds up as you get tired.",
+     "part": "site-eyes",
+     "cue": "Numbers 1, 2 and 8: eyes, brain and skin",
+     "foodBody": [
+      {
+       "name": "Lutein",
+       "text": "Kale, spinach, corn and egg yolks. In the body it collects in the macula, at the center of the retina."
+      },
+      {
+       "name": "Caffeine",
+       "text": "Coffee, tea, cola and chocolate. In the body it blocks adenosine receptors, which keeps you alert."
+      }
+     ]
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "Heat, Vessels and the Gut",
+     "text": "Capsaicin triggers the heat receptor in the mouth, which is why chili burns. Flavonoids from cocoa and tea can help blood vessel walls relax. In the small intestine, phytosterols block some cholesterol from being absorbed.",
+     "part": "site-mouth",
+     "cue": "Numbers 3 to 5: mouth, blood vessels and small intestine",
+     "foodBody": [
+      {
+       "name": "Capsaicin",
+       "text": "The heat in chili peppers. It triggers TRPV1, the receptor that senses heat, so the mouth feels burning without any real heat."
+      },
+      {
+       "name": "Flavonoids",
+       "text": "Tea, cocoa, apples, onions and berries. Many are poorly absorbed; gut bacteria break them into smaller molecules."
+      }
+     ]
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "Gut Bacteria and the Liver",
+     "text": "Most polyphenols aren't absorbed in the small intestine. Bacteria in the large intestine break them into smaller molecules, which are absorbed. The liver clears most bioactives, and sulforaphane from broccoli switches on its detox enzymes.",
+     "part": "site-colon",
+     "cue": "Numbers 6 and 7: large intestine and liver",
+     "foodBody": [
+      {
+       "name": "Sulforaphane",
+       "text": "Formed when raw broccoli, cabbage or broccoli sprouts are chewed or chopped. In the body it switches on protective enzymes."
+      }
+     ]
+    },
+    {
+     "id": "9.5",
+     "seg": 5,
+     "name": "Simplified",
+     "text": "This is simplified. Many of these effects are measured in the lab or in short studies, so the numbers mark where these compounds act, not proven health benefits.",
+     "cue": "The caption under the statue",
+     "box": "note"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here's the whole lesson in one table: each bioactive, its family, what it may do, where it's found, and what's good to know.",
@@ -403,7 +478,7 @@
      "cue": "The table, row by row"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Test-tube antioxidant scores don't predict effects in the body. Grapefruit contains bioactives that raise the blood levels of many medicines. And some compounds, like tannins and glucosinolates, are antinutrients or bioactives depending on the dose and the diet.",
