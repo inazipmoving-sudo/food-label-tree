@@ -287,10 +287,10 @@ def collagen_panel():
 
 # tap / Enter on any close-up panel opens it large in a dialog (scrolls sideways on a narrow phone); tap or Escape closes
 SS_LBX_=('<dialog class="lbx lbs" aria-label="Diagram, enlarged"><button type="button" class="lbx-x" aria-label="Close">×</button><div class="lbx-b"></div></dialog>'
- '<script>(()=>{const d=document.querySelector("dialog.lbs");if(!d)return;const open=p=>{const c=p.cloneNode(true);c.removeAttribute("role");c.removeAttribute("tabindex");c.querySelector(".zi")?.remove();'
+ '<script>(()=>{const d=document.querySelector("dialog.lbs");if(!d)return;const open=p=>{const c=p.cloneNode(true);c.removeAttribute("role");c.removeAttribute("tabindex");c.querySelector(".zi")?.remove();c.querySelectorAll(".m3t,canvas.m3v,.m3h").forEach(x=>x.remove());c.querySelectorAll(".m3on,.m3busy").forEach(x=>x.classList.remove("m3on","m3busy"));'
  'd.querySelector(".lbx-b").replaceChildren(c);d.showModal();d.scrollLeft=0;};'
- 'document.addEventListener("click",e=>{const p=e.target.closest(".ssp");if(p&&!p.closest("dialog"))open(p);});'
- 'document.addEventListener("keydown",e=>{const p=e.target.closest&&e.target.closest(".ssp");if(p&&!p.closest("dialog")&&(e.key==="Enter"||e.key===" ")){e.preventDefault();open(p);}});'
+ 'document.addEventListener("click",e=>{const p=e.target.closest(".ssp");if(p&&!e.target.closest(".m3t,.m3v,.m3on")&&!p.closest("dialog"))open(p);});'
+ 'document.addEventListener("keydown",e=>{const p=e.target.closest&&e.target.closest(".ssp");if(p&&!e.target.closest(".m3t,.m3v,.m3on")&&!p.closest("dialog")&&(e.key==="Enter"||e.key===" ")){e.preventDefault();open(p);}});'
  'd.addEventListener("click",()=>d.close());})();</script>')
 
 # page-only CSS (kept out of curr.css so no other page changes)

@@ -24,7 +24,7 @@
     var cv = document.createElement('canvas'); cv.className = 'm3v'; cv.tabIndex = 0;
     cv.setAttribute('role', 'img');
     var nm = lm.getAttribute('data-m3n') || model.name;
-    cv.setAttribute('aria-label', '3D model of ' + nm + ', ' + model.formula + '. Drag to rotate, scroll or pinch to zoom, double-click to reset. With focus: arrow keys rotate, plus and minus zoom, 0 resets.');
+    cv.setAttribute('aria-label', '3D model of ' + nm + ', ' + model.formula + '. Drag to rotate, pinch to zoom, double-click to reset. With focus: arrow keys rotate, plus and minus zoom, 0 resets.');
     var A = model.atoms, B = model.bonds, S = model.style, nA = A.length;
     var P = A.map(function (a) { return [a[1], a[2], a[3]]; });
     var ext = 0; P.forEach(function (p, i) { ext = Math.max(ext, Math.hypot(p[0], p[1], p[2]) + S[A[i][0]][0]); });

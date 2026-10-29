@@ -72,8 +72,9 @@ async def lesson(p,b,slug,mode):
         else:  # two-finger pinch out
             cdp=await c.new_cdp_session(pg)
             async def touch(t,pts): await cdp.send('Input.dispatchTouchEvent',{'type':t,'touchPoints':[{'x':x,'y':y,'id':k} for k,(x,y) in enumerate(pts)]})
-            await touch('touchStart',[(cx-15,cy),(cx+15,cy)])
-            for s in range(1,9): await touch('touchMove',[(cx-15-6*s,cy),(cx+15+6*s,cy)])
+            g=min(15,bb['width']/4)  # both fingers start on the drawing, even a tiny ion
+            await touch('touchStart',[(cx-g,cy),(cx+g,cy)])
+            for s in range(1,9): await touch('touchMove',[(cx-g-6*s,cy),(cx+g+6*s,cy)])
             await touch('touchEnd',[]); await pg.wait_for_timeout(80)
         r['zoomed']=await lm.evaluate("l=>l.classList.contains('z2')")
         mk1=await lm.evaluate("l=>[...l.querySelectorAll(':scope>.mk')].map(m=>m.getBoundingClientRect().x)")
