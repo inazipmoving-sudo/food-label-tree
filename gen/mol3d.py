@@ -215,7 +215,10 @@ def build(slug, refresh=False):
                      'bonds': [list(b) for b in s['bonds']], 'anchors': {k: [x - 1 for x in v] for k, v in s.get('anchors', {}).items()}}
             write(out, name, model, index); continue
         if refresh or 'pubchem' not in s: s['pubchem'] = pubchem_smiles(s['cid'])
-        same_compound(s['smiles'], s['pubchem'], name)
+        pub = s['pubchem']
+        if s.get('parent'):  # PubChem record is a salt of the drawn ion (e.g. Allura Red AC, disodium): compare the largest fragment
+            pub = max(pub.split('.'), key=len)
+        same_compound(s['smiles'], pub, name)
         m, cid, ff = embed(s['smiles'], chairs=s.get('chairs', ()), align=s.get('align'))
         if not s.get('stereo_free'): check_stereo(m, cid, s['smiles'])
         X = m.GetConformer(cid).GetPositions()

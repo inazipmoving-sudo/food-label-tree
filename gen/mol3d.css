@@ -8,12 +8,15 @@
 .m3b:focus-visible{outline:2px solid #3E5C76;outline-offset:-2px}
 .m3b:hover:not([aria-pressed=true]){background:#EEF2F5}
 .lm.m3on>.mz,.lm.m3on>.mk{display:none}
+.m3c{position:relative}.m3c.m3top{padding-top:23px}.m3c.m3on>:not(.m3t):not(.m3v):not(.m3h){display:none}
 .m3v{display:block;max-width:100%;cursor:grab;touch-action:none;border-radius:4px;background:transparent}
 .m3v:active{cursor:grabbing}.m3v:focus-visible{outline:2px solid #3E5C76;outline-offset:2px}
 .m3h{margin:4px 0 0;font:12px/1.35 var(--sans,system-ui,sans-serif);color:#6B6B6B;text-align:center}
-.lm.m3busy .m3b[data-v="3d"]{opacity:.6}
+.lm.m3busy .m3b,.m3c.m3busy .m3b[data-v="3d"]{opacity:.6}
 @media(max-width:600px){.m3b{min-width:22px;height:18px;line-height:18px;font-size:10px;padding:0 4px}}
 /* 2D zoom (gen/zoom2d.js): one finger still scrolls the page until the drawing is zoomed */
 .lm>.mz{touch-action:pan-x pan-y}
 .lm.z2>.mz{touch-action:none;cursor:grab}
+.z2c>img,img.z2i{touch-action:pan-x pan-y}
+.z2c.z2>img,img.z2i.z2{touch-action:none;cursor:grab}
 .lm.z2>.zb{visibility:hidden}

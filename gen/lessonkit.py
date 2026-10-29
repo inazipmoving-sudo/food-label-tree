@@ -64,7 +64,7 @@ def mol3d_assets():
      # enlarge dialog (LIPID_JS, registered earlier) clones the .lm: drop the toggle from the copy
      'if(e.target.closest(".lmz")){document.querySelectorAll("dialog.lbm .m3t,dialog.lbm .m3v").forEach(x=>x.remove());return}'
      'const b=e.target.closest(".m3b");if(!b||b.getAttribute("aria-pressed")==="true")return;'
-     'const lm=b.closest(".lm"),t=b.closest(".m3t"),v=b.dataset.v;set(t,v);'
+     'const lm=b.closest(".lm,.m3c"),t=b.closest(".m3t"),v=b.dataset.v;set(t,v);'
      'if(v==="3d"){lm.classList.add("m3busy");try{await lib();const m=await Mol3D.load(lm.dataset.m3d);'
      'if(t.querySelector("[data-v=\'3d\']").getAttribute("aria-pressed")!=="true"||V.has(lm))return;'
      'V.set(lm,Mol3D.mount(lm,m,JSON.parse(lm.dataset.m3l||"[]")));lm.classList.add("m3on")}'

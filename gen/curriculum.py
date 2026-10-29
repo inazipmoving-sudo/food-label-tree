@@ -265,7 +265,7 @@ def _png_size(path):
 def img(fname,n,alt,part=None):
     w,h=_png_size(os.path.join(OUT,'img','fats',fname))  # width/height reserve space so #fig-N jumps land correctly
     cls=('bleed f9-narrow' if fname=='fig-09-breakdown-3.png' else 'bleed') if fname.startswith("fig-09-") else ''
-    tag=f'<img{f' class="{cls}"' if cls else ''} src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}"{f' data-part="{part}"' if part else ''} loading="{"eager" if n<2 else "lazy"}" decoding="async">'
+    tag=f'<img class="{(cls+" ") if cls else ""}z2i" src="img/fats/{fname}" width="{w}" height="{h}" alt="Figure {n}: {alt}"{f' data-part="{part}"' if part else ''} loading="{"eager" if n<2 else "lazy"}" decoding="async">'
     dname=fname.replace('.png','-d.png')
     if os.path.exists(os.path.join(OUT,'img','fats',dname)):  # Figure 9: desktop variant with labels drawn smaller so they match page text
         dw,dh=_png_size(os.path.join(OUT,'img','fats',dname))
@@ -332,6 +332,11 @@ PRE={9:F9_INTRO+F9A,3:'<div class="part">Meet the atoms</div><div class="art">'+
 # ---------------- Figure 6 lower diagram: counting from both ends, and how far human enzymes reach ----------------
 R6=json.load(open(os.path.join(GEN,'data','fig06-reach.json'),encoding='utf-8'))  # made by /workspace/nutrition/fats_omega.py
 KEY_A={1,9,12,15,18}; KEY_W={1,3,6,9}
+FM3={}
+def _m3w(name,inner,w,h,labels,units=None):
+    """2D/3D toggle wrapper (filled after lessonkit loads: fill_fats_m3); labels: the page's % label positions, kept clear of the toggle"""
+    tk=[(q[0]/100*w,q[1]/100*h) for l in labels for q in (l.get('a'),l.get('o')) if q]
+    FM3[name]=dict(units=round(units or w/72,3),tk=tk); return f'\x00W:{name}\x00{inner}\x00E:{name}\x00'
 def _reach_row(name,title,status,inside):
     r=R6['rows'][name]; w,h=_png_size(os.path.join(OUT,'img','fats',r['file'])); om=r['omega']
     labs=''
@@ -343,7 +348,7 @@ def _reach_row(name,title,status,inside):
     e=r['ends']
     labs+=f'<span class="cend ca" style="left:{e["acid"][0]}%;top:{e["acid"][1]}%">acid end<br>COOH<br>carbon 1</span><span class="cend co {e["odir"]}" style="left:{e["omega"][0]}%;top:{e["omega"][1]}%">omega end<br>CH<sub>3</sub><br>carbon 18 = ω1</span>'
     return (f'<div class="rrow {"in" if inside else "out"}" data-row="{name}"><div class="rrh"><span class="rrn">{title}</span><span class="rrs">{status}</span></div>'
-            f'<div class="rimg"><img src="img/fats/{r["file"]}" width="{w}" height="{h}" alt="Figure 6: {title}, carbons numbered from the acid end and from the omega end; {status}" loading="lazy" decoding="async">{labs}</div></div>')
+            +_m3w(r["file"][:-4],f'<div class="rimg z2c"><img src="img/fats/{r["file"]}" width="{w}" height="{h}" alt="Figure 6: {title}, carbons numbered from the acid end and from the omega end; {status}" loading="lazy" decoding="async">{labs}</div>',w,h,r['labels'])+'</div>')
 F6_REACH=('<section class="reach" data-part="ends"><div class="part">Counting from both ends: what your enzymes can reach</div>'
  '<p class="rlead">Blue numbers count from the acid end (carbon 1 joins glycerol); grey ω numbers count from the omega end (shown at ω1, ω3, ω6 and ω9). The ringed double bond names the family.</p>'
  '<div class="zleg" data-part="reach"><span><i class="z zb"></i><b>Human enzymes reach</b> double bonds at carbon 9 or closer to the acid end (Δ9)</span><span><i class="z zg"></i><b>Plants and algae only</b> carbon 12 (Δ12) and carbon 15 (Δ15)</span></div>'
@@ -370,8 +375,8 @@ def _fam_mol(name,title,facts,cap):
     labs+=(f'<span class="cend ca" style="left:{e["acid"][0]}%;top:{e["acid"][1]}%">acid end<br>COOH<br>carbon 1</span>'
            f'<span class="cend co {e["odir"]}" style="left:{e["omega"][0]}%;top:{e["omega"][1]}%">omega end<br>CH<sub>3</sub><br>carbon {n} = ω1</span>')
     return (f'<div class="fmol" data-mol="{name}"><div class="rrh"><span class="rrn">{title}</span><span class="rrs">{facts}</span></div>'
-            f'<button type="button" class="mz fz" data-cap="{_html.escape(title+": "+facts)}" aria-label="Enlarge {_html.escape(title)}"><div class="rimg fimg">'
-            f'<img src="img/fats/{r["file"]}" width="{w}" height="{h}" alt="Figure 6: {_html.escape(title)}, ball-and-stick with every hydrogen; {_html.escape(facts)}" loading="lazy" decoding="async">{labs}</div>{ZOOM}</button>'
+            +_m3w(r["file"][:-4],f'<button type="button" class="mz fz" data-cap="{_html.escape(title+": "+facts)}" aria-label="Enlarge {_html.escape(title)}"><div class="rimg fimg z2c">'
+            f'<img src="img/fats/{r["file"]}" width="{w}" height="{h}" alt="Figure 6: {_html.escape(title)}, ball-and-stick with every hydrogen; {_html.escape(facts)}" loading="lazy" decoding="async">{labs}</div>{ZOOM}</button>',w,h,r['labels'])+
             f'<p class="fcap">{cap}</p></div>')
 def _fstep(how,what): return f'<div class="fstep" aria-label="becomes"><span class="fa">↓</span><span><b>{how}</b> {what}</span></div>'
 F6_FAM=('<section class="fams" data-part="families"><div class="part">The omega-3 and omega-6 families, molecule by molecule</div>'
@@ -403,8 +408,8 @@ def callout(i):
 T10=json.load(open(os.path.join(GEN,'data','fig10-tree.json'),encoding='utf-8'))  # widths in C–C bond units, so every molecule shows at one scale
 def _mol(name,label,alt):
     w,h=_png_size(os.path.join(OUT,'img','fats',f'fig-10-{name}.png'))
-    return (f'<div class="rn-mol"><button type="button" class="mz" data-cap="{_html.escape(label)}" aria-label="Enlarge {_html.escape(label)}">'
-            f'<img src="img/fats/fig-10-{name}.png" width="{w}" height="{h}" style="--u:{T10[name]["units"]}" alt="Figure 11: {alt}" loading="lazy" decoding="async">{ZOOM}</button></div>')
+    return ('<div class="rn-mol">'+_m3w(f'fig-10-{name}',f'<button type="button" class="mz z2c" data-cap="{_html.escape(label)}" aria-label="Enlarge {_html.escape(label)}">'
+            f'<img src="img/fats/fig-10-{name}.png" width="{w}" height="{h}" style="--u:{T10[name]["units"]}" alt="Figure 11: {alt}" loading="lazy" decoding="async">{ZOOM}</button>',w,h,(),T10[name]["units"])+'</div>')
 def _node(key,parent,depth,cls,part,name,defn,mol='',found=''):
     return (f'<div class="rn {cls} t-{key} d{depth}" data-node="{key}"{f' data-parent="{parent}"' if parent else ''}{f' data-part="{part}"' if part else ''}>'
             f'<div class="rn-h"><span class="rn-k">{name}</span><span class="rn-d">{defn}</span></div>{mol}{f'<p class="rn-f"><b>e.g.</b> {found}</p>' if found else ''}</div>')
@@ -540,6 +545,22 @@ def NEXT_OF(slug):
 exec(open(os.path.join(GEN,'lipids.py'),encoding='utf-8').read())
 exec(open(os.path.join(GEN,'lessonkit.py'),encoding='utf-8').read())
 N_LIPIDS=build_lipids()
+CAPN={'stearic':'Stearic acid','oleic':'Oleic acid','elaidic':'Elaidic acid','linoleic':'Linoleic acid','la':'Linoleic acid',
+ 'ala':'Alpha-linolenic acid','epa':'Eicosapentaenoic acid','dha':'Docosahexaenoic acid','aa':'Arachidonic acid','triglyceride':'Triglyceride'}
+def fill_fats_m3():
+    """Fats lesson 2D/3D toggles: the page is written before lessonkit exists, so the wrappers are placeholders, filled here"""
+    p=os.path.join(OUT,'macronutrients-fats.html'); h=open(p,encoding='utf-8').read(); M3=_m3_index('fats'); used=[]
+    def f(m):
+        k,n=m.group(1),m.group(2); d=FM3[n]
+        if n not in M3: return ''
+        a,t=m3_bits('fats',n,d,(),CAPN[n.split('-')[-1]],d['tk'],M3)
+        top=n.startswith('fig-10-')  # Figure 11 tree: small cards, the drawing fills its strip, so the toggle sits just above it
+        if k=='W': used.append(n); return f'<div class="m3c{" m3top" if top else ""}" style="--u:{d["units"]}"{a}>'
+        return (_re.sub('class="m3t \\w+"','class="m3t tl"',t) if top else t)+'</div>'
+    h=_re.sub('\x00([WE]):([a-z0-9_-]+)\x00',f,h)
+    if used: h=h.replace('</body>',mol3d_assets()+'</body>',1)
+    open(p,'w',encoding='utf-8').write(h); return len(used)
+N_FATS_M3=fill_fats_m3()
 # Old step-by-step page -> tiny redirect (maps #step-N to the new #fig-N)
 STEP2FIG={1:3,2:3,3:3,4:3,5:3,6:3,7:4,8:4,9:4,10:4,11:4,12:5,13:2,14:2,15:6,16:3}
 open(os.path.join(OUT,'macronutrients-fats-basics.html'),'w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved: Module 1 · Fats</title><meta http-equiv="refresh" content="0; url=macronutrients-fats.html"><link rel="canonical" href="macronutrients-fats.html"><script>var m={'+','.join(f'{k}:{v}' for k,v in STEP2FIG.items())+'},s=/^#step-(\\d+)$/.exec(location.hash);location.replace("macronutrients-fats.html"+(s&&m[s[1]]?"#fig-"+m[s[1]]:""))</script></head><body><p>This lesson moved to <a href="macronutrients-fats.html">Module 1 · Fats</a>.</p></body></html>\n')

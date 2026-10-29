@@ -4,7 +4,7 @@ import asyncio, os, sys, json
 from playwright.async_api import async_playwright
 from PIL import Image, ImageChops
 SLUGS=sys.argv[1:] or ['macronutrients-carbohydrates','macronutrients-protein','bioactives','processing','macronutrients-lipids','additives','flavorings','final-review','micronutrients-trace-minerals','micronutrients-fat-soluble-vitamins','micronutrients-water-soluble-vitamins','antinutrients','micronutrients-major-minerals','macronutrients-water-ethanol']
-SH=os.environ.get("SHOTS","/workspace/nutrition/screens/mol3d/all"); os.makedirs(SH,exist_ok=True)
+SH='/workspace/nutrition/screens/mol3d/all'; os.makedirs(SH,exist_ok=True)
 async def ctx_for(p,b,mode):
     return await b.new_context(viewport={'width':1366,'height':900},color_scheme='light') if mode=='light' else await b.new_context(**p.devices['iPhone 13'],color_scheme='dark')
 async def shots(pg,tag,mode,slug):
@@ -64,7 +64,11 @@ async def lesson(p,b,slug,mode):
         mk0=await lm.evaluate("l=>[...l.querySelectorAll(':scope>.mk')].map(m=>m.getBoundingClientRect().x)")
         r={}
         if mode=='light':
-            await pg.mouse.move(cx,cy); await pg.mouse.wheel(0,-300); await pg.wait_for_timeout(80)
+            y0=await pg.evaluate("scrollY"); await pg.mouse.move(cx,cy); await pg.mouse.wheel(0,120); await pg.wait_for_timeout(250)
+            r['plain_wheel_scrolls']=(await pg.evaluate("scrollY"))!=y0 and not await lm.evaluate("l=>l.classList.contains('z2')")
+            await lm.evaluate("e=>e.scrollIntoView({block:'center',behavior:'instant'})"); await pg.wait_for_timeout(60)
+            bb=await mz.bounding_box(); cx,cy=bb['x']+bb['width']*.5,bb['y']+bb['height']*.5
+            await pg.mouse.move(cx,cy); await pg.keyboard.down('Control'); await pg.mouse.wheel(0,-60); await pg.keyboard.up('Control'); await pg.wait_for_timeout(80)
         else:  # two-finger pinch out
             cdp=await c.new_cdp_session(pg)
             async def touch(t,pts): await cdp.send('Input.dispatchTouchEvent',{'type':t,'touchPoints':[{'x':x,'y':y,'id':k} for k,(x,y) in enumerate(pts)]})
@@ -104,7 +108,7 @@ async def lesson(p,b,slug,mode):
         idx=await img.evaluate("e=>[...document.querySelectorAll('.lm>.mz img')].indexOf(e)")
         r['reset_pixels_same']=same(base[idx],fn) or 'recheck'
         # zoomed then single click still enlarges, dialog copy is unzoomed
-        if mode=='light': await pg.mouse.move(cx,cy); await pg.mouse.wheel(0,-200); await pg.wait_for_timeout(60)
+        if mode=='light': await pg.mouse.move(cx,cy); await pg.keyboard.down('Control'); await pg.mouse.wheel(0,-40); await pg.keyboard.up('Control'); await pg.wait_for_timeout(60)
         await mz.click(); await pg.wait_for_timeout(450)
         r['zoomed_click_enlarges']=await pg.evaluate("document.querySelector('dialog.lbm').open")
         r['dialog_clean']=await pg.evaluate("(()=>{const d=document.querySelector('dialog.lbm');return !d.querySelector('.m3t,.z2,[style*=\"scale\"]')&&[...d.querySelectorAll('.mk')].every(m=>m.style.left.endsWith('%'))})()")

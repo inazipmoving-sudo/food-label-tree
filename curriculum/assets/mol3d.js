@@ -2,7 +2,7 @@
    Loaded lazily by the page's toggle bootstrap on the first 3D click. Models: curriculum/mol3d/<slug>/<name>.json
    (built by gen/mol3d.py). Drawn on a 2D canvas in the same style as the PNGs (flat CPK discs with dark rims, grey sticks,
    painter's order back to front, slight depth fade), so 2D and 3D look like the same molecule.
-   Controls: drag (mouse/finger) rotates, wheel or pinch zooms, double-click/double-tap resets; when the canvas has focus:
+   Controls: drag (mouse/finger) rotates, pinch zooms (trackpad pinch = ctrl+wheel, or two fingers; a plain wheel scrolls the page), double-click/double-tap resets; when the canvas has focus:
    arrow keys rotate, + / - zoom, 0 resets. API: Mol3D.mount(lmElement, model, labels) -> {destroy()}. */
 (function () {
   'use strict';
@@ -113,7 +113,7 @@
       if (ks.length >= 2) { var a = pts[ks[0]], b = pts[ks[1]], d = Math.hypot(a[0] - b[0], a[1] - b[1]); if (pinch0) setZoom(zoom0 * d / pinch0); }
       else if (last) { rotate((e.clientX - last[0]) * 0.01, (e.clientY - last[1]) * 0.01); last = [e.clientX, e.clientY]; } e.preventDefault(); }
     function onUp(e) { delete pts[e.pointerId]; var ks = Object.keys(pts); last = ks.length ? pts[ks[0]].slice() : null; if (ks.length < 2) pinch0 = 0; }
-    function onWheel(e) { e.preventDefault(); setZoom(zoom * Math.exp(-e.deltaY * (e.deltaMode ? 0.05 : 0.0015))); }
+    function onWheel(e) { if (!e.ctrlKey) return; e.preventDefault(); setZoom(zoom * Math.exp(-e.deltaY * 0.01)); }  // pinch only: a trackpad pinch arrives as ctrl+wheel; a plain wheel scrolls the page
     function onKey(e) {
       var k = e.key, st = 0.12, h = true;
       if (k === 'ArrowLeft') rotate(-st, 0); else if (k === 'ArrowRight') rotate(st, 0); else if (k === 'ArrowUp') rotate(0, -st); else if (k === 'ArrowDown') rotate(0, st);
@@ -124,7 +124,7 @@
     cv.addEventListener('wheel', onWheel, { passive: false }); cv.addEventListener('dblclick', reset); cv.addEventListener('keydown', onKey);
     var ro = window.ResizeObserver ? new ResizeObserver(function () { var w = lm.getBoundingClientRect().width; if (w && Math.abs(w - W) > 0.5) size(); }) : null;
     hint = document.createElement('p'); hint.className = 'm3h'; hint.setAttribute('aria-hidden', 'true');
-    hint.textContent = (matchMedia('(pointer: coarse)').matches ? 'Drag to turn · pinch to zoom · double-tap to reset' : 'Drag to turn · scroll to zoom · double-click to reset');
+    hint.textContent = (matchMedia('(pointer: coarse)').matches ? 'Drag to turn · pinch to zoom · double-tap to reset' : 'Drag to turn · pinch to zoom · double-click to reset');
     lm.insertBefore(cv, lm.firstChild); cv.after(hint); size(); if (ro) ro.observe(lm);
     var mo = new MutationObserver(function () { draw(); }); mo.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
     return { canvas: cv, reset: reset, draw: draw, destroy: function () { if (ro) ro.disconnect(); mo.disconnect(); cv.remove(); hint.remove(); } };
