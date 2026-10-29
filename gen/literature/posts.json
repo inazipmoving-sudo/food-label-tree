@@ -1760,5 +1760,419 @@
     }
    ]
   }
+ },
+ {
+  "slug": "tubulin-acetylation-nuclear-fluctuations-dna-repair",
+  "group": "latest",
+  "title": "Tubulin acetylation regulates nuclear shape fluctuations and DNA repair",
+  "authors": [
+   "Sam Wallis",
+   "Wai Yiu Tse",
+   "Lisa Donker",
+   "Anna Baxter",
+   "Nikita Dave",
+   "Andreas Weber",
+   "Eoin Gillespie",
+   "Baizhi Chen",
+   "Jonathan M Burden",
+   "Anoek Friskes",
+   "René H Medema",
+   "Guillaume Charras",
+   "Dinis P Calado",
+   "Susana A Godinho"
+  ],
+  "authorsShort": "Sam Wallis, Wai Yiu Tse, Lisa Donker … Susana A Godinho",
+  "firstAuthor": "Sam Wallis",
+  "journal": "Nature Cell Biology",
+  "pubDate": "2026-10-28",
+  "doi": "10.1038/s41556-026-02096-3",
+  "url": "https://doi.org/10.1038/s41556-026-02096-3",
+  "pmid": "42951908",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://doi.org/10.1038/s41556-026-02096-3",
+   "source": "Unpaywall API, fetched 2026-10-29"
+  },
+  "whyItMatters": "Cells seem to fix broken DNA better by letting the nucleus wobble, and blocking that wobble pushes them into senescence.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 2
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "A double-strand break, where both strands of the DNA helix are cut, is one of the most dangerous things that can happen to a genome. Unrepaired or badly repaired breaks are a major source of the mutations and chromosome damage that pile up as we age, and cells that cannot fix them often stop dividing for good and become senescent. Most research on repair has looked at the chemistry of chromatin, the DNA and its packaging proteins. This paper looks at something more physical: whether the forces of the cell's internal skeleton, pushing and pulling on the nucleus, help decide whether a break gets fixed properly. If they do, it links the mechanics of the cell to genome stability and to the senescent cells that accumulate in ageing tissue.",
+   "did": "According to the abstract, the researchers studied cells after inducing DNA damage and followed what happened to the cytoskeleton, the network of protein filaments that shapes the cell. They focused on microtubules, hollow tubes built from tubulin, and on a chemical tag called acetylation that can be added to tubulin. They also tracked vimentin, a filament that normally forms a cage around the nucleus. They then blocked tubulin acetylation to see how nuclear shape, the movement of broken DNA and repair by homologous recombination changed, and in a separate step they removed the vimentin cage to see whether that reversed the effects. The abstract does not give the cell types, the exact methods or sample sizes.",
+   "found": "DNA damage caused tubulin acetylation to build up step by step. That shifted the vimentin cage away from the nucleus, which made the nucleus softer and let microtubule forces act on the nuclear envelope. The result was brief shape fluctuations of the nucleus, more local movement of the broken DNA sites, and better repair. When the authors blocked tubulin acetylation, the fluctuations stopped, the breaks moved less and the homology search, the step where a broken chromosome finds a matching copy to copy from, was impaired. Non-homologous end joining, the faster and less exact repair route, was not affected. The persistent breaks gathered and clustered at the edge of the nucleus, the cells arrested their division cycle and became senescent, and they were more sensitive to DNA-damaging drugs. Removing the vimentin cage was enough to restore the nuclear fluctuations and repair efficiency. The authors propose that nuclear fluctuations are a mechanical way for cells to speed up error-free repair.",
+   "limits": "This synopsis is based on the abstract only, although the paper is open access. The abstract does not say which cells or organisms were used, so it is not clear how directly the results apply to ageing human tissue. The work describes a mechanism in cells; it does not test whether loss of this mechanism contributes to ageing in a living animal, and it reports no treatment or human outcome. The proposed role of nuclear fluctuations as a general principle is the authors' interpretation and will need confirmation in other systems.",
+   "terms": [
+    {
+     "term": "Double-strand break",
+     "definition": "Both strands of the DNA helix cut at the same place; the most dangerous kind of DNA damage."
+    },
+    {
+     "term": "Homologous recombination (HR)",
+     "definition": "An accurate repair route that copies the missing information from a matching DNA sequence, usually the sister chromosome."
+    },
+    {
+     "term": "Non-homologous end joining (NHEJ)",
+     "definition": "A quick repair route that glues broken ends back together, sometimes losing a few DNA letters."
+    },
+    {
+     "term": "Microtubules and tubulin acetylation",
+     "definition": "Microtubules are tube-shaped filaments made of tubulin; acetylation is a small chemical tag added to tubulin that changes how the tubes behave."
+    },
+    {
+     "term": "Vimentin",
+     "definition": "A protein that forms flexible filaments; here it builds a cage that stiffens and protects the nucleus."
+    },
+    {
+     "term": "Senescence",
+     "definition": "A state in which a cell permanently stops dividing but stays alive; senescent cells build up with age."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "lad-dna-damage-nuclear-envelope-detachment",
+  "group": "latest",
+  "title": "DNA damage at Lamina-Associated Domains triggers nuclear envelope reorganization and chromatin detachment to prevent nuclear envelope blebbing and genome instability",
+  "authors": [
+   "Diana Rubio-Contreras",
+   "Sylvain Audibert",
+   "Joanna Fernández",
+   "Ruxandra A. Lambuta",
+   "Nikoleta Pateraki",
+   "Karen J. Meaburn",
+   "Jack Wootton",
+   "Raquel Carreira",
+   "Nishita Parnandi",
+   "Ramón González‐Méndez",
+   "Simon J. Boulton",
+   "Zuza Kozik",
+   "Stamatis Papathanasiou",
+   "Evi Soutoglou"
+  ],
+  "authorsShort": "Diana Rubio-Contreras, Sylvain Audibert, Joanna Fernández … Evi Soutoglou",
+  "firstAuthor": "Diana Rubio-Contreras",
+  "journal": "bioRxiv (preprint)",
+  "pubDate": "2026-10-27",
+  "doi": "10.64898/2026.10.25.761546",
+  "url": "https://doi.org/10.64898/2026.10.25.761546",
+  "pmid": null,
+  "pmcid": null,
+  "type": "preprint",
+  "preprint": true,
+  "openAccess": {
+   "status": "preprint",
+   "isOpen": true,
+   "url": "https://doi.org/10.64898/2026.10.25.761546",
+   "source": "bioRxiv preprints are free to read"
+  },
+  "whyItMatters": "Broken DNA stuck at the edge of the nucleus has to be pulled loose to be repaired, and failure leads to genome instability and leaking nuclei.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Large stretches of our DNA that are switched off are anchored to the inside of the nuclear envelope, on a protein mesh called the nuclear lamina. These stretches are called lamina-associated domains, or LADs. The nuclear edge is known to matter for genome stability and repair, and changes in the lamina are a well-known feature of ageing and of senescent cells. Yet it has been unclear what happens when DNA inside these anchored domains breaks. Because damaged nuclei and a fragile nuclear envelope are linked to ageing, understanding how cells handle breaks at this location could explain one route by which genome damage turns into broken nuclear structure.",
+   "did": "The authors used systems that let them cut both DNA strands at chosen times and at precise places inside LADs. They then watched what happened to the nuclear lamina, to the position of the damaged DNA and to the repair process. They tested which damage-signalling proteins were needed, including ATM, a master kinase that senses breaks, and the chain of proteins it activates. They also tested the role of the LINC complex, which links the inside of the nucleus to the cytoskeleton outside it, and of cytoskeletal components. Finally they forced damaged LADs to stay tethered to the nuclear edge to see the consequences. The abstract does not give the cell types used.",
+   "found": "Breaks inside LADs set off remodelling of the nuclear lamina, and the damaged domains came loose from the envelope and moved into the interior of the nucleus. This movement was controlled by the ATM, gamma-H2AX, MDC1, RNF168 and 53BP1 signalling chain and needed the LINC complex and the cytoskeleton. It did not change which repair pathway the cell chose. When damaged LADs were kept tethered at the periphery, the damage response and repair were delayed, genomic instability rose, and chromatin was pushed out of the nucleus through blebs, small bulges in the nuclear envelope. The authors argue that this links failed repair directly to loss of nuclear integrity, and that moving damaged LADs may relieve mechanical stress and help repair.",
+   "limits": "This is a preprint and has not been peer reviewed, so its results may change. The synopsis is based on the abstract only. The abstract mentions ageing and senescence as the reason the question matters, but the experiments it describes are in cells with engineered breaks, not in aged tissue or animals, so a direct role in ageing is not shown. The protective role of the movement is stated as something that 'might' happen, which is a proposal rather than a demonstrated result.",
+   "terms": [
+    {
+     "term": "Lamina-associated domains (LADs)",
+     "definition": "Large, mostly silent regions of DNA anchored to the nuclear lamina at the inner edge of the nucleus."
+    },
+    {
+     "term": "Nuclear lamina",
+     "definition": "A mesh of lamin proteins lining the inside of the nuclear envelope that gives the nucleus its shape and strength."
+    },
+    {
+     "term": "ATM",
+     "definition": "A kinase enzyme that senses DNA double-strand breaks and switches on the damage response."
+    },
+    {
+     "term": "53BP1",
+     "definition": "A protein that gathers at double-strand breaks and helps steer and protect the repair process."
+    },
+    {
+     "term": "LINC complex",
+     "definition": "A set of proteins spanning the nuclear envelope that connects the nucleus to the cell's cytoskeleton."
+    },
+    {
+     "term": "Nuclear bleb",
+     "definition": "A bulge in the nuclear envelope where chromatin can spill out; a sign of a weakened nucleus."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "chka-choline-clonal-hematopoiesis",
+  "group": "latest",
+  "title": "Choline Kinase Alpha Inhibition is a Mutation Agnostic Therapeutic Vulnerability in Clonal Hematopoiesis",
+  "authors": [
+   "B. J. Gheller",
+   "O. Mitchell",
+   "M. Quach",
+   "J. Gopakumar",
+   "S. Avagyan",
+   "S. Yang",
+   "T. P. Mathews",
+   "C. Haggerty",
+   "A. Meissner",
+   "J. Garcia",
+   "R. J. DeBerardinis",
+   "S. Jaiswal",
+   "F. Camargo",
+   "L. I. Zon"
+  ],
+  "authorsShort": "B. J. Gheller, O. Mitchell, M. Quach … L. I. Zon",
+  "firstAuthor": "B. J. Gheller",
+  "journal": "bioRxiv (preprint)",
+  "pubDate": "2026-10-28",
+  "doi": "10.64898/2026.10.26.760729",
+  "url": "https://doi.org/10.64898/2026.10.26.760729",
+  "pmid": null,
+  "pmcid": null,
+  "type": "preprint",
+  "preprint": true,
+  "openAccess": {
+   "status": "preprint",
+   "isOpen": true,
+   "url": "https://doi.org/10.64898/2026.10.26.760729",
+   "source": "bioRxiv preprints are free to read"
+  },
+  "whyItMatters": "Blood stem cells carrying age-acquired mutations may share one metabolic weak spot that a drug could target, whatever the mutation.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "As people age, some blood-forming stem cells pick up mutations that give them a growth advantage, so their descendants slowly take over a share of the blood. This is called clonal hematopoiesis, and it is one of the clearest examples of somatic mutation shaping ageing. It is linked to higher risk of blood cancers, heart disease and death from any cause, but there are few treatment options. Because the mutations occur in different genes in different people, a treatment that works across mutations would be especially useful.",
+   "did": "The team used colour barcoding of blood stem and progenitor cells together with mosaic mutagenesis in zebrafish, a way of making mutations in only some cells and tracking which clones expand. In cells carrying mutations in asxl1, one of the most common clonal hematopoiesis genes, they looked for altered metabolism. They then reduced the activity of choline kinase alpha, an enzyme in the pathway that makes phosphatidylcholine, a main building block of cell membranes, and checked whether the mutant clones still expanded. They repeated key tests in a mouse model with DNMT3A mutations and a human TET2 model, tested whether adding back platelet activating factor (PAF) reversed the effect, and used stem cells from the blood of patients with ASXL1 mutations in a lab clonal competition test.",
+   "found": "ASXL1-mutant stem cells showed disturbed choline metabolism and increased phosphatidylcholine production through choline kinase alpha. Suppressing this choline flow reduced ASXL1-driven clonal expansion, and the same effect held in the DNMT3A mouse model and the human TET2 model. Mechanistically, the phosphatidylcholine made through this route supports the production of PAF, a lipid signalling molecule. Adding PAF from outside overcame the effect of blocking the enzyme in the ASXL1 and TET2 models. In blood stem cells from patients with ASXL1 mutations, interfering with PAF signalling lowered their competitive potential, and the same enzyme-to-PAF link was present in TET2-mutant cells. The authors conclude that this is a shared metabolic dependency across the three most common clonal hematopoiesis genotypes.",
+   "limits": "This is a preprint and has not been peer reviewed. The synopsis is based on the abstract only. The human evidence comes from cells grown outside the body, not from treated patients, so whether blocking the enzyme is safe or effective in people is unknown. The abstract does not report whether targeting this pathway affects healthy blood stem cells or the diseases linked to clonal hematopoiesis, and it gives no sample sizes or effect sizes.",
+   "terms": [
+    {
+     "term": "Clonal hematopoiesis (CH)",
+     "definition": "An age-related state in which blood stem cells carrying a somatic mutation outgrow their neighbours and make up a large share of blood cells."
+    },
+    {
+     "term": "Somatic mutation",
+     "definition": "A DNA change that arises in a body cell during life, rather than being inherited."
+    },
+    {
+     "term": "ASXL1, DNMT3A, TET2",
+     "definition": "The three genes most often mutated in clonal hematopoiesis; all help control how genes are switched on and off."
+    },
+    {
+     "term": "Choline kinase alpha (CHKA)",
+     "definition": "An enzyme that adds a phosphate to choline, the first step in making the membrane lipid phosphatidylcholine."
+    },
+    {
+     "term": "Phosphatidylcholine",
+     "definition": "A major fat-based building block of cell membranes, made from choline."
+    },
+    {
+     "term": "Platelet activating factor (PAF)",
+     "definition": "A lipid signalling molecule made from phosphatidylcholine that acts on cells through its own receptor."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "chip-bone-mineral-density-topmed",
+  "group": "latest",
+  "title": "Clonal Hematopoiesis of Indeterminate Potential and Bone Mineral Density in Cohorts from Trans-Omics for Precision Medicine",
+  "authors": [
+   "Douglas P Kiel",
+   "Wingel Xue",
+   "Hanfei Xu",
+   "Alexander Bick",
+   "Carolyn J Crandall",
+   "Yi-Hsiang Hsu",
+   "David Karasik",
+   "Braxton D Mitchell",
+   "May E Montasser",
+   "Joshua S Weinstock",
+   "Kerri L Wiggins",
+   "Ching-Ti Liu",
+   "Rebecca D Jackson"
+  ],
+  "authorsShort": "Douglas P Kiel, Wingel Xue, Hanfei Xu … Rebecca D Jackson",
+  "firstAuthor": "Douglas P Kiel",
+  "journal": "Journal of Bone and Mineral Research",
+  "pubDate": "2026-10-28",
+  "doi": "10.1093/jbmr/zjag148",
+  "url": "https://doi.org/10.1093/jbmr/zjag148",
+  "pmid": "42949023",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "closed",
+   "isOpen": false,
+   "url": null,
+   "source": "Unpaywall API, fetched 2026-10-29"
+  },
+  "whyItMatters": "Age-acquired blood mutations are tied to heart and kidney disease, but in this large study they were not tied to weaker bones overall.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Clonal hematopoiesis of indeterminate potential, or CHIP, is when a blood stem cell picks up a mutation during life that lets it expand, without causing a blood cancer. It becomes much more common with age and has been linked to atherosclerosis, heart failure, stroke, gout, and liver and kidney disease. The cells that break down bone, osteoclasts, come from the same blood stem cell family, so it is reasonable to ask whether CHIP also changes bone. Since osteoporosis is a major problem of ageing, a link would matter for how we think about somatic mutation and whole-body ageing.",
+   "did": "The researchers used CHIP mutation calls from whole-genome sequencing in the Trans-Omics for Precision Medicine (TOPMed) programme, and bone mineral density measured by DXA scans, a low-dose X-ray test of bone density. They pooled data from the Amish cohort, the Cardiovascular Health Study, the Framingham Heart Study, the San Antonio Family Study and the Women's Health Initiative. Using multiple linear regression, they tested whether CHIP was linked to bone density at the femoral neck (hip) and lumbar spine, adjusting for cohort, age, age squared and sex, and for family relatedness in the family-based cohorts. CHIP was analysed both as present or absent and in grades from no mutation to two or more mutations in different genes.",
+   "found": "A total of 3,368 samples had both CHIP and bone density data, and 10.9% carried at least one CHIP mutation. Having any CHIP mutation was not associated with bone density at either the femoral neck or the lumbar spine. However, people with two or more CHIP mutations in different genes had higher lumbar spine bone density (beta = 0.36, p = 0.015). The authors conclude there was no overall link between CHIP and bone density in this large and diverse sample, and that the higher density with multiple mutations agrees with mouse models in which Dnmt3a and Tet2 mutations increase bone density.",
+   "limits": "This synopsis is based on the abstract only; the full paper is paywalled. The study is observational, so it shows associations, not cause and effect. The positive finding comes from a small subgroup with multiple mutations and a modest p-value, so it may not hold up in other samples. The abstract does not say whether the bone scans and blood samples were taken at the same time, or whether fractures, rather than density, were looked at.",
+   "terms": [
+    {
+     "term": "CHIP",
+     "definition": "Clonal hematopoiesis of indeterminate potential: an expanded clone of blood cells carrying a somatic mutation, without blood cancer."
+    },
+    {
+     "term": "Bone mineral density (BMD)",
+     "definition": "How much mineral is packed into bone; low BMD means weaker bones and higher fracture risk."
+    },
+    {
+     "term": "DXA",
+     "definition": "Dual-energy X-ray absorptiometry, the standard low-dose scan used to measure bone density."
+    },
+    {
+     "term": "Osteoclast",
+     "definition": "A bone cell, derived from blood stem cells, that breaks down old bone so it can be rebuilt."
+    },
+    {
+     "term": "TOPMed",
+     "definition": "Trans-Omics for Precision Medicine, a US research programme that whole-genome sequenced people from many existing cohorts."
+    },
+    {
+     "term": "Femoral neck and lumbar spine",
+     "definition": "The upper thigh bone near the hip and the lower back vertebrae, the two standard sites for bone density scans."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "mule-deer-epigenetic-clock",
+  "group": "latest",
+  "title": "Epigenetic clocks and nonlinear aging in Odocoileus deer",
+  "authors": [
+   "Luca Montana",
+   "Cheyenne Stewart",
+   "L. Embere Hall",
+   "Aaron B. A. Shafer"
+  ],
+  "authorsShort": "Luca Montana, Cheyenne Stewart, L. Embere Hall … Aaron B. A. Shafer",
+  "firstAuthor": "Luca Montana",
+  "journal": "bioRxiv (preprint)",
+  "pubDate": "2026-10-27",
+  "doi": "10.64898/2026.10.23.761432",
+  "url": "https://doi.org/10.64898/2026.10.23.761432",
+  "pmid": null,
+  "pmcid": null,
+  "type": "preprint",
+  "preprint": true,
+  "openAccess": {
+   "status": "preprint",
+   "isOpen": true,
+   "url": "https://doi.org/10.64898/2026.10.23.761432",
+   "source": "bioRxiv preprints are free to read"
+  },
+  "whyItMatters": "A new DNA-methylation clock for wild deer shows methylation changes with age are not a straight line, and short-term changes are hard to read.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Epigenetic clocks read the pattern of DNA methylation, small chemical tags on DNA, at many sites and turn it into an estimate of age. They are one of the main tools for studying how the genome's regulation drifts with age, in people and in other animals. For wildlife managers, knowing the ages of animals in a population matters for understanding how it will grow or shrink, but most wild animals cannot be aged easily. Deer and their relatives are among the most heavily managed wild animals, yet clocks existed for only two species in the deer family. Studying a wild species also tests whether patterns of epigenetic ageing seen in lab animals and people hold more broadly.",
+   "did": "The researchers built a new epigenetic clock for mule deer (Odocoileus hemionus) and a multi-species clock meant to work across the Odocoileus genus, which also includes white-tailed deer. They used both clocks to look at how age-associated DNA methylation changes across the mule deer lifespan. They compared animals of different ages at one time (a cross-sectional view) and also followed changes in epigenetic age within individual animals over time (a longitudinal view). They also looked at single methylation sites, called CpGs, to find those most strongly tied to age.",
+   "found": "The mule deer clock was about as accurate as recently built mammal clocks, with a correlation of about 0.9 with true age and an average error of about 5% of the species' lifespan. The multi-species clock was less accurate, with a correlation of 0.72 and an average error of 0.782 years, but the authors note it could be useful where Odocoileus species live together and interbreed. The cross-sectional estimates supported nonlinear methylation change across the lifespan, meaning it does not change at a steady rate. The longitudinal data suggested that clocks built to estimate age across a population may not be sensitive enough to measure short-term changes within one animal. The team also identified strongly age-linked sites that could be used for cheaper, targeted tests.",
+   "limits": "This is a preprint and has not been peer reviewed. The synopsis is based on the abstract only. The abstract does not give the number of animals or tissue type. The main aim is estimating age in wildlife, so the study speaks more to how epigenetic clocks behave than to the causes of ageing. The nonlinear pattern is described as 'supported' by cross-sectional data, which can be affected by which animals survive to old age.",
+   "terms": [
+    {
+     "term": "Epigenetic clock",
+     "definition": "A formula that estimates age from DNA methylation levels at a chosen set of sites in the genome."
+    },
+    {
+     "term": "DNA methylation",
+     "definition": "Small chemical tags (methyl groups) attached to DNA, mostly at CpG sites, that help control which genes are active."
+    },
+    {
+     "term": "CpG site",
+     "definition": "A place in DNA where the letter C is followed by G; the usual spot for methylation."
+    },
+    {
+     "term": "Cross-sectional vs longitudinal",
+     "definition": "Comparing different individuals at one time, versus following the same individuals over time."
+    },
+    {
+     "term": "MAE",
+     "definition": "Mean absolute error: the average size of the gap between estimated and true age."
+    },
+    {
+     "term": "Odocoileus",
+     "definition": "The genus of New World deer that includes mule deer and white-tailed deer."
+    }
+   ]
+  }
  }
 ]
