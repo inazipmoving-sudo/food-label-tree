@@ -1,0 +1,2245 @@
+{
+ "module": "five-hundred-years",
+ "title": "Five Hundred Years of Life Expectancy",
+ "rounding": "Every plotted value is rounded. Life expectancy is the nearest whole year, halves away from zero. Child mortality is the nearest 10 deaths per 1,000 when the rate is 100 or above, otherwise the nearest 1. sourceValue keeps the published figure to 2 decimals (life expectancy) or 1 decimal (per 1,000). A rounded year is not an exact measurement.",
+ "verifyBeforePublishing": "Verify these figures against Wrigley & Schofield, the Human Mortality Database (HMD), Our World in Data (OWID) and the WHO before publishing.",
+ "axis": {
+  "xMin": 1526,
+  "xMax": 2026,
+  "yMin": 0,
+  "yMax": 90,
+  "lastDataYear": 2023,
+  "note": "The axis runs from 1526 to 2026, five hundred years. The lines stop at 2023, the last year used from these sources. 2026 is the end of the axis, not a measurement."
+ },
+ "sources": {
+  "wrigley-schofield-owid": "OWID long-run compilation (Wikimedia copy of OWID dataset 1892 / Clio Infra, Zijdeman et al.), quinquennial dates 1543 to 1838, following the England parish-register reconstruction of Wrigley and Schofield, The Population History of England 1541-1871. That compilation files the series under United Kingdom. Not re-keyed from the printed Cambridge tables.",
+  "hmd-owid": "Our World in Data life expectancy, England and Wales, 1841-1949, Human Mortality Database via OWID (CSV retrieved 2026-10-29).",
+  "un-owid": "Our World in Data life expectancy, United Nations World Population Prospects via OWID (CSV retrieved 2026-10-29). On the England line from 1950 this is the United Kingdom, not a separate England-only series.",
+  "riley-owid": "Riley (2005), Estimates of Regional and Global Life Expectancy, 1800-2001, as republished by Our World in Data. Global points before 1950. Estimates.",
+  "hmd-e15-owid": "Our World in Data, Life expectancy at age 15, England and Wales, Human Mortality Database (CSV retrieved 2026-10-29).",
+  "un-e15-owid": "Our World in Data, Life expectancy at age 15, United Kingdom, UN WPP (CSV retrieved 2026-10-29). Years after 2023 in that file are projections and are not used.",
+  "owid-child": "Our World in Data long-run child mortality (Gapminder where it is the source; UN IGME, which includes the WHO, where the two overlap). CSV unit is deaths per 100 live births, multiplied by 10. Retrieved 2026-10-29.",
+  "nchs-1918": "US National Center for Health Statistics / CDC historical life tables, both sexes: 50.9 in 1917 to 39.1 in 1918, a fall of 11.8 years."
+ },
+ "englandLifeExpectancyAtBirth": {
+  "line": "solid",
+  "note": "One solid line, three populations spliced as the published series is split. 1543-1838: England (Wrigley & Schofield via OWID/Clio Infra, filed there as United Kingdom). 1841-1949: England and Wales (HMD via OWID). 1950-2023: United Kingdom (UN WPP via OWID).",
+  "points": [
+   {
+    "year": 1543,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 33.94,
+    "roundedYears": 34,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1548,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.82,
+    "roundedYears": 39,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1553,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.59,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1558,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 22.38,
+    "roundedYears": 22,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1563,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.66,
+    "roundedYears": 37,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1568,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.67,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1573,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 41.06,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1578,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 41.56,
+    "roundedYears": 42,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1583,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 42.7,
+    "roundedYears": 43,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1588,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 37.05,
+    "roundedYears": 37,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1593,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.05,
+    "roundedYears": 38,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1598,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 37.82,
+    "roundedYears": 38,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1603,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.53,
+    "roundedYears": 39,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1608,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.59,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1613,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.79,
+    "roundedYears": 37,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1618,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 40.31,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1623,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 33.39,
+    "roundedYears": 33,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1628,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.69,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1633,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.72,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1638,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 34.03,
+    "roundedYears": 34,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1643,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.32,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1648,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.74,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1653,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.14,
+    "roundedYears": 39,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1658,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 33.04,
+    "roundedYears": 33,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1663,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 33.27,
+    "roundedYears": 33,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1668,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 32.48,
+    "roundedYears": 32,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1673,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 37.41,
+    "roundedYears": 37,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1678,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 32.4,
+    "roundedYears": 32,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1683,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 31.27,
+    "roundedYears": 31,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1688,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 35.93,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1693,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.35,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1698,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.06,
+    "roundedYears": 38,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1703,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.47,
+    "roundedYears": 38,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1708,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.5,
+    "roundedYears": 39,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1713,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.89,
+    "roundedYears": 37,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1718,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 35.75,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1723,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 35.49,
+    "roundedYears": 35,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1728,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 25.34,
+    "roundedYears": 25,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1733,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.34,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1738,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 35.26,
+    "roundedYears": 35,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1743,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 34.27,
+    "roundedYears": 34,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1748,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.47,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1753,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.77,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1758,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.12,
+    "roundedYears": 38,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1763,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 35.37,
+    "roundedYears": 35,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1768,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 36.19,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1773,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 39.09,
+    "roundedYears": 39,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1778,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 37.74,
+    "roundedYears": 38,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1783,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 35.81,
+    "roundedYears": 36,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1788,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.97,
+    "roundedYears": 39,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1793,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 37.92,
+    "roundedYears": 38,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1798,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 38.93,
+    "roundedYears": 39,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1803,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 40.02,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1808,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 40.58,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1813,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 41.25,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1818,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 40.84,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1823,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 40.47,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1828,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 41.43,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1833,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 40.89,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1838,
+    "population": "England",
+    "source": "wrigley-schofield-owid",
+    "sourceValue": 40.56,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1841,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 41.62,
+    "roundedYears": 42,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1846,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 39.91,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1849,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 37.34,
+    "roundedYears": 37,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1850,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 42.75,
+    "roundedYears": 43,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1851,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 41.36,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1856,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 43.21,
+    "roundedYears": 43,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1861,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 42.31,
+    "roundedYears": 42,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1866,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 40.38,
+    "roundedYears": 40,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1870,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 40.91,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1871,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 41.28,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1876,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 43.65,
+    "roundedYears": 44,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1881,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 46.08,
+    "roundedYears": 46,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1886,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 45.29,
+    "roundedYears": 45,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1891,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 44.24,
+    "roundedYears": 44,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1896,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 47.37,
+    "roundedYears": 47,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1900,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 46.3,
+    "roundedYears": 46,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1901,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 47.89,
+    "roundedYears": 48,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1906,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 50.56,
+    "roundedYears": 51,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1910,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 53.95,
+    "roundedYears": 54,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1911,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 51.51,
+    "roundedYears": 52,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1914,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 52.0,
+    "roundedYears": 52,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1916,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 48.0,
+    "roundedYears": 48,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1917,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 46.0,
+    "roundedYears": 46,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1918,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 40.9,
+    "roundedYears": 41,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1919,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 54.08,
+    "roundedYears": 54,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1921,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 58.24,
+    "roundedYears": 58,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1926,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 60.03,
+    "roundedYears": 60,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1931,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 60.34,
+    "roundedYears": 60,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1936,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 62.28,
+    "roundedYears": 62,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1939,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 64.06,
+    "roundedYears": 64,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1940,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 60.59,
+    "roundedYears": 61,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1941,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 61.66,
+    "roundedYears": 62,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1945,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 61.86,
+    "roundedYears": 62,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1946,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 66.93,
+    "roundedYears": 67,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1948,
+    "population": "England and Wales",
+    "source": "hmd-owid",
+    "sourceValue": 68.83,
+    "roundedYears": 69,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1950,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 68.63,
+    "roundedYears": 69,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1955,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 70.13,
+    "roundedYears": 70,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1960,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 71.03,
+    "roundedYears": 71,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1965,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 71.52,
+    "roundedYears": 72,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1970,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 71.88,
+    "roundedYears": 72,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1975,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 72.65,
+    "roundedYears": 73,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1980,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 73.59,
+    "roundedYears": 74,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1985,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 74.54,
+    "roundedYears": 75,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1990,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 75.74,
+    "roundedYears": 76,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1995,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 76.61,
+    "roundedYears": 77,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2000,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 77.85,
+    "roundedYears": 78,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2005,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 79.11,
+    "roundedYears": 79,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2010,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 80.39,
+    "roundedYears": 80,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2015,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 80.92,
+    "roundedYears": 81,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2019,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 81.44,
+    "roundedYears": 81,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2020,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 80.39,
+    "roundedYears": 80,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2021,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 80.71,
+    "roundedYears": 81,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2022,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 81.07,
+    "roundedYears": 81,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2023,
+    "population": "United Kingdom",
+    "source": "un-owid",
+    "sourceValue": 81.3,
+    "roundedYears": 81,
+    "precision": "rounded",
+    "estimate": false
+   }
+  ]
+ },
+ "worldLifeExpectancyAtBirth": {
+  "line": "dashed",
+  "note": "From about 1800. Points before 1950 are Riley estimates and are marked as estimates. From 1950, UN WPP via OWID. Milestone years only.",
+  "points": [
+   {
+    "year": 1800,
+    "population": "World",
+    "source": "riley-owid",
+    "sourceValue": 28.5,
+    "roundedYears": 29,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1820,
+    "population": "World",
+    "source": "riley-owid",
+    "sourceValue": 29.0,
+    "roundedYears": 29,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1850,
+    "population": "World",
+    "source": "riley-owid",
+    "sourceValue": 29.3,
+    "roundedYears": 29,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1870,
+    "population": "World",
+    "source": "riley-owid",
+    "sourceValue": 29.7,
+    "roundedYears": 30,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1900,
+    "population": "World",
+    "source": "riley-owid",
+    "sourceValue": 32.0,
+    "roundedYears": 32,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1913,
+    "population": "World",
+    "source": "riley-owid",
+    "sourceValue": 34.1,
+    "roundedYears": 34,
+    "precision": "rounded",
+    "estimate": true
+   },
+   {
+    "year": 1950,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 46.39,
+    "roundedYears": 46,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1970,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 56.27,
+    "roundedYears": 56,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 1990,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 63.95,
+    "roundedYears": 64,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2000,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 66.43,
+    "roundedYears": 66,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2010,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 70.09,
+    "roundedYears": 70,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2019,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 72.61,
+    "roundedYears": 73,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2020,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 71.92,
+    "roundedYears": 72,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2021,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 70.86,
+    "roundedYears": 71,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2022,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 72.64,
+    "roundedYears": 73,
+    "precision": "rounded",
+    "estimate": false
+   },
+   {
+    "year": 2023,
+    "population": "World",
+    "source": "un-owid",
+    "sourceValue": 73.17,
+    "roundedYears": 73,
+    "precision": "rounded",
+    "estimate": false
+   }
+  ]
+ },
+ "englandAge15PlusE15": {
+  "line": "companion, above the birth line",
+  "reading": "Plotted as age 15 plus remaining life expectancy, the expected age at death for someone who has reached 15. The OWID column is titled life expectancy at age 15. Magnitudes match that total (England and Wales 1841 source 58.75; UK 2023 about 81.7), not remaining years alone. OWID's generic description also says remaining years. Confirm on the HMD life tables before publishing.",
+  "earlySummary": {
+   "fromYear": 1560,
+   "toYear": 1841,
+   "roundedYears": 58,
+   "label": "late fifties",
+   "precision": "rounded summary, not a yearly series",
+   "estimate": true,
+   "note": "No yearly e15 series for 1541-1840 is stored here. The level at about 58 means the late fifties, the usual English statement for someone who had reached 15. It is not a quinquennial reconstruction. The measured line starts in 1841 at about 59."
+  },
+  "measured": {
+   "points": [
+    {
+     "year": 1841,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 58.75,
+     "roundedYears": 59,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1846,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 58.35,
+     "roundedYears": 58,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1849,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 55.34,
+     "roundedYears": 55,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1850,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 59.63,
+     "roundedYears": 60,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1851,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 59.03,
+     "roundedYears": 59,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1856,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 60.02,
+     "roundedYears": 60,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1861,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 59.45,
+     "roundedYears": 59,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1866,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 57.72,
+     "roundedYears": 58,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1870,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 58.7,
+     "roundedYears": 59,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1871,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 58.25,
+     "roundedYears": 58,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1876,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 59.46,
+     "roundedYears": 59,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1881,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 60.31,
+     "roundedYears": 60,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1886,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 60.55,
+     "roundedYears": 61,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1891,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 59.29,
+     "roundedYears": 59,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1896,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 62.74,
+     "roundedYears": 63,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1900,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 61.23,
+     "roundedYears": 61,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1901,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 62.52,
+     "roundedYears": 63,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1906,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 63.79,
+     "roundedYears": 64,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1910,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 65.15,
+     "roundedYears": 65,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1911,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 64.84,
+     "roundedYears": 65,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1914,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 62.87,
+     "roundedYears": 63,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1916,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 56.59,
+     "roundedYears": 57,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1917,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 54.39,
+     "roundedYears": 54,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1918,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 51.06,
+     "roundedYears": 51,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1919,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 63.99,
+     "roundedYears": 64,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1921,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 67.03,
+     "roundedYears": 67,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1926,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 67.75,
+     "roundedYears": 68,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1931,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 67.52,
+     "roundedYears": 68,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1936,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 68.54,
+     "roundedYears": 69,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1939,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 69.07,
+     "roundedYears": 69,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1940,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 66.25,
+     "roundedYears": 66,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1941,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 67.82,
+     "roundedYears": 68,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1945,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 65.95,
+     "roundedYears": 66,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1946,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 71.17,
+     "roundedYears": 71,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1948,
+     "population": "England and Wales",
+     "source": "hmd-e15-owid",
+     "sourceValue": 72.05,
+     "roundedYears": 72,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1950,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 71.5,
+     "roundedYears": 71,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1955,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 72.53,
+     "roundedYears": 73,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1960,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 73.19,
+     "roundedYears": 73,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1965,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 73.42,
+     "roundedYears": 73,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1970,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 73.65,
+     "roundedYears": 74,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1975,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 74.16,
+     "roundedYears": 74,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1980,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 74.82,
+     "roundedYears": 75,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1985,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 75.52,
+     "roundedYears": 76,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1990,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 76.58,
+     "roundedYears": 77,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 1995,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 77.27,
+     "roundedYears": 77,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2000,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 78.44,
+     "roundedYears": 78,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2005,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 79.65,
+     "roundedYears": 80,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2010,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 80.87,
+     "roundedYears": 81,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2015,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 81.34,
+     "roundedYears": 81,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2019,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 81.86,
+     "roundedYears": 82,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2020,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 80.77,
+     "roundedYears": 81,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2021,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 81.12,
+     "roundedYears": 81,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2022,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 81.5,
+     "roundedYears": 81,
+     "precision": "rounded",
+     "estimate": false
+    },
+    {
+     "year": 2023,
+     "population": "United Kingdom",
+     "source": "un-e15-owid",
+     "sourceValue": 81.7,
+     "roundedYears": 82,
+     "precision": "rounded",
+     "estimate": false
+    }
+   ]
+  }
+ },
+ "annotations": {
+  "unitedStates1918": {
+   "country": "United States",
+   "precision": "rounded",
+   "source": "nchs-1918",
+   "yearStart": 1917,
+   "yearEnd": 1918,
+   "sourceValueStart": 50.9,
+   "sourceValueEnd": 39.1,
+   "dropSourceYears": 11.8,
+   "roundedStart": 51,
+   "roundedEnd": 39,
+   "roundedDrop": 12,
+   "note": "Not the England line. England and Wales fell from about 46 in 1917 to about 41 in 1918. The drop of more than 10 years is the United States, about 51 to about 39, about 12 years.",
+   "plottedAsLine": false
+  },
+  "hivCountryDips": {
+   "note": "The world average kept rising (about 64 in 1990, about 66 in 2000). Country figures are from the same OWID file, rounded. They fall in the years of the HIV epidemic; this file does not separate causes.",
+   "precision": "rounded",
+   "countries": [
+    {
+     "country": "Eswatini",
+     "fromYear": 1990,
+     "fromSource": 61.17,
+     "fromRounded": 61,
+     "toYear": 2004,
+     "toSource": 43.91,
+     "toRounded": 44
+    },
+    {
+     "country": "Zimbabwe",
+     "fromYear": 1985,
+     "fromSource": 60.9,
+     "fromRounded": 61,
+     "toYear": 2000,
+     "toSource": 46.03,
+     "toRounded": 46
+    },
+    {
+     "country": "South Africa",
+     "fromYear": 1990,
+     "fromSource": 62.94,
+     "fromRounded": 63,
+     "toYear": 2005,
+     "toSource": 53.91,
+     "toRounded": 54
+    }
+   ]
+  },
+  "covid": {
+   "precision": "rounded",
+   "world": {
+    "fromYear": 2019,
+    "fromRounded": 73,
+    "toYear": 2021,
+    "toRounded": 71
+   },
+   "unitedKingdom": {
+    "fromYear": 2019,
+    "fromRounded": 81,
+    "toYear": 2020,
+    "toRounded": 80
+   }
+  }
+ },
+ "childMortalityUnder5": {
+  "unit": "deaths before age 5 per 1,000 live births",
+  "earlyEnglandBand": {
+   "fromYear": 1550,
+   "toYear": 1841,
+   "lowPer1000": 250,
+   "highPer1000": 330,
+   "label": "about a quarter to a third",
+   "precision": "rounded range, not a yearly series",
+   "estimate": true,
+   "note": "English range for the parish-register centuries: about a quarter to a third of children died before age five. A band from 250 to 330 per 1,000, not yearly points. The continuous line is the United Kingdom from 1841."
+  },
+  "unitedKingdom": {
+   "note": "No separate England series in this OWID file. Pre-1950 points are estimates and are marked as estimates.",
+   "points": [
+    {
+     "year": 1841,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 251.1,
+     "roundedPer1000": 250,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1850,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 247.4,
+     "roundedPer1000": 250,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1860,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 244.3,
+     "roundedPer1000": 240,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1870,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 268.4,
+     "roundedPer1000": 270,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1880,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 251.1,
+     "roundedPer1000": 250,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1890,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 232.0,
+     "roundedPer1000": 230,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1900,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 225.5,
+     "roundedPer1000": 230,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1910,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 155.9,
+     "roundedPer1000": 160,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1918,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 171.1,
+     "roundedPer1000": 170,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1920,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 133.6,
+     "roundedPer1000": 130,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1930,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 89.4,
+     "roundedPer1000": 89,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1940,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 77.2,
+     "roundedPer1000": 77,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1950,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 36.6,
+     "roundedPer1000": 37,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1960,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 26.6,
+     "roundedPer1000": 27,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1970,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 21.0,
+     "roundedPer1000": 21,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1980,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 14.1,
+     "roundedPer1000": 14,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1990,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 9.3,
+     "roundedPer1000": 9,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2000,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 6.5,
+     "roundedPer1000": 7,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2010,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 5.2,
+     "roundedPer1000": 5,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2019,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 4.4,
+     "roundedPer1000": 4,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2023,
+     "population": "United Kingdom",
+     "source": "owid-child",
+     "sourcePer1000": 4.6,
+     "roundedPer1000": 5,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    }
+   ]
+  },
+  "world": {
+   "note": "From 1800. Pre-1950 points are estimates and are marked as estimates.",
+   "points": [
+    {
+     "year": 1800,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 428.0,
+     "roundedPer1000": 430,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1820,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 421.0,
+     "roundedPer1000": 420,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1840,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 421.0,
+     "roundedPer1000": 420,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1850,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 420.0,
+     "roundedPer1000": 420,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1870,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 419.0,
+     "roundedPer1000": 420,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1900,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 409.0,
+     "roundedPer1000": 410,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1920,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 344.0,
+     "roundedPer1000": 340,
+     "precision": "rounded",
+     "estimate": true,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1950,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 247.0,
+     "roundedPer1000": 250,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1960,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 202.0,
+     "roundedPer1000": 200,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1970,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 142.0,
+     "roundedPer1000": 140,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1980,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 119.0,
+     "roundedPer1000": 120,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 1990,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 93.5,
+     "roundedPer1000": 94,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2000,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 76.7,
+     "roundedPer1000": 77,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2010,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 50.6,
+     "roundedPer1000": 51,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2019,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 39.6,
+     "roundedPer1000": 40,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    },
+    {
+     "year": 2023,
+     "population": "World",
+     "source": "owid-child",
+     "sourcePer1000": 38.3,
+     "roundedPer1000": 38,
+     "precision": "rounded",
+     "estimate": false,
+     "unit": "deaths before age 5 per 1,000 live births"
+    }
+   ]
+  }
+ },
+ "eras": [
+  {
+   "id": "crisis",
+   "part": "era-crisis",
+   "fromYear": 1550,
+   "toYear": 1689,
+   "label": "Crisis"
+  },
+  {
+   "id": "slow",
+   "part": "era-slow",
+   "fromYear": 1700,
+   "toYear": 1799,
+   "label": "Slow gains"
+  },
+  {
+   "id": "takeoff",
+   "part": "era-takeoff",
+   "fromYear": 1870,
+   "toYear": 1914,
+   "label": "Takeoff"
+  },
+  {
+   "id": "medical",
+   "part": "era-medical",
+   "fromYear": 1940,
+   "toYear": 2026,
+   "label": "Medical"
+  }
+ ],
+ "flags": [
+  {
+   "id": 1,
+   "part": "flag-1",
+   "year": 1558,
+   "title": "Crisis",
+   "note": "About the 1550s to the 1680s: plague, the famine and influenza of 1557-59, and Little Ice Age harvest failure. The late-1550s crash is to about 22. England's last major plague was 1665-66. The 1680s dip, to about 31, was smallpox, fevers and bad harvests, not plague."
+  },
+  {
+   "id": 2,
+   "part": "flag-2",
+   "year": 1753,
+   "title": "Slow gains",
+   "note": "The 1700s. Plague is gone, smallpox inoculation spreads, and the food supply is steadier. The line still lurches, including a dip to about 25 around 1728, but by 1800 it is near 40."
+  },
+  {
+   "id": 3,
+   "part": "flag-3",
+   "year": 1850,
+   "title": "Offset",
+   "note": "1796 to the 1870s. Jenner's vaccine and the sanitation reforms of the 1850s, offset by crowded industrial cities. From about 1800 to about 1870 the line stays near 40, and a bad year such as 1849 is still in the high 30s."
+  },
+  {
+   "id": 4,
+   "part": "flag-4",
+   "year": 1900,
+   "title": "Takeoff",
+   "note": "About 1870 to 1914. Germ theory, clean water, housing and nutrition, and falling infant deaths. From about 41 around 1870 to the low 50s by 1914."
+  },
+  {
+   "id": 5,
+   "part": "flag-5",
+   "year": 1918,
+   "title": "1918",
+   "note": "England falls from about 46 in 1917 to about 41 in 1918, war and influenza together. The drop of more than 10 years is the United States: about 51 in 1917 to about 39 in 1918, about 12 years."
+  },
+  {
+   "id": 6,
+   "part": "flag-6",
+   "year": 1960,
+   "title": "Medical",
+   "note": "The 1940s to the 1960s and beyond. Antibiotics, mass vaccination and the welfare state. England moves from about 61 in 1940, through a wartime dip, to about 69 by 1950 and about 71 by 1960."
+  }
+ ],
+ "epilogue": {
+  "part": "epilogue",
+  "note": "After 1970, further gains in rich countries come especially from fewer deaths from heart disease and stroke, and from less smoking. The world average does not fall in the HIV years; it rises from about 64 in 1990 to about 66 in 2000. In those same years Eswatini falls from about 61 to about 44, and Zimbabwe from about 61 in the mid-1980s to about 46 in 2000. Those are the life-expectancy falls; this chart does not separate HIV from other causes. COVID marks the world line, about 73 in 2019 to about 71 in 2021. The UK dip is about 81 to about 80 in 2020."
+ }
+}
