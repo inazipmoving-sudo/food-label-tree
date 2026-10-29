@@ -1,0 +1,1 @@
+{"v":1,"name":"hcl","cid":313,"smiles":"Cl","formula":"HCl","source":"PubChem CID 313 (Hydrochloric Acid); RDKit ETKDGv3 + UFF, all H explicit; coordinates in bond units (mean heavy-atom bond = 1, 2.084 \u00c5)","style":{"Cl":[0.36,"#1FC01F","#0a5a0a"],"H":[0.15,"#f2f2f2","#6f6f6f"]},"atoms":[["Cl",0.0,0.0,0.0],["H",-0.66,0.0,0.0]],"bonds":[[0,1,1]],"anchors":{"h":[0],"cl":[0]}}

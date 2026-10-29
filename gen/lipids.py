@@ -6,18 +6,21 @@
 # --lb (px per bond) = 100cqw / 17.5 of the figure art box, so a 12-bond-wide molecule is always 12 x --lb wide.
 LM=json.load(open(os.path.join(GEN,'data','lipids-mols.json'),encoding='utf-8'))
 LB_SPAN=17.5
+LMREG={}
 def lmol(name,alt,marks=(),cap='',zones=(),cls='',part=None):
     """one labelled molecule: image + numbered/text markers (page HTML, % positions) + optional side zones"""
     d=LM[name]; w,h=_png_size(os.path.join(OUT,'img','lipids',name+'.png'))
-    mk=''
+    mk=''; _tk=[]
     for key,txt,dx,dy,*kind in marks:
         x,y=d['anchors'][key] if isinstance(key,str) else key
         x+=dx/d['units']*100; y+=dy/d['hunits']*100
+        _tk.append((x/100*w,y/100*h))
         mk+=f'<span class="mk{(" "+kind[0]) if kind else ""}" style="left:{x:.1f}%;top:{y:.1f}%">{txt}</span>'
     zn=''.join(f'<span class="zb {c}" style="top:{t}%;height:{hh}%"><b>{txt}</b></span>' for t,hh,txt,c in zones)
     capt=_html.escape(cap or alt)
-    return (f'<div class="lm{(" "+cls) if cls else ""}{" hz" if zones else ""}" style="--u:{d["units"]};--hu:{d["hunits"]}"{f' data-part="{part}"' if part else ''}>'
-            f'<button type="button" class="mz lmz" data-cap="{capt}" aria-label="Enlarge: {capt}"><img src="img/lipids/{name}.png" width="{w}" height="{h}" alt="{_html.escape(alt)}" loading="lazy" decoding="async">{ZOOM}</button>{mk}{zn}</div>')
+    LMREG[name]={'marks':marks,'capt':_html.escape(re.sub('<[^>]+>','',cap or alt)),'tk':_tk}  # 2D/3D toggle: filled in by lessonkit m3_fill_lipids()
+    return (f'<div class="lm{(" "+cls) if cls else ""}{" hz" if zones else ""}" style="--u:{d["units"]};--hu:{d["hunits"]}"{f' data-part="{part}"' if part else ''}\x00A:{name}\x00>'
+            f'<button type="button" class="mz lmz" data-cap="{capt}" aria-label="Enlarge: {capt}"><img src="img/lipids/{name}.png" width="{w}" height="{h}" alt="{_html.escape(alt)}" loading="lazy" decoding="async">{ZOOM}</button>{mk}{zn}\x00T:{name}\x00</div>')
 def mleg(items):
     return '<ol class="mleg">'+''.join(f'<li><span class="mk s{(" "+c) if c else ""}">{k}</span><span>{t}</span></li>' for k,t,c in items)+'</ol>'
 LEGEND='<p class="rleg"><span class="k c"></span>carbon <span class="k h"></span>hydrogen <span class="k o"></span>oxygen <span class="k n"></span>nitrogen <span class="k p"></span>phosphorus · every molecule on this page is drawn at the same scale with every hydrogen shown · tap one to enlarge it</p>'
@@ -229,10 +232,10 @@ LQUIZ=[('What makes a molecule a lipid?','It is oily and doesn’t dissolve in w
 ('Which fatty acids are eicosanoids made from?','The 20-carbon fatty acids arachidonic acid (omega-6) and EPA (omega-3) (Figure 5).'),
 ('Why do vitamins A, D, E and K need some fat in the meal?','They are lipids, so they are absorbed along with fat (Figure 6).')]
 def build_lipids():
-    figs=[figure_card(i,t,h,'',sub=s) for i,(t,s,h) in enumerate(with_uses('macronutrients-lipids',LIPID_LESSON),1)]
+    figs=[figure_card(i,t,m3_fill_lipids(h),'',sub=s) for i,(t,s,h) in enumerate(with_uses('macronutrients-lipids',LIPID_LESSON),1)]
     lq='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(LQUIZ,1))+'</section></main>'
     _N=NEXT_OF('macronutrients-lipids')
-    after=lq+('<main class="lp-after"><p class="fwd" data-part="nextlesson">Next lesson: <a href="'+_N[1]+'">'+_N[0]+'</a> →</p></main>' if _N else '')+pn(('Module 1 · Fats','macronutrients-fats.html'),_N)+LIPID_JS+(bodymap_assets() if 'macronutrients-lipids' in BODY_USES.LIVE else '')
+    after=lq+('<main class="lp-after"><p class="fwd" data-part="nextlesson">Next lesson: <a href="'+_N[1]+'">'+_N[0]+'</a> →</p></main>' if _N else '')+pn(('Module 1 · Fats','macronutrients-fats.html'),_N)+LIPID_JS+(bodymap_assets() if 'macronutrients-lipids' in BODY_USES.LIVE else '')+(mol3d_assets() if m3_fill_lipids.used else '')
     lesson_page('macronutrients-lipids','Module 1 · Other Lipids · '+COURSE+' · '+UNIVERSITY_NAME,
      '<nav class="crumbs">'+CRUMB_HOME+' › Module 1</nav><h1>Module 1 · Other Lipids</h1>'
      '<p>Fats are one kind of lipid. This lesson meets the rest of the family, one group at a time: phospholipids that build every cell membrane, cholesterol and plant sterols, sphingolipids and waxes, the eicosanoid signals your body makes from fatty acids, and the fat-soluble vitamins, then puts them all in one table. Every molecule is drawn at the same scale with every hydrogen shown. The figure is on the left and the lesson script on the right; the quiz is at the end.</p>'
