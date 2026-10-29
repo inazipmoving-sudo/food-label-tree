@@ -31,8 +31,47 @@ def _auto_mark(slug,name,d,xp,yp,taken,R=0.5):
             if sc>=0: return (cx-ax)/ppb,(cy-ay)/ppb
             if best is None or sc>best[0]: best=(sc,cx,cy)
     _,cx,cy=best; return (cx-ax)/ppb,(cy-ay)/ppb
+# ---- 2D/3D toggle (gen/mol3d.py builds curriculum/mol3d/<slug>/*.json; gen/mol3d.js is the viewer, lazy-loaded) ----
+# A lesson gets toggles only if curriculum/mol3d/<slug>/index.json exists, so lessons without models are built byte-for-byte as before.
+def _m3_index(slug):
+    p=os.path.join(OUT,'mol3d',slug,'index.json')
+    return json.load(open(p,encoding='utf-8')) if os.path.exists(p) else {}
+def _m3_corner(slug,name,d,taken,bw=1.45,bh=0.7):
+    """a corner of the drawing whose toggle-sized box (bw x bh bonds, the phone size) covers no atom, bond or marker; 'ol' = outside, left"""
+    if d['units']<3.2: return 'ol'
+    import numpy as _np
+    from PIL import Image as _I
+    k=(slug,name)
+    if k not in _MASKS:
+        a=_np.asarray(_I.open(os.path.join(OUT,'img',slug,name+'.png')).convert('RGBA')).astype(int)
+        _MASKS[k]=(a[...,3]>40)&(a[...,:3].min(axis=2)<235)
+    M=_MASKS[k]; H,W=M.shape; ppb=W/d['units']; w=int(bw*ppb); h=int(bh*ppb); pad=0.45*ppb
+    for c,(x0,y0) in (('tl',(0,0)),('tr',(W-w,0)),('bl',(0,H-h))):
+        if M[y0:y0+h,x0:x0+w].any(): continue
+        if any(x0-pad<=tx<=x0+w+pad and y0-pad<=ty<=y0+h+pad for tx,ty in taken): continue
+        return c
+    return 'ol'
+M3_CSS=open(os.path.join(GEN,'mol3d.css'),encoding='utf-8').read().strip()
+def mol3d_assets():
+    """CSS + the tiny toggle bootstrap; the viewer (assets/mol3d.js) is fetched only on the first 3D click"""
+    js=_asset('mol3d.js')
+    return ('<style>'+_re.sub(r'/\*.*?\*/','',M3_CSS,flags=_re.S).replace('\n','')+'</style>'
+     '<script>(()=>{let L=null;const V=new WeakMap();'
+     f'const lib=()=>L||(L=new Promise((ok,no)=>{{const s=document.createElement("script");s.src="{js}";s.onload=ok;s.onerror=()=>{{L=null;no(new Error("mol3d.js failed to load"))}};document.head.appendChild(s)}}));'
+     'const set=(t,v)=>t.querySelectorAll(".m3b").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.v===v)));'
+     'document.addEventListener("click",async e=>{'
+     # enlarge dialog (LIPID_JS, registered earlier) clones the .lm: drop the toggle from the copy
+     'if(e.target.closest(".lmz")){document.querySelectorAll("dialog.lbm .m3t,dialog.lbm .m3v").forEach(x=>x.remove());return}'
+     'const b=e.target.closest(".m3b");if(!b||b.getAttribute("aria-pressed")==="true")return;'
+     'const lm=b.closest(".lm"),t=b.closest(".m3t"),v=b.dataset.v;set(t,v);'
+     'if(v==="3d"){lm.classList.add("m3busy");try{await lib();const m=await Mol3D.load(lm.dataset.m3d);'
+     'if(t.querySelector("[data-v=\'3d\']").getAttribute("aria-pressed")!=="true"||V.has(lm))return;'
+     'V.set(lm,Mol3D.mount(lm,m,JSON.parse(lm.dataset.m3l||"[]")));lm.classList.add("m3on")}'
+     'catch(err){console.warn(err);set(t,"2d")}finally{lm.classList.remove("m3busy")}}'
+     'else{const x=V.get(lm);if(x){x.destroy();V.delete(lm)}lm.classList.remove("m3on")}});})();</script>')
 def mk_lmol(slug):
     D=json.load(open(os.path.join(GEN,'data',slug+'-mols.json'),encoding='utf-8'))
+    M3=_m3_index(slug)
     def lm(name,alt,marks=(),cap='',cls='',part=None,eager=False):
         d=D[name]; lm.used.add(name); w,h=_png_size(os.path.join(OUT,'img',slug,name+'.png')); mk=''
         _tk=[]
@@ -43,9 +82,17 @@ def mk_lmol(slug):
             _tk.append((x/100*w,y/100*h))
             mk+=f'<span class="mk{(" "+kind[0]) if kind else ""}" style="left:{x:.1f}%;top:{y:.1f}%">{txt}</span>'
         capt=_html.escape(_re.sub('<[^>]+>','',cap or alt))
-        return (f'<div class="lm{(" "+cls) if cls else ""}" style="--u:{d["units"]};--hu:{d["hunits"]}"{f' data-part="{part}"' if part else ''}>'
-                f'<button type="button" class="mz lmz" data-cap="{capt}" aria-label="Enlarge: {capt}"><img src="img/{slug}/{name}.png" width="{w}" height="{h}" alt="{_html.escape(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async">{ZOOM}</button>{mk}</div>')
-    lm.D=D; lm.used=set(); lm.taken={}; return lm
+        m3a=m3t=''
+        if name in M3:  # 2D/3D toggle: same numbered labels in 3D for marker keys the model knows
+            lm.m3used.add(name)
+            labs=[[str(txt),key] for key,txt,*_ in marks if isinstance(key,str) and key in M3[name]]
+            m3a=f' data-m3d="mol3d/{slug}/{name}.json" data-m3n="{capt}" data-m3l="{_html.escape(json.dumps(labs,separators=(",",":")))}"'
+            m3t=(f'<span class="m3t {_m3_corner(slug,name,d,_tk)}" role="group" aria-label="View: {capt}">'
+                 '<button type="button" class="m3b" data-v="2d" aria-pressed="true" aria-label="2D drawing">2D</button>'
+                 '<button type="button" class="m3b" data-v="3d" aria-pressed="false" aria-label="3D model you can rotate">3D</button></span>')
+        return (f'<div class="lm{(" "+cls) if cls else ""}" style="--u:{d["units"]};--hu:{d["hunits"]}"{f' data-part="{part}"' if part else ''}{m3a}>'
+                f'<button type="button" class="mz lmz" data-cap="{capt}" aria-label="Enlarge: {capt}"><img src="img/{slug}/{name}.png" width="{w}" height="{h}" alt="{_html.escape(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async">{ZOOM}</button>{mk}{m3t}</div>')
+    lm.D=D; lm.used=set(); lm.taken={}; lm.m3used=set(); return lm
 EL_NAMES={'c':'carbon','h':'hydrogen','o':'oxygen','n':'nitrogen','p':'phosphorus','s':'sulfur','na':'sodium','cl':'chlorine','kk':'potassium','ca':'calcium','mg':'magnesium','fe':'iron','zn':'zinc','cu':'copper','i':'iodine','se':'selenium','f':'fluorine','mn':'manganese','cr':'chromium','mo':'molybdenum','co':'cobalt','ti':'titanium'}
 def legend(els='c h o n',note='every molecule on this page is drawn at the same scale with every hydrogen shown · tap one to enlarge it'):
     return '<p class="rleg">'+' '.join(f'<span class="k {e}"></span>{EL_NAMES[e]}' for e in els.split())+f' · {note}</p>'
@@ -112,6 +159,7 @@ def build_lesson(slug,title,intro,LESSON,QUIZ,after_extra='',mols=None,scale=Non
     if mols is not None and scale is None and mols.used: scale=round(max(9.0,max(mols.D[n]['units'] for n in mols.used)+1.1),2)
     if scale: after_extra=f'<style>.mols .lm{{--lb:calc(100cqw / {scale})}}.mgrid{{column-gap:calc(100cqw / {scale} * .6)}}</style>'+after_extra
     if slug in BODY_USES.LIVE: LESSON=with_uses(slug,LESSON); after_extra=after_extra+bodymap_assets()
+    if mols is not None and mols.m3used: after_extra=after_extra+mol3d_assets()
     figs=[figure_card(i,t,h,'',sub=s) for i,(t,s,h) in enumerate(LESSON,1)]
     lq='<main class="lp-after"><section class="notes quiz" id="quiz"><h2>Quiz</h2><p class="lbl">Tap a question to see the answer</p>'+''.join(f'<details><summary>{n}. {q}</summary><p>{a}</p></details>' for n,(q,a) in enumerate(QUIZ,1))+'</section></main>'
     nx=f'<p class="fwd" data-part="nextlesson">Next lesson: <a href="{N[1]}">{N[0]}</a> →</p>' if N else ''

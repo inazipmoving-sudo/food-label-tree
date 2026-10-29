@@ -1,0 +1,15 @@
+/* 2D/3D toggle on molecule drawings (gen/mol3d.py + gen/mol3d.js). The toggle sits in a free corner of the drawing
+   (picked at build time so it covers no atom or marker), or just outside it for tiny molecules. */
+.m3t{position:absolute;z-index:2;display:inline-flex;line-height:1;border:1px solid #C9D3DC;border-radius:10px;background:#fff;overflow:hidden;box-shadow:0 1px 2px #0001}
+.m3t.tl{top:0;left:0}.m3t.tr{top:0;right:0}.m3t.bl{bottom:0;left:0}.m3t.ol{bottom:0;right:calc(100% + 4px)}
+.m3b{all:unset;box-sizing:border-box;min-width:24px;height:19px;padding:0 5px;font:600 10.5px/19px var(--sans,system-ui,sans-serif);letter-spacing:.02em;color:#3E5C76;text-align:center;cursor:pointer}
+.m3b+.m3b{border-left:1px solid #C9D3DC}
+.m3b[aria-pressed=true]{background:#3E5C76;color:#fff;cursor:default}
+.m3b:focus-visible{outline:2px solid #3E5C76;outline-offset:-2px}
+.m3b:hover:not([aria-pressed=true]){background:#EEF2F5}
+.lm.m3on>.mz,.lm.m3on>.mk{display:none}
+.m3v{display:block;max-width:100%;cursor:grab;touch-action:none;border-radius:4px;background:transparent}
+.m3v:active{cursor:grabbing}.m3v:focus-visible{outline:2px solid #3E5C76;outline-offset:2px}
+.m3h{margin:4px 0 0;font:12px/1.35 var(--sans,system-ui,sans-serif);color:#6B6B6B;text-align:center}
+.lm.m3busy .m3b[data-v="3d"]{opacity:.6}
+@media(max-width:600px){.m3b{min-width:22px;height:18px;line-height:18px;font-size:10px;padding:0 4px}}

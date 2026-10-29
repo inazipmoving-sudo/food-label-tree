@@ -1,0 +1,68 @@
+{
+ "butyrate": [
+  "acid",
+  "c1"
+ ],
+ "cellobiose": [
+  "c1",
+  "c4",
+  "link"
+ ],
+ "fructose": [
+  "c2",
+  "o5"
+ ],
+ "galactose": [
+  "c1",
+  "c4",
+  "o5",
+  "oh1",
+  "oh4"
+ ],
+ "glucose_a": [
+  "c1",
+  "c4",
+  "o5",
+  "oh1",
+  "oh4"
+ ],
+ "glucose_b": [
+  "c1",
+  "c4",
+  "o5",
+  "oh1",
+  "oh4"
+ ],
+ "glucose_open": [
+  "ald",
+  "c1",
+  "c5",
+  "c6",
+  "o5"
+ ],
+ "lactose": [
+  "c1",
+  "c4",
+  "link"
+ ],
+ "maltose": [
+  "c1",
+  "c4",
+  "link"
+ ],
+ "methane": [
+  "c"
+ ],
+ "sorbitol": [
+  "c1",
+  "c6"
+ ],
+ "sucrose": [
+  "c1",
+  "c2",
+  "link"
+ ],
+ "water": [
+  "c"
+ ]
+}
