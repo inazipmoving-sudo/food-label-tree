@@ -1,0 +1,1764 @@
+[
+ {
+  "slug": "bowhead-whale-dna-repair",
+  "group": "landmark",
+  "impactRank": 1,
+  "impactScore": 16.92,
+  "title": "Evidence for improved DNA repair in the long-lived bowhead whale",
+  "authors": [
+   "Denis Firsanov",
+   "Max Zacher",
+   "Xiao Tian",
+   "Todd L Sformo",
+   "Yang Zhao",
+   "Gregory Tombline",
+   "J Yuyang Lu",
+   "Zhizhong Zheng",
+   "Luigi Perelli",
+   "Enrico Gurreri",
+   "Li Zhang",
+   "Jing Guo",
+   "Anatoly Korotkov",
+   "Valentin Volobaev",
+   "Seyed Ali Biashad",
+   "Zhihui Zhang",
+   "Johanna Heid",
+   "Alexander Y Maslov",
+   "Shixiang Sun",
+   "Zhuoer Wu",
+   "Jonathan Gigas",
+   "Eric C Hillpot",
+   "John C Martinez",
+   "Minseon Lee",
+   "Alyssa Williams",
+   "Abbey Gilman",
+   "Nicholas Hamilton",
+   "Ekaterina Strelkova",
+   "Ena Haseljic",
+   "Avnee Patel",
+   "Maggie E Straight",
+   "Nalani Miller",
+   "Julia Ablaeva",
+   "Lok Ming Tam",
+   "Chloé Couderc",
+   "Michael R Hoopmann",
+   "Robert L Moritz",
+   "Shingo Fujii",
+   "Amandine Pelletier",
+   "Dan J Hayman",
+   "Hongrui Liu",
+   "Yuxuan Cai",
+   "Anthony K L Leung",
+   "Zhengdong Zhang",
+   "C Bradley Nelson",
+   "Lisa M Abegglen",
+   "Joshua D Schiffman",
+   "Vadim N Gladyshev",
+   "Carlo C Maley",
+   "Mauro Modesti",
+   "Giannicola Genovese",
+   "Mirre J P Simons",
+   "Jan Vijg",
+   "Andrei Seluanov",
+   "Vera Gorbunova"
+  ],
+  "authorsShort": "Denis Firsanov, Max Zacher, Xiao Tian … Vera Gorbunova",
+  "firstAuthor": "Denis Firsanov",
+  "journal": "Nature",
+  "pubDate": "2025-10-29",
+  "doi": "10.1038/s41586-025-09694-5",
+  "url": "https://doi.org/10.1038/s41586-025-09694-5",
+  "pmid": "41162698",
+  "pmcid": "PMC12711569",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://doi.org/10.1038/s41586-025-09694-5",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "A 200-year-old mammal seems to stay healthy by repairing DNA breaks more accurately, not by killing damaged cells.",
+  "signals": {
+   "citations": {
+    "openalex": 43,
+    "semanticScholar": 33,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Nature News",
+     "url": "https://www.nature.com/articles/d41586-025-03511-9"
+    },
+    {
+     "outlet": "University of Rochester press release",
+     "url": "https://www.rochester.edu/newscenter/cirbp-protein-mammalian-longevity-bowhead-whales-674682/"
+    },
+    {
+     "outlet": "URMC news",
+     "url": "https://www.urmc.rochester.edu/news/story/secret-to-a-long-life"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Bowhead whales can live for more than 200 years and weigh over 80,000 kg, yet they are not especially prone to cancer. With that many cells dividing for that long, you would expect far more cancer, a puzzle known as Peto's paradox. If we knew how the whale protects its genome, we would learn something about why DNA damage builds up in people as we age, and about which repair systems are worth strengthening. This paper is one of the clearest tests so far of the idea that better DNA repair, rather than extra tumour-suppressor genes, can buy a long life.",
+   "did": "The team grew skin-type cells (fibroblasts) from bowhead whales and compared them with cells from humans and other mammals. First they counted how many cancer-causing genetic \"hits\" it took to turn the cells malignant. Then they measured how well the cells fixed double-strand breaks, the most dangerous kind of DNA damage, and how often new mutations appeared. When one protein, CIRBP, stood out as unusually abundant in the whale, they put the whale version into human cells and into fruit flies to see what it changed.",
+   "found": "Surprisingly, whale cells needed fewer cancer-causing hits than human cells to become malignant, so the whale is not protected by a harder-to-break cancer barrier. Instead, whale cells repaired double-strand breaks more often and more faithfully, and they built up mutations more slowly than cells of other mammals. CIRBP, a cold-inducible RNA-binding protein, was highly expressed in whale cells and tissues. The whale form of CIRBP boosted both main break-repair routes (non-homologous end joining and homologous recombination) in human cells, cut down micronuclei (small fragments of broken chromosome), protected broken DNA ends, and stimulated end joining in a test tube. Extra CIRBP extended lifespan in fruit flies and made them more resistant to radiation. The authors conclude that the whale keeps its genome intact by repairing damage well rather than by getting rid of damaged cells.",
+   "limits": "Most of the work was done on cultured cells and in fruit flies, not in living whales or people, and the fly lifespan result comes from overexpressing the protein. The abstract does not show that raising CIRBP would make humans live longer or lower cancer risk. Comparing species also leaves room for many other differences between whales and humans to matter.",
+   "terms": [
+    {
+     "term": "Double-strand break",
+     "definition": "Both strands of the DNA helix cut at the same place; the most dangerous kind of DNA damage."
+    },
+    {
+     "term": "Non-homologous end joining (NHEJ)",
+     "definition": "A quick repair route that glues broken DNA ends back together, sometimes losing a few letters."
+    },
+    {
+     "term": "Homologous recombination (HR)",
+     "definition": "A more accurate repair route that copies the missing sequence from the matching chromosome."
+    },
+    {
+     "term": "CIRBP",
+     "definition": "Cold-inducible RNA-binding protein, made in larger amounts when cells are cooled."
+    },
+    {
+     "term": "Peto's paradox",
+     "definition": "Large, long-lived animals get no more cancer than small ones, despite having far more cells."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "multivitamin-epigenetic-clocks-cosmos",
+  "group": "landmark",
+  "impactRank": 2,
+  "impactScore": 13.92,
+  "title": "Effects of daily multivitamin-multimineral and cocoa extract supplementation on epigenetic aging clocks in the COSMOS randomized clinical trial",
+  "authors": [
+   "Sidong Li",
+   "Rikuta Hamaya",
+   "Haidong Zhu",
+   "Brian H Chen",
+   "Alexandre C Pereira",
+   "Kerry L Ivey",
+   "Pamela M Rist",
+   "JoAnn E Manson",
+   "Yanbin Dong",
+   "Howard D Sesso"
+  ],
+  "authorsShort": "Sidong Li, Rikuta Hamaya, Haidong Zhu … Howard D Sesso",
+  "firstAuthor": "Sidong Li",
+  "journal": "Nature Medicine",
+  "pubDate": "2026-03-09",
+  "doi": "10.1038/s41591-026-04239-3",
+  "url": "https://doi.org/10.1038/s41591-026-04239-3",
+  "pmid": "41803341",
+  "pmcid": "PMC13696102",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13696102/pdf/nihms-2215134.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "In a two-year randomized trial, a daily multivitamin slightly slowed two DNA-methylation aging clocks; cocoa extract did not.",
+  "signals": {
+   "citations": {
+    "openalex": 21,
+    "semanticScholar": 20,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Nature Medicine News & Views",
+     "url": "https://www.nature.com/articles/s41591-026-04249-1"
+    },
+    {
+     "outlet": "Harvard Gazette",
+     "url": "https://news.harvard.edu/gazette/story/2026/03/daily-multivitamin-may-slow-biological-aging/"
+    },
+    {
+     "outlet": "Science Media Centre expert reaction",
+     "url": "https://www.sciencemediacentre.org/expert-reaction-to-rct-on-the-effects-of-daily-multivitamin-multimineral-and-cocoa-extract-supplementation-on-epigenetic-aging-clocks/"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 2
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Epigenetic clocks read chemical marks (methyl groups) on DNA to estimate how old the body seems. Many products claim to slow these clocks, but few claims have been tested in a proper randomized trial. This study is a large, placebo-controlled test of two widely used supplements, and it ties directly to nutrition: can something as ordinary as a multivitamin change a DNA-based measure of aging? A clock that moves more slowly is only a stand-in for health, so this kind of trial is a first step: it tells us whether the measure can be shifted at all, before anyone asks whether people actually stay healthier.",
+   "did": "The researchers used blood samples from 958 older adults (482 women and 476 men) in COSMOS, a randomized trial in which people took a daily multivitamin-multimineral (Centrum Silver), a cocoa extract (500 mg cocoa flavanols a day, including 80 mg epicatechin), both, or placebos. This was a prespecified extra study within the trial. Over two years they tracked five DNA-methylation measures of aging: PCHannum, PCHorvath, PCPhenoAge, PCGrimAge and DunedinPACE.",
+   "found": "Compared with placebo, the multivitamin modestly slowed the rise of the two \"second-generation\" clocks, which are built to predict health and death rather than just age. The yearly difference was about 0.11 years for PCGrimAge and about 0.21 years for PCPhenoAge. For PCGrimAge, the effect was larger in people whose biological age was already running ahead of their real age at the start (about 0.24 years a year) and close to zero in people who were aging normally or slowly. Cocoa extract did not change any of the five clocks. The authors call the effects statistically significant but small, and say more studies are needed to show whether they matter clinically.",
+   "limits": "The changes are small, and only two of the five clocks moved. A slower clock is not the same as better health or a longer life; the trial did not show that. The measurements are from blood only, the participants were older adults, and the abstract does not tell us whether the effect lasts after people stop taking the supplement.",
+   "terms": [
+    {
+     "term": "DNA methylation",
+     "definition": "Small chemical tags (methyl groups) attached to DNA that help switch genes on or off without changing the letters."
+    },
+    {
+     "term": "Epigenetic clock",
+     "definition": "A formula that turns methylation at many DNA sites into an estimate of biological age or pace of aging."
+    },
+    {
+     "term": "Second-generation clock",
+     "definition": "A clock trained to predict health outcomes or death, such as GrimAge or PhenoAge."
+    },
+    {
+     "term": "DunedinPACE",
+     "definition": "A clock that estimates how fast someone is aging right now, in biological years per calendar year."
+    },
+    {
+     "term": "Randomized controlled trial",
+     "definition": "A study in which chance decides who gets the treatment and who gets placebo, so the groups can be fairly compared."
+    },
+    {
+     "term": "Placebo",
+     "definition": "A dummy pill that looks like the real one, used so expectations do not bias the result."
+    },
+    {
+     "term": "Confidence interval",
+     "definition": "The range of values the true effect probably lies in."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "hippocampus-3d-genome-aging",
+  "group": "landmark",
+  "impactRank": 3,
+  "impactScore": 13.5,
+  "title": "Epigenetic and 3D genome reprogramming during the aging of the human hippocampus",
+  "authors": [
+   "Nathan R Zemke",
+   "Seoyeon Lee",
+   "Sainath Mamde",
+   "Bing Yang",
+   "Nicole Berchtold",
+   "B Maximiliano Garduño",
+   "Hannah S Indralingam",
+   "Weronika M Bartosik",
+   "Pik Ki Lau",
+   "Keyi Dong",
+   "Emily Hsu",
+   "Amanda Yang",
+   "Yasmine Tani",
+   "Chumo Chen",
+   "Qiurui Zeng",
+   "Varun Ajith",
+   "Liqi Tong",
+   "Chanrung Seng",
+   "Daofeng Li",
+   "Ting Wang",
+   "Jingtian Zhou",
+   "Joseph R Ecker",
+   "Christopher K Glass",
+   "Carl W Cotman",
+   "Xiangmin Xu",
+   "Bing Ren"
+  ],
+  "authorsShort": "Nathan R Zemke, Seoyeon Lee, Sainath Mamde … Bing Ren",
+  "firstAuthor": "Nathan R Zemke",
+  "journal": "Science",
+  "pubDate": "2026-07-23",
+  "doi": "10.1126/science.adt8307",
+  "url": "https://doi.org/10.1126/science.adt8307",
+  "pmid": "42490474",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://doi.org/10.1126/science.adt8307",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Mapping the aging human hippocampus cell by cell shows the genome's 3D folding eroding and the brain's immune cells being replaced in midlife.",
+  "signals": {
+   "citations": {
+    "openalex": 18,
+    "semanticScholar": 6,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "EurekAlert! (AAAS) release",
+     "url": "https://www.eurekalert.org/news-releases/1136581"
+    },
+    {
+     "outlet": "New York Genome Center press release",
+     "url": "https://www.nygenome.org/news-events/news/new-study-revises-understanding-of-brain-immune-cells-during-human-aging/"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Gene activity changes in the aging brain, but the control systems behind those changes are poorly understood. Those controls include DNA methylation, how open the DNA is to being read, and how the genome is folded in three dimensions. This study looks at all of these layers at once in single cells from the human hippocampus, a region central to memory. That makes it one of the most detailed views yet of how the genome's packaging, not just its sequence, changes in the aging brain. Every cell in the brain carries essentially the same DNA sequence, so differences between cell types, and between young and old cells, come largely from how that DNA is marked, opened and folded. Erosion of that organisation is part of the 'epigenetic alterations' hallmark of aging, and seeing it directly in human tissue is rare.",
+   "did": "The team analysed hippocampal tissue from human donors across the adult lifespan. For individual cell nuclei they measured which genes were active, which stretches of DNA were open (chromatin accessibility), where DNA was methylated, and how the chromosomes were folded in 3D. They then looked for programmes of gene regulation that changed with age, steadily or in bursts, in each cell type.",
+   "found": "They found regulatory programmes that changed in a straight line with age and others that changed non-linearly. Between about ages 50 and 75, the original microglia (immune cells that come from the embryonic yolk sac) were depleted and replaced by cells that resemble microglia derived from blood monocytes. Hippocampal astrocytes, including ones that help regulate signalling between neurons, fell substantially with age. In every cell type, the 3D architecture of the genome underwent a global erosion. The authors suggest that these altered regulatory programmes help produce cell-type-specific aging in the human brain.",
+   "limits": "The work uses post-mortem tissue from different people at different ages, so it shows changes across a population rather than following one brain over time. The abstract does not show that the 3D-genome erosion causes memory loss or disease. Only one brain region was studied, and the abstract does not give the number of donors.",
+   "terms": [
+    {
+     "term": "Hippocampus",
+     "definition": "A brain region essential for forming new memories."
+    },
+    {
+     "term": "Chromatin accessibility",
+     "definition": "How open or tightly packed a stretch of DNA is, which affects whether its genes can be read."
+    },
+    {
+     "term": "3D genome architecture",
+     "definition": "The way chromosomes fold inside the nucleus, bringing distant genes and switches together."
+    },
+    {
+     "term": "Microglia",
+     "definition": "The brain's resident immune cells."
+    },
+    {
+     "term": "Astrocytes",
+     "definition": "Star-shaped support cells that help neurons signal and keep the brain's environment stable."
+    },
+    {
+     "term": "Single-nucleus sequencing",
+     "definition": "Reading the molecules from one cell nucleus at a time, so each cell type can be studied separately."
+    },
+    {
+     "term": "Monocyte",
+     "definition": "A white blood cell that can leave the blood and turn into tissue immune cells."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "dna-repeat-expansions-900000",
+  "group": "landmark",
+  "impactRank": 4,
+  "impactScore": 13.05,
+  "title": "Insights into DNA repeat expansions among 900,000 biobank participants",
+  "authors": [
+   "Margaux L A Hujoel",
+   "Robert E Handsaker",
+   "David Tang",
+   "Nolan Kamitaki",
+   "Ronen E Mukamel",
+   "Simone Rubinacci",
+   "Pier Francesco Palamara",
+   "Steven A McCarroll",
+   "Po-Ru Loh"
+  ],
+  "authorsShort": "Margaux L A Hujoel, Robert E Handsaker, David Tang … Po-Ru Loh",
+  "firstAuthor": "Margaux L A Hujoel",
+  "journal": "Nature",
+  "pubDate": "2026-01-07",
+  "doi": "10.1038/s41586-025-09886-z",
+  "url": "https://doi.org/10.1038/s41586-025-09886-z",
+  "pmid": "41501457",
+  "pmcid": "PMC12935551",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://doi.org/10.1038/s41586-025-09886-z",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Sequencing 900,000 people shows that repeated DNA stretches lengthen in blood as we age, and inherited genes set the pace.",
+  "signals": {
+   "citations": {
+    "openalex": 22,
+    "semanticScholar": 17,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "UCLA Health press release",
+     "url": "https://www.uclahealth.org/news/release/study-shows-your-genes-determine-how-fast-your-dna-mutates"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Some parts of the genome are short DNA motifs repeated many times in a row. When these repeats grow too long they can cause inherited diseases such as Huntington's, and some keep growing inside the body's own cells during life. Until now nobody knew how common this kind of somatic growth is in ordinary people, or what controls its speed. This study answers those questions on a scale never reached before, linking DNA instability to aging, to inherited genes, and to new disease risks. Repeat growth is a kind of somatic mutation that standard tests often miss, because repeats are hard to measure with short sequencing reads.",
+   "did": "The researchers analysed DNA sequencing data from more than 900,000 participants in the UK Biobank and the US All of Us programme. They developed computational methods to recognise and measure repeat instability from standard sequencing reads. They compared how readily different repeats mutate in the germline (passed to children) and in blood, ran genome-wide searches for inherited variants that change how fast repeats expand, and tested whether expanded repeats were linked to disease.",
+   "found": "Repeats at different places in the genome varied widely in how likely they were to mutate, both between generations and in blood. Common repeat alleles in the genes TCF4 and ADGRE2 showed high rates of length mosaicism in blood, meaning most people carry repeat elements that expand as they age. The genome-wide search found 29 regions where inherited variants increased expansion of one or more repeats in blood. Together these modifiers had strong effects: at one repeat, expansion rates differed about fourfold between people in the top and bottom 5% of polygenic scores. Variants in several DNA-repair genes pushed the TCF4 repeat in the opposite direction from other repeats. Expanded repeats in the glutaminase gene (GLS) were linked to stage 5 chronic kidney disease (odds ratio 14.0) and to liver disease (odds ratio 3.0).",
+   "limits": "All measurements come from blood DNA, so the study cannot show what happens in brain, liver or other tissues. The disease links are associations, not proof that the repeats cause disease. Measuring repeat length from short sequencing reads is technically hard, and the authors note in the paper that biobank analyses of repeat instability have limitations.",
+   "terms": [
+    {
+     "term": "Tandem repeat",
+     "definition": "A short DNA motif repeated many times in a row, such as CAG CAG CAG."
+    },
+    {
+     "term": "Somatic expansion",
+     "definition": "A repeat getting longer within the body's own cells during life, rather than being inherited that way."
+    },
+    {
+     "term": "Mosaicism",
+     "definition": "Different cells in the same person carrying different versions of the DNA."
+    },
+    {
+     "term": "Genome-wide association study (GWAS)",
+     "definition": "A scan of the whole genome for inherited variants linked to a trait."
+    },
+    {
+     "term": "Polygenic score",
+     "definition": "A combined score of many small genetic effects."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "fourteen-epigenetic-clocks-174-diseases",
+  "group": "landmark",
+  "impactRank": 5,
+  "impactScore": 12.76,
+  "title": "An unbiased comparison of 14 epigenetic clocks in relation to 174 incident disease outcomes",
+  "authors": [
+   "Christos Mavrommatis",
+   "Daniel W Belsky",
+   "Kejun Ying",
+   "Mahdi Moqri",
+   "Archie Campbell",
+   "Anne Richmond",
+   "Vadim N Gladyshev",
+   "Tamir Chandra",
+   "Daniel L McCartney",
+   "Riccardo E Marioni"
+  ],
+  "authorsShort": "Christos Mavrommatis, Daniel W Belsky, Kejun Ying … Riccardo E Marioni",
+  "firstAuthor": "Christos Mavrommatis",
+  "journal": "Nature Communications",
+  "pubDate": "2025-12-16",
+  "doi": "10.1038/s41467-025-66106-y",
+  "url": "https://doi.org/10.1038/s41467-025-66106-y",
+  "pmid": "41402269",
+  "pmcid": "PMC12708718",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "gold",
+   "isOpen": true,
+   "url": "https://www.nature.com/articles/s41467-025-66106-y.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "A head-to-head test of 14 epigenetic clocks in 18,859 people shows the newer clocks are far better at predicting disease.",
+  "signals": {
+   "citations": {
+    "openalex": 34,
+    "semanticScholar": 36,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "University of Edinburgh IGC news",
+     "url": "https://institute-genetics-cancer.ed.ac.uk/second-generation-epigenetic-clocks-show-greater-promise-for-disease-risk-prediction"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 1.5
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Dozens of epigenetic clocks now exist, and companies sell tests built on them, but most have been checked against only a few diseases in small groups of people. If you want to use DNA methylation to judge whether someone is aging faster, or whether a treatment works, you need to know which clocks actually predict illness. This study is a large, even-handed comparison that helps sort the useful clocks from the less useful ones. Because clocks are now used as outcomes in supplement and drug trials, including the multivitamin trial in this list, knowing which clocks track real disease risk tells us which trial results deserve attention.",
+   "did": "The researchers measured 14 widely used clocks in 18,859 people and followed them for 10 years. They tested each clock as a predictor of 174 newly diagnosed diseases and of death from any cause. Their statistical models adjusted for lifestyle and socioeconomic factors. They also asked whether adding a clock to traditional risk factors made disease prediction more accurate, and whether the results differed by sex or smoking.",
+   "found": "Second- and third-generation clocks, which are trained on health outcomes or pace of aging, clearly outperformed first-generation clocks, which were trained only to predict age; the authors say the older clocks have limited use for disease. There were 176 associations that passed a strict significance threshold. For 27 diseases, including primary lung cancer and diabetes, a clock's link to the disease was stronger than its link to death. In 32 of the 176 findings, adding the clock to a model with traditional risk factors raised classification accuracy by more than 1%. There was little evidence that the clocks worked differently by sex or by smoking status. The authors see the most promise for respiratory and liver conditions.",
+   "limits": "Accuracy gains were modest, often around 1%, so the clocks add to rather than replace standard risk factors. The findings are associations within one population and follow-up period, and the abstract does not show that changing a clock changes disease risk. The authors list further limitations in the full paper.",
+   "terms": [
+    {
+     "term": "First-generation clock",
+     "definition": "A clock trained to predict calendar age, such as Horvath or Hannum."
+    },
+    {
+     "term": "Second/third-generation clock",
+     "definition": "Clocks trained on health, mortality or pace of aging, such as GrimAge, PhenoAge or DunedinPACE."
+    },
+    {
+     "term": "Hazard ratio",
+     "definition": "How much more often an event happens in one group than another over time."
+    },
+    {
+     "term": "Bonferroni correction",
+     "definition": "A stricter significance threshold used when many tests are run at once."
+    },
+    {
+     "term": "Incident disease",
+     "definition": "A disease diagnosed for the first time during follow-up."
+    },
+    {
+     "term": "Classification accuracy",
+     "definition": "How often a model correctly sorts people into those who will and will not get a disease."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "dna-protein-crosslinks-premature-aging",
+  "group": "landmark",
+  "impactRank": 6,
+  "impactScore": 12.17,
+  "title": "DNA-protein cross-links promote cGAS-STING-driven premature aging and embryonic lethality",
+  "authors": [
+   "Ines Tomaskovic",
+   "Cristian Prieto-Garcia",
+   "Maria Boskovic",
+   "Mateo Glumac",
+   "Tsung-Lin Tsai",
+   "Thorsten Mosler",
+   "Rubina Kazi",
+   "Rajeshwari Rathore",
+   "Jorge Andrade",
+   "Marina Hoffmann",
+   "Giulio Giuliani",
+   "Anne-Claire Jacomin",
+   "Raquel S Pereira",
+   "Elias Knop",
+   "Laurens Wachsmuth",
+   "Petra Beli",
+   "Koraljka Husnjak",
+   "Manolis Pasparakis",
+   "Andrea Ablasser",
+   "Daniela S Krause",
+   "Michael Potente",
+   "Stamatis Papathanasiou",
+   "Janos Terzic",
+   "Ivan Dikic"
+  ],
+  "authorsShort": "Ines Tomaskovic, Cristian Prieto-Garcia, Maria Boskovic … Ivan Dikic",
+  "firstAuthor": "Ines Tomaskovic",
+  "journal": "Science",
+  "pubDate": "2026-01-29",
+  "doi": "10.1126/science.adx9445",
+  "url": "https://doi.org/10.1126/science.adx9445",
+  "pmid": "41610251",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://infoscience.epfl.ch/handle/20.500.14299/258713",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Unrepaired DNA-protein tangles leak DNA into the cell, set off an immune alarm, and cause premature aging in mice; blocking the alarm helps.",
+  "signals": {
+   "citations": {
+    "openalex": 11,
+    "semanticScholar": 9,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "EurekAlert! (AAAS) release",
+     "url": "https://www.eurekalert.org/news-releases/1113894"
+    },
+    {
+     "outlet": "Phys.org",
+     "url": "https://phys.org/news/2026-01-broken-dna-tool-aging.html"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "DNA damage is a central hallmark of aging, but it comes in many forms, and some of them are poorly studied. DNA-protein cross-links, in which a protein becomes chemically stuck to DNA, are among the most toxic. This study shows how one specific repair failure can turn into body-wide inflammation and early aging, and it points to a pathway that drugs could target. It also links DNA damage to \"inflammaging\", the chronic inflammation that rises with age. Rare 'progeroid' diseases, in which people age early because one repair system is broken, have long been used to find out which kinds of DNA damage matter most for aging.",
+   "did": "The researchers studied SPRTN, an enzyme that cuts away proteins stuck to DNA. Working in cells, they asked what happens when SPRTN fails during DNA copying and during cell division. They then made mice carrying a Sprtn mutation that models Ruijs-Aalfs syndrome, a rare human premature-aging disease, and tested whether blocking the cGAS-STING immune pathway, genetically or with a drug, changed the outcome.",
+   "found": "Without working SPRTN, cells were left with unresolved DNA damage during both DNA copying and cell division. Chromosomes separated incorrectly, micronuclei formed, and DNA spilled into the cytoplasm, where it switched on the cGAS-STING pathway, a sensor that normally detects viral DNA. In the mutant mice, chronic cGAS-STING signalling caused inflammation and innate immune responses that killed many embryos. Mice that survived showed signs of aging that began before birth and continued into adulthood. Blocking cGAS-STING genetically or with a drug rescued the embryos and eased the premature-aging features.",
+   "limits": "This is a mouse model of a rare inherited disease, so it shows what happens when one repair enzyme is badly impaired, not necessarily what drives normal human aging. The abstract does not say whether the same lesions build up enough in ordinary aging to matter. Drugs that block cGAS-STING may carry risks of their own, because the pathway also defends against infection.",
+   "terms": [
+    {
+     "term": "DNA-protein cross-link (DPC)",
+     "definition": "A protein stuck to DNA by a chemical bond, which blocks copying and reading of the gene."
+    },
+    {
+     "term": "SPRTN",
+     "definition": "A protease enzyme that chops up proteins trapped on DNA so the DNA can be repaired."
+    },
+    {
+     "term": "Micronucleus",
+     "definition": "A small, separate packet of chromosome material that forms after faulty cell division."
+    },
+    {
+     "term": "cGAS-STING",
+     "definition": "An immune sensor that detects DNA where it should not be (in the cytoplasm) and triggers inflammation."
+    },
+    {
+     "term": "Progeroid",
+     "definition": "Showing features that look like premature aging."
+    },
+    {
+     "term": "Ruijs-Aalfs syndrome",
+     "definition": "A rare inherited disease caused by SPRTN mutations, with premature aging and early liver cancer."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "longitudinal-epigenetic-clocks-inchianti",
+  "group": "landmark",
+  "impactRank": 7,
+  "impactScore": 11.92,
+  "title": "Longitudinal changes in epigenetic clocks predict survival in the InCHIANTI cohort",
+  "authors": [
+   "Pei-Lun Kuo",
+   "Ann Zenobia Moore",
+   "Toshiko Tanaka",
+   "Daniel W Belsky",
+   "Ake Tzu-Hui Lu",
+   "Steve Horvath",
+   "Stefania Bandinelli",
+   "Luigi Ferrucci"
+  ],
+  "authorsShort": "Pei-Lun Kuo, Ann Zenobia Moore, Toshiko Tanaka … Luigi Ferrucci",
+  "firstAuthor": "Pei-Lun Kuo",
+  "journal": "Nature Aging",
+  "pubDate": "2026-03-13",
+  "doi": "10.1038/s43587-026-01066-6",
+  "url": "https://doi.org/10.1038/s43587-026-01066-6",
+  "pmid": "41826710",
+  "pmcid": "PMC13004684",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://www.nature.com/articles/s43587-026-01066-6.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Following people for up to 24 years shows that how fast your epigenetic clock speeds up predicts death, beyond where it started.",
+  "signals": {
+   "citations": {
+    "openalex": 21,
+    "semanticScholar": 13,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Nature Aging research briefing",
+     "url": "https://www.nature.com/articles/s43587-026-01095-1"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 2
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Most epigenetic-clock studies take one blood sample and ask whether a high biological age predicts later illness. But aging is a process, and the most useful measure may be how quickly the clock moves over time. If repeated measurements add information, they could become the way to track whether a lifestyle change or a drug is actually slowing aging. This study is one of the longest tests of that idea. Trials of anti-aging treatments need outcomes that change within a few years, long before people get sick or die. A clock whose rate of change predicts survival is a candidate for that role, which is why repeated-measurement studies like this one matter for the whole field.",
+   "did": "The researchers studied 699 adults from the InCHIANTI cohort in Italy, followed for up to 24 years, with DNA methylation measured more than once. They calculated how fast several clocks (first-, second- and third-generation) accelerated over time and tested whether that rate was linked to death. Their models accounted for baseline epigenetic age and other confounding factors.",
+   "found": "Faster increases in several clocks were robustly linked to a higher risk of death, even after accounting for each person's starting epigenetic age and other factors. In other words, the change over time carried information that a single measurement did not. The authors conclude that changes in epigenetic aging reflect a person's evolving health and may be sensitive indicators for testing interventions meant to extend healthspan and lifespan.",
+   "limits": "The cohort is fairly small (699 people) and comes from one region of Italy, so the results may not apply everywhere. The study is observational: it shows that a speeding clock predicts death, not that slowing the clock would prevent it. The abstract does not say which clocks performed best; the authors discuss strengths and limitations in the full paper. For an individual, a single commercial clock result says little; this study's point is that the trend across repeated tests carries the signal, and it does not show that any particular action will change that trend.",
+   "terms": [
+    {
+     "term": "Longitudinal study",
+     "definition": "A study that measures the same people repeatedly over time."
+    },
+    {
+     "term": "Epigenetic age acceleration",
+     "definition": "Biological age, as measured by a clock, running ahead of calendar age."
+    },
+    {
+     "term": "Cohort",
+     "definition": "A defined group of people followed over time."
+    },
+    {
+     "term": "Confounder",
+     "definition": "Another factor that could explain a link, such as smoking or illness."
+    },
+    {
+     "term": "Healthspan",
+     "definition": "The years of life spent in good health."
+    },
+    {
+     "term": "Mortality",
+     "definition": "Death from any cause during the follow-up period."
+    },
+    {
+     "term": "Biomarker",
+     "definition": "A measurable sign in the body, such as a blood test, that reflects a biological state."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "clonal-hematopoiesis-heart-failure",
+  "group": "landmark",
+  "impactRank": 8,
+  "impactScore": 11.5,
+  "title": "Clonal Hematopoiesis and Incident Heart Failure",
+  "authors": [
+   "Spencer Flynn",
+   "Art Schuermans",
+   "Md Mesbah Uddin",
+   "Tetsushi Nakao",
+   "Victoria Viscosi",
+   "Peter Libby",
+   "Pradeep Natarajan",
+   "Michael C Honigberg"
+  ],
+  "authorsShort": "Spencer Flynn, Art Schuermans, Md Mesbah Uddin … Michael C Honigberg",
+  "firstAuthor": "Spencer Flynn",
+  "journal": "JAMA Cardiology",
+  "pubDate": "2025-11-09",
+  "doi": "10.1001/jamacardio.2025.4603",
+  "url": "https://doi.org/10.1001/jamacardio.2025.4603",
+  "pmid": "41206888",
+  "pmcid": "PMC12598579",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12598579/pdf/nihms-2153024.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "In 417,616 adults, blood-stem-cell clones carrying acquired mutations were linked to a higher risk of heart failure.",
+  "signals": {
+   "citations": {
+    "openalex": 18,
+    "semanticScholar": 21,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "JAMA Cardiology editorial",
+     "url": "https://jamanetwork.com/journals/jamacardiology/fullarticle/2841166"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 2
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "As we age, a blood stem cell that picks up a mutation can come to produce a large share of our blood cells. This is clonal hematopoiesis, a clear example of somatic DNA mutation shaping health in later life. It is already linked to blood cancer and heart attack. Knowing whether it raises heart-failure risk, and which mutated genes matter most, could make it a target for prevention. Clonal hematopoiesis is rare in young adults and becomes common in older ones, so it is one of the most direct ways that mutations acquired during life can raise disease risk. Heart failure affects millions of people, and new modifiable risk factors are valuable.",
+   "did": "Using whole-exome sequencing from the UK Biobank, the researchers studied 417,616 adults (mean age 56) with no heart failure, blood cancer, coronary disease, atrial fibrillation, type 2 diabetes or chronic kidney disease at the start. They looked for CHIP overall and by gene (DNMT3A, TET2, ASXL1, JAK2, DNA-damage-repair genes and spliceosome genes), followed participants for a median of 11 years, and tested how much of any link ran through those other diseases developing.",
+   "found": "7,183 people (1.7%) developed heart failure. Having CHIP was linked to a 27% higher risk (adjusted hazard ratio 1.27), and the effect was driven mainly by CHIP in genes other than DNMT3A (hazard ratio 1.52), including TET2, ASXL1, JAK2 and spliceosome genes. DNMT3A CHIP had a smaller link (hazard ratio 1.15). Developing coronary disease, atrial fibrillation, diabetes or kidney disease explained only about 28% of the link between non-DNMT3A CHIP and heart failure. The authors conclude that CHIP is a heart-failure risk factor and a potential target for treatment.",
+   "limits": "This is an observational study, so it shows an association rather than proof that CHIP causes heart failure. UK Biobank participants tend to be healthier than the general population and are mostly of European ancestry. Exome sequencing may miss small clones, and the abstract does not test any treatment.",
+   "terms": [
+    {
+     "term": "Clonal hematopoiesis (CHIP)",
+     "definition": "An age-related expansion of blood cells descended from one stem cell carrying an acquired, pre-leukaemic mutation."
+    },
+    {
+     "term": "Somatic mutation",
+     "definition": "A DNA change acquired during life in body cells, not inherited."
+    },
+    {
+     "term": "Whole-exome sequencing",
+     "definition": "Reading the protein-coding parts of all genes."
+    },
+    {
+     "term": "Mediation analysis",
+     "definition": "A method that estimates how much of a link passes through an intermediate factor."
+    },
+    {
+     "term": "DNMT3A / TET2",
+     "definition": "The two genes most often mutated in clonal hematopoiesis; both help control DNA methylation."
+    },
+    {
+     "term": "Hazard ratio",
+     "definition": "How much more often an event happens in one group than another over time; 1.27 means about 27% more often."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "plant-dna-methylation-decay",
+  "group": "landmark",
+  "impactRank": 9,
+  "impactScore": 11.4,
+  "title": "Aging drives a program of DNA methylation decay in plant organs",
+  "authors": [
+   "Dawei Dai",
+   "Ken Chen",
+   "Jingwen Tao",
+   "Ben P Williams"
+  ],
+  "authorsShort": "Dawei Dai, Ken Chen, Jingwen Tao … Ben P Williams",
+  "firstAuthor": "Dawei Dai",
+  "journal": "Science",
+  "pubDate": "2026-01-29",
+  "doi": "10.1126/science.adu2392",
+  "url": "https://doi.org/10.1126/science.adu2392",
+  "pmid": "41610255",
+  "pmcid": "PMC13035181",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13035181/pdf/nihms-2149404.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Aging plants lose DNA methylation in a programmed way, but stopping that loss did not stop physical aging, so the marks may track rather than cause aging.",
+  "signals": {
+   "citations": {
+    "openalex": 12,
+    "semanticScholar": 7,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Innovative Genomics Institute news",
+     "url": "https://innovativegenomics.org/news/how-a-tiny-plant-is-providing-surprising-new-insights-into-how-we-age/"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Changes in DNA methylation are a hallmark of aging in mammals and the basis of epigenetic clocks. A key open question is whether these changes cause aging or simply record it. This study tests that question in a plant, where genetics are easy to manipulate. Its answer, that methylation loss and physical aging can be separated, is an important caution for anyone treating clocks as the cause of aging rather than a readout of it. Plants are useful here because their DNA-methylation machinery can be knocked out in ways that would be lethal in mammals, letting researchers ask what happens to aging when the epigenetic changes are removed.",
+   "did": "The researchers studied the short-lived model plant Arabidopsis thaliana. They tracked DNA methylation and the activity of transposable elements in organs as they aged, lengthened or shortened the plants' lifespan to see whether epigenetic aging sped up or slowed down, examined the shoot apical meristem (the growing tip), and identified and disabled a gene-repression programme that switches off methylation maintenance during aging.",
+   "found": "Aging Arabidopsis organs lost epigenetic integrity: DNA methylation decayed and transposable elements became active. The rate of this epigenetic aging could be changed by lengthening or shortening the plant's lifespan, while the shoot tips were protected from it. A programme of transcriptional repression turned down the systems that maintain DNA methylation during aging. Mutant plants lacking this programme showed no epigenetic decay at all, yet their physical aging was unaffected.",
+   "limits": "Plants differ from animals in many ways, including how they grow and how their methylation systems work, so the results do not transfer directly to humans. The study uses one model species. The abstract shows that methylation decay can be uncoupled from physical aging in this plant; it does not settle the question for mammals. It also does not mean epigenetic clocks are useless in people: a marker can predict outcomes well even if it is not a cause, as the human clock studies in this list show.",
+   "terms": [
+    {
+     "term": "Arabidopsis thaliana",
+     "definition": "A small, fast-growing weed used as the standard model plant in genetics."
+    },
+    {
+     "term": "Transposable element",
+     "definition": "A stretch of DNA that can copy or move itself around the genome; normally kept silent by methylation."
+    },
+    {
+     "term": "Shoot apical meristem",
+     "definition": "The growing tip of a plant, containing stem cells that make new organs."
+    },
+    {
+     "term": "Epigenetic integrity",
+     "definition": "Keeping the normal pattern of DNA methylation and other marks intact."
+    },
+    {
+     "term": "Transcriptional repression",
+     "definition": "Switching genes off at the stage where they are read into RNA."
+    },
+    {
+     "term": "DNA methylation maintenance",
+     "definition": "The system that copies methylation marks onto new DNA so the pattern is kept."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "inherited-resilience-clonal-hematopoiesis",
+  "group": "landmark",
+  "impactRank": 10,
+  "impactScore": 11.34,
+  "title": "Inherited resilience to clonal hematopoiesis by modifying stem cell RNA regulation",
+  "authors": [
+   "Gaurav Agarwal",
+   "Mateusz Antoszewski",
+   "Xueqin Xie",
+   "Yash Pershad",
+   "Uma P Arora",
+   "Chi-Lam Poon",
+   "Peng Lyu",
+   "Andrew J Lee",
+   "Chun-Jie Guo",
+   "Tianyi Ye",
+   "Laila Barakat Norford",
+   "Anna-Lena Neehus",
+   "Lucrezia Della Volpe",
+   "Lara Wahlster",
+   "Diyanath Ranasinghe",
+   "Tzu-Chieh Ho",
+   "Trevor S Barlowe",
+   "Arthur Chow",
+   "Alexandra Schurer",
+   "James Taggart",
+   "Benjamin H Durham",
+   "Omar Abdel-Wahab",
+   "Kathy L McGraw",
+   "James M Allan",
+   "Ruslan Soldatov",
+   "Alexander G Bick",
+   "Michael G Kharas",
+   "Vijay G Sankaran"
+  ],
+  "authorsShort": "Gaurav Agarwal, Mateusz Antoszewski, Xueqin Xie … Vijay G Sankaran",
+  "firstAuthor": "Gaurav Agarwal",
+  "journal": "Science",
+  "pubDate": "2026-01-01",
+  "doi": "10.1126/science.adx4174",
+  "url": "https://doi.org/10.1126/science.adx4174",
+  "pmid": "41477881",
+  "pmcid": "PMC12850507",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://doi.org/10.1101/2025.03.24.645017",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "A common inherited DNA variant slows the growth of mutated blood-stem-cell clones and protects against blood cancers, via the protein MSI2.",
+  "signals": {
+   "citations": {
+    "openalex": 8,
+    "semanticScholar": 5,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Medical Xpress",
+     "url": "https://medicalxpress.com/news/2026-01-rare-genetic-variant-people-blood.html"
+    },
+    {
+     "outlet": "GEN (Genetic Engineering & Biotechnology News)",
+     "url": "https://www.genengnews.com/topics/cancer/rare-inherited-genetic-variant-protects-against-blood-cancer-reduces-leukemia-risk/"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Almost everyone builds up mutated blood-stem-cell clones with age, but in some people they expand quickly and lead to blood cancer, while in others they stay small. Finding the genes that make some people resilient points to ways to slow this age-related process in everyone. This study traces one protective variant all the way from population genetics to a mechanism in stem cells. Studying people who are naturally protected has found drug targets before; for example, people born with low levels of the protein PCSK9 helped lead to cholesterol-lowering drugs. This study applies the same logic to the aging blood system.",
+   "did": "The researchers searched for inherited variants linked to protection from clonal hematopoiesis and myeloid blood cancers. They identified a non-coding regulatory variant, rs17834140-T, modelled its effects, and mapped which RNAs the protein MSI2 binds in human blood stem cells. They then tested how MSI2 levels affected the growth of stem cells carrying ASXL1 mutations and how the variant related to clone growth over time.",
+   "found": "The variant rs17834140-T protected against clonal hematopoiesis and myeloid cancers by selectively lowering the RNA-binding protein MSI2 in blood stem cells. Mapping MSI2's targets revealed an RNA network that keeps human blood stem cells going and influences clonal hematopoiesis risk. Carriers of the variant had slower clone expansion, and the level of MSI2 in stem cells changed how dominant ASXL1-mutant clones became. The authors suggest that blocking MSI2 or its targets could be a rational way to prevent blood cancer.",
+   "limits": "The protective effect is linked to one variant in one gene and mainly to myeloid blood cancers. The abstract does not test an MSI2-blocking drug in people, and lowering MSI2 might affect normal blood-cell production. The clone-growth analyses come from population data, which can be affected by other factors. Carrying or not carrying the variant is not something a person can change, so the practical value lies in the biology it reveals, not in personal testing. Any preventive drug based on it would still need to be developed and tested for safety.",
+   "terms": [
+    {
+     "term": "Clonal hematopoiesis",
+     "definition": "Expansion of blood cells descended from one mutated stem cell, common with age."
+    },
+    {
+     "term": "Hematopoietic stem cell (HSC)",
+     "definition": "The bone-marrow stem cell that produces all blood cells."
+    },
+    {
+     "term": "Non-coding variant",
+     "definition": "An inherited DNA difference outside a protein-coding gene that changes how much of the protein is made."
+    },
+    {
+     "term": "RNA-binding protein",
+     "definition": "A protein that controls which messenger RNAs are used, kept or destroyed."
+    },
+    {
+     "term": "Myeloid malignancy",
+     "definition": "Cancers of the myeloid blood-cell line, such as acute myeloid leukaemia."
+    },
+    {
+     "term": "ASXL1",
+     "definition": "A gene often mutated in clonal hematopoiesis and myeloid cancers."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "loss-of-y-chromosome-heart-attack",
+  "group": "landmark",
+  "impactRank": 11,
+  "impactScore": 11.17,
+  "title": "Loss of Y Chromosome and Major Cardiovascular Events in a Prospective Study of Older Men",
+  "authors": [
+   "Sultana Monira Hussain",
+   "Josefin Bjurling",
+   "Chenglong Yu",
+   "Andrew M Tonkin",
+   "Christopher M Reid",
+   "Cammie Tran",
+   "Peter Fransquet",
+   "Jonatan Halvardson",
+   "David Curtis",
+   "Zoe McQuilten",
+   "Lawrence J Beilin",
+   "Lars A Forsberg",
+   "John J McNeil",
+   "Paul Lacaze"
+  ],
+  "authorsShort": "Sultana Monira Hussain, Josefin Bjurling, Chenglong Yu … Paul Lacaze",
+  "firstAuthor": "Sultana Monira Hussain",
+  "journal": "Journal of the American College of Cardiology",
+  "pubDate": "2026-01-01",
+  "doi": "10.1016/j.jacc.2025.10.069",
+  "url": "https://doi.org/10.1016/j.jacc.2025.10.069",
+  "pmid": "41498476",
+  "pmcid": "PMC13634924",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13634924/pdf/nihms-2204613.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Healthy older men whose blood cells have lost the Y chromosome had a higher risk of heart attack, but not of stroke.",
+  "signals": {
+   "citations": {
+    "openalex": 11,
+    "semanticScholar": 9,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Technology Networks",
+     "url": "https://www.technologynetworks.com/genomics/news/age-related-loss-of-y-chromosome-in-mens-blood-cells-may-raise-heart-attack-risk-410960"
+    },
+    {
+     "outlet": "EMJ",
+     "url": "https://www.emjreviews.com/cardiology/news/loss-of-y-chromosome-linked-to-cardiovascular-risk/"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 2
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Losing the Y chromosome from some blood cells is the most common acquired chromosome change in men and rises steeply with age. It is a large-scale form of somatic genomic instability. Earlier studies linked it to heart disease, but mostly in men who were already ill. This study follows healthy older men forward in time, which makes the link more convincing. Because loss of Y can be measured from standard genetic data, it could become an easy marker of how much somatic genomic damage a man has built up.",
+   "did": "The researchers studied 5,131 men aged 65 or older from the ASPREE trial who had no cardiovascular disease at the start. They measured the percentage of blood cells missing the Y chromosome using microarrays and recorded heart attacks and ischaemic strokes during the trial and afterwards. They analysed loss of Y both as a continuous measure and in groups (none, moderate, substantial), and checked the result in 191,340 men aged 40 to 70 in the UK Biobank.",
+   "found": "Over a median of 8.4 years, 9.8% of the men had a major cardiovascular event: 5% had a heart attack and 4% an ischaemic stroke. Each standard-deviation increase in loss of Y was linked to a 14% higher risk of heart attack (hazard ratio 1.14). Men with substantial loss (the top tenth) had a 68% higher heart-attack risk than men with none. No link was seen with stroke, and the results held up in sensitivity analyses. In the UK Biobank, loss of Y was also linked to heart attack, more weakly (hazard ratio 1.03 per standard deviation).",
+   "limits": "This is an observational study, so it cannot prove that losing the Y chromosome causes heart attacks. The ASPREE men were healthy volunteers and may not represent all older men. The effect in the younger UK Biobank men was much smaller, and the abstract does not explain the mechanism.",
+   "terms": [
+    {
+     "term": "Loss of Y (LOY)",
+     "definition": "Some blood cells losing the Y chromosome during life, common in older men."
+    },
+    {
+     "term": "Somatic mosaicism",
+     "definition": "Different cells in one body carrying different DNA."
+    },
+    {
+     "term": "Major adverse cardiovascular event (MACE)",
+     "definition": "A combined outcome including heart attack and stroke."
+    },
+    {
+     "term": "Microarray",
+     "definition": "A chip that measures DNA at many points at once."
+    },
+    {
+     "term": "Prospective study",
+     "definition": "A study that follows people forward from a starting point."
+    },
+    {
+     "term": "Standard deviation",
+     "definition": "A measure of spread; one standard deviation is a typical step up or down from the average."
+    },
+    {
+     "term": "Ischaemic stroke",
+     "definition": "A stroke caused by a blocked artery in the brain."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "cgas-knockout-mice-premature-aging",
+  "group": "landmark",
+  "impactRank": 12,
+  "impactScore": 10.61,
+  "title": "cGAS-deficient mice display premature aging associated with derepression of LINE1 elements and inflammation",
+  "authors": [
+   "John C Martinez",
+   "Francesco Morandini",
+   "Cheyenne Rechsteiner",
+   "Lucinda Fitzgibbons",
+   "Natasha Sieczkiewicz",
+   "Xiaoyan Liao",
+   "Weijie He",
+   "Sung Jae Bae",
+   "Michael E Meadow",
+   "Eric Hillpot",
+   "Joseph Cutting",
+   "Victoria Paige",
+   "Max Zacher",
+   "Seyed Ali Biashad",
+   "Matthew Simon",
+   "Ines Meula-Zarzuela",
+   "Mario D Cordero",
+   "Martin S Taylor",
+   "John M Sedivy",
+   "Andrei Seluanov",
+   "Vera Gorbunova"
+  ],
+  "authorsShort": "John C Martinez, Francesco Morandini, Cheyenne Rechsteiner … Vera Gorbunova",
+  "firstAuthor": "John C Martinez",
+  "journal": "Nature Aging",
+  "pubDate": "2026-08-25",
+  "doi": "10.1038/s43587-026-01206-y",
+  "url": "https://doi.org/10.1038/s43587-026-01206-y",
+  "pmid": "42642519",
+  "pmcid": "PMC13577900",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://www.nature.com/articles/s43587-026-01206-y.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Removing the DNA sensor cGAS, expected to reduce age-related inflammation, instead made mice age faster by loosening control of 'jumping genes'.",
+  "signals": {
+   "citations": {
+    "openalex": 13,
+    "semanticScholar": 2,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "University of Rochester press release",
+     "url": "https://www.rochester.edu/newscenter/protein-cgas-sting-pathway-inflammation-aging-718912/"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 2
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "cGAS is the sensor that detects stray DNA in cells and triggers inflammation, and it is blamed for part of inflammaging. Drugs that block the cGAS-STING pathway are being developed as anti-aging treatments. This study found the opposite of what many expected, which matters for anyone hoping to slow aging by switching this pathway off. About a sixth of the human genome is made of LINE1 copies, and keeping them silent is part of keeping the genome stable. When they wake up, their DNA copies can look like a viral infection to the cell.",
+   "did": "The researchers followed cGAS-knockout mice through life and compared their aging, lifespan and frailty with normal mice. They measured activity and DNA methylation of LINE1 retrotransposons, levels of LINE1 DNA in the cytoplasm, the layout of the repressive chromatin mark H3K9me3, and chromatin openness. They repeated key tests by knocking cGAS down in cultured cells.",
+   "found": "Unexpectedly, mice lacking cGAS aged faster, with inflammation in several organs, a shorter median lifespan and more frailty. LINE1 elements were more active and less methylated, and their cells contained high levels of cytoplasmic LINE1 DNA that triggered inflammation; knocking cGAS down in cells reproduced this. The cells also showed a flattened H3K9me3 landscape and more open chromatin. The authors conclude that cGAS helps keep heterochromatin organised inside the nucleus, separately from its job as a DNA sensor and its enzyme activity, which has implications for anti-aging strategies aimed at this pathway.",
+   "limits": "The work is in mice that lack cGAS from birth, which is different from blocking it with a drug in adulthood. The abstract does not show the same nuclear role in humans. The abstract does not say which sensor detects the LINE1 DNA and triggers the inflammation when cGAS is missing. The result does not show that cGAS-STING blockers are harmful in people; it shows that removing cGAS entirely has effects beyond DNA sensing, which future drug studies will need to check.",
+   "terms": [
+    {
+     "term": "cGAS",
+     "definition": "An enzyme that senses DNA in the cytoplasm and starts an immune response through STING."
+    },
+    {
+     "term": "LINE1",
+     "definition": "The main active 'jumping gene' (retrotransposon) in mammals; it copies itself via RNA and DNA."
+    },
+    {
+     "term": "Heterochromatin",
+     "definition": "Tightly packed, silenced regions of the genome."
+    },
+    {
+     "term": "H3K9me3",
+     "definition": "A chemical mark on histone proteins that keeps heterochromatin silent."
+    },
+    {
+     "term": "Inflammaging",
+     "definition": "Chronic, low-grade inflammation that rises with age."
+    },
+    {
+     "term": "Retrotransposon",
+     "definition": "A jumping gene that copies itself through an RNA step before inserting the copy back into the genome."
+    },
+    {
+     "term": "Frailty",
+     "definition": "A loss of strength and reserve with age, measured by scoring many small health deficits."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "mtdna-mutations-blood-aging",
+  "group": "landmark",
+  "impactRank": 13,
+  "impactScore": 10.4,
+  "title": "Mechanism of age-related accumulation of mtDNA mutations in human blood",
+  "authors": [
+   "Rahul Gupta",
+   "Timothy J Durham",
+   "Grant Chau",
+   "Masahiro Kanai",
+   "Md Mesbah Uddin",
+   "Wenhan Lu",
+   "M Austin Argentieri",
+   "Konrad J Karczewski",
+   "Daniel Howrigan",
+   "Pradeep Natarajan",
+   "Wei Zhou",
+   "Benjamin M Neale",
+   "Vamsi K Mootha"
+  ],
+  "authorsShort": "Rahul Gupta, Timothy J Durham, Grant Chau … Vamsi K Mootha",
+  "firstAuthor": "Rahul Gupta",
+  "journal": "Nature",
+  "pubDate": "2026-05-27",
+  "doi": "10.1038/s41586-026-10569-6",
+  "url": "https://doi.org/10.1038/s41586-026-10569-6",
+  "pmid": "42203880",
+  "pmcid": "PMC13441879",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://doi.org/10.1038/s41586-026-10569-6",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Mitochondrial DNA mutations that rise with age in blood come mostly from copying errors made visible by expanding blood-cell clones, not from oxidative damage.",
+  "signals": {
+   "citations": {
+    "openalex": 12,
+    "semanticScholar": 11,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Mutations in mitochondrial DNA (mtDNA) build up with age and have long been blamed on oxidative damage from the mitochondria themselves, a cornerstone of the free-radical theory of aging. This study tests that explanation in about 750,000 people, and its answer challenges a common assumption. It also ties together three signs of aging that had been studied separately. Each cell holds hundreds to thousands of mtDNA copies, which copy themselves far more often than nuclear DNA, so even a small error rate per copy adds up.",
+   "did": "The researchers used whole-genome sequences from blood of about 750,000 people in the UK Biobank and All of Us. They called mtDNA sequence, mtDNA amount and heteroplasmic variants (mutations present in only some copies), studied the mutation spectrum and signs of selection, and ran genome-wide and rare-variant searches for inherited factors linked to a person's mtDNA mutation burden.",
+   "found": "Mitochondrial single-letter mutations rose sharply at about age 60, were present at low levels, showed little sign of positive selection and appear mostly neutral. Their pattern did not look like oxidative damage, as is often claimed, but fitted errors made when mtDNA is copied. The genome-wide search found inherited variants near TERT, TCL1A and SMC4, all linked to clonal hematopoiesis, and rare-variant analysis linked high mutation burden to mutations in many clonal-hematopoiesis driver genes. These links held even after excluding people with known driver mutations. The authors propose that mtDNA mutations arise randomly as copying errors, stay hidden in bulk blood, and only become detectable when blood-cell clones expand with age. They suggest mtDNA could be a sensitive blood marker of clonal mosaicism, unifying TERT variants, clonal hematopoiesis and mtDNA mutation build-up.",
+   "limits": "The study is of blood only, so it does not show that the same explanation applies in muscle, brain or other tissues where mtDNA mutations may matter more. Mutation spectra point to a likely cause but do not prove it. The authors note further limitations in the full paper. The finding does not mean oxidative damage plays no role in aging; it means that, for these blood mtDNA mutations, the evidence points to copying errors instead.",
+   "terms": [
+    {
+     "term": "Mitochondrial DNA (mtDNA)",
+     "definition": "The small, separate genome inside mitochondria, present in many copies per cell."
+    },
+    {
+     "term": "Heteroplasmy",
+     "definition": "A mix of normal and mutated mtDNA copies in the same cell or person."
+    },
+    {
+     "term": "Mutational spectrum",
+     "definition": "The pattern of letter changes, which can hint at what caused the mutations."
+    },
+    {
+     "term": "Clonal hematopoiesis",
+     "definition": "Expansion of blood cells descended from one stem cell."
+    },
+    {
+     "term": "TERT",
+     "definition": "The gene for the enzyme part of telomerase, which maintains chromosome ends."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "somatic-mutations-microglia-ageing",
+  "group": "landmark",
+  "impactRank": 14,
+  "impactScore": 10.17,
+  "title": "Somatic mutations reveal the ontogeny of microglia in human ageing",
+  "authors": [
+   "Julia A Belk",
+   "Yaowen Zhang",
+   "Emily E Reilly",
+   "Quanming Shi",
+   "Daniel Dan Liu",
+   "Nicole Womack-Gambrel",
+   "Maarten van der Linde",
+   "Lisa Ma",
+   "Debasmita Paul",
+   "Alejandro Medina Enciso",
+   "Raja Kalluru",
+   "Jacob Weiss",
+   "Rui Li",
+   "Anna E Eastman",
+   "Chunfang Zhu",
+   "Arnav Chakravarthy",
+   "Syed Bukhari",
+   "Dipabarna Bhattacharya",
+   "Suyash Raj",
+   "Daniel Richard",
+   "Simone Brioschi",
+   "Matthew R Chrostek",
+   "Daniel C Nachun",
+   "Christopher M Arends",
+   "Jayakrishnan Gopakumar",
+   "Isak W Tengesdal",
+   "Ademar Bynum",
+   "Shaneice Mitchell",
+   "Katalin Sandor",
+   "Wenxi Zhang",
+   "Badri N Vardarajan",
+   "Inma Cobos",
+   "Donald E Born",
+   "Robert B West",
+   "Anne Brunet",
+   "Marco Colonna",
+   "Krishna L Bharani",
+   "Hannes Vogel",
+   "Thomas J Montine",
+   "Caitlin S Latimer",
+   "Irving L Weissman",
+   "Magdalena Matusiak",
+   "Jody E Hooper",
+   "C Dirk Keene",
+   "Howard Y Chang",
+   "Siddhartha Jaiswal"
+  ],
+  "authorsShort": "Julia A Belk, Yaowen Zhang, Emily E Reilly … Siddhartha Jaiswal",
+  "firstAuthor": "Julia A Belk",
+  "journal": "Nature",
+  "pubDate": "2026-07-30",
+  "doi": "10.1038/s41586-026-10939-0",
+  "url": "https://doi.org/10.1038/s41586-026-10939-0",
+  "pmid": "42686898",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "closed",
+   "isOpen": false,
+   "url": null,
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Using somatic mutations as natural barcodes, researchers found bone-marrow-derived cells joining the brain's microglia in every older person they studied.",
+  "signals": {
+   "citations": {
+    "openalex": 5,
+    "semanticScholar": 4,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "NIH Research Matters",
+     "url": "https://www.nih.gov/news-events/nih-research-matters/immune-cells-cross-blood-brain-barrier-during-human-aging"
+    },
+    {
+     "outlet": "Nature News & Views",
+     "url": "https://doi.org/10.1038/d41586-026-02694-z"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Every cell picks up a few unique DNA mutations as it divides, so cells that share mutations must share an ancestor. This study uses that natural record of somatic mutation to answer a basic question about the aging brain: are its immune cells replaced from the blood over time? The answer changes how we think about brain aging and about links between blood-cell clones and Alzheimer's disease. Microglia clear debris, prune connections between neurons and respond to injury, so where they come from matters for brain health. The finding also shows how somatic mutations, usually discussed as harmful, can be used as a research tool.",
+   "did": "The researchers developed a way to use the set of somatic mutations that marks each clone of cells to track bone-marrow-derived cells entering the human brain. They applied it to brain tissue from 20 older people, used single-cell analysis and lineage tracing with mitochondrial DNA variants to characterise the incoming cells, and analysed human cohort data on clonal hematopoiesis and Alzheimer's disease.",
+   "found": "In mice, microglia settle in the brain before birth and largely maintain themselves. In humans, the team found evidence of bone-marrow-derived cells entering the brain in all 20 older people examined. Single-cell analyses showed that these incoming cells resemble microglia and can make up a large fraction of the microglial pool. Cohort data showed a protective association between most types of clonal hematopoiesis and Alzheimer's disease. The authors conclude that an influx of myeloid cells into the healthy human brain is widespread, contributes to microglia, and becomes common with aging.",
+   "limits": "The brain study involved only 20 people, all older, so it cannot show when the influx starts. The Alzheimer's finding is an association in cohort data and does not prove that blood-derived microglia protect the brain. Only the abstract was available to us; the full text is behind a paywall. It also cannot say whether the incoming cells behave exactly like the original microglia over the long term.",
+   "terms": [
+    {
+     "term": "Somatic mutation",
+     "definition": "A DNA change acquired during life; shared mutations mark cells from the same ancestor."
+    },
+    {
+     "term": "Microglia",
+     "definition": "The brain's resident immune cells."
+    },
+    {
+     "term": "Lineage tracing",
+     "definition": "Following which cells descend from which ancestors."
+    },
+    {
+     "term": "Myeloid cells",
+     "definition": "A family of white blood cells that includes monocytes and macrophages."
+    },
+    {
+     "term": "Clonal hematopoiesis",
+     "definition": "Expansion of blood cells descended from one mutated stem cell."
+    },
+    {
+     "term": "Bone marrow",
+     "definition": "The tissue inside bones where blood stem cells make new blood cells."
+    },
+    {
+     "term": "Alzheimer's disease",
+     "definition": "The most common cause of dementia, marked by plaques and tangles in the brain."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "caloric-restriction-somatic-mutation",
+  "group": "landmark",
+  "impactRank": 15,
+  "impactScore": 8.0,
+  "title": "Caloric restriction modulates genome-wide somatic mutation in mice",
+  "authors": [
+   "Marta Grońska-Pęski",
+   "Victoria Acosta-Rodríguez",
+   "Amoolya Srinivasa",
+   "Amanda Garrido",
+   "Shany Picciotto",
+   "Carla B Green",
+   "Joseph S Takahashi",
+   "Jonathan E Shoag",
+   "Gilad D Evrony"
+  ],
+  "authorsShort": "Marta Grońska-Pęski, Victoria Acosta-Rodríguez, Amoolya Srinivasa … Gilad D Evrony",
+  "firstAuthor": "Marta Grońska-Pęski",
+  "journal": "Cell",
+  "pubDate": "2026-09-09",
+  "doi": "10.1016/j.cell.2026.08.013",
+  "url": "https://doi.org/10.1016/j.cell.2026.08.013",
+  "pmid": "42716011",
+  "pmcid": "PMC13559707",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13559707/pdf/nihms-2204604.pdf",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Eating less slowed the build-up of DNA mutations across several tissues in mice, making genome integrity a modifiable part of aging.",
+  "signals": {
+   "citations": {
+    "openalex": 1,
+    "semanticScholar": 1,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "NYU Langone News",
+     "url": "https://nyulangone.org/news/feeding-mice-fewer-calories-reduces-dna-mutations"
+    },
+    {
+     "outlet": "University Hospitals news",
+     "url": "https://news.uhhospitals.org/news-releases/articles/2026/08/uh-researchers-on-team-that-finds-feeding-mice-fewer-calories-reduces-dna-mutations"
+    },
+    {
+     "outlet": "Nature Genetics research highlight",
+     "url": "https://www.nature.com/articles/s41588-026-02803-8"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Somatic mutations accumulate in every cell throughout life, and this genomic instability is one of the hallmarks of aging. Caloric restriction extends lifespan in many species, but whether it slows mutation build-up was unclear. This study links diet directly to the integrity of DNA, a central theme for a nutrition course. Most of what we know about mutations and diet comes from cancer research. Measuring how a diet changes the normal, slow build-up of mutations in healthy tissue only became possible with very accurate sequencing methods, so studies like this are new.",
+   "did": "The researchers put mice on caloric restriction and used high-fidelity duplex DNA sequencing, a method accurate enough to count rare mutations, on bulk liver, bulk kidney, isolated liver cells (hepatocytes) and cerebellar neurons. They compared mutation burdens, the types of mutation, and where in the genome mutations fell.",
+   "found": "Caloric restriction reduced genome-wide somatic mutation burden across several tissues and cell types. It reduced both single-letter substitutions and small insertions and deletions, by amounts that varied between sample types. It also lowered the activity of SBS5, a mutational process of unknown cause that produces most mutations in mammals. Surprisingly, the reduction was greatest in parts of the genome that are not being actively read. The authors conclude that the work links diet, aging and genome integrity and establishes genome integrity as a modifiable axis of aging.",
+   "limits": "This is a mouse study, and the abstract does not give the strength of restriction, the ages, or the sexes studied, so it cannot tell us what level of eating would matter for people. Fewer mutations does not by itself show that the mutations were driving aging in these mice. Long-term caloric restriction is hard for people to sustain and is not risk-free. The study also cannot say whether the same benefit would come from other eating patterns, such as time-restricted eating, or from a change in diet quality rather than quantity.",
+   "terms": [
+    {
+     "term": "Caloric restriction",
+     "definition": "Eating fewer calories than usual without malnutrition."
+    },
+    {
+     "term": "Duplex sequencing",
+     "definition": "A very accurate DNA sequencing method that checks both strands of each molecule to count rare mutations."
+    },
+    {
+     "term": "SBS5",
+     "definition": "A common, clock-like mutational signature whose cause is not known."
+    },
+    {
+     "term": "Indel",
+     "definition": "A small insertion or deletion of DNA letters."
+    },
+    {
+     "term": "Genomic instability",
+     "definition": "The tendency of the genome to gather mutations and damage; a hallmark of aging."
+    },
+    {
+     "term": "Mutational signature",
+     "definition": "A typical pattern of DNA letter changes left by a particular cause, numbered like SBS1 or SBS5."
+    },
+    {
+     "term": "Hepatocyte",
+     "definition": "The main working cell of the liver."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "dogs-epigenetic-aging-transposons",
+  "group": "landmark",
+  "impactRank": 16,
+  "impactScore": 7.0,
+  "title": "Epigenetic aging and transposon dysregulation reflect size-related lifespan compression in dogs",
+  "authors": [
+   "Blaise L Mariner",
+   "Brianah M McCoy",
+   "Ashlee Greenier",
+   "Layla Brassington",
+   "Elizabeth Slikas",
+   "Christine Adjangba",
+   "Claire Cheng",
+   "Abbey Marye",
+   "Benjamin R Harrison",
+   "Tal Bamberger",
+   "Yadid Algavi",
+   "Efrat Muller",
+   "Adam Harris",
+   "Emily Rout",
+   "Cindy Reichel",
+   "Vista Sohrab",
+   "Dog Aging Project Consortium‡",
+   "Elinor Karlsson",
+   "Joshua M Akey",
+   "Anne C Avery",
+   "Elhanan Borenstein",
+   "Daniel E L Promislow",
+   "Noah Snyder-Mackler",
+   "Joshua M Akey",
+   "Rozalyn M Anderson",
+   "Elhanan Borenstein",
+   "Marta G Castelhano",
+   "Amanda E Coleman",
+   "Kate E Creevy",
+   "Matthew D Dunbar",
+   "Virginia R Fajt",
+   "Jessica M Hoffman",
+   "Erica C Jonlin",
+   "Matt Kaeberlein",
+   "Elinor K Karlsson",
+   "Kathleen F Kerr",
+   "Jing Ma",
+   "Evan L MacLean",
+   "Stephanie McGrath",
+   "Natasha J Olby",
+   "Daniel E L Promislow",
+   "May J Reed",
+   "Audrey Ruple",
+   "Stephen M Schwartz",
+   "Sandi Shrager",
+   "Noah Snyder-Mackler",
+   "M Katherine Tolbert"
+  ],
+  "authorsShort": "Blaise L Mariner, Brianah M McCoy, Ashlee Greenier … M Katherine Tolbert",
+  "firstAuthor": "Blaise L Mariner",
+  "journal": "Science",
+  "pubDate": "2026-10-08",
+  "doi": "10.1126/science.aeb2986",
+  "url": "https://doi.org/10.1126/science.aeb2986",
+  "pmid": "42848887",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "closed",
+   "isOpen": false,
+   "url": null,
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Big dogs and male dogs age faster at the DNA-methylation level, and in big dogs the change centres on 'jumping genes'.",
+  "signals": {
+   "citations": {
+    "openalex": 1,
+    "semanticScholar": 1,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Nature News",
+     "url": "https://www.nature.com/articles/d41586-026-03199-5"
+    },
+    {
+     "outlet": "Live Science",
+     "url": "https://www.livescience.com/animals/dogs/big-dogs-age-faster-at-an-epigenetic-level-new-study-finds"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Small dog breeds can live twice as long as giant breeds, which makes dogs a natural experiment in why lifespan differs within one species. This study asks whether that difference shows up in the rate of molecular aging, and where in the genome. It points to transposable elements, parts of the genome normally kept silent by methylation, as possible links between body size and lifespan. Dogs share our homes, much of our environment and many of our diseases, while living much shorter lives, so they are a useful bridge between lab animals and people.",
+   "did": "The researchers analysed 1,640 methylomes from 894 dogs, built an epigenetic clock, and tested whether it predicted death. They compared age-related methylation at dog versions of human age-associated genes and looked at how body size and sex changed the pace and pattern of epigenetic aging.",
+   "found": "The dog clock predicted mortality and showed that epigenetic aging is fastest early in life. At genes matching human age-associated genes, dogs showed similar age effects on promoter methylation, highlighting shared remodelling of immune pathways. Larger dogs and male dogs, which live shorter lives, showed faster molecular aging. Different parts of the genome carried these effects: sex-related changes were concentrated on the X chromosome, while size-related changes were especially strong at transposable elements. The authors conclude that epigenetics reflects lifespan differences in dogs and identify transposable elements as possible mediators of the size effect.",
+   "limits": "The study shows associations between size, methylation and lifespan; it does not prove that transposable-element changes shorten life. Results in dogs may not carry over to people. Only the abstract was available to us; the full text is behind a paywall. Size and sex are tied up with many other differences between dogs, such as breed history, growth rate and neutering, which an observational study cannot fully separate. The findings describe groups of dogs, not individual animals.",
+   "terms": [
+    {
+     "term": "Methylome",
+     "definition": "A map of DNA methylation across the genome."
+    },
+    {
+     "term": "Transposable element",
+     "definition": "A stretch of DNA that can copy or move itself; normally silenced by methylation."
+    },
+    {
+     "term": "Promoter",
+     "definition": "The DNA region at the start of a gene that controls whether it is switched on."
+    },
+    {
+     "term": "Epigenetic clock",
+     "definition": "A formula that turns DNA methylation into an estimate of biological age."
+    },
+    {
+     "term": "Ortholog",
+     "definition": "The version of the same gene in another species."
+    },
+    {
+     "term": "X chromosome",
+     "definition": "A sex chromosome; females have two copies and males one."
+    },
+    {
+     "term": "Mortality prediction",
+     "definition": "Testing whether a measure can forecast who dies sooner during follow-up."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "myotis-bat-genomes-longevity",
+  "group": "landmark",
+  "impactRank": 17,
+  "impactScore": 5.0,
+  "title": "Insights into longevity and virus-driven adaptation from Myotis bat genomes",
+  "authors": [
+   "Juan M Vazquez",
+   "M Elise Lauterbur",
+   "Saba Mottaghinia",
+   "Léa Gaucherand",
+   "Sarah Maesen",
+   "Michael Singer",
+   "Sarah Villa",
+   "Melanie Bucci",
+   "Devaughn Fraser",
+   "Genavieve Gray-Sandoval",
+   "Zeinab R Haidar",
+   "Melissa Han",
+   "William Kohler",
+   "Tanya M Lama",
+   "Amandine Le Corf",
+   "Clara Loyer",
+   "Dakota McMillan",
+   "Stacy Li",
+   "Johnathan Lo",
+   "Carine Rey",
+   "Samantha L R Capel",
+   "Kathleen Slocum",
+   "Melissa Sui",
+   "William Thomas",
+   "Janet Debelak Tyburec",
+   "Rachel Brem",
+   "Richard Miller",
+   "Michael Buchalski",
+   "Jose Pablo Vazquez-Medina",
+   "Sébastien Pfeffer",
+   "Lucie Etienne",
+   "David Enard",
+   "Peter H Sudmant"
+  ],
+  "authorsShort": "Juan M Vazquez, M Elise Lauterbur, Saba Mottaghinia … Peter H Sudmant",
+  "firstAuthor": "Juan M Vazquez",
+  "journal": "Nature",
+  "pubDate": "2026-08-26",
+  "doi": "10.1038/s41586-026-10932-7",
+  "url": "https://doi.org/10.1038/s41586-026-10932-7",
+  "pmid": "42649300",
+  "pmcid": "PMC13626957",
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://doi.org/10.1038/s41586-026-10932-7",
+   "source": "OpenAlex open_access field"
+  },
+  "whyItMatters": "Near-complete genomes of eight bat species link their long lives to adaptations in cancer pathways and an unusual response to DNA damage.",
+  "signals": {
+   "citations": {
+    "openalex": 0,
+    "semanticScholar": 1,
+    "source": "OpenAlex works API cited_by_count and Semantic Scholar Graph API citationCount, fetched 2026-10-28"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": [
+    {
+     "outlet": "Penn State news",
+     "url": "https://www.psu.edu/news/research/story/secret-bats-longevity-linked-immune-response-viruses-and-cancer"
+    },
+    {
+     "outlet": "Berkeley News",
+     "url": "https://news.berkeley.edu/2026/08/26/clues-to-longevity-may-reside-in-the-genomes-of-long-lived-bats/"
+    }
+   ],
+   "newsSource": "web search 2026-10-28 (press releases, news outlets, journal news pieces)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Some small bats live far longer than expected for their size, and they also tolerate viruses unusually well. Comparing closely related bats with very different lifespans is a powerful way to find genes linked to long life. This study connects longevity, cancer resistance and DNA-damage responses in one group of mammals. Long-lived species are, in a sense, natural experiments that have already solved part of the aging problem, which is why comparative studies like this one, and the bowhead whale study above, look for repair and cancer-defence genes.",
+   "did": "The researchers generated cell lines and near-complete genome assemblies for eight closely related Myotis bat species. They ran genome-wide screens for positive selection, analysed structural variation such as gene duplications, and did experiments in primary cells, including tests of the DNA-damage response in the long-lived little brown bat, Myotis lucifugus.",
+   "found": "Bats showed different modes of adaptation to DNA and RNA viruses than other mammals: positive selection was over-represented in proteins that interact with DNA viruses, and copy-number changes were more common in proteins that interact with RNA viruses. The immune gene EIF2AK2 (PKR) had multiple ancient duplications shared across species. The repeated evolution of long life in Myotis was associated with positive selection in cancer pathways, and cells of the long-lived Myotis lucifugus showed a unique response to DNA damage. The authors suggest that bats' longevity and immunity are linked through adaptations to viruses and to aging-related disease.",
+   "limits": "Evolutionary signals show which genes changed, not exactly how those changes extend life. The DNA-damage experiments were done in cultured cells from one species. The abstract does not describe the DNA-damage response in detail or test whether it extends lifespan. Bats also differ from humans in body temperature, flight and hibernation, any of which could interact with these genes. The study points to candidate pathways for future testing rather than ready-made treatments.",
+   "terms": [
+    {
+     "term": "Positive selection",
+     "definition": "Evolution favouring changes in a gene because they help survival or reproduction."
+    },
+    {
+     "term": "Genome assembly",
+     "definition": "A reconstructed, ordered sequence of a species' DNA."
+    },
+    {
+     "term": "Copy-number variation",
+     "definition": "Differences in how many copies of a gene a genome carries."
+    },
+    {
+     "term": "DNA-damage response",
+     "definition": "The cell's system for detecting DNA damage and deciding whether to repair it, pause, or die."
+    },
+    {
+     "term": "Primary cells",
+     "definition": "Cells taken directly from an animal rather than a long-term lab line."
+    },
+    {
+     "term": "EIF2AK2 (PKR)",
+     "definition": "An immune protein that senses viral RNA and shuts down protein production in infected cells."
+    },
+    {
+     "term": "Structural variation",
+     "definition": "Large changes in the genome, such as duplicated or deleted genes."
+    }
+   ]
+  }
+ }
+]

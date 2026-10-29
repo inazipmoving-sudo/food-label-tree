@@ -34,15 +34,23 @@ def _course_card(c):
             f'<p class="cmeta">{nmod} module{'s'*(nmod!=1)} · {nles} lesson{'s'*(nles!=1)}</p>'+(f'<ol class="cmods">{ml}</ol>' if ml else '')
             +f'<a class="les" href="{c["href"]}">Open the course <span>{c["title"]} →</span></a></section>')
 _cards=''.join(_course_card(c) for c in COURSES)
+# --- Separate section (NOT a course): Peer-Reviewed Literature, built by gen/literature.py ---
+_LIT=('<h2 class="secl" id="reading">Reading room</h2>'
+      '<section class="mod course lit" id="literature" style="--a:var(--acc)"><div class="mh"><span class="mn">§</span><span class="ico"></span>'
+      '<h2><a href="literature/">Peer-Reviewed Literature</a></h2></div>'
+      '<p class="cdesc">Plain-language one-page reads of new research on DNA and aging: DNA damage and repair, somatic mutation, epigenetic clocks, telomeres and genome instability. Each read links to the original paper.</p>'
+      '<p class="cmeta">Not a course · Landmark papers of the past year · Latest papers</p>'
+      '<a class="les" href="literature/">Open the reading room <span>Peer-Reviewed Literature →</span></a></section>')
 _HOME_CSS=('<style>.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-variant:small-caps;font-size:clamp(1.05rem,2.2vw,1.25rem);letter-spacing:.12em;color:var(--muted)}.course .mn{font-variant-numeric:lining-nums}.course h2 a{text-decoration:none}.course h2 a:hover{color:var(--acc)}.cdesc{margin:10px 0 0 44px;line-height:1.6}'
            '.cmeta{margin:8px 0 0 44px;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}'
            '.cmods{list-style:none;margin:12px 0 0 44px;padding:0;display:flex;flex-wrap:wrap;gap:8px}.cmods li{border:1px solid var(--line);border-radius:4px;padding:4px 10px;font-size:.9rem;background:var(--bg)}'
            '.cmods li span{font-family:var(--serif);font-variant-numeric:lining-nums;color:var(--acc);margin-right:6px;font-size:1.05rem}'
+           '.secl{font-family:var(--serif);font-weight:500;font-size:1.5rem;margin:36px 0 10px;padding-top:18px;border-top:1px solid var(--hair);color:var(--muted)}'
            '@media(max-width:600px){.cdesc,.cmeta,.cmods{margin-left:0}}</style>')
 # A hash or query that isn't a home-page anchor belongs to the old root tree page: forward it to Module 5 with the same hash/query.
 _FWD=('<script>(function(){var h=location.hash.slice(1);try{h=decodeURIComponent(h)}catch(e){}'
       'if((h&&!document.getElementById(h))||location.search)location.replace("curriculum/food-label-tree.html"+location.search+location.hash)})()</script>')
 _home=page(f'{UNIVERSITY_NAME} · Course Catalog',f'<nav class="crumbs">Home</nav><h1 class="site">{brand_html()}</h1>'+(f'<p class="tagline">{TAGLINE}</p>' if TAGLINE else '')+'<p>Course catalog. Choose a course to start.</p>',
-           f'<main class="mods">{_cards}</main>',extra=_FWD,head=_HOME_CSS,brand=None)
+           f'<main class="mods">{_cards}{_LIT}</main>',extra=_FWD,head=_HOME_CSS,brand=None)
 open(os.path.join(ROOT,'index.html'),'w',encoding='utf-8').write(_home)
 print('home:',len(COURSES),'course(s); tree page: prev',_P,'next',_N)
