@@ -3,7 +3,7 @@
  "module": "macronutrients-carbohydrates",
  "title": "Module 1 · Carbohydrates",
  "lang": "en",
- "revision": 5,
+ "revision": 6,
  "idRevision": 3,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
@@ -280,7 +280,7 @@
      "id": "6.1",
      "seg": 1,
      "name": "Alpha Versus Beta",
-     "text": "Here are two glucoses joined two ways, at the same scale. Maltose has an alpha link, like starch. Cellobiose has a beta link, like cellulose. Same atoms, same formula; only the direction of one bond differs. Your enzymes fit the alpha shape and cut it, but no human enzyme can cut the beta link.",
+     "text": "Here are two glucoses joined two ways, at the same scale. Maltose has an alpha link, like starch. Cellobiose has a beta link, like cellulose. Same atoms, same formula; only the direction of one bond differs. Your enzymes fit the alpha shape and cut it, but no human enzyme can cut the beta link between two glucoses. Lactase only fits galactose’s beta link, in lactose.",
      "part": "ab",
      "cue": "Markers 1 and 2",
      "slug": "alpha-versus-beta"
