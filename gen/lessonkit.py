@@ -51,6 +51,7 @@ def _m3_corner(slug,name,d,taken,bw=1.45,bh=0.7):
         if any(x0-pad<=tx<=x0+w+pad and y0-pad<=ty<=y0+h+pad for tx,ty in taken): continue
         return c
     return 'ol'
+Z2_JS=_re.sub(r'/\*.*?\*/','',open(os.path.join(GEN,'zoom2d.js'),encoding='utf-8').read(),flags=_re.S).strip()
 M3_CSS=open(os.path.join(GEN,'mol3d.css'),encoding='utf-8').read().strip()
 def mol3d_assets():
     """CSS + the tiny toggle bootstrap; the viewer (assets/mol3d.js) is fetched only on the first 3D click"""
@@ -68,7 +69,25 @@ def mol3d_assets():
      'if(t.querySelector("[data-v=\'3d\']").getAttribute("aria-pressed")!=="true"||V.has(lm))return;'
      'V.set(lm,Mol3D.mount(lm,m,JSON.parse(lm.dataset.m3l||"[]")));lm.classList.add("m3on")}'
      'catch(err){console.warn(err);set(t,"2d")}finally{lm.classList.remove("m3busy")}}'
-     'else{const x=V.get(lm);if(x){x.destroy();V.delete(lm)}lm.classList.remove("m3on")}});})();</script>')
+     'else{const x=V.get(lm);if(x){x.destroy();V.delete(lm)}lm.classList.remove("m3on")}});})();</script>'
+     '<script>'+Z2_JS+'</script>')
+def m3_bits(slug,name,d,marks,capt,taken,M3):
+    """(data attributes, toggle HTML) for one drawing, or ('','') when it has no 3D model"""
+    if name not in M3: return '',''
+    labs=[[str(txt),key] for key,txt,*_ in marks if isinstance(key,str) and key in M3[name]]
+    return (f' data-m3d="mol3d/{slug}/{name}.json" data-m3n="{capt}" data-m3l="{_html.escape(json.dumps(labs,separators=(",",":")))}"',
+            f'<span class="m3t {_m3_corner(slug,name,d,taken)}" role="group" aria-label="View: {capt}">'
+            '<button type="button" class="m3b" data-v="2d" aria-pressed="true" aria-label="2D drawing">2D</button>'
+            '<button type="button" class="m3b" data-v="3d" aria-pressed="false" aria-label="3D model you can rotate">3D</button></span>')
+def m3_fill_lipids(html):
+    """lipids.py lmol() runs before this kit exists: it leaves \x00A:name\x00 / \x00T:name\x00 placeholders, filled here"""
+    M3=_m3_index('lipids')
+    def f(m):
+        r=LMREG[m.group(2)]; a,t=m3_bits('lipids',m.group(2),LM[m.group(2)],r['marks'],r['capt'],r['tk'],M3)
+        if a: m3_fill_lipids.used.add(m.group(2))
+        return a if m.group(1)=='A' else t
+    return _re.sub('\x00([AT]):([a-z0-9_]+)\x00',f,html)
+m3_fill_lipids.used=set()
 def mk_lmol(slug):
     D=json.load(open(os.path.join(GEN,'data',slug+'-mols.json'),encoding='utf-8'))
     M3=_m3_index(slug)
@@ -82,14 +101,8 @@ def mk_lmol(slug):
             _tk.append((x/100*w,y/100*h))
             mk+=f'<span class="mk{(" "+kind[0]) if kind else ""}" style="left:{x:.1f}%;top:{y:.1f}%">{txt}</span>'
         capt=_html.escape(_re.sub('<[^>]+>','',cap or alt))
-        m3a=m3t=''
-        if name in M3:  # 2D/3D toggle: same numbered labels in 3D for marker keys the model knows
-            lm.m3used.add(name)
-            labs=[[str(txt),key] for key,txt,*_ in marks if isinstance(key,str) and key in M3[name]]
-            m3a=f' data-m3d="mol3d/{slug}/{name}.json" data-m3n="{capt}" data-m3l="{_html.escape(json.dumps(labs,separators=(",",":")))}"'
-            m3t=(f'<span class="m3t {_m3_corner(slug,name,d,_tk)}" role="group" aria-label="View: {capt}">'
-                 '<button type="button" class="m3b" data-v="2d" aria-pressed="true" aria-label="2D drawing">2D</button>'
-                 '<button type="button" class="m3b" data-v="3d" aria-pressed="false" aria-label="3D model you can rotate">3D</button></span>')
+        m3a,m3t=m3_bits(slug,name,d,marks,capt,_tk,M3)
+        if m3a: lm.m3used.add(name)
         return (f'<div class="lm{(" "+cls) if cls else ""}" style="--u:{d["units"]};--hu:{d["hunits"]}"{f' data-part="{part}"' if part else ''}{m3a}>'
                 f'<button type="button" class="mz lmz" data-cap="{capt}" aria-label="Enlarge: {capt}"><img src="img/{slug}/{name}.png" width="{w}" height="{h}" alt="{_html.escape(alt)}" loading="{"eager" if eager else "lazy"}" decoding="async">{ZOOM}</button>{mk}{m3t}</div>')
     lm.D=D; lm.used=set(); lm.taken={}; lm.m3used=set(); return lm

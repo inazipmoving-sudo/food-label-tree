@@ -13,3 +13,7 @@
 .m3h{margin:4px 0 0;font:12px/1.35 var(--sans,system-ui,sans-serif);color:#6B6B6B;text-align:center}
 .lm.m3busy .m3b[data-v="3d"]{opacity:.6}
 @media(max-width:600px){.m3b{min-width:22px;height:18px;line-height:18px;font-size:10px;padding:0 4px}}
+/* 2D zoom (gen/zoom2d.js): one finger still scrolls the page until the drawing is zoomed */
+.lm>.mz{touch-action:pan-x pan-y}
+.lm.z2>.mz{touch-action:none;cursor:grab}
+.lm.z2>.zb{visibility:hidden}

@@ -1,0 +1,166 @@
+{
+"alanine": {
+"name": "L-alanine"
+},
+"valine": {
+"name": "L-valine"
+},
+"leucine": {
+"name": "L-leucine"
+},
+"isoleucine": {
+"name": "L-isoleucine"
+},
+"methionine": {
+"name": "L-methionine"
+},
+"phenylalanine": {
+"name": "L-phenylalanine"
+},
+"tryptophan": {
+"name": "L-tryptophan"
+},
+"serine": {
+"name": "L-serine"
+},
+"threonine": {
+"name": "L-threonine"
+},
+"cysteine": {
+"name": "L-cysteine"
+},
+"tyrosine": {
+"name": "L-tyrosine"
+},
+"asparagine": {
+"name": "L-asparagine"
+},
+"glutamine": {
+"name": "L-glutamine"
+},
+"aspartate": {
+"name": "L-aspartic acid"
+},
+"glutamate": {
+"name": "L-glutamic acid"
+},
+"lysine": {
+"name": "L-lysine"
+},
+"arginine": {
+"name": "L-arginine"
+},
+"histidine": {
+"name": "L-histidine"
+},
+"proline": {
+"name": "L-proline"
+},
+"macronutrients-protein/glyala": {
+"name": "glycyl-L-alanine"
+},
+"macronutrients-protein/glyalaser": {
+"name": "Gly-Ala-Ser"
+},
+"macronutrients-protein/heme_pocket": {
+"coords": "real atom positions from PDB 2DN1 (oxygenated human hemoglobin, alpha chain), hydrogens added (lessons/heme_scene.py)",
+"cid": 26945
+},
+"macronutrients-protein/heme_side": {
+"coords": "real atom positions from PDB 2DN1 (oxygenated human hemoglobin, alpha chain), hydrogens added (lessons/heme_scene.py)",
+"cid": 26945
+},
+"additives/monostearin": {
+"cid": 24699,
+"stereo_free": true,
+"note": "glyceryl monostearate is sold as the racemate; the 3D model shows one hand"
+},
+"bioactives/allicin": {
+"cid": 65036,
+"stereo_free": true,
+"note": "allicin from garlic is racemic at the sulfinyl S; the 3D model shows one hand"
+},
+"sucralose": {
+"name": "sucralose"
+},
+"glucoraphanin": {
+"cid": 9548634,
+"override_stereo": true,
+"stereo_free": true,
+"note": "sugar and C=N from PubChem CID 9548634 (the 2D SMILES had the C=N the other way, not visible in 2D); PubChem leaves the sulfinyl S open, so the 3D shows one hand there"
+},
+"sulforaphane": {
+"cid": 9577379
+},
+"cholesterol": {
+"name": "cholesterol"
+},
+"sitosterol": {
+"name": "beta-sitosterol"
+},
+"dhc7": {
+"name": "7-dehydrocholesterol"
+},
+"tocopherol": {
+"cid": 14985
+},
+"gtocopherol": {
+"name": "gamma-tocopherol"
+},
+"flavorings/glutamate": {
+"name": "L-glutamate(1-)",
+"override_stereo": true,
+"note": "the SMILES behind the 2D drawing carried a D tag (invisible in 2D); 3D uses natural L-glutamate"
+},
+"phosphatidylcholine": {
+"name": "1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine"
+},
+"ceramide": {
+"name": "N-stearoylsphingosine"
+},
+"sphingomyelin": {
+"name": "N-stearoylsphingomyelin"
+},
+"pge2": {
+"name": "prostaglandin E2"
+},
+"nacl": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"kcl": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"caco3": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"caox": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"cl_aq": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"mg_aq": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"na_aq": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"tio2": {
+"skip": "ionic lattice / hydrated-ion arrangement, not a single molecule"
+},
+"allura": {
+"skip": "2D drawing does not match Allura Red AC (PubChem CID 33258): the drawing puts the azo group meta to OMe; the real dye has it ortho (2-methoxy-5-methyl-4-sulfophenyl). Needs a redrawn 2D image first"
+},
+"sulfate": {
+"skip": "lone ion; the 2D drawing uses a charge-separated S(4+) form that does not map cleanly to a force field. Judgment call: left 2D only"
+},
+"micronutrients-trace-minerals/heme": {
+"skip": "flat Fe-porphyrin drawn from a bond graph with Fe dative bonds; the Protein lesson already has heme in real 3D (PDB 2DN1)"
+},
+"h2": {
+"skip": "two-atom H2: 3D adds nothing"
+},
+"mthf": {
+"name": "levomefolic acid"
+}
+}

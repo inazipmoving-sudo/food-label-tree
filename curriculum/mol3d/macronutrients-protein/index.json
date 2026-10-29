@@ -1,0 +1,182 @@
+{
+ "alanine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "ammonia": [
+  "c"
+ ],
+ "arginine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "asparagine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "aspartate": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "cysteine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "glutamate": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "glutamine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "glyala": [
+  "amine",
+  "carboxyl",
+  "peptide",
+  "r1",
+  "r2"
+ ],
+ "glyalaser": [
+  "amine",
+  "carboxyl",
+  "pep1",
+  "pep2"
+ ],
+ "glycine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "h2s": [
+  "c"
+ ],
+ "heme_pocket": [
+  "ehelix",
+  "fe",
+  "fhelix",
+  "his7",
+  "his8",
+  "leu",
+  "methine",
+  "methyl",
+  "o2",
+  "phe",
+  "propionate",
+  "pyrrole",
+  "val",
+  "vinyl"
+ ],
+ "heme_side": [
+  "fe",
+  "hb",
+  "his7",
+  "his8",
+  "o2",
+  "ring"
+ ],
+ "histidine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "isoleucine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "leucine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "lysine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "methane": [
+  "c"
+ ],
+ "methionine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "phenylalanine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "proline": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "pyruvate": [
+  "carboxyl",
+  "keto",
+  "r"
+ ],
+ "serine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "threonine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "tryptophan": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "tyrosine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "urea": [
+  "c",
+  "n1",
+  "n2",
+  "o"
+ ],
+ "valine": [
+  "alpha",
+  "amine",
+  "carboxyl",
+  "r"
+ ],
+ "water": [
+  "c"
+ ]
+}
