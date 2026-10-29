@@ -51,13 +51,13 @@
         var f = D / (D - z);                                   /* gentle perspective */
         Q[i] = [cx + x * s * f, cy - y * s * f, z, f]; if (z < zmin) zmin = z; if (z > zmax) zmax = z;
       }
-      var zr = Math.max(zmax - zmin, 1e-6), items = [];
+      var zr = Math.max(zmax - zmin, 0.5)  /* flat molecules (water, benzene rings) get no fade */, items = [];
       for (i = 0; i < nA; i++) items.push([Q[i][2], 0, i]);
       for (var k = 0; k < B.length; k++) items.push([Math.min(Q[B[k][0]][2], Q[B[k][1]][2]) - 1e-4, 1, k]);
       items.sort(function (a, b) { return a[0] - b[0]; });
       g.lineCap = 'round';
       items.forEach(function (it) {
-        var fade = 0.28 * (zmax - it[0]) / zr;                   /* far things a little paler, like aerial perspective */
+        var fade = 0.28 * Math.min(1, Math.max(0, (zmax - it[0]) / zr));                   /* far things a little paler, like aerial perspective */
         if (it[1] === 1) {
           var b = B[it[2]], a1 = Q[b[0]], a2 = Q[b[1]], isH = A[b[0]][0] === 'H' || A[b[1]][0] === 'H', ff = (a1[3] + a2[3]) / 2;
           g.strokeStyle = mix(isH ? '#9a9a9a' : '#7a7a7a', fade);

@@ -122,6 +122,11 @@ def bond_unit(m, X):
     if hb: return float(np.mean(hb))
     xh = [np.linalg.norm(X[b.GetBeginAtomIdx()] - X[b.GetEndAtomIdx()]) for b in m.GetBonds()]; return float(np.mean(xh)) / CH_UNITS
 
+def kekule(m):
+    """aromatic rings as alternating single/double bonds, like the 2D drawings (same atom order)"""
+    from rdkit import Chem
+    k = Chem.Mol(m); Chem.Kekulize(k, clearAromaticFlags=True); return k
+
 def check_stereo(m, conf_id, smi):
     from rdkit import Chem
     c = Chem.Conformer(m.GetConformer(conf_id)); keep = Chem.Mol(m); keep.RemoveAllConformers(); keep.AddConformer(c, assignId=True)
@@ -223,7 +228,7 @@ def build(slug, refresh=False):
                  'source': f'PubChem CID {s["cid"]} ({s.get("title", "")}); RDKit ETKDGv3 + {ff}, all H explicit; coordinates in bond units (mean heavy-atom bond = 1, {unit:.3f} \u00c5)',
                  'style': {e: STYLE[e] for e in sorted(set(els))},
                  'atoms': [[els[i], *[round(float(v), 3) for v in X[i]]] for i in range(len(els))],
-                 'bonds': [[b.GetBeginAtomIdx(), b.GetEndAtomIdx(), int(b.GetBondTypeAsDouble())] for b in m.GetBonds()],
+                 'bonds': [[b.GetBeginAtomIdx(), b.GetEndAtomIdx(), int(b.GetBondTypeAsDouble())] for b in kekule(m).GetBonds()],
                  'anchors': {k: [maps[x] for x in v] for k, v in s.get('anchors', {}).items()}}
         write(out, name, model, index)
     open(os.path.join(out, 'index.json'), 'w').write(json.dumps(index, indent=1, sort_keys=True) + '\n')

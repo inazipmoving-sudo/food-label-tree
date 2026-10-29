@@ -91,7 +91,7 @@ async def lesson(p,b,slug,mode):
         r['plus_zooms']=bool(z1)
         # double-click / double-tap resets
         if mode=='light': await mz.dblclick()
-        else: await pg.touchscreen.tap(cx,cy); await pg.wait_for_timeout(60); await pg.touchscreen.tap(cx,cy)
+        else: await pg.touchscreen.tap(cx,cy); await pg.touchscreen.tap(cx,cy)
         await pg.wait_for_timeout(400)
         r['reset']=await lm.evaluate("l=>!l.classList.contains('z2')&&!l.querySelector(':scope>.mz').getAttribute('style')")
         r['dialog_after_dbl']=await pg.evaluate("document.querySelector('dialog.lbm').open")
