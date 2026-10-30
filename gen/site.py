@@ -26,6 +26,7 @@ COURSES = [
     dict(slug='longevity', title='Longevity', href='longevity/', code='LONG 101',
          desc='How long populations live, and what a low average did and did not mean. Module 1 follows life expectancy at birth '
               'in England and the world from the sixteenth century to today, then bridges to the aging papers in the reading room. '
-              'Module 2 is the mutation theory of aging. The course page lists the later theory modules, which are not written yet.',
+              'Module 2 is the mutation theory of aging. Module 3 is telomeres and replicative senescence. '
+              'The course page lists the later theory modules, which are not written yet.',
          reg='LREG'),
 ]
