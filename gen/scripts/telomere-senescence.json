@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "module": "telomere-senescence",
+  "title": "Module 3 · Telomeres and Replicative Senescence",
+  "lang": "en",
+  "revision": 1,
+  "idRevision": 1,
+  "figures": [
+    {
+      "fig": 1,
+      "anchor": "fig-1",
+      "title": "Where the idea came from",
+      "subtitle": "A finite number of divisions, an end that is hard to copy, and an enzyme that adds the end back.",
+      "segments": [
+        {
+          "id": "1.1",
+          "seg": 1,
+          "name": "Three claims",
+          "text": "This module is about telomeres, the repeated DNA at the ends of chromosomes, and about replicative senescence, the point at which many normal human cells in a dish stop dividing. Three claims are easy to fold into one sentence, and they are not one sentence. First, normal human diploid cells have a finite number of divisions in culture. Second, ordinary DNA copying leaves the extreme end of a linear chromosome unfinished. Third, an enzyme can add that end back, and giving that enzyme to normal human cells lets them keep dividing past the usual stop. Read the next sentence as it is written.",
+          "part": "split",
+          "cue": "The three claims at the top of the figure"
+        },
+        {
+          "id": "1.2",
+          "seg": 2,
+          "name": "Word for word",
+          "text": "Telomeres limit how many times many human cells can divide. They do not, by themselves, set how long a species lives.",
+          "part": "verbatim",
+          "verbatim": true,
+          "cue": "Read the sentence under the three claims word for word"
+        },
+        {
+          "id": "1.3",
+          "seg": 3,
+          "name": "Hayflick and Moorhead",
+          "text": "In 1961 Leonard Hayflick and Paul Moorhead published The Serial Cultivation of Human Diploid Cell Strains in Experimental Cell Research. That paper is the start of the finite-division claim. It has no abstract in Europe PMC, so the counts used here are not read off its tables. Serrano's 2024 obituary in npj Aging, which cites the paper, says cultures of human fetal fibroblasts, 25 independent isolates, were not immortal and degenerated after approximately 50 subcultivations. The same obituary says freezing and thawing did not reset that history. The paper's job on this timeline is the distinction it drew: a diploid cell strain that stops, against a cell line that does not. The approximate 50 is the obituary's summary. Do not treat it as a digit this lesson measured.",
+          "part": "hayflick61",
+          "cue": "1961, finite division"
+        },
+        {
+          "id": "1.4",
+          "seg": 4,
+          "name": "Hayflick 1965",
+          "text": "Hayflick's 1965 paper, The Limited in Vitro Lifetime of Human Diploid Cell Strains, is the follow-up, again in Experimental Cell Research. The same obituary, citing that paper, says adult lung fibroblasts, mostly from donors aged 58 to 87, managed approximately 20 doublings, against approximately 50 for fetal lung fibroblasts. Hayflick mixed early-passage female cells with late-passage male cells that had already stopped, and the old cells did not drag the young cells down with them. The obituary gives his conclusion as intrinsic factors inside the dividing cells, not a spoiled batch of medium, and says he took the same limit to operate in the aging of the body. Hold the words apart. The 1961 summary says subcultivations. The 1965 summary says doublings. This lesson does not convert one unit into the other. Both approximates are the obituary's, and both primary papers are on the source list.",
+          "part": "hayflick65",
+          "cue": "1965, donor age, still a summary"
+        },
+        {
+          "id": "1.5",
+          "seg": 5,
+          "name": "The end-replication problem",
+          "text": "The copying problem has two papers, and they are easy to merge. In 1973 Alexey Olovnikov published A Theory of Marginotomy in the Journal of Theoretical Biology. Marginotomy is his name for the incomplete copying of the margin of a linear template. The year before, James Watson, in Nature New Biology, published Origin of Concatemeric T7 DNA, on the same kind of unfinished end in a bacteriophage. Crossref spells that title Concatemeric, and the phage is T7. Wright, Tesmer, Huffman, Levene, and Shay, Genes and Development, 1997, state the consequence and cite both: because DNA polymerase needs an RNA primer, it cannot replicate the extreme 3-prime end of a parental strand. Olovnikov is the theory named for aging. Watson is the independent statement. Neither paper measured human fibroblasts.",
+          "part": "olovnikov",
+          "cue": "1972 and 1973, the unfinished end"
+        },
+        {
+          "id": "1.6",
+          "seg": 6,
+          "name": "Telomerase",
+          "text": "In 1985 Carol Greider and Elizabeth Blackburn, in Cell, found an activity in Tetrahymena extracts that adds tandem TTGGGG repeats onto a telomere primer. TTGGGG is the Tetrahymena repeat. The human repeat is TTAGGG, which is a different sequence, from Kipling and Cooke in 1990, and it is not what this 1985 assay added. The activity needed the primer, dGTP, and dTTP. Heat and proteinase K destroyed it. They proposed a telomere terminal transferase that puts back the repeats replication does not finish. That enzyme is telomerase. This experiment is a ciliate extract. It is not a human cell, and it is not a lifespan.",
+          "part": "greider",
+          "cue": "1985, Tetrahymena, not a human cell"
+        },
+        {
+          "id": "1.7",
+          "seg": 7,
+          "name": "Shortening in fibroblasts",
+          "text": "Harley, Futcher, and Greider, Nature, 1990, showed that the amount and length of telomeric DNA in human fibroblasts decrease as a function of serial passage during aging in vitro, and possibly in vivo. Their closing sentence is that it is not known whether this loss of DNA has a causal role in senescence. The abstract does not give a base-pair loss per division. The range people quote is on the next figure, and it is not Harley's number alone. What this paper puts on the timeline is the observation in human fibroblasts, and the causal question left open.",
+          "part": "harley",
+          "cue": "1990, shortening, cause still open"
+        },
+        {
+          "id": "1.8",
+          "seg": 8,
+          "name": "The causal test in culture",
+          "text": "Bodnar and colleagues, Science, 1998, ran that test. Two telomerase-negative normal human cell types, retinal pigment epithelial cells and foreskin fibroblasts, were given the catalytic subunit of human telomerase. Control clones shortened their telomeres and senesced. Clones that expressed telomerase elongated their telomeres, divided vigorously, showed less staining for beta-galactosidase, a marker used for senescence, kept a normal karyotype, and had already exceeded their normal lifespan by at least 20 doublings. That is a causal result for these cells in a dish. It does not say that a person given telomerase would live longer. The cancer side of keeping the end long is figure 4.",
+          "part": "bodnar",
+          "cue": "1998, at least 20 extra doublings"
+        }
+      ]
+    },
+    {
+      "fig": 2,
+      "anchor": "fig-2",
+      "title": "How the end shortens",
+      "subtitle": "A schematic of one division, then the rates the papers actually print.",
+      "segments": [
+        {
+          "id": "2.1",
+          "seg": 1,
+          "name": "Not to scale",
+          "text": "The drawing is a schematic of one chromosome end across divisions. The bars are not to scale, and the pixels are not base pairs. Vertebrate telomeres are repeats of TTAGGG. That sequence is Kipling and Cooke, Nature, 1990. If nothing adds repeats back, the end that gets copied is shorter after the division. The numbers under the drawing are the published rates. They are not read off the drawing.",
+          "part": "scheme",
+          "cue": "The schematic, then the rate cards"
+        },
+        {
+          "id": "2.2",
+          "seg": 2,
+          "name": "What one division loses",
+          "text": "Wright and colleagues, 1997, separate two scales. In yeast, without telomerase, telomeres lose only a few base pairs per division. In normal diploid human cells, telomeres have been found to shorten at rates varying between 40 and 200 base pairs per division. That sentence cites Harley and colleagues, 1990, among other cultured-cell studies. So 40 to 200 is a range across those studies. It is not a single Harley rate, and it is not the length of the RNA primer. The same paper says the loss is larger than the classic primer gap by itself, and discusses nuclease processing as one reason. Teach the range as a range.",
+          "part": "problem",
+          "cue": "40 to 200 base pairs, a range"
+        },
+        {
+          "id": "2.3",
+          "seg": 3,
+          "name": "What predicts the doublings",
+          "text": "A different measurement asks whether the length you start with predicts how many doublings are left. Allsopp and colleagues, Proceedings of the National Academy of Sciences, 1992, Harley and Greider among the authors, used fibroblasts from 31 donors aged 0 to 93 years. Replicative capacity against initial telomere length had a slope of 10 doublings per kilobase pair, r = 0.76, P = 0.004. Strains with shorter telomeres at the start underwent fewer doublings. That slope is a regression across donors. Do not divide a kilobase by 10 and announce a new per-division rate. The 40 to 200 base pairs are the measured loss per division in culture. The 10 doublings per kilobase are how starting length lined up with remaining divisions. Both can be true. They are not the same sentence.",
+          "part": "slope",
+          "cue": "10 doublings per kilobase, r = 0.76"
+        },
+        {
+          "id": "2.4",
+          "seg": 4,
+          "name": "Putting the repeats back",
+          "text": "Telomerase is the activity that adds the repeats. Greider and Blackburn saw it in Tetrahymena, adding TTGGGG. Bodnar and colleagues put the human catalytic subunit into normal human cells. Those clones passed their usual limit by at least 20 doublings, with a normal karyotype in that report. Harley had left the cause open. For these two cell types in culture, Bodnar is the experiment that ties telomere shortening to the stop. A fibroblast culture is not a tissue, and a longer culture is not a longer life.",
+          "part": "telomerase",
+          "cue": "The telomerase card"
+        },
+        {
+          "id": "2.5",
+          "seg": 5,
+          "name": "Age is a weaker line",
+          "text": "The same Allsopp paper is why the next figures do not treat telomere length as a tight clock of calendar age. Against donor age, telomeric DNA had a slope of minus 15 base pairs per year, r = minus 0.43, P = 0.02. Proliferative ability against donor age was a slope of minus 0.2 doublings per year, r = minus 0.42, P = 0.02. They call both of those correlations relatively weak. The striking correlation was with starting length, not with how old the donor was. Sperm telomeres in that paper did not shorten with the donor's age. The age correlations, the measurement noise, and the species comparison are the contested half of figure 4, after the chart.",
+          "part": "age",
+          "cue": "Minus 15 base pairs per year"
+        }
+      ]
+    },
+    {
+      "fig": 3,
+      "anchor": "fig-3",
+      "title": "Length, in published numbers",
+      "subtitle": "Human blood and mouse telomeres, only the ranges and averages the papers state.",
+      "segments": [
+        {
+          "id": "3.1",
+          "seg": 1,
+          "name": "How to read the bars",
+          "text": "Both axes of this comparison are published statements, not a new assay. The horizontal axis is kilobases, logarithmic, so equal steps are equal multiples. A point is an average the paper called about. A bar is a range the paper stated. Kipling and Cooke, Nature, 1990, say human terminal repeats in blood average about 10 kilobases, and that mouse telomeres are resolved as fragments of up to 150 kilobases. Hemann and Greider, Nucleic Acids Research, 2000, measured liver telomere restriction fragments in mouse strains. Mus spretus, 8 to 10 kilobases, is a range they state from earlier papers, not a new mean calculated here. The table under the chart uses the same numbers.",
+          "part": "design",
+          "cue": "Logarithmic kilobases, then the table"
+        },
+        {
+          "id": "3.2",
+          "seg": 2,
+          "name": "The six rows",
+          "text": "Read the rows from the short end. Mus spretus, 8 to 10 kilobases. Human blood, about 10. Peromyscus leucopus, about 12. CAST/Ei, about 18 to 20. FVB/NJ, about 30 to 120. Established inbred mice, 30 to 150, which Hemann and Greider give by citing Kipling and Cooke, so that row is marked as a citation, not as their new gel. On their own gel, C57BL/6J and 129/SvJ were long and heterogeneous. This chart does not invent a kilobase midpoint for them. FVB/NJ is the established strain for which they print a range, about 30 to 120. Kipling's up to 150 kilobases is an upper end of fragments. It is not the mean length of every mouse telomere.",
+          "part": "bars",
+          "cue": "Short rows first, then the long mouse ranges"
+        },
+        {
+          "id": "3.3",
+          "seg": 3,
+          "name": "Length and lifespan",
+          "text": "Hemann and Greider then set length beside lifespan, because a long telomere had been proposed as a reason for a long life. CAST/Ei, the short telomeres at about 18 to 20 kilobases, and C57BL/6J, the long heterogeneous telomeres, had no significant difference in the maximal lifespan they report: C57BL/6J 767 ± 147 days, and CAST/Ei 681 ± 168 days. The paper prints the plus-or-minus and does not say whether it is a standard deviation. Those two lifespans are a personal communication they print, from D. Harrison. Peromyscus leucopus, about 12 kilobases, averages 5 to 7 years in the source they cite, Sacher and Hart, 1978. Their sentence is that the strain with the shortest telomeres they studied had the longest lifespan. Long telomeres did not mark the longer-lived mouse.",
+          "part": "lifespan",
+          "cue": "The lifespan note under the chart"
+        },
+        {
+          "id": "3.4",
+          "seg": 4,
+          "name": "Across mammals",
+          "text": "Gomes and colleagues, Aging Cell, 2011, put the same criticism in a wider tree. They write that laboratory mice have 25 to 150 kilobase telomeres, compared with 15 to 20 kilobase germline human telomeres. Germline human telomeres at 15 to 20 are not the blood average of about 10. Different tissue, different paper. Do not call that a contradiction. In their phylogenetic analysis, telomere length co-evolved with lifespan, P = 0.0032, with no independent association with body size, P = 0.71. The direction is inverse: longer-lived species tend toward shorter telomeres. They reconstruct the ancestral placental telomere length as 18.6 kilobases, and the probability that ancestral placental mammals repressed telomerase as 0.998, against 0.002 that it was expressed. They also warn that length was estimated, accurate within a few kilobases, and that only differences above 5 kilobases should be treated as significant. This lesson does not replot their species supplement.",
+          "part": "gomes",
+          "cue": "The Gomes note: inverse, not a clock"
+        },
+        {
+          "id": "3.5",
+          "seg": 5,
+          "name": "What the chart does not close",
+          "text": "Do not leave the figure thinking mice have retired the telomere. Hemann and Greider say telomere length does limit the replicative capacity of primary human cells in culture, and their introduction points to late-generation telomerase knockout mice, which have short telomeres, proliferative defects, and a reduced lifespan. The failure is the simple story in which a longer telomere means a longer species life. Laboratory mice can have very long telomeres and still live a mouse life. The knockout mice are figure 4.",
+          "part": "limit",
+          "cue": "The limit under the Gomes note"
+        }
+      ]
+    },
+    {
+      "fig": 4,
+      "anchor": "fig-4",
+      "title": "Senescence, cancer, and the argument",
+      "subtitle": "The tradeoff, then what is broadly accepted and what is still contested.",
+      "segments": [
+        {
+          "id": "4.1",
+          "seg": 1,
+          "name": "The fork",
+          "text": "A short telomere can be read as damage. d'Adda di Fagagna and colleagues, Nature, 2003, showed that senescent human fibroblasts carry markers of DNA double-strand breaks, that the chromosome ends themselves contribute to that response, and that shutting off the checkpoint kinases lets those cells move into S phase. Telomere-driven senescence is a DNA-damage checkpoint. It stops a cell that would otherwise keep dividing on a bare end. That stop is useful against cancer. It is also the proliferative limit.",
+          "part": "tradeoff",
+          "cue": "The left branch of the fork"
+        },
+        {
+          "id": "4.2",
+          "seg": 2,
+          "name": "Cancer on the other branch",
+          "text": "Kim and colleagues, Science, 1994, built a sensitive telomerase assay. In cultured cells from 18 human tissues, 98 of 100 immortal populations were positive and none of 22 mortal populations were. In biopsies, 90 of 101 samples from 12 tumor types were positive and none of 50 normal somatic tissues were. Normal ovary and testis were positive. Benign fibroids were negative. The brake is off in most of those cancers and on in the normal somatic tissues they tested. Haycock and colleagues, JAMA Oncology, 2017, asked the genetic question with Mendelian randomization: germline variants that lengthen telomeres. They had summary data for 35 cancers and 48 non-neoplastic diseases, 420,081 cases and 1,093,105 controls. Per one standard deviation longer telomeres, the odds ratio for glioma was 5.27, interval 3.15 to 8.81, for lung adenocarcinoma 3.19, interval 2.40 to 4.22, and for melanoma 1.87, interval 1.55 to 2.26. Coronary heart disease went the other way, 0.78, interval 0.67 to 0.90. Interstitial lung disease was 0.09, interval 0.05 to 0.15. The table is every odds ratio in that abstract's main list. Their conclusion is that longer telomeres likely raise the risk of several cancers and lower the risk of some non-neoplastic diseases, including cardiovascular diseases. A long telomere is not an unqualified good.",
+          "part": "cancer",
+          "cue": "Kim's counts, then the odds-ratio table"
+        },
+        {
+          "id": "4.3",
+          "seg": 3,
+          "name": "Telomere syndromes",
+          "text": "When maintenance fails from birth, the result is a disease, not a gentle clock. Heiss and colleagues, Nature Genetics, 1998, identified DKC1, the gene for X-linked dyskeratosis congenita. Mitchell, Wood, and Collins, Nature, 1999, showed that dyskerin binds human telomerase RNA, and that patients' cells have less of that RNA, less telomerase activity, and shorter telomeres than matched normal cells. Vulliamy and colleagues, Nature, 2001, mapped an autosomal dominant family to an 821-base-pair deletion that removes the 3-prime 74 bases of the telomerase RNA, and found telomerase RNA mutations in two other families. Armanios and Blackburn, Nature Reviews Genetics, 2012, gather bone marrow failure, lung fibrosis, and the classic skin and nail picture into one short-telomere spectrum. These syndromes show that telomere failure can cause real proliferative disease. They do not show that the ordinary telomere loss of a normal life is the main cause of ordinary aging.",
+          "part": "syndromes",
+          "cue": "Dyskeratosis congenita"
+        },
+        {
+          "id": "4.4",
+          "seg": 4,
+          "name": "Mice and senescent cells",
+          "text": "The mouse experiments split in two. Blasco and colleagues, Cell, 1997, deleted mouse telomerase RNA. The mice were viable for the six generations analyzed. Telomeres shortened by 4.8 ± 2.4 kilobases per generation, which is how the abstract prints the rate. From the fourth generation there were chromosome ends with no detectable telomere repeats, and end-to-end fusions. Those cells could still be immortalized and could still form tumors. Lee, Blasco, and colleagues, Nature, 1998, found defective spermatogenesis and weaker blood-forming proliferation in late-generation animals. Jaskelioff and colleagues, Nature, 2011, switched telomerase back on in adult mice of that deficient line. Reactivation lengthened telomeres and reversed degeneration in testis, spleen, intestine, and brain, including the sense of smell. Read the limit with the result. These were late-generation telomerase-deficient mice. They were not ordinary old wild-type mice. The other mouse experiment is senescence itself. Baker and colleagues, Nature, 2011, cleared p16-positive cells in BubR1 progeroid mice. Removal delayed age-related changes in fat, muscle, and eye, and late-life removal slowed damage that had already started. Baker and colleagues, Nature, 2016, did the clearance in wild-type mice, from one year of age, with the drug twice a week. Median lifespan rose 27 percent on the mixed background and 24 percent in C57BL/6, sexes combined. By sex the rise was 17 to 35 percent. In mice that died without a tumor, the median extension was 24 to 42 percent. Maximum lifespan rose for mixed-background males and females combined, P = 0.0295, and did not rise in C57BL/6. The drug did not extend life in mice that lacked the transgene. Tumor incidence did not fall. Tumors came later. The paper says the mixed cohort ate a 9 percent fat diet, which shortens life relative to the 5 percent fat diets usual in lifespan studies, and that vehicle-injected C57BL/6 males fell short of the usual lifespan for that strain. Senescent cells can matter in a mouse that is not running out of telomere. That is the bridge. It is still a mouse.",
+          "part": "mice",
+          "cue": "Knockout, reactivation, then p16 clearance"
+        },
+        {
+          "id": "4.5",
+          "seg": 5,
+          "name": "Accepted",
+          "text": "Read the left column as the consensus, and do not upgrade it. Normal human diploid cells in culture have a finite division count. Telomeres shorten as human fibroblasts are passaged. Giving telomerase to the normal human cells in the Bodnar experiment extended that count by at least 20 doublings. Most of the cancers Kim tested had telomerase activity, and the normal somatic tissues did not. Inherited failure of telomerase maintenance causes short-telomere disease. In telomerase-deficient mice, telomeres shorten across generations, late generations fail in high-turnover organs, and switching the enzyme back on reversed several of those failures in that model. Clearing p16-positive cells extended median lifespan in the 2016 wild-type mice, with the limits just stated. López-Otín and colleagues, Cell, 2013 and 2023, list telomere attrition as a hallmark in the 2013 list of nine and again in the 2023 list of twelve. None of those sentences says that measured telomere length is the clock of a human life.",
+          "part": "agree",
+          "cue": "The left column"
+        },
+        {
+          "id": "4.6",
+          "seg": 6,
+          "name": "Weak, noisy, and two-way",
+          "text": "The right column is the criticism, and it is in the same literature. Allsopp's correlation of telomere length with donor age was r = minus 0.43, only minus 15 base pairs per year. Müezzinler, Zaineddin, and Brenner, Ageing Research Reviews, 2013, reviewed 124 cross-sectional studies and 5 longitudinal studies. Across studies, mean age against mean absolute leukocyte telomere length gave r = minus 0.338, P less than 0.0001. Relative length gave r = minus 0.295, P = 0.0088. From the study means they estimate 24.7 base pairs per year. Within studies, the weighted mean correlation was minus 0.380 and the loss 21.91 base pairs per year. The few longitudinal studies reported 32.2 to 45.5 base pairs per year. A decline with age is not in doubt. A tight age clock is. Martin-Ruiz and colleagues, International Journal of Epidemiology, 2015, sent the same DNA through 10 laboratories and three methods. Rankings agreed, correlations 0.63 to 0.99, but absolute lengths could not be pooled. The inter-laboratory coefficient of variation was about 10 percent for Southern blot and STELA and more than 20 percent for quantitative PCR. Cawthon and colleagues, The Lancet, 2003, followed 143 unrelated people over 60. Shorter telomeres in blood went with poorer survival, in part a 3.18-fold higher mortality from heart disease, interval 1.36 to 7.45, P = 0.0079, and an 8.54-fold higher mortality from infectious disease, interval 1.52 to 47.9, P = 0.015. The infection interval runs from under 2 to almost 50. The abstract says shorter and does not define the cut, so this lesson does not invent a quartile. It is an association in a small cohort. The PubMed abstract prints the heart-disease lower bound across a line break. It is 1.36.",
+          "part": "weak",
+          "cue": "The first contested points"
+        },
+        {
+          "id": "4.7",
+          "seg": 7,
+          "name": "Still open",
+          "text": "Leave the figure on what is not settled. Whether the telomere shortening of ordinary tissues causes the diseases of aging, rather than marking inherited risk, disease, and how many times a stem cell has divided, is open. The Mendelian randomization result points both ways, cancer up and some cardiovascular disease down, and it is about lifelong genetic differences in length, not about a supplement. Senescence is also triggered without waiting out the division count. Serrano, Lin, McCurrach, Beach, and Lowe, Cell, 1997, showed that oncogenic ras puts primary human and rodent cells into a permanent arrest that looks like senescence, with p53 and p16. Baker's p16-positive cells were removed from mice that were not telomerase knockouts. Mice with long telomeres still age. Progeroid and telomere-syndrome pictures copy only part of normal aging. Jaskelioff reversed damage in a telomerase-deficient model. Bodnar extended cells in a dish. Those are the boundaries.",
+          "part": "open",
+          "cue": "The open questions at the bottom of the right column"
+        }
+      ]
+    },
+    {
+      "fig": 5,
+      "anchor": "fig-5",
+      "title": "From the literature",
+      "subtitle": "Reading-room pages on measuring telomeres and on senescence. Only what those pages say.",
+      "segments": [
+        {
+          "id": "5.1",
+          "seg": 1,
+          "name": "Only the pages",
+          "text": "Peer-Reviewed Literature is part of this course. Each card opens one of those pages. The line you are about to read says only what that page says. If a page calls the work a preprint, or says the synopsis is the abstract, or says the result was in mice, do not promote it. None of these pages is the Hayflick experiment or the Haycock study.",
+          "part": "bridge",
+          "cue": "The sentence above the cards"
+        },
+        {
+          "id": "5.2",
+          "seg": 2,
+          "name": "Seeing one telomere",
+          "text": "One page is a method for measuring telomeres one molecule at a time. The page says a few critically short telomeres can trigger stress and senescence even when the average length looks normal, and that standard tests report an average and can vary between labs. From the abstract, the method used 500 nanograms of DNA and 2 to 4 hours of hands-on work, and it resolved telomeres from about 50 base pairs to more than 50 kilobases, with an intraclass correlation of up to 0.90. The page says this is a preprint and has not been peer reviewed, that the synopsis is the abstract, and that the paper shows the test can measure telomeres, not that the measurements predict disease or aging. It does not say how many clinical samples were tested.",
+          "part": "measure",
+          "cue": "The measurement card"
+        },
+        {
+          "id": "5.3",
+          "seg": 3,
+          "name": "Senescence after a break",
+          "text": "A second page is senescence reached from broken DNA, not from a telomere count. Blocking a chemical tag on tubulin stopped the nucleus from fluctuating, impaired accurate repair, and the cells became senescent. Removing the vimentin cage restored the fluctuations and the repair. The page says the abstract does not name the cells, that this is a mechanism in cells, and that it does not test whether losing the mechanism contributes to aging in a living animal. The page does not say the breaks were short telomeres. It belongs here because senescence has more than one entrance.",
+          "part": "senescence",
+          "cue": "The repair-and-senescence card"
+        },
+        {
+          "id": "5.4",
+          "seg": 4,
+          "name": "An aged heart, in male mice",
+          "text": "A third page is senescent cells in an old heart. In old male mice, two months of either of two NAD precursors reduced senescence markers in heart muscle, improved diastolic function, and lessened enlargement and scarring. Old female mice had diastolic dysfunction without a clear fall in heart NAD, and they did not respond. The page says the synopsis is the abstract, that the abstract gives no animal numbers or doses, and that the results are mice and cultured cells, not older people. It does not say the heart-cell senescence was caused by short telomeres. The five hundred years of the first module were won mainly by fewer deaths from infection, hunger, and dirty water. These pages ask how telomeres are measured and how senescent cells behave. They do not say that a telomere assay, a nuclear fluctuation, or an NAD precursor produced that rise.",
+          "part": "heart",
+          "cue": "The heart card, male mice only"
+        }
+      ]
+    }
+  ]
+}

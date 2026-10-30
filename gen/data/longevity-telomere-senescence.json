@@ -1,0 +1,135 @@
+{
+  "note": "Figures are these published values, including the papers' own approximates. Nothing is re-fit. The Hayflick counts are the 2024 obituary's summary of the 1961 and 1965 papers, which have no Europe PMC abstract. The 40 to 200 base-pair range is Wright et al. 1997, summarizing cultured-cell studies, not a single rate from Harley 1990. Species bars are stated ranges or averages, not means computed here.",
+  "hayflickObituary": {
+    "fetalIsolates": 25,
+    "subcultivationsAbout": 50,
+    "adultDoublingsAbout": 20,
+    "fetalDoublingsAbout": 50,
+    "adultDonorAges": "58 to 87"
+  },
+  "wrightBpPerDivision": [40, 200],
+  "allsopp": {
+    "donors": 31,
+    "ageLow": 0,
+    "ageHigh": 93,
+    "doublingsPerYear": -0.2,
+    "rDoublingsAge": -0.42,
+    "pDoublingsAge": 0.02,
+    "bpPerYear": -15,
+    "rTelomereAge": -0.43,
+    "pTelomereAge": 0.02,
+    "doublingsPerKb": 10,
+    "rCapacityLength": 0.76,
+    "pCapacityLength": 0.004
+  },
+  "bodnarExtraDoublingsAtLeast": 20,
+  "blasco": {
+    "generationsViable": 6,
+    "kbPerGeneration": 4.8,
+    "kbPerGenerationSd": 2.4,
+    "abnormalFromGeneration": 4
+  },
+  "kipling": {
+    "humanBloodKbAbout": 10,
+    "mouseFragmentsUpToKb": 150
+  },
+  "hemann": {
+    "c57Days": 767,
+    "c57Sd": 147,
+    "castDays": 681,
+    "castSd": 168,
+    "leucopusYearsLow": 5,
+    "leucopusYearsHigh": 7,
+    "bars": [
+      {"id": "spretus", "label": "Mus spretus", "low": 8, "high": 10, "kind": "range", "stat": "8 to 10 kb, stated from earlier papers"},
+      {"id": "human", "label": "Human blood", "low": 10, "high": 10, "kind": "point", "stat": "Average, about 10 kb"},
+      {"id": "leucopus", "label": "P. leucopus", "low": 12, "high": 12, "kind": "point", "stat": "Average, about 12 kb"},
+      {"id": "cast", "label": "CAST/Ei", "low": 18, "high": 20, "kind": "range", "stat": "About 18 to 20 kb"},
+      {"id": "fvb", "label": "FVB/NJ", "low": 30, "high": 120, "kind": "range", "stat": "About 30 to 120 kb"},
+      {"id": "inbred", "label": "Established inbred mice", "low": 30, "high": 150, "kind": "cited", "stat": "30 to 150 kb, citing Kipling and Cooke"}
+    ]
+  },
+  "gomes": {
+    "ancestralKb": 18.6,
+    "pLifespan": 0.0032,
+    "pSize": 0.71,
+    "humanGermlineKb": [15, 20],
+    "labMouseKb": [25, 150],
+    "telomeraseRepressed": 0.998,
+    "telomeraseExpressed": 0.002,
+    "significantDifferenceKb": 5
+  },
+  "muezzinler": {
+    "crossSectional": 124,
+    "longitudinal": 5,
+    "rAbsolute": -0.338,
+    "pAbsolute": "<0.0001",
+    "rRelative": -0.295,
+    "pRelative": 0.0088,
+    "bpYearFromMeans": 24.7,
+    "rWithin": -0.380,
+    "bpYearWithin": 21.91,
+    "longitudinalBpYear": [32.2, 45.5]
+  },
+  "martinRuiz": {
+    "labs": 10,
+    "samples": 10,
+    "rankR": [0.63, 0.99],
+    "cvSouthernAboutPct": 10,
+    "cvQpcrMoreThanPct": 20,
+    "labCv": [1.4, 9.5]
+  },
+  "kim": {
+    "immortalPositive": 98,
+    "immortal": 100,
+    "mortalPositive": 0,
+    "mortal": 22,
+    "tumorPositive": 90,
+    "tumors": 101,
+    "tumorTypes": 12,
+    "normalSomaticPositive": 0,
+    "normalSomatic": 50
+  },
+  "cawthon": {
+    "n": 143,
+    "ageOver": 60,
+    "heartFold": 3.18,
+    "heartCi": [1.36, 7.45],
+    "heartP": 0.0079,
+    "infectionFold": 8.54,
+    "infectionCi": [1.52, 47.9],
+    "infectionP": 0.015
+  },
+  "haycock": {
+    "cancers": 35,
+    "nonNeoplastic": 48,
+    "cases": 420081,
+    "controls": 1093105,
+    "rows": [
+      {"disease": "Glioma", "or": 5.27, "ci": [3.15, 8.81]},
+      {"disease": "Serous low-malignant-potential ovarian cancer", "or": 4.35, "ci": [2.39, 7.94]},
+      {"disease": "Lung adenocarcinoma", "or": 3.19, "ci": [2.40, 4.22]},
+      {"disease": "Neuroblastoma", "or": 2.98, "ci": [1.92, 4.62]},
+      {"disease": "Bladder cancer", "or": 2.19, "ci": [1.32, 3.66]},
+      {"disease": "Melanoma", "or": 1.87, "ci": [1.55, 2.26]},
+      {"disease": "Testicular cancer", "or": 1.76, "ci": [1.02, 3.04]},
+      {"disease": "Kidney cancer", "or": 1.55, "ci": [1.08, 2.23]},
+      {"disease": "Endometrial cancer", "or": 1.31, "ci": [1.07, 1.61]},
+      {"disease": "Coronary heart disease", "or": 0.78, "ci": [0.67, 0.90]},
+      {"disease": "Abdominal aortic aneurysm", "or": 0.63, "ci": [0.49, 0.81]},
+      {"disease": "Celiac disease", "or": 0.42, "ci": [0.28, 0.61]},
+      {"disease": "Interstitial lung disease", "or": 0.09, "ci": [0.05, 0.15]}
+    ]
+  },
+  "vulliamy": {"deletionBp": 821, "htrBasesRemoved": 74},
+  "baker2016": {
+    "startAgeYear": 1,
+    "medianMixedPct": 27,
+    "medianB6Pct": 24,
+    "bySexPct": [17, 35],
+    "noTumorPct": [24, 42],
+    "maxLifespanMixedP": 0.0295,
+    "mixedDietFatPct": 9,
+    "standardDietFatPct": 5
+  }
+}
