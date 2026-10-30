@@ -27,6 +27,7 @@ COURSES = [
          desc='How long populations live, and what a low average did and did not mean. Module 1 follows life expectancy at birth '
               'in England and the world from the sixteenth century to today, then bridges to the aging papers in the reading room. '
               'Module 2 is the mutation theory of aging. Module 3 is telomeres and replicative senescence. '
+              'Module 4 is free radicals and mitochondria. '
               'The course page lists the later theory modules, which are not written yet.',
          reg='LREG'),
 ]

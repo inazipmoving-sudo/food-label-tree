@@ -1,0 +1,319 @@
+{
+ "schemaVersion": 1,
+ "module": "free-radical-mitochondria",
+ "title": "Module 4 · Free Radical and Mitochondrial Theories",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "Where the ideas came from",
+   "subtitle": "Pearl's rate of living, Harman's free radicals, and the mitochondrial version.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "Three claims",
+     "text": "This module is about three ideas that are easy to fold into one sentence, and they are not one sentence. First, the free-radical theory: reactive oxygen species made in ordinary metabolism damage cells, and that damage is proposed as a cause of aging. Second, the rate-of-living theory: a higher mass-specific metabolic rate goes with a shorter life. Third, the mitochondrial version: the clock sits in the mitochondria, which consume the oxygen, and later in the mitochondrial genome. Read the next sentence as it is written.",
+     "part": "split",
+     "cue": "The three claims at the top of the figure",
+     "slug": "three-claims"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Word for word",
+     "text": "Reactive oxygen species can damage cells. That does not, by itself, mean that the damage is what sets the length of life.",
+     "part": "verbatim",
+     "verbatim": true,
+     "cue": "Read the sentence under the three claims word for word",
+     "slug": "word-for-word"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Pearl",
+     "text": "In 1928 Raymond Pearl published The Rate of Living. That book has no DOI in Crossref. Do not use the one-page 1928 item in the Journal of the American Statistical Association. That record is Sewall Wright with Raymond Pearl, and it is not the book. The wording used here is from Vaanholt, Daan, Schubert, and Visser, Physiological and Biochemical Zoology, 2009, who cite Pearl 1928. They state the theory as life span and average mass-specific metabolic rate are inversely proportional. It came from comparisons between mammal species. The same abstract says the theory was later rejected on comparisons between taxa. Their example is that birds have higher metabolic rates than mammals of the same size and yet live longer. This lesson does not use their cold-exposure experiment. A rejected proportionality is why later versions stopped treating oxygen consumption itself as the rate that matters.",
+     "part": "pearl",
+     "cue": "1928, inversely proportional, then the bird comparison",
+     "slug": "pearl"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Harman 1956",
+     "text": "In 1956 Denham Harman published Aging: A Theory Based on Free Radical and Radiation Chemistry, in the Journal of Gerontology. It is three pages. It has no abstract in Europe PMC, and no open copy was used for this lesson, so the postulate is not read off his pages here. Pérez, Bokov, Van Remmen, and colleagues, Biochimica et Biophysica Acta, 2009, cite that 1956 paper and state the postulate: oxygen free radicals formed endogenously from normal metabolic processes play a role in aging because of an increase in oxidative damage to macromolecules. They say the theory was later widened into an oxidative stress theory, because peroxides and aldehydes, which are not free radicals, also damage cells. The link to Pearl is a later paper of Harman's own. The Aging Process, Proceedings of the National Academy of Sciences, 1981, says the free-radical theory provides a reasonable explanation for the relationship of the average life spans of mammalian species to their basal metabolic rates. That sentence is Harman in 1981. It is not a line copied out of the 1956 paper. The 1981 abstract also says the sum of the deleterious free-radical reactions going on continuously constitutes the aging process or is a major contributor to it, and that in mammals those reactions are largely ones involving oxygen.",
+     "part": "harman1956",
+     "cue": "1956, the postulate as Pérez states it, then 1981",
+     "slug": "harman-1956"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Harman 1972",
+     "text": "In 1972 Harman published The Biologic Clock: The Mitochondria?, in the Journal of the American Geriatrics Society. Again there is no abstract in Europe PMC. Sastre, Pallardó, and Viña, IUBMB Life, 2000, state what he suggested: mitochondria might be the biological clock in aging, and the rate of oxygen consumption should determine the rate of accumulation of mitochondrial damage produced by free-radical reactions. That is the rate-of-living idea moved inside the organelle. The title is a question. This lesson does not turn the title into a result. When López-Otín and colleagues state the mitochondrial free-radical theory in 2013, the reference they print is a different Harman paper, from 1965, whose title is about serum copper. That citation is on figure 4. It is not this 1972 article.",
+     "part": "harman1972",
+     "cue": "1972, the clock, as Sastre and colleagues describe it",
+     "slug": "harman-1972"
+    },
+    {
+     "id": "1.6",
+     "seg": 6,
+     "name": "Miquel",
+     "text": "Miquel, Economos, Fleming, and Johnson, Experimental Gerontology, 1980, is Mitochondrial role in cell aging. That paper also has no abstract in Europe PMC. Miquel's own update, Mutation Research, 1992, says the early-1980s work proposed an oxyradical-mitochondrial DNA damage hypothesis: metazoan aging may be caused by mutation, inactivation, or loss of the mitochondrial genome in irreversibly differentiated cells. He places the copying of that genome at the inner membrane, near where reactive oxygen species form. He writes that, unlike the nuclear genome, it lacks excision and recombination repair. That lack of repair is his argument in that paper, not a measurement repeated here. The genome, he writes, carries the structural genes for 13 hydrophobic proteins of the respiratory chain and ATP synthase, plus the mitochondrial ribosomal and transfer RNAs. Damage there, on his account, would leave a fixed postmitotic cell less able to replace its mitochondria, and ATP would fall.",
+     "part": "miquel",
+     "cue": "1980 for the paper, 1992 for his statement of the hypothesis",
+     "slug": "miquel"
+    },
+    {
+     "id": "1.7",
+     "seg": 7,
+     "name": "Sohal and Weindruch",
+     "text": "Sohal and Weindruch, Science, 1996, state the oxidative stress hypothesis. Using oxygen generates potentially deleterious reactive oxygen metabolites. A chronic imbalance between prooxidants and antioxidants is oxidative stress. They say the amount of oxidative damage increases as an organism ages and is postulated to be a major causal factor of senescence. Three supports are in the abstract, and none is a new table here. First, overexpression of antioxidative enzymes retards the age-related accrual of oxidative damage and extends the maximum life span of transgenic Drosophila. No percentage is printed there. Second, variations in longevity among species inversely correlate with the rates of mitochondrial generation of superoxide and hydrogen peroxide. That is the move away from Pearl's metabolic rate and toward the radical rate. Third, caloric restriction lowers steady-state oxidative stress and damage, retards age-associated changes, and extends maximum life span in mammals. The tests that came later are figure 3.",
+     "part": "sohal",
+     "cue": "1996, three supports, no new percentages",
+     "slug": "sohal-and-weindruch"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "Where the radicals come from",
+   "subtitle": "A path from the respiratory chain to the damage. Not a measured rate.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Not a rate",
+     "text": "The drawing is a path, not a measurement. The boxes are not amounts. No percent of electrons is printed on it. This lesson does not have a paper in front of it that settles a leak fraction, so it does not teach one. Superoxide and hydrogen peroxide are the two species Sohal and Weindruch name. The enzymes are the ones the mouse and worm experiments actually change: superoxide dismutase, catalase, and glutathione peroxidase.",
+     "part": "scheme",
+     "cue": "The note above the path",
+     "slug": "not-a-rate"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "Where it is made",
+     "text": "Mitochondria consume the oxygen, in the account Sastre and colleagues give of Harman's 1972 suggestion. The respiratory chain is where that oxygen is used to make ATP. Some of the chemistry leaves superoxide. Miquel's 1992 argument puts the mitochondrial genome next to that chemistry, at the inner membrane. Keep the three objects apart. Production is not the genome, and the genome is not the damage.",
+     "part": "chain",
+     "cue": "The respiratory-chain box",
+     "slug": "where-it-is-made"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "What clears it",
+     "text": "Superoxide dismutase converts superoxide to hydrogen peroxide. Manganese superoxide dismutase, the mitochondrial one, is the enzyme cut to half in the Sod2 heterozygous mice on the next figure. Catalase, and glutathione peroxidase, dispose of hydrogen peroxide. Schriner and colleagues put extra human catalase in three places: the peroxisome, the nucleus, and the mitochondria. The lifespan result the abstract quantifies is the mitochondria-targeted one. The box marks that intervention. It does not draw a dose.",
+     "part": "clear",
+     "cue": "Superoxide dismutase, catalase, glutathione peroxidase",
+     "slug": "what-clears-it"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "What the damage is",
+     "text": "The damage, in the papers used here, is oxidation of lipids, proteins, and DNA, nuclear and mitochondrial. The markers you will hear named are an oxidized deoxyguanosine in DNA, malondialdehyde and isoprostanes in lipids, and protein carbonyls. A marker is not a mechanism. A higher marker means more of that damage was measured. It does not, by itself, say the damage caused the aging.",
+     "part": "damage",
+     "cue": "Lipids, proteins, and DNA",
+     "slug": "what-the-damage-is"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "Accumulation with age",
+     "text": "Mecocci and colleagues, Annals of Neurology, 1993, measured the oxidized nucleoside in DNA from three regions of cerebral cortex and from cerebellum, in 10 normal humans aged 42 to 97. The amount rose progressively with age in nuclear DNA and in mitochondrial DNA, and the rate of increase was much greater in mitochondrial DNA. Separately, mitochondrial DNA had 10-fold more of the oxidized nucleoside than nuclear DNA across the whole set of samples, and 15-fold more in those older than 70. Read those folds as mitochondrial versus nuclear, not as old versus young. The abstract does not give a fold for the rise with age. Hamilton and colleagues, Proceedings of the National Academy of Sciences, 2001, asked whether the rise was an artifact of isolating the DNA. Using sodium iodide to limit oxidation during isolation, they still found a significant increase with age in nuclear DNA from every tissue and rodent strain they studied, and in liver mitochondrial DNA. Dietary restriction reduced that age-related accumulation. No fold-change is in the abstract. Van Remmen and colleagues also saw the nuclear-DNA marker rise with age in wild-type mice. The accumulation is reported in these papers. Whether it causes aging is the next figure.",
+     "part": "age",
+     "cue": "10-fold and 15-fold are not old versus young",
+     "slug": "accumulation-with-age"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "Predictions and the results",
+   "subtitle": "What the theories required, and what the named papers found.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "How to read the rows",
+     "text": "Each row is a prediction the theories make, then the result the named paper actually reported. Nothing on this figure was recalculated. Where an abstract does not print a sample size, a percentage, or a lifespan in days, this lesson does not supply one.",
+     "part": "how",
+     "cue": "The note above the rows",
+     "slug": "how-to-read-the-rows"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Damage with age",
+     "text": "Prediction: oxidative damage accumulates with age. Mecocci, Hamilton, and Van Remmen, as just stated, found that it does, in the tissues and markers they measured. Sohal and Weindruch had already called that increase a support of the hypothesis. Outcome: the accumulation is supported. The cause is not settled by a correlation with age.",
+     "part": "agepred",
+     "cue": "The first row",
+     "slug": "damage-with-age"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "Catalase in mitochondria",
+     "text": "Prediction: less hydrogen peroxide inside mitochondria lengthens life. Schriner and colleagues, Science, 2005, made mice that overexpress human catalase in the peroxisome, the nucleus, or the mitochondria. Median and maximum lifespans were maximally increased in the mitochondria-targeted animals, averages of 5 months and 5.5 months. Cardiac pathology and cataract were delayed. Oxidative damage was reduced. Hydrogen peroxide production and hydrogen-peroxide inactivation of aconitase were attenuated. Mitochondrial deletions developed less. The abstract does not print the lifespan of the peroxisomal or nuclear lines, and it does not give the median they started from, so this lesson does not convert 5 months into a percentage. Outcome: in this mouse, mitochondria-targeted catalase extended life and lowered damage. It is one experiment. It is not a vitamin.",
+     "part": "mcat",
+     "cue": "5 months and 5.5 months, not a percent",
+     "slug": "catalase-in-mitochondria"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Mutator mice",
+     "text": "Prediction: if mitochondrial DNA mutations drive aging, a mouse that cannot proofread that genome should age early. If free radicals are required on the path, that mouse should also show more oxidative damage. Trifunovic and colleagues, Nature, 2004, made homozygous knock-in mice with a proofreading-deficient PolgA, the catalytic subunit of the mitochondrial polymerase. Point mutations rose three- to fivefold, deleted mitochondrial DNA increased, lifespan was reduced, and aging-related phenotypes came early: weight loss, less subcutaneous fat, hair loss, spine curvature, osteoporosis, anaemia, reduced fertility, and heart enlargement. They call that a causative link between mitochondrial DNA mutations and aging phenotypes in mammals. Kujoth and colleagues, Science, 2005, made the same kind of proofreading-deficient polymerase gamma mouse. Mutations accumulated and features of accelerated aging appeared. Accumulation was not associated with increased markers of oxidative stress, or with a defect in proliferation. It correlated with apoptotic markers, especially in tissues that turn over quickly. Those apoptotic markers also rose with age in normal mice. Outcome: a high mitochondrial mutation burden can cause a premature-aging picture. In Kujoth's mice, increased oxidative stress was not the thing they measured alongside it. Do not paste Kujoth's negative result onto Trifunovic. Trifunovic's abstract does not report the oxidative-stress measurement.",
+     "part": "mutator",
+     "cue": "The phenotype, then the missing oxidative increase",
+     "slug": "mutator-mice"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "Across species",
+     "text": "Prediction: longer-lived species produce less mitochondrial reactive oxygen species. Sohal and Weindruch state an inverse correlation with superoxide and hydrogen peroxide as support. Lambert and colleagues, Aging Cell, 2007, tested hydrogen peroxide from isolated heart mitochondria. The abstract's list is mouse, rat, white-footed mouse, naked mole-rat, Damara mole-rat, guinea pig, baboon, little brown bat, Brazilian free-tailed bat, ox, pigeon, and quail. During succinate oxidation, rates were generally lower in the longer-lived species, and the difference was at complex I during reverse electron transport. Maximum lifespan was negatively correlated with that hydrogen peroxide production. After correction for body mass the correlation was even more significant. After a correction for phylogeny, the inverse association was significant by a sign test and fell short of significance by regression. Outcome: the direction agrees with the prediction. The phylogeny-controlled regression did not clear the bar they set. No correlation coefficient is in the abstract, so none is printed here.",
+     "part": "species",
+     "cue": "Direction yes, regression after phylogeny no",
+     "slug": "across-species"
+    },
+    {
+     "id": "3.6",
+     "seg": 6,
+     "name": "The naked mole-rat",
+     "text": "Prediction: a very long life should come with low oxidative damage, or with unusually strong antioxidants. The naked mole-rat is the counterexample Andziak, Buffenstein, and colleagues published. Aging Cell, 2006: maximum lifespan greater than 28.3 years, an order of magnitude longer than predicted from body size. Compared with similar-sized mice, a more pro-oxidative cellular environment, 10-fold higher in vivo lipid peroxidation, and greater accrued damage to lipids, twofold, to DNA, about two to eight times, and to proteins, 1.5 to 2-fold, than physiologically age-matched mice. The same damage was equal to that of same-aged mice. A second Aging Cell paper the same year, Andziak and Buffenstein: mouse maximum lifespan about 3.5 years. Even when young, lipid-peroxidation markers and iron were at least twofold higher in mole-rats, P < 0.005. In mice, accrued damage in old animals was twice that of young mice. In mole-rats, urinary isoprostanes fell by half with age, P less than 0.001, iron in the tissue rose, and lipid damage did not change with age. Mechanisms of Ageing and Development, 2005: captive survival greater than 28 years, eight times longer than similar-sized mice. Cellular glutathione peroxidase in liver was 70 times lower than in mice, p < 0.0001, at the ages they matched, mole-rats at 30, 75, and 130 months against mice at 4, 12, and 18 months. They say antioxidant defenses are unlikely to explain that longevity difference. Outcome: not the prediction. One caution from the species row. Lambert's set includes the naked mole-rat, and that paper measured hydrogen peroxide production by isolated heart mitochondria, not the tissue damage Andziak measured. A production rate and a damage level are different sentences.",
+     "part": "mole",
+     "cue": "Long life, high damage, low glutathione peroxidase",
+     "slug": "the-naked-mole-rat"
+    },
+    {
+     "id": "3.7",
+     "seg": 7,
+     "name": "Antioxidant genes",
+     "text": "Prediction: less superoxide dismutase shortens life, and more antioxidant enzyme lengthens it. Van Remmen and colleagues, Physiological Genomics, 2003: mice heterozygous for Sod2 have 50 percent of normal manganese superoxide dismutase in every tissue, throughout life. The oxidized marker in nuclear DNA was higher in every tissue studied. At 26 months it was significantly higher than wild-type, from 15 percent in heart to over 60 percent in liver. It was also higher in mitochondrial DNA from liver and brain. The number of old mice with a tumor was 100 percent higher. Mean and maximum survival were identical. Cataract, immune response, and the skin-collagen markers they followed changed with age to the same extent as in wild-type. Outcome for that mouse: more damage, more cancer, not a shorter life. Pérez and colleagues, 2009, put 18 genetic manipulations from their laboratory on one account. Only deletion of Sod1 affected lifespan. They observed about a 30 percent decrease in mean, median, and maximum lifespan of the Sod1 null mice. Those mice had a high incidence of hepatocellular carcinoma, which they say is never observed in C57BL/6, and they say it is uncertain whether the shorter life is accelerated aging or novel pathology from the mutation. The abstract's conclusion is that these data call into serious question the idea that altering oxidative damage sets the longevity of mice. The worms go the other way. Van Raamsdonk and Hekimi, PLoS Genetics, 2009: deleting any one of the five sod genes did not shorten life, despite more sensitivity to oxidative stress. Deleting sod-2, the mitochondrial superoxide dismutase, extended life, despite more oxidatively damaged proteins. The abstract does not print the size of that extension. In clk-1 worms, which already live long because of decreased mitochondrial function, deleting sod-2 increased mean lifespan by 15 days. In isp-1 worms, another long-lived mitochondrial mutant, deleting sod-2 decreased lifespan by 25 days. Those day counts are the double mutants, not sod-2 against ordinary wild-type worms. Van Raamsdonk and Hekimi, Proceedings of the National Academy of Sciences, 2012: worms with all five sod genes deleted, called sod-12345, are viable and have a normal lifespan, with markedly increased sensitivity to stress. Their conclusion is that superoxide dismutase is dispensable for a normal lifespan in this animal and is required to survive acute stresses.",
+     "part": "genes",
+     "cue": "Sod2 mice, Sod1, then the worms",
+     "slug": "antioxidant-genes"
+    },
+    {
+     "id": "3.8",
+     "seg": 8,
+     "name": "Antioxidant pills",
+     "text": "Prediction: antioxidant supplements reduce mortality. Bjelakovic and colleagues, JAMA, 2007, pooled randomized trials of beta-carotene, vitamin A, vitamin C, vitamin E, and selenium, alone or combined, against placebo or no intervention. Searches ran to October 2005. 68 trials, 232,606 participants. All trials together: relative risk 1.02, interval 0.98 to 1.06, not significant. In 47 low-bias trials, 180,938 participants, the supplements significantly increased mortality: relative risk 1.05, interval 1.02 to 1.08. In those low-bias trials, after selenium trials were excluded, beta-carotene was 1.07, interval 1.02 to 1.11, vitamin A was 1.16, interval 1.10 to 1.24, and vitamin E was 1.04, interval 1.01 to 1.07. Vitamin C and selenium had no significant effect. The abstract does not print a relative risk for that vitamin C sentence. Do not borrow one. Their conclusion: beta-carotene, vitamin A, and vitamin E may increase mortality. The Cochrane review of the same question was first published in 2008, not 2007. It included 67 trials and 232,550 participants. The low-bias relative risk was again 1.05, interval 1.02 to 1.08. The counts are close to the JAMA paper and they are not the same tally. The 2012 update searched to February 2011. 78 trials, 296,707 participants. 56 low-bias trials, 244,056 participants. Mean age 63 years, range 18 to 103. Overall, a random-effects relative risk of 1.02, interval 0.98 to 1.05, not significant. The fixed-effect model was 1.03, interval 1.01 to 1.05, significant. Heterogeneity was an I-squared of 12 percent. In the low-bias trials the relative risk was 1.04, interval 1.01 to 1.07. In that update, beta-carotene and vitamin E increased mortality. Vitamin E's interval was 1.00 to 1.05, and the authors still call the increase significant. Vitamin A's group result was 1.07, interval 0.97 to 1.18, not significant. Vitamin C was 1.02, interval 0.98 to 1.07. Selenium was 0.97, interval 0.91 to 1.03. The dose of vitamin A was associated with increased mortality in a meta-regression, relative risk 1.0006, interval 1.0002 to 1.001, P = 0.002. The authors' conclusion: no evidence to support antioxidant supplements for primary or secondary prevention. Beta-carotene and vitamin E seem to increase mortality, and so may higher doses of vitamin A. Outcome: not the prediction. A small increase in the lower-bias trials, not a benefit.",
+     "part": "pills",
+     "cue": "JAMA 2007, Cochrane 2008, Cochrane 2012",
+     "slug": "antioxidant-pills"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "A signal, and what is settled",
+   "subtitle": "Mitohormesis, then what is broadly accepted and what is contested.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "A signal",
+     "text": "Mitohormesis is the name Ristow and Zarse, Experimental Gerontology, 2010, use for a mitochondrial hormesis. Their review says increased reactive oxygen species inside mitochondria can cause an adaptive response, and that blocking that signal with antioxidants impairs the lifespan extension of glucose restriction and the health effects of exercise. They conclude that the reactive oxygen species are required signals, not only damage. That is a review's conclusion. The human experiment under it is narrower than a lifespan.",
+     "part": "signal",
+     "cue": "The name, from the 2010 review",
+     "slug": "a-signal"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Exercise in young men",
+     "text": "Ristow and colleagues, Proceedings of the National Academy of Sciences, 2009. Healthy young men. Vitamin C, 1000 mg a day, and vitamin E, 400 IU a day. Nineteen previously untrained, twenty pretrained. Four weeks of exercise. Insulin sensitivity, measured as the glucose infusion rate in a clamp, rose only in the men who were not taking the antioxidants, P < 0.001 in both the untrained and the pretrained. The same split held for adiponectin, and for PPARγ and the coactivators PGC-1α and PGC-1β, and for the induction of superoxide dismutases 1 and 2 and glutathione peroxidase. Exercise induced those defenses. The vitamins blocked the induction. The abstract's claim is about insulin sensitivity and an adaptive response, consistent with mitohormesis. It does not measure how long anyone lived. The background sentence that exercise promotes longevity is not a result of the four weeks.",
+     "part": "exercise",
+     "cue": "1000 mg, 400 IU, four weeks, not a lifespan",
+     "slug": "exercise-in-young-men"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "Accepted",
+     "text": "Read the left column as the consensus, and do not upgrade it. Reactive oxygen species are produced in normal aerobic metabolism. Oxidative damage to DNA rose with age in the human brain Mecocci measured and in the rodent tissues Hamilton and Van Remmen measured. Mitochondria-targeted catalase extended median and maximum lifespan in the Schriner mice, by the months in the abstract. A proofreading failure in the mitochondrial polymerase caused a premature-aging phenotype in the Trifunovic mice and in the Kujoth mice. Mitochondrial dysfunction is one of the nine hallmarks in López-Otín and colleagues, Cell, 2013, and it remains one of the twelve in the 2023 paper. Antioxidant supplements, in the trials Bjelakovic pooled, did not reduce mortality. In the low-bias trials they were associated with a small increase. None of those sentences says that a vitamin pill is the experiment Schriner ran.",
+     "part": "agree",
+     "cue": "The left column",
+     "slug": "accepted"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Contested",
+     "text": "The right column is the criticism, and it is in the same literature. The rate-of-living proportionality with metabolic rate is the version Vaanholt and colleagues say was rejected, birds against mammals of the same size. More oxidative damage did not shorten life in Sod2 heterozygous mice. Only one of the 18 genetic manipulations Pérez surveyed changed mouse lifespan in the direction a simple damage theory predicts, and that one, Sod1 deletion, is tied to hepatocellular carcinoma in their account. Naked mole-rats live a very long time with high oxidative damage and a glutathione peroxidase 70 times lower than the mouse. Kujoth's mutator mice showed accelerated-aging features without increased oxidative-stress markers. Worms missing sod-2 lived longer, and worms missing every superoxide dismutase had a normal lifespan. The exercise benefit Ristow measured was blocked by vitamins C and E. Lambert's inverse association survived a sign test after phylogeny and missed significance on the regression.",
+     "part": "against",
+     "cue": "The right column",
+     "slug": "contested"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "Still open",
+     "text": "Leave the figure on what López-Otín and colleagues, 2013, say had to be re-thought. Increased reactive oxygen species may prolong life in yeast and in C. elegans. In mice, raising mitochondrial reactive oxygen species and oxidative damage did not accelerate aging. Raising antioxidant defenses did not extend longevity. Impairing mitochondria without raising reactive oxygen species did accelerate aging. When they state the mitochondrial free-radical theory, the reference they print is Harman, Journal of Gerontology, 1965, a paper on serum copper. It is not the 1972 article. They still list mitochondrial dysfunction as a hallmark, in the nine of 2013 and in the twelve of 2023. What is open is how much of ordinary aging is that dysfunction, how much is the damage, and how much is a signal that went on too long. The Schriner extension and the mutator mice are mice. The supplement trials are pills, not catalase targeted to human mitochondria. The worm extensions are worms.",
+     "part": "open",
+     "cue": "The open paragraph under the right column",
+     "slug": "still-open"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "From the literature",
+   "subtitle": "Reading-room pages on mitochondrial DNA and on NAD. Only what those pages say.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Only the pages",
+     "text": "Peer-Reviewed Literature is part of this course. Each card opens one of those pages. The line you are about to read says only what that page says. If a page says the synopsis is the abstract, or that the result was in mice, do not promote it. None of these pages is the Harman paper or the Bjelakovic meta-analysis.",
+     "part": "bridge",
+     "cue": "The sentence above the cards",
+     "slug": "only-the-pages"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "Copying errors in blood",
+     "text": "One page is mitochondrial DNA in human blood, about 750,000 people in the UK Biobank and All of Us. Mitochondrial single-letter mutations rose sharply at about age 60. The page says the pattern fitted copying errors made visible when blood-cell clones expand, not oxidative damage. It limits that to blood. It says the finding does not mean oxidative damage plays no role in aging. It does not say the mutations were counted in muscle or brain.",
+     "part": "blood",
+     "cue": "The blood card",
+     "slug": "copying-errors-in-blood"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Deleted copies in muscle",
+     "text": "A second page is deleted mitochondrial DNA in muscle. Mice missing Mpv17 start with too little mitochondrial DNA. By six months, deletions had appeared and some fibers lacked a working respiratory chain. Fibers that carried deletions held more mitochondrial DNA than normal, together with raised Hsp60, and the same Hsp60 link was seen in human mitochondrial myopathy. The page says the abstract gives no animal numbers or patient numbers. It says the link to ordinary aging is the authors' suggestion, not a test in aged animals. The human evidence is a disease, not healthy older people.",
+     "part": "fiber",
+     "cue": "The muscle card",
+     "slug": "deleted-copies-in-muscle"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "An aged male heart",
+     "text": "A third page is NAD in an old heart. Old male mice had lower heart NAD+, which the authors traced in part to limited mobilisation from mitochondria. Two months of either of two NAD precursors reduced senescence markers in heart muscle and improved filling between beats. Old female mice did not respond. The page says the synopsis is the abstract, that the abstract gives no animal numbers or doses, and that the results are mice and cultured cells. It does not say the benefit was an antioxidant, and it does not say reactive oxygen species caused the senescence. The five hundred years of the first module were won mainly by fewer deaths from infection, hunger, and dirty water. These pages ask how mitochondrial DNA changes in blood and in a muscle disease, and what an NAD precursor did in old male mice. They do not say that a vitamin, a worm gene, or a mouse catalase produced that rise.",
+     "part": "nad",
+     "cue": "The heart card, male mice only",
+     "slug": "an-aged-male-heart"
+    }
+   ]
+  }
+ ],
+ "page": "longevity/free-radical-mitochondria.html",
+ "pageUrl": "https://orcuttshortcut.com/longevity/free-radical-mitochondria.html",
+ "scriptUrl": "https://orcuttshortcut.com/longevity/scripts/free-radical-mitochondria.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 5,
+ "segmentCount": 29
+}
