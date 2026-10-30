@@ -1,0 +1,87 @@
+{
+  "note": "Published values only. Nothing is re-fit. Mecocci's 10-fold and 15-fold are mitochondrial DNA versus nuclear DNA, not old versus young. Schriner states months, not a percentage. Pearl 1928 has no Crossref DOI; the inverse-proportionality sentence is Vaanholt et al. 2009 citing that book. Harman 1956 and 1972 have no Europe PMC abstract; the descriptions used here are Pérez et al. 2009 and Sastre et al. 2000. Relative risks are the abstracts' printed figures, stored as strings so they are not re-rounded.",
+  "miquelProteins": 13,
+  "mecocci": {"n": 10, "ageLow": 42, "ageHigh": 97, "mtVsNuclearWhole": 10, "mtVsNuclearOver70": 15, "overAge": 70},
+  "schriner": {"medianMonths": 5, "maximumMonths": 5.5},
+  "trifunovicPointFold": [3, 5],
+  "lambertSpecies": [
+    "mouse", "rat", "white-footed mouse", "naked mole-rat", "Damara mole-rat", "guinea pig",
+    "baboon", "little brown bat", "Brazilian free-tailed bat", "ox", "pigeon", "quail"
+  ],
+  "andziakDamage": {
+    "mlsMoreThan": 28.3,
+    "lipidPeroxidationFold": 10,
+    "lipidAccrued": "twofold",
+    "dna": "two to eight times",
+    "protein": "1.5 to 2-fold"
+  },
+  "andziakLipid": {
+    "mouseMlsAbout": 3.5,
+    "youngAtLeast": "twofold",
+    "pYoung": "0.005",
+    "oldMice": "twice",
+    "isoprostane": "by half",
+    "pIsoprostane": "0.001",
+    "pIron": "0.05"
+  },
+  "andziakGpx": {
+    "timesLonger": 8,
+    "mlsMoreThanYears": 28,
+    "gpxTimesLower": 70,
+    "p": "0.0001",
+    "nmrMonths": [30, 75, 130],
+    "mouseMonths": [4, 12, 18]
+  },
+  "vanRemmen": {"mnSodPercent": 50, "ageMonths": 26, "heartPercent": 15, "liverOverPercent": 60, "tumorPercent": 100},
+  "perez": {"manipulations": 18, "sod1ShorterPercent": 30},
+  "worms": {"sodGenes": 5, "clk1MeanDays": 15, "isp1Days": 25},
+  "jama": {
+    "trials": 68,
+    "participants": 232606,
+    "allRr": "1.02",
+    "allCi": ["0.98", "1.06"],
+    "lowBiasTrials": 47,
+    "lowBiasParticipants": 180938,
+    "lowBiasRr": "1.05",
+    "lowBiasCi": ["1.02", "1.08"],
+    "rows": [
+      {"name": "Beta-carotene", "rr": "1.07", "ci": ["1.02", "1.11"]},
+      {"name": "Vitamin A", "rr": "1.16", "ci": ["1.10", "1.24"]},
+      {"name": "Vitamin E", "rr": "1.04", "ci": ["1.01", "1.07"]}
+    ]
+  },
+  "cochrane2008": {
+    "trials": 67,
+    "participants": 232550,
+    "lowBiasRr": "1.05",
+    "lowBiasCi": ["1.02", "1.08"]
+  },
+  "cochrane2012": {
+    "trials": 78,
+    "participants": 296707,
+    "lowBiasTrials": 56,
+    "lowBiasParticipants": 244056,
+    "randomRr": "1.02",
+    "randomCi": ["0.98", "1.05"],
+    "fixedRr": "1.03",
+    "fixedCi": ["1.01", "1.05"],
+    "lowBiasRr": "1.04",
+    "lowBiasCi": ["1.01", "1.07"],
+    "i2": 12,
+    "meanAge": 63,
+    "ageLow": 18,
+    "ageHigh": 103,
+    "vitaminADoseRr": "1.0006",
+    "vitaminADoseCi": ["1.0002", "1.001"],
+    "vitaminADoseP": "0.002",
+    "rows": [
+      {"name": "Beta-carotene", "trials": 26, "rr": "1.05", "ci": ["1.01", "1.09"], "sig": "increased"},
+      {"name": "Vitamin E", "trials": 46, "rr": "1.03", "ci": ["1.00", "1.05"], "sig": "increased"},
+      {"name": "Vitamin A", "trials": 12, "rr": "1.07", "ci": ["0.97", "1.18"], "sig": "not significant"},
+      {"name": "Vitamin C", "trials": 29, "rr": "1.02", "ci": ["0.98", "1.07"], "sig": "not significant"},
+      {"name": "Selenium", "trials": 17, "rr": "0.97", "ci": ["0.91", "1.03"], "sig": "not significant"}
+    ]
+  },
+  "ristow": {"vitaminCMg": 1000, "vitaminEIu": 400, "untrained": 19, "pretrained": 20, "weeks": 4},
+  "hallmarks": {"n2013": 9, "n2023": 12}
+}
