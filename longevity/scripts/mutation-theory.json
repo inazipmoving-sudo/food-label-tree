@@ -1,0 +1,310 @@
+{
+ "schemaVersion": 1,
+ "module": "mutation-theory",
+ "title": "Module 2 · The Mutation Theory of Aging",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "Where the theory came from",
+   "subtitle": "Somatic mutation, evolutionary mutation accumulation, and error catastrophe are three different ideas.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "Three ideas",
+     "text": "This module is about one theory of aging, and about two others that are easy to mix up with it. The somatic mutation theory says the body ages because mutations arise in its own cells during life. Evolutionary mutation accumulation, Medawar's theory, is about inherited mutations that act late, and about why natural selection fails to remove them. Error catastrophe, Orgel's theory, is about mistakes in protein synthesis feeding on themselves. Same word, mutation, three different claims. Read the next sentence as it is written.",
+     "part": "split",
+     "cue": "The three-way split at the top of the figure",
+     "slug": "three-ideas"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Word for word",
+     "text": "The somatic mutation theory is about changes that arise in the cells of one body. Mutation accumulation, in Medawar's sense, is about inherited mutations that act late and remain in a population because selection is weak by then. They are not the same theory.",
+     "part": "verbatim",
+     "verbatim": true,
+     "cue": "Read the sentence under the split word for word",
+     "slug": "word-for-word"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "Szilard",
+     "text": "In 1959 Leo Szilard published On the Nature of the Aging Process in the Proceedings of the National Academy of Sciences. He proposed that aging is caused by somatic mutations, which he called aging hits, accumulating in the cells of the body. That is the paper this module treats as the classic statement of the somatic mutation theory. The DOI is on the source list. This lesson does not use the numerical model in that paper.",
+     "part": "szilard",
+     "cue": "1959, the somatic line",
+     "slug": "szilard"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "Failla",
+     "text": "The year before, in 1958, G. Failla published The Aging Process and Cancerogenesis in the Annals of the New York Academy of Sciences. It is the other founding paper: somatic mutation as a process shared by aging and by cancer. Failla is the companion to Szilard, not a separate theory. Crossref lists two DOIs for the same volume and the same pages. Both are on the source list. Use either; they are the same article.",
+     "part": "failla",
+     "cue": "1958, paired with Szilard",
+     "slug": "failla"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Medawar",
+     "text": "Peter Medawar's An Unsolved Problem of Biology is an inaugural lecture, delivered in 1951 and published in 1952 by H. K. Lewis in London. Crossref has no DOI for it. Do not borrow one from a journal notice of the book. Medawar's argument is evolutionary. If a harmful version of a gene acts only late, after most animals in the wild have already died of predators, infection, or starvation, selection is too weak to remove it. Those inherited mutations can accumulate in the population. That is mutation accumulation. It explains how aging could evolve. It is not a count of mutations inside your cells.",
+     "part": "medawar",
+     "cue": "1952, the evolutionary line",
+     "slug": "medawar"
+    },
+    {
+     "id": "1.6",
+     "seg": 6,
+     "name": "Williams",
+     "text": "George Williams, in Evolution in 1957, is the paper people set beside Medawar. It is not a second statement of mutation accumulation. The title is Pleiotropy, Natural Selection, and the Evolution of Senescence. Williams argued that selection can favor a gene that helps early in life even if the same gene harms late. That is antagonistic pleiotropy. It is an evolutionary theory of aging, about genes in the population, and it is not the somatic mutation theory. The later module on antagonistic pleiotropy and disposable soma is where that argument is taught in full. It is on this timeline only so it is not folded into Szilard.",
+     "part": "williams",
+     "cue": "1957, a different evolutionary theory",
+     "slug": "williams"
+    },
+    {
+     "id": "1.7",
+     "seg": 7,
+     "name": "Orgel",
+     "text": "In 1963 Leslie Orgel, also in the Proceedings of the National Academy of Sciences, asked what happens if the machinery that makes proteins is itself made of protein. An error in a protein that copies DNA, or that translates RNA, could make further errors. In the strong form of the idea, the error rate would run away. He called the relevance of that feedback to aging. This is error catastrophe. It is not Szilard's theory. Szilard was about mutations in the DNA of body cells. Orgel was about a possible collapse in the accuracy of protein synthesis.",
+     "part": "orgel",
+     "cue": "1963, error catastrophe",
+     "slug": "orgel"
+    },
+    {
+     "id": "1.8",
+     "seg": 8,
+     "name": "The test",
+     "text": "The strong form has a prediction: protein-synthesis errors should rise as cells age. Harley, Pollard, Chamberlain, Stanners, and Goldstein tested that in 1980, again in the Proceedings of the National Academy of Sciences. In cultured human fibroblasts, early-passage cells from fetal, young, and old donors, and cells from Werner syndrome and Hutchinson-Gilford syndrome, had similar error frequencies. Late-passage cells had similar or lower error frequencies than early-passage cells. They found no correlation with donor age or with how long the culture could keep dividing. Their sentence is that the data fail to support the error catastrophe theory of aging. Hold the limit of the test. It is cells in a dish, using an induced mistranslation assay, not a measurement across a human life. What it rules out is the predicted rise in that system. It does not, by itself, close every later version of the idea. The strong form is not the current account of aging.",
+     "part": "harley",
+     "cue": "1980, the prediction that failed",
+     "slug": "the-test"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "Lifespan and the mutation rate",
+   "subtitle": "Intestinal crypts of mammals, from Cagan and colleagues, Nature, 2022.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "What they sequenced",
+     "text": "The modern measurement behind this chart is Cagan and colleagues, Nature, 2022. They sequenced 208 intestinal crypts from 56 individuals across 16 mammal species. A crypt is a small gland in the gut lining. In these species a crypt comes to be descended from one stem cell, so sequencing it is close to sequencing one cell's mutations. One ferret sample was small intestine rather than colon. Human crypts were taken from an earlier study. Fifteen species had a known age. The harbour porpoise is the sixteenth and is left off this chart because its age was unknown. Every dot is a species mean, not one animal.",
+     "part": "design",
+     "cue": "The note above the chart: crypts, not a whole body",
+     "slug": "what-they-sequenced"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "How to read the axes",
+     "text": "Both axes are logarithmic, so a step of equal length is an equal multiple, not an equal number of years or of mutations. Across is lifespan, in years. It is not the oldest animal on record. It is the age at which 80 percent of adults had already died, taken from zoo records for the other species and from human mortality data for people, which is their way of limiting deaths from accidents and predators. Up the side is the mean number of single-base substitutions per genome per year in those crypts. The dots are rounded to the nearest substitution and to one decimal year, from Supplementary Tables 3 and 6. The table under the chart names all fifteen. Open circles are not a second dataset. There is one dot per species.",
+     "part": "axes",
+     "cue": "Logarithmic axes, then the table",
+     "slug": "how-to-read-the-axes"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "Human and mouse",
+     "text": "The paper's own sentence puts the range at 47 substitutions per year in humans to 796 substitutions per year in mice. Those are the rounded values on this chart: human 47, mouse 796. The human lifespan on the chart is 83.7 years. Table 1 of the paper prints the maximum as 83.67, which is this human figure. The mouse lifespan on the chart is 3.7 years. Do not call the human-to-mouse lifespan gap 30-fold. The 30-fold in Table 1 is the full span of the study, from 2.75 years to 83.67. The mutation-rate span in that same table is 47.12 to 796.42, a fold of 16.90, which is the 47 and the 796. Indels, the small insertions and deletions, ran from 2.5 per year to 158 per year over that same human-to-mouse range. This chart is substitutions only.",
+     "part": "ends",
+     "cue": "Human at the right, mouse at the upper left",
+     "slug": "human-and-mouse"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "Size is not the axis",
+     "text": "The paper uses two species to show that body size is not what the rate is tracking. Giraffe and naked mole-rat have similar rates, which the paper rounds to 99 and 93 substitutions per year, and similar lifespans, which it rounds to 24 and 25 years. On this chart the same table values, to one decimal year, are 24.1 and 25.3. Adult body mass differs by around 23,000-fold. Cows, giraffes, and horses weigh more than a human and still have higher mutation rates, in line with their shorter lifespans. In the table the horse is 128 substitutions per year and the cow is 207, against the human 47. After lifespan is taken into account, body mass did not explain a significant further share of the rates.",
+     "part": "size",
+     "cue": "Giraffe and naked mole-rat, then horse and cow in the table",
+     "slug": "size-is-not-the-axis"
+    },
+    {
+     "id": "2.5",
+     "seg": 5,
+     "name": "End of life",
+     "text": "If the rate per year is inversely proportional to lifespan, the number of mutations present at the end of life stays roughly steady. That is what they found. A log-log regression of rate on lifespan explained a fraction 0.85 of the variance between species, P equals 1 times 10 to the minus 6, and the slope was close to, and not significantly different from, minus 1. A model of rate equals a constant divided by lifespan explained 82 percent of that variance, P equals 2.9 times 10 to the minus 9. The constant, their mean end-of-lifespan burden, was 3,206 substitutions per genome, with a confidence interval from 2,684 to 3,729. Table 1: lifespan varied 30.44-fold, adult mass 39,024-fold, and the end-of-lifespan burden only 2.94-fold, from 1,828 to 5,379 substitutions. The paper's prose says around 30-fold, around 40,000-fold, and around 3-fold. Use those words. The same pattern held for protein-coding mutations: 85 percent of the variance, and an end-of-lifespan burden of 31 coding substitutions per crypt.",
+     "part": "burden",
+     "cue": "The burden note under the chart",
+     "slug": "end-of-life"
+    },
+    {
+     "id": "2.6",
+     "seg": 6,
+     "name": "What it does not show",
+     "text": "Say the limit before you leave the figure. This is one cell type, the intestinal crypt, in 15 species. The paper says the rates may be a contributing factor in aging, and that they look evolutionarily constrained. It does not show that these mutations are the cause of aging, or that the same numbers hold in brain, muscle, or blood. Later figures are where that argument is taken apart.",
+     "part": "limit",
+     "cue": "The limit under the table",
+     "slug": "what-it-does-not-show"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "From damage to a mutation to a clone",
+   "subtitle": "A lesion, a sequence change, and a clone are three different objects.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "Not the same thing",
+     "text": "A mutation is a change in the sequence that is still there after the cell has dealt with the damage. DNA damage is the lesion itself: a break, a crosslink, an adduct, a base that has been chemically changed. The cell may repair the lesion and leave the sequence as it was. It may mis-copy the lesion and leave a mutation. Or the lesion may sit unrepaired and stall the copying of RNA, so the cell works badly without a new mutation ever being written down. Hoeijmakers's 2009 review in the New England Journal of Medicine is the standard account of damage, repair, aging, and cancer together. Vijg and Dong, in Cell in 2020, review how the mutations that do get written down can produce a mosaic of genetically different cells. The diagram keeps those steps apart. Do not let damage, mutation, and clone collapse into one word.",
+     "part": "damage",
+     "cue": "The top box, then the three exits",
+     "slug": "not-the-same-thing"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Three exits",
+     "text": "The three exits are the whole mechanism. Faithful repair puts the sequence back. A mutation is the exit that Szilard was talking about: a permanent change, passed to the daughter cells if the cell divides. The third exit is dysfunction without a new sequence. Niedernhofer, Hoeijmakers, Vijg, and colleagues, Nature, 2006, studied that third exit in a severe form. The XPF-ERCC1 endonuclease cuts helix-distorting lesions and interstrand crosslinks. A patient with a severe XPF mutation had profound sensitivity to crosslinks and dramatic progeroid symptoms. Mice deficient in XPF-ERCC1 showed a liver gene-expression pattern correlated with that of old wild-type mice. The authors' conclusion is about unrepaired cytotoxic damage and a hormonal response, a drop in growth-hormone and IGF-1 signaling, not about a count of mutations. Werner syndrome is the other repair disease on this figure. Yu and colleagues, Science, 1996, identified the gene, WRN. The predicted protein is 1,432 amino acids and resembles a DNA helicase. The mutations they found in patients were splice-junction mutations and nonsense mutations. One truncating splice mutation was homozygous in 60 percent of the Japanese patients they examined.",
+     "part": "exits",
+     "cue": "Repair, mutation, or a stall",
+     "slug": "three-exits"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "A clone",
+     "text": "Most mutations do nothing visible, because they hit one cell and stop there. A clone is what happens when a stem cell with a mutation outgrows its neighbors. Jaiswal and colleagues, New England Journal of Medicine, 2014, looked for known blood-cancer mutations in the exomes of 17,182 people who had not been chosen for a blood disease. Mutations were rare under age 40. At 70 to 79 they were in 9.5 percent, 219 of 2,300 people. At 80 to 89, 11.7 percent, 37 of 317. At 90 to 108, 18.4 percent, 19 of 103. Most of the variants were in three genes, DNMT3A, TET2, and ASXL1. A mutation was associated with a hazard ratio of 11.1 for hematologic cancer, 1.4 for death from any cause, 2.0 for coronary heart disease, and 2.6 for ischemic stroke. The confidence intervals are on the figure. The authors' summary is that 10 percent of people older than 70 carried such a lesion, and that a median of 18 percent of the white blood cells belonged to the clone. They also say the true prevalence may be higher, because it depends on which mutations are counted and on how small a clone the method can see.",
+     "part": "clone",
+     "cue": "The clone box, blood first",
+     "slug": "a-clone"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "Normal tissues",
+     "text": "The same kind of colonization happens in tissues that are not blood, and in people who do not have cancer. Martincorena and colleagues, Science, 2015, sequenced 234 biopsies of sun-exposed but physiologically normal skin from four people. The mutation burden was higher than that of many tumors. More than a quarter of normal skin cells carried a driver mutation, and every square centimeter held hundreds of competing mutant clones. In 2018 the same group sequenced normal esophagus from nine donors. The mutation rate was lower than in skin, but clones carrying mutations in 14 cancer-associated genes were under strong positive selection. By middle age, more than half of the esophageal epithelium was colonized by mutant clones. Mutations in NOTCH1 were more common in normal esophagus than in esophageal cancer. So a high mutation burden, and even a driver mutation, is not the same thing as a tumor.",
+     "part": "tissue",
+     "cue": "Skin, then esophagus",
+     "slug": "normal-tissues"
+    },
+    {
+     "id": "3.5",
+     "seg": 5,
+     "name": "A hallmark, with a limit",
+     "text": "López-Otín, Blasco, Partridge, Serrano, and Kroemer, Cell, 2013, listed nine hallmarks of aging. Genomic instability is the first. The 2023 update, also in Cell, keeps it and expands the list to twelve: genomic instability, telomere attrition, epigenetic alterations, loss of proteostasis, disabled macroautophagy, deregulated nutrient sensing, mitochondrial dysfunction, cellular senescence, stem cell exhaustion, altered intercellular communication, chronic inflammation, and dysbiosis. Being first on that list is the consensus statement that genome damage belongs in any account of aging. It is not a measurement of how much of aging the mutations explain. In the 2013 paper the authors say that premature-aging diseases such as Werner syndrome are a consequence of increased DNA damage, and that the relevance of these syndromes to normal aging remains unresolved, in part because they recapitulate only some aspects of aging. That sentence is the hinge into the next figure.",
+     "part": "hallmark",
+     "cue": "The hallmark line at the bottom",
+     "slug": "a-hallmark-with-a-limit"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "Where the argument stands",
+   "subtitle": "What is broadly accepted, and what is still contested.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "Accepted",
+     "text": "Read the left column as the consensus, and do not upgrade it. Somatic mutations do accumulate with age in normal tissues. In the crypt study, the yearly rate runs inversely with species lifespan, and the burden at the end of life is much more similar than the lifespans are. Clonal hematopoiesis is common in later life and is associated with blood cancer, death, coronary disease, and stroke. Normal skin and normal esophagus are already mosaics of mutant clones. Some inherited defects of DNA repair, including WRN and XPF-ERCC1, cause progeroid syndromes. Genomic instability is a listed hallmark in both the 2013 and the 2023 papers. None of those sentences says that ordinary mutations are the main cause of aging.",
+     "part": "agree",
+     "cue": "The left column",
+     "slug": "accepted"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Too few",
+     "text": "The right column is the criticism, and it comes from the same literature. In the supplementary note to the 2022 crypt paper, Cagan and colleagues write that sequencing of human tissues has largely ruled out models in which the mutation rate itself accelerates with age. The rise is approximately linear, so the rate is roughly constant through life. They also write that mutation rates in most human tissues are on the order of 15 to 45 mutations per diploid genome per year, which appears much lower than would be required to inactivate both copies of important genes in a relevant fraction of cells in older people. That is the too-low argument. It is aimed at a simple picture in which random mutations knock out enough genes, cell by cell, to explain organ failure. A burden of that size leaves most genes intact in most cells. The same note says the picture changes if a mutation in a stem cell is selected and the clone grows, which is the blood and skin and esophagus result. Too low for one mechanism is not too low for every mechanism.",
+     "part": "toolow",
+     "cue": "The first contested point",
+     "slug": "too-few"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "The mice",
+     "text": "The mouse experiments are why the theory is not a straight proportion. Trifunovic and colleagues, Nature, 2004, made mice homozygous for a proofreading-deficient mitochondrial polymerase, Polg. Those mice had a shortened life and premature onset of aging-related phenotypes: weight loss, less subcutaneous fat, hair loss, spine curvature, osteoporosis, anemia, reduced fertility, and an enlarged heart. With the assay used in that paper, the point-mutation level was three- to fivefold higher, and there were more deletions. Vermulst and colleagues, Nature Genetics, 2007, used a more sensitive assay and found that the mutation frequency in normal mouse mitochondria had been overestimated by more than tenfold. Normal mice showed an 11-fold rise in mitochondrial point mutations with age. A mutator mouse sustained a 500-fold higher point-mutation burden than normal mice without obvious features of rapidly accelerated aging. In the paper, that 500-fold animal is the heterozygote, and its mean lifespan was not significantly reduced. The homozygous burden, on the new baseline, was about 2,500-fold. In 2008 the same group reported that deletions, and clonal mutations, drive the premature-aging phenotype of the homozygous mutator mice, rather than the point mutations alone. So a higher point-mutation rate did not, by itself, produce proportional aging.",
+     "part": "mice",
+     "cue": "Mitochondrial mutator, then the nuclear polymerases",
+     "slug": "the-mice"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Proofreading",
+     "text": "The nuclear polymerases make the same point in a different way. Albertson and colleagues, Proceedings of the National Academy of Sciences, 2009, inactivated the proofreading exonuclease of DNA polymerase epsilon or delta. In fibroblasts, homozygous loss of polymerase epsilon proofreading raised the spontaneous mutation rate more than 70-fold at two loci. Mice homozygous for that polymerase epsilon defect died of cancer, median survival 16 months, against 25 months for wild-type mice. Heterozygotes were indistinguishable from wild-type, also 25 months. The tumors were especially intestinal adenocarcinomas, plus histiocytic sarcomas and lymphomas. Mice homozygous for the polymerase delta defect died during the first year, primarily with thymic lymphomas, skin squamous tumors, and lung tumors. The paper describes mutator and cancer phenotypes. It does not describe the multi-tissue progeria of the homozygous mitochondrial mutator. Extra mutations clearly raised cancer. Cancer is not, on its own, a proportional speeding of aging.",
+     "part": "proof",
+     "cue": "Polymerase epsilon and delta",
+     "slug": "proofreading"
+    },
+    {
+     "id": "4.5",
+     "seg": 5,
+     "name": "Still open",
+     "text": "Leave the figure on what is not settled. Whether the mutation burden in ordinary tissues is high enough to cause the functional decline of aging, rather than cancer and clonal disease, is open. How much of the harm is persistent damage, stalling transcription, rather than the mutations that remain, is open. The crypt study is a comparative correlation in one cell type, and the authors say the rates may contribute to aging. They do not claim the rates are aging. Progeroid syndromes copy only some of normal aging, which the 2013 hallmark paper says outright. Error catastrophe in its strong form is not supported. Medawar's mutation accumulation is a theory of why aging evolves, and it is not a measurement of somatic mutations. Those are the boundaries.",
+     "part": "open",
+     "cue": "The open questions at the bottom",
+     "slug": "still-open"
+    }
+   ]
+  },
+  {
+   "fig": 5,
+   "anchor": "fig-5",
+   "title": "From the literature",
+   "subtitle": "Reading-room pages that bear on mutation, clones, and repair. Only what those pages say.",
+   "segments": [
+    {
+     "id": "5.1",
+     "seg": 1,
+     "name": "Only the pages",
+     "text": "Peer-Reviewed Literature is part of this course. Each card opens one of those pages. The line you are about to read says only what that page says. If a page calls a result an association, or says the work was in mice, or in cells, do not promote it.",
+     "part": "bridge",
+     "cue": "The sentence above the cards",
+     "slug": "only-the-pages"
+    },
+    {
+     "id": "5.2",
+     "seg": 2,
+     "name": "Clones in people",
+     "text": "Two pages are about clones that somatic mutations make visible. In 417,616 adults, blood-stem-cell clones carrying acquired mutations were linked to a higher risk of heart failure. The page says the study is observational, so it is an association, not proof that the clone causes the heart failure, and that exome sequencing can miss small clones. A second page uses somatic mutations as barcodes and reports bone-marrow-derived cells joining the brain's microglia in every older person studied. The page says the brain series was 20 people, all older, and that the Alzheimer's association does not prove that those incoming cells protect the brain.",
+     "part": "clones",
+     "cue": "Heart failure, then microglia",
+     "slug": "clones-in-people"
+    },
+    {
+     "id": "5.3",
+     "seg": 3,
+     "name": "Copying and repair",
+     "text": "One page is about mitochondrial DNA in human blood. The mutations that rise with age there come mostly from copying errors, made visible when blood-cell clones expand, not from oxidative damage. The page limits that to blood, and says the finding does not mean oxidative damage plays no role in aging. Another page is the bowhead whale. A mammal that can live about 200 years seems to stay healthy by repairing DNA breaks more accurately, not by killing damaged cells. The page says most of the work was in cultured cells and in fruit flies, and that it does not show that raising the whale protein would make humans live longer. A third page, on 900,000 people, finds that repeated DNA stretches lengthen in blood with age, and that inherited genes set the pace. The page says the measurements are blood only, and that the disease links are associations.",
+     "part": "repair",
+     "cue": "Mitochondrial blood mutations, the whale, then repeat expansions",
+     "slug": "copying-and-repair"
+    },
+    {
+     "id": "5.4",
+     "seg": 4,
+     "name": "Mice",
+     "text": "Two pages are mice, and both say so. Eating less slowed the build-up of DNA mutations across several tissues, single-letter changes and small insertions and deletions. The page does not give the level of restriction, and it says fewer mutations do not by themselves show that the mutations were driving aging in the mice. The other page is a rare repair defect: unrepaired DNA-protein crosslinks leak DNA into the cell, set off an immune alarm, and cause premature aging in mice, and blocking the alarm helps. The page says this is a model of a rare inherited disease, not necessarily what drives normal human aging. That is the same caution as the progeroid syndromes on the previous figure. The five hundred years of the first module were won mainly by fewer deaths from infection, hunger, and dirty water. These pages ask whether mutation and repair are part of why a body ages. They do not say that a clone, a mouse diet, or a whale protein produced that rise.",
+     "part": "micelit",
+     "cue": "Caloric restriction, then DNA-protein crosslinks",
+     "slug": "mice"
+    }
+   ]
+  }
+ ],
+ "page": "longevity/mutation-theory.html",
+ "pageUrl": "https://orcuttshortcut.com/longevity/mutation-theory.html",
+ "scriptUrl": "https://orcuttshortcut.com/longevity/scripts/mutation-theory.json",
+ "hashFormat": "#fig-{fig}/seg-{seg}",
+ "hashAliases": "#fig-{fig}/{slug} for segments with a name",
+ "figureCount": 5,
+ "segmentCount": 28
+}

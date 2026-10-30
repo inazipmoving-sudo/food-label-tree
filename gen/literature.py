@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Peer-Reviewed Literature section (NOT a course).
+"""Peer-Reviewed Literature, the reading room of the Longevity course (LONG 101).
 Reads gen/literature/posts.json and writes literature/index.html plus literature/<slug>.html (one-page reads).
-Standalone: does not import or touch the course generators. Run:  python3 gen/literature.py
+Paths stay /literature/. This file does not import the course generators. Daily posts are still:
+add an object to gen/literature/posts.json, then run python3 gen/literature.py.
 Post schema (one object per paper): see /workspace/nutrition/literature/README.md.
   group: "landmark" (ordered by impactRank) or "latest" (ordered by pubDate, newest first; fed by the daily job).
 """
@@ -48,6 +49,7 @@ article section p{margin:6px 0 0}
 dl.terms{margin:6px 0 0}dl.terms dt{font-weight:600;margin-top:10px}dl.terms dd{margin:2px 0 0 0;color:var(--text)}
 .src{font-size:.9rem;color:var(--muted)}.src ul{margin:6px 0 0;padding-left:20px}.src a{color:var(--acc)}
 .pn{display:flex;justify-content:space-between;gap:14px;margin:26px 0 0}.pn a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 16px;text-decoration:none;font-family:var(--serif);font-size:1.1rem;line-height:1.3}.pn a:hover{border-color:var(--acc)}.pn a.nx{text-align:right}.pn small{display:block;font-family:var(--sans);font-size:.64rem;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:2px}
+.back{margin:14px 0 0}.back a{color:var(--acc);text-decoration:none;border-bottom:1px solid currentColor}
 @media(max-width:600px){main{padding:0 12px;margin-top:20px}#theme{position:static;margin-bottom:12px}.card{grid-template-columns:1fr}.rk{width:40px}.pn{flex-direction:column}article section{padding:14px 16px}}
 '''
 THEME="<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>"
@@ -86,9 +88,11 @@ def build():
     land=sorted([p for p in P if p['group']=='landmark'],key=lambda p:p['impactRank'])
     late=sorted([p for p in P if p['group']=='latest'],key=lambda p:p['pubDate'],reverse=True)
     order=land+late
-    hero=(f'<nav class="crumbs"><a href="../">Home</a> › Literature</nav><h1>{SECTION}</h1>'
+    hero=(f'<nav class="crumbs"><a href="../">Home</a> › <a href="../longevity/">Longevity</a> › {SECTION}</nav><h1>{SECTION}</h1>'
           '<p>Cutting-edge research on DNA and aging: DNA damage and repair, somatic mutation, epigenetic clocks, telomeres and genome instability. '
-          'Each paper gets a one-page plain-language read with a link to the original. This is a reading room, not a course.</p>')
+          'Each paper gets a one-page plain-language read with a link to the original. '
+          'Part of the <a href="../longevity/">Longevity</a> course (LONG 101).</p>'
+          '<p class="back"><a href="../longevity/">← Back to the Longevity course</a></p>')
     lg=('<section class="grp" id="latest"><h2>Latest</h2><p>New papers found by the daily literature sweep, newest first.</p>'+
         (''.join(card(p) for p in late) if late else '<div class="empty">Nothing new posted yet. The daily sweep adds new papers here.</div>')+'</section>')
     lm=('<section class="grp" id="landmark"><h2>Landmark papers of the past year</h2><p>Published 28 Oct 2025 to 28 Oct 2026, ranked by impact: citations (OpenAlex), journal, and coverage by science news and press offices. '
@@ -108,9 +112,10 @@ def build():
         oan=(f'<p class="note oa"><b>Open access.</b> The full paper is free to read'+(f' (<a href="{E(oa.get("url"))}">free copy</a>)' if oa.get('url') and oa.get('url')!=p['url'] else '')+'.</p>') if oa.get('isOpen') else '<p class="note"><b>Paywalled.</b> The full paper needs a subscription; the abstract is free at the DOI link.</p>'
         basis=('This synopsis was written from the published abstract only.' if p.get('synopsisBasis','abstract')=='abstract'
                else 'This synopsis was written from the abstract and the open-access full text.')
-        hero=(f'<nav class="crumbs"><a href="../">Home</a> › <a href="./">Literature</a> › '+('Landmark #'+str(p['impactRank']) if p['group']=='landmark' else 'Latest')+'</nav>'
+        hero=(f'<nav class="crumbs"><a href="../">Home</a> › <a href="../longevity/">Longevity</a> › <a href="./">{SECTION}</a> › '+('Landmark #'+str(p['impactRank']) if p['group']=='landmark' else 'Latest')+'</nav>'
               f'<h1>{E(p["title"])}</h1><p>{E(", ".join(p.get("authors") or []) if len(p.get("authors") or [])<=8 else p.get("authorsShort"))}</p>'
-              f'<p><b>{E(p["journal"])}</b> · {fdate(p["pubDate"])} · {E(p.get("type","research")).capitalize()}</p>')
+              f'<p><b>{E(p["journal"])}</b> · {fdate(p["pubDate"])} · {E(p.get("type","research")).capitalize()}</p>'
+              '<p class="back"><a href="../longevity/">← Back to the Longevity course</a></p>')
         sig=p.get('signals') or {}; news=sig.get('newsMentions') or []
         src=('<section class="src"><h2>Sources and signals</h2><p>'+E(basis)+' Key terms are general definitions added for readers.</p><ul>'
              f'<li>Original paper: <a href="{E(p["url"])}">{E(p["url"])}</a>'+(f' · PubMed <a href="https://pubmed.ncbi.nlm.nih.gov/{E(p["pmid"])}/">{E(p["pmid"])}</a>' if p.get('pmid') else '')+'</li>'
