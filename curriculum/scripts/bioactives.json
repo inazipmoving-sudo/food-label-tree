@@ -558,8 +558,8 @@
   }
  ],
  "page": "curriculum/bioactives.html",
- "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/bioactives.html",
- "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/bioactives.json",
+ "pageUrl": "https://orcuttshortcut.com/curriculum/bioactives.html",
+ "scriptUrl": "https://orcuttshortcut.com/curriculum/scripts/bioactives.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 10,

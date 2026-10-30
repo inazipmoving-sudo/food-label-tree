@@ -10,7 +10,7 @@ from datetime import date
 GEN=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.join(GEN,'..'); OUT=os.path.join(ROOT,'literature')
 _ns={}; exec(open(os.path.join(GEN,'site.py'),encoding='utf-8').read(),_ns)  # gen/site.py: brand only
 UNIVERSITY_NAME,brand_html,BRAND_CSS=_ns['UNIVERSITY_NAME'],_ns['brand_html'],_ns['BRAND_CSS']
-SITE='https://inazipmoving-sudo.github.io/food-label-tree/'
+SITE='https://orcuttshortcut.com/'
 E=lambda s: html.escape(str(s or ''), quote=True)
 CSS=r''':root{--hdr:#E4E4E4;--bg:#F0F0F0;--hair:#CBCBCB;--card:#F7F7F5;--text:#2B2B2B;--muted:#6E6E6E;--line:#D9D8D4;--chip:#ECEBE7;--acc:#3E5C76;--acc-soft:#3E5C7614;--warn:#A86B53;--vein:.045;--serif:"Cormorant Garamond","Cormorant",Garamond,"EB Garamond",Georgia,"Times New Roman",serif;--sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
 [data-theme=dark]{--hdr:#262625;--bg:#1F1F1E;--hair:#3A3936;--card:#2A2A28;--text:#E8E6E1;--muted:#A19E97;--line:#3A3936;--chip:#32322F;--acc:#8FA9C2;--acc-soft:#8FA9C21c;--warn:#C99582;--vein:.04}

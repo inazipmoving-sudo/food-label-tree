@@ -1,6 +1,6 @@
 # Food Label Tree
 A searchable, collapsible tree of 1,103 compounds and items found on food labels. Each item lists What it is, what it does In the body, and where it is Found in.
-Live: https://inazipmoving-sudo.github.io/food-label-tree/curriculum/food-label-tree.html (Module 5 of Nutrition 101). The site root is now a course catalog.
+Live: https://orcuttshortcut.com/curriculum/food-label-tree.html (Module 5 of Nutrition 101). The site root is now a course catalog.
 
 ## Site layout
 - `index.html` (site root): course catalog, generated from `gen/site.py` (`UNIVERSITY_NAME` = "LeClaire Institute", the one place to rename the site, shown with "ai" in the accent colour (`BRAND_EMPHASIS`) via `brand_html()` in the header of every page; `TAGLINE` = "The Orcutt Shortcut", shown under the name on the home page; and the `COURSES` list; add a dict to add a course) by `gen/site_pages.py`.

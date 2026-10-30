@@ -177,7 +177,7 @@ def page(title,hero,body,extra='',head='',brand='../'):
 # copies gen/player.js + gen/player.css to curriculum/assets/ (cache-busted by content hash).
 import json, re, html as _html, hashlib
 GEN=os.path.dirname(os.path.abspath(__file__))
-SITE='https://inazipmoving-sudo.github.io/food-label-tree/'
+SITE='https://orcuttshortcut.com/'
 def _asset(name):
     src=open(os.path.join(GEN,name),encoding='utf-8').read()
     os.makedirs(os.path.join(OUT,'assets'),exist_ok=True)

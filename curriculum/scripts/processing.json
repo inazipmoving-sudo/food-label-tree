@@ -583,8 +583,8 @@
   }
  ],
  "page": "curriculum/processing.html",
- "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/processing.html",
- "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/processing.json",
+ "pageUrl": "https://orcuttshortcut.com/curriculum/processing.html",
+ "scriptUrl": "https://orcuttshortcut.com/curriculum/scripts/processing.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 10,

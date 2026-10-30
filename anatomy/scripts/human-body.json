@@ -470,8 +470,8 @@
   }
  ],
  "page": "anatomy/human-body.html",
- "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/anatomy/human-body.html",
- "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/anatomy/scripts/human-body.json",
+ "pageUrl": "https://orcuttshortcut.com/anatomy/human-body.html",
+ "scriptUrl": "https://orcuttshortcut.com/anatomy/scripts/human-body.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 6,

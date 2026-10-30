@@ -455,8 +455,8 @@
   }
  ],
  "page": "curriculum/macronutrients-water-ethanol.html",
- "pageUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/macronutrients-water-ethanol.html",
- "scriptUrl": "https://inazipmoving-sudo.github.io/food-label-tree/curriculum/scripts/macronutrients-water-ethanol.json",
+ "pageUrl": "https://orcuttshortcut.com/curriculum/macronutrients-water-ethanol.html",
+ "scriptUrl": "https://orcuttshortcut.com/curriculum/scripts/macronutrients-water-ethanol.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
  "figureCount": 8,
