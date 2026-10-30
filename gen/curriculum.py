@@ -579,4 +579,5 @@ for n,nm,rs in MODS:
 open(os.path.join(OUT,'index.html'),'w').write(page(COURSE+' · '+UNIVERSITY_NAME,'<nav class="crumbs"><a href="../">Home</a> › '+COURSE+'</nav><h1>'+COURSE+'</h1><p>Lessons with numbered figures, made for teaching by phone. Five modules, from the molecules in food to the full Food Label Tree.</p>',f'<main class="mods">{cards}</main>'))
 print(len(LESSON),'figures')
 exec(open(os.path.join(GEN,'anatomy.py'),encoding='utf-8').read())  # Anatomy course: its index + lessons in /anatomy/
+exec(open(os.path.join(GEN,'longevity.py'),encoding='utf-8').read())  # Longevity course: its index + lessons in /longevity/
 exec(open(os.path.join(GEN,'site_pages.py'),encoding='utf-8').read())  # home catalog + Module 5 tree page

@@ -1,0 +1,236 @@
+{
+ "schemaVersion": 1,
+ "module": "five-hundred-years",
+ "title": "Module 1 · Five Hundred Years of Life Expectancy",
+ "lang": "en",
+ "revision": 1,
+ "idRevision": 1,
+ "figures": [
+  {
+   "fig": 1,
+   "anchor": "fig-1",
+   "title": "Five hundred years, on one chart",
+   "subtitle": "Life expectancy at birth, England and the world, from 1526 to today.",
+   "segments": [
+    {
+     "id": "1.1",
+     "seg": 1,
+     "name": "The axis",
+     "text": "This chart is the map of the module. Across the bottom is the year, from 1526 to 2026, five hundred years. Up the side is period life expectancy, from 0 to 90. Period life expectancy is not a promise to a real baby. It is the average you would get if one year's death rates lasted a whole lifetime. The lines stop at 2023, the last year in these sources. 2026 is only the end of the axis.",
+     "part": "axes",
+     "cue": "The year axis, then the 0 to 90 scale"
+    },
+    {
+     "id": "1.2",
+     "seg": 2,
+     "name": "Check the figures",
+     "text": "Every point you are about to hear is rounded, and the early ones are reconstructions or estimates. Verify these figures against Wrigley and Schofield, the Human Mortality Database, Our World in Data and the WHO before publishing.",
+     "part": "verify",
+     "box": "note",
+     "cue": "The verification note above the chart"
+    },
+    {
+     "id": "1.3",
+     "seg": 3,
+     "name": "England",
+     "text": "The solid line is England. From the 1540s to the 1830s it is the parish-register reconstruction of Wrigley and Schofield, in the form Our World in Data republishes, where it is filed under the United Kingdom. From 1841 it is England and Wales, from the Human Mortality Database, and from 1950 it is the United Kingdom series, which moves with England. For three centuries that line lives mostly between about 30 and about 40. Then it leaves the old range and climbs to about 81.",
+     "part": "england",
+     "cue": "The solid line"
+    },
+    {
+     "id": "1.4",
+     "seg": 4,
+     "name": "The world",
+     "text": "The dashed line is the world, and it starts only around 1800, which is as far as Riley's global estimates go. Those open circles before 1950 are estimates. The world sits near about 29 for most of the nineteenth century, about 32 in 1900, about 46 in 1950, and about 73 today, still below England.",
+     "part": "world",
+     "cue": "The dashed line and its open circles"
+    },
+    {
+     "id": "1.5",
+     "seg": 5,
+     "name": "Already 15",
+     "text": "The companion line sits above the birth line. It is England's life expectancy for someone who has already reached 15: age 15 plus the remaining years, e15. From 1841 it is measured, and it starts at about 59, while the birth line is still near 42. Before 1841 we do not have a yearly series, so the chart shows only a level, about 58, the late fifties. That gap, between a birth average in the thirties and a survivor in the late fifties, is the point of this module.",
+     "part": "age15",
+     "cue": "The olive line, and the dotted level before 1841"
+    },
+    {
+     "id": "1.6",
+     "seg": 6,
+     "name": "Crisis",
+     "text": "Flag 1 marks the crisis era, about the 1550s to the 1680s. The worst crash on the English line is the late 1550s, down to about 22: famine and influenza in 1557 to 1559, and Little Ice Age harvest failure. Plague belongs to that long century. It does not belong to the 1680s. England's last major plague was 1665 to 1666. The 1680s dip is small beside that, to about 31, and it was smallpox, fevers and bad harvests.",
+     "part": "flag-1",
+     "cue": "Flag 1, on the late-1550s crash"
+    },
+    {
+     "id": "1.7",
+     "seg": 7,
+     "name": "Slow gains",
+     "text": "Flag 2 is the slow gains of the 1700s. Plague is gone. Smallpox inoculation spreads, and the food supply is steadier than in the worst crisis decades. The line still lurches. Around 1728 it falls to about 25. But the floor is rising, and by 1800 the birth line is near 40.",
+     "part": "flag-2",
+     "cue": "Flag 2, in the eighteenth century"
+    },
+    {
+     "id": "1.8",
+     "seg": 8,
+     "name": "Offset",
+     "text": "Flag 3 runs from Jenner's vaccine in 1796 through the 1870s. Vaccination against smallpox, and the sanitation reforms of the 1850s, were real, and they were offset by crowded industrial cities. You can see the offset: from about 1800 to about 1870 the line stays near 40, and a bad year such as 1849 is still in the high 30s, about 37.",
+     "part": "flag-3",
+     "cue": "Flag 3, on the flat decades"
+    },
+    {
+     "id": "1.9",
+     "seg": 9,
+     "name": "Takeoff",
+     "text": "Flag 4 is the takeoff, about 1870 to 1914. Germ theory, clean water, better housing and better nutrition arrive together, and infant deaths start to fall. England goes from about 41 around 1870 to about 52 by 1914.",
+     "part": "flag-4",
+     "cue": "Flag 4, where the line finally climbs"
+    },
+    {
+     "id": "1.10",
+     "seg": 10,
+     "name": "1918",
+     "text": "Flag 5 is 1918. On the English line the fall is from about 46 in 1917 to about 41 in 1918, war and influenza together, and it is made up the next year. The drop of more than 10 years is not England's. It is the United States, where life expectancy fell from about 51 in 1917 to about 39 in 1918, about 12 years, the clearest national life table for that pandemic.",
+     "part": "flag-5",
+     "cue": "Flag 5. Say United States for the drop of more than 10 years"
+    },
+    {
+     "id": "1.11",
+     "seg": 11,
+     "name": "Medical",
+     "text": "Flag 6 is the medical era, the 1940s through the 1960s and after. Antibiotics, mass vaccination and the welfare state push infection down. England is about 61 in 1940, dips in the war, reaches about 69 by 1950 and about 71 by 1960. The world line, still an estimate until 1950, is only about 32 in 1900 and about 46 in 1950, and then climbs through this same era, to about 56 by 1970.",
+     "part": "flag-6",
+     "cue": "Flag 6, in the shaded medical era"
+    },
+    {
+     "id": "1.12",
+     "seg": 12,
+     "name": "After 1970",
+     "text": "After 1970 the gains change character. In England and in other rich countries, a large share of the extra years comes from fewer deaths from heart disease and stroke, and from less smoking. The world average does not show an HIV crash. It keeps rising, from about 64 in 1990 to about 66 in 2000. The falls in those years are national: Eswatini from about 61 to about 44, and Zimbabwe from about 61 in the mid-1980s to about 46 in 2000. Those are the life-expectancy falls. This chart does not separate HIV from other causes. COVID does mark the lines: the world from about 73 in 2019 to about 71 in 2021, and the UK from about 81 to about 80 in 2020.",
+     "part": "epilogue",
+     "cue": "The epilogue note under the flags"
+    }
+   ]
+  },
+  {
+   "fig": 2,
+   "anchor": "fig-2",
+   "title": "Deaths before age five",
+   "subtitle": "The childhood deaths that pulled the average down.",
+   "segments": [
+    {
+     "id": "2.1",
+     "seg": 1,
+     "name": "Under age five",
+     "text": "The second chart is why the first one sat so low for so long. It counts children who die before age five, per one thousand live births. As on the first chart, every value is rounded, and the same sources need checking before you publish.",
+     "part": "cm-axes",
+     "cue": "The axis: deaths per 1,000"
+    },
+    {
+     "id": "2.2",
+     "seg": 2,
+     "name": "England's children",
+     "text": "The solid line is the United Kingdom from 1841. There is no separate England series in this file, and England is most of that kingdom. It opens at about 250 per thousand, a quarter of children. It is still about 270 in 1870. Then it breaks: about 230 in 1900, about 37 by 1950, and about 4 or 5 per thousand today. That fall is the takeoff and the medical era, seen in childhood.",
+     "part": "cm-england",
+     "cue": "The solid line"
+    },
+    {
+     "id": "2.3",
+     "seg": 3,
+     "name": "The world's children",
+     "text": "The dashed line is the world, from 1800. The open circles before 1950 are estimates. About 430 per thousand in 1800, more than two children in five, almost flat through the nineteenth century, about 250 in 1950, and about 38 per thousand by 2023.",
+     "part": "cm-world",
+     "cue": "The dashed line"
+    },
+    {
+     "id": "2.4",
+     "seg": 4,
+     "name": "Before the line starts",
+     "text": "Before 1841 we do not plot a yearly English series. The shaded band is the range this lesson uses for those centuries: about a quarter to a third, 250 to 330 per thousand. Hold that band. The next figure is what it does to an average.",
+     "part": "cm-early",
+     "cue": "The shaded band on the left"
+    }
+   ]
+  },
+  {
+   "fig": 3,
+   "anchor": "fig-3",
+   "title": "Why the average was low",
+   "subtitle": "A hundred births, and the sentence to keep.",
+   "segments": [
+    {
+     "id": "3.1",
+     "seg": 1,
+     "name": "A hundred births",
+     "text": "Count a hundred births in early modern England. The filled dots are 25, a quarter. The ringed dots take the count to 33, a third. Those are the children who die before age five. Losing that many, so young, is enough to pull an average into the thirties even when the adults are not dying young.",
+     "part": "grid",
+     "cue": "The hundred dots: filled, then ringed"
+    },
+    {
+     "id": "3.2",
+     "seg": 2,
+     "name": "Word for word",
+     "text": "In England, those early averages were low mainly because a quarter to a third of children died before age five, while anyone who reached 15 could usually expect to live into their late fifties.",
+     "part": "verbatim",
+     "verbatim": true,
+     "cue": "Read the sentence under the grid word for word"
+    },
+    {
+     "id": "3.3",
+     "seg": 3,
+     "name": "What the average hides",
+     "text": "Life expectancy at birth folds those two facts into one number, so it sounds as if a typical adult died in their thirties. They did not. The thirties were an average pulled down by the children. On the first chart the companion line is the adult fact. Reach 15, and from 1841 the measured expectation is about 59, while the birth line is still about 42.",
+     "part": "gap",
+     "cue": "The left note under the sentence"
+    },
+    {
+     "id": "3.4",
+     "seg": 4,
+     "name": "When the lines meet",
+     "text": "Once child deaths become rare, the two lines have to meet, because there are no longer enough childhood deaths to drag the average down. By the end of the first chart the birth line is about 81 and the age-15 line is about 82. The long rise in the birth average is, first, children surviving, and only later, adults living past the late fifties into the seventies and eighties.",
+     "part": "meet",
+     "cue": "The right note under the sentence"
+    }
+   ]
+  },
+  {
+   "fig": 4,
+   "anchor": "fig-4",
+   "title": "From the literature",
+   "subtitle": "Population lifespan, then the biology of aging. Only what the reading-room pages say.",
+   "segments": [
+    {
+     "id": "4.1",
+     "seg": 1,
+     "name": "Populations, then cells",
+     "text": "These charts are about populations: when people died, in England and in the world. They are not a picture of aging inside a cell. The reading room already has one-page reads of the papers that ask that second question. This closing only says what those pages say, and no more.",
+     "part": "bridge",
+     "cue": "The opening of this figure, then the linked pages"
+    },
+    {
+     "id": "4.2",
+     "seg": 2,
+     "name": "Clocks",
+     "text": "Epigenetic clocks read DNA methylation as a stand-in for age. A head-to-head of 14 clocks in 18,859 people found that the newer clocks, trained on health or on the pace of aging, predicted disease better than the clocks trained only to guess age. The extra accuracy was often about 1 percent, and the page is clear that an association is not proof that changing a clock changes risk. A second page follows people in one part of Italy for up to 24 years: a clock that speeds up predicts death, beyond where it started, and that study is observational too. A two-year randomized trial found that a daily multivitamin slightly slowed two of five clocks, by about 0.11 and about 0.21 years per year of the trial, and cocoa extract did not. The trial did not show a longer life.",
+     "part": "clocks",
+     "cue": "The three clock pages"
+    },
+    {
+     "id": "4.3",
+     "seg": 3,
+     "name": "Long-lived animals",
+     "text": "Two pages look at animals that live a long time. Bowhead whales can live more than 200 years. Their cells repaired double-strand DNA breaks more faithfully than human cells, and a whale protein, CIRBP, improved that repair in human cells and extended life in fruit flies. The work was in cultured cells and flies, not a treatment for people. In Myotis bats, long life lines up with changes in cancer pathways, and cells of one long-lived species had an unusual response to DNA damage, again in culture. The page does not show that those changes are what lengthens a bat's life.",
+     "part": "repair",
+     "cue": "The bowhead whale page, then the bat page"
+    },
+    {
+     "id": "4.4",
+     "seg": 4,
+     "name": "Eating less, in mice",
+     "text": "One page is about diet, and only in mice. Eating less slowed the build-up of DNA mutations across several tissues, both single-letter changes and small insertions and deletions. The page does not say how strict the restriction was, or that the same thing happens in people, and fewer mutations are not, by themselves, proof that those mutations were driving aging in the mice. So the bridge is a contrast. The five hundred years on the chart were won mainly by fewer deaths from infection, hunger and dirty water, and later from heart disease and smoking. The papers ask whether repair, mutation and methylation are part of why a body ages at all. They do not say that a clock, a mouse diet or a whale protein produced the rise out of the thirties to about 81.",
+     "part": "diet",
+     "cue": "The caloric-restriction page"
+    }
+   ]
+  }
+ ]
+}
