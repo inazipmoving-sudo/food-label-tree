@@ -2174,5 +2174,418 @@
     }
    ]
   }
+ },
+ {
+  "slug": "nanoscale-imaging-single-molecule-telomere-length",
+  "group": "latest",
+  "title": "A high-throughput nanoscale imaging platform for direct visualization and rapid measurement of telomeres at single-molecule resolution",
+  "authors": [
+   "Collen Jackson-Cook",
+   "Lilia Gheghiani",
+   "Andrey Mikheykin",
+   "Dylan Van Laeken",
+   "Daniel Guest",
+   "Kellie Archer",
+   "Harold Riethman",
+   "Jason C Reed"
+  ],
+  "authorsShort": "Collen Jackson-Cook, Lilia Gheghiani, Andrey Mikheykin … Jason C Reed",
+  "firstAuthor": "Collen Jackson-Cook",
+  "journal": "Research Square (preprint)",
+  "pubDate": "2026-10-28",
+  "doi": "10.21203/rs.3.rs-11283393/v1",
+  "url": "https://doi.org/10.21203/rs.3.rs-11283393/v1",
+  "pmid": null,
+  "pmcid": null,
+  "type": "preprint",
+  "preprint": true,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://www.researchsquare.com/article/rs-11283393/latest.pdf",
+   "source": "OpenAlex API, fetched 2026-10-30"
+  },
+  "whyItMatters": "A simpler way to see every telomere's length one molecule at a time could catch the critically short ones that drive senescence.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Telomeres are protective caps of repeated DNA at the ends of chromosomes, and they shorten as cells divide. Telomere length is used as a marker of aging, cancer and inherited telomere diseases. Some of the most important health links involve the extremes: a few critically short telomeres can trigger chromosome instability, cellular stress and senescence, even when the average length looks normal. Most standard tests report only an average for a whole sample, which hides those few short ends, and they can be thrown off by the repetitive sequence or vary between labs. Newer high-resolution methods exist but often need a lot of DNA, special preparation or complex equipment. This preprint presents a method meant to make single-telomere measurement practical.",
+   "did": "According to the abstract, the team built an automated imaging workflow that works with standard genomic DNA preparations. It uses two CRISPR-Cas9 cuts to mark the boundaries of each telomere, then pulls telomere pieces out with magnetic beads without copying (amplifying) them, which helps keep the natural mix of lengths. The pieces are then imaged at nanoscale resolution and measured one at a time. They tested reproducibility across repeat runs and different operators, and validated the method in models with known telomere lengths, in cells aged by repeated division, and in clinical samples. They also added subtelomeric barcoding, tags that show which chromosome arm each telomere comes from.",
+   "found": "The method needed only 500 ng of input DNA and 2 to 4 hours of hands-on work. It resolved intact telomeres from about 50 base pairs to more than 50 kilobases in the same sample, capturing the full spread of lengths at once, including very short ones. Measurements were highly reproducible across technical replicates and different operators, with an intraclass correlation (a measure of agreement) of up to 0.90. The validation experiments and the barcoding support its use for chromosome-by-chromosome telomere profiling. The authors present it as a scalable platform for biomarker development and possible clinical use in aging, cancer and telomere biology.",
+   "limits": "This is a preprint on Research Square and has not been peer reviewed. This synopsis is based on the abstract only, although a full-text PDF is openly available. It is a methods paper: it shows the test can measure telomeres, not that the measurements predict disease or aging outcomes in people. The abstract does not say how many clinical samples were tested or how the method compares head to head with existing assays. Whether it can be adopted widely depends on access to its imaging equipment, which the abstract describes only briefly.",
+   "terms": [
+    {
+     "term": "Telomere",
+     "definition": "A stretch of repeated DNA at each chromosome end that protects it and shortens with cell division."
+    },
+    {
+     "term": "Critically short telomere",
+     "definition": "A telomere short enough to be read as DNA damage, which can stop the cell dividing."
+    },
+    {
+     "term": "CRISPR-Cas9",
+     "definition": "A tool that cuts DNA at a chosen sequence; here it marks where telomeres begin."
+    },
+    {
+     "term": "Amplification bias",
+     "definition": "Distortion that happens when DNA is copied before measurement, especially with repetitive sequences."
+    },
+    {
+     "term": "Subtelomere",
+     "definition": "The DNA just next to a telomere, which differs by chromosome and can show which chromosome arm it is."
+    },
+    {
+     "term": "Intraclass correlation (ICC)",
+     "definition": "A score from 0 to 1 for how well repeated measurements agree."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "nad-replenishment-cardiomyocyte-senescence-aged-heart",
+  "group": "latest",
+  "title": "NAD+ replenishment reduces cardiomyocyte senescence and improves diastolic function in the aged male heart",
+  "authors": [
+   "Qingxia Huang",
+   "Yongjie Wang",
+   "Karina Farias",
+   "Xinliu Zeng",
+   "Qiuying Chen",
+   "Huiyong Cheng",
+   "Vijaya B Baki",
+   "Steven S Gross",
+   "Jacob Geri",
+   "Anthony A Sauve",
+   "Yue Yang"
+  ],
+  "authorsShort": "Qingxia Huang, Yongjie Wang, Karina Farias … Yue Yang",
+  "firstAuthor": "Qingxia Huang",
+  "journal": "Cardiovascular Research",
+  "pubDate": "2026-10-30",
+  "doi": "10.1093/cvr/cvag265",
+  "url": "https://doi.org/10.1093/cvr/cvag265",
+  "pmid": "42958931",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "closed",
+   "isOpen": false,
+   "url": null,
+   "source": "Crossref license metadata, fetched 2026-10-30 (standard publisher reuse terms; no open licence listed)"
+  },
+  "whyItMatters": "In old male mice, topping up NAD+ cleared heart-cell senescence partly by boosting the DNA-repair protein SIRT6.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "As the heart ages, many of its muscle cells (cardiomyocytes) become senescent: they stay alive but switch into a damaged, non-dividing state that is tied to a stiff heart that fills poorly between beats, known as diastolic dysfunction, and to heart failure in older adults. There are few proven ways to slow or reverse this. NAD+ is a molecule every cell needs for energy metabolism, and it is also the fuel for sirtuins, enzymes that include SIRT6, which helps repair DNA. NAD+ levels are known to fall with age in several tissues. This study asks whether restoring NAD+ can undo heart cell senescence, and links the effect to DNA repair, which ties it to genomic instability as a hallmark of aging.",
+   "did": "According to the abstract, the team measured heart NAD+ metabolism, senescence markers and heart function in young and old mice of both sexes. In heart muscle cells grown in the lab, they lowered NAD+ to see whether that alone caused senescence, then added two NAD+ precursors, nicotinamide riboside (NR) and dihydronicotinamide riboside (NRH). They then treated aged male mice with NR or NRH for two months and examined senescence markers, diastolic function, heart enlargement (hypertrophy) and scarring (fibrosis). Finally they looked at how the sirtuins SIRT1 and SIRT6 were involved. The abstract does not give animal numbers or doses.",
+   "found": "Old male mice had lower heart NAD+, which the authors traced to reduced production, limited mobilisation from mitochondria and higher consumption. Their SIRT1 and SIRT6 activity was suppressed and senescent heart muscle cells had built up, along with diastolic dysfunction, hypertrophy and fibrosis. In lab-grown heart cells, depleting NAD+ caused senescence, and NR or NRH reversed it. In old male mice, two months of either precursor reduced senescence markers, improved diastolic function and lessened hypertrophy and fibrosis. Both activated SIRT1 and lowered cell cycle arrest markers. NRH gave stronger SIRT1 activation; SIRT1 then removed acetyl tags from SIRT6, helping SIRT6 bind histones and improving DNA damage repair. Old female mice also had diastolic dysfunction, but without a clear fall in heart NAD+, and they did not respond to either treatment.",
+   "limits": "This synopsis is based on the abstract only; the paper does not appear to be open access. All results are in mice and cultured cells, so it is not known whether NR or NRH would have the same effect in older people. The benefit was seen only in males, and females, who did not lose heart NAD+, did not respond, so the approach may not apply to everyone. The abstract does not report how much DNA repair improved or which repair markers were measured, and the role of SIRT6 is part of a proposed mechanism rather than a direct test in the animals.",
+   "terms": [
+    {
+     "term": "NAD+",
+     "definition": "Nicotinamide adenine dinucleotide, a molecule cells use in energy metabolism and as fuel for sirtuin enzymes."
+    },
+    {
+     "term": "NR and NRH",
+     "definition": "Nicotinamide riboside and dihydronicotinamide riboside, precursors the body converts into NAD+."
+    },
+    {
+     "term": "Sirtuins (SIRT1, SIRT6)",
+     "definition": "NAD+-dependent enzymes that remove acetyl tags from proteins; SIRT6 helps maintain DNA repair and chromatin."
+    },
+    {
+     "term": "Cellular senescence",
+     "definition": "A state in which a cell permanently stops dividing but stays active, often releasing inflammatory signals."
+    },
+    {
+     "term": "Diastolic dysfunction",
+     "definition": "When the heart muscle is too stiff to relax and fill properly between beats."
+    },
+    {
+     "term": "Histones",
+     "definition": "Spool-like proteins that DNA wraps around inside the nucleus."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "lifes-simple-7-epigenetic-age-acceleration",
+  "group": "latest",
+  "title": "Life's Simple 7 score and epigenetic age acceleration: associations and effect modification by race and ethnicity",
+  "authors": [
+   "Nicholas Pryor",
+   "Darya Dokshina",
+   "Hanyang Shen",
+   "Nicole Gladish",
+   "Jennifer A Smith",
+   "David Rehkopf",
+   "Belinda L Needham"
+  ],
+  "authorsShort": "Nicholas Pryor, Darya Dokshina, Hanyang Shen … Belinda L Needham",
+  "firstAuthor": "Nicholas Pryor",
+  "journal": "Clinical Epigenetics",
+  "pubDate": "2026-08-01",
+  "doi": "10.1186/s13148-026-02218-6",
+  "url": "https://doi.org/10.1186/s13148-026-02218-6",
+  "pmid": "42958336",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "gold",
+   "isOpen": true,
+   "url": "https://doi.org/10.1186/s13148-026-02218-6",
+   "source": "OpenAlex API, fetched 2026-10-30"
+  },
+  "whyItMatters": "Better heart-health habits tracked with a slower epigenetic clock across US racial and ethnic groups, most clearly on clocks built from physiology.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Epigenetic clocks estimate a person's biological age from chemical tags called methyl groups on their DNA. When the clock reads older than a person's real age, that gap is called epigenetic age acceleration, and it has been proposed as one reason heart disease rates differ between racial and ethnic groups. A problem is that most clocks were built using samples from mostly or only White people, so it is not clear they work the same way in everyone. Before these clocks can be used to study health disparities, researchers need to know whether their links with health hold across groups. This study tests that using a widely used measure of heart health.",
+   "did": "The team used data from the US National Health and Nutrition Examination Survey (NHANES) from 1999 to 2002, a nationally representative sample. They included 2,401 adults aged 50 to 84 who were non-Hispanic Black, non-Hispanic White, Mexican American, other Hispanic, or another race or ethnicity. They scored each person on the American Heart Association's Life's Simple 7 (LS7), which covers seven factors such as blood pressure, cholesterol and activity. They then compared LS7 with 13 standardised measures of epigenetic age, adjusting for other factors, and tested whether the relationship changed by race and ethnicity.",
+   "found": "People with higher LS7 scores, meaning better cardiovascular health, had lower epigenetic age acceleration on six measures: Hannum, PhenoAge, GrimAge, GrimAge2, DunedinPoAm and a methylation-based telomere measure, where the direction pointed to longer estimated telomeres. The strongest links were for GrimAge (a coefficient of about -0.14) and GrimAge2 (about -0.16). Seven measures, including the original Horvath clock, showed no significant link. Apart from one exception involving the Horvath clock, the relationship did not differ by race and ethnicity. The authors conclude there was not enough evidence of differences between groups, and that clocks trained on physiological age, rather than calendar age, gave the most consistent results and may be useful for disparities research.",
+   "limits": "This synopsis is based on the abstract only, although the paper is open access. The study is cross-sectional, measuring everyone at one time, so it shows association, not that better heart health slows epigenetic aging. The data were collected over 20 years ago. Finding no significant difference between groups is not the same as proving the clocks behave identically, since some groups were likely smaller. The coefficients are reported in standardised units, so they do not translate directly into years of age.",
+   "terms": [
+    {
+     "term": "Epigenetic clock",
+     "definition": "A formula that estimates age from DNA methylation levels at selected sites in the genome."
+    },
+    {
+     "term": "Epigenetic age acceleration",
+     "definition": "How much older (or younger) a person's epigenetic age is than their actual age."
+    },
+    {
+     "term": "GrimAge / PhenoAge",
+     "definition": "Second-generation clocks trained to predict health and mortality, not just calendar age."
+    },
+    {
+     "term": "DunedinPoAm",
+     "definition": "A methylation measure of the pace of aging, built from changes in body systems over time."
+    },
+    {
+     "term": "Life's Simple 7",
+     "definition": "An American Heart Association score of seven heart-health factors, including blood pressure, cholesterol, blood sugar, weight, diet, activity and smoking."
+    },
+    {
+     "term": "NHANES",
+     "definition": "A long-running US government survey that combines interviews, physical exams and lab tests."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "stress-adapted-fiber-state-mtdna-deletions",
+  "group": "latest",
+  "title": "A stress-adapted fiber state promotes clonal expansion of deleted mitochondrial DNA",
+  "authors": [
+   "Diego Perez-Rodriguez",
+   "Ilaria Dalla Rosa",
+   "Anastasia Magoulopoulou",
+   "Sara Ricciardi",
+   "Samantha Davidson",
+   "Rebecca Lasalandra",
+   "Renata Kabiljo",
+   "Aine Moylett",
+   "Tamara Hill",
+   "Tengfei Wan",
+   "Aleck W E Jones",
+   "Chloe F Moss",
+   "Charlotte Zierz",
+   "Melissa L Salazar",
+   "Radha Desai",
+   "Shar-Yin N Huang",
+   "Yves Pommier",
+   "Monika Hofer",
+   "Robert D S Pitceathly",
+   "Martin A M Reijns",
+   "Joanna Poulton",
+   "Christos Proukakis",
+   "J Paul Simons",
+   "Mats Nilsson",
+   "Robert W Taylor",
+   "Ian J Holt",
+   "Antonella Spinazzola"
+  ],
+  "authorsShort": "Diego Perez-Rodriguez, Ilaria Dalla Rosa, Anastasia Magoulopoulou … Antonella Spinazzola",
+  "firstAuthor": "Diego Perez-Rodriguez",
+  "journal": "Cell Reports",
+  "pubDate": "2026-10-29",
+  "doi": "10.1016/j.celrep.2026.117995",
+  "url": "https://doi.org/10.1016/j.celrep.2026.117995",
+  "pmid": "42955951",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "gold",
+   "isOpen": true,
+   "url": "https://doi.org/10.1016/j.celrep.2026.117995",
+   "source": "Crossref license metadata, fetched 2026-10-30 (CC BY 4.0)"
+  },
+  "whyItMatters": "It suggests why chunks of deleted mitochondrial DNA take over some muscle fibers, a pattern also seen in aging muscle.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Mitochondria, the cell's power plants, carry their own small genome, mitochondrial DNA (mtDNA). Two kinds of mtDNA trouble often turn up together in mitochondrial disease, in brain degeneration and in ordinary aging: depletion, where a cell has too few copies, and deletions, where copies are missing a chunk of their sequence. In aging muscle, deletions are not spread evenly. Instead, individual fibers become taken over by one deleted version, a process called clonal expansion, and those fibers stop producing energy properly. Why the two problems coexist, and why deletions pile up in patches rather than everywhere, has not been explained. This paper proposes that they are two stages of the same process.",
+   "did": "According to the abstract, the researchers studied muscle from mice missing a gene called Mpv17, which causes severe and uniform mtDNA depletion. They followed the muscle over time (longitudinally), using both bulk measurements of whole tissue and in situ analyses that look at individual fibers inside tissue sections. They tracked mtDNA amount, mitochondrial transcripts (the RNA copies read from mtDNA), deletions, respiratory chain function and the stress protein Hsp60. They then checked whether the same Hsp60 pattern appears in muscle from people with mitochondrial myopathy, a muscle disease caused by faulty mitochondria. The abstract does not give animal numbers or patient numbers.",
+   "found": "Early on, the muscle compensated for the depletion: each remaining mtDNA copy produced more transcripts, which kept the respiratory chain working. That response came with a delayed cost. By six months, transcript levels fell, mtDNA deletions appeared and fibers lacking respiratory function showed up. Surprisingly, fibers that carried deletions held more mtDNA than normal, despite starting from depletion. Every time this expansion occurred it was accompanied by raised Hsp60, a chaperone protein that helps fold proteins inside mitochondria, and the same link held in human mitochondrial myopathy. The authors propose that depletion reprograms how mtDNA and its RNA are handled, which accidentally encourages deletions to form and creates a high-Hsp60 fiber state in which deleted copies can expand. They argue that depletion and multiple deletions can be sequential phases of one degenerative process.",
+   "limits": "This synopsis is based on the abstract only, although the paper is open access. The main model is a mouse with a specific genetic defect, which may not reflect normal aging, where depletion is milder and develops slowly; the link to aging is the authors' suggestion, not something tested directly in aged animals. Hsp60 rises together with deletion expansion, but the abstract does not say whether Hsp60 causes the expansion or simply marks it. The human evidence comes from a disease, mitochondrial myopathy, not from healthy older people.",
+   "terms": [
+    {
+     "term": "Mitochondrial DNA (mtDNA)",
+     "definition": "The small circular genome inside mitochondria; each cell carries hundreds to thousands of copies."
+    },
+    {
+     "term": "mtDNA depletion",
+     "definition": "Having too few copies of mitochondrial DNA in a cell."
+    },
+    {
+     "term": "mtDNA deletion",
+     "definition": "A copy of mitochondrial DNA missing a stretch of its sequence, often including genes needed for energy production."
+    },
+    {
+     "term": "Clonal expansion",
+     "definition": "When one version of mtDNA copies itself until it outnumbers the others in a cell or fiber."
+    },
+    {
+     "term": "Respiratory chain",
+     "definition": "The set of protein complexes in mitochondria that uses oxygen to make the cell's energy currency, ATP."
+    },
+    {
+     "term": "Hsp60",
+     "definition": "A heat shock protein that helps other proteins fold correctly inside mitochondria; levels rise under stress."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "partial-in-vivo-reprogramming-efficacy-toxicity",
+  "group": "latest",
+  "title": "Investigating the efficacy and toxicity of partial in vivo reprogramming as a rejuvenation intervention",
+  "authors": [
+   "Franziska Meiners",
+   "Daniel Palmer",
+   "Roberto A Avelar",
+   "Israel Barrantes",
+   "Georg Fuellen"
+  ],
+  "authorsShort": "Franziska Meiners, Daniel Palmer, Roberto A Avelar … Georg Fuellen",
+  "firstAuthor": "Franziska Meiners",
+  "journal": "Aging (Albany NY)",
+  "pubDate": "2026-10-27",
+  "doi": "10.18632/aging.206431",
+  "url": "https://doi.org/10.18632/aging.206431",
+  "pmid": "42954813",
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "hybrid",
+   "isOpen": true,
+   "url": "https://www.aging-us.com/article/206431/pdf",
+   "source": "OpenAlex API, fetched 2026-10-30"
+  },
+  "whyItMatters": "A re-analysis finds that partial reprogramming looked rejuvenating in liver and kidney but flagged possible genomic and proliferative stress in the spleen.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Partial reprogramming means briefly switching on the Yamanaka factors, the genes that can turn adult cells back into stem cells, in short repeated cycles. The hope is to wind back the epigenetic marks that change with age without erasing a cell's identity. It is one of the most discussed rejuvenation ideas, but forcing cells toward a younger, more dividing state could also raise the risk of uncontrolled growth and stress on the genome. Responses may also differ between organs. This paper looks at both sides, possible benefits and possible harms, across several tissues.",
+   "did": "The authors did not run a new experiment. According to the abstract, they reanalysed existing RNA sequencing data, a readout of which genes are active, from the liver, kidney and spleen of aged mice that had received seven months of cyclic partial reprogramming. They used the Adverse Outcome Pathway (AOP) framework, a toxicology approach that links molecular changes to possible harmful or beneficial outcomes. They also ran gene set enrichment analysis to see which biological processes shifted, and used deconvolution, a computational method that estimates which cell types make up a tissue sample from bulk data.",
+   "found": "In the liver and kidney, reprogramming dampened immune and inflammatory processes that normally rise with age and switched back on metabolic and breakdown pathways that normally fall with age. In the liver, the AOP analysis pointed to changes opposite to fatty liver disease (steatosis), including activation of the nuclear receptors Ppara and Pparg and restoration of fatty-acid breakdown. In the kidney, the AOP framework found no enriched key events when comparing reprogrammed and old animals. The spleen looked different: programs for the cell cycle, DNA replication and the DNA damage response were prominent, suggesting more cell division. The estimated share of megakaryocyte-erythroid progenitor cells, which make platelets and red cells, went up and natural killer cells went down, and the AOP analysis flagged a possible risk of sustained genomic and proliferative stress.",
+   "limits": "This synopsis is based on the abstract only, although the paper is open access. The results come from re-analysing gene activity data, which shows patterns of gene use, not actual damage, tumours or organ function. The flagged genomic stress in the spleen is a predicted risk from the framework, not a measured outcome. Cell type proportions were estimated computationally rather than counted. The original study's size is not given in the abstract, and the authors themselves call for larger, controlled studies to clarify benefits and safety.",
+   "terms": [
+    {
+     "term": "Partial reprogramming",
+     "definition": "Brief, repeated activation of Yamanaka factors to make cells more youthful without turning them into stem cells."
+    },
+    {
+     "term": "Yamanaka factors",
+     "definition": "Four genes (Oct4, Sox2, Klf4, c-Myc) that can reprogram adult cells into stem cells."
+    },
+    {
+     "term": "RNA sequencing",
+     "definition": "A method that reads all the RNA in a sample to show which genes are switched on."
+    },
+    {
+     "term": "Adverse Outcome Pathway (AOP)",
+     "definition": "A toxicology framework linking molecular events step by step to harmful health effects."
+    },
+    {
+     "term": "DNA damage response",
+     "definition": "The set of cell signals that detect DNA damage, pause division and start repair."
+    },
+    {
+     "term": "Deconvolution",
+     "definition": "A computational way to estimate the mix of cell types in a tissue from bulk gene data."
+    }
+   ]
+  }
  }
 ]
