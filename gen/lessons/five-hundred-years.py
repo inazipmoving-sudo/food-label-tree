@@ -191,7 +191,7 @@ F3=('<!--noart-->'+'<div class="art">'+_grid_svg()+'</div>'
 def _card(href,kicker,title,text):
     return f'<a href="../literature/{href}"><small>{kicker}</small><b>{_esc(title)}</b><span>{text}</span></a>'
 F4=('<!--noart-->'
-    '<div data-part="bridge"><p>The charts above are about when populations died. The reading room, which is not a course, has one-page reads of papers on the biology of aging. The lines below only say what those pages say.</p></div>'
+    '<div data-part="bridge"><p>The charts above are about when populations died. The reading room, part of this course, has one-page reads of papers on the biology of aging. The lines below only say what those pages say.</p></div>'
     '<div class="ly-cards" data-part="clocks" style="margin-top:12px">'
     +_card('fourteen-epigenetic-clocks-174-diseases.html','Epigenetic clocks','14 clocks and 174 diseases','In 18,859 people the newer clocks predicted disease better than clocks trained only to guess age. Accuracy gains were often about 1 percent. The page does not show that changing a clock changes risk.')
     +_card('longitudinal-epigenetic-clocks-inchianti.html','Epigenetic clocks','Clocks followed for up to 24 years','In one Italian cohort, a clock that speeds up predicts death beyond the starting measurement. The page calls the study observational.')
