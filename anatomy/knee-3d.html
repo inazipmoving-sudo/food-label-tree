@@ -21,6 +21,11 @@ label{display:block;padding:2px 0;cursor:pointer}button{margin:2px 4px 2px 0;pad
 <div style="margin-top:6px">Flexion: <span id="fv">0</span>°<br><input type="range" id="flex" min="0" max="120" value="0" style="width:100%"></div>
 <div style="margin-top:4px"><button data-v="ant">Anterior</button><button data-v="post">Posterior</button><button data-v="lat">Lateral</button><button data-v="med">Medial</button></div>
 <div id="list"></div><p style="color:#889;font-size:11px">◆ = scan/atlas-based mesh (BodyParts3D)</p></div>
+<style>#panel{transition:transform .3s ease}body.pc #panel{transform:translateX(-105%)}#ptog{position:absolute;top:10px;left:290px;z-index:6;transition:left .3s ease;background:rgba(30,40,52,.9);color:#fff;border:1px solid #4a6078;border-radius:4px;padding:6px 9px;cursor:pointer;font-size:14px}body.pc #ptog{left:10px}@media(max-width:700px){#ptog{left:220px}}</style>
+<button id="ptog" title="Hide/show panel" aria-label="Hide or show the side panel">☰</button>
+<script>(function(){var k='anatomyPanelCollapsed',b=document.getElementById('ptog'),v=null;try{v=localStorage.getItem(k)}catch(e){}
+var c=v===null?matchMedia('(max-width:700px)').matches:v==='1';function set(x){document.body.classList.toggle('pc',x);b.textContent=x?'☰':'✕';b.title=x?'Show panel':'Hide panel';setTimeout(function(){dispatchEvent(new Event('resize'))},320)}
+set(c);b.onclick=function(){c=!c;set(c);try{localStorage.setItem(k,c?'1':'0')}catch(e){}}})();</script>
 <div id="tip"></div><div id="info">Drag to rotate · scroll/pinch to zoom · right-drag/two-finger to pan. Click a structure for details.</div>
 <div id="about"><b>About / Credits</b><br><br>
 Bones (femur, tibia, fibula, patella) and muscles (quadriceps heads, hamstrings, sartorius, gracilis, popliteus, gastrocnemius) are derived from
