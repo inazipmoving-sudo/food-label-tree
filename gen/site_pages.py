@@ -38,7 +38,7 @@ def _course_card(c):
 _cards=('<section class="major" id="human-biology"><div class="majh"><span class="majtag">Major</span><h2 class="majt">Human Biology</h2></div>'+'<p class="majsub">Courses in this major</p><div class="majc">'+''.join(_course_card(c) for c in COURSES)+'</div></section>')
 # Literature is part of LONG 101 (see gen/longevity.py). It is not a home-page section and not part of Anatomy.
 # Old home anchors #literature and #reading must not fall through to the food-label tree.
-_HOME_CSS=('<style>.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-variant:small-caps;font-size:clamp(1.05rem,2.2vw,1.25rem);letter-spacing:.12em;color:var(--muted)}.course .mn{font-variant-numeric:lining-nums}.course h2 a{text-decoration:none}.course h2 a:hover{color:var(--acc)}.cdesc{margin:10px 0 0 44px;line-height:1.6}'
+_HOME_CSS=('<style>.hero p.tagline .amp{font-family:"Cormorant Garamond",Garamond,"EB Garamond",Baskerville,serif;font-style:italic;font-variant:normal;font-size:1.35em;letter-spacing:0;margin-right:.18em;color:var(--acc)}.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-variant:small-caps;font-size:clamp(1.05rem,2.2vw,1.25rem);letter-spacing:.12em;color:var(--muted)}.course .mn{font-variant-numeric:lining-nums}.course h2 a{text-decoration:none}.course h2 a:hover{color:var(--acc)}.cdesc{margin:10px 0 0 44px;line-height:1.6}'
            '.cmeta{margin:8px 0 0 44px;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}'
            '.cmods{list-style:none;margin:12px 0 0 44px;padding:0;display:flex;flex-wrap:wrap;gap:8px}.cmods li{border:1px solid var(--line);border-radius:4px;padding:4px 10px;font-size:.9rem;background:var(--bg)}'
            '.cmods li span{font-family:var(--serif);font-variant-numeric:lining-nums;color:var(--acc);margin-right:6px;font-size:1.05rem}'
@@ -48,7 +48,7 @@ _HOME_CSS=('<style>.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-
 _FWD=('<script>(function(){var h=location.hash.slice(1);try{h=decodeURIComponent(h)}catch(e){}'
       'if(h==="literature"||h==="reading"){location.replace("longevity/#literature");return;}'
       'if((h&&!document.getElementById(h))||location.search)location.replace("curriculum/food-label-tree.html"+location.search+location.hash)})()</script>')
-_home=page(f'{UNIVERSITY_NAME} · {TAGLINE}',f'<nav class="crumbs">Home</nav><h1 class="site">{brand_html()}</h1>'+(f'<p class="tagline">{TAGLINE}</p>' if TAGLINE else '')+'<p>Course catalog. Choose a course to start.</p>',
+_home=page(f'{UNIVERSITY_NAME} {TAGLINE}',f'<nav class="crumbs">Home</nav><h1 class="site">{brand_html()}</h1>'+(f'<p class="tagline">{TAGLINE.replace("&","<span class=\"amp\">&amp;</span>",1)}</p>' if TAGLINE else '')+'<p>Course catalog. Choose a course to start.</p>',
            f'<main class="mods">{_cards}</main>',extra=_FWD,head=_HOME_CSS,brand=None)
 open(os.path.join(ROOT,'index.html'),'w',encoding='utf-8').write(_home)
 print('home:',len(COURSES),'course(s); tree page: prev',_P,'next',_N)
