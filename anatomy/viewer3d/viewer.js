@@ -85,10 +85,12 @@ function uvs(g){const pos=g.attributes.position.array;g.computeBoundingBox();con
  const ax=sz.x>sz.y&&sz.x>sz.z?0:sz.z>sz.y?2:1;const a1=(ax+1)%3,a2=(ax+2)%3;const cc=[c.x,c.y,c.z];const uv=new Float32Array(pos.length/3*2);
  for(let i=0;i<pos.length/3;i++){uv[2*i]=(Math.atan2(pos[3*i+a1]-cc[a1],pos[3*i+a2]-cc[a2])/Math.PI+1)*.5;uv[2*i+1]=pos[3*i+ax]*.25*(6/S)}g.setAttribute('uv',new THREE.BufferAttribute(uv,2))}
 function decode(buf,e){const q=new Uint16Array(buf,e.o,e.nv*3);const pos=new Float32Array(q.length);for(let i=0;i<q.length;i++){const k=i%3;pos[i]=e.min[k]+q[i]/65535*(e.max[k]-e.min[k])}
- const idx=e.i32?new Uint32Array(buf,e.oi,e.ni):new Uint16Array(buf,e.oi,e.ni);const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setIndex(new THREE.BufferAttribute(idx.slice(),1));fixN(g);uvs(g);if(e.ow!=null)g.userData.w=new Uint8Array(buf,e.ow,e.nv).slice();return g}
+ const idx=e.i32?new Uint32Array(buf,e.oi,e.ni):new Uint16Array(buf,e.oi,e.ni);const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setIndex(new THREE.BufferAttribute(idx.slice(),1));fixN(g);uvs(g);if(e.ow!=null)g.userData.w=new Uint8Array(buf,e.ow,e.nv).slice();if(e.of!=null)g.userData.mf=new Uint8Array(buf,e.of,e.nv*3).slice();return g}
 const smooth=(e0,e1,x)=>{const t=Math.min(1,Math.max(0,(x-e0)/(e1-e0)));return t*t*(3-2*t)};
 function placeRigid(r){r.m.matrixAutoUpdate=false;r.m.matrix.copy(frameMatrix(r.frame));r.m.matrixWorldNeedsUpdate=true}
 function applySkin(s){const p=s.m.geometry.attributes.position,a=p.array,o=s.orig,d=V(...s.dir);const P=V();
+ if(s.multi&&s.mf){const Ms=s.multi.map(frameMatrix),A=V(),B=V(),f=s.mf;for(let i=0,j=0;i<a.length;i+=3,j+=3){A.set(o[i],o[i+1],o[i+2]);B.copy(A);A.applyMatrix4(Ms[f[j]]);B.applyMatrix4(Ms[f[j+1]]);A.lerp(B,f[j+2]/255);a[i]=A.x;a[i+1]=A.y;a[i+2]=A.z}
+  p.needsUpdate=true;fixN(s.m.geometry);s.m.geometry.computeBoundingSphere();return}
  for(let i=0;i<a.length;i+=3){P.set(o[i],o[i+1],o[i+2]);const w=s.wts?s.wts[i/3]/255:smooth(s.a,s.b,P.dot(d));xformSkin(P,s,w);a[i]=P.x;a[i+1]=P.y;a[i+2]=P.z}
  p.needsUpdate=true;fixN(s.m.geometry);s.m.geometry.computeBoundingSphere()}
 function rebuild(d){const P=d.pts.map(p=>xform(V(p[0],p[1],p[2]),p[3]||'F'));const cur=new THREE.CatmullRomCurve3(P,false,'centripetal');
@@ -142,7 +144,7 @@ document.getElementById('ao').onchange=e=>gtao.enabled=e.target.checked;document
 addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer.setSize(innerWidth,innerHeight)});
 // ---------- build: procedural first, then mesh files progressively ----------
 function addPart(p,geo){const c=comp(p);if(p.hidden)c.hidden=true;const mat=M[p.mat];const m=addMesh(c,geo,mat,p.frame||'F');
- if(p.skin){skins.push({m,orig:geo.attributes.position.array.slice(),dir:[0,1,0],a:0,b:1,wts:geo.userData.w,...p.skin});applySkin(skins[skins.length-1])}else{const r={m,frame:p.frame||'F'};rigid.push(r);placeRigid(r)}
+ if(p.skin){skins.push({m,orig:geo.attributes.position.array.slice(),dir:[0,1,0],a:0,b:1,wts:geo.userData.w,mf:geo.userData.mf,...p.skin});applySkin(skins[skins.length-1])}else{const r={m,frame:p.frame||'F'};rigid.push(r);placeRigid(r)}
  if(p.renderOrder)m.renderOrder=p.renderOrder;if(!c.cb)uiFor(c);return m}
 // declare UI order up-front
 (CFG.parts||[]).forEach(p=>{const c=comp(p);if(p.hidden)c.hidden=true});(CFG.tubes||[]).forEach(p=>comp(p));(CFG.shapes||[]).forEach(p=>comp(p));
