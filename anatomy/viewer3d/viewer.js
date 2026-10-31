@@ -112,9 +112,13 @@ function groupEl(name){if(groups[name])return groups[name];const i=name.indexOf(
  if(i>0){const sn=name.slice(0,i);const sy=systems[sn]||(systems[sn]=mkDet(sn,panel,true));sy.det.style.marginLeft='0';g=mkDet(name.slice(i+3),sy.det,false);g.det.style.marginLeft='12px';g.up=sy}
  else g=mkDet(name,panel,false);groups[name]=g;return g}
 function syncMaster(g){if(!g)return;const n=g.items.filter(b=>b.checked).length;g.mcb.checked=n==g.items.length;g.mcb.indeterminate=n>0&&n<g.items.length;if(g.up)syncMaster(g.up)}
+const QK=[];function syncQ(){QK.forEach(q=>{const bs=comps.filter(c=>q.mats.includes(c.mat)&&c.cb).map(c=>c.cb);const n=bs.filter(b=>b.checked).length;q.cb.checked=n==bs.length&&n>0;q.cb.indeterminate=n>0&&n<bs.length})}
+if(CFG.quick){const d=document.createElement('div');d.innerHTML='<div style="font-size:11px;color:#9ab;margin-top:6px">By tissue type:</div>';panel.before(d);
+ CFG.quick.forEach(q=>{const l=document.createElement('label');l.style.display='inline-block';l.style.marginRight='8px';const cb=document.createElement('input');cb.type='checkbox';cb.checked=true;cb.className='master';l.append(cb,' '+q.label);d.append(l);
+  const o={...q,cb};QK.push(o);cb.onchange=()=>{const v=cb.checked;cb.indeterminate=false;comps.filter(c=>q.mats.includes(c.mat)&&c.cb).forEach(c=>{if(c.cb.checked!==v){c.cb.checked=v;c.cb.onchange()}});syncQ()}})}
 const SW={bone:'#e6d9bb',cart:'#cfe2ee',men:'#e2e8ea',lig:'#efe5cf',ten:'#f8f0ee',mus:'#a8443a',cap:'#aab4ff',bur:'#9cc8f0',fat:'#f0c75a',nerve:'#f3dc7a',artery:'#b3221c',vein:'#3c4f9a',organ:'#b5655a',skin:'#e2b59a',disc:'#dfe8ec'};
 function uiFor(c){const g=groupEl(c.group);const l=document.createElement('label');const cb=document.createElement('input');cb.type='checkbox';cb.checked=!c.hidden;
- cb.onchange=()=>{c.hidden=!cb.checked;c.meshes.forEach(m=>m.visible=cb.checked);syncMaster(g)};const col=CFG.colors?.[c.mat]?.[1]||SW[c.mat]||'#ccc';
+ cb.onchange=()=>{c.hidden=!cb.checked;c.meshes.forEach(m=>m.visible=cb.checked);syncMaster(g);syncQ()};const col=CFG.colors?.[c.mat]?.[1]||SW[c.mat]||'#ccc';
  l.append(cb);l.insertAdjacentHTML('beforeend',` <span class="sw" style="background:${col}"></span>${c.name}${c.scan?'<span class="tag">◆</span>':''}`);g.det.append(l);g.items.push(cb);if(g.up)g.up.items.push(cb);boxes.push(cb);c.cb=cb;syncMaster(g)}
 document.getElementById('all').onclick=()=>boxes.forEach(b=>{b.checked=true;b.onchange()});
 document.getElementById('none').onclick=()=>boxes.forEach(b=>{b.checked=false;b.onchange()});

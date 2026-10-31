@@ -22,7 +22,7 @@ COURSES = [
     dict(slug='anatomy', title='Anatomy', href='anatomy/', code='ANAT 101',
          desc='The human body as a marble statue you can peel back layer by layer: skin, muscles, bones, nerves, organs and circulation. '
               'Tap any part to zoom in, then follow each nutrient from your plate to where it is used or stored.',
-         reg='AREG'),
+         reg='AREG',extra='AEXTRA'),
     dict(slug='longevity', title='Longevity', href='longevity/', code='LONG 101',
          desc='How long populations live, and what a low average did and did not mean. Module 1 follows life expectancy at birth '
               'in England and the world from the sixteenth century to today, then bridges to the aging papers in the reading room. '

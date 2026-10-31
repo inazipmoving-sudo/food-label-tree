@@ -1,0 +1,50 @@
+[
+ {
+  "href": "knee-3d.html",
+  "title": "The Knee in 3D",
+  "desc": "A right knee you can rotate, zoom and bend from 0 to 120°. Tick boxes peel away each bone, cartilage, meniscus, ligament, tendon and muscle, and tapping a part names it. Bones and muscles come from BodyParts3D (CC BY-SA).",
+  "short": "Knee"
+ },
+ {
+  "href": "shoulder-3d.html",
+  "title": "The Shoulder in 3D",
+  "desc": "The glenohumeral joint with scapula, clavicle and humerus. Abduct, flex and rotate the arm with sliders, and tick boxes to strip away the deltoid and other muscles, the rotator cuff (supraspinatus, infraspinatus, teres minor, subscapularis), labrum, capsule, glenohumeral and coracoacromial ligaments and the subacromial bursa.",
+  "short": "Shoulder"
+ },
+ {
+  "href": "elbow-3d.html",
+  "title": "The Elbow in 3D",
+  "desc": "Humerus, ulna and radius with flexion and pronation/supination sliders. Tick boxes peel away the flexor and extensor groups, the biceps, brachialis and triceps, cartilage, the collateral and annular ligaments and the capsule.",
+  "short": "Elbow"
+ },
+ {
+  "href": "wrist-3d.html",
+  "title": "The Wrist & Hand in 3D",
+  "desc": "All 27 hand bones (8 carpals, 5 metacarpals, 14 phalanges) with the distal radius and ulna. Sliders flex and deviate the wrist and curl the fingers into a fist; tick boxes peel away the flexor and extensor tendons, thenar and hypothenar muscles, interossei, lumbricals, the flexor retinaculum, TFCC and wrist ligaments.",
+  "short": "Wrist & Hand"
+ },
+ {
+  "href": "hip-3d.html",
+  "title": "The Hip in 3D",
+  "desc": "Pelvis, sacrum and proximal femur with flexion, abduction and rotation sliders. Tick boxes strip away the gluteals, deep external rotators, hip flexors, adductors and hamstrings, then the labrum, Y-shaped iliofemoral, pubofemoral and ischiofemoral ligaments, ligamentum teres and capsule.",
+  "short": "Hip"
+ },
+ {
+  "href": "ankle-3d.html",
+  "title": "The Ankle & Foot in 3D",
+  "desc": "All 26 foot bones with the distal tibia and fibula. Sliders dorsiflex/plantarflex the ankle and invert/evert the foot at the subtalar joint; tick boxes peel away the calf, fibular and anterior muscle groups, the intrinsic foot muscles, the deltoid and lateral ankle ligaments (ATFL, CFL, PTFL), the spring ligament and the plantar fascia.",
+  "short": "Ankle & Foot"
+ },
+ {
+  "href": "spine-3d.html",
+  "title": "The Spine in 3D",
+  "desc": "The whole spine from the atlas and axis to the sacrum and coccyx, with rib heads at the costovertebral joints. Sliders flex, extend, side-bend and rotate it with motion spread across the segments in realistic regional proportions. Tick boxes, grouped by region and by tissue, peel away the deep back muscles, discs (annulus and nucleus), facet joints, the longitudinal, flavum, interspinous, supraspinous and nuchal ligaments, the spinal cord, cauda equina and nerve roots.",
+  "short": "Spine"
+ },
+ {
+  "href": "tmj-3d.html",
+  "title": "The Jaw in 3D: Temporomandibular Joint",
+  "desc": "The mandible, temporal and zygomatic bones with the four muscles of mastication. A slider opens the mouth so you can watch the condyle swing forward toward the articular eminence; tick boxes peel away the masseter, temporalis and pterygoids, the fibrocartilage, the articular disc and the lateral, sphenomandibular and stylomandibular ligaments.",
+  "short": "Jaw (TMJ)"
+ }
+]

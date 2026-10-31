@@ -15,9 +15,13 @@ for r in AREG:
     if not _am or _am[-1][0]!=r[1]: _am.append((r[1],r[2],[]))
     _am[-1][2].append(r)
 _ac=''
+# Module 2: interactive 3D joint models (static pages anatomy/<joint>-3d.html, listed in gen/data/joints3d.json)
+JOINTS3D=json.load(open(os.path.join(GEN,'data','joints3d.json'),encoding='utf-8'))
+AEXTRA=[('2','Joints: '+', '.join(j['short'] for j in JOINTS3D),len(JOINTS3D))]
 for n,nm,rs in _am:
     items=''.join(f'<a class="les" href="{r[0]}.html">{r[3]} <span>{len(json.load(open(os.path.join(GEN,"scripts",r[0]+".json")))["figures"])} figures + script →</span></a>' if r[4] else f'<div class="les off">{r[3]} <span>coming soon</span></div>' for r in rs)
     _ac+=f'<section class="mod" style="--a:var(--acc)"><div class="mh"><span class="mn">{n}</span><span class="ico"></span><h2>Module {n} · {nm}</h2></div>{items}</section>'
+_ac+='<section class="mod" style="--a:var(--acc)"><div class="mh"><span class="mn">2</span><span class="ico"></span><h2>Module 2 · Joints</h2></div>'+''.join(f'<a class="les" href="{j["href"]}">{j["title"]} <span>interactive model →</span></a><p class="cdesc">{j["desc"]}</p>' for j in JOINTS3D)+'</section>'
 open(os.path.join(OUT,'index.html'),'w').write(page(COURSE+' · '+UNIVERSITY_NAME,'<nav class="crumbs"><a href="../">Home</a> › '+COURSE+'</nav><h1>'+COURSE+'</h1><p>Lessons with numbered figures, made for teaching by phone. The body as a marble statue you can peel back layer by layer and zoom into, then where the food you eat goes and what each nutrient does there.</p>',f'<main class="mods">{_ac}</main>'))
 for _f in ('human-body.html','scripts/human-body.json'):   # briefly live as Nutrition 101 Module 6; gone from that course
     if os.path.exists(os.path.join(_save[3],_f)): os.remove(os.path.join(_save[3],_f))

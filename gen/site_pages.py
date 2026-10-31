@@ -30,6 +30,7 @@ def _course_card(c):
             if not mods or mods[-1][0]!=r[1]: mods.append([r[1],r[2],None])
             if r[4] and mods[-1][2] is None: mods[-1][2]=c['href']+r[0]+'.html'
     # every module chip links to its first live lesson (or the course page if none is live yet)
+    for n,nm,cnt in (globals()[c['extra']] if c.get('extra') else []): mods.append([n,nm,c['href']]); nmod+=1; nles+=cnt   # e.g. Anatomy Module 2 (3D joints)
     ml=''.join(f'<li><a href="{h or c["href"]}"><span>{n}</span>{nm}</a></li>' for n,nm,h in mods)
     return (f'<section class="mod course" id="{c["slug"]}" style="--a:var(--acc)"><div class="mh"><span class="mn">{c.get("code","").split(" ")[-1]}</span><span class="ico"></span>'
             f'<h2><a href="{c["href"]}">{c["title"]}</a></h2></div><p class="cdesc">{c["desc"]}</p>'
