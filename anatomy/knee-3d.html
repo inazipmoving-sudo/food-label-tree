@@ -40,6 +40,7 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {GTAOPass} from 'three/addons/postprocessing/GTAOPass.js';
 import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
 import {BokehPass} from 'three/addons/postprocessing/BokehPass.js';
+import {ShaderPass} from 'three/addons/postprocessing/ShaderPass.js';
 import {OutputPass} from 'three/addons/postprocessing/OutputPass.js';
 const V=(x,y,z)=>new THREE.Vector3(x,y,z);
 console.log("start");const DATA=JSON.parse(document.getElementById('meshdata').textContent);
@@ -52,7 +53,8 @@ document.body.appendChild(renderer.domElement);
 const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;scene.background=t}
 const pmrem=new THREE.PMREMGenerator(renderer);scene.environment=pmrem.fromScene(new RoomEnvironment(),.04).texture;scene.environmentIntensity=0.6;
 const camera=new THREE.PerspectiveCamera(35,innerWidth/innerHeight,.1,100);camera.position.set(6,1.8,17);
-const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(-.6,0,0);controls.enableDamping=true;
+const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(-.6,0,0);controls.enableDamping=true;controls.minDistance=3;controls.maxDistance=35;camera.near=.1;camera.far=200;camera.updateProjectionMatrix();
+renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();document.body.insertAdjacentHTML('beforeend','<div id="ctx" style="position:absolute;top:45%;left:50%;color:#ccc">Reloading graphics…</div>')});renderer.domElement.addEventListener('webglcontextrestored',()=>location.reload());
 scene.add(new THREE.HemisphereLight(0xfff1e0,0x2a2e35,.7));
 const key=new THREE.DirectionalLight(0xfff6ec,2.6);key.position.set(5,8,8);key.castShadow=true;key.shadow.mapSize.set(2048,2048);key.shadow.radius=6;key.shadow.blurSamples=16;key.shadow.bias=-.0005;
 Object.assign(key.shadow.camera,{left:-6,right:6,top:6,bottom:-6,near:1,far:30});scene.add(key);
@@ -80,7 +82,7 @@ const ligH=fibres('#808080',1400,.6),ligC=fibres('#f1ddd6',700,.14),musH=fibres(
 const cartH=canvasTex(256,256,(g,w,h)=>{g.fillStyle='#808080';g.fillRect(0,0,w,h);for(let i=0;i<300;i++){g.fillStyle=`rgba(${R()<.5?0:255},${R()<.5?0:255},${R()<.5?0:255},.05)`;g.beginPath();g.arc(R()*w,R()*h,R()*20+3,0,7);g.fill()}});
 const M={
 bone:new THREE.MeshPhysicalMaterial({color:0xf2e6cc,map:tex(boneC,3,6,1),normalMap:tex(heightToNormal(boneH,2.5),3,6),normalScale:new THREE.Vector2(.6,.6),roughness:.62,roughnessMap:tex(boneH,3,6),sheen:.25,sheenColor:new THREE.Color(0xfff0d8),sheenRoughness:.6}),
-cart:new THREE.MeshPhysicalMaterial({color:0xd4e4f2,roughness:.08,clearcoat:1,clearcoatRoughness:.02,iridescence:.35,iridescenceIOR:1.3,sheen:.8,sheenColor:new THREE.Color(0xa8ccff),normalMap:tex(heightToNormal(cartH,1),2,2),normalScale:new THREE.Vector2(.3,.3),transparent:true,opacity:.92,ior:1.4,specularIntensity:1}),
+cart:new THREE.MeshPhysicalMaterial({color:0xd4e4f2,roughness:.08,clearcoat:1,clearcoatRoughness:.02,sheen:.8,sheenColor:new THREE.Color(0xa8ccff),normalMap:tex(heightToNormal(cartH,1),2,2),normalScale:new THREE.Vector2(.3,.3),transparent:true,opacity:.92,ior:1.4,specularIntensity:1}),
 men:new THREE.MeshPhysicalMaterial({color:0xe2e8ea,roughness:.25,clearcoat:.8,clearcoatRoughness:.15,sheen:.5,sheenColor:new THREE.Color(0xd0e0ff),normalMap:tex(heightToNormal(ligH,1.5),1,4),normalScale:new THREE.Vector2(.4,.4)}),
 lig:new THREE.MeshPhysicalMaterial({color:0xffffff,map:tex(ligC,1,1,1),normalMap:tex(heightToNormal(ligH,3),1,1),normalScale:new THREE.Vector2(.9,.9),roughness:.38,clearcoat:.7,clearcoatRoughness:.18,sheen:.9,sheenColor:new THREE.Color(0xffd8d0)}),
 ten:new THREE.MeshPhysicalMaterial({color:0xfff4f2,map:tex(tenC,1,1,1),normalMap:tex(heightToNormal(ligH,3),1,1),normalScale:new THREE.Vector2(.7,.7),roughness:.3,clearcoat:.6,clearcoatRoughness:.2,sheen:1,sheenColor:new THREE.Color(0xdde8ff)}),
@@ -102,13 +104,13 @@ function decode(n){const e=DATA[n];const b=atob(e.p),ba=new Uint8Array(b.length)
  // cylindrical UVs (v along long axis) for fibre/porosity textures
  g.computeBoundingBox();const bb=g.boundingBox,c=bb.getCenter(V());const uv=new Float32Array(pos.length/3*2);
  for(let i=0;i<pos.length/3;i++){uv[2*i]=(Math.atan2(pos[3*i]-c.x,pos[3*i+2]-c.z)/Math.PI+1)*.5;uv[2*i+1]=pos[3*i+1]*.25}
- g.setAttribute('uv',new THREE.BufferAttribute(uv,2));g.computeTangents?.();return g}
+ g.setAttribute('uv',new THREE.BufferAttribute(uv,2));return g}
 function addMesh(c,geo,mat,frame='F',skin){const m=new THREE.Mesh(geo,mat);m.castShadow=!mat.transparent;m.receiveShadow=true;m.userData.comp=c;
  if(skin){scene.add(m);skins.push({m,orig:geo.attributes.position.array.slice(),...skin})}else frames[frame].add(m);c.meshes.push(m);if(mat!==M.cap)pickables.push(m);return m}
 const scanMesh=(c,n,mat,frame,skin)=>addMesh(c,decode(n),mat,frame,skin);
 const smooth=(e0,e1,x)=>{const t=Math.min(1,Math.max(0,(x-e0)/(e1-e0)));return t*t*(3-2*t)};
 function applySkin(s){const p=s.m.geometry.attributes.position,a=p.array,o=s.orig;
- for(let i=0;i<a.length;i+=3){const w=s.frame=='T'?smooth(s.hi,s.lo,o[i+1]):smooth(s.lo,s.hi,o[i+1]);const th=ang(s.frame)*w;if(!th){a[i]=o[i];a[i+1]=o[i+1];a[i+2]=o[i+2];continue}
+ for(let i=0;i<a.length;i+=3){const w=smooth(s.hi,s.lo,o[i+1]);const th=ang(s.frame)*w;if(!th){a[i]=o[i];a[i+1]=o[i+1];a[i+2]=o[i+2];continue}
   const y=o[i+1]-PIV.y,z=o[i+2]-PIV.z,cs=Math.cos(th),sn=Math.sin(th);a[i]=o[i];a[i+1]=PIV.y+y*cs-z*sn;a[i+2]=PIV.z+y*sn+z*cs}
  p.needsUpdate=true;s.m.geometry.computeVertexNormals();s.m.geometry.computeBoundingSphere()}
 // procedural tube spanning frames
@@ -147,7 +149,7 @@ tube(comp('Lateral collateral ligament (LCL)','Ligaments','Cord-like band from l
 tube(comp('Patellar ligament','Ligaments','Strong flat continuation of the quadriceps tendon from patellar apex to tibial tuberosity.'),
  [[-.34,-.12,1.0,'P'],[-.33,-.4,1.0,'T'],[-.3,-.85,.97,'T']],taper(.3,.24,.12),M.ten,.3,V(0,0,1));
 // ========== TENDONS & MUSCLES (scan-based, skinned across joint) ==========
-const QS={frame:'P',lo:.6,hi:1.6},HS={frame:'T',lo:-.5,hi:.4};
+const QS={frame:'P',lo:.35,hi:1.15},HS={frame:'T',lo:-.4,hi:.35};
 tube(comp('Quadriceps tendon','Tendons & Muscles','Common tendon of the four quadriceps muscles inserting on the patellar base.'),
  [[-.36,.7,1.0,'P'],[-.32,1.2,.92,'F'],[-.28,1.8,.82,'F'],[-.25,2.4,.75,'F']],taper(.28,.22,.1),M.ten,.35,V(0,0,1));
 scanMesh(comp('Rectus femoris','Tendons & Muscles','Central quadriceps muscle (crosses hip & knee); knee extensor.',1),'rectus_femoris',M.mus,'F',QS);
@@ -161,8 +163,8 @@ scanMesh(comp('Semitendinosus (pes anserinus)','Tendons & Muscles','Medial hamst
 scanMesh(comp('Sartorius (pes anserinus)','Tendons & Muscles','Longest muscle; most anterior of the pes anserinus insertions.',1),'sartorius',M.mus,'F',HS);
 scanMesh(comp('Gracilis (pes anserinus)','Tendons & Muscles','Thin adductor; middle of the pes anserinus (Say Grace before Tea).',1),'gracilis',M.mus,'F',HS);
 scanMesh(comp('Popliteus','Tendons & Muscles','Lateral femoral condyle → posterior tibia; "unlocks" the extended knee by rotating the femur laterally/tibia medially.',1),'popliteus',M.mus,'F',{frame:'T',lo:-.2,hi:.5});
-scanMesh(comp('Gastrocnemius – medial head','Tendons & Muscles','Arises above the medial femoral condyle; plantarflexor and knee flexor.',1),'gastroc_medial',M.mus,'F',{frame:'T',lo:-.6,hi:.7});
-scanMesh(comp('Gastrocnemius – lateral head','Tendons & Muscles','Arises from lateral femoral condyle (sometimes with a fabella).',1),'gastroc_lateral',M.mus,'F',{frame:'T',lo:-.6,hi:.7});
+scanMesh(comp('Gastrocnemius – medial head','Tendons & Muscles','Arises above the medial femoral condyle; plantarflexor and knee flexor.',1),'gastroc_medial',M.mus,'F',{frame:'T',lo:-.35,hi:.5});
+scanMesh(comp('Gastrocnemius – lateral head','Tendons & Muscles','Arises from lateral femoral condyle (sometimes with a fabella).',1),'gastroc_lateral',M.mus,'F',{frame:'T',lo:-.35,hi:.5});
 // ========== OTHER ==========
 const cap=comp('Joint capsule','Bursae & Other','Fibrous capsule lined by synovial membrane enclosing the joint (translucent).');
 {const g=new THREE.LatheGeometry([[1.0,-.6],[1.22,-.15],[1.3,.35],[1.2,1.0],[.95,1.6],[.7,1.9]].map(p=>new THREE.Vector2(...p)),64);const m=addMesh(cap,g,M.cap,'F');m.position.set(-.08,0,.05);m.scale.set(1,1,.9);m.renderOrder=3}
@@ -197,14 +199,15 @@ renderer.domElement.addEventListener('pointerup',e=>{if(!lblCb.checked||Math.hyp
 console.log("ui");
 // ---------- post ----------
 const composer=new EffectComposer(renderer);composer.addPass(new RenderPass(scene,camera));
-const gtao=new GTAOPass(scene,camera,innerWidth,innerHeight);gtao.updateGtaoMaterial({radius:.35,distanceFallOff:1,thickness:1,scale:1.2});composer.addPass(gtao);const bloom=new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),.12,.5,.92);composer.addPass(bloom);
+const gtao=new GTAOPass(scene,camera,innerWidth,innerHeight);gtao.updateGtaoMaterial({radius:.35,distanceFallOff:1,thickness:1,scale:1.2});composer.addPass(gtao);const sanit=new ShaderPass({uniforms:{tDiffuse:{value:null}},vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',fragmentShader:'uniform sampler2D tDiffuse;varying vec2 vUv;void main(){vec4 c=texture2D(tDiffuse,vUv);bool bad=!(c.r>=0.&&c.r<=1e4)||!(c.g>=0.&&c.g<=1e4)||!(c.b>=0.&&c.b<=1e4);gl_FragColor=bad?vec4(0.,0.,0.,1.):clamp(c,0.,64.);}'});composer.addPass(sanit);
+const bloom=new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),.12,.5,.92);composer.addPass(bloom);
 const bokeh=new BokehPass(scene,camera,{focus:13,aperture:.0006,maxblur:.006});bokeh.enabled=false;composer.addPass(bokeh);composer.addPass(new OutputPass());
 const Q=new URLSearchParams(location.search);if(Q.has('lite')){gtao.enabled=false;document.getElementById('ao').checked=false}
 document.getElementById('bl').onchange=e=>bloom.enabled=e.target.checked;document.getElementById('dof').onchange=e=>bokeh.enabled=e.target.checked;
 document.getElementById('ao').onchange=e=>gtao.enabled=e.target.checked;
 addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);composer.setSize(innerWidth,innerHeight)});
 document.getElementById('load').remove();
-window.__ok=true;window.__bb=()=>comps.map(c=>{const b=new THREE.Box3();c.meshes.forEach(m=>b.expandByObject(m));return c.name+' '+b.min.toArray().map(v=>v.toFixed(1))+' | '+b.max.toArray().map(v=>v.toFixed(1))}).join('\n');
+window.__ok=true;window.__cam=camera;window.__ctl=controls;window.__fx={gtao,bloom,bokeh};window.__bb=()=>comps.map(c=>{const b=new THREE.Box3();c.meshes.forEach(m=>b.expandByObject(m));return c.name+' '+b.min.toArray().map(v=>v.toFixed(1))+' | '+b.max.toArray().map(v=>v.toFixed(1))}).join('\n');
 window.__render=()=>{controls.update();composer.render();return 1};
 if(!Q.has('still'))(function loop(){requestAnimationFrame(loop);controls.update();bokeh.uniforms.focus.value=camera.position.distanceTo(controls.target);composer.render()})();
 </script></body></html>
