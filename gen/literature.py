@@ -55,7 +55,7 @@ dl.terms{margin:6px 0 0}dl.terms dt{font-weight:600;margin-top:10px}dl.terms dd{
 THEME="<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>"
 SECTION='Peer-Reviewed Literature'
 def page(title,hero,body,desc=''):
-    return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{E(title)}</title>'+(f'<meta name="description" content="{E(desc)}">' if desc else '')+f'<style>{CSS}{BRAND_CSS}</style></head><body>'
             f'<div class="hero"><div class="in"><button id="theme">Dark</button><div><a class="brand" href="../">{brand_html()}</a></div>{hero}</div></div>{body}{THEME}</body></html>')
 def fdate(s):
