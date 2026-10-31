@@ -248,6 +248,11 @@ PLACES['micronutrients-water-soluble-vitamins']=[
   ('Small intestine','Helps absorb iron from plant foods.'),
   ('Muscle','Needed to make carnitine, which carries fat into mitochondria.'),
   ('Kidneys','Remove extra; very high doses can raise the risk of oxalate kidney stones.')]),
+ ('Choline',[
+  ('Brain and nerves','Make acetylcholine, the messenger for memory and muscle control.'),
+  ('Muscle','Nerves signal muscles to contract with acetylcholine.'),
+  ('Liver','Makes some choline (PEMT) and needs it to send fat out as VLDL; too little causes fatty liver.'),
+  ('Every cell membrane','Phosphatidylcholine and sphingomyelin.')])
 ]
 PLACES['micronutrients-major-minerals']=[
  ('Calcium',[

@@ -110,9 +110,9 @@ CELL['micronutrients-water-soluble-vitamins']=dict(lead='B vitamins are helpers 
   ['mito'],
   ['mito']),
  ('cytosol', 'Cytosol', 'B6 helps enzymes that move amino-acid groups; niacin (as NAD) also runs glycolysis.', ['cytosol'], ['cytosol']),
- ('nucleus', 'Nucleus', 'Folate carries the carbon pieces needed to build DNA, and with B12 it keeps up the supply of methyl tags that mark DNA.', ['nucleus'], ['nucleus']),
- ('rer', 'Rough ER', 'Vitamin C keeps the enzymes that finish collagen working, so its fibers are strong.', ['rer'], ['rer']),
- ('membrane', 'Cell membrane', 'Carrier proteins bring each vitamin in; vitamin C also recycles vitamin E in the membrane.', ['membrane'], ['membrane'])],
+ ('nucleus', 'Nucleus', 'Folate carries the carbon pieces needed to build DNA, and with B12 it keeps up the supply of methyl tags that mark DNA; choline, as betaine, also supplies methyl groups.', ['nucleus'], ['nucleus']),
+ ('rer', 'Rough ER', 'Vitamin C keeps the enzymes that finish collagen working, so its fibers are strong. Choline is built into phosphatidylcholine in the ER.', ['rer'], ['rer']),
+ ('membrane', 'Cell membrane', 'Carrier proteins bring each vitamin in; vitamin C also recycles vitamin E in the membrane. Choline is part of phosphatidylcholine and sphingomyelin, two of the membrane’s main phospholipids.', ['membrane'], ['membrane'])],
  seg={'name': 'Inside a Cell',
  'text': "Water-soluble vitamins don't build anything themselves. They're helpers that enzymes need to work. Most of the B vitamins team up with the enzymes in the mitochondria that turn food into "
          'ATP. Folate, with help from B12, supplies parts the cell needs to copy DNA. Vitamin C works in the rough ER, helping finish collagen.',
@@ -120,7 +120,8 @@ CELL['micronutrients-water-soluble-vitamins']=dict(lead='B vitamins are helpers 
  'cue': 'The cell drawing and its numbered parts',
  'foodBody': [{'name': 'B vitamins', 'text': 'Spread across whole grains, meat, eggs, dairy and legumes; B12 comes only from animal foods or supplements.'},
               {'name': 'Folate', 'text': 'From leafy greens and beans, and folic acid in fortified flour; needed fast when cells divide, as in pregnancy.'},
-              {'name': 'Vitamin C', 'text': 'From fruit and vegetables; without it, collagen is weak and scurvy follows.'}]})
+              {'name': 'Vitamin C', 'text': 'From fruit and vegetables; without it, collagen is weak and scurvy follows.'},
+              {'name': 'Choline', 'text': 'Eggs, liver, beef, fish and soybeans; built into cell membranes.'}]})
 CELL['micronutrients-major-minerals']=dict(lead="Sodium, potassium, calcium, magnesium, phosphorus and chloride drive the cell's signals and energy.",aria='Marble drawing of a typical cell with numbered parts: cell membrane, smooth ER, mitochondria, nucleus, cytosol and ribosomes.',
  sites=[('membrane', 'Cell membrane', 'The sodium-potassium pump keeps sodium out and potassium in; that difference powers nerve signals and nutrient uptake.', ['membrane'], ['membrane']),
  ('ser', 'Smooth ER', 'Stores calcium and releases it as a signal; in muscle, this store (the sarcoplasmic reticulum) triggers contraction.', ['ser'], ['ser']),

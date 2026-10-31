@@ -3,8 +3,8 @@
  "module": "micronutrients-water-soluble-vitamins",
  "title": "Module 2 · Water-Soluble Vitamins",
  "lang": "en",
- "revision": 3,
- "idRevision": 3,
+ "revision": 4,
+ "idRevision": 4,
  "segmentFields": {
   "id": "stable ID \"figure.segment\", e.g. \"3.2\"",
   "text": "what to say; a figure's sections read together as one flowing paragraph",
@@ -416,11 +416,84 @@
   {
    "fig": 9,
    "anchor": "fig-9",
+   "title": "Choline",
+   "subtitle": "The vitamin-like nutrient grouped with the B vitamins.",
+   "segments": [
+    {
+     "id": "9.1",
+     "seg": 1,
+     "name": "Vitamin-Like",
+     "text": "Choline isn't one of the thirteen vitamins, but it's usually grouped with the B vitamins. It's a small molecule: a nitrogen carrying three methyl groups and a positive charge, joined by a two-carbon chain to an OH group. On the right is acetylcholine, the messenger your nerves make from it.",
+     "part": "choline",
+     "cue": "The two models",
+     "foodBody": [
+      {
+       "name": "Choline",
+       "text": "Eggs, liver, beef, fish and soybeans. In the body it builds cell membranes and makes acetylcholine."
+      },
+      {
+       "name": "Acetylcholine",
+       "text": "Not eaten as a nutrient; nerve cells make it from choline. It carries signals from nerves to muscles and in the brain."
+      }
+     ],
+     "slug": "vitamin-like"
+    },
+    {
+     "id": "9.2",
+     "seg": 2,
+     "name": "Essential, but Not a Vitamin",
+     "text": "Your liver can make some choline, using an enzyme called PEMT, but not enough to stay healthy. So in 1998 the Institute of Medicine named it an essential nutrient and set an adequate intake. It's not called a vitamin because the body makes some of it, and it's needed in much larger amounts.",
+     "part": "essential",
+     "cue": "The first box",
+     "slug": "essential-but-not-a-vitamin"
+    },
+    {
+     "id": "9.3",
+     "seg": 3,
+     "name": "What It Does",
+     "text": "Choline has four main jobs. It's part of phosphatidylcholine and sphingomyelin, the phospholipids from the Lipids lesson that make up much of every cell membrane. Nerve cells join it to an acetyl group to make acetylcholine. The liver needs phosphatidylcholine to package fat into VLDL and send it out, so too little choline leads to fatty liver. And choline can be turned into betaine, which gives a methyl group to homocysteine to make methionine, a second route alongside folate and B12.",
+     "part": "jobs",
+     "cue": "The four boxes",
+     "foodBody": [
+      {
+       "name": "Phosphatidylcholine",
+       "text": "Also called lecithin; in egg yolks and soybeans, and added to foods as an emulsifier. In the body it's the main phospholipid of cell membranes and coats VLDL."
+      },
+      {
+       "name": "Betaine",
+       "text": "Also found in beets, spinach and whole wheat. In the body it's a methyl donor that turns homocysteine back into methionine."
+      }
+     ],
+     "slug": "what-it-does"
+    },
+    {
+     "id": "9.4",
+     "seg": 4,
+     "name": "Where to Find It",
+     "text": "Eggs and liver are the richest sources; most of an egg's choline is in the yolk. Beef, fish, chicken, soybeans and cruciferous vegetables like broccoli and Brussels sprouts add more. Most people eat less than the adequate intake.",
+     "part": "choline",
+     "cue": "Found in",
+     "slug": "where-to-find-it"
+    },
+    {
+     "id": "9.5",
+     "seg": 5,
+     "name": "How Much",
+     "text": "The adequate intake is 550 milligrams a day for men and 425 for women. The upper limit is 3.5 grams a day, reached only with supplements. Too much causes a fishy body odor, sweating and low blood pressure.",
+     "part": "choline",
+     "cue": "The facts",
+     "slug": "how-much"
+    }
+   ]
+  },
+  {
+   "fig": 10,
+   "anchor": "fig-10",
    "title": "Where water-soluble vitamins are used in the body",
    "subtitle": "Tap a number on the cell to see what that part does; the list below it gives every other place in the body.",
    "segments": [
     {
-     "id": "9.1",
+     "id": "10.1",
      "seg": 1,
      "name": "Where the B Vitamins and C Go",
      "text": "Here's where the water-soluble vitamins are used: first inside a single cell, then everywhere else in the body. They work in every cell, and most aren't stored, so the kidneys remove any extra. Vitamin B12 is the exception: the liver keeps a few years' worth.",
@@ -429,7 +502,7 @@
      "slug": "where-the-b-vitamins-and-c-go"
     },
     {
-     "id": "9.2",
+     "id": "10.2",
      "seg": 2,
      "name": "Inside a Cell",
      "text": "Water-soluble vitamins don't build anything themselves. They're helpers that enzymes need to work. Most of the B vitamins team up with the enzymes in the mitochondria that turn food into ATP. Folate, with help from B12, supplies parts the cell needs to copy DNA. Vitamin C works in the rough ER, helping finish collagen.",
@@ -447,12 +520,16 @@
       {
        "name": "Vitamin C",
        "text": "From fruit and vegetables; without it, collagen is weak and scurvy follows."
+      },
+      {
+       "name": "Choline",
+       "text": "Eggs, liver, beef, fish and soybeans; built into cell membranes."
       }
      ],
      "slug": "inside-a-cell"
     },
     {
-     "id": "9.3",
+     "id": "10.3",
      "seg": 3,
      "name": "Energy and Nerves",
      "text": "B1, B2, B3, B5 and B7 are coenzymes that help every cell, like these muscle cells, release energy from food. Nerve cells depend on thiamin to burn glucose, and B6 and B12 help make neurotransmitters and myelin.",
@@ -467,7 +544,7 @@
      "slug": "energy-and-nerves"
     },
     {
-     "id": "9.4",
+     "id": "10.4",
      "seg": 4,
      "name": "Blood and B12",
      "text": "Bone marrow needs folate and B12 to make new red blood cells. The stomach makes intrinsic factor, which B12 needs to be absorbed at the far end of the small intestine, and the liver stores a few years' supply.",
@@ -486,7 +563,7 @@
      "slug": "blood-and-b12"
     },
     {
-     "id": "9.5",
+     "id": "10.5",
      "seg": 5,
      "name": "Vitamin C and the Exit",
      "text": "Vitamin C is needed to make collagen, which holds the skin, gums and blood vessels together; the adrenal glands hold some of the highest levels. The kidneys remove the extra water-soluble vitamins, and riboflavin turns urine bright yellow.",
@@ -501,7 +578,7 @@
      "slug": "vitamin-c-and-the-exit"
     },
     {
-     "id": "9.6",
+     "id": "10.6",
      "seg": 6,
      "name": "Simplified",
      "text": "This is simplified. These vitamins work in every cell, so the list gives the places that need them most or store them, and each one's main job.",
@@ -512,13 +589,13 @@
    ]
   },
   {
-   "fig": 10,
-   "anchor": "fig-10",
+   "fig": 11,
+   "anchor": "fig-11",
    "title": "Putting It All Together",
    "subtitle": "The whole lesson in one table, plus a few extras.",
    "segments": [
     {
-     "id": "10.1",
+     "id": "11.1",
      "seg": 1,
      "name": "One Table",
      "text": "Here are all nine water-soluble vitamins in one table: their main job, what happens with too little, and whole-food sources.",
@@ -527,7 +604,7 @@
      "slug": "one-table"
     },
     {
-     "id": "10.2",
+     "id": "11.2",
      "seg": 2,
      "name": "Worth Knowing",
      "text": "A few extras. Bright yellow urine after a B-complex pill is just extra riboflavin. Regular vitamin C doesn't prevent colds for most people. Cooking corn with lime frees its niacin, which protected people from pellagra. And choline, found in eggs and liver, is an essential nutrient often grouped with the B vitamins. Try the quiz below.",
@@ -543,6 +620,6 @@
  "scriptUrl": "https://orcuttshortcut.com/curriculum/scripts/micronutrients-water-soluble-vitamins.json",
  "hashFormat": "#fig-{fig}/seg-{seg}",
  "hashAliases": "#fig-{fig}/{slug} for segments with a name",
- "figureCount": 10,
- "segmentCount": 45
+ "figureCount": 11,
+ "segmentCount": 50
 }

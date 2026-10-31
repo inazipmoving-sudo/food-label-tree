@@ -103,6 +103,23 @@ P8=('<!--noart-->'+table('losses',['Vitamin','Damaged by','To keep more'],[
  +lblock('enriched','Enriched and fortified',[('Enriched flour','In the US, refined wheat flour is usually enriched: thiamin, riboflavin, niacin and iron are added back after milling removes them, and folic acid has been required in enriched grain products since 1998.'),
    ('Folate on the label','Folate is listed in µg DFE; if folic acid is added, the label also shows the amount of folic acid in parentheses.'),
    ('Daily Values','Thiamin 1.2 mg, riboflavin 1.3 mg, niacin 16 mg, B6 1.7 mg, folate 400 µg DFE, B12 2.4 µg, biotin 30 µg, pantothenic acid 5 mg, vitamin C 90 mg.')]))
+P_CH=('<!--noart-->'+molbox('choline','Choline and acetylcholine',[
+   '<div class="mgrid">'+mcell(W2('choline','Choline: a nitrogen carrying three methyl groups and a positive charge, joined by a two-carbon chain to an OH group; every hydrogen shown',[('nme3','1',A,A),('oh','2',A,A)],'Choline, C5H14NO+',eager=True),'Choline',_wf('choline'))
+   +mcell(W2('acetylcholine','Acetylcholine: the same positively charged head and two-carbon chain, with the OH replaced by an acetyl ester; every hydrogen shown',[('ester','3',A,A)],'Acetylcholine, C7H16NO2+'),'Acetylcholine',_wf('acetylcholine'))+'</div>'],
+   [('1','A nitrogen with three methyl groups and a permanent positive charge: a quaternary ammonium. Phosphatidylcholine and sphingomyelin carry this same head.',''),
+    ('2','The OH is where phosphate is added on the way to phosphatidylcholine…',''),
+    ('3','…or where an acetyl group from coenzyme A (B5, Figure 4) is attached to make <b>acetylcholine</b>.','')],
+   fx=facts(what='An essential nutrient grouped with the B vitamins; the body makes some, but not enough.',
+   body='Builds cell membranes, makes acetylcholine, helps the liver export fat, and supplies methyl groups as betaine. Adequate intake 550 mg (men), 425 mg (women).',
+   low='Fatty liver and muscle damage.',
+   high='Above the upper limit (3.5 g a day, from supplements): fishy body odor, sweating, low blood pressure.',
+   found='Eggs, beef liver, beef, fish, chicken, soybeans, broccoli, Brussels sprouts.'),head='Choline')
+ +lblock('essential','Essential, but not a vitamin',[('Made, but not enough','The liver makes some choline with an enzyme called PEMT, but not enough to stay healthy, so in 1998 the Institute of Medicine named it an essential nutrient and set an adequate intake.')])
+ +lblock('jobs','What choline does',[('Membranes','Part of phosphatidylcholine and sphingomyelin, phospholipids that make up much of every cell membrane (see the Lipids lesson).'),
+   ('Acetylcholine','Nerve cells join it to an acetyl group to make acetylcholine, the messenger for muscle control and memory.'),
+   ('Fat export','The liver needs phosphatidylcholine to package fat into VLDL and send it out; too little choline leads to fatty liver.'),
+   ('Methyl groups','Turned into betaine, it gives a methyl group to homocysteine to make methionine, alongside folate and B12.')])
+ +legend('c h o n'))
 P9=('<!--noart-->'+table('table',['Vitamin','Main job','Too little','Whole-food sources'],[
   ['B1 thiamin','carbohydrate energy, nerves','beriberi','pork, beans, whole grains, sunflower seeds'],['B2 riboflavin','carries electrons','sore mouth and tongue','milk, eggs, almonds, mushrooms'],
   ['B3 niacin','NAD, hundreds of reactions','pellagra','tuna, chicken, peanuts, mushrooms'],['B5 pantothenic acid','coenzyme A','very rare','almost every food'],
@@ -121,6 +138,7 @@ WS_LESSON=[('The Water-Soluble Vitamin Family Tree','Eight B vitamins and vitami
  ('Vitamin B12','The cobalt vitamin, and who runs short.',P6),
  ('Vitamin C','Ascorbic acid: collagen, iron and antioxidant.',P7),
  ('Cooking and Labels','What destroys them, and the forms on labels.',P8),
+ ('Choline','The vitamin-like nutrient grouped with the B vitamins.',P_CH),
  ('Putting It All Together','The whole lesson in one table, plus a few extras.',P9)]
 WS_QUIZ=[('Why do the B vitamins and vitamin C dissolve in water?','They have many oxygen and nitrogen atoms that form hydrogen bonds with water (Figure 1).'),
  ('Which water-soluble vitamin is stored for years?','B12, in the liver (Figure 6).'),
