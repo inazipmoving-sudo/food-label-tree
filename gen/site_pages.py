@@ -48,7 +48,7 @@ _HOME_CSS=('<style>.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-
 _FWD=('<script>(function(){var h=location.hash.slice(1);try{h=decodeURIComponent(h)}catch(e){}'
       'if(h==="literature"||h==="reading"){location.replace("longevity/#literature");return;}'
       'if((h&&!document.getElementById(h))||location.search)location.replace("curriculum/food-label-tree.html"+location.search+location.hash)})()</script>')
-_home=page(f'{UNIVERSITY_NAME} · Course Catalog',f'<nav class="crumbs">Home</nav><h1 class="site">{brand_html()}</h1>'+(f'<p class="tagline">{TAGLINE}</p>' if TAGLINE else '')+'<p>Course catalog. Choose a course to start.</p>',
+_home=page(f'{UNIVERSITY_NAME} · {TAGLINE}',f'<nav class="crumbs">Home</nav><h1 class="site">{brand_html()}</h1>'+(f'<p class="tagline">{TAGLINE}</p>' if TAGLINE else '')+'<p>Course catalog. Choose a course to start.</p>',
            f'<main class="mods">{_cards}</main>',extra=_FWD,head=_HOME_CSS,brand=None)
 open(os.path.join(ROOT,'index.html'),'w',encoding='utf-8').write(_home)
 print('home:',len(COURSES),'course(s); tree page: prev',_P,'next',_N)

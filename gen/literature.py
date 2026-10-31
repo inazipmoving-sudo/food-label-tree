@@ -10,7 +10,7 @@ import json, os, html, sys
 from datetime import date
 GEN=os.path.dirname(os.path.abspath(__file__)); ROOT=os.path.join(GEN,'..'); OUT=os.path.join(ROOT,'literature')
 _ns={}; exec(open(os.path.join(GEN,'site.py'),encoding='utf-8').read(),_ns)  # gen/site.py: brand only
-UNIVERSITY_NAME,brand_html,BRAND_CSS=_ns['UNIVERSITY_NAME'],_ns['brand_html'],_ns['BRAND_CSS']
+UNIVERSITY_NAME,brand_html,BRAND_CSS=_ns['UNIVERSITY_NAME'],_ns['brand_html'],_ns['BRAND_CSS']; share_meta=_ns['share_meta']
 SITE='https://orcuttshortcut.com/'
 E=lambda s: html.escape(str(s or ''), quote=True)
 CSS=r''':root{--hdr:#E4E4E4;--bg:#F0F0F0;--hair:#CBCBCB;--card:#F7F7F5;--text:#2B2B2B;--muted:#6E6E6E;--line:#D9D8D4;--chip:#ECEBE7;--acc:#3E5C76;--acc-soft:#3E5C7614;--warn:#A86B53;--vein:.045;--serif:"Cormorant Garamond","Cormorant",Garamond,"EB Garamond",Georgia,"Times New Roman",serif;--sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
@@ -56,7 +56,7 @@ THEME="<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.tex
 SECTION='Peer-Reviewed Literature'
 def page(title,hero,body,desc=''):
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{E(title)}</title>'+(f'<meta name="description" content="{E(desc)}">' if desc else '')+f'<style>{CSS}{BRAND_CSS}</style></head><body>'
+            f'<title>{E(title)}</title>'+share_meta(title,desc or None)+f'<style>{CSS}{BRAND_CSS}</style></head><body>'
             f'<div class="hero"><div class="in"><button id="theme">Dark</button><div><a class="brand" href="../">{brand_html()}</a></div>{hero}</div></div>{body}{THEME}</body></html>')
 def fdate(s):
     try: y,m,d=[int(x) for x in str(s)[:10].split('-')]; return date(y,m,d).strftime('%-d %b %Y')

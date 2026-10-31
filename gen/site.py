@@ -31,3 +31,15 @@ COURSES = [
               'The course page lists the later theory modules, which are not written yet.',
          reg='LREG'),
 ]
+
+# Link previews (iMessage, Slack, X, Facebook): Open Graph + Twitter card tags on every page; image is og.png at the site root.
+SITE_URL = "https://orcuttshortcut.com/"
+SITE_DESC = "Human Biology from the LeClaire Institute: Nutrition 101, Anatomy and Longevity, taught from molecules up."
+def share_meta(title, desc=None):
+    import html as _h
+    t=_h.escape(title,quote=True); d=_h.escape(desc or SITE_DESC,quote=True); i=SITE_URL+"og.png"
+    return (f'<meta name="description" content="{d}"><meta property="og:type" content="website"><meta property="og:site_name" content="{UNIVERSITY_NAME}">'
+            f'<meta property="og:title" content="{t}"><meta property="og:description" content="{d}"><meta property="og:image" content="{i}">'
+            f'<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{UNIVERSITY_NAME} crest">'
+            f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t}"><meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{i}">'
+            '<meta name="theme-color" content="#3E5C76">')

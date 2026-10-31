@@ -167,7 +167,7 @@ def pn(prev=None,nxt=None):
 CSS=open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'curr.css')).read()
 THEME='''<script>const setT=t=>{document.documentElement.dataset.theme=t;theme.textContent=t=='dark'?'Light':'Dark'};let st=null;try{st=localStorage.getItem('theme')}catch(e){}setT(st||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));theme.onclick=()=>{const t=document.documentElement.dataset.theme=='dark'?'light':'dark';setT(t);try{localStorage.setItem('theme',t)}catch(e){}};</script>'''
 def page(title,hero,body,extra='',head='',brand='../'):
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}{BRAND_CSS}</style>{head}</head><body>
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title>{share_meta(title)}<style>{CSS}{BRAND_CSS}</style>{head}</head><body>
 <div class="hero"><div class="in"><button id="theme">Dark</button>{(f'<div><a class="brand" href="{brand}">{brand_html()}</a></div>' if brand else '')}{hero}</div></div>{body}{THEME}{extra}</body></html>'''
 
 
