@@ -101,15 +101,19 @@ function rebuild(d){const P=d.pts.map(p=>xform(V(p[0],p[1],p[2]),p[3]||'F'));con
 function update(){rigid.forEach(placeRigid);skins.forEach(applySkin);dyns.forEach(rebuild)}
 // ---------- UI ----------
 const panel=document.getElementById('list');const groups={};const boxes=[];
-function groupEl(name){if(groups[name])return groups[name];const det=document.createElement('details');det.open=!CFG.collapsed;const sum=document.createElement('summary');
+function mkDet(label,parent,isSys){const det=document.createElement('details');det.open=!CFG.collapsed&&!isSys?true:!CFG.collapsed;if(CFG.collapsed&&isSys)det.open=false;const sum=document.createElement('summary');
  const mcb=document.createElement('input');mcb.type='checkbox';mcb.checked=true;mcb.className='master';mcb.onclick=e=>e.stopPropagation();
- sum.append(mcb,' '+name);det.append(sum);panel.append(det);const g={det,mcb,items:[]};
- mcb.onchange=()=>{g.items.forEach(b=>{b.checked=mcb.checked;b.onchange()})};groups[name]=g;return g}
-function syncMaster(g){const n=g.items.filter(b=>b.checked).length;g.mcb.checked=n==g.items.length;g.mcb.indeterminate=n>0&&n<g.items.length}
+ sum.append(mcb,' '+label);if(isSys)sum.style.cssText='font-size:13px;color:#cde';det.append(sum);parent.append(det);const g={det,mcb,items:[],up:null};
+ mcb.onchange=()=>{const v=mcb.checked;mcb.indeterminate=false;g.items.forEach(b=>{if(b.checked!==v){b.checked=v;b.onchange()}});syncMaster(g)};return g}
+const systems={};
+function groupEl(name){if(groups[name])return groups[name];const i=name.indexOf(' / ');let g;
+ if(i>0){const sn=name.slice(0,i);const sy=systems[sn]||(systems[sn]=mkDet(sn,panel,true));sy.det.style.marginLeft='0';g=mkDet(name.slice(i+3),sy.det,false);g.det.style.marginLeft='12px';g.up=sy}
+ else g=mkDet(name,panel,false);groups[name]=g;return g}
+function syncMaster(g){if(!g)return;const n=g.items.filter(b=>b.checked).length;g.mcb.checked=n==g.items.length;g.mcb.indeterminate=n>0&&n<g.items.length;if(g.up)syncMaster(g.up)}
 const SW={bone:'#e6d9bb',cart:'#cfe2ee',men:'#e2e8ea',lig:'#efe5cf',ten:'#f8f0ee',mus:'#a8443a',cap:'#aab4ff',bur:'#9cc8f0',fat:'#f0c75a',nerve:'#f3dc7a',artery:'#b3221c',vein:'#3c4f9a',organ:'#b5655a',skin:'#e2b59a',disc:'#dfe8ec'};
 function uiFor(c){const g=groupEl(c.group);const l=document.createElement('label');const cb=document.createElement('input');cb.type='checkbox';cb.checked=!c.hidden;
  cb.onchange=()=>{c.hidden=!cb.checked;c.meshes.forEach(m=>m.visible=cb.checked);syncMaster(g)};const col=CFG.colors?.[c.mat]?.[1]||SW[c.mat]||'#ccc';
- l.append(cb);l.insertAdjacentHTML('beforeend',` <span class="sw" style="background:${col}"></span>${c.name}${c.scan?'<span class="tag">◆</span>':''}`);g.det.append(l);g.items.push(cb);boxes.push(cb);c.cb=cb;syncMaster(g)}
+ l.append(cb);l.insertAdjacentHTML('beforeend',` <span class="sw" style="background:${col}"></span>${c.name}${c.scan?'<span class="tag">◆</span>':''}`);g.det.append(l);g.items.push(cb);if(g.up)g.up.items.push(cb);boxes.push(cb);c.cb=cb;syncMaster(g)}
 document.getElementById('all').onclick=()=>boxes.forEach(b=>{b.checked=true;b.onchange()});
 document.getElementById('none').onclick=()=>boxes.forEach(b=>{b.checked=false;b.onchange()});
 document.getElementById('abt').onclick=()=>{const a=document.getElementById('about');a.style.display=a.style.display=='block'?'none':'block'};

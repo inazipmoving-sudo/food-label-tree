@@ -179,9 +179,11 @@ ell(comp('Suprapatellar bursa','Bursae & Other','Synovial pouch deep to the quad
 ell(comp('Infrapatellar fat pad (Hoffa)','Bursae & Other','Fat pad deep to the patellar ligament filling the anterior joint space.'),M.fat,'T',V(-.28,-.22,.62),[.5,.28,.24]);
 console.log("meshes");
 // ---------- UI ----------
-const list=document.getElementById('list');let cg;const boxes=[];
-for(const c of comps){if(c.group!==cg){cg=c.group;const h=document.createElement('h3');h.textContent=cg;list.appendChild(h)}
- const l=document.createElement('label');const cb=document.createElement('input');cb.type='checkbox';cb.checked=true;cb.onchange=()=>c.meshes.forEach(m=>m.visible=cb.checked);
+const list=document.getElementById('list');let cg,G;const boxes=[];
+const syncG=g=>{const n=g.items.filter(b=>b.checked).length;g.m.checked=n==g.items.length;g.m.indeterminate=n>0&&n<g.items.length};
+for(const c of comps){if(c.group!==cg){cg=c.group;const h=document.createElement('h3');const m=document.createElement('input');m.type='checkbox';m.checked=true;m.className='master';const g={m,items:[]};G=g;
+ m.onchange=()=>{const v=m.checked;m.indeterminate=false;g.items.forEach(b=>{b.checked=v;b.onchange()});syncG(g)};h.append(m,' '+cg);list.appendChild(h)}
+ const g=G;const l=document.createElement('label');const cb=document.createElement('input');cb.type='checkbox';cb.checked=true;cb.onchange=()=>{c.meshes.forEach(m=>m.visible=cb.checked);syncG(g)};g.items.push(cb);
  const col={[M.bone.uuid]:'#e6d9bb',[M.cart.uuid]:'#cfe2ee',[M.men.uuid]:'#e2e8ea',[M.lig.uuid]:'#efe5cf',[M.ten.uuid]:'#f8f8f8',[M.mus.uuid]:'#8c2c22',[M.cap.uuid]:'#aab4ff',[M.bur.uuid]:'#9cc8f0',[M.fat.uuid]:'#f0c75a'}[c.meshes[0].material.uuid];
  l.append(cb);l.insertAdjacentHTML('beforeend',` <span class="sw" style="background:${col}"></span>${c.name}${c.scan?'<span class="tag">◆</span>':''}`);list.appendChild(l);boxes.push(cb)}
 document.getElementById('all').onclick=()=>boxes.forEach(b=>{b.checked=true;b.onchange()});
