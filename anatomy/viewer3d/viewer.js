@@ -78,7 +78,7 @@ function frameMatrix(f){const m=new THREE.Matrix4();for(const r of chain(f)){con
  m.multiply(new THREE.Matrix4().makeTranslation(P.x,P.y,P.z)).multiply(new THREE.Matrix4().makeRotationAxis(V(...r.axis).normalize(),a)).multiply(new THREE.Matrix4().makeTranslation(-P.x,-P.y,-P.z))}return m}
 // ---------- components ----------
 const comps=[],byName={},pickables=[],rigid=[],skins=[],dyns=[];
-function comp(p){let c=byName[p.name];if(!c){c=byName[p.name]={name:p.name,group:p.group,desc:p.desc||'',meshes:[],scan:p.scan,mat:p.mat,sex:p.sex};comps.push(c)}return c}
+function comp(p){let c=byName[p.name];if(!c){c=byName[p.name]={name:p.name,group:p.group,desc:p.desc||'',meshes:[],scan:p.scan,mat:p.mat,sx:new Set()};comps.push(c)}c.sx.add(p.sex||'*');return c}
 function addMesh(c,geo,mat,frame){const m=new THREE.Mesh(geo,mat);m.castShadow=!mat.transparent;m.receiveShadow=true;m.userData.comp=c;scene.add(m);c.meshes.push(m);if(!mat.transparent||mat===M.bur)pickables.push(m);
  if(c.hidden)m.visible=false;return m}
 function uvs(g){const pos=g.attributes.position.array;g.computeBoundingBox();const c=g.boundingBox.getCenter(V()),sz=g.boundingBox.getSize(V());
@@ -112,18 +112,18 @@ function groupEl(name){if(groups[name])return groups[name];const i=name.indexOf(
  if(i>0){const sn=name.slice(0,i);const sy=systems[sn]||(systems[sn]=mkDet(sn,panel,true));sy.det.style.marginLeft='0';g=mkDet(name.slice(i+3),sy.det,false);g.det.style.marginLeft='12px';g.up=sy}
  else g=mkDet(name,panel,false);groups[name]=g;return g}
 function syncMaster(g){if(!g)return;const it=g.items.filter(b=>!b.off);const n=it.filter(b=>b.checked).length;g.mcb.checked=n==it.length;g.mcb.indeterminate=n>0&&n<it.length;if(g.up)syncMaster(g.up)}
-const QK=[];function syncQ(){QK.forEach(q=>{const bs=comps.filter(c=>q.mats.includes(c.mat)&&c.cb&&!c.cb.off).map(c=>c.cb);const n=bs.filter(b=>b.checked).length;q.cb.checked=n==bs.length&&n>0;q.cb.indeterminate=n>0&&n<bs.length})}
+let SEX=null;const QK=[];function syncQ(){QK.forEach(q=>{const bs=comps.filter(c=>q.mats.includes(c.mat)&&c.cb&&!c.cb.off).map(c=>c.cb);const n=bs.filter(b=>b.checked).length;q.cb.checked=n==bs.length&&n>0;q.cb.indeterminate=n>0&&n<bs.length})}
 if(CFG.quick){const d=document.createElement('div');d.innerHTML='<div style="font-size:11px;color:#9ab;margin-top:6px">By tissue type:</div>';panel.before(d);
  CFG.quick.forEach(q=>{const l=document.createElement('label');l.style.display='inline-block';l.style.marginRight='8px';const cb=document.createElement('input');cb.type='checkbox';cb.checked=true;cb.className='master';l.append(cb,' '+q.label);d.append(l);
   const o={...q,cb};QK.push(o);cb.onchange=()=>{const v=cb.checked;cb.indeterminate=false;comps.filter(c=>q.mats.includes(c.mat)&&c.cb&&!c.cb.off).forEach(c=>{if(c.cb.checked!==v){c.cb.checked=v;c.cb.onchange()}});syncQ()}})}
 const SW={bone:'#e6d9bb',cart:'#cfe2ee',men:'#e2e8ea',lig:'#efe5cf',ten:'#f8f0ee',mus:'#a8443a',cap:'#aab4ff',bur:'#9cc8f0',fat:'#f0c75a',nerve:'#f3dc7a',artery:'#b3221c',vein:'#3c4f9a',organ:'#b5655a',skin:'#e2b59a',disc:'#dfe8ec'};
 function uiFor(c){const g=groupEl(c.group);const l=document.createElement('label');const cb=document.createElement('input');cb.type='checkbox';cb.checked=!c.hidden;
- cb.onchange=()=>{c.hidden=!cb.checked;c.meshes.forEach(m=>m.visible=cb.checked&&!cb.off);syncMaster(g);syncQ()};const col=CFG.colors?.[c.mat]?.[1]||SW[c.mat]||'#ccc';
+ cb.onchange=()=>{c.hidden=!cb.checked;c.meshes.forEach(m=>m.visible=cb.checked&&!cb.off&&(!m.userData.sex||m.userData.sex===SEX));syncMaster(g);syncQ()};const col=CFG.colors?.[c.mat]?.[1]||SW[c.mat]||'#ccc';
  l.append(cb);l.insertAdjacentHTML('beforeend',` <span class="sw" style="background:${col}"></span>${c.name}${c.scan?'<span class="tag">◆</span>':''}`);g.det.append(l);g.items.push(cb);if(g.up)g.up.items.push(cb);boxes.push(cb);c.cb=cb;cb.lab=l;syncMaster(g)}
 document.getElementById('all').onclick=()=>boxes.forEach(b=>{if(!b.off){b.checked=true;b.onchange()}});
 document.getElementById('none').onclick=()=>boxes.forEach(b=>{if(!b.off){b.checked=false;b.onchange()}});
 document.getElementById('abt').onclick=()=>{const a=document.getElementById('about');a.style.display=a.style.display=='block'?'none':'block'};
-let SEX=null;function setSex(x){SEX=x;comps.forEach(c=>{if(!c.sex||!c.cb)return;const off=c.sex!==x;c.cb.off=off;c.cb.lab.style.display=off?'none':'';c.meshes.forEach(m=>m.visible=!off&&c.cb.checked)});
+function setSex(x){SEX=x;comps.forEach(c=>{if(!c.cb)return;const off=!c.sx.has('*')&&!c.sx.has(x);c.cb.off=off;c.cb.lab.style.display=off?'none':'';c.meshes.forEach(m=>m.visible=!off&&c.cb.checked&&(!m.userData.sex||m.userData.sex===x))});if(window.__loadSex)window.__loadSex(x);
  [...Object.values(groups),...Object.values(systems)].forEach(g=>{g.det.style.display=g.items.length&&g.items.every(b=>b.off)?'none':'';syncMaster(g)});syncQ();
  document.querySelectorAll('.sexbtn').forEach(b=>b.classList.toggle('on',b.dataset.s===x))}
 window.__setSex=setSex;
@@ -178,7 +178,7 @@ addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updat
 // ---------- build: procedural first, then mesh files progressively ----------
 function addPart(p,geo){const c=comp(p);if(p.hidden)c.hidden=true;const mat=M[p.mat];const m=addMesh(c,geo,mat,p.frame||'F');
  if(p.skin){skins.push({m,orig:geo.attributes.position.array.slice(),dir:[0,1,0],a:0,b:1,wts:geo.userData.w,mf:geo.userData.mf,...p.skin});applySkin(skins[skins.length-1])}else{const r={m,frame:p.frame||'F'};rigid.push(r);placeRigid(r)}
- if(p.renderOrder)m.renderOrder=p.renderOrder;if(!c.cb)uiFor(c);if(c.sex&&SEX&&c.sex!==SEX)m.visible=false;return m}
+ if(p.renderOrder)m.renderOrder=p.renderOrder;if(!c.cb)uiFor(c);m.userData.sex=p.sex;if(p.sex&&SEX&&p.sex!==SEX)m.visible=false;return m}
 // declare UI order up-front
 (CFG.parts||[]).forEach(p=>{const c=comp(p);if(p.hidden)c.hidden=true});(CFG.tubes||[]).forEach(p=>comp(p));(CFG.shapes||[]).forEach(p=>comp(p));
 const order=[...new Set(comps.map(c=>c.group))];order.forEach(groupEl);comps.forEach(uiFor);if(CFG.sexes)setSex(CFG.sexes[0][0]);
@@ -191,8 +191,10 @@ const order=[...new Set(comps.map(c=>c.group))];order.forEach(groupEl);comps.for
 window.__ok=false;window.__cam=camera;window.__ctl=controls;window.__render=()=>{tick();controls.update();composer.render();return 1};
 if(!Q.has('still'))(function loop(){requestAnimationFrame(loop);tick();controls.update();if(bokeh.enabled)bokeh.uniforms.focus.value=camera.position.distanceTo(controls.target);composer.render()})();
 const ld=document.getElementById('load');
-for(const file of CFG.files){ld.textContent='Loading '+(file.label||'model')+'…';
- const buf=await (await fetch(file.url)).arrayBuffer();
- for(const p of CFG.parts.filter(p=>(p.file||0)===CFG.files.indexOf(file))){const e=file.meshes[p.mesh];if(!e){console.warn('missing',p.mesh);continue}addPart(p,decode(buf,e))}}
+async function loadFile(file){if(file.done)return file.done;file.done=(async()=>{const buf=await (await fetch(file.url)).arrayBuffer();
+ for(const p of CFG.parts.filter(p=>(p.file||0)===CFG.files.indexOf(file))){const e=file.meshes[p.mesh];if(!e){console.warn('missing',p.mesh);continue}addPart(p,decode(buf,e))}})();return file.done}
+window.__sexReady=true;window.__loadSex=x=>{const fs=CFG.files.filter(f=>f.sex===x&&!f.done);if(!fs.length)return;window.__sexReady=false;const n=document.createElement('div');n.id='load2';n.style.cssText='position:fixed;bottom:60px;left:50%;transform:translateX(-50%);background:#1c2733;color:#cde;padding:6px 12px;border-radius:6px;font-size:13px';n.textContent='Loading '+(x=='f'?'female':'male')+' body…';document.body.append(n);
+ Promise.all(fs.map(loadFile)).then(()=>{n.remove();window.__sexReady=true})};
+for(const file of CFG.files){if(file.sex&&file.sex!==SEX)continue;ld.textContent='Loading '+(file.label||'model')+'…';await loadFile(file)}
 ld.remove();window.__ok=true;
 }
