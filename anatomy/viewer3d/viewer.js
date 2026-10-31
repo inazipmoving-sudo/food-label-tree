@@ -136,6 +136,27 @@ const sd=document.getElementById('sliders');
  const inp=d.querySelector('input'),sp=d.querySelector('span');inp.oninput=()=>{sp.textContent=inp.value;sl[s.id]=inp.value*Math.PI/180;update()};s.inp=inp});
 window.__setSlider=(id,v)=>{const s=CFG.sliders.find(s=>s.id==id);s.inp.value=v;s.inp.oninput()};
 const vb=document.getElementById('views');for(const k in CFG.views){const b=document.createElement('button');b.textContent=k;b.onclick=()=>{camera.position.set(...CFG.views[k]);controls.target.set(...(CFG.target||[0,0,0]))};vb.append(b)}
+// ---------- pivot ----------
+controls.zoomToCursor=true;controls.minDistance=S*.004;
+const pivM=new THREE.Mesh(new THREE.SphereGeometry(1,16,12),new THREE.MeshBasicMaterial({color:0x4fc3ff,depthTest:false,transparent:true,opacity:.85}));pivM.renderOrder=999;pivM.visible=false;scene.add(pivM);
+let tw=null;function tick(){if(tw){const t=Math.min(1,(performance.now()-tw.t0)/450),e=t*(2-t);controls.target.lerpVectors(tw.a,tw.b,e);camera.position.lerpVectors(tw.ca,tw.cb,e);if(t>=1)tw=null}
+ const d=camera.position.distanceTo(controls.target);pivM.scale.setScalar(Math.max(d*.006,S*.0008));pivM.position.copy(controls.target)}
+function goTo(p,camPos){const off=camera.position.clone().sub(controls.target);const cb=camPos||p.clone().add(off);
+ if(Q.has('still')){controls.target.copy(p);camera.position.copy(cb);tick()}else tw={t0:performance.now(),a:controls.target.clone(),b:p.clone(),ca:camera.position.clone(),cb};pivM.visible=true}
+function visMeshes(){const o=[];scene.traverse(m=>{if(m.isMesh&&m!==pivM&&m.userData.comp){let v=true,q=m;while(q){if(!q.visible){v=false;break}q=q.parent}if(v)o.push(m)}});return o}
+function hitPoint(e){const r=renderer.domElement.getBoundingClientRect();const mv=new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);const rc=new THREE.Raycaster();rc.setFromCamera(mv,camera);
+ const vm=visMeshes();let h=rc.intersectObjects(vm.filter(m=>!m.material.transparent||m.material.opacity>.5),false);if(!h.length)h=rc.intersectObjects(vm,false);return h.length?h[0].point:null}
+let pivArm=false;const pvb=document.createElement('button');pvb.textContent='Set pivot';pvb.title='Then click any structure to orbit/zoom around it (or double-click anywhere on the model)';
+pvb.onclick=()=>{pivArm=!pivArm;pvb.style.background=pivArm?'#3d7cc9':'';renderer.domElement.style.cursor=pivArm?'crosshair':''};
+const rpb=document.createElement('button');rpb.textContent='Reset pivot';rpb.onclick=()=>{goTo(new THREE.Vector3(...(CFG.target||[0,0,0])));setTimeout(()=>pivM.visible=false,500)};
+const fvb=document.createElement('button');fvb.textContent='Focus visible';fvb.title='Frame whatever is currently shown and orbit around it';
+fvb.onclick=()=>{const b=new THREE.Box3();visMeshes().forEach(m=>b.expandByObject(m));if(b.isEmpty())return;const c=b.getCenter(new THREE.Vector3()),rad=b.getSize(new THREE.Vector3()).length()/2;
+ const dir=camera.position.clone().sub(controls.target).normalize();const dist=Math.max(rad/Math.sin(camera.fov*Math.PI/360)*1.05,S*.02);goTo(c,c.clone().addScaledVector(dir,dist))};
+const pvd=document.createElement('div');pvd.style.marginTop='4px';pvd.append(pvb,rpb,fvb);document.getElementById('views').after(pvd);
+let pdown=null;renderer.domElement.addEventListener('pointerdown',e=>pdown=[e.clientX,e.clientY]);
+renderer.domElement.addEventListener('pointerup',e=>{if(!pivArm||!pdown||Math.hypot(e.clientX-pdown[0],e.clientY-pdown[1])>4)return;const p=hitPoint(e);if(p){goTo(p);pvb.onclick()}});
+renderer.domElement.addEventListener('dblclick',e=>{const p=hitPoint(e);if(p)goTo(p)});
+window.__pivot=(x,y)=>{const p=hitPoint({clientX:x,clientY:y});if(p)goTo(p);return p?p.toArray():null};window.__focusVisible=()=>fvb.onclick();
 const tip=document.getElementById('tip'),info=document.getElementById('info'),lblCb=document.getElementById('lbl');
 const ray=new THREE.Raycaster(),mouse=new THREE.Vector2();let hl=null;
 function pick(e){mouse.set(e.clientX/innerWidth*2-1,-e.clientY/innerHeight*2+1);ray.setFromCamera(mouse,camera);const h=ray.intersectObjects(pickables.filter(m=>m.visible),false);return h.length?h[0].object.userData.comp:null}
@@ -167,8 +188,8 @@ const order=[...new Set(comps.map(c=>c.group))];order.forEach(groupEl);comps.for
  const holder=addMesh(c,new THREE.BufferGeometry(),M[s.mat]);scene.remove(holder);c.meshes.pop();pickables.splice(pickables.indexOf(holder),1);
  const grp=new THREE.Group();grp.add(m);scene.add(grp);m.castShadow=!M[s.mat].transparent;m.receiveShadow=true;m.userData.comp=c;c.meshes.push(m);if(!M[s.mat].transparent||M[s.mat]===M.bur)pickables.push(m);if(c.hidden)m.visible=false;
  if(s.renderOrder)m.renderOrder=s.renderOrder;rigid.push({m:grp,frame:s.frame||'F'});placeRigid(rigid[rigid.length-1])});
-window.__ok=false;window.__cam=camera;window.__ctl=controls;window.__render=()=>{controls.update();composer.render();return 1};
-if(!Q.has('still'))(function loop(){requestAnimationFrame(loop);controls.update();if(bokeh.enabled)bokeh.uniforms.focus.value=camera.position.distanceTo(controls.target);composer.render()})();
+window.__ok=false;window.__cam=camera;window.__ctl=controls;window.__render=()=>{tick();controls.update();composer.render();return 1};
+if(!Q.has('still'))(function loop(){requestAnimationFrame(loop);tick();controls.update();if(bokeh.enabled)bokeh.uniforms.focus.value=camera.position.distanceTo(controls.target);composer.render()})();
 const ld=document.getElementById('load');
 for(const file of CFG.files){ld.textContent='Loading '+(file.label||'model')+'…';
  const buf=await (await fetch(file.url)).arrayBuffer();
