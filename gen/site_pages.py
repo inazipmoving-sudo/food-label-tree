@@ -29,9 +29,8 @@ def _course_card(c):
         for r in reg:
             if not mods or mods[-1][0]!=r[1]: mods.append([r[1],r[2],None])
             if r[4] and mods[-1][2] is None: mods[-1][2]=c['href']+r[0]+'.html'
-    # every module chip links to its first live lesson (or the course page if none is live yet)
     for n,nm,cnt in (globals()[c['extra']] if c.get('extra') else []): mods.append([n,nm,c['href']]); nmod+=1; nles+=cnt   # e.g. Anatomy Module 2 (3D joints)
-    ml=''.join(f'<li><a href="{h or c["href"]}"><span>{n}</span>{nm}</a></li>' for n,nm,h in mods)
+    ml=''.join(f'<li><span>{n}</span>{nm}</li>' for n,nm,h in mods)
     return (f'<section class="mod course" id="{c["slug"]}" style="--a:var(--acc)"><div class="mh"><span class="mn">{c.get("code","").split(" ")[-1]}</span><span class="ico"></span>'
             f'<h2><a href="{c["href"]}">{c["title"]}</a></h2></div><p class="cdesc">{c["desc"]}</p>'
             f'<p class="cmeta">{nmod} module{'s'*(nmod!=1)} · {nles} lesson{'s'*(nles!=1)}</p>'+(f'<ol class="cmods">{ml}</ol>' if ml else '')
@@ -41,7 +40,7 @@ _cards=('<section class="major" id="human-biology"><div class="majh"><span class
 # Old home anchors #literature and #reading must not fall through to the food-label tree.
 _HOME_CSS=('<style>.hero p.tagline{margin:4px 0 0;font-family:var(--serif);font-variant:small-caps;font-size:clamp(1.05rem,2.2vw,1.25rem);letter-spacing:.12em;color:var(--muted)}.course .mn{font-variant-numeric:lining-nums}.course h2 a{text-decoration:none}.course h2 a:hover{color:var(--acc)}.cdesc{margin:10px 0 0 44px;line-height:1.6}'
            '.cmeta{margin:8px 0 0 44px;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}'
-           '.cmods{list-style:none;margin:12px 0 0 44px;padding:0;display:flex;flex-wrap:wrap;gap:8px}.cmods li{border:1px solid var(--line);border-radius:4px;font-size:.9rem;background:var(--bg)}.cmods li a{display:block;padding:4px 10px;color:inherit;text-decoration:none}.cmods li:hover{border-color:var(--acc)}.cmods li a:hover{color:var(--acc)}'
+           '.cmods{list-style:none;margin:12px 0 0 44px;padding:0;display:flex;flex-wrap:wrap;gap:8px}.cmods li{border:1px solid var(--line);border-radius:4px;padding:4px 10px;font-size:.9rem;background:var(--bg)}'
            '.cmods li span{font-family:var(--serif);font-variant-numeric:lining-nums;color:var(--acc);margin-right:6px;font-size:1.05rem}'
            '.secl{font-family:var(--serif);font-weight:500;font-size:1.5rem;margin:36px 0 10px;padding-top:18px;border-top:1px solid var(--hair);color:var(--muted)}'
            '.major{margin:8px 0 0;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:8px;padding:20px 22px 8px}.majh{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.majt{font-family:var(--serif);font-weight:500;font-size:2rem;margin:0}''.majtag{font-size:.66rem;text-transform:uppercase;letter-spacing:.2em;color:#fff;background:var(--acc);border-radius:3px;padding:3px 9px}''.majsub{margin:6px 0 14px;font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}.majc{border-left:2px solid var(--line);padding-left:18px}''@media(max-width:600px){.cdesc,.cmeta,.cmods{margin-left:0}.majc{padding-left:10px}}</style>')
