@@ -17,7 +17,7 @@ for r in AREG:
 _ac=''
 # Module 2: interactive 3D joint models (static pages anatomy/<joint>-3d.html, listed in gen/data/joints3d.json)
 JOINTS3D=json.load(open(os.path.join(GEN,'data','joints3d.json'),encoding='utf-8'))
-AEXTRA=[('2','Joints: '+', '.join(j['short'] for j in JOINTS3D),len(JOINTS3D))]
+AEXTRA=[('2','Joints',len(JOINTS3D))]
 for n,nm,rs in _am:
     items=''.join(f'<a class="les" href="{r[0]}.html">{r[3]} <span>{len(json.load(open(os.path.join(GEN,"scripts",r[0]+".json")))["figures"])} figures + script →</span></a>' if r[4] else f'<div class="les off">{r[3]} <span>coming soon</span></div>' for r in rs)
     _ac+=f'<section class="mod" style="--a:var(--acc)"><div class="mh"><span class="mn">{n}</span><span class="ico"></span><h2>Module {n} · {nm}</h2></div>{items}</section>'
