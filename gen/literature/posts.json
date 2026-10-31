@@ -2587,5 +2587,241 @@
     }
    ]
   }
+ },
+ {
+  "slug": "embryonic-origins-epigenetic-mosaicism-colon",
+  "group": "latest",
+  "title": "Embryonic origins of epigenetic mosaicism in the human colorectal epithelium",
+  "authors": [
+   "Young Seok Ju",
+   "Hyein Won",
+   "Yunah Lee",
+   "Chang Hyun Nam",
+   "Beomki Lee",
+   "Joonoh Lim",
+   "Ji-Hyung Park",
+   "Jisong An",
+   "Soo A Oh",
+   "Myungsuk Choi",
+   "Jeong Yeon Kim",
+   "Jung Woo Park",
+   "Junehawk Lee",
+   "Jeonghwan Youk",
+   "Ji Won Park",
+   "Seung-Yong Jeong",
+   "Hyun Woo Kwon",
+   "Min Jung Kim"
+  ],
+  "authorsShort": "Young Seok Ju, Hyein Won, Yunah Lee … Min Jung Kim",
+  "firstAuthor": "Young Seok Ju",
+  "journal": "Research Square (preprint)",
+  "pubDate": "2026-10-29",
+  "doi": "10.21203/rs.3.rs-11351803/v1",
+  "url": "https://doi.org/10.21203/rs.3.rs-11351803/v1",
+  "pmid": null,
+  "pmcid": null,
+  "type": "preprint",
+  "preprint": true,
+  "openAccess": {
+   "status": "green",
+   "isOpen": true,
+   "url": "https://doi.org/10.21203/rs.3.rs-11351803/v1",
+   "source": "Crossref license metadata, fetched 2026-10-31 (CC BY 4.0)"
+  },
+  "whyItMatters": "Most of the DNA methylation differences between colon cells in a 60-year-old seem to be set in the embryo, not picked up with age, which changes how we read epigenetic drift.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "DNA methylation is a chemical tag on DNA, mostly at sites called CpGs, that helps decide which genes are switched on. As we age, the methylation patterns of cells of the same type drift apart, so a tissue becomes a patchwork, or mosaic, of slightly different epigenetic states. This drift is the basis of epigenetic clocks and is often described as one of the hallmarks of aging. But it has been hard to tell how much of that mosaic really builds up over a lifetime and how much was there from the start. If many differences are laid down before birth, then not every methylation difference seen in an older person is a sign of aging. This preprint tries to separate the two.",
+   "did": "According to the abstract, the team grew clones, each started from a single cell, from the colorectal lining (epithelium) of 16 donors, 406 clones in all. For each clone they read both the whole genome, to find somatic mutations (DNA changes acquired after conception), and the whole methylome, the methylation state across the genome. Because the clones share an ancestry that can be traced through their mutations, the researchers could work out when along the family tree of cells each methylation difference arose: early in the embryo, or later in adult life. They then looked at where the early differences sit in the genome, whether they relate to gene activity in adult colon tissue, and whether the same idea applies to X-chromosome inactivation in female cells.",
+   "found": "By around 60 years of age, a single colon cell lineage differed from the consensus methylation state at about 1.2 million CpG sites. The striking result is that about 60% of these differences were established during early embryogenesis and then copied faithfully through life, rather than being epimutations that accumulate with age. These early differences tended to cluster and recur in the same regions, which the authors read as cell lineages committing early to one of a few possible methylation states, not random errors. They mapped 14,402 such regions, which they call embryonic epiallelic commitment (EEC) regions. These were enriched at CpG islands and gene promoters, especially homeobox genes and zinc-finger/KRAB-domain genes, both linked to early development. EECs were often associated with differences in gene expression in the adult colon. They also explained more than 70% of the loss of methylation at LINE-1 promoters commonly seen in adult colon tissue, and they helped reconstruct early developmental family trees of cells more accurately than mutations alone. A similar pattern held for the methylation behind X-chromosome inactivation and escape.",
+   "limits": "This is a preprint on Research Square and has not yet been peer reviewed, so the results may change. This synopsis is based on the abstract only. The study covers one tissue, the colorectal epithelium, from 16 donors, and the abstract does not say how well the findings carry over to blood or other tissues where epigenetic clocks are usually measured. The link between EECs and gene expression is an association. About 40% of differences are still not embryonic, so age-related epimutation remains part of the picture.",
+   "terms": [
+    {
+     "term": "DNA methylation",
+     "definition": "A small chemical tag added to DNA, mainly at CpG sites, that helps control whether genes are active."
+    },
+    {
+     "term": "CpG site",
+     "definition": "A spot in DNA where the base C is followed by G; the main place methylation tags are added."
+    },
+    {
+     "term": "Epigenetic mosaicism",
+     "definition": "When cells of the same type in one person carry different methylation patterns."
+    },
+    {
+     "term": "Epimutation",
+     "definition": "A change in an epigenetic mark, such as methylation, that is passed on when a cell divides."
+    },
+    {
+     "term": "Clone (single-cell-derived)",
+     "definition": "A group of cells grown from one starting cell, so all share that cell's DNA and marks."
+    },
+    {
+     "term": "LINE-1",
+     "definition": "A family of repeated 'jumping gene' sequences in the genome that are normally kept silent by methylation."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "dna-protein-crosslink-repair-review",
+  "group": "latest",
+  "title": "Mechanisms and regulation of proteolytic DNA-protein crosslink repair",
+  "authors": [
+   "Sophie Dürauer",
+   "Julian Stingele"
+  ],
+  "authorsShort": "Sophie Dürauer, Julian Stingele",
+  "firstAuthor": "Sophie Dürauer",
+  "journal": "Nature Reviews Molecular Cell Biology",
+  "pubDate": "2026-10-30",
+  "doi": "10.1038/s41580-026-01035-2",
+  "url": "https://doi.org/10.1038/s41580-026-01035-2",
+  "pmid": "42963374",
+  "pmcid": null,
+  "type": "review",
+  "preprint": false,
+  "openAccess": {
+   "status": "closed",
+   "isOpen": false,
+   "url": null,
+   "source": "Crossref license metadata, fetched 2026-10-31 (text-and-data-mining terms only; no open licence listed)"
+  },
+  "whyItMatters": "Proteins stuck to DNA are among the worst kinds of DNA damage, and failing to clear them is tied to premature ageing and cancer.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 3
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Genomic instability, the steady build-up of damage and errors in our DNA, is one of the classic hallmarks of aging. One of the most harmful forms of DNA damage is a DNA-protein crosslink (DPC), where a protein becomes chemically welded onto the DNA strand. These bulky lesions block the machines that copy DNA (replication) and read it (transcription), so cells must remove them quickly. The authors note that faulty DPC removal contributes to premature ageing as well as cancer, which makes this repair system relevant to anyone trying to understand why genomes wear out.",
+   "did": "This is a review article, so the authors did not run a new experiment. According to the abstract, they bring together recent research on where DPCs come from and how they differ. Some arise when enzymes that normally make a brief, temporary bond with DNA, such as topoisomerases that untangle DNA, get stuck halfway through their job. Others come from chemicals called bifunctional crosslinking agents that can grab DNA and protein at once. The review then describes the key repair enzymes and the different repair routes.",
+   "found": "The review describes how DPCs vary in which protein is stuck, where on the DNA it sits and what kind of chemical bond holds it. It focuses on two protein-cutting machines that clear DPCs: the proteasome, the cell's general protein shredder, and SPRTN, a protease specialized for DPCs. It summarizes recent progress on three repair routes: one linked to DNA copying (replication-coupled), one linked to gene reading (transcription-coupled) and one that works anywhere in the genome (global genome repair). According to the authors, these routes converge on the same step: the stuck protein is tagged with ubiquitin, a small marker protein, which gives the go-ahead for the proteasome or SPRTN to chop it up. Finally, the review discusses how defects in this protein-cutting repair lead to genome instability, premature ageing and a higher risk of cancer.",
+   "limits": "This synopsis is based on the abstract only; the full review is paywalled. As a review, it summarizes other studies rather than presenting new data, and the abstract does not say which aging evidence comes from human disease, animal models or cells. The link to premature ageing is stated in general terms in the abstract, without detail on how strongly DPC repair affects normal human aging.",
+   "terms": [
+    {
+     "term": "DNA-protein crosslink (DPC)",
+     "definition": "A protein that has become covalently (chemically) stuck to DNA, blocking copying and reading of the genome."
+    },
+    {
+     "term": "Topoisomerase",
+     "definition": "An enzyme that cuts and rejoins DNA to relieve twisting; if it gets stuck mid-job it forms a crosslink."
+    },
+    {
+     "term": "Proteasome",
+     "definition": "The cell's main machine for breaking down unwanted proteins."
+    },
+    {
+     "term": "SPRTN",
+     "definition": "A protease (protein-cutting enzyme) specialized in removing proteins stuck to DNA."
+    },
+    {
+     "term": "Ubiquitylation",
+     "definition": "Attaching the small protein ubiquitin to another protein, often as a signal to destroy it."
+    },
+    {
+     "term": "Genome instability",
+     "definition": "A raised tendency for DNA damage and mutations to build up; a hallmark of aging and cancer."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "cheek-swab-methylation-biological-age",
+  "group": "latest",
+  "title": "Predicting biological age and clinical biomarkers from DNA methylation profiles of cheek mucosa",
+  "authors": [
+   "Tatsuma Shoji",
+   "Yui Tomo",
+   "Ryo Nakaki"
+  ],
+  "authorsShort": "Tatsuma Shoji, Yui Tomo, Ryo Nakaki",
+  "firstAuthor": "Tatsuma Shoji",
+  "journal": "Epigenetics Communications",
+  "pubDate": "2026-10-29",
+  "doi": "10.1186/s43682-026-00055-5",
+  "url": "https://doi.org/10.1186/s43682-026-00055-5",
+  "pmid": null,
+  "pmcid": null,
+  "type": "research",
+  "preprint": false,
+  "openAccess": {
+   "status": "gold",
+   "isOpen": true,
+   "url": "https://doi.org/10.1186/s43682-026-00055-5",
+   "source": "Crossref license metadata, fetched 2026-10-31 (CC BY-NC-ND 4.0)"
+  },
+  "whyItMatters": "A cheek sample, instead of blood, predicted chronological and phenotypic age about as well as blood-based epigenetic clocks in 186 Japanese adults.",
+  "signals": {
+   "citations": {
+    "openalex": null,
+    "semanticScholar": null,
+    "source": "not fetched: paper is days old"
+   },
+   "altmetric": {
+    "score": null,
+    "source": "api.altmetric.com/v1/doi requires an API key since 10 Nov 2025 (HTTP 403); not available"
+   },
+   "newsMentions": null,
+   "newsSource": "not searched (daily sweep)",
+   "journalTier": 1
+  },
+  "synopsisBasis": "abstract",
+  "synopsis": {
+   "why": "Epigenetic clocks estimate how old the body seems from DNA methylation, chemical tags on DNA that shift in predictable ways with age. Most clocks were built from blood, which means a needle and a lab draw. A cheek swab is far easier to collect, but cheek cells are a different tissue and their methylation patterns differ from blood. This study asks whether cheek tissue can stand in for blood, not only for estimating age but also for predicting a range of everyday clinical lab results.",
+   "did": "According to the abstract, the researchers measured DNA methylation in both cheek mucosa (the inner lining of the cheek) and whole blood from 186 Japanese adults, using a newer Illumina chip called the Infinium Methylation Screening Array (MSA). They built models to predict chronological age, phenotypic age (a measure of biological age based on clinical blood tests) and individual lab biomarkers. Besides a standard method, elastic net regression, they used a two-stage residual learning method that starts from existing blood-based epigenetic clocks and then learns a correction. They also ran analyses separately for men and women and compared which CpG sites the models picked across sexes and tissues.",
+   "found": "Cheek-derived methylation data predicted chronological age with a correlation of R = 0.965 and phenotypic age with R = 0.964 using the two-stage method. The two-stage approach helped more for phenotypic age than for chronological age. Several clinical lab markers could be predicted from cheek methylation, especially when men and women were modelled separately, including inflammatory, metabolic, thyroid-related and sex hormone-related markers. Most markers that blood methylation could predict could also be predicted from cheek samples. However, the specific CpG sites the models relied on overlapped very little between sexes and between tissues, even when the same trait was predictable. The authors conclude that cheek mucosa is a less invasive alternative for methylation-based assessment of biological aging and overall physiological state.",
+   "limits": "This synopsis is based on the abstract only, although the paper is open access. The sample is modest, 186 adults, all Japanese, so results may not transfer to other populations. The abstract does not say whether the models were tested in a separate, independent group of people. Phenotypic age is itself an estimate built from blood tests, and predicting it well does not show the cheek clock predicts disease or death. The low overlap in selected CpG sites means the models may be fragile or specific to this chip and setting.",
+   "terms": [
+    {
+     "term": "Epigenetic clock",
+     "definition": "A formula that estimates age from DNA methylation levels at selected sites."
+    },
+    {
+     "term": "Cheek mucosa",
+     "definition": "The soft inner lining of the cheek, sampled with a simple swab or scrape."
+    },
+    {
+     "term": "Phenotypic age",
+     "definition": "A biological age estimate calculated from routine clinical blood tests and chronological age."
+    },
+    {
+     "term": "Elastic net",
+     "definition": "A statistical method that picks a small set of useful predictors from many candidates."
+    },
+    {
+     "term": "Residual learning",
+     "definition": "Starting from an existing model's prediction and training a second model to correct its errors."
+    },
+    {
+     "term": "CpG site",
+     "definition": "A spot in DNA where C is followed by G, where methylation tags are usually added."
+    }
+   ]
+  }
  }
 ]
